@@ -1,0 +1,2909 @@
+{
+  "HeaderFileName": "slerror.h",
+  "ErrorCodes": [
+    {
+      "Id": "SL_E_SRV_INVALID_PUBLISH_LICENSE",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434623,
+      "HexCode": "0xC004B001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_INVALID_PRODUCT_KEY_LICENSE",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434622,
+      "HexCode": "0xC004B002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_INVALID_RIGHTS_ACCOUNT_LICENSE",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434621,
+      "HexCode": "0xC004B003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_INVALID_LICENSE_STRUCTURE",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434620,
+      "HexCode": "0xC004B004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_AUTHORIZATION_FAILED",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434619,
+      "HexCode": "0xC004B005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_INVALID_BINDING",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434618,
+      "HexCode": "0xC004B006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_SERVER_PONG",
+      "Message": "The activation server reported that the computer could not connect to the activation server.",
+      "DecimalCode": -1073434617,
+      "HexCode": "0xC004B007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_INVALID_PAYLOAD",
+      "Message": "The activation server determined that the product could not be activated.",
+      "DecimalCode": -1073434616,
+      "HexCode": "0xC004B008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_INVALID_SECURITY_PROCESSOR_LICENSE",
+      "Message": "The activation server determined that the license is invalid.",
+      "DecimalCode": -1073434615,
+      "HexCode": "0xC004B009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_BUSINESS_TOKEN_ENTRY_NOT_FOUND",
+      "Message": "The activation server determined that required business token entry cannot be found.",
+      "DecimalCode": -1073434608,
+      "HexCode": "0xC004B010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_CLIENT_CLOCK_OUT_OF_SYNC",
+      "Message": "The activation server determined that your computer clock time is not correct. You must correct your clock before you can activate.",
+      "DecimalCode": -1073434607,
+      "HexCode": "0xC004B011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SRV_GENERAL_ERROR",
+      "Message": "The activation server determined that the product could not be activated.",
+      "DecimalCode": -1073434368,
+      "HexCode": "0xC004B100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_PRODUCT_KEY_OUT_OF_RANGE",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -1073430527,
+      "HexCode": "0xC004C001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_BINDING",
+      "Message": "The activation server determined there is a problem with the specified product key.",
+      "DecimalCode": -1073430526,
+      "HexCode": "0xC004C002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_PRODUCT_KEY_BLOCKED",
+      "Message": "The activation server determined the specified product key has been blocked.",
+      "DecimalCode": -1073430525,
+      "HexCode": "0xC004C003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_PRODUCT_KEY",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -1073430524,
+      "HexCode": "0xC004C004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_BINDING_NOT_FOUND",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430523,
+      "HexCode": "0xC004C005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_BINDING_MAPPING_NOT_FOUND",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430522,
+      "HexCode": "0xC004C006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_UNSUPPORTED_PRODUCT_KEY",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -1073430521,
+      "HexCode": "0xC004C007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_MAXIMUM_UNLOCK_EXCEEDED",
+      "Message": "The activation server reported that the product key has exceeded its unlock limit.",
+      "DecimalCode": -1073430520,
+      "HexCode": "0xC004C008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_ACTCONFIG_ID_NOT_FOUND",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430519,
+      "HexCode": "0xC004C009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_PRODUCT_DATA_ID",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430518,
+      "HexCode": "0xC004C00A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_PRODUCT_DATA",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430517,
+      "HexCode": "0xC004C00B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_SYSTEM_ERROR",
+      "Message": "The activation server experienced an error.",
+      "DecimalCode": -1073430516,
+      "HexCode": "0xC004C00C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_ACTCONFIG_ID",
+      "Message": "The activation server determined the product key is not valid.",
+      "DecimalCode": -1073430515,
+      "HexCode": "0xC004C00D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_PRODUCT_KEY_LENGTH",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -1073430514,
+      "HexCode": "0xC004C00E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_PRODUCT_KEY_FORMAT",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -1073430513,
+      "HexCode": "0xC004C00F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_PRODUCT_KEY_CHAR",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -1073430512,
+      "HexCode": "0xC004C010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_BINDING_URI",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430511,
+      "HexCode": "0xC004C011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_NETWORK_ERROR",
+      "Message": "The activation server experienced a network error.",
+      "DecimalCode": -1073430510,
+      "HexCode": "0xC004C012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_DATABASE_ERROR",
+      "Message": "The activation server experienced an error.",
+      "DecimalCode": -1073430509,
+      "HexCode": "0xC004C013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_INVALID_ARGUMENT",
+      "Message": "The activation server experienced an error.",
+      "DecimalCode": -1073430508,
+      "HexCode": "0xC004C014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_DMAK_LIMIT_EXCEEDED",
+      "Message": "The activation server reported that the Multiple Activation Key has exceeded its limit.",
+      "DecimalCode": -1073430496,
+      "HexCode": "0xC004C020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_DMAK_EXTENSION_LIMIT_EXCEEDED",
+      "Message": "The activation server reported that the Multiple Activation Key extension limit has been exceeded.",
+      "DecimalCode": -1073430495,
+      "HexCode": "0xC004C021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_REISSUANCE_LIMIT_NOT_FOUND",
+      "Message": "The activation server reported that the re-issuance limit was not found.",
+      "DecimalCode": -1073430494,
+      "HexCode": "0xC004C022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_OVERRIDE_REQUEST_NOT_FOUND",
+      "Message": "The activation server reported that the override request was not found.",
+      "DecimalCode": -1073430493,
+      "HexCode": "0xC004C023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_OEM_SLP_COA0",
+      "Message": "The activation server reported that the specified product key cannot be used for online activation.",
+      "DecimalCode": -1073430506,
+      "HexCode": "0xC004C016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_PRODUCT_KEY_BLOCKED_IPLOCATION",
+      "Message": "The activation server determined the specified product key has been blocked for this geographic location.",
+      "DecimalCode": -1073430505,
+      "HexCode": "0xC004C017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_RESPONSE_NOT_AVAILABLE",
+      "Message": "The activation server experienced an error.",
+      "DecimalCode": -1073430507,
+      "HexCode": "0xC004C015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_GENERAL_ERROR",
+      "Message": "The activation server experienced a general error.",
+      "DecimalCode": -1073430448,
+      "HexCode": "0xC004C050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_TIMEBASED_ACTIVATION_BEFORE_START_DATE",
+      "Message": "The activation server reported that time based activation attempted before start date.",
+      "DecimalCode": -1073430480,
+      "HexCode": "0xC004C030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_TIMEBASED_ACTIVATION_AFTER_END_DATE",
+      "Message": "The activation server reported that time based activation attempted after end date.",
+      "DecimalCode": -1073430479,
+      "HexCode": "0xC004C031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_TIMEBASED_ACTIVATION_NOT_AVAILABLE",
+      "Message": "The activation server reported that new time based activation is not available.",
+      "DecimalCode": -1073430478,
+      "HexCode": "0xC004C032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_TIMEBASED_PRODUCT_KEY_NOT_CONFIGURED",
+      "Message": "The activation server reported that the time based product key is not configured for activation.",
+      "DecimalCode": -1073430477,
+      "HexCode": "0xC004C033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_NO_RULES_TO_ACTIVATE",
+      "Message": "The activation server reported that no business rules available to activate specified product key.",
+      "DecimalCode": -1073430449,
+      "HexCode": "0xC004C04F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_DIGITALMARKER_INVALID_BINDING",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -1073430447,
+      "HexCode": "0xC004C051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_DIGITALMARKER_BINDING_NOT_CONFIGURED",
+      "Message": "The activation server determined there is a problem with the specified product key.",
+      "DecimalCode": -1073430446,
+      "HexCode": "0xC004C052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_DYNAMICALLY_BLOCKED_PRODUCT_KEY",
+      "Message": "The activation server determined the specified product key has been blocked.",
+      "DecimalCode": -1073430432,
+      "HexCode": "0xC004C060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_MSCH_RESPONSE_NOT_AVAILABLE_VGA",
+      "Message": "The activation server determined the VGA service response is not available in the expected format.",
+      "DecimalCode": -1073429505,
+      "HexCode": "0xC004C3FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_BUSINESS_RULE_INPUT_NOT_FOUND",
+      "Message": "The activation server reported that business rule cound not find required input.",
+      "DecimalCode": -1073428736,
+      "HexCode": "0xC004C700",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_NULL_VALUE_FOR_PROPERTY_NAME_OR_ID",
+      "Message": "The activation server reported that NULL value specified for business property name and Id.",
+      "DecimalCode": -1073428656,
+      "HexCode": "0xC004C750",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_UNKNOWN_PROPERTY_NAME",
+      "Message": "The activation server reported that property name specifies unknown property.",
+      "DecimalCode": -1073428655,
+      "HexCode": "0xC004C751",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_UNKNOWN_PROPERTY_ID",
+      "Message": "The activation server reported that property Id specifies unknown property.",
+      "DecimalCode": -1073428654,
+      "HexCode": "0xC004C752",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_UPDATE_PRODUCTKEY_BINDING",
+      "Message": "The activation server reported that it failed to update product key binding.",
+      "DecimalCode": -1073428651,
+      "HexCode": "0xC004C755",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_INSERT_PRODUCTKEY_BINDING",
+      "Message": "The activation server reported that it failed to insert product key binding.",
+      "DecimalCode": -1073428650,
+      "HexCode": "0xC004C756",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_DELETE_PRODUCTKEY_BINDING",
+      "Message": "The activation server reported that it failed to delete product key binding.",
+      "DecimalCode": -1073428649,
+      "HexCode": "0xC004C757",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_PROCESS_PRODUCT_KEY_BINDINGS_XML",
+      "Message": "The activation server reported that it failed to process input XML for product key bindings.",
+      "DecimalCode": -1073428648,
+      "HexCode": "0xC004C758",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_INSERT_PRODUCT_KEY_PROPERTY",
+      "Message": "The activation server reported that it failed to insert product key property.",
+      "DecimalCode": -1073428646,
+      "HexCode": "0xC004C75A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_UPDATE_PRODUCT_KEY_PROPERTY",
+      "Message": "The activation server reported that it failed to update product key property.",
+      "DecimalCode": -1073428645,
+      "HexCode": "0xC004C75B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_DELETE_PRODUCT_KEY_PROPERTY",
+      "Message": "The activation server reported that it failed to delete product key property.",
+      "DecimalCode": -1073428644,
+      "HexCode": "0xC004C75C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_UNKNOWN_PRODUCT_KEY_TYPE",
+      "Message": "The activation server reported that the product key type is unknown.",
+      "DecimalCode": -1073428636,
+      "HexCode": "0xC004C764",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_PRODUCT_KEY_BEING_USED",
+      "Message": "The activation server reported that the product key type is being used by another user.",
+      "DecimalCode": -1073428624,
+      "HexCode": "0xC004C770",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_INSERT_PRODUCT_KEY_RECORD",
+      "Message": "The activation server reported that it failed to insert product key record.",
+      "DecimalCode": -1073428608,
+      "HexCode": "0xC004C780",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CHPA_FAILED_TO_UPDATE_PRODUCT_KEY_RECORD",
+      "Message": "The activation server reported that it failed to update product key record.",
+      "DecimalCode": -1073428607,
+      "HexCode": "0xC004C781",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_LICENSE_STATE_BREACH_GRACE",
+      "Message": "Genuine Validation determined the license state is invalid.",
+      "DecimalCode": -1073429871,
+      "HexCode": "0xC004C291",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_LICENSE_STATE_BREACH_GRACE_EXPIRED",
+      "Message": "Genuine Validation determined the license state is invalid.",
+      "DecimalCode": -1073429870,
+      "HexCode": "0xC004C292",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_TEMPLATE_ID",
+      "Message": "Genuine Validation determined the validation input template identifier is invalid.",
+      "DecimalCode": -1073429770,
+      "HexCode": "0xC004C2F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_XML_BLOB",
+      "Message": "Genuine Validation determined the validation input data blob is invalid.",
+      "DecimalCode": -1073429766,
+      "HexCode": "0xC004C2FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VALIDATION_BLOB_PARAM_NOT_FOUND",
+      "Message": "Genuine Validation determined the validation input data blob parameter is invalid.",
+      "DecimalCode": -1073429721,
+      "HexCode": "0xC004C327",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_CLIENT_TOKEN",
+      "Message": "Genuine Validation determined the client token data is invalid.",
+      "DecimalCode": -1073429720,
+      "HexCode": "0xC004C328",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_OFFLINE_BLOB",
+      "Message": "Genuine Validation determined the offline data blob is invalid.",
+      "DecimalCode": -1073429719,
+      "HexCode": "0xC004C329",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_OFFLINE_VALIDATION_BLOB_PARAM_NOT_FOUND",
+      "Message": "Genuine Validation determined the offline data blob parameter is invalid.",
+      "DecimalCode": -1073429718,
+      "HexCode": "0xC004C32A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_OSVERSION_TEMPLATEID",
+      "Message": "Genuine Validation determined the validation template identifier is invalid for this version of the Windows operating system.",
+      "DecimalCode": -1073429717,
+      "HexCode": "0xC004C32B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_OFFLINE_GENUINE_BLOB_REVOKED",
+      "Message": "Genuine Validation determined the offline genuine blob is revoked.",
+      "DecimalCode": -1073429716,
+      "HexCode": "0xC004C32C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_OFFLINE_GENUINE_BLOB_NOT_FOUND",
+      "Message": "Genuine Validation determined the offline genuine blob is not found.",
+      "DecimalCode": -1073429715,
+      "HexCode": "0xC004C32D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_OS_FOR_PRODUCT_KEY",
+      "Message": "Genuine Validation determined the product key is invalid for this version of the Windows operating system.",
+      "DecimalCode": -1073429503,
+      "HexCode": "0xC004C401",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_FILE_HASH",
+      "Message": "Genuine Validation determined the file hash is invalid.",
+      "DecimalCode": -1073429343,
+      "HexCode": "0xC004C4A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VALIDATION_BLOCKED_PRODUCT_KEY",
+      "Message": "Genuine Validation determined the product key has been blocked.",
+      "DecimalCode": -1073429342,
+      "HexCode": "0xC004C4A2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISMATCHED_KEY_TYPES",
+      "Message": "Genuine Validation determined the product key type is invalid.",
+      "DecimalCode": -1073429340,
+      "HexCode": "0xC004C4A4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VALIDATION_INVALID_PRODUCT_KEY",
+      "Message": "Genuine Validation determined the product key is invalid.",
+      "DecimalCode": -1073429339,
+      "HexCode": "0xC004C4A5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_OEM_OR_VOLUME_BINDING_DATA",
+      "Message": "Genuine Validation determined the OEM or Volume binding data is invalid.",
+      "DecimalCode": -1073429337,
+      "HexCode": "0xC004C4A7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_LICENSE_STATE",
+      "Message": "Genuine Validation determined the license state is invalid.",
+      "DecimalCode": -1073429336,
+      "HexCode": "0xC004C4A8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_IP_LOCATION_FALIED",
+      "Message": "Genuine Validation determined the specified product key has been blocked for this geographic location.",
+      "DecimalCode": -1073429335,
+      "HexCode": "0xC004C4A9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SOFTMOD_EXPLOIT_DETECTED",
+      "Message": "Genuine Validation detected Windows licensing exploits.",
+      "DecimalCode": -1073429333,
+      "HexCode": "0xC004C4AB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_TOKEN_DATA",
+      "Message": "Genuine Validation determined the token activation data is invalid.",
+      "DecimalCode": -1073429332,
+      "HexCode": "0xC004C4AC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_HEALTH_CHECK_FAILED_NEUTRAL_FILES",
+      "Message": "Genuine Validation detected tampered Windows binaries.",
+      "DecimalCode": -1073429331,
+      "HexCode": "0xC004C4AD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_HEALTH_CHECK_FAILED_MUI_FILES",
+      "Message": "Genuine Validation detected tampered Windows binaries.",
+      "DecimalCode": -1073429330,
+      "HexCode": "0xC004C4AE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_AD_DATA",
+      "Message": "Genuine Validation determined the active directory activation data is invalid.",
+      "DecimalCode": -1073429329,
+      "HexCode": "0xC004C4AF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_RSDP_COUNT",
+      "Message": "Genuine Validation detected Windows licensing exploits.",
+      "DecimalCode": -1073429328,
+      "HexCode": "0xC004C4B0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_ENGINE_DETECTED_EXPLOIT",
+      "Message": "Genuine Validation detected Windows licensing exploits.",
+      "DecimalCode": -1073429327,
+      "HexCode": "0xC004C4B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NON_GENUINE_STATUS_LAST",
+      "Message": "Genuine Validation determined your copy of Windows is not genuine.",
+      "DecimalCode": -1073428992,
+      "HexCode": "0xC004C600",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOTIFICATION_BREACH_DETECTED",
+      "Message": "Genuine Validation detected Windows licensing exploits.",
+      "DecimalCode": -1073429199,
+      "HexCode": "0xC004C531",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOTIFICATION_GRACE_EXPIRED",
+      "Message": "Genuine Validation determined the license state is in notification due to expired grace.",
+      "DecimalCode": -1073429198,
+      "HexCode": "0xC004C532",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOTIFICATION_OTHER_REASONS",
+      "Message": "Genuine Validation determined the license state is in notification.",
+      "DecimalCode": -1073429197,
+      "HexCode": "0xC004C533",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_CONTEXT",
+      "Message": "The Software Licensing Service determined that the specified context is invalid.",
+      "DecimalCode": -1073422335,
+      "HexCode": "0xC004E001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKEN_STORE_INVALID_STATE",
+      "Message": "The Software Licensing Service reported that the license store contains inconsistent data.",
+      "DecimalCode": -1073422334,
+      "HexCode": "0xC004E002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EVALUATION_FAILED",
+      "Message": "The Software Licensing Service reported that license evaluation failed.",
+      "DecimalCode": -1073422333,
+      "HexCode": "0xC004E003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOT_EVALUATED",
+      "Message": "The Software Licensing Service reported that the license has not been evaluated.",
+      "DecimalCode": -1073422332,
+      "HexCode": "0xC004E004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOT_ACTIVATED",
+      "Message": "The Software Licensing Service reported that the license is not activated.",
+      "DecimalCode": -1073422331,
+      "HexCode": "0xC004E005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_GUID",
+      "Message": "The Software Licensing Service reported that the license contains invalid data.",
+      "DecimalCode": -1073422330,
+      "HexCode": "0xC004E006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_TOKEN_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the license store does not contain the requested license.",
+      "DecimalCode": -1073422329,
+      "HexCode": "0xC004E007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_NO_PROPERTIES",
+      "Message": "The Software Licensing Service reported that the license property is invalid.",
+      "DecimalCode": -1073422328,
+      "HexCode": "0xC004E008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_NOT_INITIALIZED",
+      "Message": "The Software Licensing Service reported that the license store is not initialized.",
+      "DecimalCode": -1073422327,
+      "HexCode": "0xC004E009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_ALREADY_INITIALIZED",
+      "Message": "The Software Licensing Service reported that the license store is already initialized.",
+      "DecimalCode": -1073422326,
+      "HexCode": "0xC004E00A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_NO_ID_SET",
+      "Message": "The Software Licensing Service reported that the license property is invalid.",
+      "DecimalCode": -1073422325,
+      "HexCode": "0xC004E00B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_CANT_CREATE_FILE",
+      "Message": "The Software Licensing Service reported that the license could not be opened or created.",
+      "DecimalCode": -1073422324,
+      "HexCode": "0xC004E00C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_CANT_WRITE_TO_FILE",
+      "Message": "The Software Licensing Service reported that the license could not be written.",
+      "DecimalCode": -1073422323,
+      "HexCode": "0xC004E00D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_CANT_READ_FILE",
+      "Message": "The Software Licensing Service reported that the license store could not read the license file.",
+      "DecimalCode": -1073422322,
+      "HexCode": "0xC004E00E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_CANT_PARSE_PROPERTIES",
+      "Message": "The Software Licensing Service reported that the license property is corrupted.",
+      "DecimalCode": -1073422321,
+      "HexCode": "0xC004E00F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_PROPERTY_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the license property is missing.",
+      "DecimalCode": -1073422320,
+      "HexCode": "0xC004E010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_INVALID_FILE",
+      "Message": "The Software Licensing Service reported that the license store contains an invalid license file.",
+      "DecimalCode": -1073422319,
+      "HexCode": "0xC004E011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_CANT_CREATE_MUTEX",
+      "Message": "The Software Licensing Service reported that the license store failed to start synchronization properly.",
+      "DecimalCode": -1073422318,
+      "HexCode": "0xC004E012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_CANT_ACQUIRE_MUTEX",
+      "Message": "The Software Licensing Service reported that the license store failed to synchronize properly.",
+      "DecimalCode": -1073422317,
+      "HexCode": "0xC004E013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TOKSTO_NO_TOKEN_DATA",
+      "Message": "The Software Licensing Service reported that the license property is invalid.",
+      "DecimalCode": -1073422316,
+      "HexCode": "0xC004E014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EUL_CONSUMPTION_FAILED",
+      "Message": "The Software Licensing Service reported that license consumption failed.",
+      "DecimalCode": -1073422315,
+      "HexCode": "0xC004E015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_CONFIG",
+      "Message": "The Software Licensing Service reported that the product key is invalid.",
+      "DecimalCode": -1073422314,
+      "HexCode": "0xC004E016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_UNIQUEID",
+      "Message": "The Software Licensing Service reported that the product key is invalid.",
+      "DecimalCode": -1073422313,
+      "HexCode": "0xC004E017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_ALGORITHM",
+      "Message": "The Software Licensing Service reported that the product key is invalid.",
+      "DecimalCode": -1073422312,
+      "HexCode": "0xC004E018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INTERNAL_ERROR",
+      "Message": "The Software Licensing Service determined that validation of the specified product key failed.",
+      "DecimalCode": -1073422311,
+      "HexCode": "0xC004E019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_INVALID_ADDON_INFO",
+      "Message": "The Software Licensing Service reported that invalid add-on information was found.",
+      "DecimalCode": -1073422310,
+      "HexCode": "0xC004E01A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_HWID_ERROR",
+      "Message": "The Software Licensing Service reported that not all hardware information could be collected.",
+      "DecimalCode": -1073422309,
+      "HexCode": "0xC004E01B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_KEYCHANGE1",
+      "Message": "This evaluation product key is no longer valid.",
+      "DecimalCode": -1073422308,
+      "HexCode": "0xC004E01C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_KEYCHANGE2",
+      "Message": "The new product key cannot be used on this installation of Windows. Type a different product key. (CD-AB)",
+      "DecimalCode": -1073422307,
+      "HexCode": "0xC004E01D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_KEYCHANGE3",
+      "Message": "The new product key cannot be used on this installation of Windows. Type a different product key. (AB-AB)",
+      "DecimalCode": -1073422306,
+      "HexCode": "0xC004E01E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_POLICY_OTHERINFO_MISMATCH",
+      "Message": "The Software Licensing Service reported that there is a mismatched between a policy value and information stored in the OtherInfo section.",
+      "DecimalCode": -1073422304,
+      "HexCode": "0xC004E020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PRODUCT_UNIQUENESS_GROUP_ID_INVALID",
+      "Message": "The Software Licensing Service reported that the Genuine information contained in the license is not consistent.",
+      "DecimalCode": -1073422303,
+      "HexCode": "0xC004E021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SECURE_STORE_ID_MISMATCH",
+      "Message": "The Software Licensing Service reported that the secure store id value in license does not match with the current value.",
+      "DecimalCode": -1073422302,
+      "HexCode": "0xC004E022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_RULESET_RULE",
+      "Message": "The Software Licensing Service reported that the notification rules appear to be invalid.",
+      "DecimalCode": -1073422301,
+      "HexCode": "0xC004E023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_CONTEXT_DATA",
+      "Message": "The Software Licensing Service reported that the reported machine data appears to be invalid.",
+      "DecimalCode": -1073422300,
+      "HexCode": "0xC004E024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_HASH",
+      "Message": "The Software Licensing Service reported that the data hash does not correspond to the data.",
+      "DecimalCode": -1073422299,
+      "HexCode": "0xC004E025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_USE_OF_ADD_ON_PKEY",
+      "Message": "The Software Licensing Service reported that a valid product key for an add-on sku was entered where a Windows product key was expected.",
+      "DecimalCode": -2147164122,
+      "HexCode": "0x8004E026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_WINDOWS_VERSION_MISMATCH",
+      "Message": "The Software Licensing Service reported that the version of SPPSvc does not match the policy.",
+      "DecimalCode": -1073422297,
+      "HexCode": "0xC004E027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_ACTIVATION_IN_PROGRESS",
+      "Message": "The Software Licensing Service reported that there is another activation attempt in progress for this sku.  Please wait for that attempt to complete before trying again.",
+      "DecimalCode": -1073422296,
+      "HexCode": "0xC004E028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_STORE_UPGRADE_TOKEN_REQUIRED",
+      "Message": "The Software Licensing Service reported that the activated license requires a corresponding Store upgrade license in order to work.  Please visit the Store to purchase a new license or re-download an existing one.",
+      "DecimalCode": -1073422295,
+      "HexCode": "0xC004E029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_STORE_UPGRADE_TOKEN_WRONG_EDITION",
+      "Message": "The Software Licensing Service reported that the Store upgrade license is not enabled for the current OS edition.  Please visit the Store to purchase the appropriate license.",
+      "DecimalCode": -1073422294,
+      "HexCode": "0xC004E02A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_STORE_UPGRADE_TOKEN_WRONG_PID",
+      "Message": "The Software Licensing Service reported that the Store upgrade license does not match the current active product key.  Please visit the Store to purchase a new license or re-download an existing one.",
+      "DecimalCode": -1073422293,
+      "HexCode": "0xC004E02B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_STORE_UPGRADE_TOKEN_NOT_PRS_SIGNED",
+      "Message": "The Software Licensing Service reported that the Store upgrade license does not match the current signing level for the installed Operating System.  Please visit the Store to purchase a new license or re-download an existing one.",
+      "DecimalCode": -1073422292,
+      "HexCode": "0xC004E02C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_STORE_UPGRADE_TOKEN_WRONG_VERSION",
+      "Message": "The Software Licensing Service reported that the Store upgrade license does not enable the current version of the installed Operating System.  Please visit the Store to purchase a new license or re-download an existing one.",
+      "DecimalCode": -1073422291,
+      "HexCode": "0xC004E02D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_STORE_UPGRADE_TOKEN_NOT_AUTHORIZED",
+      "Message": "The Software Licensing Service reported that the Store upgrade license could not be authorized.  Please visit the Store to purchase a new license or re-download an existing one.",
+      "DecimalCode": -1073422290,
+      "HexCode": "0xC004E02E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_FS_VERSION",
+      "Message": "The Software Licensing Service reported that the Token Store file version is invalid.",
+      "DecimalCode": -2147163903,
+      "HexCode": "0x8004E101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_FD_TABLE",
+      "Message": "The Software Licensing Service reported that the Token Store contains an invalid descriptor table.",
+      "DecimalCode": -2147163902,
+      "HexCode": "0x8004E102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_SYNC",
+      "Message": "The Software Licensing Service reported that the Token Store contains a token with an invalid header/footer.",
+      "DecimalCode": -2147163901,
+      "HexCode": "0x8004E103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_BAD_TOKEN_NAME",
+      "Message": "The Software Licensing Service reported that a Token Store token has an invalid name.",
+      "DecimalCode": -2147163900,
+      "HexCode": "0x8004E104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_BAD_TOKEN_EXT",
+      "Message": "The Software Licensing Service reported that a Token Store token has an invalid extension.",
+      "DecimalCode": -2147163899,
+      "HexCode": "0x8004E105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_DUPLICATE_TOKEN_NAME",
+      "Message": "The Software Licensing Service reported that the Token Store contains a duplicate token.",
+      "DecimalCode": -2147163898,
+      "HexCode": "0x8004E106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_TOKEN_SIZE_MISMATCH",
+      "Message": "The Software Licensing Service reported that a token in the Token Store has a size mismatch.",
+      "DecimalCode": -2147163897,
+      "HexCode": "0x8004E107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_TOKEN_DATA_HASH",
+      "Message": "The Software Licensing Service reported that a token in the Token Store contains an invalid hash.",
+      "DecimalCode": -2147163896,
+      "HexCode": "0x8004E108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_FILE_READ_ERROR",
+      "Message": "The Software Licensing Service reported that the Token Store was unable to read a token.",
+      "DecimalCode": -2147163895,
+      "HexCode": "0x8004E109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_FILE_WRITE_ERROR",
+      "Message": "The Software Licensing Service reported that the Token Store was unable to write a token.",
+      "DecimalCode": -2147163894,
+      "HexCode": "0x8004E10A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_FILE_POSITION",
+      "Message": "The Software Licensing Service reported that the Token Store attempted an invalid file operation.",
+      "DecimalCode": -2147163893,
+      "HexCode": "0x8004E10B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_NO_ACTIVE_TRANSACTION",
+      "Message": "The Software Licensing Service reported that there is no active transaction.",
+      "DecimalCode": -2147163892,
+      "HexCode": "0x8004E10C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_FS_HEADER",
+      "Message": "The Software Licensing Service reported that the Token Store file header is invalid.",
+      "DecimalCode": -2147163891,
+      "HexCode": "0x8004E10D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SFS_INVALID_TOKEN_DESCRIPTOR",
+      "Message": "The Software Licensing Service reported that a Token Store token descriptor is invalid.",
+      "DecimalCode": -2147163890,
+      "HexCode": "0x8004E10E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INTERNAL_ERROR",
+      "Message": "The Software Licensing Service reported an internal error.",
+      "DecimalCode": -1073418239,
+      "HexCode": "0xC004F001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_RIGHT_NOT_CONSUMED",
+      "Message": "The Software Licensing Service reported that rights consumption failed.",
+      "DecimalCode": -1073418238,
+      "HexCode": "0xC004F002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_USE_LICENSE_NOT_INSTALLED",
+      "Message": "The Software Licensing Service reported that the required license could not be found.",
+      "DecimalCode": -1073418237,
+      "HexCode": "0xC004F003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISMATCHED_PKEY_RANGE",
+      "Message": "The Software Licensing Service reported that the product key does not match the range defined in the license.",
+      "DecimalCode": -1073418236,
+      "HexCode": "0xC004F004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISMATCHED_PID",
+      "Message": "The Software Licensing Service reported that the product key does not match the product key for the license.",
+      "DecimalCode": -1073418235,
+      "HexCode": "0xC004F005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EXTERNAL_SIGNATURE_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the signature file for the license is not available.",
+      "DecimalCode": -1073418234,
+      "HexCode": "0xC004F006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_RAC_NOT_AVAILABLE",
+      "Message": "The Software Licensing Service reported that the license could not be found.",
+      "DecimalCode": -1073418233,
+      "HexCode": "0xC004F007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SPC_NOT_AVAILABLE",
+      "Message": "The Software Licensing Service reported that the license could not be found.",
+      "DecimalCode": -1073418232,
+      "HexCode": "0xC004F008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_GRACE_TIME_EXPIRED",
+      "Message": "The Software Licensing Service reported that the grace period expired.",
+      "DecimalCode": -1073418231,
+      "HexCode": "0xC004F009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISMATCHED_APPID",
+      "Message": "The Software Licensing Service reported that the application ID does not match the application ID for the license.",
+      "DecimalCode": -1073418230,
+      "HexCode": "0xC004F00A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NO_PID_CONFIG_DATA",
+      "Message": "The Software Licensing Service reported that the product identification data is not available.",
+      "DecimalCode": -1073418229,
+      "HexCode": "0xC004F00B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_OOB_GRACE_PERIOD",
+      "Message": "The Software Licensing Service reported that the application is running within the valid grace period.",
+      "DecimalCode": 1074065420,
+      "HexCode": "0x4004F00C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_OOT_GRACE_PERIOD",
+      "Message": "The Software Licensing Service reported that the application is running within the valid out of tolerance grace period.",
+      "DecimalCode": 1074065421,
+      "HexCode": "0x4004F00D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISMATCHED_SECURITY_PROCESSOR",
+      "Message": "The Software Licensing Service determined that the license could not be used by the current version of the security processor component.",
+      "DecimalCode": -1073418226,
+      "HexCode": "0xC004F00E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_OUT_OF_TOLERANCE",
+      "Message": "The Software Licensing Service reported that the hardware ID binding is beyond the level of tolerance.",
+      "DecimalCode": -1073418225,
+      "HexCode": "0xC004F00F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_PKEY",
+      "Message": "The Software Licensing Service reported that the product key is invalid.",
+      "DecimalCode": -1073418224,
+      "HexCode": "0xC004F010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_FILE_NOT_INSTALLED",
+      "Message": "The Software Licensing Service reported that the license file is not installed.",
+      "DecimalCode": -1073418223,
+      "HexCode": "0xC004F011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VALUE_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the call has failed because the value for the input key was not found.",
+      "DecimalCode": -1073418222,
+      "HexCode": "0xC004F012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_RIGHT_NOT_GRANTED",
+      "Message": "The Software Licensing Service determined that there is no permission to run the software.",
+      "DecimalCode": -1073418221,
+      "HexCode": "0xC004F013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_NOT_INSTALLED",
+      "Message": "The Software Licensing Service reported that the product key is not available.",
+      "DecimalCode": -1073418220,
+      "HexCode": "0xC004F014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PRODUCT_SKU_NOT_INSTALLED",
+      "Message": "The Software Licensing Service reported that the license is not installed.",
+      "DecimalCode": -1073418219,
+      "HexCode": "0xC004F015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOT_SUPPORTED",
+      "Message": "The Software Licensing Service determined that the request is not supported.",
+      "DecimalCode": -1073418218,
+      "HexCode": "0xC004F016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PUBLISHING_LICENSE_NOT_INSTALLED",
+      "Message": "The Software Licensing Service reported that the license is not installed.",
+      "DecimalCode": -1073418217,
+      "HexCode": "0xC004F017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_SERVER_URL_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the license does not contain valid location data for the activation server.",
+      "DecimalCode": -1073418216,
+      "HexCode": "0xC004F018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_EVENT_ID",
+      "Message": "The Software Licensing Service determined that the requested event ID is invalid.",
+      "DecimalCode": -1073418215,
+      "HexCode": "0xC004F019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EVENT_NOT_REGISTERED",
+      "Message": "The Software Licensing Service determined that the requested event is not registered with the service.",
+      "DecimalCode": -1073418214,
+      "HexCode": "0xC004F01A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EVENT_ALREADY_REGISTERED",
+      "Message": "The Software Licensing Service reported that the event ID is already registered.",
+      "DecimalCode": -1073418213,
+      "HexCode": "0xC004F01B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_DECRYPTION_LICENSES_NOT_AVAILABLE",
+      "Message": "The Software Licensing Service reported that the license is not installed.",
+      "DecimalCode": -1073418212,
+      "HexCode": "0xC004F01C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_SIGNATURE_VERIFICATION_FAILED",
+      "Message": "The Software Licensing Service reported that the verification of the license failed.",
+      "DecimalCode": -1073418211,
+      "HexCode": "0xC004F01D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_DATATYPE_MISMATCHED",
+      "Message": "The Software Licensing Service determined that the input data type does not match the data type in the license.",
+      "DecimalCode": -1073418210,
+      "HexCode": "0xC004F01E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_LICENSE",
+      "Message": "The Software Licensing Service determined that the license is invalid.",
+      "DecimalCode": -1073418209,
+      "HexCode": "0xC004F01F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_PACKAGE",
+      "Message": "The Software Licensing Service determined that the license package is invalid.",
+      "DecimalCode": -1073418208,
+      "HexCode": "0xC004F020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VALIDITY_TIME_EXPIRED",
+      "Message": "The Software Licensing Service reported that the validity period of the license has expired.",
+      "DecimalCode": -1073418207,
+      "HexCode": "0xC004F021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_AUTHORIZATION_FAILED",
+      "Message": "The Software Licensing Service reported that the license authorization failed.",
+      "DecimalCode": -1073418206,
+      "HexCode": "0xC004F022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_DECRYPTION_FAILED",
+      "Message": "The Software Licensing Service reported that the license is invalid.",
+      "DecimalCode": -1073418205,
+      "HexCode": "0xC004F023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_WINDOWS_INVALID_LICENSE_STATE",
+      "Message": "The Software Licensing Service reported that the license is invalid.",
+      "DecimalCode": -1073418204,
+      "HexCode": "0xC004F024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LUA_ACCESSDENIED",
+      "Message": "The Software Licensing Service reported that the action requires administrator privilege.",
+      "DecimalCode": -1073418203,
+      "HexCode": "0xC004F025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PROXY_KEY_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the required data is not found.",
+      "DecimalCode": -1073418202,
+      "HexCode": "0xC004F026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TAMPER_DETECTED",
+      "Message": "The Software Licensing Service reported that the license is tampered.",
+      "DecimalCode": -1073418201,
+      "HexCode": "0xC004F027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_POLICY_CACHE_INVALID",
+      "Message": "The Software Licensing Service reported that the policy cache is invalid.",
+      "DecimalCode": -1073418200,
+      "HexCode": "0xC004F028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_RUNNING_MODE",
+      "Message": "The Software Licensing Service cannot be started in the current OS mode.",
+      "DecimalCode": -1073418199,
+      "HexCode": "0xC004F029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_NOT_SIGNED",
+      "Message": "The Software Licensing Service reported that the license is invalid.",
+      "DecimalCode": -1073418198,
+      "HexCode": "0xC004F02A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_INVALID_DATA",
+      "Message": "The Software Licensing Service reported that the format for the offline activation data is incorrect.",
+      "DecimalCode": -1073418196,
+      "HexCode": "0xC004F02C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_INVALID_VERSION",
+      "Message": "The Software Licensing Service determined that the version of the offline Confirmation ID (CID) is incorrect.",
+      "DecimalCode": -1073418195,
+      "HexCode": "0xC004F02D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_VERSION_NOT_SUPPORTED",
+      "Message": "The Software Licensing Service determined that the version of the offline Confirmation ID (CID) is not supported.",
+      "DecimalCode": -1073418194,
+      "HexCode": "0xC004F02E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_INVALID_DATA_LENGTH",
+      "Message": "The Software Licensing Service reported that the length of the offline Confirmation ID (CID) is incorrect.",
+      "DecimalCode": -1073418193,
+      "HexCode": "0xC004F02F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_NOT_DEPOSITED",
+      "Message": "The Software Licensing Service determined that the Installation ID (IID) or the Confirmation ID (CID) could not been saved.",
+      "DecimalCode": -1073418192,
+      "HexCode": "0xC004F030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_MISMATCHED",
+      "Message": "The Installation ID (IID) and the Confirmation ID (CID) do not match. Please confirm the IID and reacquire a new CID if necessary.",
+      "DecimalCode": -1073418191,
+      "HexCode": "0xC004F031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_BINDING_BLOB",
+      "Message": "The Software Licensing Service determined that the binding data is invalid.",
+      "DecimalCode": -1073418190,
+      "HexCode": "0xC004F032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PRODUCT_KEY_INSTALLATION_NOT_ALLOWED",
+      "Message": "The Software Licensing Service reported that the product key is not allowed to be installed. Please see the eventlog for details.",
+      "DecimalCode": -1073418189,
+      "HexCode": "0xC004F033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EUL_NOT_AVAILABLE",
+      "Message": "The Software Licensing Service reported that the license could not be found or was invalid.",
+      "DecimalCode": -1073418188,
+      "HexCode": "0xC004F034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_NOT_WINDOWS_SLP",
+      "Message": "The Software Licensing Service reported that the computer could not be activated with a Volume license product key. Volume-licensed systems require upgrading from a qualifying operating system. Please contact your system administrator or use a different type of key.",
+      "DecimalCode": -1073418187,
+      "HexCode": "0xC004F035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_NOT_ENOUGH_COUNT",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The count reported by your Key Management Service (KMS) is insufficient. Please contact your system administrator.",
+      "DecimalCode": -1073418184,
+      "HexCode": "0xC004F038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_BINDING_SERVICE_NOT_ENABLED",
+      "Message": "The Software Licensing Service reported that the product could not be activated.  The Key Management Service (KMS) is not enabled.",
+      "DecimalCode": -1073418183,
+      "HexCode": "0xC004F039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_INFO_PRODUCT_USER_RIGHT",
+      "Message": "The Software Licensing Service reported that the product was activated but the owner should verify the Product Use Rights.",
+      "DecimalCode": 1074065472,
+      "HexCode": "0x4004F040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_KEY_MANAGEMENT_SERVICE_NOT_ACTIVATED",
+      "Message": "The Software Licensing Service determined that the Key Management Service (KMS) is not activated. KMS needs to be activated. Please contact system administrator.",
+      "DecimalCode": -1073418175,
+      "HexCode": "0xC004F041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_KEY_MANAGEMENT_SERVICE_ID_MISMATCH",
+      "Message": "The Software Licensing Service determined that the specified Key Management Service (KMS) cannot be used.",
+      "DecimalCode": -1073418174,
+      "HexCode": "0xC004F042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PROXY_POLICY_NOT_UPDATED",
+      "Message": "The Software Licensing Service reported that the proxy policy has not been updated.",
+      "DecimalCode": -1073418169,
+      "HexCode": "0xC004F047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_INVALID_CHECK_DIGITS",
+      "Message": "The Software Licensing Service determined that the Installation ID (IID) or the Confirmation ID (CID) is invalid.",
+      "DecimalCode": -1073418163,
+      "HexCode": "0xC004F04D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_MANAGEMENT_DATA_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that license management information was not found in the licenses.",
+      "DecimalCode": -1073418161,
+      "HexCode": "0xC004F04F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_PRODUCT_KEY",
+      "Message": "The Software Licensing Service reported that the product key is invalid.",
+      "DecimalCode": -1073418160,
+      "HexCode": "0xC004F050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_BLOCKED_PRODUCT_KEY",
+      "Message": "The Software Licensing Service reported that the product key is blocked.",
+      "DecimalCode": -1073418159,
+      "HexCode": "0xC004F051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_DUPLICATE_POLICY",
+      "Message": "The Software Licensing Service reported that the licenses contain duplicated properties.",
+      "DecimalCode": -1073418158,
+      "HexCode": "0xC004F052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISSING_OVERRIDE_ONLY_ATTRIBUTE",
+      "Message": "The Software Licensing Service determined that the license is invalid. The license contains an override policy that is not configured properly.",
+      "DecimalCode": -1073418157,
+      "HexCode": "0xC004F053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_MANAGEMENT_DATA_DUPLICATED",
+      "Message": "The Software Licensing Service reported that license management information has duplicated data.",
+      "DecimalCode": -1073418156,
+      "HexCode": "0xC004F054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_BASE_SKU_NOT_AVAILABLE",
+      "Message": "The Software Licensing Service reported that the base SKU is not available.",
+      "DecimalCode": -1073418155,
+      "HexCode": "0xC004F055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_MACHINE_NOT_BOUND",
+      "Message": "The Software Licensing Service reported that the product could not be activated using the Key Management Service (KMS).",
+      "DecimalCode": -1073418154,
+      "HexCode": "0xC004F056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MISSING_ACPI_SLIC",
+      "Message": "The Software Licensing Service reported that the computer BIOS is missing a required license.",
+      "DecimalCode": -1073418153,
+      "HexCode": "0xC004F057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MISSING_SLP_MARKER",
+      "Message": "The Software Licensing Service reported that the computer BIOS is missing a required license.",
+      "DecimalCode": -1073418152,
+      "HexCode": "0xC004F058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_BAD_FORMAT",
+      "Message": "The Software Licensing Service reported that a license in the computer BIOS is invalid.",
+      "DecimalCode": -1073418151,
+      "HexCode": "0xC004F059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_PACKAGE_VERSION",
+      "Message": "The Software Licensing Service determined that the version of the license package is invalid.",
+      "DecimalCode": -1073418144,
+      "HexCode": "0xC004F060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PKEY_INVALID_UPGRADE",
+      "Message": "The Software Licensing Service determined that this specified product key can only be used for upgrading, not for clean installations.",
+      "DecimalCode": -1073418143,
+      "HexCode": "0xC004F061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_ISSUANCE_LICENSE_NOT_INSTALLED",
+      "Message": "The Software Licensing Service reported that a required license could not be found.",
+      "DecimalCode": -1073418142,
+      "HexCode": "0xC004F062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_OEM_CERT_MISSING",
+      "Message": "The Software Licensing Service reported that the computer is missing a required OEM license.",
+      "DecimalCode": -1073418141,
+      "HexCode": "0xC004F063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NONGENUINE_GRACE_TIME_EXPIRED",
+      "Message": "The Software Licensing Service reported that the non-genuine grace period expired.",
+      "DecimalCode": -1073418140,
+      "HexCode": "0xC004F064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_NONGENUINE_GRACE_PERIOD",
+      "Message": "The Software Licensing Service reported that the application is running within the valid non-genuine grace period.",
+      "DecimalCode": 1074065509,
+      "HexCode": "0x4004F065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_DEPENDENT_PROPERTY_NOT_SET",
+      "Message": "The Software Licensing Service reported that the genuine information property can not be set before dependent property been set.",
+      "DecimalCode": -1073418138,
+      "HexCode": "0xC004F066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NONGENUINE_GRACE_TIME_EXPIRED_2",
+      "Message": "The Software Licensing Service reported that the non-genuine grace period expired (type 2).",
+      "DecimalCode": -1073418137,
+      "HexCode": "0xC004F067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_NONGENUINE_GRACE_PERIOD_2",
+      "Message": "The Software Licensing Service reported that the application is running within the valid non-genuine grace period (type 2).",
+      "DecimalCode": 1074065512,
+      "HexCode": "0x4004F068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_MISMATCHED_PRODUCT_SKU",
+      "Message": "The Software Licensing Service reported that the product SKU is not found.",
+      "DecimalCode": -1073418135,
+      "HexCode": "0xC004F069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_OPERATION_NOT_ALLOWED",
+      "Message": "The Software Licensing Service reported that the requested operation is not allowed.",
+      "DecimalCode": -1073418134,
+      "HexCode": "0xC004F06A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_KEY_MANAGEMENT_SERVICE_VM_NOT_SUPPORTED",
+      "Message": "The Software Licensing Service determined that it is running in a virtual machine. The Key Management Service (KMS) is not supported in this mode.",
+      "DecimalCode": -1073418133,
+      "HexCode": "0xC004F06B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_INVALID_TIMESTAMP",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The Key Management Service (KMS) determined that the request timestamp is invalid.",
+      "DecimalCode": -1073418132,
+      "HexCode": "0xC004F06C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PLUGIN_INVALID_MANIFEST",
+      "Message": "The Software Licensing Service reported that the plug-in manifest file is incorrect.",
+      "DecimalCode": -1073418127,
+      "HexCode": "0xC004F071",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_APPLICATION_POLICIES_MISSING",
+      "Message": "The Software Licensing Service reported that the license policies for fast query could not be found.",
+      "DecimalCode": -1073418126,
+      "HexCode": "0xC004F072",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_APPLICATION_POLICIES_NOT_LOADED",
+      "Message": "The Software Licensing Service reported that the license policies for fast query have not been loaded.",
+      "DecimalCode": -1073418125,
+      "HexCode": "0xC004F073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_BINDING_SERVICE_UNAVAILABLE",
+      "Message": "The Software Licensing Service reported that the product could not be activated. No Key Management Service (KMS) could be contacted. Please see the Application Event Log for additional information.",
+      "DecimalCode": -1073418124,
+      "HexCode": "0xC004F074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SERVICE_STOPPING",
+      "Message": "The Software Licensing Service reported that the operation cannot be completed because the service is stopping.",
+      "DecimalCode": -1073418123,
+      "HexCode": "0xC004F075",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_PLUGIN_NOT_REGISTERED",
+      "Message": "The Software Licensing Service reported that the requested plug-in cannot be found.",
+      "DecimalCode": -1073418122,
+      "HexCode": "0xC004F076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_AUTHN_WRONG_VERSION",
+      "Message": "The Software Licensing Service determined incompatible version of authentication data.",
+      "DecimalCode": -1073418121,
+      "HexCode": "0xC004F077",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_AUTHN_MISMATCHED_KEY",
+      "Message": "The Software Licensing Service reported that the key is mismatched.",
+      "DecimalCode": -1073418120,
+      "HexCode": "0xC004F078",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_AUTHN_CHALLENGE_NOT_SET",
+      "Message": "The Software Licensing Service reported that the authentication data is not set.",
+      "DecimalCode": -1073418119,
+      "HexCode": "0xC004F079",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_AUTHN_CANT_VERIFY",
+      "Message": "The Software Licensing Service reported that the verification could not be done.",
+      "DecimalCode": -1073418118,
+      "HexCode": "0xC004F07A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SERVICE_RUNNING",
+      "Message": "The requested operation is unavailable while the Software Licensing Service is running.",
+      "DecimalCode": -1073418117,
+      "HexCode": "0xC004F07B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_INVALID_MARKER_VERSION",
+      "Message": "The Software Licensing Service determined that the version of the computer BIOS is invalid.",
+      "DecimalCode": -1073418116,
+      "HexCode": "0xC004F07C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INVALID_PRODUCT_KEY_TYPE",
+      "Message": "The Software Licensing Service reported that the product key cannot be used for this type of activation.",
+      "DecimalCode": -1073418115,
+      "HexCode": "0xC004F07D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_MISMATCHED_PKEY",
+      "Message": "The Installation ID (IID) and the Confirmation ID (CID) do not match the product key.",
+      "DecimalCode": -1073418114,
+      "HexCode": "0xC004F07E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_CIDIID_NOT_BOUND",
+      "Message": "The Installation ID (IID) and the Confirmation ID (CID) are not bound to the current environment.",
+      "DecimalCode": -1073418113,
+      "HexCode": "0xC004F07F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_LICENSE_NOT_BOUND",
+      "Message": "The Software Licensing Service reported that the license is not bound to the current environment.",
+      "DecimalCode": -1073418112,
+      "HexCode": "0xC004F080",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_AD_AO_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the Active Directory Activation Object could not be found or was invalid.",
+      "DecimalCode": -1073418111,
+      "HexCode": "0xC004F081",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_AD_AO_NAME_TOO_LONG",
+      "Message": "The Software Licensing Service reported that the name specified for the Active Directory Activation Object is too long.",
+      "DecimalCode": -1073418110,
+      "HexCode": "0xC004F082",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VL_AD_SCHEMA_VERSION_NOT_SUPPORTED",
+      "Message": "The Software Licensing Service reported that Active Directory-Based Activation is not supported in the current Active Directory schema.",
+      "DecimalCode": -1073418109,
+      "HexCode": "0xC004F083",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MSOA_BAD_FORMAT",
+      "Message": "The Software Licensing Service reported that the firmware on this device is corrupted.",
+      "DecimalCode": -1073418096,
+      "HexCode": "0xC004F090",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MSOA_BAD_DATA_HEADER",
+      "Message": "The Software Licensing Service reported that the firmware on this device has invalid data",
+      "DecimalCode": -1073418095,
+      "HexCode": "0xC004F091",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MSOA_INVALID_DATA_LENGTH",
+      "Message": "The Software Licensing Service reported that the firmware on this device has invalid data length",
+      "DecimalCode": -1073418094,
+      "HexCode": "0xC004F092",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MSOA_INVALID_PRODUCT_KEY",
+      "Message": "The Software Licensing Service reported that the product key in the firmware on this device is invalid",
+      "DecimalCode": -1073418093,
+      "HexCode": "0xC004F093",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_INCOMPLETE_OR_OLD_DISM_BINARIES",
+      "Message": "The Software Licensing Service was unable to cross check the edition of the product key using the DISM binaries available",
+      "DecimalCode": -1073418092,
+      "HexCode": "0xC004F094",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_SLP_MSOA_PRODUCT_KEY_MISMATCH",
+      "Message": "The Software Licensing Service was unable to match the edition of the product key",
+      "DecimalCode": -1073418091,
+      "HexCode": "0xC004F095",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NOT_GENUINE",
+      "Message": "The Software Licensing Service reported that current state is not genuine.",
+      "DecimalCode": -1073417728,
+      "HexCode": "0xC004F200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_EDITION_MISMATCHED",
+      "Message": "The Software Licensing Service reported that the license edition does match the computer edition.",
+      "DecimalCode": -1073417712,
+      "HexCode": "0xC004F210",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_HWID_CHANGED",
+      "Message": "The Software Licensing Service reported that the hardware of the device may have changed.",
+      "DecimalCode": -1073417711,
+      "HexCode": "0xC004F211",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_OEM_KEY_EDITION_MISMATCH",
+      "Message": "The Software Licensing Service reported that the edition of the OEM key does not match the edition of Windows.",
+      "DecimalCode": -1073417710,
+      "HexCode": "0xC004F212",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_NO_PRODUCT_KEY_FOUND",
+      "Message": "The Software Licensing Service reported that no product key was found on the system.",
+      "DecimalCode": -1073417709,
+      "HexCode": "0xC004F213",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_DOWNLEVEL_SETUP_KEY",
+      "Message": "The Software Licensing Service reported a problem with the downlevel product key.",
+      "DecimalCode": -1073417708,
+      "HexCode": "0xC004F214",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_BIOS_KEY",
+      "Message": "The Software Licensing Service reported a problem with the BIOS key.",
+      "DecimalCode": -1073417707,
+      "HexCode": "0xC004F215",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_CHALLENGE_EXPIRED",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The token-based activation challenge has expired.",
+      "DecimalCode": -1073417471,
+      "HexCode": "0xC004F301",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_SILENT_ACTIVATION_FAILURE",
+      "Message": "The Software Licensing Service reported that Silent Activation failed. The Software Licensing Service reported that there are no certificates found in the system that could activate the product without user interaction.",
+      "DecimalCode": -1073417470,
+      "HexCode": "0xC004F302",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_INVALID_CERT_CHAIN",
+      "Message": "The Software Licensing Service reported that the certificate chain could not be built or failed validation.",
+      "DecimalCode": -1073417469,
+      "HexCode": "0xC004F303",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_GRANT_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that required license could not be found.",
+      "DecimalCode": -1073417468,
+      "HexCode": "0xC004F304",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_CERT_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that there are no certificates found in the system that could activate the product.",
+      "DecimalCode": -1073417467,
+      "HexCode": "0xC004F305",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_INVALID_SKU_ID",
+      "Message": "The Software Licensing Service reported that this software edition does not support token-based activation.",
+      "DecimalCode": -1073417466,
+      "HexCode": "0xC004F306",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_INVALID_BLOB",
+      "Message": "The Software Licensing Service reported that the product could not be activated. Activation data is invalid.",
+      "DecimalCode": -1073417465,
+      "HexCode": "0xC004F307",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_TAMPERED_CERT_CHAIN",
+      "Message": "The Software Licensing Service reported that the product could not be activated. Activation data is tampered.",
+      "DecimalCode": -1073417464,
+      "HexCode": "0xC004F308",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_CHALLENGE_MISMATCH",
+      "Message": "The Software Licensing Service reported that the product could not be activated. Activation challenge and response do not match.",
+      "DecimalCode": -1073417463,
+      "HexCode": "0xC004F309",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_INVALID_CERTIFICATE",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The certificate does not match the conditions in the license.",
+      "DecimalCode": -1073417462,
+      "HexCode": "0xC004F30A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_INVALID_SMARTCARD",
+      "Message": "The Software Licensing Service reported that the inserted smartcard could not be used to activate the product.",
+      "DecimalCode": -1073417461,
+      "HexCode": "0xC004F30B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_FAILED_GRANT_PARSING",
+      "Message": "The Software Licensing Service reported that the token-based activation license content is invalid.",
+      "DecimalCode": -1073417460,
+      "HexCode": "0xC004F30C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_INVALID_THUMBPRINT",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The thumbprint is invalid.",
+      "DecimalCode": -1073417459,
+      "HexCode": "0xC004F30D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_THUMBPRINT_CERT_NOT_FOUND",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The thumbprint does not match any certificate.",
+      "DecimalCode": -1073417458,
+      "HexCode": "0xC004F30E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_CRITERIA_MISMATCH",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The certificate does not match the criteria specified in the issuance license.",
+      "DecimalCode": -1073417457,
+      "HexCode": "0xC004F30F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_TPID_MISMATCH",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The certificate does not match the trust point identifier (TPID) specified in the issuance license.",
+      "DecimalCode": -1073417456,
+      "HexCode": "0xC004F310",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_SOFT_CERT_DISALLOWED",
+      "Message": "The Software Licensing Service reported that the product could not be activated. A soft token cannot be used for activation.",
+      "DecimalCode": -1073417455,
+      "HexCode": "0xC004F311",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_SOFT_CERT_INVALID",
+      "Message": "The Software Licensing Service reported that the product could not be activated. The certificate cannot be used because its private key is exportable.",
+      "DecimalCode": -1073417454,
+      "HexCode": "0xC004F312",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TKA_CERT_CNG_NOT_AVAILABLE",
+      "Message": "The Software Licensing Service reported that the CNG encryption library could not be loaded.  The current certificate may not be available on this version of Windows.",
+      "DecimalCode": -1073417453,
+      "HexCode": "0xC004F313",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_STORE_BASED_ACTIVATION",
+      "Message": "The Software Licensing Service reported that the application has a store license.",
+      "DecimalCode": 1074066433,
+      "HexCode": "0x4004F401",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_RM_UNKNOWN_ERROR",
+      "Message": "A networking problem has occurred while activating your copy of Windows.",
+      "DecimalCode": -1073415165,
+      "HexCode": "0xC004FC03",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_TIMEBASED_VALIDITY_PERIOD",
+      "Message": "The Software Licensing Service reported that the application is running within the timebased validity period.",
+      "DecimalCode": 1074068484,
+      "HexCode": "0x4004FC04",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_PERPETUAL_OOB_GRACE_PERIOD",
+      "Message": "The Software Licensing Service reported that the application has a perpetual grace period.",
+      "DecimalCode": 1074068485,
+      "HexCode": "0x4004FC05",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_I_TIMEBASED_EXTENDED_GRACE_PERIOD",
+      "Message": "The Software Licensing Service reported that the application is running within the valid extended grace period.",
+      "DecimalCode": 1074068486,
+      "HexCode": "0x4004FC06",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_VALIDITY_PERIOD_EXPIRED",
+      "Message": "The Software Licensing Service reported that the validity period expired.",
+      "DecimalCode": -1073415161,
+      "HexCode": "0xC004FC07",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_IA_THROTTLE_LIMIT_EXCEEDED",
+      "Message": "You\u0027ve reached the request limit for automatic virtual machine activation. Try again later.",
+      "DecimalCode": -1073414912,
+      "HexCode": "0xC004FD00",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_IA_INVALID_VIRTUALIZATION_PLATFORM",
+      "Message": "Windows isn\u0027t running on a supported Microsoft Hyper-V virtualization platform.",
+      "DecimalCode": -1073414911,
+      "HexCode": "0xC004FD01",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_IA_PARENT_PARTITION_NOT_ACTIVATED",
+      "Message": "Windows isn\u0027t activated on the host machine. Please contact your system administrator.",
+      "DecimalCode": -1073414910,
+      "HexCode": "0xC004FD02",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_IA_ID_MISMATCH",
+      "Message": "The host machine can\u0027t activate the edition of Windows on the virtual machine.",
+      "DecimalCode": -1073414909,
+      "HexCode": "0xC004FD03",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_IA_MACHINE_NOT_BOUND",
+      "Message": "Windows isn\u0027t activated.",
+      "DecimalCode": -1073414908,
+      "HexCode": "0xC004FD04",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_E_TAMPER_RECOVERY_REQUIRES_ACTIVATION",
+      "Message": "The Software Licensing Service reported that activation is required to recover from tampering of SL Service trusted store.",
+      "DecimalCode": -1073414656,
+      "HexCode": "0xC004FE00",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_GENERAL_NOT_INITIALIZED",
+      "Message": "The security processor reported an initialization error.",
+      "DecimalCode": -1073426175,
+      "HexCode": "0xC004D101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_SYSTEM_TIME_SKEWED",
+      "Message": "The security processor reported that the machine time is inconsistent with the trusted time.",
+      "DecimalCode": -2147167998,
+      "HexCode": "0x8004D102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_GENERIC_FAILURE",
+      "Message": "The security processor reported that an error has occurred.",
+      "DecimalCode": -1073426173,
+      "HexCode": "0xC004D103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_INVALIDARG",
+      "Message": "The security processor reported that invalid data was used.",
+      "DecimalCode": -1073426172,
+      "HexCode": "0xC004D104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_ALREADY_EXISTS",
+      "Message": "The security processor reported that the value already exists.",
+      "DecimalCode": -1073426171,
+      "HexCode": "0xC004D105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_INSUFFICIENT_BUFFER",
+      "Message": "The security processor reported that an insufficient buffer was used.",
+      "DecimalCode": -1073426169,
+      "HexCode": "0xC004D107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_INVALIDDATA",
+      "Message": "The security processor reported that invalid data was used.",
+      "DecimalCode": -1073426168,
+      "HexCode": "0xC004D108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_INVALID_SPAPI_CALL",
+      "Message": "The security processor reported that an invalid call was made.",
+      "DecimalCode": -1073426167,
+      "HexCode": "0xC004D109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_INVALID_SPAPI_VERSION",
+      "Message": "The security processor reported a version mismatch error.",
+      "DecimalCode": -1073426166,
+      "HexCode": "0xC004D10A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_DEBUGGER_DETECTED",
+      "Message": "The security processor cannot operate while a debugger is attached.",
+      "DecimalCode": -2147167989,
+      "HexCode": "0x8004D10B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_NO_MORE_DATA",
+      "Message": "No more data is available",
+      "DecimalCode": -1073426164,
+      "HexCode": "0xC004D10C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_KEYLENGTH",
+      "Message": "The length of the cryptopgraphic key material/blob is invalid",
+      "DecimalCode": -1073425919,
+      "HexCode": "0xC004D201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_BLOCKLENGTH",
+      "Message": "The block length is not correct for this algorithm",
+      "DecimalCode": -1073425918,
+      "HexCode": "0xC004D202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_CIPHER",
+      "Message": "The Cryptopgrahic cipher/algorithm type is invalid",
+      "DecimalCode": -1073425917,
+      "HexCode": "0xC004D203",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_CIPHERMODE",
+      "Message": "The specified cipher mode is invalid. For example both encrypt and decrypt cannot be specified for symmetric keys.",
+      "DecimalCode": -1073425916,
+      "HexCode": "0xC004D204",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_UNKNOWN_PROVIDERID",
+      "Message": "The SPAPIID for the specified Cryptographic Provider is unknown",
+      "DecimalCode": -1073425915,
+      "HexCode": "0xC004D205",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_UNKNOWN_KEYID",
+      "Message": "The SPAPIID for the specified Cryptographic Key (type) is unknown",
+      "DecimalCode": -1073425914,
+      "HexCode": "0xC004D206",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_UNKNOWN_HASHID",
+      "Message": "The SPAPIID for the specified Cryptographic Hash is unknown",
+      "DecimalCode": -1073425913,
+      "HexCode": "0xC004D207",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_UNKNOWN_ATTRIBUTEID",
+      "Message": "The SPAPIID for the specified Cryptographic Attribute is unknown",
+      "DecimalCode": -1073425912,
+      "HexCode": "0xC004D208",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_HASH_FINALIZED",
+      "Message": "The hash object has been finalized and can no longer be updated",
+      "DecimalCode": -1073425911,
+      "HexCode": "0xC004D209",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_KEY_NOT_AVAILABLE",
+      "Message": "The key is not available within the current state",
+      "DecimalCode": -1073425910,
+      "HexCode": "0xC004D20A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_KEY_NOT_FOUND",
+      "Message": "The key does not exist. It may not have have been created yet",
+      "DecimalCode": -1073425909,
+      "HexCode": "0xC004D20B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_NOT_BLOCK_ALIGNED",
+      "Message": "The data length is not a multiple of the algorithm\u0027s block length",
+      "DecimalCode": -1073425908,
+      "HexCode": "0xC004D20C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_SIGNATURELENGTH",
+      "Message": "The length of the signature is not valid",
+      "DecimalCode": -1073425907,
+      "HexCode": "0xC004D20D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_SIGNATURE",
+      "Message": "The signature does not correlate with the comparison hash",
+      "DecimalCode": -1073425906,
+      "HexCode": "0xC004D20E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_BLOCK",
+      "Message": "The RSA block is not valid",
+      "DecimalCode": -1073425905,
+      "HexCode": "0xC004D20F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_FORMAT",
+      "Message": "The format of the RSA block is not valid",
+      "DecimalCode": -1073425904,
+      "HexCode": "0xC004D210",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_CRYPTO_INVALID_PADDING",
+      "Message": "The CBC padding is not valid",
+      "DecimalCode": -1073425903,
+      "HexCode": "0xC004D211",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED",
+      "Message": "The security processor reported that the trusted data store was tampered.",
+      "DecimalCode": -1073425663,
+      "HexCode": "0xC004D301",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_REARMED",
+      "Message": "The security processor reported that the trusted data store was rearmed.",
+      "DecimalCode": -1073425662,
+      "HexCode": "0xC004D302",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_RECREATED",
+      "Message": "The security processor reported that the trusted store has been recreated.",
+      "DecimalCode": -1073425661,
+      "HexCode": "0xC004D303",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ENTRY_KEY_NOT_FOUND",
+      "Message": "The security processor reported that entry key was not found in the trusted data store.",
+      "DecimalCode": -1073425660,
+      "HexCode": "0xC004D304",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ENTRY_KEY_ALREADY_EXISTS",
+      "Message": "The security processor reported that the entry key already exists in the trusted data store.",
+      "DecimalCode": -1073425659,
+      "HexCode": "0xC004D305",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ENTRY_KEY_SIZE_TOO_BIG",
+      "Message": "The security processor reported that the entry key is too big to fit in the trusted data store.",
+      "DecimalCode": -1073425658,
+      "HexCode": "0xC004D306",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_MAX_REARM_REACHED",
+      "Message": "The security processor reported that the maximum allowed number of re-arms has been exceeded.  You must re-install the OS before trying to re-arm again.",
+      "DecimalCode": -1073425657,
+      "HexCode": "0xC004D307",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_DATA_SIZE_TOO_BIG",
+      "Message": "The security processor has reported that entry data size is too big to fit in the trusted data store.",
+      "DecimalCode": -1073425656,
+      "HexCode": "0xC004D308",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_INVALID_HW_BINDING",
+      "Message": "The security processor has reported that the machine has gone out of hardware tolerance.",
+      "DecimalCode": -1073425655,
+      "HexCode": "0xC004D309",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TIMER_ALREADY_EXISTS",
+      "Message": "The security processor has reported that the secure timer already exists.",
+      "DecimalCode": -1073425654,
+      "HexCode": "0xC004D30A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TIMER_NOT_FOUND",
+      "Message": "The security processor has reported that the secure timer was not found.",
+      "DecimalCode": -1073425653,
+      "HexCode": "0xC004D30B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TIMER_EXPIRED",
+      "Message": "The security processor has reported that the secure timer has expired.",
+      "DecimalCode": -1073425652,
+      "HexCode": "0xC004D30C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TIMER_NAME_SIZE_TOO_BIG",
+      "Message": "The security processor has reported that the secure timer name is too long.",
+      "DecimalCode": -1073425651,
+      "HexCode": "0xC004D30D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_FULL",
+      "Message": "The security processor reported that the trusted data store is full.",
+      "DecimalCode": -1073425650,
+      "HexCode": "0xC004D30E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TRUSTED_TIME_OK",
+      "Message": "Trusted time is already up-to-date.",
+      "DecimalCode": 1074057999,
+      "HexCode": "0x4004D30F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ENTRY_READ_ONLY",
+      "Message": "Read-only entry cannot be modified.",
+      "DecimalCode": -1073425648,
+      "HexCode": "0xC004D310",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TIMER_READ_ONLY",
+      "Message": "Read-only timer cannot be modified.",
+      "DecimalCode": -1073425647,
+      "HexCode": "0xC004D311",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ATTRIBUTE_READ_ONLY",
+      "Message": "Read-only attribute cannot be modified.",
+      "DecimalCode": -1073425646,
+      "HexCode": "0xC004D312",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ATTRIBUTE_NOT_FOUND",
+      "Message": "Attribute not found.",
+      "DecimalCode": -1073425645,
+      "HexCode": "0xC004D313",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_ACCESS_DENIED",
+      "Message": "Trusted Store access denied.",
+      "DecimalCode": -1073425644,
+      "HexCode": "0xC004D314",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_NAMESPACE_NOT_FOUND",
+      "Message": "Namespace not found.",
+      "DecimalCode": -1073425643,
+      "HexCode": "0xC004D315",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_NAMESPACE_IN_USE",
+      "Message": "Namespace in use.",
+      "DecimalCode": -1073425642,
+      "HexCode": "0xC004D316",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED_BREADCRUMB_LOAD_INVALID",
+      "Message": "Trusted store tampered",
+      "DecimalCode": -1073425641,
+      "HexCode": "0xC004D317",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED_BREADCRUMB_GENERATION",
+      "Message": "Trusted store tampered",
+      "DecimalCode": -1073425640,
+      "HexCode": "0xC004D318",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED_INVALID_DATA",
+      "Message": "Trusted store tampered",
+      "DecimalCode": -1073425639,
+      "HexCode": "0xC004D319",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED_NO_DATA",
+      "Message": "Trusted store tampered",
+      "DecimalCode": -1073425638,
+      "HexCode": "0xC004D31A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED_DATA_BREADCRUMB_MISMATCH",
+      "Message": "Trusted store tampered",
+      "DecimalCode": -1073425637,
+      "HexCode": "0xC004D31B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TS_TAMPERED_DATA_VERSION_MISMATCH",
+      "Message": "Trusted store tampered",
+      "DecimalCode": -1073425636,
+      "HexCode": "0xC004D31C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TAMPER_MODULE_AUTHENTICATION",
+      "Message": "The security processor reported a system file mismatch error.",
+      "DecimalCode": -1073425407,
+      "HexCode": "0xC004D401",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_TAMPER_SECURITY_PROCESSOR_PATCHED",
+      "Message": "The security processor reported a system file mismatch error.",
+      "DecimalCode": -1073425406,
+      "HexCode": "0xC004D402",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_KM_CACHE_TAMPER",
+      "Message": "The security processor reported an error with the kernel data.",
+      "DecimalCode": -1073425151,
+      "HexCode": "0xC004D501",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_KM_CACHE_TAMPER_RESTORE_FAILED",
+      "Message": "Kernel Mode Cache is tampered and the restore attempt failed",
+      "DecimalCode": -1073425150,
+      "HexCode": "0xC004D502",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_KM_CACHE_IDENTICAL",
+      "Message": "Kernel Mode Cache was not changed",
+      "DecimalCode": 1074058753,
+      "HexCode": "0x4004D601",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_KM_CACHE_POLICY_CHANGED",
+      "Message": "Reboot-requiring policies have changed",
+      "DecimalCode": 1074058754,
+      "HexCode": "0x4004D602",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_STATUS_PUSHKEY_CONFLICT",
+      "Message": "External decryption key was already set for specified feature.",
+      "DecimalCode": -1073424639,
+      "HexCode": "0xC004D701",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_PROXY_SOFT_TAMPER",
+      "Message": "Error occured during proxy execution",
+      "DecimalCode": -1073424638,
+      "HexCode": "0xC004D702",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_INVALID_LICENSE",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426432,
+      "HexCode": "0xC004D000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_INVALID_ALGORITHM_TYPE",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426423,
+      "HexCode": "0xC004D009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_TOO_MANY_LOADED_ENVIRONMENTS",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426420,
+      "HexCode": "0xC004D00C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_BAD_GET_INFO_QUERY",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426414,
+      "HexCode": "0xC004D012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_INVALID_HANDLE",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426388,
+      "HexCode": "0xC004D02C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_INVALID_KEY_LENGTH",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426347,
+      "HexCode": "0xC004D055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_NO_AES_PROVIDER",
+      "Message": "Owner, write description pls",
+      "DecimalCode": -1073426317,
+      "HexCode": "0xC004D073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_SP_PUB_API_HANDLE_NOT_COMMITED",
+      "Message": "The handle was used before calling SPCommit with it.",
+      "DecimalCode": -1073426303,
+      "HexCode": "0xC004D081",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_PRODUCT_KEY_OUT_OF_RANGE",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -2143313819,
+      "HexCode": "0x803FA065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_BINDING",
+      "Message": "The activation server determined there is a problem with the specified product key.",
+      "DecimalCode": -2143313818,
+      "HexCode": "0x803FA066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_PRODUCT_KEY_BLOCKED",
+      "Message": "The activation server determined the specified product key has been blocked.",
+      "DecimalCode": -2143313817,
+      "HexCode": "0x803FA067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_PRODUCT_KEY",
+      "Message": "The activation server determined the specified product key has been blocked.",
+      "DecimalCode": -2143313816,
+      "HexCode": "0x803FA068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_UNSUPPORTED_PRODUCT_KEY",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -2143313812,
+      "HexCode": "0x803FA06C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_MAXIMUM_UNLOCK_EXCEEDED",
+      "Message": "The activation server reported that the product key has exceeded its unlock limit.",
+      "DecimalCode": -2143313807,
+      "HexCode": "0x803FA071",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_PRODUCT_DATA_ID",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -2143313805,
+      "HexCode": "0x803FA073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_PRODUCT_DATA",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -2143313804,
+      "HexCode": "0x803FA074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_ACTCONFIG_ID",
+      "Message": "The activation server determined the product key is not valid.",
+      "DecimalCode": -2143313802,
+      "HexCode": "0x803FA076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_PRODUCT_KEY_LENGTH",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -2143313801,
+      "HexCode": "0x803FA077",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_PRODUCT_KEY_FORMAT",
+      "Message": "The activation server determined the specified product key is invalid.",
+      "DecimalCode": -2143313800,
+      "HexCode": "0x803FA078",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_BINDING_URI",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -2143313798,
+      "HexCode": "0x803FA07A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_INVALID_ARGUMENT",
+      "Message": "The activation server experienced an error.",
+      "DecimalCode": -2143313795,
+      "HexCode": "0x803FA07D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_DMAK_LIMIT_EXCEEDED",
+      "Message": "The activation server reported that the Multiple Activation Key has exceeded its limit.",
+      "DecimalCode": -2143313793,
+      "HexCode": "0x803FA07F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_DMAK_EXTENSION_LIMIT_EXCEEDED",
+      "Message": "The activation server reported that the Multiple Activation Key extension limit has been exceeded.",
+      "DecimalCode": -2143313792,
+      "HexCode": "0x803FA080",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OEM_SLP_COA0",
+      "Message": "The activation server reported that the specified product key cannot be used for online activation.",
+      "DecimalCode": -2143313789,
+      "HexCode": "0x803FA083",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_CIDIID_INVALID_VERSION",
+      "Message": "The activation server determined that the version of the offline Confirmation ID (CID) is incorrect.",
+      "DecimalCode": -2143313779,
+      "HexCode": "0x803FA08D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_CIDIID_INVALID_DATA",
+      "Message": "The activation server reported that the format for the offline activation data is incorrect.",
+      "DecimalCode": -2143313778,
+      "HexCode": "0x803FA08E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_CIDIID_INVALID_DATA_LENGTH",
+      "Message": "The activation server reported that the length of the offline Confirmation ID (CID) is incorrect.",
+      "DecimalCode": -2143313777,
+      "HexCode": "0x803FA08F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_CIDIID_INVALID_CHECK_DIGITS",
+      "Message": "The Software Licensing Service determined that the Installation ID (IID) or the Confirmation ID (CID) is invalid.",
+      "DecimalCode": -2143313776,
+      "HexCode": "0x803FA090",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_TIMEBASED_ACTIVATION_BEFORE_START_DATE",
+      "Message": "The activation server reported that time based activation attempted before start date.",
+      "DecimalCode": -2143313769,
+      "HexCode": "0x803FA097",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_TIMEBASED_ACTIVATION_AFTER_END_DATE",
+      "Message": "The activation server reported that time based activation attempted after end date.",
+      "DecimalCode": -2143313768,
+      "HexCode": "0x803FA098",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_TIMEBASED_ACTIVATION_NOT_AVAILABLE",
+      "Message": "The activation server reported that new time based activation is not available.",
+      "DecimalCode": -2143313767,
+      "HexCode": "0x803FA099",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_TIMEBASED_PRODUCT_KEY_NOT_CONFIGURED",
+      "Message": "The activation server reported that the time based product key is not configured for activation.",
+      "DecimalCode": -2143313766,
+      "HexCode": "0x803FA09A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_NO_RULES_TO_ACTIVATE",
+      "Message": "The activation server reported that no business rules available to activate specified product key.",
+      "DecimalCode": -2143313720,
+      "HexCode": "0x803FA0C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_PRODUCT_KEY_BLOCKED_IPLOCATION",
+      "Message": "The activation server determined the specified product key has been blocked for this geographic location.",
+      "DecimalCode": -2143313717,
+      "HexCode": "0x803FA0CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_DIGITALMARKER_INVALID_BINDING",
+      "Message": "The activation server determined the license is invalid.",
+      "DecimalCode": -2143313709,
+      "HexCode": "0x803FA0D3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_DIGITALMARKER_BINDING_NOT_CONFIGURED",
+      "Message": "The activation server determined there is a problem with the specified product key.",
+      "DecimalCode": -2143313708,
+      "HexCode": "0x803FA0D4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_ROT_OVERRIDE_LIMIT_REACHED",
+      "Message": "The activation server determined that the override limit is reached.",
+      "DecimalCode": -2143313707,
+      "HexCode": "0x803FA0D5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_DMAK_OVERRIDE_LIMIT_REACHED",
+      "Message": "The activation server determined that the override limit is reached.",
+      "DecimalCode": -2143313706,
+      "HexCode": "0x803FA0D6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_FREE_OFFER_EXPIRED",
+      "Message": "The activation server determined that the offer no longer exists.",
+      "DecimalCode": -2143312896,
+      "HexCode": "0x803FA400",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_DONOR_HWID_NO_ENTITLEMENT",
+      "Message": "Error indicating that the donor hardwareId does not own operating system entitlement.",
+      "DecimalCode": -2143310920,
+      "HexCode": "0x803FABB8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_GENERIC_ERROR",
+      "Message": "Error code indicating that user not eligible for reactivation.(Generic error code)",
+      "DecimalCode": -2143310919,
+      "HexCode": "0x803FABB9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_NO_ASSOCIATION",
+      "Message": "Error code indicating that user not eligible for reactivation due to no association",
+      "DecimalCode": -2143310918,
+      "HexCode": "0x803FABBA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_NOT_ADMIN",
+      "Message": "Error code indicating that user not eligible for reactivation because user is not an admin on device",
+      "DecimalCode": -2143310917,
+      "HexCode": "0x803FABBB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_USER_THROTTLED",
+      "Message": "Error code indicating that user not eligible for reactivation because user is is throttled.",
+      "DecimalCode": -2143310916,
+      "HexCode": "0x803FABBC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_LICENSE_THROTTLED",
+      "Message": "Error code indicating that user not eligible for reactivation because license is throttled.",
+      "DecimalCode": -2143310915,
+      "HexCode": "0x803FABBD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_DEVICE_THROTTLED",
+      "Message": "Error code indicating that device is not eligible for reactivation because it is throttled.",
+      "DecimalCode": -2143310914,
+      "HexCode": "0x803FABBE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_GP_DISABLED",
+      "Message": "Error code indicating that user not eligible for because policy does not allow it.",
+      "DecimalCode": -2143310913,
+      "HexCode": "0x803FABBF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_HARDWARE_BLOCKED",
+      "Message": "Error code indicating that the device is not eligible for reactivation because it is blocked.",
+      "DecimalCode": -2143310912,
+      "HexCode": "0x803FABC0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_USER_BLOCKED",
+      "Message": "Error code indicating that the user is not eligible for reactivation because the user is blocked.",
+      "DecimalCode": -2143310911,
+      "HexCode": "0x803FABC1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_LICENSE_BLOCKED",
+      "Message": "Error code indicating that the license is not eligible for transfer because the license is blocked.",
+      "DecimalCode": -2143310910,
+      "HexCode": "0x803FABC2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SL_REMAPPING_MDOLLAR_OSR_DEVICE_BLOCKED",
+      "Message": "Error code indicating that the device is not eligible for transfer because the device is blocked.",
+      "DecimalCode": -2143310909,
+      "HexCode": "0x803FABC3",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_SL_ITF",
+      "Code": 4
+    }
+  ]
+}

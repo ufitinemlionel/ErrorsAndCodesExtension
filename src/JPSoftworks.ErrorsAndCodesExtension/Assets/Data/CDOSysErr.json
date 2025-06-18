@@ -1,0 +1,1756 @@
+{
+  "HeaderFileName": "cdosyserr.h",
+  "ErrorCodes": [
+    {
+      "Id": "categoryHeader",
+      "Message": "Header",
+      "DecimalCode": 1,
+      "HexCode": "0x00000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "categoryUnused",
+      "Message": "None",
+      "DecimalCode": 2,
+      "HexCode": "0x00000002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "categoryGeneral",
+      "Message": "General",
+      "DecimalCode": 3,
+      "HexCode": "0x00000003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_UNCAUGHT_EXCEPTION",
+      "Message": "Exception %1 was generated at address %2",
+      "DecimalCode": -2147220991,
+      "HexCode": "0x80040201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NOT_OPENED",
+      "Message": "No data source has been opened for the object.",
+      "DecimalCode": -2147220990,
+      "HexCode": "0x80040202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_UNSUPPORTED_DATASOURCE",
+      "Message": "The object does not support this type of data source.",
+      "DecimalCode": -2147220989,
+      "HexCode": "0x80040203",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_PROPERTYNAME",
+      "Message": "The object does not support the requested property name or namespace.",
+      "DecimalCode": -2147220988,
+      "HexCode": "0x80040204",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_PROP_UNSUPPORTED",
+      "Message": "The object does not support the requested property.",
+      "DecimalCode": -2147220987,
+      "HexCode": "0x80040205",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INACTIVE",
+      "Message": "The object is not active. It may have been deleted or it may not have been opened.",
+      "DecimalCode": -2147220986,
+      "HexCode": "0x80040206",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NO_SUPPORT_FOR_OBJECTS",
+      "Message": "The object does not support storing persistent state information for objects.",
+      "DecimalCode": -2147220985,
+      "HexCode": "0x80040207",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NOT_AVAILABLE",
+      "Message": "The requested property or feature, while supported, is not available at this time or in this context.",
+      "DecimalCode": -2147220984,
+      "HexCode": "0x80040208",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NO_DEFAULT_DROP_DIR",
+      "Message": "No default drop directory has been configured for this server.",
+      "DecimalCode": -2147220983,
+      "HexCode": "0x80040209",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_SMTP_SERVER_REQUIRED",
+      "Message": "The SMTP server name is required, and was not found in the configuration source.",
+      "DecimalCode": -2147220982,
+      "HexCode": "0x8004020A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NNTP_SERVER_REQUIRED",
+      "Message": "The NNTP server name is required, and was not found in the configuration source.",
+      "DecimalCode": -2147220981,
+      "HexCode": "0x8004020B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_RECIPIENT_MISSING",
+      "Message": "At least one recipient is required, but none were found.",
+      "DecimalCode": -2147220980,
+      "HexCode": "0x8004020C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_FROM_MISSING",
+      "Message": "At least one of the From or Sender fields is required, and neither was found.",
+      "DecimalCode": -2147220979,
+      "HexCode": "0x8004020D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_SENDER_REJECTED",
+      "Message": "The server rejected the sender address. The server response was: %1",
+      "DecimalCode": -2147220978,
+      "HexCode": "0x8004020E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_RECIPIENTS_REJECTED",
+      "Message": "The server rejected one or more recipient addresses. The server response was: %1",
+      "DecimalCode": -2147220977,
+      "HexCode": "0x8004020F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NNTP_POST_FAILED",
+      "Message": "The message could not be posted to the NNTP server. The transport error code was %2. The server response was %1",
+      "DecimalCode": -2147220976,
+      "HexCode": "0x80040210",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_SMTP_SEND_FAILED",
+      "Message": "The message could not be sent to the SMTP server. The transport error code was %2. The server response was %1",
+      "DecimalCode": -2147220975,
+      "HexCode": "0x80040211",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_CONNECTION_DROPPED",
+      "Message": "The transport lost its connection to the server.",
+      "DecimalCode": -2147220974,
+      "HexCode": "0x80040212",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_FAILED_TO_CONNECT",
+      "Message": "The transport failed to connect to the server.",
+      "DecimalCode": -2147220973,
+      "HexCode": "0x80040213",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_POST",
+      "Message": "The Subject, From, and Newsgroup fields are all required, and one or more was not found.",
+      "DecimalCode": -2147220972,
+      "HexCode": "0x80040214",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_AUTHENTICATION_FAILURE",
+      "Message": "The server rejected the logon attempt due to authentication failure. The server response was: %1",
+      "DecimalCode": -2147220971,
+      "HexCode": "0x80040215",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_CONTENT_TYPE",
+      "Message": "The content type was not valid in this context. For example, the root of an MHTML message must be an HTML document.",
+      "DecimalCode": -2147220970,
+      "HexCode": "0x80040216",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_LOGON_FAILURE",
+      "Message": "The transport was unable to log on to the server.",
+      "DecimalCode": -2147220969,
+      "HexCode": "0x80040217",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_HTTP_NOT_FOUND",
+      "Message": "The requested resource could not be found. The server response was: %1.",
+      "DecimalCode": -2147220968,
+      "HexCode": "0x80040218",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_HTTP_FORBIDDEN",
+      "Message": "Access to the requested resource is denied. The server response was: %1.",
+      "DecimalCode": -2147220967,
+      "HexCode": "0x80040219",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_HTTP_FAILED",
+      "Message": "The HTTP request failed.  The server response was: %1.",
+      "DecimalCode": -2147220966,
+      "HexCode": "0x8004021A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_MULTIPART_NO_DATA",
+      "Message": "This is a multipart body part. It has no content other than the body parts contained within it.",
+      "DecimalCode": -2147220965,
+      "HexCode": "0x8004021B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_ENCODING_FOR_MULTIPART",
+      "Message": "Multipart body parts must be encoded as 7bit, 8bit, or binary.",
+      "DecimalCode": -2147220964,
+      "HexCode": "0x8004021C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_UNSAFE_OPERATION",
+      "Message": "The requested operation is not allowed in secure mode.",
+      "DecimalCode": -2147220963,
+      "HexCode": "0x8004021D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_PROP_NOT_FOUND",
+      "Message": "The requested property was not found.",
+      "DecimalCode": -2147220962,
+      "HexCode": "0x8004021E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_SEND_OPTION",
+      "Message": "The \u0022SendUsing\u0022 configuration value is invalid.",
+      "DecimalCode": -2147220960,
+      "HexCode": "0x80040220",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_POST_OPTION",
+      "Message": "The \u0022PostUsing\u0022 configuration value is invalid.",
+      "DecimalCode": -2147220959,
+      "HexCode": "0x80040221",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NO_PICKUP_DIR",
+      "Message": "The pickup directory path is required and was not specified.",
+      "DecimalCode": -2147220958,
+      "HexCode": "0x80040222",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NOT_ALL_DELETED",
+      "Message": "One or more messages could not be deleted.",
+      "DecimalCode": -2147220957,
+      "HexCode": "0x80040223",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NO_METHOD",
+      "Message": "The requested operation is not available on the underlying object.",
+      "DecimalCode": -2147220956,
+      "HexCode": "0x80040224",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_PROP_READONLY",
+      "Message": "The property is read-only.",
+      "DecimalCode": -2147220953,
+      "HexCode": "0x80040227",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_PROP_CANNOT_DELETE",
+      "Message": "The property cannot be deleted.",
+      "DecimalCode": -2147220952,
+      "HexCode": "0x80040228",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_BAD_DATA",
+      "Message": "Data written to the object are inconsistent or invalid.",
+      "DecimalCode": -2147220951,
+      "HexCode": "0x80040229",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_PROP_NONHEADER",
+      "Message": "The requested property is not in the mail header namespace.",
+      "DecimalCode": -2147220950,
+      "HexCode": "0x8004022A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_CHARSET",
+      "Message": "The requested character set is not installed on the computer.",
+      "DecimalCode": -2147220949,
+      "HexCode": "0x8004022B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ADOSTREAM_NOT_BOUND",
+      "Message": "The ADO stream has not been opened.",
+      "DecimalCode": -2147220948,
+      "HexCode": "0x8004022C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_CONTENTPROPXML_NOT_FOUND",
+      "Message": "The content properties are missing.",
+      "DecimalCode": -2147220947,
+      "HexCode": "0x8004022D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_CONTENTPROPXML_WRONG_CHARSET",
+      "Message": "Content properties XML must be encoded using UTF-8.",
+      "DecimalCode": -2147220946,
+      "HexCode": "0x8004022E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_CONTENTPROPXML_PARSE_FAILED",
+      "Message": "Failed to parse content properties XML.",
+      "DecimalCode": -2147220945,
+      "HexCode": "0x8004022F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_CONTENTPROPXML_CONVERT_FAILED",
+      "Message": "Failed to convert a property from XML to a requested type.",
+      "DecimalCode": -2147220944,
+      "HexCode": "0x80040230",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NO_DIRECTORIES_SPECIFIED",
+      "Message": "No directories were specified for resolution.",
+      "DecimalCode": -2147220943,
+      "HexCode": "0x80040231",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_DIRECTORIES_UNREACHABLE",
+      "Message": "Failed to resolve against one or more of the specified directories.",
+      "DecimalCode": -2147220942,
+      "HexCode": "0x80040232",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_BAD_SENDER",
+      "Message": "Could not find the Sender\u0027s mailbox.",
+      "DecimalCode": -2147220941,
+      "HexCode": "0x80040233",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_SELF_BINDING",
+      "Message": "Binding to self is not allowed.",
+      "DecimalCode": -2147220940,
+      "HexCode": "0x80040234",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_BAD_ATTENDEE_DATA",
+      "Message": "Data of the Attendees in the object are inconsistent or invalid.",
+      "DecimalCode": -2147220939,
+      "HexCode": "0x80040235",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ROLE_NOMORE_AVAILABLE",
+      "Message": "No more roles of the desired type are available - maxed out.",
+      "DecimalCode": -2147220938,
+      "HexCode": "0x80040236",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_BAD_TASKTYPE_ONASSIGN",
+      "Message": "The task with its current task type does not permit a call on Assign. Please call CreateUnassignedCopy instead.",
+      "DecimalCode": -2147220937,
+      "HexCode": "0x80040237",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NOT_ASSIGNEDTO_USER",
+      "Message": "The task is not assigned to the current user.",
+      "DecimalCode": -2147220936,
+      "HexCode": "0x80040238",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_OUTOFDATE",
+      "Message": "The item being accessed or manipulated is out of date.",
+      "DecimalCode": -2147220935,
+      "HexCode": "0x80040239",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ARGUMENT1",
+      "Message": "The first argument is invalid",
+      "DecimalCode": -2147205120,
+      "HexCode": "0x80044000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ARGUMENT2",
+      "Message": "The second argument is invalid",
+      "DecimalCode": -2147205119,
+      "HexCode": "0x80044001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ARGUMENT3",
+      "Message": "The third argument is invalid",
+      "DecimalCode": -2147205118,
+      "HexCode": "0x80044002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ARGUMENT4",
+      "Message": "The fourth argument is invalid",
+      "DecimalCode": -2147205117,
+      "HexCode": "0x80044003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_ARGUMENT5",
+      "Message": "The fifth argument is invalid",
+      "DecimalCode": -2147205116,
+      "HexCode": "0x80044004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_NOT_FOUND",
+      "Message": "The requested body part was not found in this message.",
+      "DecimalCode": -2146644475,
+      "HexCode": "0x800CCE05",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDO_E_INVALID_ENCODING_TYPE",
+      "Message": "The content encoding type is invalid.",
+      "DecimalCode": -2146644451,
+      "HexCode": "0x800CCE1D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_ORIGINAL_MESSAGE",
+      "Message": "-----Original Message-----%0",
+      "DecimalCode": 69632,
+      "HexCode": "0x00011000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_FROM",
+      "Message": "From:%0",
+      "DecimalCode": 69633,
+      "HexCode": "0x00011001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_SENT",
+      "Message": "Sent:%0",
+      "DecimalCode": 69634,
+      "HexCode": "0x00011002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_POSTED_AT",
+      "Message": "Posted At:%0",
+      "DecimalCode": 69635,
+      "HexCode": "0x00011003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_TO",
+      "Message": "To:%0",
+      "DecimalCode": 69636,
+      "HexCode": "0x00011004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CC",
+      "Message": "Cc:%0",
+      "DecimalCode": 69637,
+      "HexCode": "0x00011005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_POSTED_TO",
+      "Message": "Posted To:%0",
+      "DecimalCode": 69638,
+      "HexCode": "0x00011006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CONVERSATION",
+      "Message": "Conversation:%0",
+      "DecimalCode": 69639,
+      "HexCode": "0x00011007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_SUBJECT",
+      "Message": "Subject:%0",
+      "DecimalCode": 69640,
+      "HexCode": "0x00011008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_IMPORTANCE",
+      "Message": "Importance:%0",
+      "DecimalCode": 69641,
+      "HexCode": "0x00011009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_ON_BEHALF_OF",
+      "Message": "on behalf of%0",
+      "DecimalCode": 69642,
+      "HexCode": "0x0001100A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_FW",
+      "Message": "FW:%0",
+      "DecimalCode": 69643,
+      "HexCode": "0x0001100B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_RE",
+      "Message": "RE:%0",
+      "DecimalCode": 69644,
+      "HexCode": "0x0001100C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CODEPAGE",
+      "Message": "1252%0",
+      "DecimalCode": 69645,
+      "HexCode": "0x0001100D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CalendarFolder",
+      "Message": "Calendar%0",
+      "DecimalCode": 69646,
+      "HexCode": "0x0001100E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_ContactsFolder",
+      "Message": "Contacts%0",
+      "DecimalCode": 69647,
+      "HexCode": "0x0001100F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_DraftsFolder",
+      "Message": "Drafts%0",
+      "DecimalCode": 69648,
+      "HexCode": "0x00011010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_JournalFolder",
+      "Message": "Journal%0",
+      "DecimalCode": 69649,
+      "HexCode": "0x00011011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_NotesFolder",
+      "Message": "Notes%0",
+      "DecimalCode": 69650,
+      "HexCode": "0x00011012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_TasksFolder",
+      "Message": "Tasks%0",
+      "DecimalCode": 69651,
+      "HexCode": "0x00011013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_NewFolder",
+      "Message": "New Folder%0",
+      "DecimalCode": 69652,
+      "HexCode": "0x00011014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Location",
+      "Message": "Location:%0",
+      "DecimalCode": 69653,
+      "HexCode": "0x00011015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_StartTime",
+      "Message": "Start Time:%0",
+      "DecimalCode": 69654,
+      "HexCode": "0x00011016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_EndTime",
+      "Message": "End Time:%0",
+      "DecimalCode": 69655,
+      "HexCode": "0x00011017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_TimeZone",
+      "Message": "Time Zone:%0",
+      "DecimalCode": 69656,
+      "HexCode": "0x00011018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_LocalTime",
+      "Message": "Local time%0",
+      "DecimalCode": 69657,
+      "HexCode": "0x00011019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Organizer",
+      "Message": "Organizer:%0",
+      "DecimalCode": 69658,
+      "HexCode": "0x0001101A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_ApptType",
+      "Message": "Type:%0",
+      "DecimalCode": 69659,
+      "HexCode": "0x0001101B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_SingleAppt",
+      "Message": "Single Appointment%0",
+      "DecimalCode": 69660,
+      "HexCode": "0x0001101C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_SingleMtg",
+      "Message": "Single Meeting%0",
+      "DecimalCode": 69661,
+      "HexCode": "0x0001101D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_RecurAppt",
+      "Message": "Recurring Appointment%0",
+      "DecimalCode": 69662,
+      "HexCode": "0x0001101E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_RecurMtg",
+      "Message": "Recurring Meeting%0",
+      "DecimalCode": 69663,
+      "HexCode": "0x0001101F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Universal",
+      "Message": "Universal Coordinated Time%0",
+      "DecimalCode": 69888,
+      "HexCode": "0x00011100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Greenwich",
+      "Message": "(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London%0",
+      "DecimalCode": 69889,
+      "HexCode": "0x00011101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Sarajevo",
+      "Message": "(GMT\u002B01:00) Sarajevo, Skopje, Sofija, Vilnius, Warsaw, Zagreb%0",
+      "DecimalCode": 69890,
+      "HexCode": "0x00011102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Paris",
+      "Message": "(GMT\u002B01:00) Brussels, Copenhagen, Madrid, Paris%0",
+      "DecimalCode": 69891,
+      "HexCode": "0x00011103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Berlin",
+      "Message": "(GMT\u002B01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna%0",
+      "DecimalCode": 69892,
+      "HexCode": "0x00011104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_EasternEurope",
+      "Message": "(GMT\u002B02:00) Bucharest%0",
+      "DecimalCode": 69893,
+      "HexCode": "0x00011105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Prague",
+      "Message": "(GMT\u002B01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague%0",
+      "DecimalCode": 69894,
+      "HexCode": "0x00011106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Athens",
+      "Message": "(GMT\u002B02:00) Athens, Istanbul, Minsk%0",
+      "DecimalCode": 69895,
+      "HexCode": "0x00011107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Brasilia",
+      "Message": "(GMT-03:00) Brasilia%0",
+      "DecimalCode": 69896,
+      "HexCode": "0x00011108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Atlantic",
+      "Message": "(GMT-04:00) Atlantic Time (Canada)%0",
+      "DecimalCode": 69897,
+      "HexCode": "0x00011109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Eastern",
+      "Message": "(GMT-05:00) Eastern Time (US \u0026 Canada)%0",
+      "DecimalCode": 69898,
+      "HexCode": "0x0001110A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Central",
+      "Message": "(GMT-06:00) Central Time (US \u0026 Canada)%0",
+      "DecimalCode": 69899,
+      "HexCode": "0x0001110B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Mountain",
+      "Message": "(GMT-07:00) Mountain Time (US \u0026 Canada)%0",
+      "DecimalCode": 69900,
+      "HexCode": "0x0001110C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Pacific",
+      "Message": "(GMT-08:00) Pacific Time (US \u0026 Canada)%0",
+      "DecimalCode": 69901,
+      "HexCode": "0x0001110D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Alaska",
+      "Message": "(GMT-09:00) Alaska%0",
+      "DecimalCode": 69902,
+      "HexCode": "0x0001110E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Hawaii",
+      "Message": "(GMT-10:00) Hawaii%0",
+      "DecimalCode": 69903,
+      "HexCode": "0x0001110F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Midway",
+      "Message": "(GMT-11:00) Midway Island, Samoa%0",
+      "DecimalCode": 69904,
+      "HexCode": "0x00011110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Wellington",
+      "Message": "(GMT\u002B12:00) Auckland, Wellington%0",
+      "DecimalCode": 69905,
+      "HexCode": "0x00011111",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Brisbane",
+      "Message": "(GMT\u002B10:00) Brisbane%0",
+      "DecimalCode": 69906,
+      "HexCode": "0x00011112",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Adelaide",
+      "Message": "(GMT\u002B09:30) Adelaide%0",
+      "DecimalCode": 69907,
+      "HexCode": "0x00011113",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Tokyo",
+      "Message": "(GMT\u002B09:00) Osaka, Sapporo, Tokyo%0",
+      "DecimalCode": 69908,
+      "HexCode": "0x00011114",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Singapore",
+      "Message": "(GMT\u002B08:00) Kuala Lumpur, Singapore%0",
+      "DecimalCode": 69909,
+      "HexCode": "0x00011115",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Bangkok",
+      "Message": "(GMT\u002B07:00) Bangkok, Hanoi, Jakarta%0",
+      "DecimalCode": 69910,
+      "HexCode": "0x00011116",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Bombay",
+      "Message": "(GMT\u002B05:30) Kolkata, Chennai, Mumbai, New Delhi%0",
+      "DecimalCode": 69911,
+      "HexCode": "0x00011117",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_AbuDhabi",
+      "Message": "(GMT\u002B04:00) Abu Dhabi, Muscat%0",
+      "DecimalCode": 69912,
+      "HexCode": "0x00011118",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Tehran",
+      "Message": "(GMT\u002B03:30) Tehran%0",
+      "DecimalCode": 69913,
+      "HexCode": "0x00011119",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Baghdad",
+      "Message": "(GMT\u002B03:00) Baghdad%0",
+      "DecimalCode": 69914,
+      "HexCode": "0x0001111A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Israel",
+      "Message": "(GMT\u002B02:00) Jerusalem%0",
+      "DecimalCode": 69915,
+      "HexCode": "0x0001111B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Newfoundland",
+      "Message": "(GMT-03:30) Newfoundland%0",
+      "DecimalCode": 69916,
+      "HexCode": "0x0001111C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Azores",
+      "Message": "(GMT-01:00) Azores%0",
+      "DecimalCode": 69917,
+      "HexCode": "0x0001111D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_MidAtlantic",
+      "Message": "(GMT-02:00) Mid-Atlantic%0",
+      "DecimalCode": 69918,
+      "HexCode": "0x0001111E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Monrovia",
+      "Message": "(GMT) Casablanca, Monrovia%0",
+      "DecimalCode": 69919,
+      "HexCode": "0x0001111F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_BuenosAires",
+      "Message": "(GMT-03:00) Buenos Aires, Georgetown%0",
+      "DecimalCode": 69920,
+      "HexCode": "0x00011120",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Caracas",
+      "Message": "(GMT-04:00) Caracas, La Paz%0",
+      "DecimalCode": 69921,
+      "HexCode": "0x00011121",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Indiana",
+      "Message": "(GMT-05:00) Indiana (East)%0",
+      "DecimalCode": 69922,
+      "HexCode": "0x00011122",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Bogota",
+      "Message": "(GMT-05:00) Bogota, Lima, Quito%0",
+      "DecimalCode": 69923,
+      "HexCode": "0x00011123",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Saskatchewan",
+      "Message": "(GMT-06:00) Saskatchewan%0",
+      "DecimalCode": 69924,
+      "HexCode": "0x00011124",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Mexico",
+      "Message": "(GMT-06:00) Mexico City%0",
+      "DecimalCode": 69925,
+      "HexCode": "0x00011125",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Arizona",
+      "Message": "(GMT-07:00) Arizona%0",
+      "DecimalCode": 69926,
+      "HexCode": "0x00011126",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Eniwetok",
+      "Message": "(GMT-12:00) Eniwetok, Kwajalein%0",
+      "DecimalCode": 69927,
+      "HexCode": "0x00011127",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Fiji",
+      "Message": "(GMT\u002B12:00) Fiji Is., Kamchatka, Marshall Is.%0",
+      "DecimalCode": 69928,
+      "HexCode": "0x00011128",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Magadan",
+      "Message": "(GMT\u002B11:00) Magadan, Solomon Is., New Caledonia%0",
+      "DecimalCode": 69929,
+      "HexCode": "0x00011129",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Hobart",
+      "Message": "(GMT\u002B10:00) Hobart%0",
+      "DecimalCode": 69930,
+      "HexCode": "0x0001112A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Guam",
+      "Message": "(GMT\u002B10:00) Guam, Port Moresby%0",
+      "DecimalCode": 69931,
+      "HexCode": "0x0001112B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Darwin",
+      "Message": "(GMT\u002B09:30) Darwin%0",
+      "DecimalCode": 69932,
+      "HexCode": "0x0001112C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Beijing",
+      "Message": "(GMT\u002B08:00) Beijing, Chongqing, Hong Kong SAR, Urumqi%0",
+      "DecimalCode": 69933,
+      "HexCode": "0x0001112D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Almaty",
+      "Message": "(GMT\u002B06:00) Almaty, Novosibirsk%0",
+      "DecimalCode": 69934,
+      "HexCode": "0x0001112E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Islamabad",
+      "Message": "(GMT\u002B05:00) Islamabad, Karachi, Tashkent%0",
+      "DecimalCode": 69935,
+      "HexCode": "0x0001112F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Kabul",
+      "Message": "(GMT\u002B04:30) Kabul%0",
+      "DecimalCode": 69936,
+      "HexCode": "0x00011130",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Cairo",
+      "Message": "(GMT\u002B02:00) Cairo%0",
+      "DecimalCode": 69937,
+      "HexCode": "0x00011131",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Harare",
+      "Message": "(GMT\u002B02:00) Harare, Pretoria%0",
+      "DecimalCode": 69938,
+      "HexCode": "0x00011132",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Moscow",
+      "Message": "(GMT\u002B03:00) Moscow, St. Petersburg, Volgograd%0",
+      "DecimalCode": 69939,
+      "HexCode": "0x00011133",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CapeVerde",
+      "Message": "(GMT-01:00) Cape Verde Is.%0",
+      "DecimalCode": 69940,
+      "HexCode": "0x00011134",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Caucasus",
+      "Message": "(GMT\u002B04:00) Baku, Tbilisi, Yerevan%0",
+      "DecimalCode": 69941,
+      "HexCode": "0x00011135",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CentralAmerica",
+      "Message": "(GMT-06:00) Central America%0",
+      "DecimalCode": 69942,
+      "HexCode": "0x00011136",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_EastAfrica",
+      "Message": "(GMT\u002B03:00) Nairobi%0",
+      "DecimalCode": 69943,
+      "HexCode": "0x00011137",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Melbourne",
+      "Message": "(GMT\u002B10:00) Canberra, Melbourne, Sydney%0",
+      "DecimalCode": 69944,
+      "HexCode": "0x00011138",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Ekaterinburg",
+      "Message": "(GMT\u002B05:00) Ekaterinburg%0",
+      "DecimalCode": 69945,
+      "HexCode": "0x00011139",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Helsinki",
+      "Message": "(GMT\u002B02:00) Helsinki, Riga, Tallinn%0",
+      "DecimalCode": 69946,
+      "HexCode": "0x0001113A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Greenland",
+      "Message": "(GMT-03:00) Greenland%0",
+      "DecimalCode": 69947,
+      "HexCode": "0x0001113B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Rangoon",
+      "Message": "(GMT\u002B06:30) Yangon (Rangun)%0",
+      "DecimalCode": 69948,
+      "HexCode": "0x0001113C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Nepal",
+      "Message": "(GMT\u002B05:45) Kathmandu%0",
+      "DecimalCode": 69949,
+      "HexCode": "0x0001113D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Irkutsk",
+      "Message": "(GMT\u002B08:00) Irkutsk, Ulaan Bataar%0",
+      "DecimalCode": 69950,
+      "HexCode": "0x0001113E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Krasnoyarsk",
+      "Message": "(GMT\u002B07:00) Krasnoyarsk%0",
+      "DecimalCode": 69951,
+      "HexCode": "0x0001113F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Santiago",
+      "Message": "(GMT-04:00) Santiago%0",
+      "DecimalCode": 69952,
+      "HexCode": "0x00011140",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_SriLanka",
+      "Message": "(GMT\u002B06:00) Sri Jayawardenepura%0",
+      "DecimalCode": 69953,
+      "HexCode": "0x00011141",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Tonga",
+      "Message": "(GMT\u002B13:00) Nuku\u0027alofa%0",
+      "DecimalCode": 69954,
+      "HexCode": "0x00011142",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Vladivostok",
+      "Message": "(GMT\u002B10:00) Vladivostok%0",
+      "DecimalCode": 69955,
+      "HexCode": "0x00011143",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_WestCentralAfrica",
+      "Message": "(GMT\u002B01:00) West Central Africa%0",
+      "DecimalCode": 69956,
+      "HexCode": "0x00011144",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Yakutsk",
+      "Message": "(GMT\u002B09:00) Yakutsk%0",
+      "DecimalCode": 69957,
+      "HexCode": "0x00011145",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Dhaka",
+      "Message": "(GMT\u002B06:00) Astana, Dhaka%0",
+      "DecimalCode": 69958,
+      "HexCode": "0x00011146",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Seoul",
+      "Message": "(GMT\u002B09:00) Seoul%0",
+      "DecimalCode": 69959,
+      "HexCode": "0x00011147",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Perth",
+      "Message": "(GMT\u002B08:00) Perth%0",
+      "DecimalCode": 69960,
+      "HexCode": "0x00011148",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Arab",
+      "Message": "(GMT\u002B03:00) Kuwait, Riyadh%0",
+      "DecimalCode": 69961,
+      "HexCode": "0x00011149",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Taipei",
+      "Message": "(GMT\u002B08:00) Taipei%0",
+      "DecimalCode": 69962,
+      "HexCode": "0x0001114A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Sydney2000",
+      "Message": "(GMT\u002B10:00) Canberra, Melbourne, Sydney (Year 2000 only)%0",
+      "DecimalCode": 69963,
+      "HexCode": "0x0001114B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Chihuahua",
+      "Message": "(GMT-07:00) Chihuahua, La Paz, Mazatlan%0",
+      "DecimalCode": 69964,
+      "HexCode": "0x0001114C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_CanberraCommonwealthGames2006",
+      "Message": "(GMT\u002B10:00) Canberra, Melbourne, Sydney (Commonwealth Games)%0",
+      "DecimalCode": 69965,
+      "HexCode": "0x0001114D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_AdelaideCommonwealthGames2006",
+      "Message": "(GMT\u002B09:30) Adelaide (Commonwealth Games)%0",
+      "DecimalCode": 69966,
+      "HexCode": "0x0001114E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_HobartCommonwealthGames2006",
+      "Message": "(GMT\u002B10:00) Hobart (Commonwealth Games)%0",
+      "DecimalCode": 69967,
+      "HexCode": "0x0001114F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IDS_Tijuana",
+      "Message": "(GMT-08:00) Tijuana, Baja California%0",
+      "DecimalCode": 69968,
+      "HexCode": "0x00011150",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMethodCalled",
+      "Message": "%1 Event on %2 called with Flags %3 %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 204800,
+      "HexCode": "0x00032000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMethodReturning",
+      "Message": "%1 Event Method is returning with HRESULT %2 %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 204801,
+      "HexCode": "0x00032001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtIsAborting",
+      "Message": "%1 Event Method is halting, HRESULT %2 %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537022,
+      "HexCode": "0xC0032002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionInitialized",
+      "Message": "Calendaring agent is initialized successfully. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 204803,
+      "HexCode": "0x00032003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionUnInitialized",
+      "Message": "Calendaring agent is stopping successfully. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 204804,
+      "HexCode": "0x00032004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionInitializeFailed",
+      "Message": "Calendaring agent failed to initialize with error %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537019,
+      "HexCode": "0xC0032005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionRegisterFailed",
+      "Message": "Calendaring recurring item expansion failed to register for notifications for MDB %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537018,
+      "HexCode": "0xC0032006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionMessageSaveChangesFailed",
+      "Message": "Calendaring agent failed in message save notification with error %1 on %2: %3. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537017,
+      "HexCode": "0xC0032007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionMessageDeleteFailed",
+      "Message": "Calendaring agent failed in message delete notification with error %1 on %2: %3. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537016,
+      "HexCode": "0xC0032008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionFolderSaveChangesFailed",
+      "Message": "Calendaring agent failed in folder save notification with error %1 on %2: %3. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537015,
+      "HexCode": "0xC0032009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionTooManyInstancesPerDay",
+      "Message": "Calendaring agent truncated expansion after %1 instances per day. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278838,
+      "HexCode": "0x8003200A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMailboxCreateTotalFailure",
+      "Message": "The mailbox creation callback failed to create any folders in mailbox %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537013,
+      "HexCode": "0xC003200B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMailboxCreatePartialFailure",
+      "Message": "The mailbox creation callback failed to create one or more folders in mailbox %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537012,
+      "HexCode": "0xC003200C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUninitImplRestFailed",
+      "Message": "Calendaring agent failed to uninitialize implied restriction with error %1 on %2: %3. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537011,
+      "HexCode": "0xC003200D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpandSavingAppt",
+      "Message": "Calendaring agent failed with error code %1 while saving appointment. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537010,
+      "HexCode": "0xC003200E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpandDeletingAppt",
+      "Message": "Calendaring agent failed with error code %1 while deleting appointment. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537009,
+      "HexCode": "0xC003200F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpandQuery",
+      "Message": "Calendaring agent failed with error code %1 while expanding recurring appointments. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537008,
+      "HexCode": "0xC0032010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpandFolderSetProps",
+      "Message": "Calendaring agent failed with error code %1 while cleaning up the calendar. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537007,
+      "HexCode": "0xC0032011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtRegistryFailure",
+      "Message": "Calendaring agent failed to open registry with error code %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537006,
+      "HexCode": "0xC0032012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpStat",
+      "Message": "Calendaring agent failed in the following function with error code: %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537005,
+      "HexCode": "0xC0032013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtDumpFcn",
+      "Message": "Calendaring agent failed in the following function with error code %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537004,
+      "HexCode": "0xC0032014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtSaveDeleteFailFBUpdate",
+      "Message": "Calendaring agent failed to update the free/busy cache during an appointment save or delete operation. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537003,
+      "HexCode": "0xC0032015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtProcessingQueryCallback",
+      "Message": "Calendaring agent failed to update the free/busy cache and internal data while processing a query. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537002,
+      "HexCode": "0xC0032016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMailboxLocalizeTotalFailure",
+      "Message": "The mailbox creation callback failed to rename any folders in mailbox %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537001,
+      "HexCode": "0xC0032017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMailboxLocalizePartialFailure",
+      "Message": "The mailbox creation callback failed to rename one or more folders in mailbox %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073537000,
+      "HexCode": "0xC0032018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpandMaster",
+      "Message": "The processing of the recurring appointment with the subject \u0022%1\u0022 in mailbox: %2 failed with error code %3.  This appointment will not be visible in the web client or other non-MAPI client. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536999,
+      "HexCode": "0xC0032019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionInit",
+      "Message": "A transaction failed during initialization. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536998,
+      "HexCode": "0xC003201A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtFBGenerateMsg",
+      "Message": "The calendaring agent could not publish the free/busy information for \u0022%1\u0022 because it failed reading the registry with error: %2. The save/delete calendar operation for \u0022%3\u0022 will not be completed. Please ensure that MSExchangeFBPublish agent is started. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536997,
+      "HexCode": "0xC003201B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpansionInstExpiryInPublicMDB",
+      "Message": "Expiry of an instance for the recurring appointment with the subject \u0022%1\u0022 in the folder \u0022%2\u0022 was detected.  The master for that should be expired before this instance. This instance will no longer appear in the web clients until the master is updated manually or through replication. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278820,
+      "HexCode": "0x8003201C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionInitialization",
+      "Message": "Unhandled exception %1 caught during initialization of server agents. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536995,
+      "HexCode": "0xC003201D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionShutdown",
+      "Message": "Unhandled exception %1 caught trying to stop server agents. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536994,
+      "HexCode": "0xC003201E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionInitializationMDB",
+      "Message": "Unhandled exception %1 caught during initialization of server agents while an MDB is mounted. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536993,
+      "HexCode": "0xC003201F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionShutdownMDB",
+      "Message": "Unhandled exception %1 caught trying to stop server agents while an MDB is unmounted. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536992,
+      "HexCode": "0xC0032020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionMsgSaveChanges",
+      "Message": "Unhandled exception %1 caught during message save changes notification. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536991,
+      "HexCode": "0xC0032021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionDelete",
+      "Message": "Unhandled exception %1 caught during deletion notification. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536990,
+      "HexCode": "0xC0032022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionQuery",
+      "Message": "Unhandled exception %1 caught during query processing. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536989,
+      "HexCode": "0xC0032023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtUnhandledExceptionFolderSaveChanges",
+      "Message": "Unhandled exception %1 caught during folder save changes notification. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536988,
+      "HexCode": "0xC0032024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtCorruptedCalendar",
+      "Message": "The calendar for the mailbox %1 is corrupted.  This calendar needs to be recreated. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536987,
+      "HexCode": "0xC0032025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtRebuildCalendar",
+      "Message": "An inconsistency was detected in %2: %3.  The calendar is being repaired.  If other errors occur with this calendar, please view the calendar using Microsoft Outlook Web Access.  If a problem persists, please recreate the calendar or the containing mailbox. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278810,
+      "HexCode": "0x80032026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtCheckPrimaryCalendar",
+      "Message": "Calendar agent failed to determine the primary calendar for mailbox: %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278809,
+      "HexCode": "0x80032027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtExpandMasterPF",
+      "Message": "The processing of the recurring appointment with the subject \u0022%1\u0022 in public folder: %2 failed with error code %3.  This appointment will not be visible in the web client or other non-MAPI client. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536984,
+      "HexCode": "0xC0032028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtCorruptedPFCalendar",
+      "Message": "The public folder %1 is corrupted.  This calendar needs to be recreated. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536983,
+      "HexCode": "0xC0032029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtRebuildPFCalendar",
+      "Message": "An inconsistency was detected in %1.  The calendar is being repaired.  If other errors occur with this calendar, please view the calendar using Microsoft Outlook Web Access.  If a problem persists, please recreate the public folder calendar. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278806,
+      "HexCode": "0x8003202A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtMovingMailboxCallbackFailed",
+      "Message": "Clearing the calendar instances before a move failed for mailbox %1 with error %2. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278805,
+      "HexCode": "0x8003202B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtGetMsgClassFromMaster",
+      "Message": "Calendaring agent failed with error %1 while attempting to retrieve the message class for a recurring appointment.  The message class for the instance when viewed with the Web Client will not be the same as the one in the series if it is not IPM.Appointment. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278804,
+      "HexCode": "0x8003202C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtOpenURL",
+      "Message": "Calendaring agent failed with error %1 while attempting to open the status message. If the user is a delegate, the access rights to the mailbox might not be set up correctly.  Otherwise, the calendar for this mailbox could be corrupted. This could be fixed by moving the mailbox to another Exchange server, or exporting the calendar to a Personal Folder File (.PST), and re-importing this into a new calendar. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278803,
+      "HexCode": "0x8003202D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtStatusMsgSent",
+      "Message": "The calendaring data message for %1: %2 has been sent to %3. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946670,
+      "HexCode": "0x4003202E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtSaveInvalidStartAppt",
+      "Message": "An appointment with the subject \u0022%1\u0022 was saved to mailbox %2. The start time is missing, so the calendaring agent cannot publish the free/busy information for this appointment. To correct this, please delete the appointment and recreate it. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536977,
+      "HexCode": "0xC003202F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtSaveInvalidEndAppt",
+      "Message": "An appointment with the subject \u0022%1\u0022 was saved to mailbox %2. The end time and duration are missing. For the purposes of publishing free/busy information, this appointment has a duration of zero minutes. To correct this, please delete the appointment and recreate it. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278800,
+      "HexCode": "0x80032030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtModifyInvalidAppt",
+      "Message": "An existing appointment with the subject \u0022%1\u0022 in mailbox %2 was modified. The start time, or both the duration and end time of the existing appointment were missing. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278799,
+      "HexCode": "0x80032031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtDeleteInvalidAppt",
+      "Message": "The existing appointment with the subject \u0022%1\u0022 in mailbox %2 was deleted. The start time, or both the duration and end time were missing. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278798,
+      "HexCode": "0x80032032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBindToInvalidStartAppt",
+      "Message": "The calendaring agent cannot bind to the appointment with the subject \u0022%1\u0022 in mailbox %2 because the appointment is missing a start time. The calendaring agent will not publish free/busy information for this appointment. To correct this, please delete the appointment and recreate it. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536973,
+      "HexCode": "0xC0032033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBindToInvalidEndAppt",
+      "Message": "The calendaring agent did bind to the appointment with the subject \u0022%1\u0022 in mailbox %2, but the appointment is missing an end time and duration. For the purposes of publishing free/busy information, this appointment has a duration of zero minutes. To correct this, please delete the appointment and recreate it. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278796,
+      "HexCode": "0x80032034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtReloadLogType",
+      "Message": "The EXCDO logging level has been reloaded from the registry and is now set to 0x%1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946677,
+      "HexCode": "0x40032035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundStarted",
+      "Message": "Calendaring agent has successfully started the background thread. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946678,
+      "HexCode": "0x40032036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundStartFailed",
+      "Message": "Calendaring agent has failed to start the background thread due to %1. Rendering of large calendars with the Web client will be slower. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278793,
+      "HexCode": "0x80032037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundProcessing",
+      "Message": "Background calendaring agent is processing the calendar (%1) in the mailbox (%2) in the MDB (%3). %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946680,
+      "HexCode": "0x40032038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundProcessingNoCals",
+      "Message": "Background calendaring agent did not find any more calendars to process. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946681,
+      "HexCode": "0x40032039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundProcessingFinished",
+      "Message": "Background calendaring agent has finished processing the calendar (%1) in the mailbox (%2) in the MDB (%3).  The return code is %4. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946682,
+      "HexCode": "0x4003203A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundAwakeDueToShutdown",
+      "Message": "Background calendaring agent is awakened due to shutdown. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946683,
+      "HexCode": "0x4003203B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundAwake",
+      "Message": "Background calendaring agent is awakened due to calendars needing expansion. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946684,
+      "HexCode": "0x4003203C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundTerminating",
+      "Message": "Background calendaring agent is terminating with return code %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946685,
+      "HexCode": "0x4003203D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundRegisterTaskFailed",
+      "Message": "The background calendaring agent failed with error code %1 while registering task. The rendering of large calendars with the web client or Microsoft Internet Explorer will be slower. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536962,
+      "HexCode": "0xC003203E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundLogonFailed",
+      "Message": "The background calendaring agent failed to logon to the MDB, or create a session object on the MDB:%1. The error code is %2. The rendering of large calendars with the web client or Microsoft Internet Explorer for the mailbox %3 with GUID:%4 will be slower. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536961,
+      "HexCode": "0xC003203F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundGetMachineToken",
+      "Message": "The background calendaring agent failed to retrieve the token required for logon on the MDB:%1. The error code is %2. The rendering of large calendars with the web client or Microsoft Internet Explorer on this MDB will be slower. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536960,
+      "HexCode": "0xC0032040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundSleepUntilNewCal",
+      "Message": "Background calendaring agent is sleeping until shutdown or a calendar is queued. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946689,
+      "HexCode": "0x40032041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBackgroundQueued",
+      "Message": "The calendar (%1) in mailbox (%2) in the MDB (%3) has been queued for background expansion. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": 1073946690,
+      "HexCode": "0x40032042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtBkExpDumpFcn",
+      "Message": "The background calendaring agent failed in the following function with error code %1. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -1073536957,
+      "HexCode": "0xC0032043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtSaveDurationTooLong",
+      "Message": "An attempt was made to save an appointment with the subject \u0022%1\u0022 to mailbox %2. The duration of the appointment was too large, so it was not saved. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278780,
+      "HexCode": "0x80032044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtModifyDurationTooLong",
+      "Message": "An existing appointment with the subject \u0022%1\u0022 in mailbox %2 was modified. The duration of the existing appointment was too large. Free/busy publishing may not be accurate. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278779,
+      "HexCode": "0x80032045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtDeleteDurationTooLong",
+      "Message": "The existing appointment with the subject \u0022%1\u0022 in mailbox %2 was deleted. The duration of the existing appointment was too large. Free/busy publishing may not be accurate. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278778,
+      "HexCode": "0x80032046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtTooManyIterationsForQuery",
+      "Message": "The recurring appointment expansion in mailbox %1 has taken too long. Some recurring appointment instances may not be visible at this time. To ensure that the calendar view is correct, please refresh the calendar view in Microsoft Outlook Web Access. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278777,
+      "HexCode": "0x80032047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "evtTooManyIterationsForFreebusy",
+      "Message": "The recurring appointment expansion in mailbox %1 has taken too long. The free/busy information for this calendar may be inaccurate. This may be the result of many very old recurring appointments. To correct this, please remove them or change their start date to a more recent date. %n%nFor more information, click http://www.microsoft.com/contentredirect.asp.",
+      "DecimalCode": -2147278776,
+      "HexCode": "0x80032048",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

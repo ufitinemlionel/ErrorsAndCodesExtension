@@ -1,0 +1,1014 @@
+{
+  "HeaderFileName": "bitsmsg.h",
+  "ErrorCodes": [
+    {
+      "Id": "BG_E_NOT_FOUND",
+      "Message": "The requested job was not found.",
+      "DecimalCode": -2145386495,
+      "HexCode": "0x80200001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_STATE",
+      "Message": "The requested action is not allowed in the current job state. The job might have been canceled or completed transferring. It is in a read-only state now.",
+      "DecimalCode": -2145386494,
+      "HexCode": "0x80200002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_EMPTY",
+      "Message": "There are no files attached to this job. Attach files to the job, and then try again.",
+      "DecimalCode": -2145386493,
+      "HexCode": "0x80200003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_FILE_NOT_AVAILABLE",
+      "Message": "No file is available because no URL generated an error.",
+      "DecimalCode": -2145386492,
+      "HexCode": "0x80200004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_PROTOCOL_NOT_AVAILABLE",
+      "Message": "No protocol is available because no URL generated an error.",
+      "DecimalCode": -2145386491,
+      "HexCode": "0x80200005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_S_ERROR_CONTEXT_NONE",
+      "Message": "No errors have occurred.",
+      "DecimalCode": 2097158,
+      "HexCode": "0x00200006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_UNKNOWN",
+      "Message": "The error occurred in an unknown location.",
+      "DecimalCode": -2145386489,
+      "HexCode": "0x80200007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_GENERAL_QUEUE_MANAGER",
+      "Message": "The error occurred in the Background Intelligent Transfer Service (BITS) queue manager.",
+      "DecimalCode": -2145386488,
+      "HexCode": "0x80200008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_LOCAL_FILE",
+      "Message": "The error occurred while the local file was being processed. Verify that the file is not in use, and then try again.",
+      "DecimalCode": -2145386487,
+      "HexCode": "0x80200009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_REMOTE_FILE",
+      "Message": "The error occurred while the remote file was being processed.",
+      "DecimalCode": -2145386486,
+      "HexCode": "0x8020000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_GENERAL_TRANSPORT",
+      "Message": "The error occurred in the transport layer. The client could not connect to the server.",
+      "DecimalCode": -2145386485,
+      "HexCode": "0x8020000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_QUEUE_MANAGER_NOTIFICATION",
+      "Message": "The error occurred while the notification callback was being processed. Background Intelligent Transfer Service (BITS) will try again later.",
+      "DecimalCode": -2145386484,
+      "HexCode": "0x8020000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_DESTINATION_LOCKED",
+      "Message": "The destination file system volume is not available. Verify that another program, such as CheckDisk, is not running, which would lock the volume. When the volume is available, Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145386483,
+      "HexCode": "0x8020000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_VOLUME_CHANGED",
+      "Message": "The destination volume has changed. If the disk is removable, it might have been replaced with a different disk. Reinsert the original disk and resume the job.",
+      "DecimalCode": -2145386482,
+      "HexCode": "0x8020000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_INFORMATION_UNAVAILABLE",
+      "Message": "No errors have occurred.",
+      "DecimalCode": -2145386481,
+      "HexCode": "0x8020000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_NETWORK_DISCONNECTED",
+      "Message": "There are currently no active network connections. Background Intelligent Transfer Service (BITS) will try again when an adapter is connected.",
+      "DecimalCode": -2145386480,
+      "HexCode": "0x80200010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_MISSING_FILE_SIZE",
+      "Message": "The server did not return the file size. The URL might point to dynamic content. The Content-Length header is not available in the server\u0027s HTTP reply.",
+      "DecimalCode": -2145386479,
+      "HexCode": "0x80200011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INSUFFICIENT_HTTP_SUPPORT",
+      "Message": "The server does not support HTTP 1.1.",
+      "DecimalCode": -2145386478,
+      "HexCode": "0x80200012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INSUFFICIENT_RANGE_SUPPORT",
+      "Message": "The server does not support the necessary HTTP protocol. Background Intelligent Transfer Service (BITS) requires that the server support the Range protocol header.",
+      "DecimalCode": -2145386477,
+      "HexCode": "0x80200013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_REMOTE_NOT_SUPPORTED",
+      "Message": "Background Intelligent Transfer Service (BITS) cannot be used remotely.",
+      "DecimalCode": -2145386476,
+      "HexCode": "0x80200014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_NEW_OWNER_DIFF_MAPPING",
+      "Message": "The drive mapping for the job is different for the current owner than for the previous owner. Use a UNC path instead.",
+      "DecimalCode": -2145386475,
+      "HexCode": "0x80200015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_NEW_OWNER_NO_FILE_ACCESS",
+      "Message": "The new owner has insufficient access to the local files for the job. The new owner might not have permissions to access the job files. Verify that the new owner has sufficient permissions, and then try again.",
+      "DecimalCode": -2145386474,
+      "HexCode": "0x80200016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_S_PARTIAL_COMPLETE",
+      "Message": "Some of the transferred files were deleted because they were incomplete.",
+      "DecimalCode": 2097175,
+      "HexCode": "0x00200017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_PROXY_LIST_TOO_LARGE",
+      "Message": "The HTTP proxy list cannot be longer than 32,000 characters. Try again with a shorter proxy list.",
+      "DecimalCode": -2145386472,
+      "HexCode": "0x80200018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_PROXY_BYPASS_LIST_TOO_LARGE",
+      "Message": "The HTTP proxy bypass list cannot be longer than 32,000 characters. Try again with a shorter bypass proxy list.",
+      "DecimalCode": -2145386471,
+      "HexCode": "0x80200019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_S_UNABLE_TO_DELETE_FILES",
+      "Message": "Some of the temporary files could not be deleted. Check the system event log for the complete list of files that could not be deleted.",
+      "DecimalCode": 2097178,
+      "HexCode": "0x0020001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_SERVER_RESPONSE",
+      "Message": "The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145386469,
+      "HexCode": "0x8020001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOO_MANY_FILES",
+      "Message": "No more files can be added to this job.",
+      "DecimalCode": -2145386468,
+      "HexCode": "0x8020001C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_LOCAL_FILE_CHANGED",
+      "Message": "The local file was changed during the transfer. Recreate the job, and then try to transfer it again.",
+      "DecimalCode": -2145386467,
+      "HexCode": "0x8020001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_REMOTE_APPLICATION",
+      "Message": "The program on the remote server reported the error.",
+      "DecimalCode": -2145386466,
+      "HexCode": "0x8020001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_SESSION_NOT_FOUND",
+      "Message": "The specified session could not be found on the server. Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145386465,
+      "HexCode": "0x8020001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOO_LARGE",
+      "Message": "The job is too large for the server to accept. This job might exceed a job size limit set by the server administrator. Reduce the size of the job, and then try again.",
+      "DecimalCode": -2145386464,
+      "HexCode": "0x80200020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_STRING_TOO_LONG",
+      "Message": "The specified string is too long.",
+      "DecimalCode": -2145386463,
+      "HexCode": "0x80200021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_CLIENT_SERVER_PROTOCOL_MISMATCH",
+      "Message": "The client and server versions of Background Intelligent Transfer Service (BITS) are incompatible.",
+      "DecimalCode": -2145386462,
+      "HexCode": "0x80200022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_SERVER_EXECUTE_ENABLE",
+      "Message": "Scripting OR execute permissions are enabled on the IIS virtual directory associated with the job. To upload files to the virtual directory, disable the scripting and execute permissions on the virtual directory.",
+      "DecimalCode": -2145386461,
+      "HexCode": "0x80200023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_NO_PROGRESS",
+      "Message": "The job is not making headway.  The server may be misconfigured.  Background Intelligent Transfer Service (BITS) will try again later.",
+      "DecimalCode": -2145386460,
+      "HexCode": "0x80200024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_USERNAME_TOO_LARGE",
+      "Message": "The user name cannot be longer than 300 characters. Try again with a shorter name.",
+      "DecimalCode": -2145386459,
+      "HexCode": "0x80200025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_PASSWORD_TOO_LARGE",
+      "Message": "The password cannot be longer than 65536 characters. Try again with a shorter password.",
+      "DecimalCode": -2145386458,
+      "HexCode": "0x80200026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_AUTH_TARGET",
+      "Message": "The authentication target specified in the credentials is not defined.",
+      "DecimalCode": -2145386457,
+      "HexCode": "0x80200027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_AUTH_SCHEME",
+      "Message": "The authentication scheme specified in the credentials is not defined.",
+      "DecimalCode": -2145386456,
+      "HexCode": "0x80200028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_FILE_NOT_FOUND",
+      "Message": "The specified file name does not match any of the files in the job.",
+      "DecimalCode": -2145386455,
+      "HexCode": "0x80200029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_S_PROXY_CHANGED",
+      "Message": "The proxy server was changed.",
+      "DecimalCode": 2097194,
+      "HexCode": "0x0020002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_RANGE",
+      "Message": "The requested byte range extends beyond the end of the web page.  Use byte ranges that are wholly within the page.",
+      "DecimalCode": -2145386453,
+      "HexCode": "0x8020002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_OVERLAPPING_RANGES",
+      "Message": "The list of byte ranges contains some overlapping ranges, which are not supported.",
+      "DecimalCode": -2145386452,
+      "HexCode": "0x8020002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_CONNECT_FAILURE",
+      "Message": "A connection could not be established.",
+      "DecimalCode": -2145386451,
+      "HexCode": "0x8020002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_CONNECTION_CLOSED",
+      "Message": "The connection was closed prematurely.",
+      "DecimalCode": -2145386450,
+      "HexCode": "0x8020002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_POLICY",
+      "Message": "Group Policy settings prevent background jobs from running at this time.",
+      "DecimalCode": -2145386434,
+      "HexCode": "0x8020003E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_PROXY_INFO",
+      "Message": "The supplied proxy server or bypass list is invalid.",
+      "DecimalCode": -2145386433,
+      "HexCode": "0x8020003F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_CREDENTIALS",
+      "Message": "The format of the supplied security credentials is invalid.",
+      "DecimalCode": -2145386432,
+      "HexCode": "0x80200040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_INVALID_HASH_ALGORITHM",
+      "Message": "The application chose an unsupported hashing algorithm.",
+      "DecimalCode": -2145386431,
+      "HexCode": "0x80200041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_RECORD_DELETED",
+      "Message": "The chosen cache record has been deleted.  The attempt to update it has been abandoned.",
+      "DecimalCode": -2145386430,
+      "HexCode": "0x80200042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_COMMIT_IN_PROGRESS",
+      "Message": "Another application thread is already updating the cache record.",
+      "DecimalCode": -2145386429,
+      "HexCode": "0x80200043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_DISCOVERY_IN_PROGRESS",
+      "Message": "The system is already searching for neighbors.  Retry the operation after a few seconds.",
+      "DecimalCode": -2145386428,
+      "HexCode": "0x80200044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_UPNP_ERROR",
+      "Message": "A Universal Plug and Play (UPnP) error has occured.  Please check your Internet Gateway Device.",
+      "DecimalCode": -2145386427,
+      "HexCode": "0x80200045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TEST_OPTION_BLOCKED_DOWNLOAD",
+      "Message": "The test option is blocking the download after the search completed.",
+      "DecimalCode": -2145386426,
+      "HexCode": "0x80200046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_PEERCACHING_DISABLED",
+      "Message": "Peer-caching is disabled.",
+      "DecimalCode": -2145386425,
+      "HexCode": "0x80200047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BUSYCACHERECORD",
+      "Message": "The cache record is in use and can not be changed or deleted at this time.  Try again after a few seconds.",
+      "DecimalCode": -2145386424,
+      "HexCode": "0x80200048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOO_MANY_JOBS_PER_USER",
+      "Message": "Job count for the current user has exceeded the per user job limit.",
+      "DecimalCode": -2145386423,
+      "HexCode": "0x80200049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOO_MANY_JOBS_PER_MACHINE",
+      "Message": "Job count for the current machine has exceeded the per machine job limit.",
+      "DecimalCode": -2145386416,
+      "HexCode": "0x80200050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOO_MANY_FILES_IN_JOB",
+      "Message": "File count for the current job has exceeded the per job file limit.",
+      "DecimalCode": -2145386415,
+      "HexCode": "0x80200051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOO_MANY_RANGES_IN_FILE",
+      "Message": "Range count for the current file has exceeded the per file Range limit.",
+      "DecimalCode": -2145386414,
+      "HexCode": "0x80200052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_VALIDATION_FAILED",
+      "Message": "The application requested data from a web site, but the response was invalid. Using Event Viewer, check the log \u0027Application Logs \\ Microsoft \\ Windows \\ Bits-client \\ Operational\u0027 for more details.",
+      "DecimalCode": -2145386413,
+      "HexCode": "0x80200053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_MAXDOWNLOAD_TIMEOUT",
+      "Message": "BITS timed out downloading the job. The download did not complete within the maximum download time set on the job.",
+      "DecimalCode": -2145386412,
+      "HexCode": "0x80200054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_S_OVERRIDDEN_BY_POLICY",
+      "Message": "The configuration preferences have been saved successfully, but one or more of them are overridden by Group Policy.",
+      "DecimalCode": 2097237,
+      "HexCode": "0x00200055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_TOKEN_REQUIRED",
+      "Message": "The job is configured to use a different security token for some operations, but the token is not currently available.  The application must provide a token and then resume the job.",
+      "DecimalCode": -2145386410,
+      "HexCode": "0x80200056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_UNKNOWN_PROPERTY_ID",
+      "Message": "SetProperty() or GetProperty() called with an unknown property ID.",
+      "DecimalCode": -2145386409,
+      "HexCode": "0x80200057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_READ_ONLY_PROPERTY",
+      "Message": "Unable to call SetProperty() on a read-only property.",
+      "DecimalCode": -2145386408,
+      "HexCode": "0x80200058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_COST_TRANSFER_POLICY",
+      "Message": "The job\u0027s cost transfer policy settings prevent the job from transferring at this time.",
+      "DecimalCode": -2145386407,
+      "HexCode": "0x80200059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_PROPERTY_SUPPORTED_FOR_DOWNLOAD_JOBS_ONLY",
+      "Message": "The property is supported for download jobs only.",
+      "DecimalCode": -2145386400,
+      "HexCode": "0x80200060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_READ_ONLY_PROPERTY_AFTER_ADDFILE",
+      "Message": "The property cannot be changed after adding a file to job.",
+      "DecimalCode": -2145386399,
+      "HexCode": "0x80200061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_READ_ONLY_PROPERTY_AFTER_RESUME",
+      "Message": "The property cannot be changed after Resuming the job.",
+      "DecimalCode": -2145386398,
+      "HexCode": "0x80200062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_MAX_DOWNLOAD_SIZE_INVALID_VALUE",
+      "Message": "The value provided for BITS_JOB_PROPERTY_MAX_DOWNLOAD_SIZE property is invalid. Please provide value between 1 and UINT64_MAX.",
+      "DecimalCode": -2145386397,
+      "HexCode": "0x80200063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_MAX_DOWNLOAD_SIZE_LIMIT_REACHED",
+      "Message": "BITS cannot continue downloading the job. The download reached the maximum download size limit set on the job.",
+      "DecimalCode": -2145386396,
+      "HexCode": "0x80200064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_STANDBY_MODE",
+      "Message": "The transfer was paused because the computer is in power-saving mode. The transfer will resume when the computer wakes up.",
+      "DecimalCode": -2145386395,
+      "HexCode": "0x80200065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_USE_STORED_CREDENTIALS_NOT_SUPPORTED",
+      "Message": "The value provided for BITS_JOB_PROPERTY_USE_STORED_CREDENTIALS property is invalid. The property is only supported for Proxy (BG_AUTH_TARGET_PROXY) targets.",
+      "DecimalCode": -2145386394,
+      "HexCode": "0x80200066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_BATTERY_POLICY",
+      "Message": "The transfer was paused because the computer is running on battery power. The transfer will resume when the system is reconnected to A/C power.",
+      "DecimalCode": -2145386393,
+      "HexCode": "0x80200067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_BATTERY_SAVER",
+      "Message": "The transfer was paused because the computer is in Battery Saver mode. The transfer will resume when the system is reconnected to A/C power or no longer in Battery Saver mode.",
+      "DecimalCode": -2145386392,
+      "HexCode": "0x80200068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_WATCHDOG_TIMEOUT",
+      "Message": "An operation did not complete within the expected time interval.",
+      "DecimalCode": -2145386391,
+      "HexCode": "0x80200069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_APP_PACKAGE_NOT_FOUND",
+      "Message": "An app package matching the job owner or COM caller was not found.",
+      "DecimalCode": -2145386390,
+      "HexCode": "0x8020006A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_APP_PACKAGE_SCENARIO_NOT_SUPPORTED",
+      "Message": "BITS usage by app packages cannot be supported on this device because one or more dependencies are missing.",
+      "DecimalCode": -2145386389,
+      "HexCode": "0x8020006B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_DATABASE_CORRUPT",
+      "Message": "BITS persistent state corruption was detected. The necessary steps will be taken to fix this issue once BITS is restarted. BITS will now shutdown.",
+      "DecimalCode": -2145386388,
+      "HexCode": "0x8020006C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_RANDOM_ACCESS_NOT_SUPPORTED",
+      "Message": "BITS IBackgroundCopyFile6 methods are not supported in SMB, dynamic content, multirange, upload, or upload-reply transfers.",
+      "DecimalCode": -2145386387,
+      "HexCode": "0x8020006D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_BACKGROUND_ACCESS_POLICY",
+      "Message": "The background access settings of the job\u0027s owner app prevent the job from transferring at this time.",
+      "DecimalCode": -2145386386,
+      "HexCode": "0x8020006E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_GAME_MODE",
+      "Message": "The job was paused because there is an active Game Mode recipient that isn\u0027t the job\u0027s owner. The job will resume once the Game Mode recipient loses input focus or is closed.",
+      "DecimalCode": -2145386385,
+      "HexCode": "0x8020006F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_BLOCKED_BY_SYSTEM_POLICY",
+      "Message": "The job was paused due to system resource constraints. The job will automatically resume once system conditions change.",
+      "DecimalCode": -2145386384,
+      "HexCode": "0x80200070",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_NOT_SUPPORTED_WITH_CUSTOM_HTTP_METHOD",
+      "Message": "The requested action is not supported by jobs configured with a custom HTTP method.",
+      "DecimalCode": -2145386383,
+      "HexCode": "0x80200071",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_UNSUPPORTED_JOB_CONFIGURATION",
+      "Message": "The current job configuration is not compatible with the requested action.",
+      "DecimalCode": -2145386382,
+      "HexCode": "0x80200072",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_REMOTE_FILE_CHANGED",
+      "Message": "The remote file was changed during the transfer. If this is expected, call Resume on the job to initiate a retry.",
+      "DecimalCode": -2145386381,
+      "HexCode": "0x80200073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_SERVER_CERT_VALIDATION_INTERFACE_REQUIRED",
+      "Message": "The job is configured to raise a certificate validation callback, but the callback object is not currently available. The job owner must provide a new callback object and then resume the job.",
+      "DecimalCode": -2145386380,
+      "HexCode": "0x80200074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_READ_ONLY_WHEN_JOB_ACTIVE",
+      "Message": "This method should only be called when the job is in a paused state (SUSPENDED/ERROR/TRANSFERRED).",
+      "DecimalCode": -2145386379,
+      "HexCode": "0x80200075",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_ERROR_CONTEXT_SERVER_CERTIFICATE_CALLBACK",
+      "Message": "The error occurred while the user-provided server certificate validation callback was being processed.",
+      "DecimalCode": -2145386378,
+      "HexCode": "0x80200076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_100",
+      "Message": "HTTP status 100: The request can be continued.",
+      "DecimalCode": -2145845148,
+      "HexCode": "0x80190064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_101",
+      "Message": "HTTP status 101: The server switched protocols in an upgrade header.",
+      "DecimalCode": -2145845147,
+      "HexCode": "0x80190065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_200",
+      "Message": "HTTP status 200: The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145845048,
+      "HexCode": "0x801900C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_201",
+      "Message": "HTTP status 201: The request was fulfilled and resulted in the creation of a new resource.",
+      "DecimalCode": -2145845047,
+      "HexCode": "0x801900C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_202",
+      "Message": "HTTP status 202: The request was accepted for processing, but the processing has not been completed yet.",
+      "DecimalCode": -2145845046,
+      "HexCode": "0x801900CA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_203",
+      "Message": "HTTP status 203: The returned metadata in the entity-header is not the definitive set available from the server of origin.",
+      "DecimalCode": -2145845045,
+      "HexCode": "0x801900CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_204",
+      "Message": "HTTP status 204: The server has fulfilled the request, but there is no new information to send back.",
+      "DecimalCode": -2145845044,
+      "HexCode": "0x801900CC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_205",
+      "Message": "HTTP status 205: The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145845043,
+      "HexCode": "0x801900CD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_206",
+      "Message": "HTTP status 206: The server fulfilled the partial GET request for the resource.",
+      "DecimalCode": -2145845042,
+      "HexCode": "0x801900CE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_300",
+      "Message": "HTTP status 300: The server could not return the requested data.",
+      "DecimalCode": -2145844948,
+      "HexCode": "0x8019012C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_301",
+      "Message": "HTTP status 301: The requested resource was assigned to a new permanent Uniform Resource Identifier (URI), and any future references to this resource should use one of the returned URIs.",
+      "DecimalCode": -2145844947,
+      "HexCode": "0x8019012D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_302",
+      "Message": "HTTP status 302: The requested resource was assigned a different Uniform Resource Identifier (URI). This change is temporary.",
+      "DecimalCode": -2145844946,
+      "HexCode": "0x8019012E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_303",
+      "Message": "HTTP status 303: The response to the request is under a different Uniform Resource Identifier (URI) and must be retrieved using a GET method on that resource.",
+      "DecimalCode": -2145844945,
+      "HexCode": "0x8019012F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_304",
+      "Message": "HTTP status 304: The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145844944,
+      "HexCode": "0x80190130",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_305",
+      "Message": "HTTP status 305: The requested resource must be accessed through the proxy given by the location field.",
+      "DecimalCode": -2145844943,
+      "HexCode": "0x80190131",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_307",
+      "Message": "HTTP status 307: The URL has been temporarily relocated. Try again later.",
+      "DecimalCode": -2145844941,
+      "HexCode": "0x80190133",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_400",
+      "Message": "HTTP status 400: The server cannot process the request because the syntax is not valid.",
+      "DecimalCode": -2145844848,
+      "HexCode": "0x80190190",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_401",
+      "Message": "HTTP status 401: The requested resource requires user authentication.",
+      "DecimalCode": -2145844847,
+      "HexCode": "0x80190191",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_402",
+      "Message": "HTTP status 402: The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145844846,
+      "HexCode": "0x80190192",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_403",
+      "Message": "HTTP status 403: The client does not have sufficient access rights to the requested server object.",
+      "DecimalCode": -2145844845,
+      "HexCode": "0x80190193",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_404",
+      "Message": "HTTP status 404: The requested URL does not exist on the server.",
+      "DecimalCode": -2145844844,
+      "HexCode": "0x80190194",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_405",
+      "Message": "HTTP status 405: The method used is not allowed.",
+      "DecimalCode": -2145844843,
+      "HexCode": "0x80190195",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_406",
+      "Message": "HTTP status 406: No responses acceptable to the client were found.",
+      "DecimalCode": -2145844842,
+      "HexCode": "0x80190196",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_407",
+      "Message": "HTTP status 407: Proxy authentication is required.",
+      "DecimalCode": -2145844841,
+      "HexCode": "0x80190197",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_408",
+      "Message": "HTTP status 408: The server timed out waiting for the request.",
+      "DecimalCode": -2145844840,
+      "HexCode": "0x80190198",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_409",
+      "Message": "HTTP status 409: The request could not be completed because of a conflict with the current state of the resource. The user should resubmit the request with more information.",
+      "DecimalCode": -2145844839,
+      "HexCode": "0x80190199",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_410",
+      "Message": "HTTP status 410: The requested resource is not currently available at the server, and no forwarding address is known.",
+      "DecimalCode": -2145844838,
+      "HexCode": "0x8019019A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_411",
+      "Message": "HTTP status 411: The server cannot accept the request without a defined content length.",
+      "DecimalCode": -2145844837,
+      "HexCode": "0x8019019B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_412",
+      "Message": "HTTP status 412: The precondition given in one or more of the request header fields evaluated to false when it was tested on the server.",
+      "DecimalCode": -2145844836,
+      "HexCode": "0x8019019C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_413",
+      "Message": "HTTP status 413: The server cannot process the request because the request entity is too large.",
+      "DecimalCode": -2145844835,
+      "HexCode": "0x8019019D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_414",
+      "Message": "HTTP status 414: The server cannot process the request because the request Uniform Resource Identifier (URI) is longer than the server can interpret.",
+      "DecimalCode": -2145844834,
+      "HexCode": "0x8019019E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_415",
+      "Message": "HTTP status 415: The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145844833,
+      "HexCode": "0x8019019F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_416",
+      "Message": "HTTP status 416: The server could not satisfy the range request.",
+      "DecimalCode": -2145844832,
+      "HexCode": "0x801901A0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_417",
+      "Message": "HTTP status 417: The server could not meet the expectation given in an Expect request-header field.",
+      "DecimalCode": -2145844831,
+      "HexCode": "0x801901A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_449",
+      "Message": "HTTP status 449: The server\u0027s response was not valid. The server was not following the defined protocol. Resume the job, and then Background Intelligent Transfer Service (BITS) will try again.",
+      "DecimalCode": -2145844799,
+      "HexCode": "0x801901C1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_500",
+      "Message": "HTTP status 500: An unexpected condition prevented the server from fulfilling the request.",
+      "DecimalCode": -2145844748,
+      "HexCode": "0x801901F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_501",
+      "Message": "HTTP status 501: The server does not support the functionality required to fulfill the request.",
+      "DecimalCode": -2145844747,
+      "HexCode": "0x801901F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_502",
+      "Message": "HTTP status 502: The server, while acting as a gateway or proxy to fulfill the request, received an invalid response from the upstream server it accessed.",
+      "DecimalCode": -2145844746,
+      "HexCode": "0x801901F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_503",
+      "Message": "HTTP status 503: The service is temporarily overloaded.",
+      "DecimalCode": -2145844745,
+      "HexCode": "0x801901F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_504",
+      "Message": "HTTP status 504: The request was timed out waiting for a gateway.",
+      "DecimalCode": -2145844744,
+      "HexCode": "0x801901F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BG_E_HTTP_ERROR_505",
+      "Message": "HTTP status 505: The server does not support the HTTP protocol version that was used in the request message.",
+      "DecimalCode": -2145844743,
+      "HexCode": "0x801901F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_JOB_CANCELLED",
+      "Message": "The administrator %4 canceled job \u0022%2\u0022 on behalf of %3.  The job ID was %1.",
+      "DecimalCode": -2145828864,
+      "HexCode": "0x80194000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_FILE_DELETION_FAILED",
+      "Message": "While canceling job \u0022%2\u0022, BITS was not able to remove the temporary files listed below. If you can delete them, then you will regain some disk space.  The job ID was %1. %3",
+      "DecimalCode": -2145828863,
+      "HexCode": "0x80194001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_FILE_DELETION_FAILED_MORE",
+      "Message": "While canceling job \u0022%2\u0022, BITS was not able to remove the temporary files listed below. If you can delete them, then you will regain some disk space.  The job ID was %1. %3 Due to space limitations, not all files are listed here.  Check for additional files of the form BITxxx.TMP in the same directory.",
+      "DecimalCode": -2145828862,
+      "HexCode": "0x80194002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_JOB_PROPERTY_CHANGE",
+      "Message": "The administrator %3 modified the %4 property of job \u0022%2\u0022.  The job ID was %1.",
+      "DecimalCode": -2145828861,
+      "HexCode": "0x80194003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_JOB_TAKE_OWNERSHIP",
+      "Message": "The administrator %4 took ownership of job \u0022%2\u0022 from %3.  The job ID was %1.",
+      "DecimalCode": -2145828860,
+      "HexCode": "0x80194004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_JOB_SCAVENGED",
+      "Message": "Job \u0022%2\u0022 owned by %3 was canceled after being inactive for more than %4 days.  The job ID was %1.",
+      "DecimalCode": -2145828859,
+      "HexCode": "0x80194005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_JOB_NOTIFICATION_FAILURE",
+      "Message": "Job \u0022%2\u0022 owned by %3 failed to notify its associated application.  BITS will retry in %4 minutes.  The job ID was %1.",
+      "DecimalCode": -2145828858,
+      "HexCode": "0x80194006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_STATE_FILE_CORRUPT",
+      "Message": "The BITS job list is not in a recognized format.  It may have been created by a different version of BITS.  The job list has been cleared.",
+      "DecimalCode": -2145828857,
+      "HexCode": "0x80194007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_FAILED_TO_START",
+      "Message": "The BITS service failed to start. Try restarting the service at a later time.",
+      "DecimalCode": -2145828856,
+      "HexCode": "0x80194008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_FATAL_IGD_ERROR",
+      "Message": "BITS has hit a fatal error communicating with an Internet Gateway Device.  Please check that the device is functioning properly. BITS will not attempt to use this device until the next system reboot.",
+      "DecimalCode": -2145828855,
+      "HexCode": "0x80194009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_PEERCACHING_PORT",
+      "Message": "BITS Peer-caching protocol",
+      "DecimalCode": -2145828854,
+      "HexCode": "0x8019400A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITS_MC_WSD_PORT",
+      "Message": "Web Services-Discovery protocol",
+      "DecimalCode": -2145828853,
+      "HexCode": "0x8019400B",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

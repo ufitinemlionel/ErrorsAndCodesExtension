@@ -1,0 +1,1125 @@
+{
+  "HeaderFileName": "ntiologc.h",
+  "ErrorCodes": [
+    {
+      "Id": "IO_ERR_INSUFFICIENT_RESOURCES",
+      "Message": "The driver could not allocate something necessary for the request for %1.",
+      "DecimalCode": -1073479678,
+      "HexCode": "0xC0040002",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_DRIVER_ERROR",
+      "Message": "Driver detected an internal error in its data structures for %1.",
+      "DecimalCode": -1073479676,
+      "HexCode": "0xC0040004",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_SEEK_ERROR",
+      "Message": "The device, %1, had a seek error.",
+      "DecimalCode": -1073479674,
+      "HexCode": "0xC0040006",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_BAD_BLOCK",
+      "Message": "The device, %1, has a bad block.",
+      "DecimalCode": -1073479673,
+      "HexCode": "0xC0040007",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_TIMEOUT",
+      "Message": "The device, %1, did not respond within the timeout period.",
+      "DecimalCode": -1073479671,
+      "HexCode": "0xC0040009",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_CONTROLLER_ERROR",
+      "Message": "The driver detected a controller error on %1.",
+      "DecimalCode": -1073479669,
+      "HexCode": "0xC004000B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_NOT_READY",
+      "Message": "The device, %1, is not ready for access yet.",
+      "DecimalCode": -1073479665,
+      "HexCode": "0xC004000F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_INVALID_REQUEST",
+      "Message": "The request is incorrectly formatted for %1.",
+      "DecimalCode": -1073479664,
+      "HexCode": "0xC0040010",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_RESET",
+      "Message": "The device, %1, has been reset.",
+      "DecimalCode": -1073479661,
+      "HexCode": "0xC0040013",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_BAD_FIRMWARE",
+      "Message": "The driver has detected a device with old or out-of-date firmware.  The device will not be used.",
+      "DecimalCode": -1073479655,
+      "HexCode": "0xC0040019",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WRN_BAD_FIRMWARE",
+      "Message": "The driver has detected that device %1 has old or out-of-date firmware. Reduced performance may result.",
+      "DecimalCode": -2147221478,
+      "HexCode": "0x8004001A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WRITE_CACHE_ENABLED",
+      "Message": "The driver detected that the device %1 has its write cache enabled. Data corruption may occur.",
+      "DecimalCode": -2147221472,
+      "HexCode": "0x80040020",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_RECOVERED_VIA_ECC",
+      "Message": "Data was recovered using error correction code on device %1.",
+      "DecimalCode": -2147221471,
+      "HexCode": "0x80040021",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WRITE_CACHE_DISABLED",
+      "Message": "The driver disabled the write cache on device %1.",
+      "DecimalCode": -2147221470,
+      "HexCode": "0x80040022",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_PAGING_FAILURE",
+      "Message": "An error was detected on device %1 during a paging operation.",
+      "DecimalCode": -2147221453,
+      "HexCode": "0x80040033",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WRN_FAILURE_PREDICTED",
+      "Message": "The driver has detected that device %1 has predicted that it will fail. Immediately back up your data and replace your hard disk drive. A failure may be imminent.",
+      "DecimalCode": -2147221452,
+      "HexCode": "0x80040034",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_ALLOCATION_FAILED",
+      "Message": "The driver failed to allocate memory.",
+      "DecimalCode": -2147221448,
+      "HexCode": "0x80040038",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DUPLICATE_SIGNATURE",
+      "Message": "The disk signature of disk %2 is equal to the disk signature of disk %3.",
+      "DecimalCode": -2147221446,
+      "HexCode": "0x8004003A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DUPLICATE_PATH",
+      "Message": "Disk %2 will not be used because it is a redundant path for disk %3.",
+      "DecimalCode": -2147221445,
+      "HexCode": "0x8004003B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_WRITE_FUA_PROBLEM",
+      "Message": "Device %1 is not correctly processing some write requests. In Device Manager, ensure that the Write Cache option is disabled for this device or data corruption may occur.",
+      "DecimalCode": -2147221372,
+      "HexCode": "0x80040084",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_VOLUME_LOST_DISK_EXTENT",
+      "Message": "Extent %4 on disk %3 that is part of the fault-tolerant volume %2 is no longer accessible.",
+      "DecimalCode": -2147221362,
+      "HexCode": "0x8004008E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DEVICE_HAS_INTERNAL_DUMP",
+      "Message": "The storage device produced an internal dump.",
+      "DecimalCode": -2147221361,
+      "HexCode": "0x8004008F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_SOFT_THRESHOLD_REACHED",
+      "Message": "Disk %2 has crossed a capacity utilization threshold.",
+      "DecimalCode": -2147221360,
+      "HexCode": "0x80040090",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_SOFT_THRESHOLD_REACHED_EX",
+      "Message": "Disk %2 has crossed a capacity utilization threshold and used %3 bytes. When the threshold was crossed, there were %4 bytes of remaining capacity.",
+      "DecimalCode": -2147221359,
+      "HexCode": "0x80040091",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_SOFT_THRESHOLD_REACHED_EX_LUN_LUN",
+      "Message": "Disk %2 has crossed a capacity utilization threshold and used %3 bytes. When the threshold was crossed, the disk had %4 bytes of remaining capacity.",
+      "DecimalCode": -2147221358,
+      "HexCode": "0x80040092",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_SOFT_THRESHOLD_REACHED_EX_LUN_POOL",
+      "Message": "Disk %2 has crossed a capacity utilization threshold and used %3 bytes. When the threshold was crossed, the pool had %4 bytes of remaining capacity.",
+      "DecimalCode": -2147221357,
+      "HexCode": "0x80040093",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_SOFT_THRESHOLD_REACHED_EX_POOL_LUN",
+      "Message": "Disk %2 has crossed a capacity utilization threshold. When the threshold was crossed, %3 bytes from the pool were used and the disk had %4 bytes of remaining capacity.",
+      "DecimalCode": -2147221356,
+      "HexCode": "0x80040094",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_SOFT_THRESHOLD_REACHED_EX_POOL_POOL",
+      "Message": "Disk %2 has crossed a capacity utilization threshold. When the threshold was crossed, %3 bytes from the pool were used and the pool had %4 bytes of remaining capacity.",
+      "DecimalCode": -2147221355,
+      "HexCode": "0x80040095",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERROR_DISK_RESOURCES_EXHAUSTED",
+      "Message": "Disk %2 has reached a logical block provisioning permanent resource exhaustion condition.",
+      "DecimalCode": -1073479530,
+      "HexCode": "0xC0040096",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DISK_CAPACITY_CHANGED",
+      "Message": "The capacity of Disk %2 has changed.",
+      "DecimalCode": -2147221353,
+      "HexCode": "0x80040097",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DISK_PROVISIONING_TYPE_CHANGED",
+      "Message": "The logical block provisioning type for Disk %2 has changed.",
+      "DecimalCode": -2147221352,
+      "HexCode": "0x80040098",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_IO_OPERATION_RETRIED",
+      "Message": "The IO operation at logical block address %2 for Disk %3 (PDO name: %4) was retried.",
+      "DecimalCode": -2147221351,
+      "HexCode": "0x80040099",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERROR_IO_HARDWARE_ERROR",
+      "Message": "The IO operation at logical block address %2 for Disk %3 (PDO name: %4) failed due to a hardware error.",
+      "DecimalCode": -1073479526,
+      "HexCode": "0xC004009A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_COMPLETION_TIME",
+      "Message": "The IO operation at logical block address %2 for Disk %3 took %4 milliseconds. This was longer than the maximum expected time of %5 milliseconds.",
+      "DecimalCode": -2147221349,
+      "HexCode": "0x8004009B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DISK_SURPRISE_REMOVED",
+      "Message": "Disk %2 has been surprise removed.",
+      "DecimalCode": -2147221347,
+      "HexCode": "0x8004009D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_REPEATED_DISK_GUID",
+      "Message": "Disk %2 has the same disk identifiers as one or more disks connected to the system. Go to Microsoft\u0027s support website (http://support.microsoft.com) and search for KB2983588 to resolve the issue.",
+      "DecimalCode": -2147221346,
+      "HexCode": "0x8004009E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DISK_FIRMWARE_UPDATED",
+      "Message": "Firmware update for Disk %2 is completed.",
+      "DecimalCode": 1074004127,
+      "HexCode": "0x4004009F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_RETRY_SUCCEEDED",
+      "Message": "A retry was successful on %1.",
+      "DecimalCode": 262145,
+      "HexCode": "0x00040001",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_CREATION_SUCCESS",
+      "Message": "Dump file generation succeded.",
+      "DecimalCode": 262306,
+      "HexCode": "0x000400A2",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_QUOTA_THRESHOLD",
+      "Message": "A user hit their quota threshold on volume %2.",
+      "DecimalCode": 1074004004,
+      "HexCode": "0x40040024",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_QUOTA_LIMIT",
+      "Message": "A user hit their quota limit on volume %2.",
+      "DecimalCode": 1074004005,
+      "HexCode": "0x40040025",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_QUOTA_STARTED",
+      "Message": "The system has started rebuilding the user disk quota information on device %1 with label \u0022%2\u0022.",
+      "DecimalCode": 1074004006,
+      "HexCode": "0x40040026",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_QUOTA_SUCCEEDED",
+      "Message": "The system has successfully rebuilt the user disk quota information on device %1 with label \u0022%2\u0022.",
+      "DecimalCode": 1074004007,
+      "HexCode": "0x40040027",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_INFO_THROTTLE_COMPLETE",
+      "Message": "The driver for device %1 delayed non-paging Io requests for %2 ms to recover from a low memory condition.",
+      "DecimalCode": 1074004087,
+      "HexCode": "0x40040077",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_CDROM_EXCLUSIVE_LOCK",
+      "Message": "Device %1 is locked for exclusive access.",
+      "DecimalCode": 1074004101,
+      "HexCode": "0x40040085",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_ADAPTER_FIRMWARE_UPDATED",
+      "Message": "Firmware update for Adapter %1 is completed.",
+      "DecimalCode": 1074004128,
+      "HexCode": "0x400400A0",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_QUOTA_FAILED",
+      "Message": "The system has encounted an error rebuilding the user disk quota information on device %1 with label \u0022%2\u0022.",
+      "DecimalCode": -2147221464,
+      "HexCode": "0x80040028",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_LOST_DELAYED_WRITE",
+      "Message": "{Delayed Write Failed} Windows was unable to save all the data for the file %2. The data has been lost. This error may be caused by a failure of your computer hardware or network connection. Please try to save this file elsewhere.",
+      "DecimalCode": -2147221454,
+      "HexCode": "0x80040032",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_INTERRUPT_STILL_PENDING",
+      "Message": "A pending interrupt was detected on device %1 during a timeout operation.  A large number of these warnings may indicate that the system is not correctly receiving or processing interrupts from the device.",
+      "DecimalCode": -2147221451,
+      "HexCode": "0x80040035",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DRIVER_CANCEL_TIMEOUT",
+      "Message": "An Io Request to the device %1 did not complete or canceled within the specific timeout. This can occur if the device driver does not set a cancel routine for a given IO request packet.",
+      "DecimalCode": -2147221450,
+      "HexCode": "0x80040036",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_LOG_FLUSH_FAILED",
+      "Message": "The system failed to flush data to the transaction log. Corruption may occur.",
+      "DecimalCode": -2147221447,
+      "HexCode": "0x80040039",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_BUS_RESET",
+      "Message": "The driver for device %1 performed a bus reset upon request.",
+      "DecimalCode": -2147221386,
+      "HexCode": "0x80040076",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_RESET",
+      "Message": "Reset to device, %1, was issued.",
+      "DecimalCode": -2147221375,
+      "HexCode": "0x80040081",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_LOST_DELAYED_WRITE_NETWORK_DISCONNECTED",
+      "Message": "{Delayed Write Failed} Windows was unable to save all the data for the file %2; the data has been lost. This error may be caused by network connectivity issues. Please try to save this file elsewhere.",
+      "DecimalCode": -2147221365,
+      "HexCode": "0x8004008B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_LOST_DELAYED_WRITE_NETWORK_SERVER_ERROR",
+      "Message": "{Delayed Write Failed} Windows was unable to save all the data for the file %2; the data has been lost. This error was returned by the server on which the file exists. Please try to save this file elsewhere.",
+      "DecimalCode": -2147221364,
+      "HexCode": "0x8004008C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_LOST_DELAYED_WRITE_NETWORK_LOCAL_DISK_ERROR",
+      "Message": "{Delayed Write Failed} Windows was unable to save all the data for the file %2; the data has been lost. This error may be caused if the device has been removed or the media is write-protected.",
+      "DecimalCode": -2147221363,
+      "HexCode": "0x8004008D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_WARNING_DUMP_DISABLED_DEVICE_GONE",
+      "Message": "Crash dump is disabled. Crash dump device is not present in the system.",
+      "DecimalCode": -2147221348,
+      "HexCode": "0x8004009C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_CONFIGURATION_ERROR",
+      "Message": "Driver or device is incorrectly configured for %1.",
+      "DecimalCode": -1073479677,
+      "HexCode": "0xC0040003",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_PARITY",
+      "Message": "A parity error was detected on %1.",
+      "DecimalCode": -1073479675,
+      "HexCode": "0xC0040005",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_OVERRUN_ERROR",
+      "Message": "An overrun occurred on %1.",
+      "DecimalCode": -1073479672,
+      "HexCode": "0xC0040008",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_SEQUENCE",
+      "Message": "The driver detected an unexpected sequence by the device, %1.",
+      "DecimalCode": -1073479670,
+      "HexCode": "0xC004000A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_INTERNAL_ERROR",
+      "Message": "The driver detected an internal driver error on %1.",
+      "DecimalCode": -1073479668,
+      "HexCode": "0xC004000C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_INCORRECT_IRQL",
+      "Message": "The driver was configured with an incorrect interrupt for %1.",
+      "DecimalCode": -1073479667,
+      "HexCode": "0xC004000D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_INVALID_IOBASE",
+      "Message": "The driver was configured with an invalid I/O base address for %1.",
+      "DecimalCode": -1073479666,
+      "HexCode": "0xC004000E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_VERSION",
+      "Message": "The wrong version of the driver has been loaded.",
+      "DecimalCode": -1073479663,
+      "HexCode": "0xC0040011",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_LAYERED_FAILURE",
+      "Message": "The driver beneath this one has failed in some way for %1.",
+      "DecimalCode": -1073479662,
+      "HexCode": "0xC0040012",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_PROTOCOL",
+      "Message": "A transport driver received a frame which violated the protocol.",
+      "DecimalCode": -1073479660,
+      "HexCode": "0xC0040014",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_MEMORY_CONFLICT_DETECTED",
+      "Message": "A conflict has been detected between two drivers which claimed two overlapping memory regions. Driver %2, with device \u003C%3\u003E, claimed a memory range with starting address in data address 0x28 and 0x2c, and length in data address 0x30.",
+      "DecimalCode": -1073479659,
+      "HexCode": "0xC0040015",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_PORT_CONFLICT_DETECTED",
+      "Message": "A conflict has been detected between two drivers which claimed two overlapping Io port regions. Driver %2, with device \u003C%3\u003E, claimed an IO port range with starting address in data address 0x28 and 0x2c, and length in data address 0x30.",
+      "DecimalCode": -1073479658,
+      "HexCode": "0xC0040016",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_DMA_CONFLICT_DETECTED",
+      "Message": "A conflict has been detected between two drivers which claimed equivalent DMA channels. Driver %2, with device \u003C%3\u003E, claimed the DMA Channel in data address 0x28, with optinal port in data address 0x2c.",
+      "DecimalCode": -1073479657,
+      "HexCode": "0xC0040017",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_IRQ_CONFLICT_DETECTED",
+      "Message": "A conflict has been detected between two drivers which claimed equivalent IRQs. Driver %2, with device \u003C%3\u003E, claimed an interrupt with Level in data address 0x28, vector in data address 0x2c and Affinity in data address 0x30.",
+      "DecimalCode": -1073479656,
+      "HexCode": "0xC0040018",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_DMA_RESOURCE_CONFLICT",
+      "Message": "The device could not allocate one or more required resources due to conflicts with other devices.  The device DMA setting of \u0027%2\u0027 could not be satisified due to a conflict with Driver \u0027%3\u0027.",
+      "DecimalCode": -1073479653,
+      "HexCode": "0xC004001B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_INTERRUPT_RESOURCE_CONFLICT",
+      "Message": "The device could not allocate one or more required resources due to conflicts with other devices.  The device interrupt setting of \u0027%2\u0027 could not be satisified due to a conflict with Driver \u0027%3\u0027.",
+      "DecimalCode": -1073479652,
+      "HexCode": "0xC004001C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_MEMORY_RESOURCE_CONFLICT",
+      "Message": "The device could not allocate one or more required resources due to conflicts with other devices.  The device memory setting of \u0027%2\u0027 could not be satisified due to a conflict with Driver \u0027%3\u0027.",
+      "DecimalCode": -1073479651,
+      "HexCode": "0xC004001D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_PORT_RESOURCE_CONFLICT",
+      "Message": "The device could not allocate one or more required resources due to conflicts with other devices.  The device port setting of \u0027%2\u0027 could not be satisified due to a conflict with Driver \u0027%3\u0027.",
+      "DecimalCode": -1073479650,
+      "HexCode": "0xC004001E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_BAD_BLOCK_WITH_NAME",
+      "Message": "The file %2 on device %1 contains a bad disk block.",
+      "DecimalCode": -1073479649,
+      "HexCode": "0xC004001F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_SYSTEM_CORRUPT",
+      "Message": "The file system structure on the disk is corrupt and unusable. Please run the chkdsk utility on the device %1 with label \u0022%2\u0022.",
+      "DecimalCode": -1073479639,
+      "HexCode": "0xC0040029",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_QUOTA_CORRUPT",
+      "Message": "The user disk quota information is unusable. To ensure accuracy, the file system quota information on the device %1 with label \u0022%2\u0022 will be rebuilt.",
+      "DecimalCode": -1073479638,
+      "HexCode": "0xC004002A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_SYSTEM_SLEEP_FAILED",
+      "Message": "The system sleep operation failed",
+      "DecimalCode": -1073479637,
+      "HexCode": "0xC004002B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_POINTER_FAILURE",
+      "Message": "The system could not get file retrieval pointers for the dump file.",
+      "DecimalCode": -1073479636,
+      "HexCode": "0xC004002C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_DRIVER_LOAD_FAILURE",
+      "Message": "The system could not sucessfully load the crash dump driver.",
+      "DecimalCode": -1073479635,
+      "HexCode": "0xC004002D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_INITIALIZATION_FAILURE",
+      "Message": "Crash dump initialization failed!",
+      "DecimalCode": -1073479634,
+      "HexCode": "0xC004002E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_DUMPFILE_CONFLICT",
+      "Message": "A valid crash dump was found in the paging file while trying to configure a direct dump. Direct dump is disabled! This occurs when the direct dump option is set in the registry but a stop error occured before configuration completed",
+      "DecimalCode": -1073479633,
+      "HexCode": "0xC004002F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_DIRECT_CONFIG_FAILED",
+      "Message": "Direct dump configuration failed. Validate the filename and make sure the target device is not a Fault Tolerant set member, remote, or floppy device. The failure may be because there is not enough room on the dump device to create the dump file.",
+      "DecimalCode": -1073479632,
+      "HexCode": "0xC0040030",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_PAGE_CONFIG_FAILED",
+      "Message": "Configuring the Page file for crash dump failed. Make sure there is a page file on the boot partition and that is large enough to contain all physical memory.",
+      "DecimalCode": -1073479631,
+      "HexCode": "0xC0040031",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_FILE_SYSTEM_CORRUPT_WITH_NAME",
+      "Message": "The file system structure on the disk is corrupt and unusable. Please run the chkdsk utility on the volume %2.",
+      "DecimalCode": -1073479625,
+      "HexCode": "0xC0040037",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_THREAD_STUCK_IN_DEVICE_DRIVER",
+      "Message": "The driver %3 for the %2 device %1 got stuck in an infinite loop. This usually indicates a problem with the device itself or with the device driver programming the hardware incorrectly. Please check with your hardware device vendor for any driver updates.",
+      "DecimalCode": -1073479572,
+      "HexCode": "0xC004006C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERR_PORT_TIMEOUT",
+      "Message": "The driver for device %1 detected a port timeout due to prolonged inactivity. All associated busses were reset in an effort to clear the condition.",
+      "DecimalCode": -1073479563,
+      "HexCode": "0xC0040075",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_ERROR_DUMP_CREATION_ERROR",
+      "Message": "Dump file creation failed due to error during dump creation. BugCheckProgress was: %2",
+      "DecimalCode": -1073479519,
+      "HexCode": "0xC00400A1",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_CALLBACK_EXCEPTION",
+      "Message": "A callback exception was logged during dump. See DumpStack.log for details.",
+      "DecimalCode": -1073479517,
+      "HexCode": "0xC00400A3",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "IO_DUMP_INIT_DEDICATED_DUMP_FAILURE",
+      "Message": "Configuring the dedicated dump for crash dump failed. Make sure the dedicated dump file path is set correctly, or the disk has enough space to create the dump file.",
+      "DecimalCode": -1073479516,
+      "HexCode": "0xC00400A4",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_INFO_CPU_THERMAL_THROTTLING_REMOVED",
+      "Message": "Machine Check Event reported is a CPU thermal throttling event reported from CPU %1. The CPU has dropped below the temperature limit and throttling has been removed. %2 additional error(s) are contained within the record.",
+      "DecimalCode": 1074069616,
+      "HexCode": "0x40050070",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_INFO_NO_MORE_CORRECTED_ERROR_LOGS",
+      "Message": "The maximum number of Machine Check Event corrected error events that can be saved to the Event Log has been reached. Logging of these events has been disabled.",
+      "DecimalCode": 1074069619,
+      "HexCode": "0x40050073",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_INFO_MEMORY_PAGE_MARKED_BAD",
+      "Message": "The memory page at physical address %1 has encountered multiple corrected hardware error events. As a result it will no longer be used by Windows.",
+      "DecimalCode": 1074069620,
+      "HexCode": "0x40050074",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_CACHE",
+      "Message": "Machine Check Event reported is a corrected level %3 Cache error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155908,
+      "HexCode": "0x8005003C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_TLB",
+      "Message": "Machine Check Event reported is a corrected level %3 translation Buffer error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155906,
+      "HexCode": "0x8005003E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_CPU_BUS",
+      "Message": "Machine Check Event reported is a corrected External/Internal bus error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155904,
+      "HexCode": "0x80050040",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_REGISTER_FILE",
+      "Message": "Machine Check Event reported is a corrected internal CPU register access error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155902,
+      "HexCode": "0x80050042",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_MAS",
+      "Message": "Machine Check Event reported is a corrected Micro Architecture Structure error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155900,
+      "HexCode": "0x80050044",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_MEM_UNKNOWN",
+      "Message": "Machine Check Event reported is a corrected ECC memory error at an unknown physical address reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155898,
+      "HexCode": "0x80050046",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_MEM_1_2",
+      "Message": "Machine Check Event reported is a corrected ECC memory error at physical address %3 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155896,
+      "HexCode": "0x80050048",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_MEM_1_2_5",
+      "Message": "Machine Check Event reported is a corrected ECC memory error at physical address %3 on memory module %4 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155894,
+      "HexCode": "0x8005004A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_MEM_1_2_5_4",
+      "Message": "Machine Check Event reported is a corrected ECC memory error at physical address %3 on memory module %4 on memory card %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155892,
+      "HexCode": "0x8005004C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_SYSTEM_EVENT",
+      "Message": "Machine Check Event reported is a corrected System Event error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155890,
+      "HexCode": "0x8005004E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_PARITY",
+      "Message": "Machine Check Event reported is a corrected PCI bus Parity error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155888,
+      "HexCode": "0x80050050",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_PARITY_NO_INFO",
+      "Message": "Machine Check Event reported is a corrected PCI bus Parity error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155886,
+      "HexCode": "0x80050052",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_SERR",
+      "Message": "Machine Check Event reported is a corrected PCI bus SERR error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155884,
+      "HexCode": "0x80050054",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_SERR_NO_INFO",
+      "Message": "Machine Check Event reported is a corrected PCI bus SERR error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155882,
+      "HexCode": "0x80050056",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_MASTER_ABORT",
+      "Message": "Machine Check Event reported is a corrected PCI bus Master abort error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155880,
+      "HexCode": "0x80050058",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_MASTER_ABORT_NO_INFO",
+      "Message": "Machine Check Event reported is a corrected PCI bus Master abort error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155878,
+      "HexCode": "0x8005005A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_TIMEOUT",
+      "Message": "Machine Check Event reported is a corrected PCI bus Timeout error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155876,
+      "HexCode": "0x8005005C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_TIMEOUT_NO_INFO",
+      "Message": "Machine Check Event reported is a corrected PCI bus Timeout error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155874,
+      "HexCode": "0x8005005E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_BUS_UNKNOWN",
+      "Message": "Machine Check Event reported is an unknown corrected PCI bus error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155872,
+      "HexCode": "0x80050060",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PCI_DEVICE",
+      "Message": "Machine Check Event reported is a corrected PCI component error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155870,
+      "HexCode": "0x80050062",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_SMBIOS",
+      "Message": "Machine Check Event reported is a corrected SMBIOS Device Type %3 error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155868,
+      "HexCode": "0x80050064",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_PLATFORM_SPECIFIC",
+      "Message": "Machine Check Event reported is a corrected Platform Specific error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155866,
+      "HexCode": "0x80050066",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_UNKNOWN",
+      "Message": "Machine Check Event reported is a corrected error reported to CPU %1.",
+      "DecimalCode": -2147155864,
+      "HexCode": "0x80050068",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_UNKNOWN_NO_CPU",
+      "Message": "Machine Check Event reported is a corrected error.",
+      "DecimalCode": -2147155862,
+      "HexCode": "0x8005006A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_CMC_THRESHOLD_EXCEEDED",
+      "Message": "Corrected Machine Check Interrupt threshold exceeded. Interrupt has been disabled. Polling mode has been enabled.",
+      "DecimalCode": -2147155859,
+      "HexCode": "0x8005006D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_CPE_THRESHOLD_EXCEEDED",
+      "Message": "Corrected Platform Error Interrupt threshold exceeded. Interrupt has been disabled. Polling mode has been enabled.",
+      "DecimalCode": -2147155858,
+      "HexCode": "0x8005006E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_CPU_THERMAL_THROTTLED",
+      "Message": "Machine Check Event reported is a CPU thermal throttling event reported from CPU %1. The CPU has exceeded the temperature limit and has been throttled down. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155857,
+      "HexCode": "0x8005006F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_WARNING_CPU",
+      "Message": "Machine Check Event reported is a corrected CPU error reported from CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -2147155855,
+      "HexCode": "0x80050071",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_CACHE",
+      "Message": "Machine Check Event reported is a fatal level %3 Cache error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414083,
+      "HexCode": "0xC005003D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_TLB",
+      "Message": "Machine Check Event reported is a fatal level %3 translation Buffer error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414081,
+      "HexCode": "0xC005003F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_CPU_BUS",
+      "Message": "Machine Check Event reported is a fatal External/Internal bus error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414079,
+      "HexCode": "0xC0050041",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_REGISTER_FILE",
+      "Message": "Machine Check Event reported is a fatal internal CPU register access error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414077,
+      "HexCode": "0xC0050043",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_MAS",
+      "Message": "Machine Check Event reported is a fatal Micro Architecture Structure error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414075,
+      "HexCode": "0xC0050045",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_MEM_UNKNOWN",
+      "Message": "Machine Check Event reported is a fatal ECC memory error at an unknown physical address reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414073,
+      "HexCode": "0xC0050047",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_MEM_1_2",
+      "Message": "Machine Check Event reported is a fatal ECC memory error at physical address %3 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414071,
+      "HexCode": "0xC0050049",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_MEM_1_2_5",
+      "Message": "Machine Check Event reported is a fatal ECC memory error at physical address %3 on memory module %4 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414069,
+      "HexCode": "0xC005004B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_MEM_1_2_5_4",
+      "Message": "Machine Check Event reported is a fatal ECC memory error at physical address %3 on memory module %4 on memory card %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414067,
+      "HexCode": "0xC005004D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_SYSTEM_EVENT",
+      "Message": "Machine Check Event reported is a fatal System Event error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414065,
+      "HexCode": "0xC005004F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_PARITY",
+      "Message": "Machine Check Event reported is a fatal PCI bus Parity error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414063,
+      "HexCode": "0xC0050051",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_PARITY_NO_INFO",
+      "Message": "Machine Check Event reported is a fatal PCI bus Parity error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414061,
+      "HexCode": "0xC0050053",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_SERR",
+      "Message": "Machine Check Event reported is a fatal PCI bus SERR error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414059,
+      "HexCode": "0xC0050055",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_SERR_NO_INFO",
+      "Message": "Machine Check Event reported is a fatal PCI bus SERR error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414057,
+      "HexCode": "0xC0050057",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_MASTER_ABORT",
+      "Message": "Machine Check Event reported is a fatal PCI bus Master abort error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414055,
+      "HexCode": "0xC0050059",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_MASTER_ABORT_NO_INFO",
+      "Message": "Machine Check Event reported is a fatal PCI bus Master abort error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414053,
+      "HexCode": "0xC005005B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_TIMEOUT",
+      "Message": "Machine Check Event reported is a fatal PCI bus Timeout error during a transaction type %3 at address %4 on PCI bus %5 reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414051,
+      "HexCode": "0xC005005D",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_TIMEOUT_NO_INFO",
+      "Message": "Machine Check Event reported is a fatal PCI bus Timeout error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414049,
+      "HexCode": "0xC005005F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_BUS_UNKNOWN",
+      "Message": "Machine Check Event reported is an unknown fatal PCI bus error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414047,
+      "HexCode": "0xC0050061",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PCI_DEVICE",
+      "Message": "Machine Check Event reported is a fatal PCI component error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414045,
+      "HexCode": "0xC0050063",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_SMBIOS",
+      "Message": "Machine Check Event reported is a fatal SMBIOS Device Type %3 error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414043,
+      "HexCode": "0xC0050065",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_PLATFORM_SPECIFIC",
+      "Message": "Machine Check Event reported is a fatal Platform Specific error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414041,
+      "HexCode": "0xC0050067",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_UNKNOWN",
+      "Message": "Machine Check Event reported is a fatal error reported to CPU %1.",
+      "DecimalCode": -1073414039,
+      "HexCode": "0xC0050069",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_UNKNOWN_NO_CPU",
+      "Message": "Machine Check Event reported is a fatal error.",
+      "DecimalCode": -1073414037,
+      "HexCode": "0xC005006B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_ERROR_CPU",
+      "Message": "Machine Check Event reported is a fatal CPU error reported to CPU %1. %2 additional error(s) are contained within the record.",
+      "DecimalCode": -1073414030,
+      "HexCode": "0xC0050072",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_MEMORYHIERARCHY_ERROR",
+      "Message": "Machine Check Event reported is a fatal memory hierarchy error.%r Trasaction Type: %1%r Memory Hierarchy Level: %2%r Request Type: %3%r Address: %4",
+      "DecimalCode": -1073414024,
+      "HexCode": "0xC0050078",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_TLB_ERROR",
+      "Message": "Machine Check Event reported is a fatal TLB error.%r Transaction Type: %1%r Memory Hierarchy Level: %2%r Address: %3",
+      "DecimalCode": -1073414023,
+      "HexCode": "0xC0050079",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_BUS_ERROR",
+      "Message": "Machine Check Event reported is a fatal Bus or Interconnect error.%r Memory Hierarchy Level: %1%r Participation: %2%r Request Type: %3%r Memory/IO: %4%r Address: %5",
+      "DecimalCode": -1073414022,
+      "HexCode": "0xC005007A",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_BUS_TIMEOUT_ERROR",
+      "Message": "Machine Check Event reported is a fatal Bus or Interconnect timeout error.%r Memory Hierarchy Level: %1%r Participation: %2%r Request Type: %3%r Memory/IO: %4%r Address: %5",
+      "DecimalCode": -1073414021,
+      "HexCode": "0xC005007B",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_INTERNALTIMER_ERROR",
+      "Message": "Machine Check Event reported is a fatal internal watchdog timer error.",
+      "DecimalCode": -1073414020,
+      "HexCode": "0xC005007C",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_MICROCODE_ROM_PARITY_ERROR",
+      "Message": "Machine Check Event reported is a fatal microsoft ROM parity error.",
+      "DecimalCode": -1073414018,
+      "HexCode": "0xC005007E",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_EXTERNAL_ERROR",
+      "Message": "Machine Check Event reported is a fatal condition. A processor received an external signal that an unrecoverable error has occurred.",
+      "DecimalCode": -1073414017,
+      "HexCode": "0xC005007F",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "MCA_FRC_ERROR",
+      "Message": "Machine Check Event reported is a fatal functional redundancy check error.",
+      "DecimalCode": -1073414016,
+      "HexCode": "0xC0050080",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "VOLMGR_KSR_ERROR",
+      "Message": "There was an error validating KSR data - operation %2 status %3.",
+      "DecimalCode": -2143813631,
+      "HexCode": "0x80380001",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "VOLMGR_KSR_READ_ERROR",
+      "Message": "Failed to read KSR data - disk %2 sector %3 operation %4 status %5.",
+      "DecimalCode": -2143813630,
+      "HexCode": "0x80380002",
+      "Type": "NTStatus"
+    },
+    {
+      "Id": "VOLMGR_KSR_BYPASS",
+      "Message": "A %2 operation took place during KSR - disk %3 offset %4.",
+      "DecimalCode": -2143813629,
+      "HexCode": "0x80380003",
+      "Type": "NTStatus"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_IO_ERROR_CODE",
+      "Code": 4
+    },
+    {
+      "Name": "FACILITY_MCA_ERROR_CODE",
+      "Code": 5
+    },
+    {
+      "Name": "FACILITY_VOLMGR",
+      "Code": 56
+    }
+  ]
+}

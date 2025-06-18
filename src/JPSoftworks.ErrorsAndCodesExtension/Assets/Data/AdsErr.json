@@ -1,0 +1,190 @@
+{
+  "HeaderFileName": "adserr.h",
+  "ErrorCodes": [
+    {
+      "Id": "E_ADS_BAD_PATHNAME",
+      "Message": "An invalid directory pathname was passed",
+      "DecimalCode": -2147463168,
+      "HexCode": "0x80005000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_INVALID_DOMAIN_OBJECT",
+      "Message": "An unknown directory domain object was requested",
+      "DecimalCode": -2147463167,
+      "HexCode": "0x80005001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_INVALID_USER_OBJECT",
+      "Message": "An unknown directory user object was requested",
+      "DecimalCode": -2147463166,
+      "HexCode": "0x80005002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_INVALID_COMPUTER_OBJECT",
+      "Message": "An unknown directory computer object was requested",
+      "DecimalCode": -2147463165,
+      "HexCode": "0x80005003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_UNKNOWN_OBJECT",
+      "Message": "An unknown directory object was requested",
+      "DecimalCode": -2147463164,
+      "HexCode": "0x80005004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_PROPERTY_NOT_SET",
+      "Message": "The specified directory property was not set",
+      "DecimalCode": -2147463163,
+      "HexCode": "0x80005005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_PROPERTY_NOT_SUPPORTED",
+      "Message": "The specified directory property is not supported",
+      "DecimalCode": -2147463162,
+      "HexCode": "0x80005006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_PROPERTY_INVALID",
+      "Message": "The specified directory property is invalid",
+      "DecimalCode": -2147463161,
+      "HexCode": "0x80005007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_BAD_PARAMETER",
+      "Message": "One or more input parameters are invalid",
+      "DecimalCode": -2147463160,
+      "HexCode": "0x80005008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_OBJECT_UNBOUND",
+      "Message": "The specified directory object is not bound to a remote resource",
+      "DecimalCode": -2147463159,
+      "HexCode": "0x80005009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_PROPERTY_NOT_MODIFIED",
+      "Message": "The specified directory object has not been modified",
+      "DecimalCode": -2147463158,
+      "HexCode": "0x8000500A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_PROPERTY_MODIFIED",
+      "Message": "The specified directory object has been modified",
+      "DecimalCode": -2147463157,
+      "HexCode": "0x8000500B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_CANT_CONVERT_DATATYPE",
+      "Message": "The directory datatype cannot be converted to/from a native DS datatype",
+      "DecimalCode": -2147463156,
+      "HexCode": "0x8000500C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_PROPERTY_NOT_FOUND",
+      "Message": "The directory property cannot be found in the cache.",
+      "DecimalCode": -2147463155,
+      "HexCode": "0x8000500D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_OBJECT_EXISTS",
+      "Message": "The directory object exists.",
+      "DecimalCode": -2147463154,
+      "HexCode": "0x8000500E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_SCHEMA_VIOLATION",
+      "Message": "The attempted action violates the DS schema rules.",
+      "DecimalCode": -2147463153,
+      "HexCode": "0x8000500F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_COLUMN_NOT_SET",
+      "Message": "The specified column in the directory was not set.",
+      "DecimalCode": -2147463152,
+      "HexCode": "0x80005010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "S_ADS_ERRORSOCCURRED",
+      "Message": "One or more errors occurred",
+      "DecimalCode": 20497,
+      "HexCode": "0x00005011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "S_ADS_NOMORE_ROWS",
+      "Message": "No more rows to be obatained by the search result.",
+      "DecimalCode": 20498,
+      "HexCode": "0x00005012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "S_ADS_NOMORE_COLUMNS",
+      "Message": "No more columns to be obatained for the current row.",
+      "DecimalCode": 20499,
+      "HexCode": "0x00005013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_ADS_INVALID_FILTER",
+      "Message": "The search filter specified is invalid",
+      "DecimalCode": -2147463148,
+      "HexCode": "0x80005014",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WINDOWS",
+      "Code": 8
+    },
+    {
+      "Name": "FACILITY_STORAGE",
+      "Code": 3
+    },
+    {
+      "Name": "FACILITY_RPC",
+      "Code": 1
+    },
+    {
+      "Name": "FACILITY_SSPI",
+      "Code": 9
+    },
+    {
+      "Name": "FACILITY_WIN32",
+      "Code": 7
+    },
+    {
+      "Name": "FACILITY_CONTROL",
+      "Code": 10
+    },
+    {
+      "Name": "FACILITY_NULL",
+      "Code": 0
+    },
+    {
+      "Name": "FACILITY_ITF",
+      "Code": 4
+    },
+    {
+      "Name": "FACILITY_DISPATCH",
+      "Code": 2
+    }
+  ]
+}

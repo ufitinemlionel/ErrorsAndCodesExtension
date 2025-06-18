@@ -1,0 +1,3595 @@
+{
+  "HeaderFileName": "wsmerror.h",
+  "ErrorCodes": [
+    {
+      "Id": "ERROR_WSMAN_RESOURCE_NOT_FOUND",
+      "Message": "The WS-Management service cannot process the request. The service cannot find the resource identified by the resource URI and selectors.",
+      "DecimalCode": -2144108544,
+      "HexCode": "0x80338000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_ACTIONURI",
+      "Message": "The WS-Management service cannot process the request. The WS-Addressing action URI is invalid. Check the documentation for information on how to construct an action URI.",
+      "DecimalCode": -2144108543,
+      "HexCode": "0x80338001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_URI",
+      "Message": "The WS-Management service cannot process the request. The resource URI is missing or it has an incorrect format. Check the documentation or use the following command for information on how to construct a resource URI: \u0022winrm help uris\u0022.",
+      "DecimalCode": -2144108542,
+      "HexCode": "0x80338002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PROVIDER_FAILURE",
+      "Message": "An error was encountered inside the plugin.",
+      "DecimalCode": -2144108541,
+      "HexCode": "0x80338003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_BATCH_COMPLETE",
+      "Message": "The WS-Management service cannot complete the request. The WSManEnumerator object is full and no more items can be added.",
+      "DecimalCode": -2144108540,
+      "HexCode": "0x80338004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_CORRUPTED",
+      "Message": "The WS-Management configuration is corrupted. Use the following command to restore defaults: %n%n winrm invoke Restore http://schemas.microsoft.com/wbem/wsman/1/config @{} %n%n Then add any custom configuration settings.",
+      "DecimalCode": -2144108539,
+      "HexCode": "0x80338005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PULL_IN_PROGRESS",
+      "Message": "The WS-Management service cannot process a pull request because a pull operation is already in progress.",
+      "DecimalCode": -2144108538,
+      "HexCode": "0x80338006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATION_CLOSED",
+      "Message": "The WS-Management enumeration session is finished or cancelled and cannot be used. Start a new enumeration.",
+      "DecimalCode": -2144108537,
+      "HexCode": "0x80338007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SUBSCRIPTION_CLOSED",
+      "Message": "The event subscription is already closed and cannot be used. Start a new subscription.",
+      "DecimalCode": -2144108536,
+      "HexCode": "0x80338008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SUBSCRIPTION_CLOSE_IN_PROGRESS",
+      "Message": "The event subscription session is closing and cannot be used. Start a new subscription.",
+      "DecimalCode": -2144108535,
+      "HexCode": "0x80338009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SUBSCRIPTION_CLIENT_DID_NOT_CALL_WITHIN_HEARTBEAT",
+      "Message": "The application or script that has an event subscription did not request a pull operation within the heartbeat interval. The subscription session was closed. Start a new subscription.",
+      "DecimalCode": -2144108534,
+      "HexCode": "0x8033800A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SUBSCRIPTION_NO_HEARTBEAT",
+      "Message": "The event source did not return events within the heartbeat interval. The subscription session was closed. Start a new subscription.",
+      "DecimalCode": -2144108533,
+      "HexCode": "0x8033800B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_TIMEOUT",
+      "Message": "The WS-Management service does not support the specified timeout. The value specified is smaller than the minimum allowed value for this setting. Change the timeout value and try the request again.",
+      "DecimalCode": -2144108532,
+      "HexCode": "0x8033800C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SOAP_VERSION_MISMATCH",
+      "Message": "The WS-Management service does not support the SOAP version specified in the request.",
+      "DecimalCode": -2144108531,
+      "HexCode": "0x8033800D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SOAP_DATA_ENCODING_UNKNOWN",
+      "Message": "The WS-Management service does not support the encoding specified in the request.",
+      "DecimalCode": -2144108530,
+      "HexCode": "0x8033800E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_MESSAGE_INFORMATION_HEADER",
+      "Message": "The WS-Management service cannot process the request. The request contains one or more invalid SOAP headers.",
+      "DecimalCode": -2144108529,
+      "HexCode": "0x8033800F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SOAP_FAULT_MUST_UNDERSTAND",
+      "Message": "The WS-Management service cannot process a SOAP header in the request that is marked as mustUnderstand by the client. This could be caused by the use of a version of the protocol which is not supported, or may be an incompatibility between the client and server implementations.",
+      "DecimalCode": -2144108528,
+      "HexCode": "0x80338010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MESSAGE_INFORMATION_HEADER_REQUIRED",
+      "Message": "The WS-Management service cannot process the request. The request does not have all the expected SOAP headers.",
+      "DecimalCode": -2144108527,
+      "HexCode": "0x80338011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DESTINATION_UNREACHABLE",
+      "Message": "The client cannot connect to the destination specified in the request. Verify that the service on the destination is running and is accepting requests. Consult the logs and documentation for the WS-Management service running on the destination, most commonly IIS or WinRM. If the destination is the WinRM service, run the following command on the destination to analyze and configure the WinRM service: \u0022winrm quickconfig\u0022.",
+      "DecimalCode": -2144108526,
+      "HexCode": "0x80338012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ACTION_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the action specified in the request.",
+      "DecimalCode": -2144108525,
+      "HexCode": "0x80338013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENDPOINT_UNAVAILABLE",
+      "Message": "The WS-Management service cannot process the request because the resource is offline. Retry the request later when the resource is online.",
+      "DecimalCode": -2144108524,
+      "HexCode": "0x80338014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_REPRESENTATION",
+      "Message": "The WS-Management service cannot identify the format of the object passed to a Put or Create method. The input XML may not be appropriate for the resource or uses the wrong schema for the resource. Change the input XML in the request.",
+      "DecimalCode": -2144108523,
+      "HexCode": "0x80338015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_INVALID_EXPIRATION_TIME",
+      "Message": "The expiration time passed to the WS-Management Enumerate method is not valid. The time value may be zero or refer to a time in the past. Change the expiration time and try the request again.",
+      "DecimalCode": -2144108522,
+      "HexCode": "0x80338016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_UNSUPPORTED_EXPIRATION_TIME",
+      "Message": "The data source does not support expiration time. Remove the expiration time from the request and try the request again.",
+      "DecimalCode": -2144108521,
+      "HexCode": "0x80338017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_FILTERING_NOT_SUPPORTED",
+      "Message": "The data source does not support filtering. Remove the filter from the request and try the request again.",
+      "DecimalCode": -2144108520,
+      "HexCode": "0x80338018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_FILTER_DIALECT_REQUESTED_UNAVAILABLE",
+      "Message": "The filter dialect (the type associated with the filter) was not supported for this resource. Change the filter dialect or remove it from the request and try the request again.",
+      "DecimalCode": -2144108519,
+      "HexCode": "0x80338019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_CANNOT_PROCESS_FILTER",
+      "Message": "The data source could not process the filter. The filter might be missing or it might be invalid. Change the filter and try the request again.",
+      "DecimalCode": -2144108518,
+      "HexCode": "0x8033801A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_INVALID_ENUMERATION_CONTEXT",
+      "Message": "The WS-Enumeration context in the enumeration is not valid. Enumeration may have been completed or canceled. You cannot use this enumeration context anymore. Start a new enumeration.",
+      "DecimalCode": -2144108517,
+      "HexCode": "0x8033801B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_TIMED_OUT",
+      "Message": "The pull operation did not get any data in the MaxTime duration. But the enumeration is still valid. The client can attempt to do another pull request to retrieve data.",
+      "DecimalCode": -2144108516,
+      "HexCode": "0x8033801C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_UNABLE_TO_RENEW",
+      "Message": "The WS-Management service cannot renew the enumeration. Start a new enumeration.",
+      "DecimalCode": -2144108515,
+      "HexCode": "0x8033801D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_DELIVERY_MODE_REQUESTED_UNAVAILABLE",
+      "Message": "The WS-Management service does not support the delivery mode for the specified resource. The client should change the subscription to use one of the supported delivery modes.",
+      "DecimalCode": -2144108514,
+      "HexCode": "0x8033801E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_EXPIRATION_TIME",
+      "Message": "The expiration time of the subscription is invalid. The time is either not supported, zero or a time that happened in the past. Change the expiration time and try the request again.",
+      "DecimalCode": -2144108513,
+      "HexCode": "0x8033801F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_UNSUPPORTED_EXPIRATION_TYPE",
+      "Message": "The expiration time specified for subscription was invalid. Specify the expiration time as a duration.",
+      "DecimalCode": -2144108512,
+      "HexCode": "0x80338020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_FILTERING_NOT_SUPPORTED",
+      "Message": "The event source does not support filtering. Remove the filter from the request and try the request again.",
+      "DecimalCode": -2144108511,
+      "HexCode": "0x80338021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_FILTERING_REQUESTED_UNAVAILABLE",
+      "Message": "The event source cannot process the specified filter. Change the filter or remove it from the request and try the request again.",
+      "DecimalCode": -2144108510,
+      "HexCode": "0x80338022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_SOURCE_UNABLE_TO_PROCESS",
+      "Message": "The event source cannot process the subscription.",
+      "DecimalCode": -2144108509,
+      "HexCode": "0x80338023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_UNABLE_TO_RENEW",
+      "Message": "The WS-Management service cannot renew the event subscription. Create a new subscription.",
+      "DecimalCode": -2144108508,
+      "HexCode": "0x80338024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_MESSAGE",
+      "Message": "The WS-Management service cannot complete the WS-Eventing request because the request had some unknown or invalid content and could not be processed.",
+      "DecimalCode": -2144108507,
+      "HexCode": "0x80338025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENVELOPE_TOO_LARGE",
+      "Message": "The WS-Management service cannot process the response because it is larger than the maximum size allowed.",
+      "DecimalCode": -2144108506,
+      "HexCode": "0x80338026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SOAP_BODY",
+      "Message": "The WS-Management service cannot process the request because the request packet does not have a valid SOAP body.",
+      "DecimalCode": -2144108505,
+      "HexCode": "0x80338027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_RESUMPTION_CONTEXT",
+      "Message": "The resumption context specified in the subscription is invalid. It may have expired, or be in the wrong format.",
+      "DecimalCode": -2144108504,
+      "HexCode": "0x80338028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OPERATION_TIMEDOUT",
+      "Message": "The WS-Management service cannot complete the operation within the time specified in OperationTimeout.",
+      "DecimalCode": -2144108503,
+      "HexCode": "0x80338029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESUMPTION_NOT_SUPPORTED",
+      "Message": "The event source does not support subscriptions that can be resumed.",
+      "DecimalCode": -2144108502,
+      "HexCode": "0x8033802A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESUMPTION_TYPE_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the type of resumption requested by the subscription.",
+      "DecimalCode": -2144108501,
+      "HexCode": "0x8033802B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_ENCODING",
+      "Message": "The request contains character encoding that is unsupported. WS-Management only supports requests that are encoded in UTF-8 or UTF-16. Change the character encoding in the request and try the request again.",
+      "DecimalCode": -2144108500,
+      "HexCode": "0x8033802C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_URI_LIMIT",
+      "Message": "The URI is longer than the maximum length allowed.",
+      "DecimalCode": -2144108499,
+      "HexCode": "0x8033802D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_PROPOSED_ID",
+      "Message": "The WS-Management service cannot process the request because the subscription ID is invalid.",
+      "DecimalCode": -2144108498,
+      "HexCode": "0x8033802E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_BATCH_PARAMETER",
+      "Message": "The WS-Management service cannot process the batch request. The request must specify either MaxItems, MaxCharacters, or MaxTime.",
+      "DecimalCode": -2144108497,
+      "HexCode": "0x8033802F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_ACK",
+      "Message": "The receiver of the event did not acknowledge the event delivery. Submit the subscription again without the acknowledgement option.",
+      "DecimalCode": -2144108496,
+      "HexCode": "0x80338030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ACTION_MISMATCH",
+      "Message": "The WS-Management service cannot process the request because the WS-Addressing Action URI in the request is not compatible with the resource.",
+      "DecimalCode": -2144108495,
+      "HexCode": "0x80338031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONCURRENCY",
+      "Message": "The WS-Management service cannot complete the WS-Addressing Action URI in the request because the resource was already in use.",
+      "DecimalCode": -2144108494,
+      "HexCode": "0x80338032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ALREADY_EXISTS",
+      "Message": "The WS-Management service cannot create the resource because it already exists.",
+      "DecimalCode": -2144108493,
+      "HexCode": "0x80338033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DELIVERY_REFUSED",
+      "Message": "The WS-Management service cannot complete the request because the receiver does not accept the delivery of events. The receiver requests that the subscription be cancelled. Event receivers return this message to force the cancellation of a subscription.",
+      "DecimalCode": -2144108492,
+      "HexCode": "0x80338034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENCODING_LIMIT",
+      "Message": "The WS-Management service cannot process the request because the encoding of the request exceeds an internal encoding limit. Reconfigure the client to send messages which fit the encoding limits of the service.",
+      "DecimalCode": -2144108491,
+      "HexCode": "0x80338035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FAILED_AUTHENTICATION",
+      "Message": "The WS-Management service cannot authenticate the sender.",
+      "DecimalCode": -2144108490,
+      "HexCode": "0x80338036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INCOMPATIBLE_EPR",
+      "Message": "The WS-Management service does not support the format of the WS-Addressing Endpoint Reference.",
+      "DecimalCode": -2144108489,
+      "HexCode": "0x80338037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_BOOKMARK",
+      "Message": "The bookmark in the subscription is invalid. The bookmark may be expired or corrupted. Issue a new subscription without any bookmarks or locate the correct bookmark.",
+      "DecimalCode": -2144108488,
+      "HexCode": "0x80338038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_OPTIONS",
+      "Message": "The WS-Management service cannot process the request because one or more options are not valid. The option names or values may not be valid or they are used in incorrect combinations. Retrieve the catalog entry for the resource and determine how to correct the invalid option values.",
+      "DecimalCode": -2144108487,
+      "HexCode": "0x80338039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_PARAMETER",
+      "Message": "The WS-Management service cannot process the request because a parameter for the operation is not valid.",
+      "DecimalCode": -2144108486,
+      "HexCode": "0x8033803A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_RESOURCE_URI",
+      "Message": "The WS-Management service cannot process the request. The resource URI is missing or it has an incorrect format. Check the documentation or use the following command for information on how to construct a resource URI: \u0022winrm help uris\u0022.",
+      "DecimalCode": -2144108485,
+      "HexCode": "0x8033803B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SYSTEM",
+      "Message": "The WS-Management service requires a valid System URI to process the request.",
+      "DecimalCode": -2144108484,
+      "HexCode": "0x8033803C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SELECTORS",
+      "Message": "The WS-Management service cannot process the request because the selectors for the resource are not valid.",
+      "DecimalCode": -2144108483,
+      "HexCode": "0x8033803D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_METADATA_REDIRECT",
+      "Message": "The requested metadata is not available at the current address. Retry the request with a new address.",
+      "DecimalCode": -2144108482,
+      "HexCode": "0x8033803E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_LIMIT",
+      "Message": "The WS-Management service is busy servicing other requests. Retry later.",
+      "DecimalCode": -2144108481,
+      "HexCode": "0x8033803F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RENAME_FAILURE",
+      "Message": "The WS-Management service cannot rename the resource. The selectors for the resource are not correct. The resource may exist already, the address may be incorrect, or the resource URI may be invalid. Change the request and retry.",
+      "DecimalCode": -2144108480,
+      "HexCode": "0x80338040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SCHEMA_VALIDATION_ERROR",
+      "Message": "The SOAP XML in the message does not match the corresponding XML schema definition. Change the XML and retry.",
+      "DecimalCode": -2144108479,
+      "HexCode": "0x80338041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_FEATURE",
+      "Message": "The WS-Management service does not support the specified feature. Remove the unsupported feature from the request and retry.",
+      "DecimalCode": -2144108478,
+      "HexCode": "0x80338042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_XML",
+      "Message": "The WS-Management service cannot process the request because the XML is invalid.",
+      "DecimalCode": -2144108477,
+      "HexCode": "0x80338043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_KEY",
+      "Message": "The WS-Management service cannot process the request because the URI contains an unexpected selector.",
+      "DecimalCode": -2144108476,
+      "HexCode": "0x80338044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DELIVER_IN_PROGRESS",
+      "Message": "The event source is attempting to deliver an event when a delivery is in progress already.",
+      "DecimalCode": -2144108475,
+      "HexCode": "0x80338045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SYSTEM_NOT_FOUND",
+      "Message": "The WS-Management service cannot locate the system.",
+      "DecimalCode": -2144108474,
+      "HexCode": "0x80338046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAX_ENVELOPE_SIZE",
+      "Message": "The maximum envelope size in the request is too large. Change the maximum envelope size and try the request again.",
+      "DecimalCode": -2144108473,
+      "HexCode": "0x80338047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAX_ENVELOPE_SIZE_EXCEEDED",
+      "Message": "The response that the WS-Management service computed exceeds the maximum envelope size in the request.",
+      "DecimalCode": -2144108472,
+      "HexCode": "0x80338048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SERVER_ENVELOPE_LIMIT",
+      "Message": "The response that the WS-Management service computed exceed the internal limit for envelope size.",
+      "DecimalCode": -2144108471,
+      "HexCode": "0x80338049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SELECTOR_LIMIT",
+      "Message": "The WS-Management service cannot process the request because the URI contains too many selectors.",
+      "DecimalCode": -2144108470,
+      "HexCode": "0x8033804A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OPTION_LIMIT",
+      "Message": "The WS-Management service cannot process the request because it contains too many options.",
+      "DecimalCode": -2144108469,
+      "HexCode": "0x8033804B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CHARACTER_SET",
+      "Message": "The WS-Management service does not support the character set used in the request. Change the request to use UTF-8 or UTF-16.",
+      "DecimalCode": -2144108468,
+      "HexCode": "0x8033804C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNREPORTABLE_SUCCESS",
+      "Message": "The operation succeeded and cannot be reversed but the result is too large to send.",
+      "DecimalCode": -2144108467,
+      "HexCode": "0x8033804D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WHITESPACE",
+      "Message": "The WS-Management service does not support white space in the request XML.",
+      "DecimalCode": -2144108466,
+      "HexCode": "0x8033804E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FILTERING_REQUIRED",
+      "Message": "The WS-Management service does not support the filter dialect in the request. The filter dialect is the type of filter, such as XPath or WQL.",
+      "DecimalCode": -2144108465,
+      "HexCode": "0x8033804F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_BOOKMARK_EXPIRED",
+      "Message": "The WS-Management service cannot process the request because it contains a bookmark that is expired.",
+      "DecimalCode": -2144108464,
+      "HexCode": "0x80338050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OPTIONS_NOT_SUPPORTED",
+      "Message": "The WS-Management provider does not support the specified option set because mustComply for one of the options is set to true. Change mustComply for one of the options to false.",
+      "DecimalCode": -2144108463,
+      "HexCode": "0x80338051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OPTIONS_INVALID_NAME",
+      "Message": "The WS-Management service cannot process the request because one or more of the options has an invalid name.",
+      "DecimalCode": -2144108462,
+      "HexCode": "0x80338052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OPTIONS_INVALID_VALUE",
+      "Message": "The WS-Management service cannot process the request because one or more of the options has an invalid value.",
+      "DecimalCode": -2144108461,
+      "HexCode": "0x80338053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PARAMETER_TYPE_MISMATCH",
+      "Message": "The WS-Management service cannot process the request. A parameter that is required for the operation is not the correct type.",
+      "DecimalCode": -2144108460,
+      "HexCode": "0x80338054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_PARAMETER_NAME",
+      "Message": "The WS-Management service cannot process the request. A parameter name is invalid.",
+      "DecimalCode": -2144108459,
+      "HexCode": "0x80338055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_XML_VALUES",
+      "Message": "The WS-Management service cannot process the request because the XML content has invalid values.",
+      "DecimalCode": -2144108458,
+      "HexCode": "0x80338056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_XML_MISSING_VALUES",
+      "Message": "The WS-Management service cannot process the request because the XML content has missing values.",
+      "DecimalCode": -2144108457,
+      "HexCode": "0x80338057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_XML_NAMESPACE",
+      "Message": "The WS-Management service cannot identify the format of the object passed to a Put or Create method. The XML namespace for the input XML is invalid. Change the XML namespace for the input XML in the request.",
+      "DecimalCode": -2144108456,
+      "HexCode": "0x80338058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_XML_FRAGMENT",
+      "Message": "The WS-Management service cannot process the request because an XML fragment in the URI is invalid.",
+      "DecimalCode": -2144108455,
+      "HexCode": "0x80338059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INSUFFCIENT_SELECTORS",
+      "Message": "The WS-Management service cannot process the request because the request did not contain all required selectors.",
+      "DecimalCode": -2144108454,
+      "HexCode": "0x8033805A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNEXPECTED_SELECTORS",
+      "Message": "The WS-Management service cannot process the request because the request contained invalid selectors for the resource.",
+      "DecimalCode": -2144108453,
+      "HexCode": "0x8033805B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SELECTOR_TYPEMISMATCH",
+      "Message": "The WS-Management service cannot process the request because a value for a selector is of the wrong type.",
+      "DecimalCode": -2144108452,
+      "HexCode": "0x8033805C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SELECTOR_VALUE",
+      "Message": "The WS-Management service cannot process the request because a value for the selector is invalid.",
+      "DecimalCode": -2144108451,
+      "HexCode": "0x8033805D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_AMBIGUOUS_SELECTORS",
+      "Message": "The WS-Management service cannot process the request because the selectors for the resource are ambiguous.",
+      "DecimalCode": -2144108450,
+      "HexCode": "0x8033805E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DUPLICATE_SELECTORS",
+      "Message": "The WS-Management service cannot process the request because the request contains duplicate selectors.",
+      "DecimalCode": -2144108449,
+      "HexCode": "0x8033805F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_TARGET_SELECTORS",
+      "Message": "The WS-Management service cannot process the request because the request contains invalid selectors for the target resource.",
+      "DecimalCode": -2144108448,
+      "HexCode": "0x80338060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_TARGET_RESOURCEURI",
+      "Message": "The WS-Management service cannot process the request because the request contains an invalid URI for the target resource.",
+      "DecimalCode": -2144108447,
+      "HexCode": "0x80338061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_TARGET_SYSTEM",
+      "Message": "The WS-Management service cannot process the request because the request contains an invalid target system.",
+      "DecimalCode": -2144108446,
+      "HexCode": "0x80338062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_TARGET_ALREADY_EXISTS",
+      "Message": "The WS-Management service cannot process a Create request because the target already exists.",
+      "DecimalCode": -2144108445,
+      "HexCode": "0x80338063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_AUTHORIZATION_MODE_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the mode of authorization.",
+      "DecimalCode": -2144108444,
+      "HexCode": "0x80338064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ACK_NOT_SUPPORTED",
+      "Message": "The client does not support acknowledgment.",
+      "DecimalCode": -2144108443,
+      "HexCode": "0x80338065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OPERATION_TIMEOUT_NOT_SUPPORTED",
+      "Message": "The data source does not support timeouts for the operation.",
+      "DecimalCode": -2144108442,
+      "HexCode": "0x80338066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_LOCALE_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the locale.",
+      "DecimalCode": -2144108441,
+      "HexCode": "0x80338067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EXPIRATION_TIME_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the expiration time.",
+      "DecimalCode": -2144108440,
+      "HexCode": "0x80338068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DELIVERY_RETRIES_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not retry deliveries.",
+      "DecimalCode": -2144108439,
+      "HexCode": "0x80338069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HEARTBEATS_NOT_SUPPORTED",
+      "Message": "The event source does not support heartbeats.",
+      "DecimalCode": -2144108438,
+      "HexCode": "0x8033806A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_BOOKMARKS_NOT_SUPPORTED",
+      "Message": "The event source does not support bookmarks.",
+      "DecimalCode": -2144108437,
+      "HexCode": "0x8033806B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAXITEMS_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the configuration for MaxItems.",
+      "DecimalCode": -2144108436,
+      "HexCode": "0x8033806C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAXTIME_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the configuration for MaxTime.",
+      "DecimalCode": -2144108435,
+      "HexCode": "0x8033806D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAXENVELOPE_SIZE_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the value in the configuration for MaxEnvelopeSize.",
+      "DecimalCode": -2144108434,
+      "HexCode": "0x8033806E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAXENVELOPE_POLICY_NOT_SUPPORTED",
+      "Message": "The event source does not support the MaxEnvelopePolicy.",
+      "DecimalCode": -2144108433,
+      "HexCode": "0x8033806F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FILTERING_REQUIRED_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support unfiltered enumeration.",
+      "DecimalCode": -2144108432,
+      "HexCode": "0x80338070",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INSECURE_ADDRESS_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support insecure addresses.",
+      "DecimalCode": -2144108431,
+      "HexCode": "0x80338071",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FORMAT_MISMATCH_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support format mismatch.",
+      "DecimalCode": -2144108430,
+      "HexCode": "0x80338072",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FORMAT_SECURITY_TOKEN_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support the format of the security token.",
+      "DecimalCode": -2144108429,
+      "HexCode": "0x80338073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_BAD_METHOD",
+      "Message": "The service returned a response that indicates that the method is unsupported.",
+      "DecimalCode": -2144108428,
+      "HexCode": "0x80338074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_MEDIA",
+      "Message": "The WS-Management service does not support the specified media type.",
+      "DecimalCode": -2144108427,
+      "HexCode": "0x80338075",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_ADDRESSING_MODE",
+      "Message": "The WS-Management service does not support the addressing mode.",
+      "DecimalCode": -2144108426,
+      "HexCode": "0x80338076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FRAGMENT_TRANSFER_NOT_SUPPORTED",
+      "Message": "The WS-Management service does not support fragment transfer.",
+      "DecimalCode": -2144108425,
+      "HexCode": "0x80338077",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATION_INITIALIZING",
+      "Message": "The client sent a request before the enumeration was initialized.",
+      "DecimalCode": -2144108424,
+      "HexCode": "0x80338078",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONNECTOR_GET",
+      "Message": "The WS-Management service failed to locate the component that can process the request.",
+      "DecimalCode": -2144108423,
+      "HexCode": "0x80338079",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_URI_QUERY_STRING_SYNTAX_ERROR",
+      "Message": "A syntax error occurred in the query string for the resource URI.",
+      "DecimalCode": -2144108422,
+      "HexCode": "0x8033807A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INEXISTENT_MAC_ADDRESS",
+      "Message": "The MAC that is configured is not in the list of enabled DHCP adapters on the computer.",
+      "DecimalCode": -2144108421,
+      "HexCode": "0x8033807B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_UNICAST_ADDRESSES",
+      "Message": "The MAC address that is configured does not have any unicast addresses.",
+      "DecimalCode": -2144108420,
+      "HexCode": "0x8033807C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_DHCP_ADDRESSES",
+      "Message": "The WS-Management service cannot find the dynamic IP address on the adapter with the configured MAC address.",
+      "DecimalCode": -2144108419,
+      "HexCode": "0x8033807D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MIN_ENVELOPE_SIZE",
+      "Message": "The WS-Management service cannot process the request because the envelope size in the request is too small.",
+      "DecimalCode": -2144108418,
+      "HexCode": "0x8033807E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EPR_NESTING_EXCEEDED",
+      "Message": "The WS-Management service cannot process the request. The EndPointReference contains more nested EndPointReferences than WS-Management supports.",
+      "DecimalCode": -2144108417,
+      "HexCode": "0x8033807F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REQUEST_INIT_ERROR",
+      "Message": "The WS-Management service cannot initialize the request.",
+      "DecimalCode": -2144108416,
+      "HexCode": "0x80338080",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_TIMEOUT_HEADER",
+      "Message": "The WS-Management service cannot process the request because the timeout header in the request is invalid.",
+      "DecimalCode": -2144108415,
+      "HexCode": "0x80338081",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_NOT_FOUND",
+      "Message": "The WS-Management service cannot find the certificate that was requested.",
+      "DecimalCode": -2144108414,
+      "HexCode": "0x80338082",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PLUGIN_FAILED",
+      "Message": "The WS-Management service cannot process the request. The data source failed to return results for the request.",
+      "DecimalCode": -2144108413,
+      "HexCode": "0x80338083",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATION_INVALID",
+      "Message": "The enumeration is invalid because previous Pull request failed.",
+      "DecimalCode": -2144108412,
+      "HexCode": "0x80338084",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_CANNOT_CHANGE_MUTUAL",
+      "Message": "The WS-Management service cannot change a mutual configuration.",
+      "DecimalCode": -2144108411,
+      "HexCode": "0x80338085",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATION_MODE_UNSUPPORTED",
+      "Message": "The WS-Management service does not support the specified enumeration mode.",
+      "DecimalCode": -2144108410,
+      "HexCode": "0x80338086",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MUSTUNDERSTAND_ON_LOCALE_UNSUPPORTED",
+      "Message": "The WS-Management service cannot guarantee that all data is returned in the requested locale as some data sources may not be able to comply. Resend the remote request with locale as a hint (the SOAP header should have mustUnderstand=\u0022false\u0022)",
+      "DecimalCode": -2144108409,
+      "HexCode": "0x80338087",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_POLICY_CORRUPTED",
+      "Message": "The WSMan group policy configuration is corrupted.",
+      "DecimalCode": -2144108408,
+      "HexCode": "0x80338088",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_LISTENER_ADDRESS_INVALID",
+      "Message": "The listener address specified is invalid. The address can be specified in one of the following formats: *, IP:\u003Cip_address\u003E, MAC:\u003Cmac_address\u003E. Change the listener address and try the request again.",
+      "DecimalCode": -2144108407,
+      "HexCode": "0x80338089",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_CANNOT_CHANGE_GPO_CONTROLLED_SETTING",
+      "Message": "Cannot change GPO controlled setting.",
+      "DecimalCode": -2144108406,
+      "HexCode": "0x8033808A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_CONCURRENT_CLIENT_RECEIVE",
+      "Message": "The client is attempting to concurrently receive events from a single subscription session.This is not supported.",
+      "DecimalCode": -2144108405,
+      "HexCode": "0x8033808B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_FAST_SENDER",
+      "Message": "The source is sending event batches faster than the subscriber can consume. This can happen if acknowledgments are not specified for the subscription and new events are arriving from the source before the client has consumed them.",
+      "DecimalCode": -2144108404,
+      "HexCode": "0x8033808C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INSECURE_PUSHSUBSCRIPTION_CONNECTION",
+      "Message": "The source is sending events in a connection that did not match the security restrictions imposed by the client.",
+      "DecimalCode": -2144108403,
+      "HexCode": "0x8033808D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_EVENTSOURCE",
+      "Message": "The WS-Management client cannot process the request. The event source identity does not match the identity of the machine that the client subscribed to.",
+      "DecimalCode": -2144108402,
+      "HexCode": "0x8033808E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_NOMATCHING_LISTENER",
+      "Message": "The client could not start a valid listener to receive subscription events based on the specified input settings.",
+      "DecimalCode": -2144108401,
+      "HexCode": "0x8033808F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FRAGMENT_DIALECT_REQUESTED_UNAVAILABLE",
+      "Message": "The fragment path dialect is not supported for this resource.",
+      "DecimalCode": -2144108400,
+      "HexCode": "0x80338090",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MISSING_FRAGMENT_PATH",
+      "Message": "Cannot execute the Fragment-Level operation. The fragment path cannot be missing if the fragment dialect is specified.",
+      "DecimalCode": -2144108399,
+      "HexCode": "0x80338091",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_FRAGMENT_DIALECT",
+      "Message": "Cannot execute the Fragment-Level operation because of invalid value for the fragment dialect.",
+      "DecimalCode": -2144108398,
+      "HexCode": "0x80338092",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_FRAGMENT_PATH",
+      "Message": "Cannot execute the Fragment-Level operation because the fragment path is invalid. Check the syntax of the fragment path string. Also check the spelling and the case of the property names in the fragment path string: they have to match the spelling and the case of the resource properties.",
+      "DecimalCode": -2144108397,
+      "HexCode": "0x80338093",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INCOMPATIBLE_BATCHPARAMS_AND_DELIVERYMODE",
+      "Message": "The specified batch parameter is incompatible with the specified event delivery mode. This can happen if batchSettings for a specific mode are passed for a different mode. For example, batchSettings like \u0022MaxItems\u0022 and \u0022MaxLatency\u0022 are not compatible with single event push mode or pull mode.",
+      "DecimalCode": -2144108396,
+      "HexCode": "0x80338094",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_LOOPBACK_TESTFAILED",
+      "Message": "The connectivity test from the push subscription source to the client failed. This can happen if the client machine initiating the push subscription is unreachable from the server machine where the event source is located. Possible reasons include firewall or some other network boundary. Modify subscription to use Pull based subscription.",
+      "DecimalCode": -2144108395,
+      "HexCode": "0x80338095",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_ENDTO_ADDRESSS",
+      "Message": "The subscribe packet had an EndTo element address that does not match the NotifyTo element address or it was invalid. For subscription the EndTo element need not be present in the subscription request. If it exists then it\u0027s address should match the address specified in NotifyTo element.",
+      "DecimalCode": -2144108394,
+      "HexCode": "0x80338096",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_INCOMING_EVENT_PACKET_HEADER",
+      "Message": "The event source sent an event packet whose header could not be processed by the client. This can happen if it was malformed or if the header had a mustUnderstand attribute that could not be understood by the client.",
+      "DecimalCode": -2144108393,
+      "HexCode": "0x80338097",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SESSION_ALREADY_CLOSED",
+      "Message": "An operation is being attempted on a session that is being closed.This can happen if the session that is being used is also being closed by another thread.",
+      "DecimalCode": -2144108392,
+      "HexCode": "0x80338098",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SUBSCRIPTION_LISTENER_NOLONGERVALID",
+      "Message": "The listener on which the subscription session was established is no longer valid. This can happen if the WSMAN service listener configuration has been changed and a subscription was already active and using one of the configurations that was deleted.",
+      "DecimalCode": -2144108391,
+      "HexCode": "0x80338099",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PROVIDER_LOAD_FAILED",
+      "Message": "The system failed to load the plugin.",
+      "DecimalCode": -2144108390,
+      "HexCode": "0x8033809A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_SUBSCRIPTIONCLOSED_BYREMOTESERVICE",
+      "Message": "The WS-Management service on the remote machine with which this subscription had been set up has requested that the subscription be closed. This can happen if the WS-Management service on the remote machine was being shutdown. To correct this problem restart the WS-Management service on the remote machine and re-create the subscription.",
+      "DecimalCode": -2144108389,
+      "HexCode": "0x8033809B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_DELIVERYFAILED_FROMSOURCE",
+      "Message": "The event source was unable to deliver events to the client.This can happen due to network issues preventing the source from connecting to the client.",
+      "DecimalCode": -2144108388,
+      "HexCode": "0x8033809C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SECURITY_UNMAPPED",
+      "Message": "An unknown security error occurred.",
+      "DecimalCode": -2144108387,
+      "HexCode": "0x8033809D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_SUBSCRIPTION_CANCELLED_BYSOURCE",
+      "Message": "The event source cancelled the subscription session.",
+      "DecimalCode": -2144108386,
+      "HexCode": "0x8033809E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_HOSTNAME_PATTERN",
+      "Message": "TrustedHosts list contains an invalid hostname or hostname pattern.",
+      "DecimalCode": -2144108385,
+      "HexCode": "0x8033809F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_MISSING_NOTIFYTO",
+      "Message": "The subscribe packet does not have NotifyTo element in the delivery section.",
+      "DecimalCode": -2144108384,
+      "HexCode": "0x803380A0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_MISSING_NOTIFYTO_ADDRESSS",
+      "Message": "The subscribe packet does not have Address element in the NotifyTo section.",
+      "DecimalCode": -2144108383,
+      "HexCode": "0x803380A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_NOTIFYTO_ADDRESSS",
+      "Message": "The subscribe packet contains invalid Address in the NotifyTo section.",
+      "DecimalCode": -2144108382,
+      "HexCode": "0x803380A2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_LOCALE_IN_DELIVERY",
+      "Message": "The subscribe packet contains invalid Locale value in the delivery section.",
+      "DecimalCode": -2144108381,
+      "HexCode": "0x803380A3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_HEARTBEAT",
+      "Message": "The subscribe packet contains invalid heartbeat value.",
+      "DecimalCode": -2144108380,
+      "HexCode": "0x803380A4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MACHINE_OPTION_REQUIRED",
+      "Message": "The WS-Management service cannot process the request. This request is valid only when the -remote option is specified.",
+      "DecimalCode": -2144108379,
+      "HexCode": "0x803380A5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_FEATURE_OPTIONS",
+      "Message": "The WS-Management service does not support the options feature for the specified resource. Remove the options from the request and retry.",
+      "DecimalCode": -2144108378,
+      "HexCode": "0x803380A6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_BATCHSIZE_TOO_SMALL",
+      "Message": "The subscribe packet contains batch size value which is smaller than supported value.",
+      "DecimalCode": -2144108377,
+      "HexCode": "0x803380A7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_DELIVERY_MODE_REQUESTED_INVALID",
+      "Message": "The WS-Management service cannot process the subscribe request. The delivery mode is either invalid or missing.",
+      "DecimalCode": -2144108376,
+      "HexCode": "0x803380A8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PROVSYS_NOT_SUPPORTED",
+      "Message": "The WS-Management service cannot process the request. The provider method was not found.",
+      "DecimalCode": -2144108375,
+      "HexCode": "0x803380A9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PUSH_SUBSCRIPTION_CONFIG_INVALID",
+      "Message": "The WinRM client could not create a push subscription because there are no listeners configured that match the specified hostname and transport, or because there is no enabled firewall exception on the port used by the selected listener. Change the hostname and transport, create an appropriate firewall exception, or run winrm quickconfig.",
+      "DecimalCode": -2144108374,
+      "HexCode": "0x803380AA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CREDS_PASSED_WITH_NO_AUTH_FLAG",
+      "Message": "The WinRM client could not process the request because credentials were specified along with the \u0027no authentication\u0027 flag. No user name, password or client certificate should be specified with the \u0027no authentication\u0027 option.",
+      "DecimalCode": -2144108373,
+      "HexCode": "0x803380AB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for this request. Remove or change the invalid flag and try the request again.",
+      "DecimalCode": -2144108372,
+      "HexCode": "0x803380AC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MULTIPLE_AUTH_FLAGS",
+      "Message": "The WinRM client cannot process the request. The request must specify only one authentication mechanism. If the No Authentication flag is set, no authentication mechanism should be specified. Change the request to specify only one authentication mechanism or \u0027no authentication\u0027 and try again.",
+      "DecimalCode": -2144108371,
+      "HexCode": "0x803380AD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SPN_WRONG_AUTH",
+      "Message": "The WinRM client cannot process the request. The SPN Server Port can only be used when the authentication mechanism is Negotiate or Kerberos. Remove the SPN Server Port or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108370,
+      "HexCode": "0x803380AE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CERT_UNNEEDED_CREDS",
+      "Message": "The WinRM client cannot process the request. The request must not include credentials when using a smart card or default certificate. Remove the credentials or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108369,
+      "HexCode": "0x803380AF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_USERNAME_PASSWORD_NEEDED",
+      "Message": "The WinRM client cannot process the request. Requests must include user name and password when Basic or Digest authentication mechanism is used. Add the user name and password or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108368,
+      "HexCode": "0x803380B0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CERT_UNNEEDED_USERNAME",
+      "Message": "The WinRM client cannot process the request. Requests must not include user name and password when a certificate is used for authentication. Remove the user name and password or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108367,
+      "HexCode": "0x803380B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREDENTIALS_NEEDED",
+      "Message": "The WinRM client cannot process the request. Requests must include credentials if they specify the following flag: WSManFlagCredUsernamePassword. Add the credentials or remove the WSManFlagCredUsernamePassword flag and try the request again.",
+      "DecimalCode": -2144108366,
+      "HexCode": "0x803380B2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREDENTIALS_FLAG_NEEDED",
+      "Message": "The WinRM client cannot process the request. Requests with credentials must include the following flag: WSManFlagCredUsernamePassword. Add the flag or remove the credentials and try the request again.",
+      "DecimalCode": -2144108365,
+      "HexCode": "0x803380B3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CERT_NEEDED",
+      "Message": "The WinRM client cannot process the request. Requests must include the certificate thumbprint when a certificate is used for authentication. Change the request to include the certificate thumbprint and try again.",
+      "DecimalCode": -2144108364,
+      "HexCode": "0x803380B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CERT_UNKNOWN_TYPE",
+      "Message": "The WinRM client cannot process the request. Requests must include the type of certificate to use for authentication. Change the request to include the type of the certificate and try again.",
+      "DecimalCode": -2144108363,
+      "HexCode": "0x803380B5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CERT_UNKNOWN_LOCATION",
+      "Message": "The WinRM client cannot process the request. Requests must include the location (machine or user certificate store) of the certificate used for authentication. Change the request to include the location of the certificate and try again.",
+      "DecimalCode": -2144108362,
+      "HexCode": "0x803380B6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_CERT",
+      "Message": "The WinRM client cannot process the request. The certificate structure was incomplete. Change the certificate structure and try the request again.",
+      "DecimalCode": -2144108361,
+      "HexCode": "0x803380B7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_LOCAL_INVALID_CREDS",
+      "Message": "The WinRM client cannot process the request. Credentials must not be provided for local requests. Remove the credentials and try the request again.",
+      "DecimalCode": -2144108360,
+      "HexCode": "0x803380B8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_LOCAL_INVALID_CONNECTION_OPTIONS",
+      "Message": "The WinRM client cannot process the request. Connection options must not be provided for local requests. Remove the connection options and try the request again.",
+      "DecimalCode": -2144108359,
+      "HexCode": "0x803380B9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREATESESSION_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManCreateSession function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108358,
+      "HexCode": "0x803380BA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ENUMERATE_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManEnumerate function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108357,
+      "HexCode": "0x803380BB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SUBSCRIBE_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManSubscribe function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108356,
+      "HexCode": "0x803380BC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_NULL_RESULT_PARAM",
+      "Message": "The WinRM client cannot process the request. The parameter that should contain the result of the request is null. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108355,
+      "HexCode": "0x803380BD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_NO_HANDLE",
+      "Message": "The WinRM client cannot process the request. The request is missing the session or enumeration handle. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108354,
+      "HexCode": "0x803380BE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_BLANK_URI",
+      "Message": "The WinRM client cannot process the request. The resource URI must not be \u0022\u0022 (blank or empty string) or NULL. Change the resource URI and try the request again.",
+      "DecimalCode": -2144108353,
+      "HexCode": "0x803380BF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_RESOURCE_LOCATOR",
+      "Message": "The WinRM client cannot process the request. The resource locator was invalid. Change the resource locator and try the request again.",
+      "DecimalCode": -2144108352,
+      "HexCode": "0x803380C0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_BLANK_INPUT_XML",
+      "Message": "The WinRM client cannot process the request. The input XML must not be \u0022\u0022 (blank or empty string) or NULL. Change the input XML and try the request again.",
+      "DecimalCode": -2144108351,
+      "HexCode": "0x803380C1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_BATCH_ITEMS_TOO_SMALL",
+      "Message": "The WinRM client cannot process the request. The maximum number of elements to be retrieved in a batch is too small. Change the value for the maximum number of elements in a batch and try the request again.",
+      "DecimalCode": -2144108350,
+      "HexCode": "0x803380C2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MAX_CHARS_TOO_SMALL",
+      "Message": "The WinRM client cannot process the request. The maximum number of characters to be retrieved in a batch is too small. Change the value for the maximum number of characters in a batch and try the request again.",
+      "DecimalCode": -2144108349,
+      "HexCode": "0x803380C3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_BLANK_ACTION_URI",
+      "Message": "The WinRM client cannot process the request. The action URI must not be \u0022\u0022 (blank or empty string) or NULL. Change the action URI and try the request again.",
+      "DecimalCode": -2144108348,
+      "HexCode": "0x803380C4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ZERO_HEARTBEAT",
+      "Message": "The WinRM client cannot process the request. The heartbeat interval must be greater than 0. Change the heartbeat interval and try the request again.",
+      "DecimalCode": -2144108347,
+      "HexCode": "0x803380C5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MULTIPLE_DELIVERY_MODES",
+      "Message": "The WinRM client cannot process the request. The request must contain one and only one delivery mode. Change the request to contain only one delivery mode and try again.",
+      "DecimalCode": -2144108346,
+      "HexCode": "0x803380C6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MULTIPLE_ENVELOPE_POLICIES",
+      "Message": "The WinRM client cannot process the request. The request contained multiple settings for the policy regarding the maximum envelope size. Change the request to contain only one setting for the policy and try again.",
+      "DecimalCode": -2144108345,
+      "HexCode": "0x803380C7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_UNKNOWN_EXPIRATION_TYPE",
+      "Message": "The WinRM client cannot process the request. The request contained an expiration time, but did not specify if it was absolute or relative. Change the request to specify the type of the expiration time (absolute or relative) and try again.",
+      "DecimalCode": -2144108344,
+      "HexCode": "0x803380C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MISSING_EXPIRATION",
+      "Message": "The WinRM client cannot process the request. The request specified the type of the expiration time (absolute or relative) but it did not contain an expiration time. Change the request to include the expiration time and try again.",
+      "DecimalCode": -2144108343,
+      "HexCode": "0x803380C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_PULL_INVALID_FLAGS",
+      "Message": "The WinRM client cannot process the request. The pull subscription request contained flags related to a push subscription. Change the flags and try the request again.",
+      "DecimalCode": -2144108342,
+      "HexCode": "0x803380CA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_PUSH_UNSUPPORTED_TRANSPORT",
+      "Message": "The WinRM client cannot process the request because the push subscription request contained an unsupported delivery transport. HTTP and HTTPS are the only currently supported transports. Change the delivery transport and try the request again.",
+      "DecimalCode": -2144108341,
+      "HexCode": "0x803380CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_PUSH_HOST_TOO_LONG",
+      "Message": "The WinRM client cannot process the request. The delivery address for push subscriptions was too long. Change the delivery address and try the request again.",
+      "DecimalCode": -2144108340,
+      "HexCode": "0x803380CC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_COMPRESSION_INVALID_OPTION",
+      "Message": "The WinRM client cannot process the request. The request contained the compression option but contained an unrecognized value. Change the value for the compression option and try the request again.",
+      "DecimalCode": -2144108339,
+      "HexCode": "0x803380CD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_DELIVERENDSUBSCRIPTION_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManDeliverEndSubscriptionNotification function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108338,
+      "HexCode": "0x803380CE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_DELIVEREVENTS_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManDeliverEvents function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108337,
+      "HexCode": "0x803380CF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_GETBOOKMARK_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManGetBookmark function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108336,
+      "HexCode": "0x803380D0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_DECODEOBJECT_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManDecodeObject function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108335,
+      "HexCode": "0x803380D1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ENCODEOBJECT_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManEncodeObject(Ex) function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108334,
+      "HexCode": "0x803380D2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ENUMERATORADDOBJECT_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManEnumeratorAddObject function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108333,
+      "HexCode": "0x803380D3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ENUMERATORNEXTOBJECT_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManEnumeratorNextObject function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108332,
+      "HexCode": "0x803380D4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CONSTRUCTERROR_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManConstructError function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108331,
+      "HexCode": "0x803380D5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SERVER_NONPULLSUBSCRIBE_NULL_PARAM",
+      "Message": "The WinRM service cannot process the request. Push subscriptions are not supported for local session. Change subscription type to Pull and try again.",
+      "DecimalCode": -2144108330,
+      "HexCode": "0x803380D6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_UNENCRYPTED_HTTP_ONLY",
+      "Message": "The WinRM client cannot process the request. The unencrypted flag only applies to the HTTP transport. Remove the unencrypted flag or change the transport and try again the request.",
+      "DecimalCode": -2144108329,
+      "HexCode": "0x803380D7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_USE_CERTIFICATES_FOR_HTTP",
+      "Message": "The WinRM client cannot process the request. Certificate parameters are not valid when the HTTP transport is also specified. Remove the certificate parameters or change the transport and try again the request.",
+      "DecimalCode": -2144108328,
+      "HexCode": "0x803380D8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONNECTIONSTR_INVALID",
+      "Message": "The WinRM client cannot process the request. The connection string should be of the form [\u003Ctransport\u003E://]\u003Chost\u003E[:\u003Cport\u003E][/\u003Csuffix\u003E] where transport is one of \u0022http\u0022 or \u0022https\u0022. Transport, port and suffix are optional. The host may be a hostname or an IP address. For IPv6 addresses, enclose the address in brackets - e.g. \u0022http://[1::2]:80/wsman\u0022. Change the connection string and try the request again.",
+      "DecimalCode": -2144108327,
+      "HexCode": "0x803380D9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_TRANSPORT_NOT_SUPPORTED",
+      "Message": "The WinRM client cannot process the request. The connection string contains an unsupported transport. Valid transports are \u0022http\u0022 or \u0022https\u0022. Change the connection string and try the request again.",
+      "DecimalCode": -2144108326,
+      "HexCode": "0x803380DA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PORT_INVALID",
+      "Message": "The WinRM client cannot process the request because the port specified in the connection string is not valid. Verify the port and retry the request. Valid values are between 1 and 65535. Change the value for port and try the request again.",
+      "DecimalCode": -2144108325,
+      "HexCode": "0x803380DB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_PORT_INVALID",
+      "Message": "The WinRM client cannot process the request. The port specified in the configuration is invalid. Valid values are between 1 and 65535. Change the value for port and try the request again.",
+      "DecimalCode": -2144108324,
+      "HexCode": "0x803380DC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SENDHEARBEAT_EMPTY_ENUMERATOR",
+      "Message": "The WinRM service cannot process the request. WSMAN_FLAG_SEND_HEARTBEAT flag requires the event enumerator to be empty. Change the flag or change the event enumerator and try the request again.",
+      "DecimalCode": -2144108323,
+      "HexCode": "0x803380DD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_UNENCRYPTED_DISABLED",
+      "Message": "The WinRM client cannot process the request. Unencrypted traffic is currently disabled in the client configuration. Change the client configuration and try the request again.",
+      "DecimalCode": -2144108322,
+      "HexCode": "0x803380DE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_BASIC_AUTHENTICATION_DISABLED",
+      "Message": "The WinRM client cannot process the request. Basic authentication is currently disabled in the client configuration. Change the client configuration and try the request again.",
+      "DecimalCode": -2144108321,
+      "HexCode": "0x803380DF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_DIGEST_AUTHENTICATION_DISABLED",
+      "Message": "The WinRM client cannot process the request. Digest authentication is currently disabled in the client configuration. Change the client configuration and try the request again.",
+      "DecimalCode": -2144108320,
+      "HexCode": "0x803380E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_NEGOTIATE_AUTHENTICATION_DISABLED",
+      "Message": "The WinRM client cannot process the request. Negotiate authentication is currently disabled in the client configuration. Change the client configuration and try the request again. If this is a request for the local configuration, use one of the enabled authentication mechanisms still enabled. To use Kerberos, specify the local computer name as the remote destination. To use Basic, specify the local computer name as the remote destination, specify Basic authentication and provide user name and password.",
+      "DecimalCode": -2144108319,
+      "HexCode": "0x803380E1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_KERBEROS_AUTHENTICATION_DISABLED",
+      "Message": "The WinRM client cannot process the request. Kerberos authentication is currently disabled in the client configuration. Change the client configuration and try the request again.",
+      "DecimalCode": -2144108318,
+      "HexCode": "0x803380E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CERTIFICATES_AUTHENTICATION_DISABLED",
+      "Message": "The WinRM client cannot process the request. Certificate authentication is currently disabled in the client configuration. Change the client configuration and try the request again.",
+      "DecimalCode": -2144108317,
+      "HexCode": "0x803380E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SERVER_NOT_TRUSTED",
+      "Message": "The WinRM client cannot process the request. If the authentication scheme is different from Kerberos, or if the client computer is not joined to a domain, then HTTPS transport must be used or the destination machine must be added to the TrustedHosts configuration setting. Use winrm.cmd to configure TrustedHosts. Note that computers in the TrustedHosts list might not be authenticated. You can get more information about that by running the following command: winrm help config.",
+      "DecimalCode": -2144108316,
+      "HexCode": "0x803380E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EXPLICIT_CREDENTIALS_REQUIRED",
+      "Message": "The WinRM client cannot process the request. Default credentials with Negotiate over HTTP can be used only if the target machine is part of the TrustedHosts list or the Allow implicit credentials for Negotiate option is specified.",
+      "DecimalCode": -2144108315,
+      "HexCode": "0x803380E5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_THUMBPRINT_NOT_BLANK",
+      "Message": "The WinRM client cannot process the request. The CertificateThumbprint property must be empty when the SSL configuration will be shared with another service.",
+      "DecimalCode": -2144108314,
+      "HexCode": "0x803380E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_THUMBPRINT_BLANK",
+      "Message": "The WinRM client cannot process the request. The CertificateThumbprint property must not be \u0022\u0022 (blank or empty string) or NULL.",
+      "DecimalCode": -2144108313,
+      "HexCode": "0x803380E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_CANNOT_SHARE_SSL_CONFIG",
+      "Message": "The WinRM client cannot process the request. The WinRM client tried to create an SSL configuration for a pair of IP address and port according to the request, but the SSL configuration for that pair is owned by another service and cannot be shared. Use a different IP address and port combination and try the request again.",
+      "DecimalCode": -2144108312,
+      "HexCode": "0x803380E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_CERT_CN_DOES_NOT_MATCH_HOSTNAME",
+      "Message": "The WinRM client cannot process the request. The certificate CN and the hostname that were provided do not match.",
+      "DecimalCode": -2144108311,
+      "HexCode": "0x803380E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_HOSTNAME_CHANGE_WITHOUT_CERT",
+      "Message": "\u003Cnot used\u003E",
+      "DecimalCode": -2144108310,
+      "HexCode": "0x803380EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_THUMBPRINT_SHOULD_BE_EMPTY",
+      "Message": "The WinRM client cannot process the request. When HTTP is the transport, the Certificate thumbprint must be blank. HTTP does not use the Certificate thumbprint.",
+      "DecimalCode": -2144108309,
+      "HexCode": "0x803380EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_IPFILTER",
+      "Message": "The WinRM client cannot process the request. The IP Filter is invalid. Ranges are specified using the syntax IP1-IP2. Multiple ranges are separated using , as delimiter. * is used to indicate that the service should listen on all available IPs on the machine. When * is used, other ranges in the filter are ignored. If filter is blank, the service doesn\u0027t listen on any address. For example, if service should be restricted to listen on only IPv4 addresses, IPv6 filter should be left empty. %nExample IPv4 filters: 2.0.0.1-2.0.0.20, 24.0.0.1-24.0.0.22 %n Example IPv6 filters: 3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562",
+      "DecimalCode": -2144108308,
+      "HexCode": "0x803380EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_CHANGE_KEYS",
+      "Message": "The WinRM client cannot process the request. The input XML modifies selectors or keys for the instance. You cannot create a new instance or change the identity of an instance by changing the keys. Change the input XML and try the request again.",
+      "DecimalCode": -2144108307,
+      "HexCode": "0x803380ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_INVALID_USAGE",
+      "Message": "The WinRM client cannot process the request. The Enhanced Key Usage (EKU) field of the certificate is not set to \u0022Server Authentication\u0022. Retry the request with a certificate that has the correct EKU.",
+      "DecimalCode": -2144108306,
+      "HexCode": "0x803380EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESPONSE_NO_RESULTS",
+      "Message": "The WinRM client cannot process the request. The response from the destination computer does not include any results.",
+      "DecimalCode": -2144108305,
+      "HexCode": "0x803380EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CREATE_RESPONSE_NO_EPR",
+      "Message": "The WinRM client cannot process the request. The response to a create request did not contain a valid end point reference. The ResourceCreated element was not found or did not contain valid content.",
+      "DecimalCode": -2144108304,
+      "HexCode": "0x803380F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESPONSE_INVALID_ENUMERATION_CONTEXT",
+      "Message": "The WinRM client cannot process the request. The response from the destination computer does not contain a valid SOAP enumeration context.",
+      "DecimalCode": -2144108303,
+      "HexCode": "0x803380F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESPONSE_NO_XML_FRAGMENT_WRAPPER",
+      "Message": "The WinRM client cannot process the request. The response from the destination computer contains a WS-Management FragmentTransfer header but the content of the body is not wrapped by the WS-Management XmlFragment wrapper.",
+      "DecimalCode": -2144108302,
+      "HexCode": "0x803380F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESPONSE_INVALID_MESSAGE_INFORMATION_HEADER",
+      "Message": "The WinRM client cannot process the request. The response from the destination computer contains one or more invalid SOAP headers.",
+      "DecimalCode": -2144108301,
+      "HexCode": "0x803380F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESPONSE_NO_SOAP_HEADER_BODY",
+      "Message": "The WinRM client cannot process the request. It cannot find any SOAP Headers or Body elements in the response from the destination computer.",
+      "DecimalCode": -2144108300,
+      "HexCode": "0x803380F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_NO_RESPONSE_DATA",
+      "Message": "The WinRM client cannot process the request. The destination computer returned an empty response to the request.",
+      "DecimalCode": -2144108299,
+      "HexCode": "0x803380F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RESPONSE_INVALID_SOAP_FAULT",
+      "Message": "The WinRM client cannot process the request. The destination computer returned an invalid SOAP fault.",
+      "DecimalCode": -2144108298,
+      "HexCode": "0x803380F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_INVALID_CONTENT_TYPE_IN_RESPONSE_DATA",
+      "Message": "The WinRM client cannot process the request. It cannot determine the content type of the HTTP response from the destination computer. The content type is absent or invalid.",
+      "DecimalCode": -2144108297,
+      "HexCode": "0x803380F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_CONTENT_TYPE_MISSMATCH_RESPONSE_DATA",
+      "Message": "The WinRM client cannot process the request. The HTTP response from the destination computer was not in the same format as the request. A Unicode request packet may have been sent and an ANSI packet received.",
+      "DecimalCode": -2144108296,
+      "HexCode": "0x803380F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_DECRYPT",
+      "Message": "The WinRM client cannot process the request. The encrypted message body has an invalid format and cannot be decrypted. Ensure that the service is encrypting the message body according to the specifications.",
+      "DecimalCode": -2144108295,
+      "HexCode": "0x803380F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_URI_WMI_SINGLETON",
+      "Message": "The WinRM client cannot process the request. The resource URI is not valid: it does not contain keys, but the class selected is not a singleton. To access an instance which is not a singleton, keys must be provided. Use the following command to get more information in how to construct a resource URI: \u0022winrm help uris\u0022.",
+      "DecimalCode": -2144108294,
+      "HexCode": "0x803380FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_URI_WMI_ENUM_WQL",
+      "Message": "The WinRM client cannot process the request. The resource URI for an enumeration operation with WQL filter must not contain keys and the class name must be \u0027*\u0027 (star). Use the following command to get more information in how to construct a resource URI: \u0022winrm help uris\u0022.",
+      "DecimalCode": -2144108293,
+      "HexCode": "0x803380FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_IDENTIFY_FOR_LOCAL_SESSION",
+      "Message": "The WS-Management identification operation is only available on remote sessions.",
+      "DecimalCode": -2144108292,
+      "HexCode": "0x803380FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_PUSH_SUBSCRIPTION_FOR_LOCAL_SESSION",
+      "Message": "Subscribe operation with Push delivery mode is only available on remote sessions.",
+      "DecimalCode": -2144108291,
+      "HexCode": "0x803380FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SUBSCRIPTION_MANAGER",
+      "Message": "The subscription manager address is invalid. The response was not received from the address to which the subscription request was sent.",
+      "DecimalCode": -2144108290,
+      "HexCode": "0x803380FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NON_PULL_SUBSCRIPTION_NOT_SUPPORTED",
+      "Message": "Only subscriptions with Pull delivery mode are supported by the plugin.",
+      "DecimalCode": -2144108289,
+      "HexCode": "0x803380FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_MAX_NESTED",
+      "Message": "WinRM cannot process the request because the WMI object contains too many levels of nested embedded objects.",
+      "DecimalCode": -2144108288,
+      "HexCode": "0x80338100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REMOTE_CIMPATH_NOT_SUPPORTED",
+      "Message": "The WS-Management service cannot process the request. It does not support retrieving a WMI object that contains a property of type CIM_REFERENCE and the value of that property contains a remote machine name.",
+      "DecimalCode": -2144108287,
+      "HexCode": "0x80338101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_PROVIDER_NOT_CAPABLE",
+      "Message": "The WS-Management service cannot process the request. The WMI service reported that the WMI provider could not perform the requested operation.",
+      "DecimalCode": -2144108286,
+      "HexCode": "0x80338102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_INVALID_VALUE",
+      "Message": "The WS-Management service cannot process the request. A value retrieved from the WMI service or the WMI provider is invalid.",
+      "DecimalCode": -2144108285,
+      "HexCode": "0x80338103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_SVC_ACCESS_DENIED",
+      "Message": "The WS-Management service cannot process the request. The WMI service returned an \u0027access denied\u0027 error.",
+      "DecimalCode": -2144108284,
+      "HexCode": "0x80338104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_PROVIDER_ACCESS_DENIED",
+      "Message": "The WS-Management service cannot process the request. The WMI provider returned an \u0027access denied\u0027 error.",
+      "DecimalCode": -2144108283,
+      "HexCode": "0x80338105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_CANNOT_CONNECT_ACCESS_DENIED",
+      "Message": "The WS-Management service cannot process the request. An \u0027access denied\u0027 error was received when connecting to the WMI service on the computer specified.",
+      "DecimalCode": -2144108282,
+      "HexCode": "0x80338106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_FILTER_XML",
+      "Message": "The WS-Management service cannot process the request because the filter XML is invalid.",
+      "DecimalCode": -2144108281,
+      "HexCode": "0x80338107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_WMI_INVALID_KEY",
+      "Message": "The WS-Management service cannot process the request. The resource URI for an Enumerate operation must not contain keys.",
+      "DecimalCode": -2144108280,
+      "HexCode": "0x80338108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_FRAGMENT_PATH_BLANK",
+      "Message": "Cannot execute the Fragment-Level operation because the fragment path contains either \u0022\u0022 (blank or empty string) or NULL. Change the value of the fragment path and try the request again.",
+      "DecimalCode": -2144108279,
+      "HexCode": "0x80338109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_CHARACTERS_IN_RESPONSE",
+      "Message": "The WinRM client cannot process the request. The response received from the destination machine contains invalid characters and cannot be processed.",
+      "DecimalCode": -2144108278,
+      "HexCode": "0x8033810A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_KERBEROS_IPADDRESS",
+      "Message": "The WinRM client cannot process the request. Kerberos authentication cannot be used when the destination is an IP address. Specify a DNS or NetBIOS destination or specify Basic or Negotiate authentication.",
+      "DecimalCode": -2144108277,
+      "HexCode": "0x8033810B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_WORKGROUP_NO_KERBEROS",
+      "Message": "The WinRM client cannot process the request. Kerberos authentication cannot be used with implicit credentials if the client computer is not joined to a domain. Use explicit credentials or specify a different authentication mechanism than Kerberos.",
+      "DecimalCode": -2144108276,
+      "HexCode": "0x8033810C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_BATCH_SETTINGS_PARAMETER",
+      "Message": "The WinRM client cannot process the request. The batch settings parameter is invalid.",
+      "DecimalCode": -2144108275,
+      "HexCode": "0x8033810D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SERVER_DESTINATION_LOCALHOST",
+      "Message": "The WinRM client cannot process the request. If you do not specify an authentication mechanism or you specify Kerberos, then you cannot use \u0022localhost\u0022 or \u0022127.0.0.1\u0022 or \u0022[::1]\u0022 for the remote host name. You can explicitly specify a different authentication mechanism than Kerberos or specify the remote host as a DNS name or NetBIOS name.",
+      "DecimalCode": -2144108274,
+      "HexCode": "0x8033810E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNKNOWN_HTTP_STATUS_RETURNED",
+      "Message": "The WinRM client received an unknown HTTP status code from the remote WS-Management service.",
+      "DecimalCode": -2144108273,
+      "HexCode": "0x8033810F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_HTTP_STATUS_REDIRECT",
+      "Message": "The WinRM client received a HTTP redirect status code from the remote WS-Management service. WinRM does not support redirects.",
+      "DecimalCode": -2144108272,
+      "HexCode": "0x80338110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_REQUEST_TOO_LARGE_STATUS",
+      "Message": "The WinRM client sent a request to the remote WS-Management service and was notified that the request size exceeded the configured MaxEnvelopeSize quota.",
+      "DecimalCode": -2144108271,
+      "HexCode": "0x80338111",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_SERVICE_UNAVAILABLE_STATUS",
+      "Message": "The connection to the specified remote host was refused. Verify that the WS-Management service is running on the remote host and configured to listen for requests on the correct port and HTTP URL.",
+      "DecimalCode": -2144108270,
+      "HexCode": "0x80338112",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_NOT_FOUND_STATUS",
+      "Message": "The WinRM client sent a request to an HTTP server and got a response saying the requested HTTP URL was not available. This is usually returned by a HTTP server that does not support the WS-Management protocol.",
+      "DecimalCode": -2144108269,
+      "HexCode": "0x80338113",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_MISSING_LOCALE_IN_DELIVERY",
+      "Message": "The subscribe packet had a Locale element with missing lang attribute. The lang attribute is required for the Locale element.",
+      "DecimalCode": -2144108268,
+      "HexCode": "0x80338114",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUICK_CONFIG_FAILED_CERT_REQUIRED",
+      "Message": "Cannot create a WinRM listener on HTTPS because this machine does not have an appropriate certificate. To be used for SSL, a certificate must have a CN matching the hostname, be appropriate for Server Authentication, and not be expired, revoked, or self-signed.",
+      "DecimalCode": -2144108267,
+      "HexCode": "0x80338115",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUICK_CONFIG_FIREWALL_EXCEPTIONS_DISALLOWED",
+      "Message": "Firewall does not allow exceptions; WinRM cannot be setup for remote access.",
+      "DecimalCode": -2144108266,
+      "HexCode": "0x80338116",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUICK_CONFIG_LOCAL_POLICY_CHANGE_DISALLOWED",
+      "Message": "The Windows Remote Management (WinRM) service cannot be configured for remote access because Group Policy does not allow local firewall changes. Check the Group Policy settings to allow local firewall exceptions and add WinRM to the firewall exceptions.",
+      "DecimalCode": -2144108265,
+      "HexCode": "0x80338117",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SELECTOR_NAME",
+      "Message": "The WinRM client cannot process the request because the selector name is not valid. Change the selector name and retry the request.",
+      "DecimalCode": -2144108264,
+      "HexCode": "0x80338118",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENCODING_TYPE",
+      "Message": "The WS-Management service does not support the encoding type specified.",
+      "DecimalCode": -2144108263,
+      "HexCode": "0x80338119",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENDPOINT_UNAVAILABLE_INVALID_VALUE",
+      "Message": "The WS-Management service cannot process the request because the selector values do not match a known resource, or the resource is offline. Retry the request later when the resource is online, or try a different selector.",
+      "DecimalCode": -2144108262,
+      "HexCode": "0x8033811A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_HEADER",
+      "Message": "The WS-Management service cannot process the request because the a header in the request is invalid.",
+      "DecimalCode": -2144108261,
+      "HexCode": "0x8033811B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_UNSUPPORTED_EXPIRATION_TYPE",
+      "Message": "The expiration time specified for enumeration was invalid. Specify the expiration time as a duration.",
+      "DecimalCode": -2144108260,
+      "HexCode": "0x8033811C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MAX_ELEMENTS_NOT_SUPPORTED",
+      "Message": "The WS-Management service received a request which specified a maximum number of elements, but the service does not support this feature. Retry the request without this element specified.",
+      "DecimalCode": -2144108259,
+      "HexCode": "0x8033811D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WMI_PROVIDER_INVALID_PARAMETER",
+      "Message": "The WS-Management service cannot process the request. The WMI provider returned an \u0027invalid parameter\u0027 error.",
+      "DecimalCode": -2144108258,
+      "HexCode": "0x8033811E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MULTIPLE_ENUM_MODE_FLAGS",
+      "Message": "The WinRM client cannot process the request. The request must contain one and only one enumeration mode. Change the request to contain only one enumeration mode and try again.",
+      "DecimalCode": -2144108257,
+      "HexCode": "0x8033811F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_INVALID_FLAG",
+      "Message": "The WinRS client cannot process the request. An invalid flag was specified for this request. Remove or change the invalid flag and try the request again.",
+      "DecimalCode": -2144108256,
+      "HexCode": "0x80338120",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. One of the parameters required is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108255,
+      "HexCode": "0x80338121",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_PROCESS_FILTER",
+      "Message": "The data source could not process the filter. The filter might be missing, invalid or too complex to process. If a service only supports a subset of a filter dialect (such as XPath level 1), it may return this fault for valid filter expressions outside of the supported subset. Change the filter and try the request again.",
+      "DecimalCode": -2144108254,
+      "HexCode": "0x80338122",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ENUMERATORADDEVENT_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManEnumeratorAddEvent function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108253,
+      "HexCode": "0x80338123",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ADDOBJECT_MISSING_OBJECT",
+      "Message": "The WinRM client cannot process the request. The object parameter for the WSManEnumeratorAddObject function is null or zero, but the enumeration mode is Object or ObjectAndEPR.",
+      "DecimalCode": -2144108252,
+      "HexCode": "0x80338124",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ADDOBJECT_MISSING_EPR",
+      "Message": "The WinRM client cannot process the request. The EPR parameter for the WSManEnumeratorAddObject function is null or zero, but the enumeration mode is EPR or ObjectAndEPR.",
+      "DecimalCode": -2144108251,
+      "HexCode": "0x80338125",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NETWORK_TIMEDOUT",
+      "Message": "WinRM cannot complete the operation. Verify that the specified computer name is valid, that the computer is accessible over the network, and that a firewall exception for the WinRM service is enabled and allows access from this computer. By default, the WinRM firewall exception for public profiles limits access to remote computers within the same local subnet.",
+      "DecimalCode": -2144108250,
+      "HexCode": "0x80338126",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_RECEIVE_IN_PROGRESS",
+      "Message": "Not used. To be removed.",
+      "DecimalCode": -2144108249,
+      "HexCode": "0x80338127",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_RECEIVE_NO_RESPONSE_DATA",
+      "Message": "The WinRS client cannot process the Receive request because the shell plugin returned an empty response to the request.",
+      "DecimalCode": -2144108248,
+      "HexCode": "0x80338128",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_CREATESHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManCreateShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108247,
+      "HexCode": "0x80338129",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_CLOSESHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WinrsCloseShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108246,
+      "HexCode": "0x8033812A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_FREECREATESHELLRESULT_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. The parameter required for the WinrsFreeCreateShellResult function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108245,
+      "HexCode": "0x8033812B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_RUNCOMMAND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManRunShellCommand function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108244,
+      "HexCode": "0x8033812C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_FREERUNCOMMANDRESULT_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. The parameter required for the WinrsFreeRunCommandResult function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108243,
+      "HexCode": "0x8033812D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_SIGNAL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManSignalShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108242,
+      "HexCode": "0x8033812E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_RECEIVE_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSMansReceiveShellOutput function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108241,
+      "HexCode": "0x8033812F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_FREEPULLRESULT_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. The parameter required for the WinrsFreePullResult function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108240,
+      "HexCode": "0x80338130",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_PULL_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. One of the parameters required for the WinrsPull function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108239,
+      "HexCode": "0x80338131",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_CLOSERECEIVEHANDLE_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. The parameter required for the WinrsCloseReceiveHandle function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108238,
+      "HexCode": "0x80338132",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_SEND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManSendShellInput function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108237,
+      "HexCode": "0x80338133",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_PUSH_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. One of the parameters required for the WinrsPush function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108236,
+      "HexCode": "0x80338134",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_CLOSESENDHANDLE_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. The parameter required for the WinrsCloseSendHandle function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108235,
+      "HexCode": "0x80338135",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CLIENT_GET_NULL_PARAM",
+      "Message": "The WinRS client cannot process the request. One of the parameters required for the WinrsGet function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108234,
+      "HexCode": "0x80338136",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_POLYMORPHISM_MODE_UNSUPPORTED",
+      "Message": "The WS-Management service does not support the specified polymorphism mode. Try changing the polymorphism mode specified, and try again.",
+      "DecimalCode": -2144108233,
+      "HexCode": "0x80338137",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REQUEST_NOT_SUPPORTED_AT_SERVICE",
+      "Message": "The WS-Management service cannot process the request because the specified URI is not supported on the service side. Retry the request with local session.",
+      "DecimalCode": -2144108232,
+      "HexCode": "0x80338138",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_URI_NON_DMTF_CLASS",
+      "Message": "The WS-Management service cannot process the request. A DMTF resource URI was used to access a non-DMTF class. Try again using a non-DMTF resource URI.",
+      "DecimalCode": -2144108231,
+      "HexCode": "0x80338139",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_URI_WRONG_DMTF_VERSION",
+      "Message": "The WS-Management service cannot process the request. The DMTF class in the repository uses a different major version number from the requested class. This class can be accessed using a non-DMTF resource URI.",
+      "DecimalCode": -2144108230,
+      "HexCode": "0x8033813A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DIFFERENT_CIM_SELECTOR",
+      "Message": "The WS-Management service cannot process the request. The resource URI and __cimnamespace selector attempted to use different namespaces. Try removing the __cimnamespace selector or using a DMTF resource URI. If a non-DMTF resource URI is used with a __cimnamespace selector, the namespaces must match.",
+      "DecimalCode": -2144108229,
+      "HexCode": "0x8033813B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PUSHSUBSCRIPTION_INVALIDUSERACCOUNT",
+      "Message": "The WS-Management client cannot process the request. To use the WSManSubscribe API the user has to be running under Network Service account. No other account is supported currently for push subscriptions.",
+      "DecimalCode": -2144108228,
+      "HexCode": "0x8033813C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_NONDOMAINJOINED_PUBLISHER",
+      "Message": "The WS-Management client cannot process the request. The event source machine is not joined to a domain. To set up a push subscription session to an event source the source has to be connected to a domain. To fix this problem either join the event source machine to a domain or use PULL as the delivery mode for the subscription.",
+      "DecimalCode": -2144108227,
+      "HexCode": "0x8033813D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_NONDOMAINJOINED_COLLECTOR",
+      "Message": "The WS-Management client cannot process the request. The subscriber machine is not joined to a domain. To set up a push subscription session to an event source, the subscriber machine has to be connected to a domain. To fix this problem either join the subscriber machine to a domain or use PULL as the delivery mode for the subscription.",
+      "DecimalCode": -2144108226,
+      "HexCode": "0x8033813E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_READONLY_PROPERTY",
+      "Message": "The WinRM client cannot process the request because it is trying to update a read-only setting. Remove this setting from the command and try again.",
+      "DecimalCode": -2144108225,
+      "HexCode": "0x8033813F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CODE_PAGE_NOT_SUPPORTED",
+      "Message": "The WinRS client cannot process the request. The server cannot set Code Page. You may want to use the CHCP command to change the client Code Page to 437 and receive the results in English.",
+      "DecimalCode": -2144108224,
+      "HexCode": "0x80338140",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_DISABLE_LOOPBACK_WITH_EXPLICIT_CREDENTIALS",
+      "Message": "Not used. To be removed.",
+      "DecimalCode": -2144108223,
+      "HexCode": "0x80338141",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_DISABLE_LOOPBACK",
+      "Message": "Not used. To be removed.",
+      "DecimalCode": -2144108222,
+      "HexCode": "0x80338142",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ENUM_RECEIVED_TOO_MANY_ITEMS",
+      "Message": "The WS-Management client received too many results from the server. The server implementation should never return more items than are specified by the client.",
+      "DecimalCode": -2144108221,
+      "HexCode": "0x80338143",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MULTIPLE_CREDENTIALS",
+      "Message": "The WinRM client cannot process the request. A certificate thumbprint was specified together with a user name or password. Only one credentials type can be specified. Remove the credentials type that does not correspond to the intended authentication mechanism and retry the request.",
+      "DecimalCode": -2144108220,
+      "HexCode": "0x80338144",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_AUTHENTICATION_INVALID_FLAG",
+      "Message": "The WinRM client cannot process the request. The flag that specifies the authentication mechanism to use is incorrect. Remove or change the invalid flag and try the request again.",
+      "DecimalCode": -2144108219,
+      "HexCode": "0x80338145",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREDENTIALS_FOR_DEFAULT_AUTHENTICATION",
+      "Message": "The WinRM client cannot process the request. When an authentication mechanism is not specified, only user name and password credentials are allowed. If you want to use a different type of credentials then you need to specify the authentication mechanism. Specify the authentication mechanism or the correct credentials and try the request again.",
+      "DecimalCode": -2144108218,
+      "HexCode": "0x80338146",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_USERNAME_AND_PASSWORD_NEEDED",
+      "Message": "The WinRM client cannot process the request. For authentication mechanisms that require the credentials of an user account, both user name and password must be specified. Specify the missing user name or password and try the request again.",
+      "DecimalCode": -2144108217,
+      "HexCode": "0x80338147",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_CERT_DNS_OR_UPN",
+      "Message": "The WinRM client cannot process the request. If you are using a machine certificate, it must contain a DNS name in the Subject Alternative Name extension or in the Subject Name field, and no UPN name. If you are using a user certificate, the Subject Alternative Name extension must contain a UPN name and must not contain a DNS name. Change the certificate structure and try the request again.",
+      "DecimalCode": -2144108216,
+      "HexCode": "0x80338148",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CREATESHELL_NULL_ENVIRONMENT_VARIABLE_NAME",
+      "Message": "The WinRM Shell client cannot process the request. One of the environment variable name passed to the WSManCreateShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108215,
+      "HexCode": "0x80338149",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_ALREADY_CLOSED",
+      "Message": "An operation is being attempted on a shell that is being closed. This can happen if the shell that is being used is also being closed by another thread.",
+      "DecimalCode": -2144108214,
+      "HexCode": "0x8033814A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CREATESHELL_NULL_STREAMID",
+      "Message": "The WinRM Shell client cannot process the request. One of the stream id name passed to the WSManCreateShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108213,
+      "HexCode": "0x8033814B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_INVALID_SHELL_HANDLE",
+      "Message": "The WinRM Shell client cannot process the request. The shell handle passed to the WSMan Shell function is not valid. The shell handle is valid only when WSManCreateShell function completes successfully. Change the request including a valid shell handle and try again.",
+      "DecimalCode": -2144108212,
+      "HexCode": "0x8033814C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_INVALID_COMMAND_HANDLE",
+      "Message": "The WinRM Shell client cannot process the request. The command handle passed to the WSMan Shell function is not valid. The command handle is valid only when WSManRunShellCommand function completes successfully. Change the request including a valid shell handle and try again.",
+      "DecimalCode": -2144108211,
+      "HexCode": "0x8033814D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RUNSHELLCOMMAND_NULL_ARGUMENT",
+      "Message": "The WinRM Shell client cannot process the request. One of the argument value passed to the WSManRunShellCommand function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108210,
+      "HexCode": "0x8033814E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_COMMAND_ALREADY_CLOSED",
+      "Message": "An operation is being attempted on a command that is being closed. This can happen if the command handle that is being used is also being freed by another thread.",
+      "DecimalCode": -2144108209,
+      "HexCode": "0x8033814F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SENDSHELLINPUT_INVALID_STREAMID_INDEX",
+      "Message": "The WinRM Shell client cannot process the request. The stream id index from within WSMAN_STREAM_ELEMENT passed to the WSManSendShellInput function is invalid. The stream id index should be an index from within inputStreamSet array passed to the WSManCreateShell function. Change the request with a valid index and try again.",
+      "DecimalCode": -2144108208,
+      "HexCode": "0x80338150",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_SYNCHRONOUS_NOT_SUPPORTED",
+      "Message": "Not used. To be removed.",
+      "DecimalCode": -2144108207,
+      "HexCode": "0x80338151",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_CERTMAPPING_OPERATION_FOR_LOCAL_SESSION",
+      "Message": "The WS-Management operations to update the certificate mapping store of the WINRM service config can only be done remotely.",
+      "DecimalCode": -2144108206,
+      "HexCode": "0x80338152",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_CONFIGLIMIT_EXCEEDED",
+      "Message": "The WINRM certificate mapping configuration store has reached an internal limit and cannot create any more entries. Remove some entries and try again.",
+      "DecimalCode": -2144108205,
+      "HexCode": "0x80338153",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_INVALIDUSERCREDENTIALS",
+      "Message": "The WINRM certificate mapping configuration operation cannot be completed because the user credentials could not be verified. Please check the username and password used for mapping this certificate and verify that it is a non-domain account and try again.",
+      "DecimalCode": -2144108204,
+      "HexCode": "0x80338154",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_INVALID_USAGE_CLIENT",
+      "Message": "The WinRM client cannot process the request. The Enhanced Key Usage (EKU) field of the certificate is not set to \u0022Client Authentication\u0022. Retry the request with a certificate that has the correct EKU.",
+      "DecimalCode": -2144108203,
+      "HexCode": "0x80338155",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_MISSING_AUTH_FLAG",
+      "Message": "The WinRM client cannot process the request. A certificate thumbprint was specified, but the following flag is missing: WSManFlagUseClientCertificate. Add the flag and try the request again.",
+      "DecimalCode": -2144108202,
+      "HexCode": "0x80338156",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERT_MULTIPLE_CREDENTIALS_FLAG",
+      "Message": "The WinRM client cannot process the request. The following flags cannot be specified together: WSManFlagUseClientCertificate and WSManFlagCredUsernamePassword. Remove one of the flags and try the request again.",
+      "DecimalCode": -2144108201,
+      "HexCode": "0x80338157",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_SHELL_URI_INVALID",
+      "Message": "The WinRM client cannot process the request because the CustomRemoteShell URI specified is invalid. CustomRemoteShell URI should start with WinRM shell resource URI prefix: \u0022http://schemas.microsoft.com/wbem/wsman/1/windows/shell\u0022. The URI should not contain invalid characters including \u0027*\u0027, \u0027?\u0027, white spaces and tabs. The CustomRemoteShell URI cannot be longer than 1023 characters.",
+      "DecimalCode": -2144108200,
+      "HexCode": "0x80338158",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_SHELL_URI_CMDSHELLURI_NOTPERMITTED",
+      "Message": "The WinRM client cannot process the request because the CustomRemoteShell URI specified is invalid. Windows command shell URI (\u0022http://schemas.microsoft.com/wbem/wsman/1/windows/shell/cmd\u0022) cannot be a CustomRemoteShell URI.",
+      "DecimalCode": -2144108199,
+      "HexCode": "0x80338159",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_SHELLURI_INVALID_PROCESSPATH",
+      "Message": "The WinRM client cannot process the request because the process path specified for the CustomRemoteShell table entry is invalid. The process path should be absolute and should point to an existing executable.",
+      "DecimalCode": -2144108198,
+      "HexCode": "0x8033815A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_URI_INVALID",
+      "Message": "Not used. To be removed.",
+      "DecimalCode": -2144108197,
+      "HexCode": "0x8033815B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SECURITY_DESCRIPTOR",
+      "Message": "The WinRM client cannot process the request because the provided security descriptor is invalid.",
+      "DecimalCode": -2144108196,
+      "HexCode": "0x8033815C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_POLICY_TOO_COMPLEX",
+      "Message": "The WinRM service cannot process the request because the WS-Policy contained in the DeliverTo is too complex or uses a structure not understood by the service. The WinRM service supports a single layer of policy assertions underneath a wsp:ExactlyOne element.",
+      "DecimalCode": -2144108195,
+      "HexCode": "0x8033815D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_POLICY_CANNOT_COMPLY",
+      "Message": "The WinRM service cannot process the request because the WS-Policy contained in the DeliverTo does not contain any options that the service can comply with. The WinRM service supports the following profiles: Negotiate or Kerberos over HTTP, Negotiate or Kerberos over HTTPS, and mutual certificate authentication over HTTPS using issuer thumbprints.",
+      "DecimalCode": -2144108194,
+      "HexCode": "0x8033815E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_CONNECTIONRETRY",
+      "Message": "The WinRM service cannot process the request because the wsman:ConnectionRetry element in the DeliverTo is invalid.",
+      "DecimalCode": -2144108193,
+      "HexCode": "0x8033815F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_URISECURITY_INVALIDURIKEY",
+      "Message": "WinRM cannot make the configuration change. The URI supplied for the certificate mapping operation is not valid. It must contain at least one character. It must not contain internal whitespace. It must not contain \u0027?\u0027 character. A prefix may be specified by using \u0022*\u0022 as the last character. The URI cannot be longer than 1023 characters.",
+      "DecimalCode": -2144108192,
+      "HexCode": "0x80338160",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_INVALIDSUBJECTKEY",
+      "Message": "WinRM cannot make the configuration change. The Subject used for the certificate mapping operation is not valid. It must contain at least one character. It must contain at most one \u0022*\u0022 character which should be the first character. (This may be the only character in which case it matches all subjects). The Subject cannot be longer than 1023 characters.",
+      "DecimalCode": -2144108191,
+      "HexCode": "0x80338161",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_INVALIDISSUERKEY",
+      "Message": "WinRM cannot make the configuration change because the Issuer used for the certificate mapping operation is not valid. The certificate identified by the issuer thumbprint must be present in the machine \u0022Trusted Root Certification Authorities\u0022 or \u0022Intermediate Certification Authorities\u0022 store. The certificate must have key usage that allows it to sign other certificates.",
+      "DecimalCode": -2144108190,
+      "HexCode": "0x80338162",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_PUBLISHERS_TYPE",
+      "Message": "The WinRM client cannot process the request because the type field in the WSMAN_ALLOWED_PUBLISHERS argument is invalid. Collector-initiated subscriptions must use WSMAN_SINGLE_PUBLISHER and Source-initiated subscriptions must use WSMAN_MULTIPLE_PUBLISHERS.",
+      "DecimalCode": -2144108189,
+      "HexCode": "0x80338163",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_DELIVERY_RETRY",
+      "Message": "The WinRM client cannot process the request because the delivery retry parameters are invalid. If delivery retry is requested, the deliveryRetryInterval and deliveryRetryAttempts fields must both be nonzero.",
+      "DecimalCode": -2144108188,
+      "HexCode": "0x80338164",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_NULL_PUBLISHERS",
+      "Message": "The WinRM client cannot process the request. The required WSMAN_ALLOWED_PUBLISHERS settings is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108187,
+      "HexCode": "0x80338165",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_NULL_ISSUERS",
+      "Message": "The WinRM client cannot process the request because client certificate subject filters were specified without any issuers. When using client certificate authentication, specify at least one issuer thumbprint.",
+      "DecimalCode": -2144108186,
+      "HexCode": "0x80338166",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_NO_SOURCES",
+      "Message": "The WinRM client cannot process the request because the subscription contains no domain or non-domain sources. Subscriptions using WSMAN_MULTIPLE_PUBLISHERS must specify either a security descriptor or an issuer list or both.",
+      "DecimalCode": -2144108185,
+      "HexCode": "0x80338167",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_SUBSCRIBE_OBJECT",
+      "Message": "The WinRM service cannot process the request because the subscription manager returned invalid enumeration results. The m:Subscription XML object or m:Version element is missing or invalid.",
+      "DecimalCode": -2144108184,
+      "HexCode": "0x80338168",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PUBLIC_FIREWALL_PROFILE_ACTIVE",
+      "Message": "WinRM firewall exception will not work since one of the network connection types on this machine is set to Public. Change the network connection type to either Domain or Private and try again.",
+      "DecimalCode": -2144108183,
+      "HexCode": "0x80338169",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_PASSWORDTOOLONG",
+      "Message": "WinRM cannot make the configuration change. The Password used for updating the certificate mapping configuration is not valid. It cannot be longer than 255 characters.",
+      "DecimalCode": -2144108182,
+      "HexCode": "0x8033816A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_PASSWORDBLANK",
+      "Message": "WinRM cannot make the configuration change. The Password used for updating the certificate mapping configuration is not valid. A user account used for configuring a certificate mapping cannot have a blank password.",
+      "DecimalCode": -2144108181,
+      "HexCode": "0x8033816B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_PASSWORDUSERTUPLE",
+      "Message": "WinRM cannot make the configuration change. The credential used for updating or creating the certificate mapping configuration is not valid. The credential consists of both Password and UserName being supplied together in a pair.",
+      "DecimalCode": -2144108180,
+      "HexCode": "0x8033816C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_PROVIDER_RESPONSE",
+      "Message": "The WinRM service executed an operation and the provider returned inconclusive information regarding success or failure of the operation. The status was marked as failed, but no error code was given.",
+      "DecimalCode": -2144108179,
+      "HexCode": "0x8033816D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_NOT_INITIALIZED",
+      "Message": "The WS-Management service on the remote machine cannot process the shell request. This can happen if the WS-Management service on the remote machine was being shutdown. To correct this problem restart the WS-Management service on the remote machine and re-send the shell request.",
+      "DecimalCode": -2144108178,
+      "HexCode": "0x8033816E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_SHELLURI_INVALID_OPERATION_ON_KEY",
+      "Message": "The WinRM service cannot process the request. The URI parameter is the key to CustomRemoteShell table and cannot be modified.",
+      "DecimalCode": -2144108177,
+      "HexCode": "0x8033816F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_STATUS_SERVER_ERROR",
+      "Message": "The WinRM client received an HTTP server error status (500), but the remote service did not include any other information about the cause of the failure.",
+      "DecimalCode": -2144108176,
+      "HexCode": "0x80338170",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTTP_STATUS_BAD_REQUEST",
+      "Message": "The WinRM client received an HTTP bad request status (400), but the remote service did not include any other information about the cause of the failure.",
+      "DecimalCode": -2144108175,
+      "HexCode": "0x80338171",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_CANNOT_CHANGE_CERTMAPPING_KEYS",
+      "Message": "The WinRM service cannot make the configuration change. The selector keys of Subject, URI or Issuer cannot be changed by overriding the selector key value in the body.",
+      "DecimalCode": -2144108174,
+      "HexCode": "0x80338172",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_HTML_ERROR",
+      "Message": "The WinRM client cannot process the request because it received an HTML error packet.",
+      "DecimalCode": -2144108173,
+      "HexCode": "0x80338173",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INITIALIZE_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManInitialize function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108172,
+      "HexCode": "0x80338174",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_INIT_APPLICATION_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManInitialize API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108171,
+      "HexCode": "0x80338175",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_DEINIT_APPLICATION_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManDeinitialize API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108170,
+      "HexCode": "0x80338176",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SETSESSIONOPTION_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManSetSessionOption function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108169,
+      "HexCode": "0x80338177",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SETSESSIONOPTION_INVALID_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManSetSessionOption function is invalid. Change the invalid parameter and try again.",
+      "DecimalCode": -2144108168,
+      "HexCode": "0x80338178",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_GETSESSIONOPTION_INVALID_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required to get a session option is invalid. Change the invalid parameter and try again.",
+      "DecimalCode": -2144108167,
+      "HexCode": "0x80338179",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREATESHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManCreateShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108166,
+      "HexCode": "0x8033817A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_CREATE_SHELL_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManCreateShell API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108165,
+      "HexCode": "0x8033817B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_CLOSE_SHELL_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManCloseShell API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108164,
+      "HexCode": "0x8033817C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_CLOSE_COMMAND_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManCloseCommand API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108163,
+      "HexCode": "0x8033817D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CLOSESHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManCloseShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108162,
+      "HexCode": "0x8033817E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CLOSECOMMAND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManCloseCommand function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108161,
+      "HexCode": "0x8033817F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_RUNCOMMAND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManRunShellCommand function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108160,
+      "HexCode": "0x80338180",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_RUNCOMMAND_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManRunShellCommand API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108159,
+      "HexCode": "0x80338181",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_RUNCOMMAND_NOTCOMPLETED",
+      "Message": "The WinRM client cannot process the request. You must wait for the WSManRunShellCommand API call to complete before calling WSManCloseShellOperationEx API.",
+      "DecimalCode": -2144108158,
+      "HexCode": "0x80338182",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_COMMAND_RESPONSE",
+      "Message": "The WinRM client cannot process the request. The response to a Command request did not contain a valid CommandResponse element. The CommandResponse element was not found or did not contain valid content.",
+      "DecimalCode": -2144108157,
+      "HexCode": "0x80338183",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_OPTIONSET",
+      "Message": "The WinRM client cannot process the request. The OptionSet element is invalid. Change the request to include a valid OptionSet element and try again.",
+      "DecimalCode": -2144108156,
+      "HexCode": "0x80338184",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_COMMANDID",
+      "Message": "The WinRM client cannot process the request. The response to a Command request did not contain a valid CommandResponse element. The CommandId element was not found or did not contain valid content.",
+      "DecimalCode": -2144108155,
+      "HexCode": "0x80338185",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SIGNAL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManSignalShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108154,
+      "HexCode": "0x80338186",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_SIGNAL_SHELL_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManSignalShell API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108153,
+      "HexCode": "0x80338187",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SEND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManSendShellInput function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108152,
+      "HexCode": "0x80338188",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_SEND_SHELL_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManSendShellInput API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108151,
+      "HexCode": "0x80338189",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_SEND_SHELL_PARAMETER",
+      "Message": "The WinRM client cannot process the request. An invalid parameter was specified for the WSManSendShellInput API call. streamData parameter should be specified in binary format using WSMAN_DATA_TYPE_BINARY type. Change the invalid parameter and try the call again.",
+      "DecimalCode": -2144108150,
+      "HexCode": "0x8033818A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_INVALID_INPUT_STREAM",
+      "Message": "The WinRM Shell client cannot process the request. The stream name passed to the WSManSendShellInput function is not valid. The input stream name should be specified as part of the input streams during shell creation using WSManCreateShell function. Change the request including a valid input stream name and try again.",
+      "DecimalCode": -2144108149,
+      "HexCode": "0x8033818B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_RECEIVE_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManReceiveShellOutput function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108148,
+      "HexCode": "0x8033818C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SHELL_INVALID_DESIRED_STREAMS",
+      "Message": "The WinRM Shell client cannot process the request. The stream or list of streams passed to the WSManReceiveShellOutput function is not valid. The desired stream names should be specified as part of the output streams during shell creation using WSManCreateShell function. Change the request including valid desired streams and try again.",
+      "DecimalCode": -2144108147,
+      "HexCode": "0x8033818D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_RECEIVE_SHELL_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManReceiveShellOutput API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108146,
+      "HexCode": "0x8033818E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NO_RECEIVE_RESPONSE",
+      "Message": "The WinRM client cannot process the request. The response to a Receive request did not contain a valid ReceiveResponse element. The ReceiveResponse element was not found or did not contain valid content.",
+      "DecimalCode": -2144108145,
+      "HexCode": "0x8033818F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PLUGIN_CONFIGURATION_CORRUPTED",
+      "Message": "The WSMan plugin configuration is corrupted.",
+      "DecimalCode": -2144108144,
+      "HexCode": "0x80338190",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_FILEPATH",
+      "Message": "The file path specified is either not absolute, not in the system32 directory, or not valid.",
+      "DecimalCode": -2144108143,
+      "HexCode": "0x80338191",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FILE_NOT_PRESENT",
+      "Message": "The file specified does not exist.",
+      "DecimalCode": -2144108142,
+      "HexCode": "0x80338192",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_IISCONFIGURATION_READ_FAILED",
+      "Message": "The WSMan extension failed to read IIS configuration.",
+      "DecimalCode": -2144108141,
+      "HexCode": "0x80338193",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_LOCALE",
+      "Message": "The WinRM client cannot process the request. The locale option is invalid. Change the locale and try again.",
+      "DecimalCode": -2144108140,
+      "HexCode": "0x80338194",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_UI_LANGUAGE",
+      "Message": "The WinRM client cannot process the request. The UI language option is invalid. Change the UI language and try again.",
+      "DecimalCode": -2144108139,
+      "HexCode": "0x80338195",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_GETERRORMESSAGE_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManGetErrorMessage function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108138,
+      "HexCode": "0x80338196",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_LANGUAGE_CODE",
+      "Message": "The WinRM client cannot process the request. The language code parameter is invalid. The language code parameter should be either NULL or a valid RFC 3066 language code. Change the language code and try the request again.",
+      "DecimalCode": -2144108137,
+      "HexCode": "0x80338197",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_GETERRORMESSAGE_FLAG",
+      "Message": "The WinRM client cannot process the request. An invalid flag was specified for the WSManGetErrorMessage API call. Remove or change the invalid flag and try the call again.",
+      "DecimalCode": -2144108136,
+      "HexCode": "0x80338198",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REDIRECT_REQUESTED",
+      "Message": "The WinRM service cannot process the request because the request needs to be sent to a different machine. Use the redirect information to send the request to a new machine.",
+      "DecimalCode": -2144108135,
+      "HexCode": "0x80338199",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PROXY_AUTHENTICATION_INVALID_FLAG",
+      "Message": "The WinRM client cannot process the request. The flag that specifies the proxy authentication mechanism to use is incorrect. Remove or change the invalid flag and try the request again.",
+      "DecimalCode": -2144108134,
+      "HexCode": "0x8033819A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREDENTIALS_FOR_PROXY_AUTHENTICATION",
+      "Message": "The WinRM client cannot process the request. The credentials for proxy authentication are not specified correctly. Both user name and password credentials must be valid. Specify the correct credentials and try the request again.",
+      "DecimalCode": -2144108133,
+      "HexCode": "0x8033819B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PROXY_ACCESS_TYPE",
+      "Message": "The WinRM client cannot process the request. The proxy access type is incorrect. Use one of the proxy access type flags; the flags cannot be combined. Change the invalid proxy access type and try the request again.",
+      "DecimalCode": -2144108132,
+      "HexCode": "0x8033819C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_OPTION_NO_PROXY_SERVER",
+      "Message": "The WinRM client cannot process the request. The direct connection to the server option cannot be used with non empty proxy authentication data. Change the invalid proxy access type or use empty proxy authentication data and try the request again.",
+      "DecimalCode": -2144108131,
+      "HexCode": "0x8033819D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_GETSESSIONOPTION_DWORD_NULL_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManGetSessionOptionAsDword function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108130,
+      "HexCode": "0x8033819E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_GETSESSIONOPTION_DWORD_INVALID_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManGetSessionOptionAsDword function is invalid. Change the invalid parameter and try again.",
+      "DecimalCode": -2144108129,
+      "HexCode": "0x8033819F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_GETSESSIONOPTION_STRING_INVALID_PARAM",
+      "Message": "The WinRM client cannot process the request. One of the parameters required for the WSManGetSessionOptionAsString function is invalid. Change the invalid parameter and try again.",
+      "DecimalCode": -2144108128,
+      "HexCode": "0x803381A0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CREDSSP_USERNAME_PASSWORD_NEEDED",
+      "Message": "The WinRM client cannot process the request. Requests must include user name and password when CredSSP authentication mechanism is used. Add the user name and password or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108127,
+      "HexCode": "0x803381A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREDSSP_AUTHENTICATION_DISABLED",
+      "Message": "The WinRM client cannot process the request. CredSSP authentication is currently disabled in the client configuration. Change the client configuration and try the request again. CredSSP authentication must also be enabled in the server configuration. Also, Group Policy must be edited to allow credential delegation to the target computer. Use gpedit.msc and look at the following policy: Computer Configuration -\u003E Administrative Templates -\u003E System -\u003E Credentials Delegation -\u003E Allow Delegating Fresh Credentials. Verify that it is enabled and configured with an SPN appropriate for the target computer. For example, for a target computer name \u0022myserver.domain.com\u0022, the SPN can be one of the following: WSMAN/myserver.domain.com or WSMAN/*.domain.com",
+      "DecimalCode": -2144108126,
+      "HexCode": "0x803381A2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ALLOWFRESHCREDENTIALS",
+      "Message": "The WinRM client cannot process the request. A computer policy does not allow the delegation of the user credentials to the target computer. Use gpedit.msc and look at the following policy: Computer Configuration -\u003E Administrative Templates -\u003E System -\u003E Credentials Delegation -\u003E Allow Delegating Fresh Credentials. Verify that it is enabled and configured with an SPN appropriate for the target computer. For example, for a target computer name \u0022myserver.domain.com\u0022, the SPN can be one of the following: WSMAN/myserver.domain.com or WSMAN/*.domain.com.",
+      "DecimalCode": -2144108125,
+      "HexCode": "0x803381A3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_ALLOWFRESHCREDENTIALS_NTLMONLY",
+      "Message": "The WinRM client cannot process the request. A computer policy does not allow the delegation of the user credentials to the target computer because the computer is not trusted. The identity of the target computer can be verified if you configure the WSMAN service to use a valid certificate using the following command: winrm set winrm/config/service @{CertificateThumbprint=\u0022\u003Cthumbprint\u003E\u0022} Or you can check the Event Viewer for an event that specifies that the following SPN could not be created: WSMAN/\u003CcomputerFQDN\u003E. If you find this event, you can manually create the SPN using setspn.exe . If the SPN exists, but CredSSP cannot use Kerberos to validate the identity of the target computer and you still want to allow the delegation of the user credentials to the target computer, use gpedit.msc and look at the following policy: Computer Configuration -\u003E Administrative Templates -\u003E System -\u003E Credentials Delegation -\u003E Allow Fresh Credentials with NTLM-only Server Authentication. Verify that it is enabled and configured with an SPN appropriate for the target computer. For example, for a target computer name \u0022myserver.domain.com\u0022, the SPN can be one of the following: WSMAN/myserver.domain.com or WSMAN/*.domain.com. Try the request again after these changes.",
+      "DecimalCode": -2144108124,
+      "HexCode": "0x803381A4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_SHELLS",
+      "Message": "The WS-Management service cannot process the request. The maximum number of concurrent shells for this user has been exceeded. Close existing shells or raise the quota for this user.",
+      "DecimalCode": -2144108123,
+      "HexCode": "0x803381A5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_OPERATIONS",
+      "Message": "The WS-Management service cannot process the request. The maximum number of concurrent operations for this user has been exceeded. Close existing operations for this user, or raise the quota for this user.",
+      "DecimalCode": -2144108122,
+      "HexCode": "0x803381A6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_USER",
+      "Message": "The WS-Management service cannot process the request. The load quota for this user has been exceeded. Send future requests at a slower rate or raise the quota for this user.",
+      "DecimalCode": -2144108121,
+      "HexCode": "0x803381A7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_SYSTEM",
+      "Message": "The WS-Management service cannot process the request. The load quota for the system has been exceeded. Send future requests at a slower rate or raise the system quota.",
+      "DecimalCode": -2144108120,
+      "HexCode": "0x803381A8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DIFFERENT_AUTHZ_TOKEN",
+      "Message": "The WS-Management service cannot complete the authorization under the given token. A previous authorization attempt for the same user resulted in a different token. The user record will be revoked and the next request will reauthorize.",
+      "DecimalCode": -2144108119,
+      "HexCode": "0x803381A9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REDIRECT_LOCATION_NOT_AVAILABLE",
+      "Message": "An application tried to retrieve the HTTP Redirect location from the session when no redirect error (ERROR_WSMAN_REDIRECT_REQUESTED) was returned. The application needs to be updated so as to only retrieve the location after this error is returned.",
+      "DecimalCode": -2144108118,
+      "HexCode": "0x803381AA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_SHELLUSERS",
+      "Message": "The WS-Management service cannot process the request. The maximum number of users executing shell operations has been exceeded. Retry after some time or raise the quota for concurrent shell users.",
+      "DecimalCode": -2144108117,
+      "HexCode": "0x803381AB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REMOTESHELLS_NOT_ALLOWED",
+      "Message": "The WS-Management service cannot process the request. The service is configured to not accept any remote shell requests.",
+      "DecimalCode": -2144108116,
+      "HexCode": "0x803381AC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_PULL_PARAMS_NOT_SAME_AS_ENUM",
+      "Message": "The WS-Management service cannot complete the Pull operation for the enumeration because the wsman:MaxEnvelopeSize, wsen:MaxCharacters or wsen:MaxElements parameters differ from those specified to the enumeration. The application needs to specify the same parameters for Pull as were specified for the enumeration.",
+      "DecimalCode": -2144108115,
+      "HexCode": "0x803381AD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DEPRECATED_CONFIG_SETTING",
+      "Message": "The WinRM service cannot process the request because it is trying to update a deprecated setting. Remove this setting from the command and try again.",
+      "DecimalCode": -2144108114,
+      "HexCode": "0x803381AE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_URI_SECURITY_URI",
+      "Message": "The WS-Management service cannot process the configuration settings. A Security element contains a URI that does not match its parent Resource element.",
+      "DecimalCode": -2144108113,
+      "HexCode": "0x803381AF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_USE_ALLOW_NEGOTIATE_IMPLICIT_CREDENTIALS_FOR_HTTP",
+      "Message": "The WinRM client cannot process the request. Allow implicit credentials for Negotiate authentication option is only valid for HTTPS transport. Remove the allow implicit credentials for Negotiate authentication option and try the request again.",
+      "DecimalCode": -2144108112,
+      "HexCode": "0x803381B0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_USE_PROXY_SETTINGS_FOR_HTTP",
+      "Message": "The WinRM client cannot process the request. Setting proxy information is not valid when the HTTP transport is specified. Remove the proxy information or change the transport and try the request again.",
+      "DecimalCode": -2144108111,
+      "HexCode": "0x803381B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_USE_PROXY_SETTINGS_FOR_KERBEROS",
+      "Message": "The WinRM client cannot process the request. Setting proxy information is not valid when the authentication mechanism with the remote machine is Kerberos. Remove the proxy information or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108110,
+      "HexCode": "0x803381B2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CANNOT_USE_PROXY_SETTINGS_FOR_CREDSSP",
+      "Message": "The WinRM client cannot process the request. Setting proxy information is not valid when the authentication mechanism with the remote machine is CredSSP. Remove the proxy information or change the authentication mechanism and try the request again.",
+      "DecimalCode": -2144108109,
+      "HexCode": "0x803381B3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_MULTIPLE_PROXY_AUTH_FLAGS",
+      "Message": "The WinRM client cannot process the request. The request must specify only one authentication mechanism for proxy. Change the request to specify only one authentication mechanism and try again.",
+      "DecimalCode": -2144108108,
+      "HexCode": "0x803381B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_REDIRECT_ERROR",
+      "Message": "The WinRM client received a redirect error from the server when it is not appropriate. The only time a redirect error can be reported correctly is during the authorization of a user. This would result in a properly formatted redirect response from the server that includes the redirect endpoint.",
+      "DecimalCode": -2144108107,
+      "HexCode": "0x803381B5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_REDIRECT_LOCATION_TOO_LONG",
+      "Message": "The WinRM service received a redirect error from an authorization plug-in where the redirect location was too long.",
+      "DecimalCode": -2144108106,
+      "HexCode": "0x803381B6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_REDIRECT_LOCATION_INVALID",
+      "Message": "The WinRM service received a HTTP redirect message redirecting the client but the location URL is invalid.",
+      "DecimalCode": -2144108105,
+      "HexCode": "0x803381B7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_SERVICE_CBT_HARDENING_INVALID",
+      "Message": "The WinRM service cannot process the request. The Channel Binding Token Hardening Level (CbtHardeningLevel) value is invalid. The valid values are \u0022None\u0022, \u0022Relaxed\u0022 and \u0022Strict\u0022. Change the CbtHardeningLevel value and try again.",
+      "DecimalCode": -2144108104,
+      "HexCode": "0x803381B8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NAME_NOT_RESOLVED",
+      "Message": "The WinRM client cannot process the request because the server name cannot be resolved.",
+      "DecimalCode": -2144108103,
+      "HexCode": "0x803381B9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SSL_CONNECTION_ABORTED",
+      "Message": "The SSL connection cannot be established. Verify that the service on the remote host is properly configured to listen for HTTPS requests. Consult the logs and documentation for the WS-Management service running on the destination, most commonly IIS or WinRM. If the destination is the WinRM service, run the following command on the destination to analyze and configure the WinRM service: \u0022winrm quickconfig -transport:https\u0022.",
+      "DecimalCode": -2144108102,
+      "HexCode": "0x803381BA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DEFAULTAUTH_IPADDRESS",
+      "Message": "The WinRM client cannot process the request. Default authentication may be used with an IP address under the following conditions: the transport is HTTPS or the destination is in the TrustedHosts list, and explicit credentials are provided. Use winrm.cmd to configure TrustedHosts. Note that computers in the TrustedHosts list might not be authenticated. For more information on how to set TrustedHosts run the following command: winrm help config.",
+      "DecimalCode": -2144108101,
+      "HexCode": "0x803381BB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CUSTOMREMOTESHELL_DEPRECATED",
+      "Message": "The WinRM client cannot process the request. Custom Remote Shell has been deprecated and cannot be used.",
+      "DecimalCode": -2144108100,
+      "HexCode": "0x803381BC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_FEATURE_DEPRECATED",
+      "Message": "The WinRM client cannot process the request. The feature in use has been deprecated and cannot be used.",
+      "DecimalCode": -2144108099,
+      "HexCode": "0x803381BD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_USESSL_PARAM",
+      "Message": "The WinRM client used a parameter to specify the use of SSL while specifying http in the connection string.",
+      "DecimalCode": -2144108098,
+      "HexCode": "0x803381BE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_CONFIGSDDL_URL",
+      "Message": "The WinRM service cannot process the request because the security for this resource URI cannot be changed.",
+      "DecimalCode": -2144108097,
+      "HexCode": "0x803381BF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_SHELLCOMAMNDS_FILTER_EXPECTED",
+      "Message": "The WinRM service cannot process the request. The enumeration request expects a selector based filter to specify the shell identifier.",
+      "DecimalCode": -2144108096,
+      "HexCode": "0x803381C0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_ENUMERATE_SHELLCOMMANDS_EPRS_NOTSUPPORTED",
+      "Message": "The WinRM service cannot process the request. The enumeration of end point resources for shell commands is not supported.",
+      "DecimalCode": -2144108095,
+      "HexCode": "0x803381C1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CREATESHELL_NAME_INVALID",
+      "Message": "The WinRM Shell client cannot process the request because the shell name has exceeded 255 characters in length.",
+      "DecimalCode": -2144108094,
+      "HexCode": "0x803381C2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RUNAS_INVALIDUSERCREDENTIALS",
+      "Message": "The WinRM runAs configuration operation cannot be completed because the user credentials could not be verified. Verify that the username and password used for configuration are valid and retry the operation.",
+      "DecimalCode": -2144108093,
+      "HexCode": "0x803381C3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_DISCONNECTED",
+      "Message": "The WinRM service cannot process the request because the WinRS shell instance is currently disconnected.",
+      "DecimalCode": -2144108092,
+      "HexCode": "0x803381C4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_DISCONNECT_NOT_SUPPORTED",
+      "Message": "The WinRM service cannot process the request. This WinRS shell instance does not support disconnect and reconnect operations because it was created by an older WinRS client or its provider does not support the disconnect operation.",
+      "DecimalCode": -2144108091,
+      "HexCode": "0x803381C5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_CLIENTSESSIONID_MISMATCH",
+      "Message": "The WinRM service cannot process the request because the WinRS shell instance is connected to a different client.",
+      "DecimalCode": -2144108090,
+      "HexCode": "0x803381C6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_DISCONNECTSHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManDisconnectShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108089,
+      "HexCode": "0x803381C7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_RECONNECTSHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManReconnectShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108088,
+      "HexCode": "0x803381C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CONNECTSHELL_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManConnectShell function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108087,
+      "HexCode": "0x803381C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_CONNECTCOMMAND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManConnectShellCommand function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108086,
+      "HexCode": "0x803381CA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_CONNECT_RESPONSE_BAD_BODY",
+      "Message": "The WinRM client cannot process the request. The body response is not a valid connect request response.",
+      "DecimalCode": -2144108085,
+      "HexCode": "0x803381CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_COMMAND_TERMINATED",
+      "Message": "The WinRM Shell client cannot process the request. The command is currently terminating or was terminated.",
+      "DecimalCode": -2144108084,
+      "HexCode": "0x803381CC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_CONNECTED_TO_DIFFERENT_CLIENT",
+      "Message": "The WinRM service cannot process the request. The WinRS shell instance is currently connected to a different client.",
+      "DecimalCode": -2144108083,
+      "HexCode": "0x803381CD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_DISCONNECT_OPERATION_NOT_GRACEFUL",
+      "Message": "The WinRM client encountered an error while communicating with the WinRM service during the disconnect operation. The shell has been disconnected and the streams were possibly suspended abruptly.",
+      "DecimalCode": -2144108082,
+      "HexCode": "0x803381CE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_DISCONNECT_OPERATION_NOT_VALID",
+      "Message": "The WinRM client cannot process the request. A disconnect operation cannot be performed on a WinRS shell instance that is already disconnected.",
+      "DecimalCode": -2144108081,
+      "HexCode": "0x803381CF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_RECONNECT_OPERATION_NOT_VALID",
+      "Message": "The WinRM client cannot process the request. A reconnect operation cannot be performed on a WinRS shell instance that is currently connected.",
+      "DecimalCode": -2144108080,
+      "HexCode": "0x803381D0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CONFIG_GROUP_POLICY_CHANGE_NOTIFICATION_SUBSCRIPTION_FAILED",
+      "Message": "An error was encountered while subscribing to the Group Policy change notification.",
+      "DecimalCode": -2144108079,
+      "HexCode": "0x803381D1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_RECONNECTSHELLCOMMAND_NULL_PARAM",
+      "Message": "The WinRM Shell client cannot process the request. One of the parameters required for the WSManReconnectShellCommand function is null or zero. Change the request to include the missing parameter and try again.",
+      "DecimalCode": -2144108078,
+      "HexCode": "0x803381D2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELLCOMMAND_RECONNECT_OPERATION_NOT_VALID",
+      "Message": "The WinRM client cannot process the request. A reconnect operation cannot be performed on a WinRS shell command instance that is currently connected.",
+      "DecimalCode": -2144108077,
+      "HexCode": "0x803381D3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELLCOMMAND_CLIENTID_NOT_VALID",
+      "Message": "The WinRM service cannot process the request because the command ID specified by the client is not a valid GUID. Modify the request and retry the request.",
+      "DecimalCode": -2144108076,
+      "HexCode": "0x803381D4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_CLIENTID_NOT_VALID",
+      "Message": "The WinRM service cannot process the request because the shell ID specified by the client is not a valid GUID. Provide a valid ID and try again.",
+      "DecimalCode": -2144108075,
+      "HexCode": "0x803381D5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELLCOMMAND_CLIENTID_RESOURCE_CONFLICT",
+      "Message": "The WinRM service cannot process the request. A command already exists with the command ID specified by the client.",
+      "DecimalCode": -2144108074,
+      "HexCode": "0x803381D6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELL_CLIENTID_RESOURCE_CONFLICT",
+      "Message": "The WinRM service cannot process the request. A resource already exists with the shell ID specified by the client.",
+      "DecimalCode": -2144108073,
+      "HexCode": "0x803381D7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_SHELLCOMMAND_DISCONNECT_OPERATION_NOT_VALID",
+      "Message": "The WinRM client cannot process the request. A disconnect operation cannot be performed on a WinRS shell command instance that is disconnected.",
+      "DecimalCode": -2144108072,
+      "HexCode": "0x803381D8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SUBSCRIBE_WMI_INVALID_KEY",
+      "Message": "The WS-Management service cannot process the request. The resource URI for the Subscribe operation must not contain keys.",
+      "DecimalCode": -2144108071,
+      "HexCode": "0x803381D9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_DISCONNECT_SHELL_FLAG",
+      "Message": "The WinRM client cannot process the request. A flag that is not valid was specified for the WSManDisconnectShell method. Remove or change the flag and retry the operation.",
+      "DecimalCode": -2144108070,
+      "HexCode": "0x803381DA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_INVALID_SHELL_COMMAND_PAIR",
+      "Message": "The WinRM client cannot process the request because the command handle is not associated with the provided shell handle.",
+      "DecimalCode": -2144108069,
+      "HexCode": "0x803381DB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SEMANTICCALLBACK_TIMEDOUT",
+      "Message": "The WS-Management service did not receive a response for an extended semantics operation within the timeframe specified in the OperationTimeout setting.",
+      "DecimalCode": -2144108068,
+      "HexCode": "0x803381DC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SERVICE_REMOTE_ACCESS_DISABLED",
+      "Message": "The WS-Management service is configured to not allow remote requests.",
+      "DecimalCode": -2144108067,
+      "HexCode": "0x803381DD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_SERVICE_STREAM_DISCONNECTED",
+      "Message": "The WS-Management service cannot process the request because the stream is currently disconnected.",
+      "DecimalCode": -2144108066,
+      "HexCode": "0x803381DE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CREATESHELL_RUNAS_FAILED",
+      "Message": "The creation of a new Shell failed. Verify that the RunAsPassword value is correctly configured and that the Group Policy setting \u0022Disallow WinRM from storing RunAs credentials\u0022 is Disabled or Not Configured. To enable WinRM to store RunAs credentials, change this Group Policy setting to Disabled.",
+      "DecimalCode": -2144108065,
+      "HexCode": "0x803381DF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_XML_RUNAS_DISABLED",
+      "Message": "The supplied plugin configuration XML is not valid. To enable WinRM to store RunAs credentials, change the \u0022Disallow WinRM from storing RunAs credentials\u0022 Group Policy setting to Disabled.",
+      "DecimalCode": -2144108064,
+      "HexCode": "0x803381E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_WRONG_METADATA",
+      "Message": "The WinRM client cannot process the request because the XML instance does not match the class schema provided by the server.",
+      "DecimalCode": -2144108063,
+      "HexCode": "0x803381E1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_TYPE",
+      "Message": "The WinRM client cannot process the request because the XML contains an unsupported type. Verify the XML and retry the operation.",
+      "DecimalCode": -2144108062,
+      "HexCode": "0x803381E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_REMOTE_CONNECTION_NOT_ALLOWED",
+      "Message": "The WS-Management service cannot process the request. The service is configured to reject remote connection requests for this plugin.",
+      "DecimalCode": -2144108061,
+      "HexCode": "0x803381E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_SHELLS_PPQ",
+      "Message": "The WS-Management service cannot process the request. This user has exceeded the maximum number of concurrent shells allowed for this plugin. Close at least one open shell or raise the plugin quota for this user.",
+      "DecimalCode": -2144108060,
+      "HexCode": "0x803381E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_USERS_PPQ",
+      "Message": "The WS-Management service cannot process the request. The maximum number of users executing remote operations has been exceeded for this plugin. Retry the request later or raise the quota for concurrent users.",
+      "DecimalCode": -2144108059,
+      "HexCode": "0x803381E5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_PLUGINSHELLS_PPQ",
+      "Message": "The WS-Management service cannot process the request. The maximum number of concurrent shells allowed for this plugin has been exceeded. Retry the request later or raise the Maximum Shells per Plugin quota.",
+      "DecimalCode": -2144108058,
+      "HexCode": "0x803381E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_PLUGINOPERATIONS_PPQ",
+      "Message": "The WS-Management service cannot process the request. The maximum number of concurrent operations allowed for this plugin has been exceeded. Retry the request later or raise the Maximum Operations per Plugin quota.",
+      "DecimalCode": -2144108057,
+      "HexCode": "0x803381E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_OPERATIONS_USER_PPQ",
+      "Message": "The WS-Management service cannot process the request. This user has exceeded the maximum number of allowed concurrent operations. Retry the request later or raise the Maximum Operations per User quota.",
+      "DecimalCode": -2144108056,
+      "HexCode": "0x803381E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MAX_COMMANDS_PER_SHELL_PPQ",
+      "Message": "The WS-Management service cannot process the request. The maximum number of concurrent commands per shell has been exceeded. Retry the request later or raise the Maximum Commands per Shell quota.",
+      "DecimalCode": -2144108055,
+      "HexCode": "0x803381E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_QUOTA_MIN_REQUIREMENT_NOT_AVAILABLE_PPQ",
+      "Message": "The WS-Management service cannot process the request. There are not enough resources available to process this operation. Retry the operation later or close one or more of the currently running operations.",
+      "DecimalCode": -2144108054,
+      "HexCode": "0x803381EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NEW_DESERIALIZER",
+      "Message": "The WinRM client cannot process the request because the MI Deserializer cannot be created.",
+      "DecimalCode": -2144108053,
+      "HexCode": "0x803381EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DESERIALIZE_CLASS",
+      "Message": "The WinRM client cannot process the request because the metadata could not be deserialized.",
+      "DecimalCode": -2144108052,
+      "HexCode": "0x803381EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_GETCLASS",
+      "Message": "The WinRM client cannot process the request because the metadata failed to be retrieved from the server.",
+      "DecimalCode": -2144108051,
+      "HexCode": "0x803381ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NEW_SESSION",
+      "Message": "The WinRM client cannot process the request because a WinRM session could not be created.",
+      "DecimalCode": -2144108050,
+      "HexCode": "0x803381EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_NULL_KEY",
+      "Message": "The WinRM client cannot process the request because the target object has a key property set to NULL. Incomplete objects cannot be used as the target of an operation.",
+      "DecimalCode": -2144108049,
+      "HexCode": "0x803381EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MUTUAL_AUTH_FAILED",
+      "Message": "The WinRM client cannot process the request as the server identity could not be verified. If the identity of the server is trusted, add it to the TrustedHosts list and retry the request. Use winrm.cmd to configure TrustedHosts. Note that computers in the TrustedHosts list might not be authenticated. For more information on how to set TrustedHosts, run the following command: winrm help config",
+      "DecimalCode": -2144108048,
+      "HexCode": "0x803381F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_OCTETTYPE",
+      "Message": "The WinRM client cannot process the request because the octet string array type is not supported.",
+      "DecimalCode": -2144108047,
+      "HexCode": "0x803381F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WINRS_IDLETIMEOUT_OUTOFBOUNDS",
+      "Message": "The WS-Management service cannot process the request. The requested IdleTimeout is outside the allowed range.",
+      "DecimalCode": -2144108046,
+      "HexCode": "0x803381F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INSUFFICIENT_METADATA_FOR_BASIC",
+      "Message": "The WinRM client cannot process the request because insufficient metadata is available. The application does not allow all properties to be returned as strings, but the server does not support correctly typing the properties. Change the request to allow all properties to be returned as strings and retry the request.",
+      "DecimalCode": -2144108045,
+      "HexCode": "0x803381F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_INVALID_LITERAL_URI",
+      "Message": "The WinRM client cannot process the request because the MI_OperationOptions contained both a Resource URI and a Resource URI Prefix. Specify only one of these two options and try again.",
+      "DecimalCode": -2144108044,
+      "HexCode": "0x803381F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_OBJECTONLY_INVALID",
+      "Message": "The WinRM client cannot process the request because keysOnly and WSMAN_ENUMERATIONMODE_OBJECTONLY were specified at the same time. These two settings are incompatible. Remove the WSMAN_ENUMERATIONMODE_OBJECTONLY option, or set keysOnly to MI_FALSE, and retry the request.",
+      "DecimalCode": -2144108043,
+      "HexCode": "0x803381F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_MISSING_CLASSNAME",
+      "Message": "The WinRM client cannot process the request because the class name is not valid. Supply a valid class name or set the Resource URI option and retry the request.",
+      "DecimalCode": -2144108042,
+      "HexCode": "0x803381F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_INVALID_ENCODING_IN_DELIVERY",
+      "Message": "The subscribe packet contains an Encoding value that is not valid in the delivery section.",
+      "DecimalCode": -2144108041,
+      "HexCode": "0x803381F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_DESTINATION_INVALID",
+      "Message": "The WinRM client cannot process the request. The destination computer name must be a hostname or an IP address, and must not be a URL. To use an IPv6 address, enclose the address in brackets, like the following: \u0022[::1]\u0022. The transport, port number, and URL prefix may be controlled by setting the appropriate destination options. Change the destination computer name string and retry the operation.",
+      "DecimalCode": -2144108040,
+      "HexCode": "0x803381F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_UNSUPPORTED_FEATURE_IDENTIFY",
+      "Message": "The server does not support WS-Management Identify operations. Skip the TestConnection part of the request and try again.",
+      "DecimalCode": -2144108039,
+      "HexCode": "0x803381F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CLIENT_SESSION_UNUSABLE",
+      "Message": "The WS-Management service cannot process the operation. The operation is being attempted on a client session that is unusable. This may be related to a recent restart of the WS-Management service. Please create a new client session and retry the operation if re-executing the operation does not have undesired behavior.",
+      "DecimalCode": -2144108038,
+      "HexCode": "0x803381FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_VIRTUALACCOUNT_NOTSUPPORTED",
+      "Message": "The WS-Management service cannot process the operation. An attempt to create a virtual account failed. Ensure that WinRM service is running as Local System and that it has TCB privilege enabled.",
+      "DecimalCode": -2144108037,
+      "HexCode": "0x803381FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_VIRTUALACCOUNT_NOTSUPPORTED_DOWNLEVEL",
+      "Message": "The WS-Management service cannot process the operation. Virtual account feature is only available in Windows 7, Server 2008 R2 and above.",
+      "DecimalCode": -2144108036,
+      "HexCode": "0x803381FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_RUNASUSER_MANAGEDACCOUNT_LOGON_FAILED",
+      "Message": "The WS-Management service cannot process the operation. An attempt to logon using the configured RunAs Managed Service Account failed.",
+      "DecimalCode": -2144108035,
+      "HexCode": "0x803381FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_CERTMAPPING_CREDENTIAL_MANAGEMENT_FAILIED",
+      "Message": "The WS-Management service cannot process the operation. An attempt to query mapped credential failed. This will happen if the security context associated with WinRM service has changed since the credential was originally mapped.",
+      "DecimalCode": -2144108034,
+      "HexCode": "0x803381FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERROR_WSMAN_EVENTING_PUSH_SUBSCRIPTION_NOACTIVATE_EVENTSOURCE",
+      "Message": "The event source of the push subscription is in disable or inactive on the Event controller server.",
+      "DecimalCode": -2144108033,
+      "HexCode": "0x803381FF",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WINRM",
+      "Code": 51
+    }
+  ]
+}

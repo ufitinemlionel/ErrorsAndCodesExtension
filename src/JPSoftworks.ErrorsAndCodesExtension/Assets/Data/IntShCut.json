@@ -1,0 +1,34 @@
+{
+  "HeaderFileName": "intshcut.h",
+  "ErrorCodes": [
+    {
+      "Id": "E_FLAGS",
+      "Message": "The flag combination is invalid.",
+      "DecimalCode": -2147217408,
+      "HexCode": "0x80041000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IS_E_EXEC_FAILED",
+      "Message": "The URL\u0027s protocol handler failed to run.",
+      "DecimalCode": -2147213310,
+      "HexCode": "0x80042002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "URL_E_INVALID_SYNTAX",
+      "Message": "The URL\u0027s syntax is invalid.",
+      "DecimalCode": -2147217407,
+      "HexCode": "0x80041001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "URL_E_UNREGISTERED_PROTOCOL",
+      "Message": "The URL\u0027s protocol does not have a registered protocol handler.",
+      "DecimalCode": -2147217406,
+      "HexCode": "0x80041002",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

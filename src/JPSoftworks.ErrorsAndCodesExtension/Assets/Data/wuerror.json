@@ -1,0 +1,3345 @@
+{
+  "HeaderFileName": "wuerror.h",
+  "ErrorCodes": [
+    {
+      "Id": "WU_S_SERVICE_STOP",
+      "Message": "Windows Update Agent was stopped successfully.",
+      "DecimalCode": 2359297,
+      "HexCode": "0x00240001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_SELFUPDATE",
+      "Message": "Windows Update Agent updated itself.",
+      "DecimalCode": 2359298,
+      "HexCode": "0x00240002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_UPDATE_ERROR",
+      "Message": "Operation completed successfully but there were errors applying the updates.",
+      "DecimalCode": 2359299,
+      "HexCode": "0x00240003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_MARKED_FOR_DISCONNECT",
+      "Message": "A callback was marked to be disconnected later because the request to disconnect the operation came while a callback was executing.",
+      "DecimalCode": 2359300,
+      "HexCode": "0x00240004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_REBOOT_REQUIRED",
+      "Message": "The system must be restarted to complete installation of the update.",
+      "DecimalCode": 2359301,
+      "HexCode": "0x00240005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_ALREADY_INSTALLED",
+      "Message": "The update to be installed is already installed on the system.",
+      "DecimalCode": 2359302,
+      "HexCode": "0x00240006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_ALREADY_UNINSTALLED",
+      "Message": "The update to be removed is not installed on the system.",
+      "DecimalCode": 2359303,
+      "HexCode": "0x00240007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_ALREADY_DOWNLOADED",
+      "Message": "The update to be downloaded has already been downloaded.",
+      "DecimalCode": 2359304,
+      "HexCode": "0x00240008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_SOME_UPDATES_SKIPPED_ON_BATTERY",
+      "Message": "The operation completed successfully, but some updates were skipped because the system is running on batteries.",
+      "DecimalCode": 2359305,
+      "HexCode": "0x00240009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_ALREADY_REVERTED",
+      "Message": "The update to be reverted is not present on the system.",
+      "DecimalCode": 2359306,
+      "HexCode": "0x0024000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_SEARCH_CRITERIA_NOT_SUPPORTED",
+      "Message": "The operation is skipped because the update service does not support the requested search criteria.",
+      "DecimalCode": 2359312,
+      "HexCode": "0x00240010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_UH_INSTALLSTILLPENDING",
+      "Message": "The installation operation for the update is still in progress.",
+      "DecimalCode": 2367509,
+      "HexCode": "0x00242015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_UH_DOWNLOAD_SIZE_CALCULATED",
+      "Message": "The actual download size has been calculated by the handler.",
+      "DecimalCode": 2367510,
+      "HexCode": "0x00242016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_SIH_NOOP",
+      "Message": "No operation was required by the server-initiated healing server response.",
+      "DecimalCode": 2379777,
+      "HexCode": "0x00245001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_DM_ALREADYDOWNLOADING",
+      "Message": "The update to be downloaded is already being downloaded.",
+      "DecimalCode": 2383873,
+      "HexCode": "0x00246001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_METADATA_SKIPPED_BY_ENFORCEMENTMODE",
+      "Message": "Metadata verification was skipped by enforcement mode.",
+      "DecimalCode": 2388225,
+      "HexCode": "0x00247101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_METADATA_IGNORED_SIGNATURE_VERIFICATION",
+      "Message": "A server configuration refresh resulted in metadata signature verification to be ignored.",
+      "DecimalCode": 2388226,
+      "HexCode": "0x00247102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_SEARCH_LOAD_SHEDDING",
+      "Message": "Search operation completed successfully but one or more services were shedding load.",
+      "DecimalCode": 2392065,
+      "HexCode": "0x00248001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_S_AAD_DEVICE_TICKET_NOT_NEEDED",
+      "Message": "There was no need to retrieve an AAD device ticket.",
+      "DecimalCode": 2392066,
+      "HexCode": "0x00248002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_SERVICE",
+      "Message": "Windows Update Agent was unable to provide the service.",
+      "DecimalCode": -2145124351,
+      "HexCode": "0x80240001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MAX_CAPACITY_REACHED",
+      "Message": "The maximum capacity of the service was exceeded.",
+      "DecimalCode": -2145124350,
+      "HexCode": "0x80240002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNKNOWN_ID",
+      "Message": "An ID cannot be found.",
+      "DecimalCode": -2145124349,
+      "HexCode": "0x80240003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NOT_INITIALIZED",
+      "Message": "The object could not be initialized.",
+      "DecimalCode": -2145124348,
+      "HexCode": "0x80240004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_RANGEOVERLAP",
+      "Message": "The update handler requested a byte range overlapping a previously requested range.",
+      "DecimalCode": -2145124347,
+      "HexCode": "0x80240005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TOOMANYRANGES",
+      "Message": "The requested number of byte ranges exceeds the maximum number (2^31 - 1).",
+      "DecimalCode": -2145124346,
+      "HexCode": "0x80240006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALIDINDEX",
+      "Message": "The index to a collection was invalid.",
+      "DecimalCode": -2145124345,
+      "HexCode": "0x80240007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_ITEMNOTFOUND",
+      "Message": "The key for the item queried could not be found.",
+      "DecimalCode": -2145124344,
+      "HexCode": "0x80240008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_OPERATIONINPROGRESS",
+      "Message": "Another conflicting operation was in progress. Some operations such as installation cannot be performed twice simultaneously.",
+      "DecimalCode": -2145124343,
+      "HexCode": "0x80240009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_COULDNOTCANCEL",
+      "Message": "Cancellation of the operation was not allowed.",
+      "DecimalCode": -2145124342,
+      "HexCode": "0x8024000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CALL_CANCELLED",
+      "Message": "Operation was cancelled.",
+      "DecimalCode": -2145124341,
+      "HexCode": "0x8024000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NOOP",
+      "Message": "No operation was required.",
+      "DecimalCode": -2145124340,
+      "HexCode": "0x8024000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_XML_MISSINGDATA",
+      "Message": "Windows Update Agent could not find required information in the update\u0027s XML data.",
+      "DecimalCode": -2145124339,
+      "HexCode": "0x8024000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_XML_INVALID",
+      "Message": "Windows Update Agent found invalid information in the update\u0027s XML data.",
+      "DecimalCode": -2145124338,
+      "HexCode": "0x8024000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CYCLE_DETECTED",
+      "Message": "Circular update relationships were detected in the metadata.",
+      "DecimalCode": -2145124337,
+      "HexCode": "0x8024000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TOO_DEEP_RELATION",
+      "Message": "Update relationships too deep to evaluate were evaluated.",
+      "DecimalCode": -2145124336,
+      "HexCode": "0x80240010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_RELATIONSHIP",
+      "Message": "An invalid update relationship was detected.",
+      "DecimalCode": -2145124335,
+      "HexCode": "0x80240011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REG_VALUE_INVALID",
+      "Message": "An invalid registry value was read.",
+      "DecimalCode": -2145124334,
+      "HexCode": "0x80240012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DUPLICATE_ITEM",
+      "Message": "Operation tried to add a duplicate item to a list.",
+      "DecimalCode": -2145124333,
+      "HexCode": "0x80240013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_INSTALL_REQUESTED",
+      "Message": "Updates requested for install are not installable by caller.",
+      "DecimalCode": -2145124332,
+      "HexCode": "0x80240014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALL_NOT_ALLOWED",
+      "Message": "Operation tried to install while another installation was in progress or the system was pending a mandatory restart.",
+      "DecimalCode": -2145124330,
+      "HexCode": "0x80240016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NOT_APPLICABLE",
+      "Message": "Operation was not performed because there are no applicable updates.",
+      "DecimalCode": -2145124329,
+      "HexCode": "0x80240017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_USERTOKEN",
+      "Message": "Operation failed because a required user token is missing.",
+      "DecimalCode": -2145124328,
+      "HexCode": "0x80240018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EXCLUSIVE_INSTALL_CONFLICT",
+      "Message": "An exclusive update cannot be installed with other updates at the same time.",
+      "DecimalCode": -2145124327,
+      "HexCode": "0x80240019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_POLICY_NOT_SET",
+      "Message": "A policy value was not set.",
+      "DecimalCode": -2145124326,
+      "HexCode": "0x8024001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SELFUPDATE_IN_PROGRESS",
+      "Message": "The operation could not be performed because the Windows Update Agent is self-updating.",
+      "DecimalCode": -2145124325,
+      "HexCode": "0x8024001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_UPDATE",
+      "Message": "An update contains invalid metadata.",
+      "DecimalCode": -2145124323,
+      "HexCode": "0x8024001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SERVICE_STOP",
+      "Message": "Operation did not complete because the service or system was being shut down.",
+      "DecimalCode": -2145124322,
+      "HexCode": "0x8024001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_CONNECTION",
+      "Message": "Operation did not complete because the network connection was unavailable.",
+      "DecimalCode": -2145124321,
+      "HexCode": "0x8024001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_INTERACTIVE_USER",
+      "Message": "Operation did not complete because there is no logged-on interactive user.",
+      "DecimalCode": -2145124320,
+      "HexCode": "0x80240020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TIME_OUT",
+      "Message": "Operation did not complete because it timed out.",
+      "DecimalCode": -2145124319,
+      "HexCode": "0x80240021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_ALL_UPDATES_FAILED",
+      "Message": "Operation failed for all the updates.",
+      "DecimalCode": -2145124318,
+      "HexCode": "0x80240022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EULAS_DECLINED",
+      "Message": "The license terms for all updates were declined.",
+      "DecimalCode": -2145124317,
+      "HexCode": "0x80240023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_UPDATE",
+      "Message": "There are no updates.",
+      "DecimalCode": -2145124316,
+      "HexCode": "0x80240024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_USER_ACCESS_DISABLED",
+      "Message": "Group Policy settings prevented access to Windows Update.",
+      "DecimalCode": -2145124315,
+      "HexCode": "0x80240025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_UPDATE_TYPE",
+      "Message": "The type of update is invalid.",
+      "DecimalCode": -2145124314,
+      "HexCode": "0x80240026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_URL_TOO_LONG",
+      "Message": "The URL exceeded the maximum length.",
+      "DecimalCode": -2145124313,
+      "HexCode": "0x80240027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNINSTALL_NOT_ALLOWED",
+      "Message": "The update could not be uninstalled because the request did not originate from a WSUS server.",
+      "DecimalCode": -2145124312,
+      "HexCode": "0x80240028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_PRODUCT_LICENSE",
+      "Message": "Search may have missed some updates before there is an unlicensed application on the system.",
+      "DecimalCode": -2145124311,
+      "HexCode": "0x80240029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MISSING_HANDLER",
+      "Message": "A component required to detect applicable updates was missing.",
+      "DecimalCode": -2145124310,
+      "HexCode": "0x8024002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_LEGACYSERVER",
+      "Message": "An operation did not complete because it requires a newer version of server.",
+      "DecimalCode": -2145124309,
+      "HexCode": "0x8024002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_BIN_SOURCE_ABSENT",
+      "Message": "A delta-compressed update could not be installed because it required the source.",
+      "DecimalCode": -2145124308,
+      "HexCode": "0x8024002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SOURCE_ABSENT",
+      "Message": "A full-file update could not be installed because it required the source.",
+      "DecimalCode": -2145124307,
+      "HexCode": "0x8024002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WU_DISABLED",
+      "Message": "Access to an unmanaged server is not allowed.",
+      "DecimalCode": -2145124306,
+      "HexCode": "0x8024002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CALL_CANCELLED_BY_POLICY",
+      "Message": "Operation did not complete because the DisableWindowsUpdateAccess policy was set.",
+      "DecimalCode": -2145124305,
+      "HexCode": "0x8024002F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_PROXY_SERVER",
+      "Message": "The format of the proxy list was invalid.",
+      "DecimalCode": -2145124304,
+      "HexCode": "0x80240030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_FILE",
+      "Message": "The file is in the wrong format.",
+      "DecimalCode": -2145124303,
+      "HexCode": "0x80240031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_CRITERIA",
+      "Message": "The search criteria string was invalid.",
+      "DecimalCode": -2145124302,
+      "HexCode": "0x80240032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EULA_UNAVAILABLE",
+      "Message": "License terms could not be downloaded.",
+      "DecimalCode": -2145124301,
+      "HexCode": "0x80240033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DOWNLOAD_FAILED",
+      "Message": "Update failed to download.",
+      "DecimalCode": -2145124300,
+      "HexCode": "0x80240034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UPDATE_NOT_PROCESSED",
+      "Message": "The update was not processed.",
+      "DecimalCode": -2145124299,
+      "HexCode": "0x80240035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_OPERATION",
+      "Message": "The object\u0027s current state did not allow the operation.",
+      "DecimalCode": -2145124298,
+      "HexCode": "0x80240036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NOT_SUPPORTED",
+      "Message": "The functionality for the operation is not supported.",
+      "DecimalCode": -2145124297,
+      "HexCode": "0x80240037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WINHTTP_INVALID_FILE",
+      "Message": "The downloaded file has an unexpected content type.",
+      "DecimalCode": -2145124296,
+      "HexCode": "0x80240038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TOO_MANY_RESYNC",
+      "Message": "Agent is asked by server to resync too many times.",
+      "DecimalCode": -2145124295,
+      "HexCode": "0x80240039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_SERVER_CORE_SUPPORT",
+      "Message": "WUA API method does not run on Server Core installation.",
+      "DecimalCode": -2145124288,
+      "HexCode": "0x80240040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SYSPREP_IN_PROGRESS",
+      "Message": "Service is not available while sysprep is running.",
+      "DecimalCode": -2145124287,
+      "HexCode": "0x80240041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNKNOWN_SERVICE",
+      "Message": "The update service is no longer registered with AU.",
+      "DecimalCode": -2145124286,
+      "HexCode": "0x80240042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_UI_SUPPORT",
+      "Message": "There is no support for WUA UI.",
+      "DecimalCode": -2145124285,
+      "HexCode": "0x80240043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PER_MACHINE_UPDATE_ACCESS_DENIED",
+      "Message": "Only administrators can perform this operation on per-machine updates.",
+      "DecimalCode": -2145124284,
+      "HexCode": "0x80240044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNSUPPORTED_SEARCHSCOPE",
+      "Message": "A search was attempted with a scope that is not currently supported for this type of search.",
+      "DecimalCode": -2145124283,
+      "HexCode": "0x80240045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_BAD_FILE_URL",
+      "Message": "The URL does not point to a file.",
+      "DecimalCode": -2145124282,
+      "HexCode": "0x80240046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REVERT_NOT_ALLOWED",
+      "Message": "The update could not be reverted.",
+      "DecimalCode": -2145124281,
+      "HexCode": "0x80240047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_NOTIFICATION_INFO",
+      "Message": "The featured update notification info returned by the server is invalid.",
+      "DecimalCode": -2145124280,
+      "HexCode": "0x80240048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_OUTOFRANGE",
+      "Message": "The data is out of range.",
+      "DecimalCode": -2145124279,
+      "HexCode": "0x80240049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_IN_PROGRESS",
+      "Message": "Windows Update agent operations are not available while OS setup is running.",
+      "DecimalCode": -2145124278,
+      "HexCode": "0x8024004A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_ORPHANED_DOWNLOAD_JOB",
+      "Message": "An orphaned downloadjob was found with no active callers.",
+      "DecimalCode": -2145124277,
+      "HexCode": "0x8024004B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_LOW_BATTERY",
+      "Message": "An update could not be installed because the system battery power level is too low.",
+      "DecimalCode": -2145124276,
+      "HexCode": "0x8024004C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INFRASTRUCTUREFILE_INVALID_FORMAT",
+      "Message": "The downloaded infrastructure file is incorrectly formatted.",
+      "DecimalCode": -2145124275,
+      "HexCode": "0x8024004D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INFRASTRUCTUREFILE_REQUIRES_SSL",
+      "Message": "The infrastructure file must be downloaded using strong SSL.",
+      "DecimalCode": -2145124274,
+      "HexCode": "0x8024004E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_IDLESHUTDOWN_OPCOUNT_DISCOVERY",
+      "Message": "A discovery call contributed to a non-zero operation count at idle timer shutdown.",
+      "DecimalCode": -2145124273,
+      "HexCode": "0x8024004F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_IDLESHUTDOWN_OPCOUNT_SEARCH",
+      "Message": "A search call contributed to a non-zero operation count at idle timer shutdown.",
+      "DecimalCode": -2145124272,
+      "HexCode": "0x80240050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_IDLESHUTDOWN_OPCOUNT_DOWNLOAD",
+      "Message": "A download call contributed to a non-zero operation count at idle timer shutdown.",
+      "DecimalCode": -2145124271,
+      "HexCode": "0x80240051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_IDLESHUTDOWN_OPCOUNT_INSTALL",
+      "Message": "An install call contributed to a non-zero operation count at idle timer shutdown.",
+      "DecimalCode": -2145124270,
+      "HexCode": "0x80240052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_IDLESHUTDOWN_OPCOUNT_OTHER",
+      "Message": "An unspecified call contributed to a non-zero operation count at idle timer shutdown.",
+      "DecimalCode": -2145124269,
+      "HexCode": "0x80240053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INTERACTIVE_CALL_CANCELLED",
+      "Message": "An interactive user cancelled this operation, which was started from the Windows Update Agent UI.",
+      "DecimalCode": -2145124268,
+      "HexCode": "0x80240054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_CALL_CANCELLED",
+      "Message": "Automatic Updates cancelled this operation because it applies to an update that is no longer applicable to this computer.",
+      "DecimalCode": -2145124267,
+      "HexCode": "0x80240055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SYSTEM_UNSUPPORTED",
+      "Message": "This version or edition of the operating system doesn\u0027t support the needed functionality.",
+      "DecimalCode": -2145124266,
+      "HexCode": "0x80240056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NO_SUCH_HANDLER_PLUGIN",
+      "Message": "The requested update download or install handler, or update applicability expression evaluator, is not provided by this Agent plugin.",
+      "DecimalCode": -2145124265,
+      "HexCode": "0x80240057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_SERIALIZATION_VERSION",
+      "Message": "The requested serialization version is not supported.",
+      "DecimalCode": -2145124264,
+      "HexCode": "0x80240058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NETWORK_COST_EXCEEDS_POLICY",
+      "Message": "The current network cost does not meet the conditions set by the network cost policy.",
+      "DecimalCode": -2145124263,
+      "HexCode": "0x80240059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CALL_CANCELLED_BY_HIDE",
+      "Message": "The call is cancelled because it applies to an update that is hidden (no longer applicable to this computer).",
+      "DecimalCode": -2145124262,
+      "HexCode": "0x8024005A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CALL_CANCELLED_BY_INVALID",
+      "Message": "The call is cancelled because it applies to an update that is invalid (no longer applicable to this computer).",
+      "DecimalCode": -2145124261,
+      "HexCode": "0x8024005B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_VOLUMEID",
+      "Message": "The specified volume id is invalid.",
+      "DecimalCode": -2145124260,
+      "HexCode": "0x8024005C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNRECOGNIZED_VOLUMEID",
+      "Message": "The specified volume id is unrecognized by the system.",
+      "DecimalCode": -2145124259,
+      "HexCode": "0x8024005D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EXTENDEDERROR_NOTSET",
+      "Message": "The installation extended error code is not specified.",
+      "DecimalCode": -2145124258,
+      "HexCode": "0x8024005E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EXTENDEDERROR_FAILED",
+      "Message": "The installation extended error code is set to general fail.",
+      "DecimalCode": -2145124257,
+      "HexCode": "0x8024005F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_IDLESHUTDOWN_OPCOUNT_SERVICEREGISTRATION",
+      "Message": "A service registration call contributed to a non-zero operation count at idle timer shutdown.",
+      "DecimalCode": -2145124256,
+      "HexCode": "0x80240060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_FILETRUST_SHA2SIGNATURE_MISSING",
+      "Message": "Signature validation of the file fails to find valid SHA2\u002B signature on MS signed payload.",
+      "DecimalCode": -2145124255,
+      "HexCode": "0x80240061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UPDATE_NOT_APPROVED",
+      "Message": "The update is not in the servicing approval list.",
+      "DecimalCode": -2145124254,
+      "HexCode": "0x80240062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CALL_CANCELLED_BY_INTERACTIVE_SEARCH",
+      "Message": "The search call was cancelled by another interactive search against the same service.",
+      "DecimalCode": -2145124253,
+      "HexCode": "0x80240063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALL_JOB_RESUME_NOT_ALLOWED",
+      "Message": "Resume of install job not allowed due to another installation in progress.",
+      "DecimalCode": -2145124252,
+      "HexCode": "0x80240064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALL_JOB_NOT_SUSPENDED",
+      "Message": "Resume of install job not allowed because job is not suspended.",
+      "DecimalCode": -2145124251,
+      "HexCode": "0x80240065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALL_USERCONTEXT_ACCESSDENIED",
+      "Message": "User context passed to installation from caller with insufficient privileges.",
+      "DecimalCode": -2145124250,
+      "HexCode": "0x80240066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_STANDBY_ACTIVITY_NOT_ALLOWED",
+      "Message": "Operation is not allowed because the device is in DC (Direct Current) and DS (Disconnected Standby).",
+      "DecimalCode": -2145124249,
+      "HexCode": "0x80240067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_COULD_NOT_EVALUATE_PROPERTY",
+      "Message": "The property could not be evaluated.",
+      "DecimalCode": -2145124248,
+      "HexCode": "0x80240068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SERVICE_UNEXPECTED_EXIT",
+      "Message": "Operation did not complete because the service process exited unexpectedly with a non-successful exit code.",
+      "DecimalCode": -2145124247,
+      "HexCode": "0x80240069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_ACCESS_DENIED_CALLER_IDENTITY",
+      "Message": "Access was denied because the caller identity does not fit the requirements for this call.",
+      "DecimalCode": -2145124246,
+      "HexCode": "0x8024006A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SERVICE_REENABLE_ACCESS_DENIED",
+      "Message": "Operation did not complete because the service is disabled and re-enabling it has failed as the access was denied.",
+      "DecimalCode": -2145124245,
+      "HexCode": "0x8024006B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNEXPECTED",
+      "Message": "An operation failed due to reasons not covered by another error code.",
+      "DecimalCode": -2145120257,
+      "HexCode": "0x80240FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MSI_WRONG_VERSION",
+      "Message": "Search may have missed some updates because the Windows Installer is less than version 3.1.",
+      "DecimalCode": -2145120255,
+      "HexCode": "0x80241001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MSI_NOT_CONFIGURED",
+      "Message": "Search may have missed some updates because the Windows Installer is not configured.",
+      "DecimalCode": -2145120254,
+      "HexCode": "0x80241002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MSP_DISABLED",
+      "Message": "Search may have missed some updates because policy has disabled Windows Installer patching.",
+      "DecimalCode": -2145120253,
+      "HexCode": "0x80241003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MSI_WRONG_APP_CONTEXT",
+      "Message": "An update could not be applied because the application is installed per-user.",
+      "DecimalCode": -2145120252,
+      "HexCode": "0x80241004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MSI_NOT_PRESENT",
+      "Message": "Search may have missed some updates because the Windows Installer is less than version 3.1.",
+      "DecimalCode": -2145120251,
+      "HexCode": "0x80241005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_MSP_UNEXPECTED",
+      "Message": "Search may have missed some updates because there was a failure of the Windows Installer.",
+      "DecimalCode": -2145116161,
+      "HexCode": "0x80241FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_BASE",
+      "Message": "WU_E_PT_SOAPCLIENT_* error codes map to the SOAPCLIENT_ERROR enum of the ATL Server Library.",
+      "DecimalCode": -2145107968,
+      "HexCode": "0x80244000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_INITIALIZE",
+      "Message": "Same as SOAPCLIENT_INITIALIZE_ERROR - initialization of the SOAP client failed, possibly because of an MSXML installation failure.",
+      "DecimalCode": -2145107967,
+      "HexCode": "0x80244001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_OUTOFMEMORY",
+      "Message": "Same as SOAPCLIENT_OUTOFMEMORY - SOAP client failed because it ran out of memory.",
+      "DecimalCode": -2145107966,
+      "HexCode": "0x80244002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_GENERATE",
+      "Message": "Same as SOAPCLIENT_GENERATE_ERROR - SOAP client failed to generate the request.",
+      "DecimalCode": -2145107965,
+      "HexCode": "0x80244003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_CONNECT",
+      "Message": "Same as SOAPCLIENT_CONNECT_ERROR - SOAP client failed to connect to the server.",
+      "DecimalCode": -2145107964,
+      "HexCode": "0x80244004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_SEND",
+      "Message": "Same as SOAPCLIENT_SEND_ERROR - SOAP client failed to send a message for reasons of WU_E_WINHTTP_* error codes.",
+      "DecimalCode": -2145107963,
+      "HexCode": "0x80244005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_SERVER",
+      "Message": "Same as SOAPCLIENT_SERVER_ERROR - SOAP client failed because there was a server error.",
+      "DecimalCode": -2145107962,
+      "HexCode": "0x80244006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_SOAPFAULT",
+      "Message": "Same as SOAPCLIENT_SOAPFAULT - SOAP client failed because there was a SOAP fault for reasons of WU_E_PT_SOAP_* error codes.",
+      "DecimalCode": -2145107961,
+      "HexCode": "0x80244007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_PARSEFAULT",
+      "Message": "Same as SOAPCLIENT_PARSEFAULT_ERROR - SOAP client failed to parse a SOAP fault.",
+      "DecimalCode": -2145107960,
+      "HexCode": "0x80244008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_READ",
+      "Message": "Same as SOAPCLIENT_READ_ERROR - SOAP client failed while reading the response from the server.",
+      "DecimalCode": -2145107959,
+      "HexCode": "0x80244009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAPCLIENT_PARSE",
+      "Message": "Same as SOAPCLIENT_PARSE_ERROR - SOAP client failed to parse the response from the server.",
+      "DecimalCode": -2145107958,
+      "HexCode": "0x8024400A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAP_VERSION",
+      "Message": "Same as SOAP_E_VERSION_MISMATCH - SOAP client found an unrecognizable namespace for the SOAP envelope.",
+      "DecimalCode": -2145107957,
+      "HexCode": "0x8024400B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAP_MUST_UNDERSTAND",
+      "Message": "Same as SOAP_E_MUST_UNDERSTAND - SOAP client was unable to understand a header.",
+      "DecimalCode": -2145107956,
+      "HexCode": "0x8024400C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAP_CLIENT",
+      "Message": "Same as SOAP_E_CLIENT - SOAP client found the message was malformed; fix before resending.",
+      "DecimalCode": -2145107955,
+      "HexCode": "0x8024400D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SOAP_SERVER",
+      "Message": "Same as SOAP_E_SERVER - The SOAP message could not be processed due to a server error; resend later.",
+      "DecimalCode": -2145107954,
+      "HexCode": "0x8024400E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_WMI_ERROR",
+      "Message": "There was an unspecified Windows Management Instrumentation (WMI) error.",
+      "DecimalCode": -2145107953,
+      "HexCode": "0x8024400F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_EXCEEDED_MAX_SERVER_TRIPS",
+      "Message": "The number of round trips to the server exceeded the maximum limit.",
+      "DecimalCode": -2145107952,
+      "HexCode": "0x80244010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SUS_SERVER_NOT_SET",
+      "Message": "WUServer policy value is missing in the registry.",
+      "DecimalCode": -2145107951,
+      "HexCode": "0x80244011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_DOUBLE_INITIALIZATION",
+      "Message": "Initialization failed because the object was already initialized.",
+      "DecimalCode": -2145107950,
+      "HexCode": "0x80244012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_INVALID_COMPUTER_NAME",
+      "Message": "The computer name could not be determined.",
+      "DecimalCode": -2145107949,
+      "HexCode": "0x80244013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_REFRESH_CACHE_REQUIRED",
+      "Message": "The reply from the server indicates that the server was changed or the cookie was invalid; refresh the state of the internal cache and retry.",
+      "DecimalCode": -2145107947,
+      "HexCode": "0x80244015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_BAD_REQUEST",
+      "Message": "Same as HTTP status 400 - the server could not process the request due to invalid syntax.",
+      "DecimalCode": -2145107946,
+      "HexCode": "0x80244016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_DENIED",
+      "Message": "Same as HTTP status 401 - the requested resource requires user authentication.",
+      "DecimalCode": -2145107945,
+      "HexCode": "0x80244017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_FORBIDDEN",
+      "Message": "Same as HTTP status 403 - server understood the request, but declined to fulfill it.",
+      "DecimalCode": -2145107944,
+      "HexCode": "0x80244018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_NOT_FOUND",
+      "Message": "Same as HTTP status 404 - the server cannot find the requested URI (Uniform Resource Identifier).",
+      "DecimalCode": -2145107943,
+      "HexCode": "0x80244019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_BAD_METHOD",
+      "Message": "Same as HTTP status 405 - the HTTP method is not allowed.",
+      "DecimalCode": -2145107942,
+      "HexCode": "0x8024401A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_PROXY_AUTH_REQ",
+      "Message": "Same as HTTP status 407 - proxy authentication is required.",
+      "DecimalCode": -2145107941,
+      "HexCode": "0x8024401B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_REQUEST_TIMEOUT",
+      "Message": "Same as HTTP status 408 - the server timed out waiting for the request.",
+      "DecimalCode": -2145107940,
+      "HexCode": "0x8024401C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_CONFLICT",
+      "Message": "Same as HTTP status 409 - the request was not completed due to a conflict with the current state of the resource.",
+      "DecimalCode": -2145107939,
+      "HexCode": "0x8024401D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_GONE",
+      "Message": "Same as HTTP status 410 - requested resource is no longer available at the server.",
+      "DecimalCode": -2145107938,
+      "HexCode": "0x8024401E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_SERVER_ERROR",
+      "Message": "Same as HTTP status 500 - an error internal to the server prevented fulfilling the request.",
+      "DecimalCode": -2145107937,
+      "HexCode": "0x8024401F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_NOT_SUPPORTED",
+      "Message": "Same as HTTP status 500 - server does not support the functionality required to fulfill the request.",
+      "DecimalCode": -2145107936,
+      "HexCode": "0x80244020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_BAD_GATEWAY",
+      "Message": "Same as HTTP status 502 - the server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.",
+      "DecimalCode": -2145107935,
+      "HexCode": "0x80244021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_SERVICE_UNAVAIL",
+      "Message": "Same as HTTP status 503 - the service is temporarily overloaded.",
+      "DecimalCode": -2145107934,
+      "HexCode": "0x80244022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_GATEWAY_TIMEOUT",
+      "Message": "Same as HTTP status 503 - the request was timed out waiting for a gateway.",
+      "DecimalCode": -2145107933,
+      "HexCode": "0x80244023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_VERSION_NOT_SUP",
+      "Message": "Same as HTTP status 505 - the server does not support the HTTP protocol version used for the request.",
+      "DecimalCode": -2145107932,
+      "HexCode": "0x80244024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_FILE_LOCATIONS_CHANGED",
+      "Message": "Operation failed due to a changed file location; refresh internal state and resend.",
+      "DecimalCode": -2145107931,
+      "HexCode": "0x80244025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_REGISTRATION_NOT_SUPPORTED",
+      "Message": "Operation failed because Windows Update Agent does not support registration with a non-WSUS server.",
+      "DecimalCode": -2145107930,
+      "HexCode": "0x80244026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_NO_AUTH_PLUGINS_REQUESTED",
+      "Message": "The server returned an empty authentication information list.",
+      "DecimalCode": -2145107929,
+      "HexCode": "0x80244027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_NO_AUTH_COOKIES_CREATED",
+      "Message": "Windows Update Agent was unable to create any valid authentication cookies.",
+      "DecimalCode": -2145107928,
+      "HexCode": "0x80244028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_INVALID_CONFIG_PROP",
+      "Message": "A configuration property value was wrong.",
+      "DecimalCode": -2145107927,
+      "HexCode": "0x80244029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_CONFIG_PROP_MISSING",
+      "Message": "A configuration property value was missing.",
+      "DecimalCode": -2145107926,
+      "HexCode": "0x8024402A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_HTTP_STATUS_NOT_MAPPED",
+      "Message": "The HTTP request could not be completed and the reason did not correspond to any of the WU_E_PT_HTTP_* error codes.",
+      "DecimalCode": -2145107925,
+      "HexCode": "0x8024402B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_WINHTTP_NAME_NOT_RESOLVED",
+      "Message": "Same as ERROR_WINHTTP_NAME_NOT_RESOLVED - the proxy server or target server name cannot be resolved.",
+      "DecimalCode": -2145107924,
+      "HexCode": "0x8024402C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_LOAD_SHEDDING",
+      "Message": "The server is shedding load.",
+      "DecimalCode": -2145107923,
+      "HexCode": "0x8024402D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_CLIENT_ENFORCED_LOAD_SHEDDING",
+      "Message": "Windows Update Agent is enforcing honoring the service load shedding interval.",
+      "DecimalCode": -2145107922,
+      "HexCode": "0x8024402E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SAME_REDIR_ID",
+      "Message": "Windows Update Agent failed to download a redirector cabinet file with a new redirectorId value from the server during the recovery.",
+      "DecimalCode": -2145103827,
+      "HexCode": "0x8024502D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_NO_MANAGED_RECOVER",
+      "Message": "A redirector recovery action did not complete because the server is managed.",
+      "DecimalCode": -2145103826,
+      "HexCode": "0x8024502E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_SUCCEEDED_WITH_ERRORS",
+      "Message": "External cab file processing completed with some errors.",
+      "DecimalCode": -2145107921,
+      "HexCode": "0x8024402F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_INIT_FAILED",
+      "Message": "The external cab processor initialization did not complete.",
+      "DecimalCode": -2145107920,
+      "HexCode": "0x80244030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_INVALID_FILE_FORMAT",
+      "Message": "The format of a metadata file was invalid.",
+      "DecimalCode": -2145107919,
+      "HexCode": "0x80244031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_INVALID_METADATA",
+      "Message": "External cab processor found invalid metadata.",
+      "DecimalCode": -2145107918,
+      "HexCode": "0x80244032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST",
+      "Message": "The file digest could not be extracted from an external cab file.",
+      "DecimalCode": -2145107917,
+      "HexCode": "0x80244033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE",
+      "Message": "An external cab file could not be decompressed.",
+      "DecimalCode": -2145107916,
+      "HexCode": "0x80244034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ECP_FILE_LOCATION_ERROR",
+      "Message": "External cab processor was unable to get file locations.",
+      "DecimalCode": -2145107915,
+      "HexCode": "0x80244035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_CATALOG_SYNC_REQUIRED",
+      "Message": "The server does not support category-specific search; Full catalog search has to be issued instead.",
+      "DecimalCode": -2145123274,
+      "HexCode": "0x80240436",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SECURITY_VERIFICATION_FAILURE",
+      "Message": "There was a problem authorizing with the service.",
+      "DecimalCode": -2145123273,
+      "HexCode": "0x80240437",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ENDPOINT_UNREACHABLE",
+      "Message": "There is no route or network connectivity to the endpoint.",
+      "DecimalCode": -2145123272,
+      "HexCode": "0x80240438",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_INVALID_FORMAT",
+      "Message": "The data received does not meet the data contract expectations.",
+      "DecimalCode": -2145123271,
+      "HexCode": "0x80240439",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_INVALID_URL",
+      "Message": "The url is invalid.",
+      "DecimalCode": -2145123270,
+      "HexCode": "0x8024043A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_NWS_NOT_LOADED",
+      "Message": "Unable to load NWS runtime.",
+      "DecimalCode": -2145123269,
+      "HexCode": "0x8024043B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_PROXY_AUTH_SCHEME_NOT_SUPPORTED",
+      "Message": "The proxy auth scheme is not supported.",
+      "DecimalCode": -2145123268,
+      "HexCode": "0x8024043C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SERVICEPROP_NOTAVAIL",
+      "Message": "The requested service property is not available.",
+      "DecimalCode": -2145123267,
+      "HexCode": "0x8024043D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ENDPOINT_REFRESH_REQUIRED",
+      "Message": "The endpoint provider plugin requires online refresh.",
+      "DecimalCode": -2145123266,
+      "HexCode": "0x8024043E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ENDPOINTURL_NOTAVAIL",
+      "Message": "A URL for the requested service endpoint is not available.",
+      "DecimalCode": -2145123265,
+      "HexCode": "0x8024043F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ENDPOINT_DISCONNECTED",
+      "Message": "The connection to the service endpoint died.",
+      "DecimalCode": -2145123264,
+      "HexCode": "0x80240440",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_INVALID_OPERATION",
+      "Message": "The operation is invalid because protocol talker is in an inappropriate state.",
+      "DecimalCode": -2145123263,
+      "HexCode": "0x80240441",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_OBJECT_FAULTED",
+      "Message": "The object is in a faulted state due to a previous error.",
+      "DecimalCode": -2145123262,
+      "HexCode": "0x80240442",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_NUMERIC_OVERFLOW",
+      "Message": "The operation would lead to numeric overflow.",
+      "DecimalCode": -2145123261,
+      "HexCode": "0x80240443",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_OPERATION_ABORTED",
+      "Message": "The operation was aborted.",
+      "DecimalCode": -2145123260,
+      "HexCode": "0x80240444",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_OPERATION_ABANDONED",
+      "Message": "The operation was abandoned.",
+      "DecimalCode": -2145123259,
+      "HexCode": "0x80240445",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_QUOTA_EXCEEDED",
+      "Message": "A quota was exceeded.",
+      "DecimalCode": -2145123258,
+      "HexCode": "0x80240446",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_NO_TRANSLATION_AVAILABLE",
+      "Message": "The information was not available in the specified language.",
+      "DecimalCode": -2145123257,
+      "HexCode": "0x80240447",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ADDRESS_IN_USE",
+      "Message": "The address is already being used.",
+      "DecimalCode": -2145123256,
+      "HexCode": "0x80240448",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_ADDRESS_NOT_AVAILABLE",
+      "Message": "The address is not valid for this context.",
+      "DecimalCode": -2145123255,
+      "HexCode": "0x80240449",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_OTHER",
+      "Message": "Unrecognized error occurred in the Windows Web Services framework.",
+      "DecimalCode": -2145123254,
+      "HexCode": "0x8024044A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_SECURITY_SYSTEM_FAILURE",
+      "Message": "A security operation failed in the Windows Web Services framework.",
+      "DecimalCode": -2145123253,
+      "HexCode": "0x8024044B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_DATA_BOUNDARY_RESTRICTED",
+      "Message": "The client is data boundary restricted and needs to talk to a restricted endpoint.",
+      "DecimalCode": -2145107712,
+      "HexCode": "0x80244100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_GENERAL_AAD_CLIENT_ERROR",
+      "Message": "The client hit an error in retrieving AAD device ticket.",
+      "DecimalCode": -2145107711,
+      "HexCode": "0x80244101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_PT_UNEXPECTED",
+      "Message": "A communication error not covered by another WU_E_PT_* error code.",
+      "DecimalCode": -2145103873,
+      "HexCode": "0x80244FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_LOAD_XML",
+      "Message": "The redirector XML document could not be loaded into the DOM class.",
+      "DecimalCode": -2145103871,
+      "HexCode": "0x80245001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_S_FALSE",
+      "Message": "The redirector XML document is missing some required information.",
+      "DecimalCode": -2145103870,
+      "HexCode": "0x80245002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_ID_SMALLER",
+      "Message": "The redirectorId in the downloaded redirector cab is less than in the cached cab.",
+      "DecimalCode": -2145103869,
+      "HexCode": "0x80245003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_UNKNOWN_SERVICE",
+      "Message": "The service ID is not supported in the service environment.",
+      "DecimalCode": -2145103868,
+      "HexCode": "0x80245004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_UNSUPPORTED_CONTENTTYPE",
+      "Message": "The response from the redirector server had an unsupported content type.",
+      "DecimalCode": -2145103867,
+      "HexCode": "0x80245005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_INVALID_RESPONSE",
+      "Message": "The response from the redirector server had an error status or was invalid.",
+      "DecimalCode": -2145103866,
+      "HexCode": "0x80245006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_ATTRPROVIDER_EXCEEDED_MAX_NAMEVALUE",
+      "Message": "The maximum number of name value pairs was exceeded by the attribute provider.",
+      "DecimalCode": -2145103864,
+      "HexCode": "0x80245008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_ATTRPROVIDER_INVALID_NAME",
+      "Message": "The name received from the attribute provider was invalid.",
+      "DecimalCode": -2145103863,
+      "HexCode": "0x80245009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_ATTRPROVIDER_INVALID_VALUE",
+      "Message": "The value received from the attribute provider was invalid.",
+      "DecimalCode": -2145103862,
+      "HexCode": "0x8024500A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_SLS_GENERIC_ERROR",
+      "Message": "There was an error in connecting to or parsing the response from the Service Locator Service redirector server.",
+      "DecimalCode": -2145103861,
+      "HexCode": "0x8024500B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_CONNECT_POLICY",
+      "Message": "Connections to the redirector server are disallowed by managed policy.",
+      "DecimalCode": -2145103860,
+      "HexCode": "0x8024500C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_ONLINE_DISALLOWED",
+      "Message": "The redirector would go online but is disallowed by caller configuration.",
+      "DecimalCode": -2145103859,
+      "HexCode": "0x8024500D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REDIRECTOR_UNEXPECTED",
+      "Message": "The redirector failed for reasons not covered by another WU_E_REDIRECTOR_* error code.",
+      "DecimalCode": -2145103617,
+      "HexCode": "0x802450FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_VERIFY_DOWNLOAD_ENGINE",
+      "Message": "Verification of the servicing engine package failed.",
+      "DecimalCode": -2145103615,
+      "HexCode": "0x80245101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_VERIFY_DOWNLOAD_PAYLOAD",
+      "Message": "Verification of a servicing package failed.",
+      "DecimalCode": -2145103614,
+      "HexCode": "0x80245102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_VERIFY_STAGE_ENGINE",
+      "Message": "Verification of the staged engine failed.",
+      "DecimalCode": -2145103613,
+      "HexCode": "0x80245103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_VERIFY_STAGE_PAYLOAD",
+      "Message": "Verification of a staged payload failed.",
+      "DecimalCode": -2145103612,
+      "HexCode": "0x80245104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_ACTION_NOT_FOUND",
+      "Message": "An internal error occurred where the servicing action was not found.",
+      "DecimalCode": -2145103611,
+      "HexCode": "0x80245105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_SLS_PARSE",
+      "Message": "There was a parse error in the service environment response.",
+      "DecimalCode": -2145103610,
+      "HexCode": "0x80245106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_INVALIDHASH",
+      "Message": "A downloaded file failed an integrity check.",
+      "DecimalCode": -2145103609,
+      "HexCode": "0x80245107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_NO_ENGINE",
+      "Message": "No engine was provided by the server-initiated healing server response.",
+      "DecimalCode": -2145103608,
+      "HexCode": "0x80245108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_POST_REBOOT_INSTALL_FAILED",
+      "Message": "Post-reboot install failed.",
+      "DecimalCode": -2145103607,
+      "HexCode": "0x80245109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_POST_REBOOT_NO_CACHED_SLS_RESPONSE",
+      "Message": "There were pending reboot actions, but cached SLS response was not found post-reboot.",
+      "DecimalCode": -2145103606,
+      "HexCode": "0x8024510A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_PARSE",
+      "Message": "Parsing command line arguments failed.",
+      "DecimalCode": -2145103605,
+      "HexCode": "0x8024510B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_SECURITY",
+      "Message": "Security check failed.",
+      "DecimalCode": -2145103604,
+      "HexCode": "0x8024510C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_PPL",
+      "Message": "PPL check failed.",
+      "DecimalCode": -2145103603,
+      "HexCode": "0x8024510D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_POLICY",
+      "Message": "Execution was disabled by policy.",
+      "DecimalCode": -2145103602,
+      "HexCode": "0x8024510E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_STDEXCEPTION",
+      "Message": "A standard exception was caught.",
+      "DecimalCode": -2145103601,
+      "HexCode": "0x8024510F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_NONSTDEXCEPTION",
+      "Message": "A non-standard exception was caught.",
+      "DecimalCode": -2145103600,
+      "HexCode": "0x80245110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_ENGINE_EXCEPTION",
+      "Message": "The server-initiated healing engine encountered an exception not covered by another WU_E_SIH_* error code.",
+      "DecimalCode": -2145103599,
+      "HexCode": "0x80245111",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_BLOCKED_FOR_PLATFORM",
+      "Message": "You are running SIH Client with cmd not supported on your platform.",
+      "DecimalCode": -2145103598,
+      "HexCode": "0x80245112",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_ANOTHER_INSTANCE_RUNNING",
+      "Message": "Another SIH Client is already running.",
+      "DecimalCode": -2145103597,
+      "HexCode": "0x80245113",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_DNSRESILIENCY_OFF",
+      "Message": "Disable DNS resiliency feature per service configuration.",
+      "DecimalCode": -2145103596,
+      "HexCode": "0x80245114",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SIH_UNEXPECTED",
+      "Message": "There was a failure for reasons not covered by another WU_E_SIH_* error code.",
+      "DecimalCode": -2145103361,
+      "HexCode": "0x802451FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_PRUNED",
+      "Message": "A driver was skipped.",
+      "DecimalCode": -2145075199,
+      "HexCode": "0x8024C001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_NOPROP_OR_LEGACY",
+      "Message": "A property for the driver could not be found. It may not conform with required specifications.",
+      "DecimalCode": -2145075198,
+      "HexCode": "0x8024C002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_REG_MISMATCH",
+      "Message": "The registry type read for the driver does not match the expected type.",
+      "DecimalCode": -2145075197,
+      "HexCode": "0x8024C003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_NO_METADATA",
+      "Message": "The driver update is missing metadata.",
+      "DecimalCode": -2145075196,
+      "HexCode": "0x8024C004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_MISSING_ATTRIBUTE",
+      "Message": "The driver update is missing a required attribute.",
+      "DecimalCode": -2145075195,
+      "HexCode": "0x8024C005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_SYNC_FAILED",
+      "Message": "Driver synchronization failed.",
+      "DecimalCode": -2145075194,
+      "HexCode": "0x8024C006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_NO_PRINTER_CONTENT",
+      "Message": "Information required for the synchronization of applicable printers is missing.",
+      "DecimalCode": -2145075193,
+      "HexCode": "0x8024C007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_DEVICE_PROBLEM",
+      "Message": "After installing a driver update, the updated device has reported a problem.",
+      "DecimalCode": -2145075192,
+      "HexCode": "0x8024C008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DRV_UNEXPECTED",
+      "Message": "A driver error not covered by another WU_E_DRV_* code.",
+      "DecimalCode": -2145071105,
+      "HexCode": "0x8024CFFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_SHUTDOWN",
+      "Message": "An operation failed because Windows Update Agent is shutting down.",
+      "DecimalCode": -2145091584,
+      "HexCode": "0x80248000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_INUSE",
+      "Message": "An operation failed because the data store was in use.",
+      "DecimalCode": -2145091583,
+      "HexCode": "0x80248001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_INVALID",
+      "Message": "The current and expected states of the data store do not match.",
+      "DecimalCode": -2145091582,
+      "HexCode": "0x80248002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_TABLEMISSING",
+      "Message": "The data store is missing a table.",
+      "DecimalCode": -2145091581,
+      "HexCode": "0x80248003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_TABLEINCORRECT",
+      "Message": "The data store contains a table with unexpected columns.",
+      "DecimalCode": -2145091580,
+      "HexCode": "0x80248004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_INVALIDTABLENAME",
+      "Message": "A table could not be opened because the table is not in the data store.",
+      "DecimalCode": -2145091579,
+      "HexCode": "0x80248005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_BADVERSION",
+      "Message": "The current and expected versions of the data store do not match.",
+      "DecimalCode": -2145091578,
+      "HexCode": "0x80248006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA",
+      "Message": "The information requested is not in the data store.",
+      "DecimalCode": -2145091577,
+      "HexCode": "0x80248007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_MISSINGDATA",
+      "Message": "The data store is missing required information or has a NULL in a table column that requires a non-null value.",
+      "DecimalCode": -2145091576,
+      "HexCode": "0x80248008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_MISSINGREF",
+      "Message": "The data store is missing required information or has a reference to missing license terms, file, localized property or linked row.",
+      "DecimalCode": -2145091575,
+      "HexCode": "0x80248009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_UNKNOWNHANDLER",
+      "Message": "The update was not processed because its update handler could not be recognized.",
+      "DecimalCode": -2145091574,
+      "HexCode": "0x8024800A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_CANTDELETE",
+      "Message": "The update was not deleted because it is still referenced by one or more services.",
+      "DecimalCode": -2145091573,
+      "HexCode": "0x8024800B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_LOCKTIMEOUTEXPIRED",
+      "Message": "The data store section could not be locked within the allotted time.",
+      "DecimalCode": -2145091572,
+      "HexCode": "0x8024800C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NOCATEGORIES",
+      "Message": "The category was not added because it contains no parent categories and is not a top-level category itself.",
+      "DecimalCode": -2145091571,
+      "HexCode": "0x8024800D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_ROWEXISTS",
+      "Message": "The row was not added because an existing row has the same primary key.",
+      "DecimalCode": -2145091570,
+      "HexCode": "0x8024800E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_STOREFILELOCKED",
+      "Message": "The data store could not be initialized because it was locked by another process.",
+      "DecimalCode": -2145091569,
+      "HexCode": "0x8024800F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_CANNOTREGISTER",
+      "Message": "The data store is not allowed to be registered with COM in the current process.",
+      "DecimalCode": -2145091568,
+      "HexCode": "0x80248010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_UNABLETOSTART",
+      "Message": "Could not create a data store object in another process.",
+      "DecimalCode": -2145091567,
+      "HexCode": "0x80248011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_DUPLICATEUPDATEID",
+      "Message": "The server sent the same update to the client with two different revision IDs.",
+      "DecimalCode": -2145091565,
+      "HexCode": "0x80248013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_UNKNOWNSERVICE",
+      "Message": "An operation did not complete because the service is not in the data store.",
+      "DecimalCode": -2145091564,
+      "HexCode": "0x80248014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_SERVICEEXPIRED",
+      "Message": "An operation did not complete because the registration of the service has expired.",
+      "DecimalCode": -2145091563,
+      "HexCode": "0x80248015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_DECLINENOTALLOWED",
+      "Message": "A request to hide an update was declined because it is a mandatory update or because it was deployed with a deadline.",
+      "DecimalCode": -2145091562,
+      "HexCode": "0x80248016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_TABLESESSIONMISMATCH",
+      "Message": "A table was not closed because it is not associated with the session.",
+      "DecimalCode": -2145091561,
+      "HexCode": "0x80248017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_SESSIONLOCKMISMATCH",
+      "Message": "A table was not closed because it is not associated with the session.",
+      "DecimalCode": -2145091560,
+      "HexCode": "0x80248018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NEEDWINDOWSSERVICE",
+      "Message": "A request to remove the Windows Update service or to unregister it with Automatic Updates was declined because it is a built-in service and/or Automatic Updates cannot fall back to another service.",
+      "DecimalCode": -2145091559,
+      "HexCode": "0x80248019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_INVALIDOPERATION",
+      "Message": "A request was declined because the operation is not allowed.",
+      "DecimalCode": -2145091558,
+      "HexCode": "0x8024801A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_SCHEMAMISMATCH",
+      "Message": "The schema of the current data store and the schema of a table in a backup XML document do not match.",
+      "DecimalCode": -2145091557,
+      "HexCode": "0x8024801B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_RESETREQUIRED",
+      "Message": "The data store requires a session reset; release the session and retry with a new session.",
+      "DecimalCode": -2145091556,
+      "HexCode": "0x8024801C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_IMPERSONATED",
+      "Message": "A data store operation did not complete because it was requested with an impersonated identity.",
+      "DecimalCode": -2145091555,
+      "HexCode": "0x8024801D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_DATANOTAVAILABLE",
+      "Message": "An operation against update metadata did not complete because the data was never received from server.",
+      "DecimalCode": -2145091554,
+      "HexCode": "0x8024801E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_DATANOTLOADED",
+      "Message": "An operation against update metadata did not complete because the data was available but not loaded from datastore.",
+      "DecimalCode": -2145091553,
+      "HexCode": "0x8024801F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_NOSUCHREVISION",
+      "Message": "A data store operation did not complete because no such update revision is known.",
+      "DecimalCode": -2145091552,
+      "HexCode": "0x80248020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_NOSUCHUPDATE",
+      "Message": "A data store operation did not complete because no such update is known.",
+      "DecimalCode": -2145091551,
+      "HexCode": "0x80248021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_EULA",
+      "Message": "A data store operation did not complete because an update\u0027s EULA information is missing.",
+      "DecimalCode": -2145091550,
+      "HexCode": "0x80248022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_SERVICE",
+      "Message": "A data store operation did not complete because a service\u0027s information is missing.",
+      "DecimalCode": -2145091549,
+      "HexCode": "0x80248023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_COOKIE",
+      "Message": "A data store operation did not complete because a service\u0027s synchronization information is missing.",
+      "DecimalCode": -2145091548,
+      "HexCode": "0x80248024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_TIMER",
+      "Message": "A data store operation did not complete because a timer\u0027s information is missing.",
+      "DecimalCode": -2145091547,
+      "HexCode": "0x80248025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_CCR",
+      "Message": "A data store operation did not complete because a download\u0027s information is missing.",
+      "DecimalCode": -2145091546,
+      "HexCode": "0x80248026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_FILE",
+      "Message": "A data store operation did not complete because a file\u0027s information is missing.",
+      "DecimalCode": -2145091545,
+      "HexCode": "0x80248027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_DOWNLOADJOB",
+      "Message": "A data store operation did not complete because a download job\u0027s information is missing.",
+      "DecimalCode": -2145091544,
+      "HexCode": "0x80248028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_NODATA_TMI",
+      "Message": "A data store operation did not complete because a service\u0027s timestamp information is missing.",
+      "DecimalCode": -2145091543,
+      "HexCode": "0x80248029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DS_UNEXPECTED",
+      "Message": "A data store error not covered by another WU_E_DS_* code.",
+      "DecimalCode": -2145087489,
+      "HexCode": "0x80248FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVENTORY_PARSEFAILED",
+      "Message": "Parsing of the rule file failed.",
+      "DecimalCode": -2145087487,
+      "HexCode": "0x80249001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVENTORY_GET_INVENTORY_TYPE_FAILED",
+      "Message": "Failed to get the requested inventory type from the server.",
+      "DecimalCode": -2145087486,
+      "HexCode": "0x80249002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVENTORY_RESULT_UPLOAD_FAILED",
+      "Message": "Failed to upload inventory result to the server.",
+      "DecimalCode": -2145087485,
+      "HexCode": "0x80249003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVENTORY_UNEXPECTED",
+      "Message": "There was an inventory error not covered by another error code.",
+      "DecimalCode": -2145087484,
+      "HexCode": "0x80249004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVENTORY_WMI_ERROR",
+      "Message": "A WMI error occurred when enumerating the instances for a particular class.",
+      "DecimalCode": -2145087483,
+      "HexCode": "0x80249005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_NOSERVICE",
+      "Message": "Automatic Updates was unable to service incoming requests.",
+      "DecimalCode": -2145083392,
+      "HexCode": "0x8024A000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_NONLEGACYSERVER",
+      "Message": "The old version of the Automatic Updates client has stopped because the WSUS server has been upgraded.",
+      "DecimalCode": -2145083390,
+      "HexCode": "0x8024A002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_LEGACYCLIENTDISABLED",
+      "Message": "The old version of the Automatic Updates client was disabled.",
+      "DecimalCode": -2145083389,
+      "HexCode": "0x8024A003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_PAUSED",
+      "Message": "Automatic Updates was unable to process incoming requests because it was paused.",
+      "DecimalCode": -2145083388,
+      "HexCode": "0x8024A004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_NO_REGISTERED_SERVICE",
+      "Message": "No unmanaged service is registered with AU.",
+      "DecimalCode": -2145083387,
+      "HexCode": "0x8024A005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_DETECT_SVCID_MISMATCH",
+      "Message": "The default service registered with AU changed during the search.",
+      "DecimalCode": -2145083386,
+      "HexCode": "0x8024A006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REBOOT_IN_PROGRESS",
+      "Message": "A reboot is in progress.",
+      "DecimalCode": -2145083385,
+      "HexCode": "0x8024A007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_OOBE_IN_PROGRESS",
+      "Message": "Automatic Updates can\u0027t process incoming requests while Windows Welcome is running.",
+      "DecimalCode": -2145083384,
+      "HexCode": "0x8024A008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AU_UNEXPECTED",
+      "Message": "An Automatic Updates error not covered by another WU_E_AU * code.",
+      "DecimalCode": -2145079297,
+      "HexCode": "0x8024AFFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_REMOTEUNAVAILABLE",
+      "Message": "A request for a remote update handler could not be completed because no remote process is available.",
+      "DecimalCode": -2145116160,
+      "HexCode": "0x80242000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_LOCALONLY",
+      "Message": "A request for a remote update handler could not be completed because the handler is local only.",
+      "DecimalCode": -2145116159,
+      "HexCode": "0x80242001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_UNKNOWNHANDLER",
+      "Message": "A request for an update handler could not be completed because the handler could not be recognized.",
+      "DecimalCode": -2145116158,
+      "HexCode": "0x80242002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_REMOTEALREADYACTIVE",
+      "Message": "A remote update handler could not be created because one already exists.",
+      "DecimalCode": -2145116157,
+      "HexCode": "0x80242003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_DOESNOTSUPPORTACTION",
+      "Message": "A request for the handler to install (uninstall) an update could not be completed because the update does not support install (uninstall).",
+      "DecimalCode": -2145116156,
+      "HexCode": "0x80242004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_WRONGHANDLER",
+      "Message": "An operation did not complete because the wrong handler was specified.",
+      "DecimalCode": -2145116155,
+      "HexCode": "0x80242005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_INVALIDMETADATA",
+      "Message": "A handler operation could not be completed because the update contains invalid metadata.",
+      "DecimalCode": -2145116154,
+      "HexCode": "0x80242006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_INSTALLERHUNG",
+      "Message": "An operation could not be completed because the installer exceeded the time limit.",
+      "DecimalCode": -2145116153,
+      "HexCode": "0x80242007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_OPERATIONCANCELLED",
+      "Message": "An operation being done by the update handler was cancelled.",
+      "DecimalCode": -2145116152,
+      "HexCode": "0x80242008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_BADHANDLERXML",
+      "Message": "An operation could not be completed because the handler-specific metadata is invalid.",
+      "DecimalCode": -2145116151,
+      "HexCode": "0x80242009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_CANREQUIREINPUT",
+      "Message": "A request to the handler to install an update could not be completed because the update requires user input.",
+      "DecimalCode": -2145116150,
+      "HexCode": "0x8024200A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_INSTALLERFAILURE",
+      "Message": "The installer failed to install (uninstall) one or more updates.",
+      "DecimalCode": -2145116149,
+      "HexCode": "0x8024200B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_FALLBACKTOSELFCONTAINED",
+      "Message": "The update handler should download self-contained content rather than delta-compressed content for the update.",
+      "DecimalCode": -2145116148,
+      "HexCode": "0x8024200C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_NEEDANOTHERDOWNLOAD",
+      "Message": "The update handler did not install the update because it needs to be downloaded again.",
+      "DecimalCode": -2145116147,
+      "HexCode": "0x8024200D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_NOTIFYFAILURE",
+      "Message": "The update handler failed to send notification of the status of the install (uninstall) operation.",
+      "DecimalCode": -2145116146,
+      "HexCode": "0x8024200E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_INCONSISTENT_FILE_NAMES",
+      "Message": "The file names contained in the update metadata and in the update package are inconsistent.",
+      "DecimalCode": -2145116145,
+      "HexCode": "0x8024200F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_FALLBACKERROR",
+      "Message": "The update handler failed to fall back to the self-contained content.",
+      "DecimalCode": -2145116144,
+      "HexCode": "0x80242010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_TOOMANYDOWNLOADREQUESTS",
+      "Message": "The update handler has exceeded the maximum number of download requests.",
+      "DecimalCode": -2145116143,
+      "HexCode": "0x80242011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_UNEXPECTEDCBSRESPONSE",
+      "Message": "The update handler has received an unexpected response from CBS.",
+      "DecimalCode": -2145116142,
+      "HexCode": "0x80242012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_BADCBSPACKAGEID",
+      "Message": "The update metadata contains an invalid CBS package identifier.",
+      "DecimalCode": -2145116141,
+      "HexCode": "0x80242013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_POSTREBOOTSTILLPENDING",
+      "Message": "The post-reboot operation for the update is still in progress.",
+      "DecimalCode": -2145116140,
+      "HexCode": "0x80242014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_POSTREBOOTRESULTUNKNOWN",
+      "Message": "The result of the post-reboot operation for the update could not be determined.",
+      "DecimalCode": -2145116139,
+      "HexCode": "0x80242015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_POSTREBOOTUNEXPECTEDSTATE",
+      "Message": "The state of the update after its post-reboot operation has completed is unexpected.",
+      "DecimalCode": -2145116138,
+      "HexCode": "0x80242016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_NEW_SERVICING_STACK_REQUIRED",
+      "Message": "The OS servicing stack must be updated before this update is downloaded or installed.",
+      "DecimalCode": -2145116137,
+      "HexCode": "0x80242017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_CALLED_BACK_FAILURE",
+      "Message": "A callback installer called back with an error.",
+      "DecimalCode": -2145116136,
+      "HexCode": "0x80242018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_CUSTOMINSTALLER_INVALID_SIGNATURE",
+      "Message": "The custom installer signature did not match the signature required by the update.",
+      "DecimalCode": -2145116135,
+      "HexCode": "0x80242019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_UNSUPPORTED_INSTALLCONTEXT",
+      "Message": "The installer does not support the installation configuration.",
+      "DecimalCode": -2145116134,
+      "HexCode": "0x8024201A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_INVALID_TARGETSESSION",
+      "Message": "The targeted session for install is invalid.",
+      "DecimalCode": -2145116133,
+      "HexCode": "0x8024201B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_DECRYPTFAILURE",
+      "Message": "The handler failed to decrypt the update files.",
+      "DecimalCode": -2145116132,
+      "HexCode": "0x8024201C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_HANDLER_DISABLEDUNTILREBOOT",
+      "Message": "The update handler is disabled until the system reboots.",
+      "DecimalCode": -2145116131,
+      "HexCode": "0x8024201D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_APPX_NOT_PRESENT",
+      "Message": "The AppX infrastructure is not present on the system.",
+      "DecimalCode": -2145116130,
+      "HexCode": "0x8024201E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_NOTREADYTOCOMMIT",
+      "Message": "The update cannot be committed because it has not been previously installed or staged.",
+      "DecimalCode": -2145116129,
+      "HexCode": "0x8024201F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_APPX_INVALID_PACKAGE_VOLUME",
+      "Message": "The specified volume is not a valid AppX package volume.",
+      "DecimalCode": -2145116128,
+      "HexCode": "0x80242020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_APPX_DEFAULT_PACKAGE_VOLUME_UNAVAILABLE",
+      "Message": "The configured default storage volume is unavailable.",
+      "DecimalCode": -2145116127,
+      "HexCode": "0x80242021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_APPX_INSTALLED_PACKAGE_VOLUME_UNAVAILABLE",
+      "Message": "The volume on which the application is installed is unavailable.",
+      "DecimalCode": -2145116126,
+      "HexCode": "0x80242022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_APPX_PACKAGE_FAMILY_NOT_FOUND",
+      "Message": "The specified package family is not present on the system.",
+      "DecimalCode": -2145116125,
+      "HexCode": "0x80242023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_APPX_SYSTEM_VOLUME_NOT_FOUND",
+      "Message": "Unable to find a package volume marked as system.",
+      "DecimalCode": -2145116124,
+      "HexCode": "0x80242024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_UA_SESSION_INFO_VERSION_NOT_SUPPORTED",
+      "Message": "UA does not support the version of OptionalSessionInfo.",
+      "DecimalCode": -2145116123,
+      "HexCode": "0x80242025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_RESERVICING_REQUIRED_BASELINE",
+      "Message": "This operation cannot be completed. You must install the baseline update(s) before you can install this update.",
+      "DecimalCode": -2145116122,
+      "HexCode": "0x80242026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UH_UNEXPECTED",
+      "Message": "An update handler error not covered by another WU_E_UH_* code.",
+      "DecimalCode": -2145112065,
+      "HexCode": "0x80242FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_URLNOTAVAILABLE",
+      "Message": "A download manager operation could not be completed because the requested file does not have a URL.",
+      "DecimalCode": -2145099775,
+      "HexCode": "0x80246001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_INCORRECTFILEHASH",
+      "Message": "A download manager operation could not be completed because the file digest was not recognized.",
+      "DecimalCode": -2145099774,
+      "HexCode": "0x80246002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNKNOWNALGORITHM",
+      "Message": "A download manager operation could not be completed because the file metadata requested an unrecognized hash algorithm.",
+      "DecimalCode": -2145099773,
+      "HexCode": "0x80246003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_NEEDDOWNLOADREQUEST",
+      "Message": "An operation could not be completed because a download request is required from the download handler.",
+      "DecimalCode": -2145099772,
+      "HexCode": "0x80246004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_NONETWORK",
+      "Message": "A download manager operation could not be completed because the network connection was unavailable.",
+      "DecimalCode": -2145099771,
+      "HexCode": "0x80246005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_WRONGBITSVERSION",
+      "Message": "A download manager operation could not be completed because the version of Background Intelligent Transfer Service (BITS) is incompatible.",
+      "DecimalCode": -2145099770,
+      "HexCode": "0x80246006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_NOTDOWNLOADED",
+      "Message": "The update has not been downloaded.",
+      "DecimalCode": -2145099769,
+      "HexCode": "0x80246007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_FAILTOCONNECTTOBITS",
+      "Message": "A download manager operation failed because the download manager was unable to connect the Background Intelligent Transfer Service (BITS).",
+      "DecimalCode": -2145099768,
+      "HexCode": "0x80246008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_BITSTRANSFERERROR",
+      "Message": "A download manager operation failed because there was an unspecified Background Intelligent Transfer Service (BITS) transfer error.",
+      "DecimalCode": -2145099767,
+      "HexCode": "0x80246009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOADLOCATIONCHANGED",
+      "Message": "A download must be restarted because the location of the source of the download has changed.",
+      "DecimalCode": -2145099766,
+      "HexCode": "0x8024600A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_CONTENTCHANGED",
+      "Message": "A download must be restarted because the update content changed in a new revision.",
+      "DecimalCode": -2145099765,
+      "HexCode": "0x8024600B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOADLIMITEDBYUPDATESIZE",
+      "Message": "A download failed because the current network limits downloads by update size for the update service.",
+      "DecimalCode": -2145099764,
+      "HexCode": "0x8024600C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNAUTHORIZED",
+      "Message": "The download failed because the client was denied authorization to download the content.",
+      "DecimalCode": -2145099762,
+      "HexCode": "0x8024600E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_BG_ERROR_TOKEN_REQUIRED",
+      "Message": "The download failed because the user token associated with the BITS job no longer exists.",
+      "DecimalCode": -2145099761,
+      "HexCode": "0x8024600F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOADSANDBOXNOTFOUND",
+      "Message": "The sandbox directory for the downloaded update was not found.",
+      "DecimalCode": -2145099760,
+      "HexCode": "0x80246010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOADFILEPATHUNKNOWN",
+      "Message": "The downloaded update has an unknown file path.",
+      "DecimalCode": -2145099759,
+      "HexCode": "0x80246011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOADFILEMISSING",
+      "Message": "One or more of the files for the downloaded update is missing.",
+      "DecimalCode": -2145099758,
+      "HexCode": "0x80246012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UPDATEREMOVED",
+      "Message": "An attempt was made to access a downloaded update that has already been removed.",
+      "DecimalCode": -2145099757,
+      "HexCode": "0x80246013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_READRANGEFAILED",
+      "Message": "Windows Update couldn\u0027t find a needed portion of a downloaded update\u0027s file.",
+      "DecimalCode": -2145099756,
+      "HexCode": "0x80246014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNAUTHORIZED_NO_USER",
+      "Message": "The download failed because the client was denied authorization to download the content due to no user logged on.",
+      "DecimalCode": -2145099754,
+      "HexCode": "0x80246016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNAUTHORIZED_LOCAL_USER",
+      "Message": "The download failed because the local user was denied authorization to download the content.",
+      "DecimalCode": -2145099753,
+      "HexCode": "0x80246017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNAUTHORIZED_DOMAIN_USER",
+      "Message": "The download failed because the domain user was denied authorization to download the content.",
+      "DecimalCode": -2145099752,
+      "HexCode": "0x80246018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNAUTHORIZED_MSA_USER",
+      "Message": "The download failed because the MSA account associated with the user was denied authorization to download the content.",
+      "DecimalCode": -2145099751,
+      "HexCode": "0x80246019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_FALLINGBACKTOBITS",
+      "Message": "The download will be continued by falling back to BITS to download the content.",
+      "DecimalCode": -2145099750,
+      "HexCode": "0x8024601A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOAD_VOLUME_CONFLICT",
+      "Message": "Another caller has requested download to a different volume.",
+      "DecimalCode": -2145099749,
+      "HexCode": "0x8024601B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_SANDBOX_HASH_MISMATCH",
+      "Message": "The hash of the update\u0027s sandbox does not match the expected value.",
+      "DecimalCode": -2145099748,
+      "HexCode": "0x8024601C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_HARDRESERVEID_CONFLICT",
+      "Message": "The hard reserve id specified conflicts with an id from another caller.",
+      "DecimalCode": -2145099747,
+      "HexCode": "0x8024601D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOSVC_REQUIRED",
+      "Message": "The update has to be downloaded via DO.",
+      "DecimalCode": -2145099746,
+      "HexCode": "0x8024601E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_DOWNLOADTYPE_CONFLICT",
+      "Message": "Windows Update only supports one download type per update at one time. The download failure is by design here since the same update with different download type is operating. Please try again later.",
+      "DecimalCode": -2145099745,
+      "HexCode": "0x8024601F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_DM_UNEXPECTED",
+      "Message": "There was a download manager error not covered by another WU_E_DM_* error code.",
+      "DecimalCode": -2145095681,
+      "HexCode": "0x80246FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_INVALID_INFDATA",
+      "Message": "Windows Update Agent could not be updated because an INF file contains invalid information.",
+      "DecimalCode": -2145071103,
+      "HexCode": "0x8024D001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_INVALID_IDENTDATA",
+      "Message": "Windows Update Agent could not be updated because the wuident.cab file contains invalid information.",
+      "DecimalCode": -2145071102,
+      "HexCode": "0x8024D002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_ALREADY_INITIALIZED",
+      "Message": "Windows Update Agent could not be updated because of an internal error that caused setup initialization to be performed twice.",
+      "DecimalCode": -2145071101,
+      "HexCode": "0x8024D003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_NOT_INITIALIZED",
+      "Message": "Windows Update Agent could not be updated because setup initialization never completed successfully.",
+      "DecimalCode": -2145071100,
+      "HexCode": "0x8024D004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_SOURCE_VERSION_MISMATCH",
+      "Message": "Windows Update Agent could not be updated because the versions specified in the INF do not match the actual source file versions.",
+      "DecimalCode": -2145071099,
+      "HexCode": "0x8024D005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_TARGET_VERSION_GREATER",
+      "Message": "Windows Update Agent could not be updated because a WUA file on the target system is newer than the corresponding source file.",
+      "DecimalCode": -2145071098,
+      "HexCode": "0x8024D006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_REGISTRATION_FAILED",
+      "Message": "Windows Update Agent could not be updated because regsvr32.exe returned an error.",
+      "DecimalCode": -2145071097,
+      "HexCode": "0x8024D007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SELFUPDATE_SKIP_ON_FAILURE",
+      "Message": "An update to the Windows Update Agent was skipped because previous attempts to update have failed.",
+      "DecimalCode": -2145071096,
+      "HexCode": "0x8024D008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_SKIP_UPDATE",
+      "Message": "An update to the Windows Update Agent was skipped due to a directive in the wuident.cab file.",
+      "DecimalCode": -2145071095,
+      "HexCode": "0x8024D009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_UNSUPPORTED_CONFIGURATION",
+      "Message": "Windows Update Agent could not be updated because the current system configuration is not supported.",
+      "DecimalCode": -2145071094,
+      "HexCode": "0x8024D00A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_BLOCKED_CONFIGURATION",
+      "Message": "Windows Update Agent could not be updated because the system is configured to block the update.",
+      "DecimalCode": -2145071093,
+      "HexCode": "0x8024D00B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_REBOOT_TO_FIX",
+      "Message": "Windows Update Agent could not be updated because a restart of the system is required.",
+      "DecimalCode": -2145071092,
+      "HexCode": "0x8024D00C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_ALREADYRUNNING",
+      "Message": "Windows Update Agent setup is already running.",
+      "DecimalCode": -2145071091,
+      "HexCode": "0x8024D00D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_REBOOTREQUIRED",
+      "Message": "Windows Update Agent setup package requires a reboot to complete installation.",
+      "DecimalCode": -2145071090,
+      "HexCode": "0x8024D00E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_HANDLER_EXEC_FAILURE",
+      "Message": "Windows Update Agent could not be updated because the setup handler failed during execution.",
+      "DecimalCode": -2145071089,
+      "HexCode": "0x8024D00F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_INVALID_REGISTRY_DATA",
+      "Message": "Windows Update Agent could not be updated because the registry contains invalid information.",
+      "DecimalCode": -2145071088,
+      "HexCode": "0x8024D010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SELFUPDATE_REQUIRED",
+      "Message": "Windows Update Agent must be updated before search can continue.",
+      "DecimalCode": -2145071087,
+      "HexCode": "0x8024D011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SELFUPDATE_REQUIRED_ADMIN",
+      "Message": "Windows Update Agent must be updated before search can continue.  An administrator is required to perform the operation.",
+      "DecimalCode": -2145071086,
+      "HexCode": "0x8024D012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_WRONG_SERVER_VERSION",
+      "Message": "Windows Update Agent could not be updated because the server does not contain update information for this version.",
+      "DecimalCode": -2145071085,
+      "HexCode": "0x8024D013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_DEFERRABLE_REBOOT_PENDING",
+      "Message": "Windows Update Agent is successfully updated, but a reboot is required to complete the setup.",
+      "DecimalCode": -2145071084,
+      "HexCode": "0x8024D014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_NON_DEFERRABLE_REBOOT_PENDING",
+      "Message": "Windows Update Agent is successfully updated, but a reboot is required to complete the setup.",
+      "DecimalCode": -2145071083,
+      "HexCode": "0x8024D015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_FAIL",
+      "Message": "Windows Update Agent could not be updated because of an unknown error.",
+      "DecimalCode": -2145071082,
+      "HexCode": "0x8024D016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SETUP_UNEXPECTED",
+      "Message": "Windows Update Agent could not be updated because of an error not covered by another WU_E_SETUP_* error code.",
+      "DecimalCode": -2145067009,
+      "HexCode": "0x8024DFFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_UNKNOWN_EXPRESSION",
+      "Message": "An expression evaluator operation could not be completed because an expression was unrecognized.",
+      "DecimalCode": -2145067007,
+      "HexCode": "0x8024E001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_INVALID_EXPRESSION",
+      "Message": "An expression evaluator operation could not be completed because an expression was invalid.",
+      "DecimalCode": -2145067006,
+      "HexCode": "0x8024E002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_MISSING_METADATA",
+      "Message": "An expression evaluator operation could not be completed because an expression contains an incorrect number of metadata nodes.",
+      "DecimalCode": -2145067005,
+      "HexCode": "0x8024E003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_INVALID_VERSION",
+      "Message": "An expression evaluator operation could not be completed because the version of the serialized expression data is invalid.",
+      "DecimalCode": -2145067004,
+      "HexCode": "0x8024E004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_NOT_INITIALIZED",
+      "Message": "The expression evaluator could not be initialized.",
+      "DecimalCode": -2145067003,
+      "HexCode": "0x8024E005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_INVALID_ATTRIBUTEDATA",
+      "Message": "An expression evaluator operation could not be completed because there was an invalid attribute.",
+      "DecimalCode": -2145067002,
+      "HexCode": "0x8024E006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_CLUSTER_ERROR",
+      "Message": "An expression evaluator operation could not be completed because the cluster state of the computer could not be determined.",
+      "DecimalCode": -2145067001,
+      "HexCode": "0x8024E007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_EE_UNEXPECTED",
+      "Message": "There was an expression evaluator error not covered by another WU_E_EE_* error code.",
+      "DecimalCode": -2145062913,
+      "HexCode": "0x8024EFFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALLATION_RESULTS_UNKNOWN_VERSION",
+      "Message": "The results of download and installation could not be read from the registry due to an unrecognized data format version.",
+      "DecimalCode": -2145112063,
+      "HexCode": "0x80243001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALLATION_RESULTS_INVALID_DATA",
+      "Message": "The results of download and installation could not be read from the registry due to an invalid data format.",
+      "DecimalCode": -2145112062,
+      "HexCode": "0x80243002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INSTALLATION_RESULTS_NOT_FOUND",
+      "Message": "The results of download and installation are not available; the operation may have failed to start.",
+      "DecimalCode": -2145112061,
+      "HexCode": "0x80243003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TRAYICON_FAILURE",
+      "Message": "A failure occurred when trying to create an icon in the taskbar notification area.",
+      "DecimalCode": -2145112060,
+      "HexCode": "0x80243004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_NON_UI_MODE",
+      "Message": "Unable to show UI when in non-UI mode; WU client UI modules may not be installed.",
+      "DecimalCode": -2145107971,
+      "HexCode": "0x80243FFD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WUCLTUI_UNSUPPORTED_VERSION",
+      "Message": "Unsupported version of WU client UI exported functions.",
+      "DecimalCode": -2145107970,
+      "HexCode": "0x80243FFE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_AUCLIENT_UNEXPECTED",
+      "Message": "There was a user interface error not covered by another WU_E_AUCLIENT_* error code.",
+      "DecimalCode": -2145107969,
+      "HexCode": "0x80243FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REPORTER_EVENTCACHECORRUPT",
+      "Message": "The event cache file was defective.",
+      "DecimalCode": -2145062911,
+      "HexCode": "0x8024F001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REPORTER_EVENTNAMESPACEPARSEFAILED",
+      "Message": "The XML in the event namespace descriptor could not be parsed.",
+      "DecimalCode": -2145062910,
+      "HexCode": "0x8024F002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_EVENT",
+      "Message": "The XML in the event namespace descriptor could not be parsed.",
+      "DecimalCode": -2145062909,
+      "HexCode": "0x8024F003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SERVER_BUSY",
+      "Message": "The server rejected an event because the server was too busy.",
+      "DecimalCode": -2145062908,
+      "HexCode": "0x8024F004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_CALLBACK_COOKIE_NOT_FOUND",
+      "Message": "The specified callback cookie is not found.",
+      "DecimalCode": -2145062907,
+      "HexCode": "0x8024F005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_REPORTER_UNEXPECTED",
+      "Message": "There was a reporter error not covered by another error code.",
+      "DecimalCode": -2145058817,
+      "HexCode": "0x8024FFFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_OL_INVALID_SCANFILE",
+      "Message": "An operation could not be completed because the scan package was invalid.",
+      "DecimalCode": -2145095679,
+      "HexCode": "0x80247001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_OL_NEWCLIENT_REQUIRED",
+      "Message": "An operation could not be completed because the scan package requires a greater version of the Windows Update Agent.",
+      "DecimalCode": -2145095678,
+      "HexCode": "0x80247002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_EVENT_PAYLOAD",
+      "Message": "An invalid event payload was specified.",
+      "DecimalCode": -2145095677,
+      "HexCode": "0x80247003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_INVALID_EVENT_PAYLOADSIZE",
+      "Message": "The size of the event payload submitted is invalid.",
+      "DecimalCode": -2145095676,
+      "HexCode": "0x80247004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SERVICE_NOT_REGISTERED",
+      "Message": "The service is not registered.",
+      "DecimalCode": -2145095675,
+      "HexCode": "0x80247005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_OL_UNEXPECTED",
+      "Message": "Search using the scan package failed.",
+      "DecimalCode": -2145091585,
+      "HexCode": "0x80247FFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_NOOP",
+      "Message": "No operation was required by update metadata verification.",
+      "DecimalCode": -2145095424,
+      "HexCode": "0x80247100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_CONFIG_INVALID_BINARY_ENCODING",
+      "Message": "The binary encoding of metadata config data was invalid.",
+      "DecimalCode": -2145095423,
+      "HexCode": "0x80247101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_FETCH_CONFIG",
+      "Message": "Unable to fetch required configuration for metadata signature verification.",
+      "DecimalCode": -2145095422,
+      "HexCode": "0x80247102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_INVALID_PARAMETER",
+      "Message": "A metadata verification operation failed due to an invalid parameter.",
+      "DecimalCode": -2145095420,
+      "HexCode": "0x80247104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_UNEXPECTED",
+      "Message": "A metadata verification operation failed due to reasons not covered by another error code.",
+      "DecimalCode": -2145095419,
+      "HexCode": "0x80247105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_NO_VERIFICATION_DATA",
+      "Message": "None of the update metadata had verification data, which may be disabled on the update server.",
+      "DecimalCode": -2145095418,
+      "HexCode": "0x80247106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_BAD_FRAGMENTSIGNING_CONFIG",
+      "Message": "The fragment signing configuration used for verifying update metadata signatures was bad.",
+      "DecimalCode": -2145095417,
+      "HexCode": "0x80247107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_FAILURE_PROCESSING_FRAGMENTSIGNING_CONFIG",
+      "Message": "There was an unexpected operational failure while parsing fragment signing configuration.",
+      "DecimalCode": -2145095416,
+      "HexCode": "0x80247108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_MISSING",
+      "Message": "Required xml data was missing from configuration.",
+      "DecimalCode": -2145095392,
+      "HexCode": "0x80247120",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_FRAGMENTSIGNING_MISSING",
+      "Message": "Required fragmentsigning data was missing from xml configuration.",
+      "DecimalCode": -2145095391,
+      "HexCode": "0x80247121",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_MODE_MISSING",
+      "Message": "Required mode data was missing from xml configuration.",
+      "DecimalCode": -2145095390,
+      "HexCode": "0x80247122",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_MODE_INVALID",
+      "Message": "An invalid metadata enforcement mode was detected.",
+      "DecimalCode": -2145095389,
+      "HexCode": "0x80247123",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_VALIDITY_INVALID",
+      "Message": "An invalid timestamp validity window configuration was detected.",
+      "DecimalCode": -2145095388,
+      "HexCode": "0x80247124",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_LEAFCERT_MISSING",
+      "Message": "Required leaf certificate data was missing from xml configuration.",
+      "DecimalCode": -2145095387,
+      "HexCode": "0x80247125",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_INTERMEDIATECERT_MISSING",
+      "Message": "Required intermediate certificate data was missing from xml configuration.",
+      "DecimalCode": -2145095386,
+      "HexCode": "0x80247126",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_LEAFCERT_ID_MISSING",
+      "Message": "Required leaf certificate id attribute was missing from xml configuration.",
+      "DecimalCode": -2145095385,
+      "HexCode": "0x80247127",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_XML_BASE64CERDATA_MISSING",
+      "Message": "Required certificate base64CerData attribute was missing from xml configuration.",
+      "DecimalCode": -2145095384,
+      "HexCode": "0x80247128",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_BAD_SIGNATURE",
+      "Message": "The metadata for an update was found to have a bad or invalid digital signature.",
+      "DecimalCode": -2145095360,
+      "HexCode": "0x80247140",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_UNSUPPORTED_HASH_ALG",
+      "Message": "An unsupported hash algorithm for metadata verification was specified.",
+      "DecimalCode": -2145095359,
+      "HexCode": "0x80247141",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_SIGNATURE_VERIFY_FAILED",
+      "Message": "An error occurred during an update\u0027s metadata signature verification.",
+      "DecimalCode": -2145095358,
+      "HexCode": "0x80247142",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATATRUST_CERTIFICATECHAIN_VERIFICATION",
+      "Message": "An failure occurred while verifying trust for metadata signing certificate chains.",
+      "DecimalCode": -2145095344,
+      "HexCode": "0x80247150",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATATRUST_UNTRUSTED_CERTIFICATECHAIN",
+      "Message": "A metadata signing certificate had an untrusted certificate chain.",
+      "DecimalCode": -2145095343,
+      "HexCode": "0x80247151",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_MISSING",
+      "Message": "An expected metadata timestamp token was missing.",
+      "DecimalCode": -2145095328,
+      "HexCode": "0x80247160",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_VERIFICATION_FAILED",
+      "Message": "A metadata Timestamp token failed verification.",
+      "DecimalCode": -2145095327,
+      "HexCode": "0x80247161",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_UNTRUSTED",
+      "Message": "A metadata timestamp token signer certificate chain was untrusted.",
+      "DecimalCode": -2145095326,
+      "HexCode": "0x80247162",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_VALIDITY_WINDOW",
+      "Message": "A metadata signature timestamp token was no longer within the validity window.",
+      "DecimalCode": -2145095325,
+      "HexCode": "0x80247163",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_SIGNATURE",
+      "Message": "A metadata timestamp token failed signature validation",
+      "DecimalCode": -2145095324,
+      "HexCode": "0x80247164",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_CERTCHAIN",
+      "Message": "A metadata timestamp token certificate failed certificate chain verification.",
+      "DecimalCode": -2145095323,
+      "HexCode": "0x80247165",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_REFRESHONLINE",
+      "Message": "A failure occurred when refreshing a missing timestamp token from the network.",
+      "DecimalCode": -2145095322,
+      "HexCode": "0x80247166",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_ALL_BAD",
+      "Message": "All update metadata verification timestamp tokens from the timestamp token cache are invalid.",
+      "DecimalCode": -2145095321,
+      "HexCode": "0x80247167",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_NODATA",
+      "Message": "No update metadata verification timestamp tokens exist in the timestamp token cache.",
+      "DecimalCode": -2145095320,
+      "HexCode": "0x80247168",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_CACHELOOKUP",
+      "Message": "An error occurred during cache lookup of update metadata verification timestamp token.",
+      "DecimalCode": -2145095319,
+      "HexCode": "0x80247169",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_VALIDITYWINDOW_UNEXPECTED",
+      "Message": "An metadata timestamp token validity window failed unexpectedly due to reasons not covered by another error code.",
+      "DecimalCode": -2145095298,
+      "HexCode": "0x8024717E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_TIMESTAMP_TOKEN_UNEXPECTED",
+      "Message": "An metadata timestamp token verification operation failed due to reasons not covered by another error code.",
+      "DecimalCode": -2145095297,
+      "HexCode": "0x8024717F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_CERT_MISSING",
+      "Message": "An expected metadata signing certificate was missing.",
+      "DecimalCode": -2145095296,
+      "HexCode": "0x80247180",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_LEAFCERT_BAD_TRANSPORT_ENCODING",
+      "Message": "The transport encoding of a metadata signing leaf certificate was malformed.",
+      "DecimalCode": -2145095295,
+      "HexCode": "0x80247181",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_INTCERT_BAD_TRANSPORT_ENCODING",
+      "Message": "The transport encoding of a metadata signing intermediate certificate was malformed.",
+      "DecimalCode": -2145095294,
+      "HexCode": "0x80247182",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_METADATA_CERT_UNTRUSTED",
+      "Message": "A metadata certificate chain was untrusted.",
+      "DecimalCode": -2145095293,
+      "HexCode": "0x80247183",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WUTASK_INPROGRESS",
+      "Message": "The task is currently in progress.",
+      "DecimalCode": -2145079295,
+      "HexCode": "0x8024B001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WUTASK_STATUS_DISABLED",
+      "Message": "The operation cannot be completed since the task status is currently disabled.",
+      "DecimalCode": -2145079294,
+      "HexCode": "0x8024B002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WUTASK_NOT_STARTED",
+      "Message": "The operation cannot be completed since the task is not yet started.",
+      "DecimalCode": -2145079293,
+      "HexCode": "0x8024B003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WUTASK_RETRY",
+      "Message": "The task was stopped and needs to be run again to complete.",
+      "DecimalCode": -2145079292,
+      "HexCode": "0x8024B004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WUTASK_CANCELINSTALL_DISALLOWED",
+      "Message": "Cannot cancel a non-scheduled install.",
+      "DecimalCode": -2145079291,
+      "HexCode": "0x8024B005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UNKNOWN_HARDWARECAPABILITY",
+      "Message": "Hardware capability meta data was not found after a sync with the service.",
+      "DecimalCode": -2145079039,
+      "HexCode": "0x8024B101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_BAD_XML_HARDWARECAPABILITY",
+      "Message": "Hardware capability meta data was malformed and/or failed to parse.",
+      "DecimalCode": -2145079038,
+      "HexCode": "0x8024B102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_WMI_NOT_SUPPORTED",
+      "Message": "Unable to complete action due to WMI dependency, which isn\u0027t supported on this platform.",
+      "DecimalCode": -2145079037,
+      "HexCode": "0x8024B103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_UPDATE_MERGE_NOT_ALLOWED",
+      "Message": "Merging of the update is not allowed",
+      "DecimalCode": -2145079036,
+      "HexCode": "0x8024B104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SKIPPED_UPDATE_INSTALLATION",
+      "Message": "Installing merged updates only. So skipping non mergeable updates.",
+      "DecimalCode": -2145079035,
+      "HexCode": "0x8024B105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_SLS_INVALID_REVISION",
+      "Message": "SLS response returned invalid revision number.",
+      "DecimalCode": -2145078783,
+      "HexCode": "0x8024B201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_FILETRUST_DUALSIGNATURE_RSA",
+      "Message": "File signature validation fails to find valid RSA signature on infrastructure payload.",
+      "DecimalCode": -2145078527,
+      "HexCode": "0x8024B301",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_FILETRUST_DUALSIGNATURE_ECC",
+      "Message": "File signature validation fails to find valid ECC signature on infrastructure payload.",
+      "DecimalCode": -2145078526,
+      "HexCode": "0x8024B302",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TRUST_SUBJECT_NOT_TRUSTED",
+      "Message": "The subject is not trusted by WU for the specified action.",
+      "DecimalCode": -2145078525,
+      "HexCode": "0x8024B303",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WU_E_TRUST_PROVIDER_UNKNOWN",
+      "Message": "Unknown trust provider for WU.",
+      "DecimalCode": -2145078524,
+      "HexCode": "0x8024B304",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

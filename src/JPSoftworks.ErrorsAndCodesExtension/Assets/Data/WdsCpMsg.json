@@ -1,0 +1,39 @@
+{
+  "HeaderFileName": "wdscpmsg.h",
+  "ErrorCodes": [
+    {
+      "Id": "WDSCP_CATEGORY",
+      "Message": "WdsCp",
+      "DecimalCode": 1,
+      "HexCode": "0x00000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSCP_E_INVALID_CONFIGURATION",
+      "Message": "The configuration string was invalid or empty.",
+      "DecimalCode": -1054539520,
+      "HexCode": "0xC1250100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSCP_E_NOT_A_DIRECTORY",
+      "Message": "The path specified in the configuration string was not a directory.",
+      "DecimalCode": -1054539519,
+      "HexCode": "0xC1250101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSCP_E_CONFIG_STRING_REQUIRED",
+      "Message": "The WDS Content Provider requires that a configuration string be provided.",
+      "DecimalCode": -1054539518,
+      "HexCode": "0xC1250102",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WDSCP",
+      "Code": 293
+    }
+  ]
+}

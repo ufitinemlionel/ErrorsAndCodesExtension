@@ -1,0 +1,636 @@
+{
+  "HeaderFileName": "tapi3err.h",
+  "ErrorCodes": [
+    {
+      "Id": "TAPI_E_NOTENOUGHMEMORY",
+      "Message": "The buffer passed in to this method was not big enough.",
+      "DecimalCode": -2147221503,
+      "HexCode": "0x80040001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOITEMS",
+      "Message": "No items exist that match the request.",
+      "DecimalCode": -2147221502,
+      "HexCode": "0x80040002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOTSUPPORTED",
+      "Message": "This method is not supported.",
+      "DecimalCode": -2147221501,
+      "HexCode": "0x80040003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALIDMEDIATYPE",
+      "Message": "The MEDIATYPE passed in to this method was invalid.",
+      "DecimalCode": -2147221500,
+      "HexCode": "0x80040004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_OPERATIONFAILED",
+      "Message": "The operation failed for an unspecified reason.",
+      "DecimalCode": -2147221499,
+      "HexCode": "0x80040005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_ALLOCATED",
+      "Message": "The device is already in use.",
+      "DecimalCode": -2147221498,
+      "HexCode": "0x80040006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLUNAVAIL",
+      "Message": "No call appearance available.",
+      "DecimalCode": -2147221497,
+      "HexCode": "0x80040007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_COMPLETIONOVERRUN",
+      "Message": "Too many call completions outstanding.",
+      "DecimalCode": -2147221496,
+      "HexCode": "0x80040008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CONFERENCEFULL",
+      "Message": "The conference is full.",
+      "DecimalCode": -2147221495,
+      "HexCode": "0x80040009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_DIALMODIFIERNOTSUPPORTED",
+      "Message": "The dial modifier is not supported.",
+      "DecimalCode": -2147221494,
+      "HexCode": "0x8004000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INUSE",
+      "Message": "The device is already in use.",
+      "DecimalCode": -2147221493,
+      "HexCode": "0x8004000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALADDRESS",
+      "Message": "The phone number is invalid or not properly formatted.",
+      "DecimalCode": -2147221492,
+      "HexCode": "0x8004000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALADDRESSSTATE",
+      "Message": "Operation not permitted in current address state.",
+      "DecimalCode": -2147221491,
+      "HexCode": "0x8004000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALCALLPARAMS",
+      "Message": "Invalid LINECALLPARAMS structure.",
+      "DecimalCode": -2147221490,
+      "HexCode": "0x8004000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALCALLPRIVILEGE",
+      "Message": "Invalid call privilege.",
+      "DecimalCode": -2147221489,
+      "HexCode": "0x8004000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALCALLSTATE",
+      "Message": "Operation not permitted in current call state.",
+      "DecimalCode": -2147221488,
+      "HexCode": "0x80040010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALCARD",
+      "Message": "Invalid calling card.",
+      "DecimalCode": -2147221487,
+      "HexCode": "0x80040011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALCOMPLETIONID",
+      "Message": "Invalid call completion ID.",
+      "DecimalCode": -2147221486,
+      "HexCode": "0x80040012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALCOUNTRYCODE",
+      "Message": "Invalid country code.",
+      "DecimalCode": -2147221485,
+      "HexCode": "0x80040013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALDEVICECLASS",
+      "Message": "Invalid device class identifier",
+      "DecimalCode": -2147221484,
+      "HexCode": "0x80040014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALDIALPARAMS",
+      "Message": "Invalid dialing parameters",
+      "DecimalCode": -2147221483,
+      "HexCode": "0x80040015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALDIGITS",
+      "Message": "Invalid digits.",
+      "DecimalCode": -2147221482,
+      "HexCode": "0x80040016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALGROUPID",
+      "Message": "Invalid group pickup ID.",
+      "DecimalCode": -2147221481,
+      "HexCode": "0x80040017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALLOCATION",
+      "Message": "Invalid location ID.",
+      "DecimalCode": -2147221480,
+      "HexCode": "0x80040018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALMESSAGEID",
+      "Message": "Invalid message ID.",
+      "DecimalCode": -2147221479,
+      "HexCode": "0x80040019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALPARKID",
+      "Message": "Invalid park ID.",
+      "DecimalCode": -2147221478,
+      "HexCode": "0x8004001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALRATE",
+      "Message": "Invalid rate.",
+      "DecimalCode": -2147221477,
+      "HexCode": "0x8004001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALTIMEOUT",
+      "Message": "Invalid timeout value.",
+      "DecimalCode": -2147221476,
+      "HexCode": "0x8004001C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALTONE",
+      "Message": "Invalid tone.",
+      "DecimalCode": -2147221475,
+      "HexCode": "0x8004001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALLIST",
+      "Message": "Invalid list passed as a parameter",
+      "DecimalCode": -2147221474,
+      "HexCode": "0x8004001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALMODE",
+      "Message": "Invalid mode passed as a parameter",
+      "DecimalCode": -2147221473,
+      "HexCode": "0x8004001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOCONFERENCE",
+      "Message": "The call is not part of a conference.",
+      "DecimalCode": -2147221472,
+      "HexCode": "0x80040020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NODEVICE",
+      "Message": "The device was removed, or the device class is not recognized.",
+      "DecimalCode": -2147221471,
+      "HexCode": "0x80040021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOREQUEST",
+      "Message": "No Assisted Telephony requests are pending.",
+      "DecimalCode": -2147221470,
+      "HexCode": "0x80040022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOTOWNER",
+      "Message": "The application is does not have OWNER privilege on the call.",
+      "DecimalCode": -2147221469,
+      "HexCode": "0x80040023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOTREGISTERED",
+      "Message": "The application is not registered to handle requests.",
+      "DecimalCode": -2147221468,
+      "HexCode": "0x80040024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_REQUESTOVERRUN",
+      "Message": "The request queue is already full.",
+      "DecimalCode": -2147221467,
+      "HexCode": "0x80040025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_TARGETNOTFOUND",
+      "Message": "The call handoff failed because the specified target was not found.",
+      "DecimalCode": -2147221466,
+      "HexCode": "0x80040026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_TARGETSELF",
+      "Message": "No higher priority target exists for the call handoff.",
+      "DecimalCode": -2147221465,
+      "HexCode": "0x80040027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_USERUSERINFOTOOBIG",
+      "Message": "The amount of user-user info exceeds the maximum permitted.",
+      "DecimalCode": -2147221464,
+      "HexCode": "0x80040028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_REINIT",
+      "Message": "The operation cannot be completed until all TAPI applications shutdown and reinitialize.",
+      "DecimalCode": -2147221463,
+      "HexCode": "0x80040029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_ADDRESSBLOCKED",
+      "Message": "You are not permitted to call this number.",
+      "DecimalCode": -2147221462,
+      "HexCode": "0x8004002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_BILLINGREJECTED",
+      "Message": "The calling card number or other billing information was rejected.",
+      "DecimalCode": -2147221461,
+      "HexCode": "0x8004002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALFEATURE",
+      "Message": "Invalid device-specific feature.",
+      "DecimalCode": -2147221460,
+      "HexCode": "0x8004002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALBUTTONLAMPID",
+      "Message": "Invalid button or lamp ID.",
+      "DecimalCode": -2147221459,
+      "HexCode": "0x8004002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALBUTTONSTATE",
+      "Message": "Invalid button state.",
+      "DecimalCode": -2147221458,
+      "HexCode": "0x8004002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALDATAID",
+      "Message": "Invalid data segment ID.",
+      "DecimalCode": -2147221457,
+      "HexCode": "0x8004002F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALHOOKSWITCHDEV",
+      "Message": "Invalid hookswitch device ID.",
+      "DecimalCode": -2147221456,
+      "HexCode": "0x80040030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_DROPPED",
+      "Message": "The call was disconnected.",
+      "DecimalCode": -2147221455,
+      "HexCode": "0x80040031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOREQUESTRECIPIENT",
+      "Message": "No program is available to handle the request.",
+      "DecimalCode": -2147221454,
+      "HexCode": "0x80040032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_REQUESTQUEUEFULL",
+      "Message": "The queue of call requests is full.",
+      "DecimalCode": -2147221453,
+      "HexCode": "0x80040033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_DESTBUSY",
+      "Message": "The called number is busy.",
+      "DecimalCode": -2147221452,
+      "HexCode": "0x80040034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_DESTNOANSWER",
+      "Message": "The called party does not answer.",
+      "DecimalCode": -2147221451,
+      "HexCode": "0x80040035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_DESTUNAVAIL",
+      "Message": "The called number could not be reached",
+      "DecimalCode": -2147221450,
+      "HexCode": "0x80040036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_REQUESTFAILED",
+      "Message": "The request failed for unspecified reasons.",
+      "DecimalCode": -2147221449,
+      "HexCode": "0x80040037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_REQUESTCANCELLED",
+      "Message": "The request was cancelled.",
+      "DecimalCode": -2147221448,
+      "HexCode": "0x80040038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALPRIVILEGE",
+      "Message": "Invalid privilege.",
+      "DecimalCode": -2147221447,
+      "HexCode": "0x80040039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALIDDIRECTION",
+      "Message": "The TERMINAL_DIRECTION passed in was invalid.",
+      "DecimalCode": -2147221446,
+      "HexCode": "0x8004003A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALIDTERMINAL",
+      "Message": "The Terminal passed in was invalid for this operation.",
+      "DecimalCode": -2147221445,
+      "HexCode": "0x8004003B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALIDTERMINALCLASS",
+      "Message": "The Terminal Class is invalid.",
+      "DecimalCode": -2147221444,
+      "HexCode": "0x8004003C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NODRIVER",
+      "Message": "The service provider was removed.",
+      "DecimalCode": -2147221443,
+      "HexCode": "0x8004003D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_MAXSTREAMS",
+      "Message": "The maximum number of streams was reached.",
+      "DecimalCode": -2147221442,
+      "HexCode": "0x8004003E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOTERMINALSELECTED",
+      "Message": "The operation could not be performed because it requires terminals to be selected.",
+      "DecimalCode": -2147221441,
+      "HexCode": "0x8004003F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_TERMINALINUSE",
+      "Message": "The operation could not be performed because the terminal is in use.",
+      "DecimalCode": -2147221440,
+      "HexCode": "0x80040040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOTSTOPPED",
+      "Message": "The operation could not be performed because it requires the stream to be stopped.",
+      "DecimalCode": -2147221439,
+      "HexCode": "0x80040041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_MAXTERMINALS",
+      "Message": "The maximum number of terminals has been reached.",
+      "DecimalCode": -2147221438,
+      "HexCode": "0x80040042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALIDSTREAM",
+      "Message": "The Stream passed in was invalid for this operation.",
+      "DecimalCode": -2147221437,
+      "HexCode": "0x80040043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_TIMEOUT",
+      "Message": "The call failed due to a timeout.",
+      "DecimalCode": -2147221436,
+      "HexCode": "0x80040044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_GROUP_REMOVED",
+      "Message": "The ACD Proxy has removed this Group. Operations on this object are invalid.",
+      "DecimalCode": -2147221435,
+      "HexCode": "0x80040045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_QUEUE_REMOVED",
+      "Message": "The ACD Proxy has removed this Queue. Operations on this object are invalid.",
+      "DecimalCode": -2147221434,
+      "HexCode": "0x80040046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_NO_AGENT_ID",
+      "Message": "The Agent object was created with CreateAgent. It does not have an ID, use CreateAgentWithID.",
+      "DecimalCode": -2147221433,
+      "HexCode": "0x80040047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_INVALAGENTID",
+      "Message": "Invalid agent ID.",
+      "DecimalCode": -2147221432,
+      "HexCode": "0x80040048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_INVALAGENTGROUP",
+      "Message": "Invalid agent group.",
+      "DecimalCode": -2147221431,
+      "HexCode": "0x80040049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_INVALPASSWORD",
+      "Message": "Invalid agent password.",
+      "DecimalCode": -2147221430,
+      "HexCode": "0x8004004A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_INVALAGENTSTATE",
+      "Message": "Invalid agent state",
+      "DecimalCode": -2147221429,
+      "HexCode": "0x8004004B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLCENTER_INVALAGENTACTIVITY",
+      "Message": "Invalid agent activity.",
+      "DecimalCode": -2147221428,
+      "HexCode": "0x8004004C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_REGISTRY_SETTING_CORRUPT",
+      "Message": "Registry Setting is Corrupt.",
+      "DecimalCode": -2147221427,
+      "HexCode": "0x8004004D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_TERMINAL_PEER",
+      "Message": "The peer for one of these bridge terminals has already been assigned.",
+      "DecimalCode": -2147221426,
+      "HexCode": "0x8004004E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_PEER_NOT_SET",
+      "Message": "The peer for this bridge terminal must be set to complete this operation.",
+      "DecimalCode": -2147221425,
+      "HexCode": "0x8004004F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOEVENT",
+      "Message": "There is no event in the MSP\u0027s event queue.",
+      "DecimalCode": -2147221424,
+      "HexCode": "0x80040050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALADDRESSTYPE",
+      "Message": "The specified address type is not supported by this address.",
+      "DecimalCode": -2147221423,
+      "HexCode": "0x80040051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_RESOURCEUNAVAIL",
+      "Message": "A resource needed to fulfill the request is not available.",
+      "DecimalCode": -2147221422,
+      "HexCode": "0x80040052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_PHONENOTOPEN",
+      "Message": "The phone is not open.",
+      "DecimalCode": -2147221421,
+      "HexCode": "0x80040053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_CALLNOTSELECTED",
+      "Message": "The specified call is not currently selected.",
+      "DecimalCode": -2147221420,
+      "HexCode": "0x80040054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_WRONGEVENT",
+      "Message": "This information is not available for this type of event.",
+      "DecimalCode": -2147221419,
+      "HexCode": "0x80040055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOFORMAT",
+      "Message": "The format is unknown",
+      "DecimalCode": -2147221418,
+      "HexCode": "0x80040056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_INVALIDSTREAMSTATE",
+      "Message": "The operation is not permitted in current stream state.",
+      "DecimalCode": -2147221417,
+      "HexCode": "0x80040057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_WRONG_STATE",
+      "Message": "The operation requested is not permitted for the current state.",
+      "DecimalCode": -2147221416,
+      "HexCode": "0x80040058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_NOT_INITIALIZED",
+      "Message": "The object has not been initialized.",
+      "DecimalCode": -2147221415,
+      "HexCode": "0x80040059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TAPI_E_SERVICE_NOT_RUNNING",
+      "Message": "The Telephony Service could not be contacted.",
+      "DecimalCode": -2147221414,
+      "HexCode": "0x8004005A",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

@@ -1,0 +1,964 @@
+{
+  "HeaderFileName": "cierror.h",
+  "ErrorCodes": [
+    {
+      "Id": "NOT_AN_ERROR1",
+      "Message": "NOTE:  This dummy error message is necessary to force MC to output the above defines inside the FACILITY_WINDOWS guard instead of leaving it empty.",
+      "DecimalCode": 529920,
+      "HexCode": "0x00081600",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_FAILED",
+      "Message": "Call failed for unknown reason.",
+      "DecimalCode": -2147215872,
+      "HexCode": "0x80041600",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_INVALIDQUERY",
+      "Message": "Invalid parameter.",
+      "DecimalCode": -2147215871,
+      "HexCode": "0x80041601",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_INVALIDRESTRICTION",
+      "Message": "The query restriction could not be parsed.",
+      "DecimalCode": -2147215870,
+      "HexCode": "0x80041602",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_INVALIDSORT",
+      "Message": "An invalid sort order was requested.",
+      "DecimalCode": -2147215869,
+      "HexCode": "0x80041603",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_INVALIDCATEGORIZE",
+      "Message": "An invalid categorization order was requested.",
+      "DecimalCode": -2147215868,
+      "HexCode": "0x80041604",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_ALLNOISE",
+      "Message": "The query contained only ignored words.",
+      "DecimalCode": -2147215867,
+      "HexCode": "0x80041605",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_TOOCOMPLEX",
+      "Message": "The query was too complex to be executed.",
+      "DecimalCode": -2147215866,
+      "HexCode": "0x80041606",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_TIMEDOUT",
+      "Message": "The query exceeded its execution time limit.",
+      "DecimalCode": -2147215865,
+      "HexCode": "0x80041607",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_DUPLICATE_OUTPUT_COLUMN",
+      "Message": "One or more columns in the output column list is a duplicate.",
+      "DecimalCode": -2147215864,
+      "HexCode": "0x80041608",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_INVALID_OUTPUT_COLUMN",
+      "Message": "One or more columns in the output column list is not valid.",
+      "DecimalCode": -2147215863,
+      "HexCode": "0x80041609",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_INVALID_DIRECTORY",
+      "Message": "Invalid directory name.",
+      "DecimalCode": -2147215862,
+      "HexCode": "0x8004160A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_E_DIR_ON_REMOVABLE_DRIVE",
+      "Message": "Specified directory is on a removable medium.",
+      "DecimalCode": -2147215861,
+      "HexCode": "0x8004160B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUERY_S_NO_QUERY",
+      "Message": "The catalog is in a state where indexing continues, but queries are not allowed.",
+      "DecimalCode": -2147215860,
+      "HexCode": "0x8004160C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_CANT_OPEN_FILE",
+      "Message": "Can not open file.",
+      "DecimalCode": -2147215791,
+      "HexCode": "0x80041651",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_READ_ERROR",
+      "Message": "Read error in file.",
+      "DecimalCode": -2147215790,
+      "HexCode": "0x80041652",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_EXPECTING_NAME",
+      "Message": "Expecting property name.",
+      "DecimalCode": -2147215789,
+      "HexCode": "0x80041653",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_EXPECTING_TYPE",
+      "Message": "Expecting type specifier.",
+      "DecimalCode": -2147215788,
+      "HexCode": "0x80041654",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_UNRECOGNIZED_TYPE",
+      "Message": "Unrecognized type.",
+      "DecimalCode": -2147215787,
+      "HexCode": "0x80041655",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_EXPECTING_INTEGER",
+      "Message": "Expecting integer.",
+      "DecimalCode": -2147215786,
+      "HexCode": "0x80041656",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_EXPECTING_CLOSE_PAREN",
+      "Message": "Expecting closing parenthesis.",
+      "DecimalCode": -2147215785,
+      "HexCode": "0x80041657",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_EXPECTING_GUID",
+      "Message": "Expecting GUID.",
+      "DecimalCode": -2147215784,
+      "HexCode": "0x80041658",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_BAD_GUID",
+      "Message": "Invalid guid.",
+      "DecimalCode": -2147215783,
+      "HexCode": "0x80041659",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_EXPECTING_PROP_SPEC",
+      "Message": "Expecting property specifier.",
+      "DecimalCode": -2147215782,
+      "HexCode": "0x8004165A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_CANT_SET_PROPERTY",
+      "Message": "Failed to set property name.",
+      "DecimalCode": -2147215781,
+      "HexCode": "0x8004165B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_DUPLICATE",
+      "Message": "Duplicate property name.",
+      "DecimalCode": -2147215780,
+      "HexCode": "0x8004165C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_VECTORBYREF_USED_ALONE",
+      "Message": "DBTYPE_VECTOR or DBTYPE_BYREF used alone.",
+      "DecimalCode": -2147215779,
+      "HexCode": "0x8004165D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_E_BYREF_USED_WITHOUT_PTRTYPE",
+      "Message": "DBTYPE_BYREF must be used with DBTYPE_STR, DBTYPE_WSTR, DBTYPE_GUID or DBTYPE_UI1 types.",
+      "DecimalCode": -2147215778,
+      "HexCode": "0x8004165E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_UNEXPECTED_NOT",
+      "Message": "Unexpected NOT operator.",
+      "DecimalCode": -2147215776,
+      "HexCode": "0x80041660",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_INTEGER",
+      "Message": "Expecting integer.",
+      "DecimalCode": -2147215775,
+      "HexCode": "0x80041661",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_REAL",
+      "Message": "Expecting real number.",
+      "DecimalCode": -2147215774,
+      "HexCode": "0x80041662",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_DATE",
+      "Message": "Expecting date.",
+      "DecimalCode": -2147215773,
+      "HexCode": "0x80041663",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_CURRENCY",
+      "Message": "Expecting currency.",
+      "DecimalCode": -2147215772,
+      "HexCode": "0x80041664",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_GUID",
+      "Message": "Expecting GUID.",
+      "DecimalCode": -2147215771,
+      "HexCode": "0x80041665",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_BRACE",
+      "Message": "Expecting closing square bracket \u0027]\u0027.",
+      "DecimalCode": -2147215770,
+      "HexCode": "0x80041666",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_PAREN",
+      "Message": "Expecting closing parenthesis \u0027)\u0027.",
+      "DecimalCode": -2147215769,
+      "HexCode": "0x80041667",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_PROPERTY",
+      "Message": "Expecting property name.",
+      "DecimalCode": -2147215768,
+      "HexCode": "0x80041668",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_NOT_YET_IMPLEMENTED",
+      "Message": "Not yet implemented.",
+      "DecimalCode": -2147215767,
+      "HexCode": "0x80041669",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_PHRASE",
+      "Message": "Expecting phrase.",
+      "DecimalCode": -2147215766,
+      "HexCode": "0x8004166A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_UNSUPPORTED_PROPERTY_TYPE",
+      "Message": "Unsupported property type.",
+      "DecimalCode": -2147215765,
+      "HexCode": "0x8004166B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_REGEX",
+      "Message": "Expecting regular expression.",
+      "DecimalCode": -2147215764,
+      "HexCode": "0x8004166C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_REGEX_PROPERTY",
+      "Message": "Regular expressions require a property of type string.",
+      "DecimalCode": -2147215763,
+      "HexCode": "0x8004166D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_INVALID_LITERAL",
+      "Message": "Invalid literal.",
+      "DecimalCode": -2147215762,
+      "HexCode": "0x8004166E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_NO_SUCH_PROPERTY",
+      "Message": "No such property.",
+      "DecimalCode": -2147215761,
+      "HexCode": "0x8004166F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_EOS",
+      "Message": "Expecting end of string.",
+      "DecimalCode": -2147215760,
+      "HexCode": "0x80041670",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_EXPECTING_COMMA",
+      "Message": "Expecting comma.",
+      "DecimalCode": -2147215759,
+      "HexCode": "0x80041671",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_UNEXPECTED_EOS",
+      "Message": "Unexpected end of string.",
+      "DecimalCode": -2147215758,
+      "HexCode": "0x80041672",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_WEIGHT_OUT_OF_RANGE",
+      "Message": "Weight must be between 0 and 1000 in short form queries and between 0.0 and 1.0 in long form queries.",
+      "DecimalCode": -2147215757,
+      "HexCode": "0x80041673",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_NO_SUCH_SORT_PROPERTY",
+      "Message": "An invalid property was found in the sort specification.",
+      "DecimalCode": -2147215756,
+      "HexCode": "0x80041674",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_INVALID_SORT_ORDER",
+      "Message": "An invalid sort order was specified.  Only [a] and [d] are supported.",
+      "DecimalCode": -2147215755,
+      "HexCode": "0x80041675",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUTIL_E_CANT_CONVERT_VROOT",
+      "Message": "Couldn\u0027t convert a virtual path to a physical path.",
+      "DecimalCode": -2147215754,
+      "HexCode": "0x80041676",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_INVALID_GROUPING",
+      "Message": "An unsupported grouping type was specified.",
+      "DecimalCode": -2147215753,
+      "HexCode": "0x80041677",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUTIL_E_INVALID_CODEPAGE",
+      "Message": "Invalid CiCodepage was specified.",
+      "DecimalCode": -1073473928,
+      "HexCode": "0xC0041678",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPLIST_S_DUPLICATE",
+      "Message": "Exact duplicate property defined.",
+      "DecimalCode": 267897,
+      "HexCode": "0x00041679",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_INVALID_QUERY",
+      "Message": "Invalid query.",
+      "DecimalCode": -2147215750,
+      "HexCode": "0x8004167A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QPARSE_E_INVALID_RANKMETHOD",
+      "Message": "Invalid rank method.",
+      "DecimalCode": -2147215749,
+      "HexCode": "0x8004167B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_W_WORDLISTFULL",
+      "Message": "Wordlist has reached maximum size.  Additional documents should not be filtered.",
+      "DecimalCode": 267904,
+      "HexCode": "0x00041680",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_LOWRESOURCE",
+      "Message": "The system is running out of one of more resources needed for filtering, usually memory.",
+      "DecimalCode": -2147215743,
+      "HexCode": "0x80041681",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_FATALERROR",
+      "Message": "A critical error occurred during document filtering.  Consult system administrator.",
+      "DecimalCode": -2147215742,
+      "HexCode": "0x80041682",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_PARTITIONDELETED",
+      "Message": "Documents not stored in content index because partition has been deleted.",
+      "DecimalCode": -2147215741,
+      "HexCode": "0x80041683",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_CHANGEUPDATEFAILED",
+      "Message": "Documents not stored in content index because update of changelist failed.",
+      "DecimalCode": -2147215740,
+      "HexCode": "0x80041684",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_W_EMPTYWORDLIST",
+      "Message": "Final wordlist was empty.",
+      "DecimalCode": 267909,
+      "HexCode": "0x00041685",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_WORDLISTCOMMITFAILED",
+      "Message": "Commit of wordlist failed.  Data not available for query.",
+      "DecimalCode": -2147215738,
+      "HexCode": "0x80041686",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_NOWORDLIST",
+      "Message": "No wordlist is being constructed.  May happen after fatal filter error.",
+      "DecimalCode": -2147215737,
+      "HexCode": "0x80041687",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FDAEMON_E_TOOMANYFILTEREDBLOCKS",
+      "Message": "During document filtering the limit on buffers has been exceeded.",
+      "DecimalCode": -2147215736,
+      "HexCode": "0x80041688",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEARCH_S_NOMOREHITS",
+      "Message": "End of hits has been reached.",
+      "DecimalCode": 267936,
+      "HexCode": "0x000416A0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEARCH_E_NOMONIKER",
+      "Message": "Retrival of hits as monikers is not supported (by filter passed into Init).",
+      "DecimalCode": -2147215711,
+      "HexCode": "0x800416A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEARCH_E_NOREGION",
+      "Message": "Retrival of hits as filter regions is not supported (by filter passed into Init).",
+      "DecimalCode": -2147215710,
+      "HexCode": "0x800416A2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_TOO_BIG",
+      "Message": "File is too large to filter.",
+      "DecimalCode": -2147215568,
+      "HexCode": "0x80041730",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_PARTIAL_CONTENTSCAN_IMMEDIATE",
+      "Message": "A partial content scan of the disk needs to be scheduled for immediate execution.",
+      "DecimalCode": 268081,
+      "HexCode": "0x00041731",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_FULL_CONTENTSCAN_IMMEDIATE",
+      "Message": "A full content scan of the disk needs to be scheduled for immediate execution.",
+      "DecimalCode": 268082,
+      "HexCode": "0x00041732",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_CONTENTSCAN_DELAYED",
+      "Message": "A content scan of the disk needs to be scheduled for execution later.",
+      "DecimalCode": 268083,
+      "HexCode": "0x00041733",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_CONTENTINDEXCORRUPT",
+      "Message": "The content index is corrupt. A content scan will to be scheduled after chkdsk or autochk is run.",
+      "DecimalCode": -1073473740,
+      "HexCode": "0xC0041734",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_DISK_FULL",
+      "Message": "The disk is getting full.",
+      "DecimalCode": 268085,
+      "HexCode": "0x00041735",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_ALREADY_OPEN",
+      "Message": "A file is already open. Cannot open another one while a file is open.",
+      "DecimalCode": -2147215562,
+      "HexCode": "0x80041736",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_UNREACHABLE",
+      "Message": "The file is not reachable.",
+      "DecimalCode": -2147215561,
+      "HexCode": "0x80041737",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_IN_USE",
+      "Message": "The document is in use by another process.",
+      "DecimalCode": -2147215560,
+      "HexCode": "0x80041738",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_NOT_OPEN",
+      "Message": "The document is not opened.",
+      "DecimalCode": -2147215559,
+      "HexCode": "0x80041739",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_NO_PROPSETS",
+      "Message": "The document has no property sets.",
+      "DecimalCode": 268090,
+      "HexCode": "0x0004173A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_NO_SUCH_PROPERTY",
+      "Message": "There is no property with the given GUID.",
+      "DecimalCode": -2147215557,
+      "HexCode": "0x8004173B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_NO_SECURITY_DESCRIPTOR",
+      "Message": "The document has no security descriptor.",
+      "DecimalCode": 268092,
+      "HexCode": "0x0004173C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_OFFLINE",
+      "Message": "The document is offline.",
+      "DecimalCode": -2147215555,
+      "HexCode": "0x8004173D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_PARTIALLY_FILTERED",
+      "Message": "The document was too large to filter in its entirety.  Portions of the document were not emitted.",
+      "DecimalCode": -2147215554,
+      "HexCode": "0x8004173E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WBREAK_E_END_OF_TEXT",
+      "Message": "End of text reached in text source.",
+      "DecimalCode": -2147215488,
+      "HexCode": "0x80041780",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LANGUAGE_S_LARGE_WORD",
+      "Message": "Word larger than maximum length.  May be truncated by word sink.",
+      "DecimalCode": 268161,
+      "HexCode": "0x00041781",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WBREAK_E_QUERY_ONLY",
+      "Message": "Feature only available in query mode.",
+      "DecimalCode": -2147215486,
+      "HexCode": "0x80041782",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WBREAK_E_BUFFER_TOO_SMALL",
+      "Message": "Buffer too small to hold composed phrase.",
+      "DecimalCode": -2147215485,
+      "HexCode": "0x80041783",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LANGUAGE_E_DATABASE_NOT_FOUND",
+      "Message": "Langauge database/cache file could not be found.",
+      "DecimalCode": -2147215484,
+      "HexCode": "0x80041784",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WBREAK_E_INIT_FAILED",
+      "Message": "Initialization of word breaker failed.",
+      "DecimalCode": -2147215483,
+      "HexCode": "0x80041785",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PSINK_E_QUERY_ONLY",
+      "Message": "Feature only available in query mode.",
+      "DecimalCode": -2147215472,
+      "HexCode": "0x80041790",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PSINK_E_INDEX_ONLY",
+      "Message": "Feature only available in index mode.",
+      "DecimalCode": -2147215471,
+      "HexCode": "0x80041791",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PSINK_E_LARGE_ATTACHMENT",
+      "Message": "Attachment type beyond valid range.",
+      "DecimalCode": -2147215470,
+      "HexCode": "0x80041792",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PSINK_S_LARGE_WORD",
+      "Message": "Word larger than maximum length.  May be truncated by phrase sink.",
+      "DecimalCode": 268179,
+      "HexCode": "0x00041793",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_CORRUPT_DATABASE",
+      "Message": "The content index is corrupt.",
+      "DecimalCode": -1073473536,
+      "HexCode": "0xC0041800",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_CORRUPT_CATALOG",
+      "Message": "The content index meta data is corrupt.",
+      "DecimalCode": -1073473535,
+      "HexCode": "0xC0041801",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_INVALID_PARTITION",
+      "Message": "The content index partition is invalid.",
+      "DecimalCode": -1073473534,
+      "HexCode": "0xC0041802",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_INVALID_PRIORITY",
+      "Message": "The priority is invalid.",
+      "DecimalCode": -1073473533,
+      "HexCode": "0xC0041803",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_NO_STARTING_KEY",
+      "Message": "There is no starting key.",
+      "DecimalCode": -1073473532,
+      "HexCode": "0xC0041804",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_OUT_OF_INDEX_IDS",
+      "Message": "The content index is out of index ids.",
+      "DecimalCode": -1073473531,
+      "HexCode": "0xC0041805",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_NO_CATALOG",
+      "Message": "There is no catalog.",
+      "DecimalCode": -1073473530,
+      "HexCode": "0xC0041806",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_CORRUPT_FILTER_BUFFER",
+      "Message": "The filter buffer is corrupt.",
+      "DecimalCode": -1073473529,
+      "HexCode": "0xC0041807",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_INVALID_INDEX",
+      "Message": "The index is invalid.",
+      "DecimalCode": -1073473528,
+      "HexCode": "0xC0041808",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_PROPSTORE_INCONSISTENCY",
+      "Message": "Inconsistency in property store detected.",
+      "DecimalCode": -1073473527,
+      "HexCode": "0xC0041809",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_ALREADY_INITIALIZED",
+      "Message": "The object is already initialzed.",
+      "DecimalCode": -2147215350,
+      "HexCode": "0x8004180A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_NOT_INITIALIZED",
+      "Message": "The object is not initialzed.",
+      "DecimalCode": -2147215349,
+      "HexCode": "0x8004180B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_BUFFERTOOSMALL",
+      "Message": "The buffer is too small.",
+      "DecimalCode": -2147215348,
+      "HexCode": "0x8004180C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_PROPERTY_NOT_CACHED",
+      "Message": "The given property is not cached.",
+      "DecimalCode": -2147215347,
+      "HexCode": "0x8004180D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_S_WORKID_DELETED",
+      "Message": "The workid is deleted.",
+      "DecimalCode": 268302,
+      "HexCode": "0x0004180E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_INVALID_STATE",
+      "Message": "The object is not in a valid state.",
+      "DecimalCode": -2147215345,
+      "HexCode": "0x8004180F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_FILTERING_DISABLED",
+      "Message": "Filtering is disabled in this content index.",
+      "DecimalCode": -2147215344,
+      "HexCode": "0x80041810",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_DISK_FULL",
+      "Message": "The disk is full and the specified operation cannot be done.",
+      "DecimalCode": -2147215343,
+      "HexCode": "0x80041811",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_SHUTDOWN",
+      "Message": "Content Index has been shutdown.",
+      "DecimalCode": -2147215342,
+      "HexCode": "0x80041812",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_WORKID_NOTVALID",
+      "Message": "The workid is not valid.",
+      "DecimalCode": -2147215341,
+      "HexCode": "0x80041813",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_S_END_OF_ENUMERATION",
+      "Message": "There are no more documents to enumerate.",
+      "DecimalCode": 268308,
+      "HexCode": "0x00041814",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_NOT_FOUND",
+      "Message": "The object was not found.",
+      "DecimalCode": -2147215339,
+      "HexCode": "0x80041815",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_USE_DEFAULT_PID",
+      "Message": "The passed-in property id is not supported.",
+      "DecimalCode": -2147215338,
+      "HexCode": "0x80041816",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_DUPLICATE_NOTIFICATION",
+      "Message": "There were two notifications for the same workid.",
+      "DecimalCode": -2147215337,
+      "HexCode": "0x80041817",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_UPDATES_DISABLED",
+      "Message": "A document update was rejected because updates were disabled.",
+      "DecimalCode": -2147215336,
+      "HexCode": "0x80041818",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_INVALID_FLAGS_COMBINATION",
+      "Message": "The combination of flags specified is invalid.",
+      "DecimalCode": -2147215335,
+      "HexCode": "0x80041819",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_OUTOFSEQ_INCREMENT_DATA",
+      "Message": "The incremental data given to Load is not valid. It may be out of sequence.",
+      "DecimalCode": -2147215334,
+      "HexCode": "0x8004181A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_SHARING_VIOLATION",
+      "Message": "A sharing or locking violation caused a failure.",
+      "DecimalCode": -2147215333,
+      "HexCode": "0x8004181B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_LOGON_FAILURE",
+      "Message": "A logon permission violation caused a failure.",
+      "DecimalCode": -2147215332,
+      "HexCode": "0x8004181C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_NO_CATALOG",
+      "Message": "There is no catalog.",
+      "DecimalCode": -2147215331,
+      "HexCode": "0x8004181D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_STRANGE_PAGEORSECTOR_SIZE",
+      "Message": "Page size is not an integral multiple of the sector size of the volume where index is located.",
+      "DecimalCode": -2147215330,
+      "HexCode": "0x8004181E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_TIMEOUT",
+      "Message": "Service is too busy.",
+      "DecimalCode": -2147215329,
+      "HexCode": "0x8004181F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_NOT_RUNNING",
+      "Message": "Service is not running.",
+      "DecimalCode": -2147215328,
+      "HexCode": "0x80041820",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_INCORRECT_VERSION",
+      "Message": "The content index data on disk is for the wrong version.",
+      "DecimalCode": -1073473503,
+      "HexCode": "0xC0041821",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_ENUMERATION_STARTED",
+      "Message": "Enumeration has already been started for this query.",
+      "DecimalCode": -1073473502,
+      "HexCode": "0xC0041822",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_PROPERTY_TOOLARGE",
+      "Message": "The specified variable length property is too large for the property cache.",
+      "DecimalCode": -1073473501,
+      "HexCode": "0xC0041823",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_CLIENT_FILTER_ABORT",
+      "Message": "Filtering of object was aborted by client.",
+      "DecimalCode": -1073473500,
+      "HexCode": "0xC0041824",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_S_NO_DOCSTORE",
+      "Message": "For administrative connections from client without association to a docstore.",
+      "DecimalCode": 268325,
+      "HexCode": "0x00041825",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_S_CAT_STOPPED",
+      "Message": "The catalog has been stopped.",
+      "DecimalCode": 268326,
+      "HexCode": "0x00041826",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_CARDINALITY_MISMATCH",
+      "Message": "Mismatch in cardinality of machine(s)/catalog(s)/scope(s).",
+      "DecimalCode": -2147215321,
+      "HexCode": "0x80041827",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_CONFIG_DISK_FULL",
+      "Message": "The disk has reached its configured space limit.",
+      "DecimalCode": -2147215320,
+      "HexCode": "0x80041828",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CI_E_DISTRIBUTED_GROUPBY_UNSUPPORTED",
+      "Message": "Groupby clause is not supported on a distributed query.",
+      "DecimalCode": -2147215319,
+      "HexCode": "0x80041829",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_NULL",
+      "Code": 0
+    },
+    {
+      "Name": "FACILITY_ITF",
+      "Code": 4
+    },
+    {
+      "Name": "FACILITY_WINDOWS",
+      "Code": 8
+    }
+  ]
+}

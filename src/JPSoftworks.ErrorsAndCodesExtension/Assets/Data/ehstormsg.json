@@ -1,0 +1,200 @@
+{
+  "HeaderFileName": "ehstormsg.h",
+  "ErrorCodes": [
+    {
+      "Id": "ES_E_INVALID_RESPONSE",
+      "Message": "Hardware return invalid response.",
+      "DecimalCode": -1073479168,
+      "HexCode": "0xC0040200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_UNPROVISIONED_HARDWARE",
+      "Message": "Hardware is not provision.",
+      "DecimalCode": -1073479164,
+      "HexCode": "0xC0040204",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_UNSUPPORTED_HARDWARE",
+      "Message": "Hardware is not supported.",
+      "DecimalCode": -1073479163,
+      "HexCode": "0xC0040205",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INCOMPLETE_COMMAND",
+      "Message": "An incomplete command was received.",
+      "DecimalCode": -1073479162,
+      "HexCode": "0xC0040206",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_BAD_SEQUENCE",
+      "Message": "Command rejected for being out of sequence.",
+      "DecimalCode": -1073479161,
+      "HexCode": "0xC0040207",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_NO_PROBE",
+      "Message": "Non-Probe command received before Probe command.",
+      "DecimalCode": -1073479160,
+      "HexCode": "0xC0040208",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INVALID_SILO",
+      "Message": "Invalid silo specified.",
+      "DecimalCode": -1073479159,
+      "HexCode": "0xC0040209",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INVALID_CAPABILITY",
+      "Message": "Invalid capability requested.",
+      "DecimalCode": -1073479158,
+      "HexCode": "0xC004020A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_GROUP_POLICY_FORBIDDEN_USE",
+      "Message": "Group policy setting forbids use.",
+      "DecimalCode": -1073479157,
+      "HexCode": "0xC004020B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_GROUP_POLICY_FORBIDDEN_OPERATION",
+      "Message": "Group policy setting forbids operation.",
+      "DecimalCode": -1073479156,
+      "HexCode": "0xC004020C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INVALID_PARAM_COMBINATION",
+      "Message": "Invalid combination of parameters specified in input data.",
+      "DecimalCode": -1073479155,
+      "HexCode": "0xC004020D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INVALID_PARAM_LENGTH",
+      "Message": "Parameter Byte Length specified in the payload is invalid.",
+      "DecimalCode": -1073479154,
+      "HexCode": "0xC004020E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INCONSISTENT_PARAM_LENGTH",
+      "Message": "Parameter Byte Length specified in the payload is not consistent with the number of bytes transferred.",
+      "DecimalCode": -1073479153,
+      "HexCode": "0xC004020F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_NO_AUTHENTICATION_REQUIRED",
+      "Message": "Hardware does not require authentication.",
+      "DecimalCode": -1073478656,
+      "HexCode": "0xC0040400",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_INVALID_FIELD_IDENTIFIER",
+      "Message": "An invalid field identifier was found in the data provided by the device.",
+      "DecimalCode": -1073475328,
+      "HexCode": "0xC0041100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_CHALLENGE_MISMATCH",
+      "Message": "The challenge provided by the device does not match the one provided in an earlier step in the authentication sequence.",
+      "DecimalCode": -1073475327,
+      "HexCode": "0xC0041101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_CHALLENGE_SIZE_MISMATCH",
+      "Message": "The size of the challenge specified by the device does not match the choice of the digest algorithm.",
+      "DecimalCode": -1073475326,
+      "HexCode": "0xC0041102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_FRIENDLY_NAME_TOO_LONG",
+      "Message": "The friendly name specified for User is too long.",
+      "DecimalCode": -1073475325,
+      "HexCode": "0xC0041103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_SILO_NAME_TOO_LONG",
+      "Message": "The silo name specified is too long.",
+      "DecimalCode": -1073475324,
+      "HexCode": "0xC0041104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_PASSWORD_TOO_LONG",
+      "Message": "The password specified is too long.",
+      "DecimalCode": -1073475323,
+      "HexCode": "0xC0041105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_PASSWORD_HINT_TOO_LONG",
+      "Message": "The password hint specified is too long.",
+      "DecimalCode": -1073475322,
+      "HexCode": "0xC0041106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_OTHER_SECURITY_PROTOCOL_ACTIVE",
+      "Message": "Cannot enable IEEE 1667 password security since another security protocol is still active on the device.",
+      "DecimalCode": -1073475321,
+      "HexCode": "0xC0041107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_DEVICE_DIGEST_MISSING",
+      "Message": "Device digest was expected but was not found in the payload.",
+      "DecimalCode": -1073475320,
+      "HexCode": "0xC0041108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_NOT_AUTHORIZED_UNEXPECTED",
+      "Message": "Expected the silo to be in Authorized state, but it was not.",
+      "DecimalCode": -1073475319,
+      "HexCode": "0xC0041109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_AUTHORIZED_UNEXPECTED",
+      "Message": "Expected the silo to be in Not Authorized state, but it was not.",
+      "DecimalCode": -1073475318,
+      "HexCode": "0xC004110A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_PROVISIONED_UNEXPECTED",
+      "Message": "Expected the silo to be in Not Provisioned state, but it was not.",
+      "DecimalCode": -1073475317,
+      "HexCode": "0xC004110B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ES_E_UNKNOWN_DIGEST_ALGORITHM",
+      "Message": "The digest algorithm supported by the device is not supported in Windows.",
+      "DecimalCode": -1073475316,
+      "HexCode": "0xC004110C",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_ENHANCED_STORAGE",
+      "Code": 4
+    }
+  ]
+}

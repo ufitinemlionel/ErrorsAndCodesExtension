@@ -1,0 +1,270 @@
+{
+  "HeaderFileName": "wdstptmgmtmsg.h",
+  "ErrorCodes": [
+    {
+      "Id": "WDSTPTMGMT_CATEGORY",
+      "Message": "WdsTptMgmt",
+      "DecimalCode": 1,
+      "HexCode": "0x00000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_PROPERTY",
+      "Message": "The property is invalid.",
+      "DecimalCode": -1055915776,
+      "HexCode": "0xC1100100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_OPERATION",
+      "Message": "The operation is invalid.",
+      "DecimalCode": -1055915775,
+      "HexCode": "0xC1100101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_CLASS",
+      "Message": "The interface pointer passed to the method has an invalid underlying class. Only library classes are supported.",
+      "DecimalCode": -1055915774,
+      "HexCode": "0xC1100102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_CONTENT_PROVIDER_ALREADY_REGISTERED",
+      "Message": "A content provider with the specified name is already registered on the server.",
+      "DecimalCode": -1055915773,
+      "HexCode": "0xC1100103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_CONTENT_PROVIDER_NOT_REGISTERED",
+      "Message": "The specified content provider is not registered on the server.",
+      "DecimalCode": -1055915772,
+      "HexCode": "0xC1100104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_CONTENT_PROVIDER_NAME",
+      "Message": "The specified content provider name is invalid. The name must be 1 to 255 characters long and cannot contain a backslash (\\) character.",
+      "DecimalCode": -1055915771,
+      "HexCode": "0xC1100105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_TRANSPORT_SERVER_ROLE_NOT_CONFIGURED",
+      "Message": "The Windows Deployment Services Transport Server role service has not been configured on the server.",
+      "DecimalCode": -1055915770,
+      "HexCode": "0xC1100106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_NAMESPACE_ALREADY_REGISTERED",
+      "Message": "The specified namespace is already registered on the server.",
+      "DecimalCode": -1055915769,
+      "HexCode": "0xC1100107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_NAMESPACE_NOT_REGISTERED",
+      "Message": "The specified namespace is not registered on the server.",
+      "DecimalCode": -1055915768,
+      "HexCode": "0xC1100108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_CANNOT_REINITIALIZE_OBJECT",
+      "Message": "The object has already been initialized and cannot be reinitialized.",
+      "DecimalCode": -1055915767,
+      "HexCode": "0xC1100109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_NAMESPACE_NAME",
+      "Message": "The specified namespace name is invalid. The name must be 1 to 255 characters long and cannot contain a backslash (\\) character.",
+      "DecimalCode": -1055915766,
+      "HexCode": "0xC110010A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_NAMESPACE_DATA",
+      "Message": "The namespace contains invalid or unknown data.",
+      "DecimalCode": -1055915765,
+      "HexCode": "0xC110010B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_NAMESPACE_READ_ONLY",
+      "Message": "The namespace data cannot be modified because it is currently, or has been previously, registered on the server.",
+      "DecimalCode": -1055915764,
+      "HexCode": "0xC110010C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_NAMESPACE_START_TIME",
+      "Message": "The scheduled start time for the namespace is invalid.",
+      "DecimalCode": -1055915763,
+      "HexCode": "0xC110010D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_DIAGNOSTICS_COMPONENTS",
+      "Message": "The specified diagnostics components mask contains invalid or unknown components.",
+      "DecimalCode": -1055915762,
+      "HexCode": "0xC110010E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_CANNOT_REFRESH_DIRTY_OBJECT",
+      "Message": "The object contains unsaved changes. The object data cannot be refreshed until you commit or discard the changes.",
+      "DecimalCode": -1055915761,
+      "HexCode": "0xC110010F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_SERVICE_IP_ADDRESS_RANGE",
+      "Message": "The specified IP address range is invalid. The start and end IP addresses must be valid and the start IP address must be less than or equal to the end IP address.",
+      "DecimalCode": -1055915760,
+      "HexCode": "0xC1100110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_SERVICE_PORT_RANGE",
+      "Message": "The specified service port range is invalid. The start port must be less than or equal to the end port, and both values must be between 1025 and 65536, inclusive.",
+      "DecimalCode": -1055915759,
+      "HexCode": "0xC1100111",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_NAMESPACE_START_PARAMETERS",
+      "Message": "The start parameters for the namespace are invalid.",
+      "DecimalCode": -1055915758,
+      "HexCode": "0xC1100112",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_TRANSPORT_SERVER_UNAVAILABLE",
+      "Message": "The Windows Deployment Services Transport Server is unavailable.",
+      "DecimalCode": -1055915757,
+      "HexCode": "0xC1100113",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_NAMESPACE_NOT_ON_SERVER",
+      "Message": "The specified namespace has never been registered on the server.",
+      "DecimalCode": -1055915756,
+      "HexCode": "0xC1100114",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_NAMESPACE_REMOVED_FROM_SERVER",
+      "Message": "The specified namespace has been unregistered and removed from the server.",
+      "DecimalCode": -1055915755,
+      "HexCode": "0xC1100115",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_IP_ADDRESS",
+      "Message": "The specified IP address is invalid. The IP address must be a well formed value of the correct type.",
+      "DecimalCode": -1055915754,
+      "HexCode": "0xC1100116",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_IPV4_MULTICAST_ADDRESS",
+      "Message": "The specified IPv4 address is not valid for multicast. IPv4 multicast addresses must be in the range 224.0.1.0 to 239.255.255.255.",
+      "DecimalCode": -1055915753,
+      "HexCode": "0xC1100117",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_IPV6_MULTICAST_ADDRESS",
+      "Message": "The specified IPv6 address is not valid for multicast. IPv6 multicast addresses must start with FF (for example, FF15::FF).",
+      "DecimalCode": -1055915752,
+      "HexCode": "0xC1100118",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_IPV6_NOT_SUPPORTED",
+      "Message": "The Windows Deployment Services Transport Server does not support IPv6.",
+      "DecimalCode": -1055915751,
+      "HexCode": "0xC1100119",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_IPV6_MULTICAST_ADDRESS_SOURCE",
+      "Message": "The specified IPv6 multicast address source is invalid. Transport Server only supports using IPv6 multicast addresses from a range.",
+      "DecimalCode": -1055915750,
+      "HexCode": "0xC110011A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_MULTISTREAM_STREAM_COUNT",
+      "Message": "The specified multistream stream count is invalid. The stream count must be set to either 2 or 3.",
+      "DecimalCode": -1055915749,
+      "HexCode": "0xC110011B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_AUTO_DISCONNECT_THRESHOLD",
+      "Message": "The specified AutoDisconnect threshold is invalid. The threshold must be set to a value between 1 KBps and 4194303 KBps, inclusive.",
+      "DecimalCode": -1055915748,
+      "HexCode": "0xC110011C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_MULTICAST_SESSION_POLICY_NOT_SUPPORTED",
+      "Message": "You cannot configure the multicast session policy on this Transport Server. This policy is only supported on Windows Server 2008 R2 and later.",
+      "DecimalCode": -1055915747,
+      "HexCode": "0xC110011D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_SLOW_CLIENT_HANDLING_TYPE",
+      "Message": "The specified slow-client handling type is invalid.",
+      "DecimalCode": -1055915746,
+      "HexCode": "0xC110011E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_NETWORK_PROFILES_NOT_SUPPORTED",
+      "Message": "This Windows Deployment Services Transport Server does not support network profiles.",
+      "DecimalCode": -1055915745,
+      "HexCode": "0xC110011F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_UDP_PORT_POLICY_NOT_SUPPORTED",
+      "Message": "The Windows Deployment Services Transport Server does not support UDP port policy.",
+      "DecimalCode": -1055915744,
+      "HexCode": "0xC1100120",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_TFTP_MAX_BLOCKSIZE_NOT_SUPPORTED",
+      "Message": "The Windows Deployment Services Transport Server does not support the TFTP maximum block size setting.",
+      "DecimalCode": -1055915743,
+      "HexCode": "0xC1100121",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_TFTP_VAR_WINDOW_NOT_SUPPORTED",
+      "Message": "The Windows Deployment Services Transport Server does not support the TFTP variable window extension.",
+      "DecimalCode": -1055915742,
+      "HexCode": "0xC1100122",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTMGMT_E_INVALID_TFTP_MAX_BLOCKSIZE",
+      "Message": "The specified TFTP maximum block size is invalid. It must be either 0 or between 512 and 65531, inclusive.",
+      "DecimalCode": -1055915741,
+      "HexCode": "0xC1100123",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WDSTPTMGMT",
+      "Code": 272
+    }
+  ]
+}

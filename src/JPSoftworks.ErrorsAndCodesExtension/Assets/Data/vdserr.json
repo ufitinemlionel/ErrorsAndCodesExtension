@@ -1,0 +1,2687 @@
+{
+  "HeaderFileName": "vdserr.h",
+  "ErrorCodes": [
+    {
+      "Id": "VDS_E_NOT_SUPPORTED",
+      "Message": "The operation is not supported by the object.",
+      "DecimalCode": -2147212288,
+      "HexCode": "0x80042400",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INITIALIZED_FAILED",
+      "Message": "The service failed to initialize.",
+      "DecimalCode": -2147212287,
+      "HexCode": "0x80042401",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INITIALIZE_NOT_CALLED",
+      "Message": "The initialization method was not called.",
+      "DecimalCode": -2147212286,
+      "HexCode": "0x80042402",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ALREADY_REGISTERED",
+      "Message": "The provider is already registered.",
+      "DecimalCode": -2147212285,
+      "HexCode": "0x80042403",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ANOTHER_CALL_IN_PROGRESS",
+      "Message": "A concurrent second call is made on an object before the first is completed.",
+      "DecimalCode": -2147212284,
+      "HexCode": "0x80042404",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OBJECT_NOT_FOUND",
+      "Message": "The object is not found.",
+      "DecimalCode": -2147212283,
+      "HexCode": "0x80042405",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_SPACE",
+      "Message": "The specified space is not free or not valid.",
+      "DecimalCode": -2147212282,
+      "HexCode": "0x80042406",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_LIMIT_REACHED",
+      "Message": "The number of partitions has reached the limit on a disk.",
+      "DecimalCode": -2147212281,
+      "HexCode": "0x80042407",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_NOT_EMPTY",
+      "Message": "The extended partition is not empty.",
+      "DecimalCode": -2147212280,
+      "HexCode": "0x80042408",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OPERATION_PENDING",
+      "Message": "The operation has not been completed yet.",
+      "DecimalCode": -2147212279,
+      "HexCode": "0x80042409",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OPERATION_DENIED",
+      "Message": "This operation is not allowed on the current boot, system or pagefile volume. It is also not allowed on any volume on a basic MBR disk that contains the boot, system or pagefile volume.",
+      "DecimalCode": -2147212278,
+      "HexCode": "0x8004240A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OBJECT_DELETED",
+      "Message": "The object has been deleted.",
+      "DecimalCode": -2147212277,
+      "HexCode": "0x8004240B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CANCEL_TOO_LATE",
+      "Message": "The operation cannot be cancelled.",
+      "DecimalCode": -2147212276,
+      "HexCode": "0x8004240C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OPERATION_CANCELED",
+      "Message": "The operation has been cancelled.",
+      "DecimalCode": -2147212275,
+      "HexCode": "0x8004240D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CANNOT_EXTEND",
+      "Message": "The volume cannot be extended because the file system does not support it.",
+      "DecimalCode": -2147212274,
+      "HexCode": "0x8004240E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NOT_ENOUGH_SPACE",
+      "Message": "There is not enough usable space for this operation.",
+      "DecimalCode": -2147212273,
+      "HexCode": "0x8004240F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NOT_ENOUGH_DRIVE",
+      "Message": "Not enough drives are specified to complete this operation.",
+      "DecimalCode": -2147212272,
+      "HexCode": "0x80042410",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BAD_COOKIE",
+      "Message": "The cookie is not found.",
+      "DecimalCode": -2147212271,
+      "HexCode": "0x80042411",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_MEDIA",
+      "Message": "There is no media in the device.",
+      "DecimalCode": -2147212270,
+      "HexCode": "0x80042412",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DEVICE_IN_USE",
+      "Message": "The device is in use.",
+      "DecimalCode": -2147212269,
+      "HexCode": "0x80042413",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_EMPTY",
+      "Message": "The disk is not empty.",
+      "DecimalCode": -2147212268,
+      "HexCode": "0x80042414",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_OPERATION",
+      "Message": "Invalid operation.",
+      "DecimalCode": -2147212267,
+      "HexCode": "0x80042415",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PATH_NOT_FOUND",
+      "Message": "The path is not found.",
+      "DecimalCode": -2147212266,
+      "HexCode": "0x80042416",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_INITIALIZED",
+      "Message": "The disk is not initialized.",
+      "DecimalCode": -2147212265,
+      "HexCode": "0x80042417",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NOT_AN_UNALLOCATED_DISK",
+      "Message": "The disk is not unallocated.",
+      "DecimalCode": -2147212264,
+      "HexCode": "0x80042418",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_UNRECOVERABLE_ERROR",
+      "Message": "An unrecoverable error occurred. The service must shut down.",
+      "DecimalCode": -2147212263,
+      "HexCode": "0x80042419",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_DISK_PARTIALLY_CLEANED",
+      "Message": "The disk is not fully cleaned due to I/O error.",
+      "DecimalCode": 271386,
+      "HexCode": "0x0004241A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DMADMIN_SERVICE_CONNECTION_FAILED",
+      "Message": "The provider failed to connect to the Logical Disk Management Administrative service.",
+      "DecimalCode": -2147212261,
+      "HexCode": "0x8004241B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_INITIALIZATION_FAILED",
+      "Message": "The provider failed to initialize.",
+      "DecimalCode": -2147212260,
+      "HexCode": "0x8004241C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OBJECT_EXISTS",
+      "Message": "The object already exists.",
+      "DecimalCode": -2147212259,
+      "HexCode": "0x8004241D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_DISKS_FOUND",
+      "Message": "No disks were found on the target machine.",
+      "DecimalCode": -2147212258,
+      "HexCode": "0x8004241E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_CACHE_CORRUPT",
+      "Message": "The provider\u0027s cache has become corrupt.",
+      "DecimalCode": -2147212257,
+      "HexCode": "0x8004241F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DMADMIN_METHOD_CALL_FAILED",
+      "Message": "A method call to the Logical Disk Management Administrative service failed.",
+      "DecimalCode": -2147212256,
+      "HexCode": "0x80042420",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_PROVIDER_ERROR_LOADING_CACHE",
+      "Message": "The provider encountered errors while loading the cache. See the NT Event Log for more information.",
+      "DecimalCode": 271393,
+      "HexCode": "0x00042421",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_VOL_DEVICE_NAME_NOT_FOUND",
+      "Message": "The device form of the volume pathname could not be retrieved.",
+      "DecimalCode": -2147212254,
+      "HexCode": "0x80042422",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_VOL_OPEN",
+      "Message": "Failed to open the volume device.",
+      "DecimalCode": -2147212253,
+      "HexCode": "0x80042423",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DMADMIN_CORRUPT_NOTIFICATION",
+      "Message": "A corrupt notification was sent from the Logical Disk Manager Administrative service.",
+      "DecimalCode": -2147212252,
+      "HexCode": "0x80042424",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INCOMPATIBLE_FILE_SYSTEM",
+      "Message": "The file system is incompatible.",
+      "DecimalCode": -2147212251,
+      "HexCode": "0x80042425",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INCOMPATIBLE_MEDIA",
+      "Message": "The media is incompatible.",
+      "DecimalCode": -2147212250,
+      "HexCode": "0x80042426",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ACCESS_DENIED",
+      "Message": "Access is denied.",
+      "DecimalCode": -2147212249,
+      "HexCode": "0x80042427",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MEDIA_WRITE_PROTECTED",
+      "Message": "The media is write protected.",
+      "DecimalCode": -2147212248,
+      "HexCode": "0x80042428",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BAD_LABEL",
+      "Message": "The label is illegal.",
+      "DecimalCode": -2147212247,
+      "HexCode": "0x80042429",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CANT_QUICK_FORMAT",
+      "Message": "Can not quick format the volume.",
+      "DecimalCode": -2147212246,
+      "HexCode": "0x8004242A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_IO_ERROR",
+      "Message": "IO error occured during format.",
+      "DecimalCode": -2147212245,
+      "HexCode": "0x8004242B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_TOO_SMALL",
+      "Message": "The volume size is too small.",
+      "DecimalCode": -2147212244,
+      "HexCode": "0x8004242C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_TOO_BIG",
+      "Message": "The volume size is too big.",
+      "DecimalCode": -2147212243,
+      "HexCode": "0x8004242D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLUSTER_SIZE_TOO_SMALL",
+      "Message": "The cluster size is too small.",
+      "DecimalCode": -2147212242,
+      "HexCode": "0x8004242E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLUSTER_SIZE_TOO_BIG",
+      "Message": "The cluster size is too big.",
+      "DecimalCode": -2147212241,
+      "HexCode": "0x8004242F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLUSTER_COUNT_BEYOND_32BITS",
+      "Message": "The number of clusters is too big for 32 bit integer.",
+      "DecimalCode": -2147212240,
+      "HexCode": "0x80042430",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OBJECT_STATUS_FAILED",
+      "Message": "The object is in failed status.",
+      "DecimalCode": -2147212239,
+      "HexCode": "0x80042431",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_INCOMPLETE",
+      "Message": "All extents for the volume could not be found.",
+      "DecimalCode": -2147212238,
+      "HexCode": "0x80042432",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_EXTENT_SIZE_LESS_THAN_MIN",
+      "Message": "The size of the extent is less than the minimum.",
+      "DecimalCode": -2147212237,
+      "HexCode": "0x80042433",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_UPDATE_BOOTFILE_FAILED",
+      "Message": "Failed to update the boot configuration data.",
+      "DecimalCode": 271412,
+      "HexCode": "0x00042434",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_BOOT_PARTITION_NUMBER_CHANGE",
+      "Message": "The boot partition\u0027s partition number will change as a result of the operation.",
+      "DecimalCode": 271414,
+      "HexCode": "0x00042436",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BOOT_PARTITION_NUMBER_CHANGE",
+      "Message": "The boot partition\u0027s partition number will change as a result of the migration operation.",
+      "DecimalCode": -2147212234,
+      "HexCode": "0x80042436",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_FREE_SPACE",
+      "Message": "The selected disk does not have enough free space to complete the operation.",
+      "DecimalCode": -2147212233,
+      "HexCode": "0x80042437",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ACTIVE_PARTITION",
+      "Message": "An active partition was detected on the selected disk, and it is not the active partition used to boot the currently running OS.",
+      "DecimalCode": -2147212232,
+      "HexCode": "0x80042438",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_OF_UNKNOWN_TYPE",
+      "Message": "Cannot read partition information.",
+      "DecimalCode": -2147212231,
+      "HexCode": "0x80042439",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LEGACY_VOLUME_FORMAT",
+      "Message": "A partition with an unknown type was detected on the selected disk.",
+      "DecimalCode": -2147212230,
+      "HexCode": "0x8004243A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NON_CONTIGUOUS_DATA_PARTITIONS",
+      "Message": "The selected GPT formatted disk contains a partition which is not of type \u0027PARTITION_BASIC_DATA_GUID\u0027, and is both preceeded and followed by a partition of type \u0027PARTITION_BASIC_DATA_GUID\u0027.",
+      "DecimalCode": -2147212229,
+      "HexCode": "0x8004243B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MIGRATE_OPEN_VOLUME",
+      "Message": "A volume on the selected disk could not be opened.",
+      "DecimalCode": -2147212228,
+      "HexCode": "0x8004243C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_NOT_ONLINE",
+      "Message": "The volume is not online.",
+      "DecimalCode": -2147212227,
+      "HexCode": "0x8004243D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_NOT_HEALTHY",
+      "Message": "The volume is not healthy.",
+      "DecimalCode": -2147212226,
+      "HexCode": "0x8004243E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SPANS_DISKS",
+      "Message": "The volume spans multiple disks.",
+      "DecimalCode": -2147212225,
+      "HexCode": "0x8004243F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REQUIRES_CONTIGUOUS_DISK_SPACE",
+      "Message": "The volume requires contiguous disk extents.",
+      "DecimalCode": -2147212224,
+      "HexCode": "0x80042440",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BAD_PROVIDER_DATA",
+      "Message": "A provider returned bad data.",
+      "DecimalCode": -2147212223,
+      "HexCode": "0x80042441",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_FAILURE",
+      "Message": "A provider failed to complete an operation.",
+      "DecimalCode": -2147212222,
+      "HexCode": "0x80042442",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_VOLUME_COMPRESS_FAILED",
+      "Message": "Failed to compress the volume.",
+      "DecimalCode": 271427,
+      "HexCode": "0x00042443",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PACK_OFFLINE",
+      "Message": "The pack is not online.",
+      "DecimalCode": -2147212220,
+      "HexCode": "0x80042444",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_NOT_A_MIRROR",
+      "Message": "The volume is not a mirror.",
+      "DecimalCode": -2147212219,
+      "HexCode": "0x80042445",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_EXTENTS_FOR_VOLUME",
+      "Message": "No extents were found for the volume.",
+      "DecimalCode": -2147212218,
+      "HexCode": "0x80042446",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_LOADED_TO_CACHE",
+      "Message": "The disk failed to load to the cache.",
+      "DecimalCode": -2147212217,
+      "HexCode": "0x80042447",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INTERNAL_ERROR",
+      "Message": "Check the event log for errors.",
+      "DecimalCode": -2147212216,
+      "HexCode": "0x80042448",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_ACCESS_PATH_NOT_DELETED",
+      "Message": "The access paths on the volume may not be deleted.",
+      "DecimalCode": 279108,
+      "HexCode": "0x00044244",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_TYPE_NOT_SUPPORTED",
+      "Message": "The method call is not supported for the specified provider type.",
+      "DecimalCode": -2147212214,
+      "HexCode": "0x8004244A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_ONLINE",
+      "Message": "This disk is already offline.",
+      "DecimalCode": -2147212213,
+      "HexCode": "0x8004244B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_IN_USE_BY_VOLUME",
+      "Message": "The disk is already in use by the volume.",
+      "DecimalCode": -2147212212,
+      "HexCode": "0x8004244C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_IN_PROGRESS",
+      "Message": "The asynchronous operation is in progress.",
+      "DecimalCode": 271437,
+      "HexCode": "0x0004244D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ASYNC_OBJECT_FAILURE",
+      "Message": "Failure initializing the asynchronous object.",
+      "DecimalCode": -2147212210,
+      "HexCode": "0x8004244E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_NOT_MOUNTED",
+      "Message": "A file system is not mounted on the volume.",
+      "DecimalCode": -2147212209,
+      "HexCode": "0x8004244F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PACK_NOT_FOUND",
+      "Message": "The pack was not found.",
+      "DecimalCode": -2147212208,
+      "HexCode": "0x80042450",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_IMPORT_SET_INCOMPLETE",
+      "Message": "Import failed. Attempt to import a subset of the disks in the foreign pack.",
+      "DecimalCode": -2147212207,
+      "HexCode": "0x80042451",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_IMPORTED",
+      "Message": "A disk in the import\u0027s source pack was not imported.",
+      "DecimalCode": -2147212206,
+      "HexCode": "0x80042452",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OBJECT_OUT_OF_SYNC",
+      "Message": "The system\u0027s information about the object may not be up to date.",
+      "DecimalCode": -2147212205,
+      "HexCode": "0x80042453",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MISSING_DISK",
+      "Message": "The disk is missing.",
+      "DecimalCode": -2147212204,
+      "HexCode": "0x80042454",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_PNP_REG_CORRUPT",
+      "Message": "The provider\u0027s list of Pnp registered disks has become corrupt.",
+      "DecimalCode": -2147212203,
+      "HexCode": "0x80042455",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LBN_REMAP_ENABLED_FLAG",
+      "Message": "The provider does not support the LBN REMAP ENABLED volume flag.",
+      "DecimalCode": -2147212202,
+      "HexCode": "0x80042456",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_DRIVELETTER_FLAG",
+      "Message": "The provider does not support the NO DRIVELETTER volume flag.",
+      "DecimalCode": -2147212201,
+      "HexCode": "0x80042457",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REVERT_ON_CLOSE",
+      "Message": "REVERT ON CLOSE may only be used with GPT flags HIDDEN, READ ONLY, NO DRIVE LETTER or SHADOW COPY.",
+      "DecimalCode": -2147212200,
+      "HexCode": "0x80042458",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REVERT_ON_CLOSE_SET",
+      "Message": "The REVERT ON CLOSE volume flag is already set for this volume.",
+      "DecimalCode": -2147212199,
+      "HexCode": "0x80042459",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_IA64_BOOT_MIRRORED_TO_MBR",
+      "Message": "Not used! You have mirrored your boot volume on a GPT disk, to an MBR disk. You will not be able to boot your machine from the secondary plex.",
+      "DecimalCode": -2147212198,
+      "HexCode": "0x8004245A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_IA64_BOOT_MIRRORED_TO_MBR",
+      "Message": "You have mirrored your boot volume on a GPT disk, to an MBR disk. You will not be able to boot your machine from the secondary plex.",
+      "DecimalCode": 271450,
+      "HexCode": "0x0004245A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_UNABLE_TO_GET_GPT_ATTRIBUTES",
+      "Message": "Unable to retrieve the GPT attributes for this volume, (hidden, read only and no drive letter).",
+      "DecimalCode": 271451,
+      "HexCode": "0x0004245B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_TEMPORARILY_DISMOUNTED",
+      "Message": "The volume is temporarily dismounted.",
+      "DecimalCode": -2147212196,
+      "HexCode": "0x8004245C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_PERMANENTLY_DISMOUNTED",
+      "Message": "The volume is permanently dismounted.",
+      "DecimalCode": -2147212195,
+      "HexCode": "0x8004245D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_HAS_PATH",
+      "Message": "The volume still has access path to it.",
+      "DecimalCode": -2147212194,
+      "HexCode": "0x8004245E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_TIMEOUT",
+      "Message": "The operation timed out.",
+      "DecimalCode": -2147212193,
+      "HexCode": "0x8004245F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REPAIR_VOLUMESTATE",
+      "Message": "To repair a volume, both the volume and plex must be online, and must not be healthy or rebuilding.",
+      "DecimalCode": -2147212192,
+      "HexCode": "0x80042460",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LDM_TIMEOUT",
+      "Message": "The operation timed out in the Logical Disk Manager Administrative service. Retry the operation.",
+      "DecimalCode": -2147212191,
+      "HexCode": "0x80042461",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REVERT_ON_CLOSE_MISMATCH",
+      "Message": "When clearing volume flags that have been set using revert on close, the same combination of HIDDEN, READ ONLY, NO DRIVE LETTER or SHADOW COPY flags must be passed to both the SetFlags and ClearFlags calls.",
+      "DecimalCode": -2147212190,
+      "HexCode": "0x80042462",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_RETRY",
+      "Message": "The operation failed. Retry the operation.",
+      "DecimalCode": -2147212189,
+      "HexCode": "0x80042463",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ONLINE_PACK_EXISTS",
+      "Message": "Create pack operation failed. An online pack already exists.",
+      "DecimalCode": -2147212188,
+      "HexCode": "0x80042464",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_EXTEND_FILE_SYSTEM_FAILED",
+      "Message": "The volume was extended successfully but the file system failed to extend.",
+      "DecimalCode": 271461,
+      "HexCode": "0x00042465",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_EXTEND_FILE_SYSTEM_FAILED",
+      "Message": "The file system failed to extend.",
+      "DecimalCode": -2147212186,
+      "HexCode": "0x80042466",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_MBR_BOOT_MIRRORED_TO_GPT",
+      "Message": "You have mirrored your boot volume on an MBR disk, to a GPT disk. You will not be able to boot your machine from the secondary plex.",
+      "DecimalCode": 271463,
+      "HexCode": "0x00042467",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MAX_USABLE_MBR",
+      "Message": "Only the first 2TB are usable on large MBR disks. Cannot create partitions beyond the 2TB mark, nor convert the disk to dynamic.",
+      "DecimalCode": -2147212184,
+      "HexCode": "0x80042468",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_GPT_BOOT_MIRRORED_TO_MBR",
+      "Message": "You have mirrored your boot volume on a GPT disk, to an MBR disk. You will not be able to boot your machine from the secondary plex.",
+      "DecimalCode": -2147212183,
+      "HexCode": "0x80042469",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_SOFTWARE_PROVIDERS_LOADED",
+      "Message": "There are no software provders loaded.",
+      "DecimalCode": -2147212032,
+      "HexCode": "0x80042500",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_MISSING",
+      "Message": "The disk is not missing.",
+      "DecimalCode": -2147212031,
+      "HexCode": "0x80042501",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_VOLUME_LAYOUT",
+      "Message": "Failed to retrieve the volume\u0027s layout. Operations on the volume will fail.",
+      "DecimalCode": -2147212030,
+      "HexCode": "0x80042502",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CORRUPT_VOLUME_INFO",
+      "Message": "The volume\u0027s driver information is corrupt. Operations on the volume will fail.",
+      "DecimalCode": -2147212029,
+      "HexCode": "0x80042503",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_ENUMERATOR",
+      "Message": "The enumerator is corrupted.",
+      "DecimalCode": -2147212028,
+      "HexCode": "0x80042504",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DRIVER_INTERNAL_ERROR",
+      "Message": "Internal error in the volume management driver.",
+      "DecimalCode": -2147212027,
+      "HexCode": "0x80042505",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_INVALID_NAME",
+      "Message": "The volume name is invalid.",
+      "DecimalCode": -2147212025,
+      "HexCode": "0x80042507",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_DISK_IS_MISSING",
+      "Message": "The disk is missing, not all information could be returned.",
+      "DecimalCode": 271624,
+      "HexCode": "0x00042508",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CORRUPT_PARTITION_INFO",
+      "Message": "The disk\u0027s partition information is corrupted.",
+      "DecimalCode": -2147212023,
+      "HexCode": "0x80042509",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_NONCONFORMANT_PARTITION_INFO",
+      "Message": "The disk\u0027s partition information is does not conform to that expected on a dynamic disk.",
+      "DecimalCode": 271626,
+      "HexCode": "0x0004250A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CORRUPT_EXTENT_INFO",
+      "Message": "The disk\u0027s extent information is corrupted.",
+      "DecimalCode": -2147212021,
+      "HexCode": "0x8004250B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DUP_EMPTY_PACK_GUID",
+      "Message": "An empty pack already exists. Release the existing empty pack before creating another empty pack.",
+      "DecimalCode": -2147212020,
+      "HexCode": "0x8004250C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DRIVER_NO_PACK_NAME",
+      "Message": "The volume management driver did not return a pack name. Internal driver error.",
+      "DecimalCode": -2147212019,
+      "HexCode": "0x8004250D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_SYSTEM_PARTITION",
+      "Message": "Warning, there was a failure while checking for the system partition.",
+      "DecimalCode": 271630,
+      "HexCode": "0x0004250E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BAD_PNP_MESSAGE",
+      "Message": "The PNP service sent a corrupted notification to the provider.",
+      "DecimalCode": -2147212017,
+      "HexCode": "0x8004250F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_PNP_DISK_ARRIVE",
+      "Message": "No disk arrival notification was received.",
+      "DecimalCode": -2147212016,
+      "HexCode": "0x80042510",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_PNP_VOLUME_ARRIVE",
+      "Message": "No volume arrival notification was received.",
+      "DecimalCode": -2147212015,
+      "HexCode": "0x80042511",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_PNP_DISK_REMOVE",
+      "Message": "No disk removal notification was received.",
+      "DecimalCode": -2147212014,
+      "HexCode": "0x80042512",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_PNP_VOLUME_REMOVE",
+      "Message": "No volume removal notification was received.",
+      "DecimalCode": -2147212013,
+      "HexCode": "0x80042513",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_EXITING",
+      "Message": "The provider is exiting.",
+      "DecimalCode": -2147212012,
+      "HexCode": "0x80042514",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_EXTENT_EXCEEDS_DISK_FREE_SPACE",
+      "Message": "The specified disk extent size exceeds the size of free disk space.",
+      "DecimalCode": -2147212011,
+      "HexCode": "0x80042515",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MEMBER_SIZE_INVALID",
+      "Message": "The size of the plex member is invalid.",
+      "DecimalCode": -2147212010,
+      "HexCode": "0x80042516",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_NO_NOTIFICATION",
+      "Message": "No volume arrival notification was received. Refresh the Disk Management display.",
+      "DecimalCode": 271639,
+      "HexCode": "0x00042517",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_DEFAULT_PLEX_MEMBER_IDS",
+      "Message": "Defaults have been used for the member ids or plex ids.",
+      "DecimalCode": 271640,
+      "HexCode": "0x00042518",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_DISK",
+      "Message": "This operation is not allowed on an invalid disk. The disk may be invalid because it is corrupted or failing, or it may be invalid because it is OFFLINE.",
+      "DecimalCode": -2147212007,
+      "HexCode": "0x80042519",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PACK",
+      "Message": "This operation is not allowed on the invalid disk pack.",
+      "DecimalCode": -2147212006,
+      "HexCode": "0x8004251A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_ON_DISK",
+      "Message": "This operation is not allowed on disks with volumes.",
+      "DecimalCode": -2147212005,
+      "HexCode": "0x8004251B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DRIVER_INVALID_PARAM",
+      "Message": "The driver returned an invalid parameter error.",
+      "DecimalCode": -2147212004,
+      "HexCode": "0x8004251C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_TARGET_PACK_NOT_EMPTY",
+      "Message": "The target pack is not empty.",
+      "DecimalCode": -2147212003,
+      "HexCode": "0x8004251D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CANNOT_SHRINK",
+      "Message": "The volume cannot be shrunk because the file system does not support it.",
+      "DecimalCode": -2147212002,
+      "HexCode": "0x8004251E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MULTIPLE_PACKS",
+      "Message": "Specified disks are not all from the same pack.",
+      "DecimalCode": -2147212001,
+      "HexCode": "0x8004251F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PACK_ONLINE",
+      "Message": "This operation is not allowed on online packs. The pack must be offline.",
+      "DecimalCode": -2147212000,
+      "HexCode": "0x80042520",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PLEX_COUNT",
+      "Message": "The plex count for the volume must be non-zero.",
+      "DecimalCode": -2147211999,
+      "HexCode": "0x80042521",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_MEMBER_COUNT",
+      "Message": "The member count for the volume must be non-zero.",
+      "DecimalCode": -2147211998,
+      "HexCode": "0x80042522",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PLEX_ORDER",
+      "Message": "The plex indexes must be monotonically increasing and begin with zero.",
+      "DecimalCode": -2147211997,
+      "HexCode": "0x80042523",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_MEMBER_ORDER",
+      "Message": "The member indexes must be monotonically increasing and begin with zero.",
+      "DecimalCode": -2147211996,
+      "HexCode": "0x80042524",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_STRIPE_SIZE",
+      "Message": "The stripe size must be a multiple of 2, between 512 bytes and 1 MB, for stripe and raid5 volumes. The stripe size must be zero for other volume types.",
+      "DecimalCode": -2147211995,
+      "HexCode": "0x80042525",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_DISK_COUNT",
+      "Message": "The number of disks specified is invalid for this operation.",
+      "DecimalCode": -2147211994,
+      "HexCode": "0x80042526",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_EXTENT_COUNT",
+      "Message": "An invalid number of extents was specified for at least one disk.",
+      "DecimalCode": -2147211993,
+      "HexCode": "0x80042527",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SOURCE_IS_TARGET_PACK",
+      "Message": "The source and target packs must be distinct.",
+      "DecimalCode": -2147211992,
+      "HexCode": "0x80042528",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_DISK_COUNT_MAX_EXCEEDED",
+      "Message": "The disk count for the volume exceeds the maximum.",
+      "DecimalCode": -2147211991,
+      "HexCode": "0x80042529",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CORRUPT_NOTIFICATION_INFO",
+      "Message": "The driver\u0027s notification info is corrupt.",
+      "DecimalCode": -2147211990,
+      "HexCode": "0x8004252A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PLEX_GUID",
+      "Message": "GUID_NULL is not a valid plex GUID.",
+      "DecimalCode": -2147211988,
+      "HexCode": "0x8004252C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_FOUND_IN_PACK",
+      "Message": "The specified disks do not belong to the same pack.",
+      "DecimalCode": -2147211987,
+      "HexCode": "0x8004252D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DUPLICATE_DISK",
+      "Message": "The same disk was specified more than once.",
+      "DecimalCode": -2147211986,
+      "HexCode": "0x8004252E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LAST_VALID_DISK",
+      "Message": "The operation cannot be completed because there is only one valid disk in the pack.",
+      "DecimalCode": -2147211985,
+      "HexCode": "0x8004252F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_SECTOR_SIZE",
+      "Message": "All disks holding extents for a given volume must have the same sector size, and the sector size must be valid.",
+      "DecimalCode": -2147211984,
+      "HexCode": "0x80042530",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ONE_EXTENT_PER_DISK",
+      "Message": "This call requires the parameters to specify one extent per disk. A single disk cannot contribute to multiple members or plexes of the same volume.",
+      "DecimalCode": -2147211983,
+      "HexCode": "0x80042531",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_BLOCK_SIZE",
+      "Message": "Neither the volume stripe size or disk sector size was found to be non-zero.",
+      "DecimalCode": -2147211982,
+      "HexCode": "0x80042532",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PLEX_SIZE_INVALID",
+      "Message": "The size of the volume plex is invalid.",
+      "DecimalCode": -2147211981,
+      "HexCode": "0x80042533",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_EXTENTS_FOR_PLEX",
+      "Message": "No extents were found for the plex.",
+      "DecimalCode": -2147211980,
+      "HexCode": "0x80042534",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PLEX_TYPE",
+      "Message": "The plex type is invalid.",
+      "DecimalCode": -2147211979,
+      "HexCode": "0x80042535",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PLEX_BLOCK_SIZE",
+      "Message": "The plex block size must be non-zero.",
+      "DecimalCode": -2147211978,
+      "HexCode": "0x80042536",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_HEALTHY_DISKS",
+      "Message": "All of the disks involved in the operation are either missing or failed.",
+      "DecimalCode": -2147211977,
+      "HexCode": "0x80042537",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CONFIG_LIMIT",
+      "Message": "The Logical Disk Manangement database is full, no more volumes or disks may be configured.",
+      "DecimalCode": -2147211976,
+      "HexCode": "0x80042538",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_CONFIGURATION_CORRUPTED",
+      "Message": "The disk configuration data is corrupted.",
+      "DecimalCode": -2147211975,
+      "HexCode": "0x80042539",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_CONFIGURATION_NOT_IN_SYNC",
+      "Message": "The disk configuration is not insync with the in-memory configuration.",
+      "DecimalCode": -2147211974,
+      "HexCode": "0x8004253A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_CONFIGURATION_UPDATE_FAILED",
+      "Message": "One or more disks failed to be updated with the new configuration.",
+      "DecimalCode": -2147211973,
+      "HexCode": "0x8004253B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_DYNAMIC",
+      "Message": "The disk is already dynamic.",
+      "DecimalCode": -2147211972,
+      "HexCode": "0x8004253C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DRIVER_OBJECT_NOT_FOUND",
+      "Message": "The object was not found in the driver cache.",
+      "DecimalCode": -2147211971,
+      "HexCode": "0x8004253D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_NOT_CYLINDER_ALIGNED",
+      "Message": "The disk layout contains partitions which are not cylinder aligned.",
+      "DecimalCode": -2147211970,
+      "HexCode": "0x8004253E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_LAYOUT_PARTITIONS_TOO_SMALL",
+      "Message": "The disk layout contains partitions which less than the minimum required size.",
+      "DecimalCode": -2147211969,
+      "HexCode": "0x8004253F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_IO_FAILING",
+      "Message": "The IO to the disk is failing.",
+      "DecimalCode": -2147211968,
+      "HexCode": "0x80042540",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DYNAMIC_DISKS_NOT_SUPPORTED",
+      "Message": "Dynamic disks are not supported by this operating system or server configuration. Dynamic disks are not supported on clusters.",
+      "DecimalCode": -2147211967,
+      "HexCode": "0x80042541",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FAULT_TOLERANT_DISKS_NOT_SUPPORTED",
+      "Message": "The fault tolerant disks are not supported by this operating system.",
+      "DecimalCode": -2147211966,
+      "HexCode": "0x80042542",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_GPT_ATTRIBUTES_INVALID",
+      "Message": "Invalid GPT attributes were specified.",
+      "DecimalCode": -2147211965,
+      "HexCode": "0x80042543",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MEMBER_IS_HEALTHY",
+      "Message": "The member is not stale or detached.",
+      "DecimalCode": -2147211964,
+      "HexCode": "0x80042544",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MEMBER_REGENERATING",
+      "Message": "The member is regenerating.",
+      "DecimalCode": -2147211963,
+      "HexCode": "0x80042545",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PACK_NAME_INVALID",
+      "Message": "The pack name is invalid.",
+      "DecimalCode": -2147211962,
+      "HexCode": "0x80042546",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PLEX_IS_HEALTHY",
+      "Message": "The plex is not stale or detached.",
+      "DecimalCode": -2147211961,
+      "HexCode": "0x80042547",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PLEX_LAST_ACTIVE",
+      "Message": "The last healthy plex cannot be removed.",
+      "DecimalCode": -2147211960,
+      "HexCode": "0x80042548",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PLEX_MISSING",
+      "Message": "The plex is missing.",
+      "DecimalCode": -2147211959,
+      "HexCode": "0x80042549",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MEMBER_MISSING",
+      "Message": "The member is missing.",
+      "DecimalCode": -2147211958,
+      "HexCode": "0x8004254A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PLEX_REGENERATING",
+      "Message": "The plex is regenerating.",
+      "DecimalCode": -2147211957,
+      "HexCode": "0x8004254B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_UNEXPECTED_DISK_LAYOUT_CHANGE",
+      "Message": "An unexpected layout change occurred external to the volume manager.",
+      "DecimalCode": -2147211955,
+      "HexCode": "0x8004254D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_VOLUME_LENGTH",
+      "Message": "The volume length is invalid.",
+      "DecimalCode": -2147211954,
+      "HexCode": "0x8004254E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_LENGTH_NOT_SECTOR_SIZE_MULTIPLE",
+      "Message": "The volume length is not a multiple of the sector size.",
+      "DecimalCode": -2147211953,
+      "HexCode": "0x8004254F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_NOT_RETAINED",
+      "Message": "The volume does not have a retained partition association.",
+      "DecimalCode": -2147211952,
+      "HexCode": "0x80042550",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_RETAINED",
+      "Message": "The volume already has a retained partition association.",
+      "DecimalCode": -2147211951,
+      "HexCode": "0x80042551",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ALIGN_BEYOND_FIRST_CYLINDER",
+      "Message": "The specified alignment is beyond the first cylinder.",
+      "DecimalCode": -2147211949,
+      "HexCode": "0x80042553",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ALIGN_NOT_SECTOR_SIZE_MULTIPLE",
+      "Message": "The specified alignment is not a multiple of the sector size.",
+      "DecimalCode": -2147211948,
+      "HexCode": "0x80042554",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ALIGN_NOT_ZERO",
+      "Message": "The specified partition type cannot be created with a non-zero alignment.",
+      "DecimalCode": -2147211947,
+      "HexCode": "0x80042555",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CACHE_CORRUPT",
+      "Message": "The service\u0027s cache has become corrupt.",
+      "DecimalCode": -2147211946,
+      "HexCode": "0x80042556",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CANNOT_CLEAR_VOLUME_FLAG",
+      "Message": "The specified volume flag cannot be cleared.",
+      "DecimalCode": -2147211945,
+      "HexCode": "0x80042557",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_BEING_CLEANED",
+      "Message": "The operation is not allowed on a disk that is in the process of being cleaned.",
+      "DecimalCode": -2147211944,
+      "HexCode": "0x80042558",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_CONVERTIBLE",
+      "Message": "The specified disk is not convertible. CDROMs and DVDs are examples of disks that are not convertable.",
+      "DecimalCode": -2147211943,
+      "HexCode": "0x80042559",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_REMOVEABLE",
+      "Message": "The operation is not supported on removable media.",
+      "DecimalCode": -2147211942,
+      "HexCode": "0x8004255A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_REMOVEABLE_NOT_EMPTY",
+      "Message": "The operation is not supported on a non-empty removable disk.",
+      "DecimalCode": -2147211941,
+      "HexCode": "0x8004255B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DRIVE_LETTER_NOT_FREE",
+      "Message": "The specified drive letter is not free to be assigned.",
+      "DecimalCode": -2147211940,
+      "HexCode": "0x8004255C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_EXTEND_MULTIPLE_DISKS_NOT_SUPPORTED",
+      "Message": "Extending the volume onto multiple disks is not supported by this provider.",
+      "DecimalCode": -2147211939,
+      "HexCode": "0x8004255D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_DRIVE_LETTER",
+      "Message": "The specified drive letter is invalid.",
+      "DecimalCode": -2147211938,
+      "HexCode": "0x8004255E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_DRIVE_LETTER_COUNT",
+      "Message": "The specified number of drive letters to retrieve is invalid.",
+      "DecimalCode": -2147211937,
+      "HexCode": "0x8004255F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_FS_FLAG",
+      "Message": "The specified file system flag is invalid.",
+      "DecimalCode": -2147211936,
+      "HexCode": "0x80042560",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_FS_TYPE",
+      "Message": "The specified file system is invalid.",
+      "DecimalCode": -2147211935,
+      "HexCode": "0x80042561",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_OBJECT_TYPE",
+      "Message": "The specified object type is invalid.",
+      "DecimalCode": -2147211934,
+      "HexCode": "0x80042562",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PARTITION_LAYOUT",
+      "Message": "The specified partition layout is invalid.",
+      "DecimalCode": -2147211933,
+      "HexCode": "0x80042563",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PARTITION_STYLE",
+      "Message": "The specified disk\u0027s partition style is INVALID. VDS only supports MBR or GPT partition style disks.",
+      "DecimalCode": -2147211932,
+      "HexCode": "0x80042564",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PARTITION_TYPE",
+      "Message": "The specified partition type is not valid for this operation.",
+      "DecimalCode": -2147211931,
+      "HexCode": "0x80042565",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PROVIDER_CLSID",
+      "Message": "The specified provider clsid cannot be a NULL GUID.",
+      "DecimalCode": -2147211930,
+      "HexCode": "0x80042566",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PROVIDER_ID",
+      "Message": "The specified provider id cannot be a NULL GUID.",
+      "DecimalCode": -2147211929,
+      "HexCode": "0x80042567",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PROVIDER_NAME",
+      "Message": "The specified provider name is invalid.",
+      "DecimalCode": -2147211928,
+      "HexCode": "0x80042568",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PROVIDER_TYPE",
+      "Message": "The specified provider type is invalid.",
+      "DecimalCode": -2147211927,
+      "HexCode": "0x80042569",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PROVIDER_VERSION_GUID",
+      "Message": "The specified provider version GUID cannot be a NULL GUID.",
+      "DecimalCode": -2147211926,
+      "HexCode": "0x8004256A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PROVIDER_VERSION_STRING",
+      "Message": "The specified provider version string is invalid.",
+      "DecimalCode": -2147211925,
+      "HexCode": "0x8004256B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_QUERY_PROVIDER_FLAG",
+      "Message": "The specified query provider flag is invalid.",
+      "DecimalCode": -2147211924,
+      "HexCode": "0x8004256C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_SERVICE_FLAG",
+      "Message": "The specified service flag is invalid.",
+      "DecimalCode": -2147211923,
+      "HexCode": "0x8004256D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_VOLUME_FLAG",
+      "Message": "The specified volume flag is invalid.",
+      "DecimalCode": -2147211922,
+      "HexCode": "0x8004256E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_NOT_OEM",
+      "Message": "The operation is not supported on non-OEM partitions.",
+      "DecimalCode": -2147211921,
+      "HexCode": "0x8004256F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_PROTECTED",
+      "Message": "Cannot delete a protected partition without the force protected parameter set.",
+      "DecimalCode": -2147211920,
+      "HexCode": "0x80042570",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_STYLE_MISMATCH",
+      "Message": "The specified partition style does not match that of the disk.",
+      "DecimalCode": -2147211919,
+      "HexCode": "0x80042571",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_INTERNAL_ERROR",
+      "Message": "An internal error has occurred in the provider.",
+      "DecimalCode": -2147211918,
+      "HexCode": "0x80042572",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_SIZE_LESS_THAN_MIN",
+      "Message": "The specified shrink size is less than then minimum shrink size allowed.",
+      "DecimalCode": -2147211917,
+      "HexCode": "0x80042573",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_SIZE_TOO_BIG",
+      "Message": "The specified shrink size is too big and will cause the volume to be smaller than the minimum volume size.",
+      "DecimalCode": -2147211916,
+      "HexCode": "0x80042574",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_UNRECOVERABLE_PROVIDER_ERROR",
+      "Message": "An unrecoverable error occurred in a provider. The service must be shut down to regain full functionality.",
+      "DecimalCode": -2147211915,
+      "HexCode": "0x80042575",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_HIDDEN",
+      "Message": "Cannot assign a mount point to a hidden volume.",
+      "DecimalCode": -2147211914,
+      "HexCode": "0x80042576",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_DISMOUNT_FAILED",
+      "Message": "Failed to dismount the volume after setting the volume flags.",
+      "DecimalCode": 271735,
+      "HexCode": "0x00042577",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_REMOUNT_FAILED",
+      "Message": "Failed to remount the volume after setting the volume flags.",
+      "DecimalCode": 271736,
+      "HexCode": "0x00042578",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FLAG_ALREADY_SET",
+      "Message": "Can\u0027t set the specified flag as revert-on-close, because it is already set.",
+      "DecimalCode": -2147211911,
+      "HexCode": "0x80042579",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_RESYNC_NOTIFICATION_TASK_FAILED",
+      "Message": "Failure. If the volume is a mirror volume or a raid5 volume, no resynchronization notifications will be sent.",
+      "DecimalCode": 271738,
+      "HexCode": "0x0004257A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISTINCT_VOLUME",
+      "Message": "The input volume id cannot be the id of the volume that is the target of the operation.",
+      "DecimalCode": -2147211909,
+      "HexCode": "0x8004257B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_NOT_FOUND_IN_PACK",
+      "Message": "The specified volumes do not belong to the same pack.",
+      "DecimalCode": -2147211908,
+      "HexCode": "0x8004257C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_NON_DATA",
+      "Message": "The specified partition is a not a primary or logical volume.",
+      "DecimalCode": -2147211907,
+      "HexCode": "0x8004257D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CRITICAL_PLEX",
+      "Message": "The specified plex is a the current system or boot plex.",
+      "DecimalCode": -2147211906,
+      "HexCode": "0x8004257E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SYNCHRONIZING",
+      "Message": "The operation cannot be completed because the volume is synchronizing.",
+      "DecimalCode": -2147211905,
+      "HexCode": "0x8004257F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_REGENERATING",
+      "Message": "The operation cannot be completed because the volume is regenerating.",
+      "DecimalCode": -2147211904,
+      "HexCode": "0x80042580",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_VSS_FLUSH_AND_HOLD_WRITES",
+      "Message": "Failed to flush and hold Volume Snapshot Service writes.",
+      "DecimalCode": 271745,
+      "HexCode": "0x00042581",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_VSS_RELEASE_WRITES",
+      "Message": "Failed to release Volume Snapshot Service writes.",
+      "DecimalCode": 271746,
+      "HexCode": "0x00042582",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_FS_LOCK",
+      "Message": "Failed to obtain a file system lock.",
+      "DecimalCode": 271747,
+      "HexCode": "0x00042583",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_READONLY",
+      "Message": "The volume is read only.",
+      "DecimalCode": -2147211900,
+      "HexCode": "0x80042584",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_VOLUME_TYPE",
+      "Message": "The volume type is invalid for this operation.",
+      "DecimalCode": -2147211899,
+      "HexCode": "0x80042585",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BAD_BOOT_DISK",
+      "Message": "The boot disk experienced failures when the driver attempted to online the pack.",
+      "DecimalCode": -2147211898,
+      "HexCode": "0x80042586",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LOG_UPDATE",
+      "Message": "The driver failed to update the log on at least one disk.",
+      "DecimalCode": -2147211897,
+      "HexCode": "0x80042587",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_MIRRORED",
+      "Message": "This operation is not supported on a mirrored volume.",
+      "DecimalCode": -2147211896,
+      "HexCode": "0x80042588",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SIMPLE_SPANNED",
+      "Message": "This operation is only supported on simple or spanned volumes.",
+      "DecimalCode": -2147211895,
+      "HexCode": "0x80042589",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_VALID_LOG_COPIES",
+      "Message": "This pack has no valid log copies.",
+      "DecimalCode": -2147211894,
+      "HexCode": "0x8004258A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_PLEX_NOT_LOADED_TO_CACHE",
+      "Message": "This plex is present in the driver, but has not yet been loaded to the provider cache. A volume modified notification will be sent by the service once the plex has been loaded to the provider cache.",
+      "DecimalCode": 271755,
+      "HexCode": "0x0004258B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PLEX_NOT_LOADED_TO_CACHE",
+      "Message": "This plex is present in the driver, but has not yet been loaded to the provider cache. A volume modified notification will be sent by the service once the plex has been loaded to the provider cache.",
+      "DecimalCode": -2147211893,
+      "HexCode": "0x8004258B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_MSR",
+      "Message": "This operation is not supported on MSR partitions.",
+      "DecimalCode": -2147211892,
+      "HexCode": "0x8004258C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PARTITION_LDM",
+      "Message": "This operation is not supported on LDM partitions.",
+      "DecimalCode": -2147211891,
+      "HexCode": "0x8004258D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_WINPE_BOOTENTRY",
+      "Message": "The boot entries cannot be updated automatically on WinPE. You may need to manually update the boot entry for any installed operating systems.",
+      "DecimalCode": 271758,
+      "HexCode": "0x0004258E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ALIGN_NOT_A_POWER_OF_TWO",
+      "Message": "The specified alignment is not a power of two.",
+      "DecimalCode": -2147211889,
+      "HexCode": "0x8004258F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ALIGN_IS_ZERO",
+      "Message": "The specified alignment is zero.",
+      "DecimalCode": -2147211888,
+      "HexCode": "0x80042590",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_IN_PROGRESS",
+      "Message": "A defragmentation or volume shrink operation is already in progress. Only one of these operations can run at a time.",
+      "DecimalCode": -2147211887,
+      "HexCode": "0x80042591",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CANT_INVALIDATE_FVE",
+      "Message": "BitLocker encryption on the volume could not be removed.",
+      "DecimalCode": -2147211886,
+      "HexCode": "0x80042592",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FS_NOT_DETERMINED",
+      "Message": "The default file system could not be determined.",
+      "DecimalCode": -2147211885,
+      "HexCode": "0x80042593",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_OFFLINE",
+      "Message": "This disk is already online.",
+      "DecimalCode": -2147211883,
+      "HexCode": "0x80042595",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FAILED_TO_ONLINE_DISK",
+      "Message": "The online operation failed.",
+      "DecimalCode": -2147211882,
+      "HexCode": "0x80042596",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FAILED_TO_OFFLINE_DISK",
+      "Message": "The offline operation failed.",
+      "DecimalCode": -2147211881,
+      "HexCode": "0x80042597",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BAD_REVISION_NUMBER",
+      "Message": "The operation could not be completed because the specified revision number is not supported.",
+      "DecimalCode": -2147211880,
+      "HexCode": "0x80042598",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_USER_CANCELLED",
+      "Message": "The shrink operation was cancelled by the user.",
+      "DecimalCode": -2147211879,
+      "HexCode": "0x80042599",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_DIRTY_VOLUME",
+      "Message": "The volume you have selected to shrink may be corrupted. Use Chkdsk to fix the corruption problem, and then try to shrink the volume again.",
+      "DecimalCode": -2147211878,
+      "HexCode": "0x8004259A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_NAME_TRUNCATED",
+      "Message": "The name was accepted but had to be truncated.",
+      "DecimalCode": 272128,
+      "HexCode": "0x00042700",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NAME_NOT_UNIQUE",
+      "Message": "The name is not unique.",
+      "DecimalCode": -2147211519,
+      "HexCode": "0x80042701",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_STATUSES_INCOMPLETELY_SET",
+      "Message": "At least one path status is not set successfully due to a non-fatal error, for example the status conflicts with the current load balance policy.",
+      "DecimalCode": 272130,
+      "HexCode": "0x00042702",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ADDRESSES_INCOMPLETELY_SET",
+      "Message": "At least one portal\u0027s tunnel address is not set successfully.",
+      "DecimalCode": -2147211517,
+      "HexCode": "0x80042703",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SECURITY_INCOMPLETELY_SET",
+      "Message": "At least one portal\u0027s security settings are not set successfully.",
+      "DecimalCode": -2147211515,
+      "HexCode": "0x80042705",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_TARGET_SPECIFIC_NOT_SUPPORTED",
+      "Message": "The initiator does not support setting target-specific shared secrets.",
+      "DecimalCode": -2147211514,
+      "HexCode": "0x80042706",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INITIATOR_SPECIFIC_NOT_SUPPORTED",
+      "Message": "The target does not support setting initiator-specific shared secrets.",
+      "DecimalCode": -2147211513,
+      "HexCode": "0x80042707",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_LOGIN_FAILED",
+      "Message": "An iSCSI login session could not be established.",
+      "DecimalCode": -2147211512,
+      "HexCode": "0x80042708",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_LOGOUT_FAILED",
+      "Message": "The attempt to log out from the specified iSCSI session failed.",
+      "DecimalCode": -2147211511,
+      "HexCode": "0x80042709",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_SESSION_NOT_FOUND",
+      "Message": "The specified iSCSI session with a connection matching the specified target, target portal, and/or initiator portal could not be found.",
+      "DecimalCode": -2147211510,
+      "HexCode": "0x8004270A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ASSOCIATED_LUNS_EXIST",
+      "Message": "LUNs are associated with the specified target and must first be deassociated before the target can be deleted.",
+      "DecimalCode": -2147211509,
+      "HexCode": "0x8004270B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ASSOCIATED_PORTALS_EXIST",
+      "Message": "Portals are associated with the specified portal group and must first be deassociated before the portal group can be deleted.",
+      "DecimalCode": -2147211508,
+      "HexCode": "0x8004270C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_DISCOVERY_DOMAIN",
+      "Message": "The initiator does not exist in a iSNS discovery domain.",
+      "DecimalCode": -2147211507,
+      "HexCode": "0x8004270D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MULTIPLE_DISCOVERY_DOMAINS",
+      "Message": "The initiator exists in more than one iSNS discovery domain.",
+      "DecimalCode": -2147211506,
+      "HexCode": "0x8004270E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_DISK_PATHNAME",
+      "Message": "Failed to retrieve the disk\u0027s pathname. Some operations on the disk may fail.",
+      "DecimalCode": -2147211505,
+      "HexCode": "0x8004270F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_LOGOUT_INCOMPLETE",
+      "Message": "At least one session did not logout successfully.",
+      "DecimalCode": -2147211504,
+      "HexCode": "0x80042710",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_VOLUME_PATHNAME",
+      "Message": "Failed to retrieve the volume\u0027s pathname.",
+      "DecimalCode": -2147211503,
+      "HexCode": "0x80042711",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PROVIDER_CACHE_OUTOFSYNC",
+      "Message": "The provider\u0027s cache is not in-sync with the driver cache.",
+      "DecimalCode": -2147211502,
+      "HexCode": "0x80042712",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_IMPORT_TARGET",
+      "Message": "No import target was set for this subsystem in the registry.",
+      "DecimalCode": -2147211501,
+      "HexCode": "0x80042713",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_ALREADY_EXISTS",
+      "Message": "The object already exists and does not need to be further created or added.",
+      "DecimalCode": 272148,
+      "HexCode": "0x00042714",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_PROPERTIES_INCOMPLETE",
+      "Message": "Unable to retrieve all properties for this object. Some attributes may be incomplete or missing.",
+      "DecimalCode": 272149,
+      "HexCode": "0x00042715",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_ISCSI_SESSION_NOT_FOUND_PERSISTENT_LOGIN_REMOVED",
+      "Message": "No iSCSI sessions to the target were found, but the persistent login setup to the target was removed.",
+      "DecimalCode": 272384,
+      "HexCode": "0x00042800",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_ISCSI_PERSISTENT_LOGIN_MAY_NOT_BE_REMOVED",
+      "Message": "If a persistent login was set up for the target, it may not have been removed. Check the iSCSI Initiator Control Panel to remove it if necessary.",
+      "DecimalCode": 272385,
+      "HexCode": "0x00042801",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_ISCSI_LOGIN_ALREAD_EXISTS",
+      "Message": "Login failed because the target is already logged in.",
+      "DecimalCode": 272386,
+      "HexCode": "0x00042802",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_UNABLE_TO_FIND_BOOT_DISK",
+      "Message": "A system error occurred while retrieving the boot disk information.",
+      "DecimalCode": -2147211261,
+      "HexCode": "0x80042803",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INCORRECT_BOOT_VOLUME_EXTENT_INFO",
+      "Message": "Multiple disk extents reported for the boot volume - system error.",
+      "DecimalCode": -2147211260,
+      "HexCode": "0x80042804",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_GET_SAN_POLICY",
+      "Message": "A driver error was reported when getting the SAN policy.",
+      "DecimalCode": -2147211259,
+      "HexCode": "0x80042805",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SET_SAN_POLICY",
+      "Message": "A driver error was reported when setting the SAN policy.",
+      "DecimalCode": -2147211258,
+      "HexCode": "0x80042806",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BOOT_DISK",
+      "Message": "Disk attributes may not be changed on the boot disk.",
+      "DecimalCode": -2147211257,
+      "HexCode": "0x80042807",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_DISK_MOUNT_FAILED",
+      "Message": "Failed to mount one or more of the volumes on the disk.",
+      "DecimalCode": 272392,
+      "HexCode": "0x00042808",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_S_DISK_DISMOUNT_FAILED",
+      "Message": "Failed to dismount one or more of the volumes on the disk.",
+      "DecimalCode": 272393,
+      "HexCode": "0x00042809",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_IS_OFFLINE",
+      "Message": "The operation is not allowed on a disk that is offline.",
+      "DecimalCode": -2147211254,
+      "HexCode": "0x8004280A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_IS_READ_ONLY",
+      "Message": "The operation is not allowed on a disk that is read only.",
+      "DecimalCode": -2147211253,
+      "HexCode": "0x8004280B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_PAGEFILE_DISK",
+      "Message": "The operation is not allowed on a disk that contains a pagefile volume.",
+      "DecimalCode": -2147211252,
+      "HexCode": "0x8004280C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_HIBERNATION_FILE_DISK",
+      "Message": "The operation is not allowed on a disk that contains a hibernation file volume.",
+      "DecimalCode": -2147211251,
+      "HexCode": "0x8004280D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CRASHDUMP_DISK",
+      "Message": "The operation is not allowed on a disk that contains a crashdump file volume.",
+      "DecimalCode": -2147211250,
+      "HexCode": "0x8004280E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_UNABLE_TO_FIND_SYSTEM_DISK",
+      "Message": "A system error occurred while retrieving the system disk information.",
+      "DecimalCode": -2147211249,
+      "HexCode": "0x8004280F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INCORRECT_SYSTEM_VOLUME_EXTENT_INFO",
+      "Message": "Multiple disk extents reported for the system volume - system error.",
+      "DecimalCode": -2147211248,
+      "HexCode": "0x80042810",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SYSTEM_DISK",
+      "Message": "Disk attributes may not be changed on the current system disk or BIOS disk 0.",
+      "DecimalCode": -2147211247,
+      "HexCode": "0x80042811",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SHRINK_FVE_LOCKED",
+      "Message": "The volume could not be shrunk because it is locked by BitLocker. Unlock the volume and try again.",
+      "DecimalCode": -2147211246,
+      "HexCode": "0x80042812",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SHRINK_FVE_CORRUPT",
+      "Message": "The volume could not be shrunk because it is locked due to a BitLocker error. Use BitLocker tools to recover the volume and try again.",
+      "DecimalCode": -2147211245,
+      "HexCode": "0x80042813",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SHRINK_FVE_RECOVERY",
+      "Message": "The volume could not be shrunk because it is marked for BitLocker recovery. Use BitLocker tools to recover the volume and try again.",
+      "DecimalCode": -2147211244,
+      "HexCode": "0x80042814",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_SHRINK_FVE",
+      "Message": "The volume could not be shrunk because it is encrypted by BitLocker and Fveapi.dll could not be loaded to determine its status. For this operation to succeed, Fveapi.dll must be available in %SystemRoot%\\System32\\.",
+      "DecimalCode": -2147211243,
+      "HexCode": "0x80042815",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_OVER_DATA",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. Completing the operation using the specified parameters will overwrite volumes containing user data.",
+      "DecimalCode": -2147211242,
+      "HexCode": "0x80042816",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_SHRINK_SIZE",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The specified size is greater than the size of the LUN.",
+      "DecimalCode": -2147211241,
+      "HexCode": "0x80042817",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DISK_MISSING",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is MISSING.",
+      "DecimalCode": -2147211240,
+      "HexCode": "0x80042818",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DISK_FAILED",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is FAILED.",
+      "DecimalCode": -2147211239,
+      "HexCode": "0x80042819",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DISK_NOT_READY",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is NOT READY.",
+      "DecimalCode": -2147211238,
+      "HexCode": "0x8004281A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DISK_NO_MEDIA",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is NO MEDIA.",
+      "DecimalCode": -2147211237,
+      "HexCode": "0x8004281B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_NOT_READY",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the LUN is NOT READY.",
+      "DecimalCode": -2147211236,
+      "HexCode": "0x8004281C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_OFFLINE",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the LUN is OFFLINE.",
+      "DecimalCode": -2147211235,
+      "HexCode": "0x8004281D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_FAILED",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the LUN is FAILED.",
+      "DecimalCode": -2147211234,
+      "HexCode": "0x8004281E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_EXTEND_FVE_LOCKED",
+      "Message": "The volume could not be extended because it is locked by BitLocker. Unlock the volume and retry the operation.",
+      "DecimalCode": -2147211233,
+      "HexCode": "0x8004281F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_EXTEND_FVE_CORRUPT",
+      "Message": "The volume could not be extended because it is locked due to a BitLocker error. Use BitLocker tools to recover the volume and retry the operation.",
+      "DecimalCode": -2147211232,
+      "HexCode": "0x80042820",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_EXTEND_FVE_RECOVERY",
+      "Message": "The volume could not be extended because it is marked for BitLocker recovery. Use BitLocker tools to recover the volume and retry the operation.",
+      "DecimalCode": -2147211231,
+      "HexCode": "0x80042821",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_EXTEND_FVE",
+      "Message": "The volume could not be extended because it is encrypted by BitLocker and Fveapi.dll could not be loaded to determine its status. For this operation to succeed, Fveapi.dll must be available in %SystemRoot%\\System32\\.",
+      "DecimalCode": -2147211230,
+      "HexCode": "0x80042822",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SECTOR_SIZE_ERROR",
+      "Message": "The sector size must be non-zero, a power of 2, and less than the maximum sector size.",
+      "DecimalCode": -2147211229,
+      "HexCode": "0x80042823",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INITIATOR_ADAPTER_NOT_FOUND",
+      "Message": "The initiator adapter was not found. For calls to GetPathInfo(), the initiator adapater is associated with the path end point.",
+      "DecimalCode": -2147211008,
+      "HexCode": "0x80042900",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_TARGET_PORTAL_NOT_FOUND",
+      "Message": "The target portal was not found. For calls to GetPathInfo(), the target portal is associated with the path end point.",
+      "DecimalCode": -2147211007,
+      "HexCode": "0x80042901",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PORT_PATH",
+      "Message": "The path returned for the port is invalid. Either it has an incorrect port type specified, or, the HBA port properties structure is NULL.",
+      "DecimalCode": -2147211006,
+      "HexCode": "0x80042902",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_ISCSI_TARGET_NAME",
+      "Message": "An invalid iSCSI target name was returned from the provider.",
+      "DecimalCode": -2147211005,
+      "HexCode": "0x80042903",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SET_TUNNEL_MODE_OUTER_ADDRESS",
+      "Message": "Call to set the iSCSI tunnel mode outer address failed.",
+      "DecimalCode": -2147211004,
+      "HexCode": "0x80042904",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_GET_IKE_INFO",
+      "Message": "Call to get the iSCSI IKE info failed.",
+      "DecimalCode": -2147211003,
+      "HexCode": "0x80042905",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_SET_IKE_INFO",
+      "Message": "Call to set the iSCSI IKE info failed.",
+      "DecimalCode": -2147211002,
+      "HexCode": "0x80042906",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SUBSYSTEM_ID_IS_NULL",
+      "Message": "The provider returned a NULL subsystem identification string.",
+      "DecimalCode": -2147211001,
+      "HexCode": "0x80042907",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_INITIATOR_NODE_NAME",
+      "Message": "Failed to get the iSCSI initiator node name.",
+      "DecimalCode": -2147211000,
+      "HexCode": "0x80042908",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_GROUP_PRESHARE_KEY",
+      "Message": "Failed to set iSCSI group preshared key.",
+      "DecimalCode": -2147210999,
+      "HexCode": "0x80042909",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_ISCSI_CHAP_SECRET",
+      "Message": "Failed to set iSCSI initiator CHAP secret.",
+      "DecimalCode": -2147210998,
+      "HexCode": "0x8004290A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_IP_ADDRESS",
+      "Message": "An invalid IP address was encountered.",
+      "DecimalCode": -2147210997,
+      "HexCode": "0x8004290B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REBOOT_REQUIRED",
+      "Message": "A reboot is required before any further operations may be initiated. If you do not reboot, machine behavior and machine state, are undefined for any further operations.",
+      "DecimalCode": -2147210996,
+      "HexCode": "0x8004290C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VOLUME_GUID_PATHNAME_NOT_ALLOWED",
+      "Message": "Volume GUID pathnames are not valid input to this method.",
+      "DecimalCode": -2147210995,
+      "HexCode": "0x8004290D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BOOT_PAGEFILE_DRIVE_LETTER",
+      "Message": "Assigning or removing drive letters on the current boot or pagefile volume is not allowed.",
+      "DecimalCode": -2147210994,
+      "HexCode": "0x8004290E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DELETE_WITH_CRITICAL",
+      "Message": "Delete is not allowed on the current boot, system, pagefile, crashdump or hibernation volume.",
+      "DecimalCode": -2147210993,
+      "HexCode": "0x8004290F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLEAN_WITH_DATA",
+      "Message": "The FORCE parameter must be set to TRUE in order to clean a disk that contains a data volume.",
+      "DecimalCode": -2147210992,
+      "HexCode": "0x80042910",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLEAN_WITH_OEM",
+      "Message": "The FORCE parameter must be set to TRUE in order to clean a disk that contains an OEM volume.",
+      "DecimalCode": -2147210991,
+      "HexCode": "0x80042911",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLEAN_WITH_CRITICAL",
+      "Message": "Clean is not allowed on the disk containing the current boot, system, pagefile, crashdump or hibernation volume.",
+      "DecimalCode": -2147210990,
+      "HexCode": "0x80042912",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FORMAT_CRITICAL",
+      "Message": "Format is not allowed on the current boot, system, pagefile, crashdump or hibernation volume.",
+      "DecimalCode": -2147210989,
+      "HexCode": "0x80042913",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NTFS_FORMAT_NOT_SUPPORTED",
+      "Message": "The NTFS file system format is not supported on this volume.",
+      "DecimalCode": -2147210988,
+      "HexCode": "0x80042914",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FAT32_FORMAT_NOT_SUPPORTED",
+      "Message": "The FAT32 file system format is not supported on this volume.",
+      "DecimalCode": -2147210987,
+      "HexCode": "0x80042915",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FAT_FORMAT_NOT_SUPPORTED",
+      "Message": "The FAT file system format is not supported on this volume.",
+      "DecimalCode": -2147210986,
+      "HexCode": "0x80042916",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FORMAT_NOT_SUPPORTED",
+      "Message": "The volume is not formattable.",
+      "DecimalCode": -2147210985,
+      "HexCode": "0x80042917",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_COMPRESSION_NOT_SUPPORTED",
+      "Message": "The specified file system does not support compression.",
+      "DecimalCode": -2147210984,
+      "HexCode": "0x80042918",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VDISK_NOT_OPEN",
+      "Message": "The virtual disk object has not been open yet.",
+      "DecimalCode": -2147210983,
+      "HexCode": "0x80042919",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VDISK_INVALID_OP_STATE",
+      "Message": "The requested operation cannot be performed on the virtual disk object, because it is not in a state that permits it.",
+      "DecimalCode": -2147210982,
+      "HexCode": "0x8004291A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_PATH",
+      "Message": "The path returned for the LUN is invalid. It has an incorrect path type specified.",
+      "DecimalCode": -2147210981,
+      "HexCode": "0x8004291B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_ISCSI_PATH",
+      "Message": "The path returned for the LUN is invalid. Either it has an incorrect path type specified, or, the initiator portal properties structure is NULL.",
+      "DecimalCode": -2147210980,
+      "HexCode": "0x8004291C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_LUN_NOT_UNMASKED",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The LUN is not unmasked to the local server.",
+      "DecimalCode": -2147210979,
+      "HexCode": "0x8004291D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DISK_READ_ONLY",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is READ ONLY.",
+      "DecimalCode": -2147210978,
+      "HexCode": "0x8004291E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_UPDATE_DISK",
+      "Message": "The operation against the selected LUN completed, but there was a failure updating the status of the disk associated with the lun. Call REFRESH to retry the status update for the disk.",
+      "DecimalCode": -2147210977,
+      "HexCode": "0x8004291F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DYNAMIC",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is DYNAMIC.",
+      "DecimalCode": -2147210976,
+      "HexCode": "0x80042920",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_DYNAMIC_OFFLINE",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The current state of the disk associated with the LUN is DYNAMIC OFFLINE.",
+      "DecimalCode": -2147210975,
+      "HexCode": "0x80042921",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_LUN_SHRINK_GPT_HEADER",
+      "Message": "The SHRINK operation against the selected LUN cannot be completed. The disk has the GPT partitioning format. The specified new lun size does not allow space for a new GPT backup header to be created. Please increase the resulting lun size.",
+      "DecimalCode": -2147210974,
+      "HexCode": "0x80042922",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_MIRROR_NOT_SUPPORTED",
+      "Message": "Mirrored volumes are not supported by this operating system.",
+      "DecimalCode": -2147210973,
+      "HexCode": "0x80042923",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_RAID5_NOT_SUPPORTED",
+      "Message": "RAID-5 volumes are not supported by this operating system.",
+      "DecimalCode": -2147210972,
+      "HexCode": "0x80042924",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_NOT_CONVERTIBLE_SIZE",
+      "Message": "The specified disk is not convertible because the size is less than the minimum size required for GPT disks.",
+      "DecimalCode": -2147210971,
+      "HexCode": "0x80042925",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_OFFLINE_NOT_SUPPORTED",
+      "Message": "The volume does not support offlining.",
+      "DecimalCode": -2147210970,
+      "HexCode": "0x80042926",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VDISK_PATHNAME_INVALID",
+      "Message": "The pathname for a virtual disk must be fully qualified.",
+      "DecimalCode": -2147210969,
+      "HexCode": "0x80042927",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_EXTEND_TOO_MANY_CLUSTERS",
+      "Message": "The volume cannot be extended because the number of clusters will exceed the maximum number of clusters supported by the file system.",
+      "DecimalCode": -2147210968,
+      "HexCode": "0x80042928",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_EXTEND_UNKNOWN_FILESYSTEM",
+      "Message": "The volume cannot be extended because the volume does not contain a recognized file system.",
+      "DecimalCode": -2147210967,
+      "HexCode": "0x80042929",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_UNKNOWN_FILESYSTEM",
+      "Message": "The volume cannot be shrunk because the volume does not contain a recognized file system.",
+      "DecimalCode": -2147210966,
+      "HexCode": "0x8004292A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_DISK_NOT_OPEN",
+      "Message": "The requested operation requires that the virtual disk be opened.",
+      "DecimalCode": -2147210965,
+      "HexCode": "0x8004292B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_DISK_IS_EXPANDING",
+      "Message": "The requested operation cannot be performed while the virtual disk is expanding.",
+      "DecimalCode": -2147210964,
+      "HexCode": "0x8004292C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_DISK_IS_COMPACTING",
+      "Message": "The requested operation cannot be performed while the virtual disk is compacting.",
+      "DecimalCode": -2147210963,
+      "HexCode": "0x8004292D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_DISK_IS_MERGING",
+      "Message": "The requested operation cannot be performed while the virtual disk is merging.",
+      "DecimalCode": -2147210962,
+      "HexCode": "0x8004292E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_IS_ATTACHED",
+      "Message": "The requested operation cannot be performed while the virtual disk is attached.",
+      "DecimalCode": -2147210961,
+      "HexCode": "0x8004292F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_DISK_ALREADY_OPEN",
+      "Message": "The virtual disk is already open and cannot be opened a second time. Please close all clients that may have opened the virtual disk and retry.",
+      "DecimalCode": -2147210960,
+      "HexCode": "0x80042930",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_DISK_ALREADY_EXPANDING",
+      "Message": "The virtual disk is already in the process of expanding.",
+      "DecimalCode": -2147210959,
+      "HexCode": "0x80042931",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_ALREADY_COMPACTING",
+      "Message": "The virtual disk is already in the process of compacting.",
+      "DecimalCode": -2147210958,
+      "HexCode": "0x80042932",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_ALREADY_MERGING",
+      "Message": "The virtual disk is already in the process of merging.",
+      "DecimalCode": -2147210957,
+      "HexCode": "0x80042933",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_ALREADY_ATTACHED",
+      "Message": "The virtual disk is already attached.",
+      "DecimalCode": -2147210956,
+      "HexCode": "0x80042934",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_ALREADY_DETACHED",
+      "Message": "The virtual disk is already detached.",
+      "DecimalCode": -2147210955,
+      "HexCode": "0x80042935",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_NOT_ATTACHED_READONLY",
+      "Message": "The requested operation requires that the virtual disk be attached read only.",
+      "DecimalCode": -2147210954,
+      "HexCode": "0x80042936",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_IS_BEING_ATTACHED",
+      "Message": "The requested operation cannot be performed while the virtual disk is being attached.",
+      "DecimalCode": -2147210953,
+      "HexCode": "0x80042937",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_VD_IS_BEING_DETACHED",
+      "Message": "The requested operation cannot be performed while the virtual disk is being detached.",
+      "DecimalCode": -2147210952,
+      "HexCode": "0x80042938",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_POOL",
+      "Message": "The drive is not contained in a pool.",
+      "DecimalCode": -2147210752,
+      "HexCode": "0x80042A00",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_POOL_CREATED",
+      "Message": "No pool is created.",
+      "DecimalCode": -2147210751,
+      "HexCode": "0x80042A01",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_NO_MAINTENANCE_MODE",
+      "Message": "The specified disk or volume is managed by the Microsoft Failover Clustering component. The disk must be in cluster maintenance mode and the cluster resource status must be online to perform this operation.",
+      "DecimalCode": -2147210750,
+      "HexCode": "0x80042A02",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_BLOCK_CLUSTERED",
+      "Message": "The specified disk or volume is managed by Microsoft Failover Clustering. The disk must be removed from the cluster to perform this operation.",
+      "DecimalCode": -2147210749,
+      "HexCode": "0x80042A03",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DISK_HAS_BANDS",
+      "Message": "The disk could not be converted to dynamic because security is enabled on one or more partitions.",
+      "DecimalCode": -2147210748,
+      "HexCode": "0x80042A04",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_INVALID_STATE",
+      "Message": "The requested operation cannot be performed on the object, because it is not in a state that permits it. Call Refresh and retry the operation.",
+      "DecimalCode": -2147210747,
+      "HexCode": "0x80042A05",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_REFS_FORMAT_NOT_SUPPORTED",
+      "Message": "The ReFS file system format is not supported on this volume.",
+      "DecimalCode": -2147210746,
+      "HexCode": "0x80042A06",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_DELETE_WITH_BOOTBACKING",
+      "Message": "Delete is not allowed on the volume that backs your Windows boot volume.",
+      "DecimalCode": -2147210745,
+      "HexCode": "0x80042A07",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_FORMAT_WITH_BOOTBACKING",
+      "Message": "Format is not allowed on the volume that backs your Windows boot volume.",
+      "DecimalCode": -2147210744,
+      "HexCode": "0x80042A08",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_CLEAN_WITH_BOOTBACKING",
+      "Message": "Clean is not allowed on the disk containing volume that backs your Windows boot volume.",
+      "DecimalCode": -2147210743,
+      "HexCode": "0x80042A09",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VDS_E_SHRINK_EXTEND_UNALIGNED",
+      "Message": "The specified shrink or extend size does not meet alignment requirements for the device.",
+      "DecimalCode": -2147210496,
+      "HexCode": "0x80042B00",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

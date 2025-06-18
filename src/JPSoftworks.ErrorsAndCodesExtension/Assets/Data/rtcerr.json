@@ -1,0 +1,1335 @@
+{
+  "HeaderFileName": "rtcerr.h",
+  "ErrorCodes": [
+    {
+      "Id": "RTC_E_SIP_CODECS_DO_NOT_MATCH",
+      "Message": "No matching codecs with peer",
+      "DecimalCode": -2131886080,
+      "HexCode": "0x80EE0000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_STREAM_PRESENT",
+      "Message": "Parsing SIP failed The stream to be started is already present",
+      "DecimalCode": -2131886079,
+      "HexCode": "0x80EE0001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_STREAM_NOT_PRESENT",
+      "Message": "The stream to be stopped is not present",
+      "DecimalCode": -2131886078,
+      "HexCode": "0x80EE0002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_NO_STREAM",
+      "Message": "No stream is active",
+      "DecimalCode": -2131886077,
+      "HexCode": "0x80EE0003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_PARSE_FAILED",
+      "Message": "Parsing SIP failed",
+      "DecimalCode": -2131886076,
+      "HexCode": "0x80EE0004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_HEADER_NOT_PRESENT",
+      "Message": "The SIP header is not present in the message",
+      "DecimalCode": -2131886075,
+      "HexCode": "0x80EE0005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_NOT_PRESENT",
+      "Message": "SDP is not present in the SIP message",
+      "DecimalCode": -2131886074,
+      "HexCode": "0x80EE0006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_PARSE_FAILED",
+      "Message": "Parsing SDP failed",
+      "DecimalCode": -2131886073,
+      "HexCode": "0x80EE0007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_UPDATE_FAILED",
+      "Message": "SDP does not match the previous one",
+      "DecimalCode": -2131886072,
+      "HexCode": "0x80EE0008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_MULTICAST",
+      "Message": "Multicast is not supported",
+      "DecimalCode": -2131886071,
+      "HexCode": "0x80EE0009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_CONNECTION_ADDR",
+      "Message": "Media does not contain connection address",
+      "DecimalCode": -2131886070,
+      "HexCode": "0x80EE000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_NO_MEDIA",
+      "Message": "No media is available for the session",
+      "DecimalCode": -2131886069,
+      "HexCode": "0x80EE000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_TIMEOUT",
+      "Message": "SIP Transaction timed out",
+      "DecimalCode": -2131886068,
+      "HexCode": "0x80EE000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SDP_FAILED_TO_BUILD",
+      "Message": "Failed to build SDP blob",
+      "DecimalCode": -2131886067,
+      "HexCode": "0x80EE000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_INVITE_TRANSACTION_PENDING",
+      "Message": "Currently processing another INVITE transaction",
+      "DecimalCode": -2131886066,
+      "HexCode": "0x80EE000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_AUTH_HEADER_SENT",
+      "Message": "Authorization header was sent in a previous request",
+      "DecimalCode": -2131886065,
+      "HexCode": "0x80EE000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_AUTH_TYPE_NOT_SUPPORTED",
+      "Message": "The Authentication type requested is not supported",
+      "DecimalCode": -2131886064,
+      "HexCode": "0x80EE0010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_AUTH_FAILED",
+      "Message": "Authentication Failed",
+      "DecimalCode": -2131886063,
+      "HexCode": "0x80EE0011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_SIP_URL",
+      "Message": "The SIP URL is not valid",
+      "DecimalCode": -2131886062,
+      "HexCode": "0x80EE0012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_DESTINATION_ADDRESS_LOCAL",
+      "Message": "The Destination Address belongs to the local machine",
+      "DecimalCode": -2131886061,
+      "HexCode": "0x80EE0013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_ADDRESS_LOCAL",
+      "Message": "The Local Address is invalid, check the profile",
+      "DecimalCode": -2131886060,
+      "HexCode": "0x80EE0014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_DESTINATION_ADDRESS_MULTICAST",
+      "Message": "The Destination Address is a multicast address",
+      "DecimalCode": -2131886059,
+      "HexCode": "0x80EE0015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_PROXY_ADDRESS",
+      "Message": "The Proxy Address is not valid",
+      "DecimalCode": -2131886058,
+      "HexCode": "0x80EE0016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_TRANSPORT_NOT_SUPPORTED",
+      "Message": "The Transport specified is not supported",
+      "DecimalCode": -2131886057,
+      "HexCode": "0x80EE0017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_NEED_MORE_DATA",
+      "Message": "Need more data for parsing a whole SIP message",
+      "DecimalCode": -2131886056,
+      "HexCode": "0x80EE0018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_CALL_DISCONNECTED",
+      "Message": "The Call has been disconnected",
+      "DecimalCode": -2131886055,
+      "HexCode": "0x80EE0019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_REQUEST_DESTINATION_ADDR_NOT_PRESENT",
+      "Message": "The Request destination address is not known",
+      "DecimalCode": -2131886054,
+      "HexCode": "0x80EE001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_UDP_SIZE_EXCEEDED",
+      "Message": "The sip message size is greater than the UDP message size allowed",
+      "DecimalCode": -2131886053,
+      "HexCode": "0x80EE001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_SSL_TUNNEL_FAILED",
+      "Message": "Cannot establish SSL tunnel to Http proxy",
+      "DecimalCode": -2131886052,
+      "HexCode": "0x80EE001C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_SSL_NEGOTIATION_TIMEOUT",
+      "Message": "Timeout during SSL Negotiation",
+      "DecimalCode": -2131886051,
+      "HexCode": "0x80EE001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_STACK_SHUTDOWN",
+      "Message": "Sip Stack is already shutdown",
+      "DecimalCode": -2131886050,
+      "HexCode": "0x80EE001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_CONTROLLER_STATE",
+      "Message": "Operation not allowed in current media controller state",
+      "DecimalCode": -2131886049,
+      "HexCode": "0x80EE001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_NEED_TERMINAL",
+      "Message": "Can not find device",
+      "DecimalCode": -2131886048,
+      "HexCode": "0x80EE0020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_AUDIO_DEVICE_NOT_AVAILABLE",
+      "Message": "Audio device is not available",
+      "DecimalCode": -2131886047,
+      "HexCode": "0x80EE0021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_VIDEO_DEVICE_NOT_AVAILABLE",
+      "Message": "Video device is not available",
+      "DecimalCode": -2131886046,
+      "HexCode": "0x80EE0022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_START_STREAM",
+      "Message": "Can not start stream",
+      "DecimalCode": -2131886045,
+      "HexCode": "0x80EE0023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_AEC",
+      "Message": "Failed to enable acoustic echo cancellation",
+      "DecimalCode": -2131886044,
+      "HexCode": "0x80EE0024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_CLIENT_NOT_INITIALIZED",
+      "Message": "Client not initialized",
+      "DecimalCode": -2131886043,
+      "HexCode": "0x80EE0025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_CLIENT_ALREADY_INITIALIZED",
+      "Message": "Client already initialized",
+      "DecimalCode": -2131886042,
+      "HexCode": "0x80EE0026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_CLIENT_ALREADY_SHUT_DOWN",
+      "Message": "Client already shut down",
+      "DecimalCode": -2131886041,
+      "HexCode": "0x80EE0027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PRESENCE_NOT_ENABLED",
+      "Message": "Presence not enabled",
+      "DecimalCode": -2131886040,
+      "HexCode": "0x80EE0028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_SESSION_TYPE",
+      "Message": "Invalid session type",
+      "DecimalCode": -2131886039,
+      "HexCode": "0x80EE0029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_SESSION_STATE",
+      "Message": "Invalid session state",
+      "DecimalCode": -2131886038,
+      "HexCode": "0x80EE002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_PROFILE",
+      "Message": "No valid profile for this operation",
+      "DecimalCode": -2131886037,
+      "HexCode": "0x80EE002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_LOCAL_PHONE_NEEDED",
+      "Message": "A local phone number is needed",
+      "DecimalCode": -2131886036,
+      "HexCode": "0x80EE002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_DEVICE",
+      "Message": "No preferred device",
+      "DecimalCode": -2131886035,
+      "HexCode": "0x80EE002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_PROFILE",
+      "Message": "Invalid profile",
+      "DecimalCode": -2131886034,
+      "HexCode": "0x80EE002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_PROVISION",
+      "Message": "No provision tag in profile",
+      "DecimalCode": -2131886033,
+      "HexCode": "0x80EE002F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_KEY",
+      "Message": "No profile key",
+      "DecimalCode": -2131886032,
+      "HexCode": "0x80EE0030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_NAME",
+      "Message": "No profile name",
+      "DecimalCode": -2131886031,
+      "HexCode": "0x80EE0031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_USER",
+      "Message": "No user tag in profile",
+      "DecimalCode": -2131886030,
+      "HexCode": "0x80EE0032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_USER_URI",
+      "Message": "No user URI in profile",
+      "DecimalCode": -2131886029,
+      "HexCode": "0x80EE0033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_SERVER",
+      "Message": "No server tag in profile",
+      "DecimalCode": -2131886028,
+      "HexCode": "0x80EE0034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_SERVER_ADDRESS",
+      "Message": "Server tag missing address in profile",
+      "DecimalCode": -2131886027,
+      "HexCode": "0x80EE0035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_NO_SERVER_PROTOCOL",
+      "Message": "Server tag missing protocol in profile",
+      "DecimalCode": -2131886026,
+      "HexCode": "0x80EE0036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_INVALID_SERVER_PROTOCOL",
+      "Message": "Invalid server protocol in profile",
+      "DecimalCode": -2131886025,
+      "HexCode": "0x80EE0037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_INVALID_SERVER_AUTHMETHOD",
+      "Message": "Invalid server authentication method in profile",
+      "DecimalCode": -2131886024,
+      "HexCode": "0x80EE0038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_INVALID_SERVER_ROLE",
+      "Message": "Invalid server role in profile",
+      "DecimalCode": -2131886023,
+      "HexCode": "0x80EE0039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_MULTIPLE_REGISTRARS",
+      "Message": "Multiple registrar servers in profile",
+      "DecimalCode": -2131886022,
+      "HexCode": "0x80EE003A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_INVALID_SESSION",
+      "Message": "Invalid session tag in profile",
+      "DecimalCode": -2131886021,
+      "HexCode": "0x80EE003B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_INVALID_SESSION_PARTY",
+      "Message": "Invalid session party in profile",
+      "DecimalCode": -2131886020,
+      "HexCode": "0x80EE003C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_INVALID_SESSION_TYPE",
+      "Message": "Invalid session type in profile",
+      "DecimalCode": -2131886019,
+      "HexCode": "0x80EE003D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_OPERATION_WITH_TOO_MANY_PARTICIPANTS",
+      "Message": "The operation failed because of too many participants in the session",
+      "DecimalCode": -2131886018,
+      "HexCode": "0x80EE003E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_BASIC_AUTH_SET_TLS",
+      "Message": "Must set transport to TLS if Basic Auth is allowed",
+      "DecimalCode": -2131886017,
+      "HexCode": "0x80EE003F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_HIGH_SECURITY_SET_TLS",
+      "Message": "Must set transport to TLS if high security mode is needed",
+      "DecimalCode": -2131886016,
+      "HexCode": "0x80EE0040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_S_ROAMING_NOT_SUPPORTED",
+      "Message": "Server does not support this type of roaming",
+      "DecimalCode": 15597633,
+      "HexCode": "0x00EE0041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PROFILE_SERVER_UNAUTHORIZED",
+      "Message": "Server address does not match an authorized domain in profile",
+      "DecimalCode": -2131886014,
+      "HexCode": "0x80EE0042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_DUPLICATE_REALM",
+      "Message": "Duplicate realm exists in an enabled profile",
+      "DecimalCode": -2131886013,
+      "HexCode": "0x80EE0043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_POLICY_NOT_ALLOW",
+      "Message": "Current policy settings do not allow this action",
+      "DecimalCode": -2131886012,
+      "HexCode": "0x80EE0044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PORT_MAPPING_UNAVAILABLE",
+      "Message": "Port mapping can not be obtained from the port manager",
+      "DecimalCode": -2131886011,
+      "HexCode": "0x80EE0045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PORT_MAPPING_FAILED",
+      "Message": "Port mapping failure returned from the port manager",
+      "DecimalCode": -2131886010,
+      "HexCode": "0x80EE0046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SECURITY_LEVEL_NOT_COMPATIBLE",
+      "Message": "The local and remote security levels are not compatible.",
+      "DecimalCode": -2131886009,
+      "HexCode": "0x80EE0047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SECURITY_LEVEL_NOT_DEFINED",
+      "Message": "The security level is not defined",
+      "DecimalCode": -2131886008,
+      "HexCode": "0x80EE0048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SECURITY_LEVEL_NOT_SUPPORTED_BY_PARTICIPANT",
+      "Message": "Participant could not support the requested security level",
+      "DecimalCode": -2131886007,
+      "HexCode": "0x80EE0049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_DUPLICATE_BUDDY",
+      "Message": "Buddy already exists",
+      "DecimalCode": -2131886006,
+      "HexCode": "0x80EE004A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_DUPLICATE_WATCHER",
+      "Message": "Watcher already exists",
+      "DecimalCode": -2131886005,
+      "HexCode": "0x80EE004B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MALFORMED_XML",
+      "Message": "Malformed XML",
+      "DecimalCode": -2131886004,
+      "HexCode": "0x80EE004C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_ROAMING_OPERATION_INTERRUPTED",
+      "Message": "Roaming operation interrupted. It may succeed or fail.",
+      "DecimalCode": -2131886003,
+      "HexCode": "0x80EE004D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_ROAMING_FAILED",
+      "Message": "Roaming session failed",
+      "DecimalCode": -2131886002,
+      "HexCode": "0x80EE004E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_BUDDY_LIST",
+      "Message": "Buddy list is invalid",
+      "DecimalCode": -2131886001,
+      "HexCode": "0x80EE004F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_ACL_LIST",
+      "Message": "ACL list is invalid",
+      "DecimalCode": -2131886000,
+      "HexCode": "0x80EE0050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_GROUP",
+      "Message": "Group does not exist",
+      "DecimalCode": -2131885999,
+      "HexCode": "0x80EE0051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_DUPLICATE_GROUP",
+      "Message": "Group already exists",
+      "DecimalCode": -2131885998,
+      "HexCode": "0x80EE0052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_TOO_MANY_GROUPS",
+      "Message": "Max number of groups has been reached",
+      "DecimalCode": -2131885997,
+      "HexCode": "0x80EE0053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_BUDDY",
+      "Message": "Buddy does not exist",
+      "DecimalCode": -2131885996,
+      "HexCode": "0x80EE0054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_WATCHER",
+      "Message": "Watcher does not exist",
+      "DecimalCode": -2131885995,
+      "HexCode": "0x80EE0055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_REALM",
+      "Message": "No realm is set",
+      "DecimalCode": -2131885994,
+      "HexCode": "0x80EE0056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NO_TRANSPORT",
+      "Message": "Server can not be specified without a transport protocol",
+      "DecimalCode": -2131885993,
+      "HexCode": "0x80EE0057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NOT_EXIST",
+      "Message": "The required item does not exist",
+      "DecimalCode": -2131885992,
+      "HexCode": "0x80EE0058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_PREFERENCE_LIST",
+      "Message": "Preference list is invalid",
+      "DecimalCode": -2131885991,
+      "HexCode": "0x80EE0059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MAX_PENDING_OPERATIONS",
+      "Message": "Maximum number of pending operations reached",
+      "DecimalCode": -2131885990,
+      "HexCode": "0x80EE005A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_TOO_MANY_RETRIES",
+      "Message": "Too many attempts to resend a request",
+      "DecimalCode": -2131885989,
+      "HexCode": "0x80EE005B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_PORTRANGE",
+      "Message": "Invalid port range",
+      "DecimalCode": -2131885988,
+      "HexCode": "0x80EE005C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_CALL_CONNECTION_NOT_ESTABLISHED",
+      "Message": "Call connection has not been established",
+      "DecimalCode": -2131885987,
+      "HexCode": "0x80EE005D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_ADDITIONAL_PARTY_IN_TWO_PARTY_SESSION",
+      "Message": "Adding additional parties to two party session failed",
+      "DecimalCode": -2131885986,
+      "HexCode": "0x80EE005E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_PARTY_ALREADY_IN_SESSION",
+      "Message": "Party already exists in session",
+      "DecimalCode": -2131885985,
+      "HexCode": "0x80EE005F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_OTHER_PARTY_JOIN_IN_PROGRESS",
+      "Message": "Join operation is in progress for another party",
+      "DecimalCode": -2131885984,
+      "HexCode": "0x80EE0060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_OBJECT_STATE",
+      "Message": "Object state does not allow to perform this operation",
+      "DecimalCode": -2131885983,
+      "HexCode": "0x80EE0061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PRESENCE_ENABLED",
+      "Message": "Presence is enabled",
+      "DecimalCode": -2131885982,
+      "HexCode": "0x80EE0062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_ROAMING_ENABLED",
+      "Message": "Roaming is enabled",
+      "DecimalCode": -2131885981,
+      "HexCode": "0x80EE0063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_TLS_INCOMPATIBLE_ENCRYPTION",
+      "Message": "Incompatible TLS encryption",
+      "DecimalCode": -2131885980,
+      "HexCode": "0x80EE0064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_INVALID_CERTIFICATE",
+      "Message": "Invalid certificate",
+      "DecimalCode": -2131885979,
+      "HexCode": "0x80EE0065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_DNS_FAIL",
+      "Message": "DNS lookup fails",
+      "DecimalCode": -2131885978,
+      "HexCode": "0x80EE0066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_TCP_FAIL",
+      "Message": "Fails to make a TCP connection",
+      "DecimalCode": -2131885977,
+      "HexCode": "0x80EE0067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_TOO_SMALL_EXPIRES_VALUE",
+      "Message": "Expires value received from the server is too small",
+      "DecimalCode": -2131885976,
+      "HexCode": "0x80EE0068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_TLS_FAIL",
+      "Message": "Fails to make a TLS connection",
+      "DecimalCode": -2131885975,
+      "HexCode": "0x80EE0069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NOT_PRESENCE_PROFILE",
+      "Message": "A presence profile must be used",
+      "DecimalCode": -2131885974,
+      "HexCode": "0x80EE006A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_INVITEE_PARTY_TIMEOUT",
+      "Message": "Invitee connection fails",
+      "DecimalCode": -2131885973,
+      "HexCode": "0x80EE006B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_AUTH_TIME_SKEW",
+      "Message": "Authentication failure because of time skew between client and server",
+      "DecimalCode": -2131885972,
+      "HexCode": "0x80EE006C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_REGISTRATION_STATE",
+      "Message": "Invalid registration state",
+      "DecimalCode": -2131885971,
+      "HexCode": "0x80EE006D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_DISABLED",
+      "Message": "Media is disabled",
+      "DecimalCode": -2131885970,
+      "HexCode": "0x80EE006E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_ENABLED",
+      "Message": "Media is enabled",
+      "DecimalCode": -2131885969,
+      "HexCode": "0x80EE006F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REFER_NOT_ACCEPTED",
+      "Message": "Refer has not been accepted",
+      "DecimalCode": -2131885968,
+      "HexCode": "0x80EE0070",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REFER_NOT_ALLOWED",
+      "Message": "Refer operation is not allowed in this session",
+      "DecimalCode": -2131885967,
+      "HexCode": "0x80EE0071",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REFER_NOT_EXIST",
+      "Message": "Refer session does not exist or has finished",
+      "DecimalCode": -2131885966,
+      "HexCode": "0x80EE0072",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_HOLD_OPERATION_PENDING",
+      "Message": "Currently an hold operation is pending",
+      "DecimalCode": -2131885965,
+      "HexCode": "0x80EE0073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_UNHOLD_OPERATION_PENDING",
+      "Message": "Currently an unhold operation is pending",
+      "DecimalCode": -2131885964,
+      "HexCode": "0x80EE0074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_SESSION_NOT_EXIST",
+      "Message": "Media session does not exist",
+      "DecimalCode": -2131885963,
+      "HexCode": "0x80EE0075",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MEDIA_SESSION_IN_HOLD",
+      "Message": "Media session is in hold",
+      "DecimalCode": -2131885962,
+      "HexCode": "0x80EE0076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_ANOTHER_MEDIA_SESSION_ACTIVE",
+      "Message": "Another media session is active",
+      "DecimalCode": -2131885961,
+      "HexCode": "0x80EE0077",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_MAX_REDIRECTS",
+      "Message": "Too many redirects",
+      "DecimalCode": -2131885960,
+      "HexCode": "0x80EE0078",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REDIRECT_PROCESSING_FAILED",
+      "Message": "Processing redirect failed",
+      "DecimalCode": -2131885959,
+      "HexCode": "0x80EE0079",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_LISTENING_SOCKET_NOT_EXIST",
+      "Message": "Listening socket does not exist",
+      "DecimalCode": -2131885958,
+      "HexCode": "0x80EE007A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_INVALID_LISTEN_SOCKET",
+      "Message": "Specified address and port is invalid",
+      "DecimalCode": -2131885957,
+      "HexCode": "0x80EE007B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PORT_MANAGER_ALREADY_SET",
+      "Message": "Port manager already set",
+      "DecimalCode": -2131885956,
+      "HexCode": "0x80EE007C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SECURITY_LEVEL_ALREADY_SET",
+      "Message": "The security level has already been set for this Media type can and can not be changed",
+      "DecimalCode": -2131885955,
+      "HexCode": "0x80EE007D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_UDP_NOT_SUPPORTED",
+      "Message": "This feature is not supported when one of the server in profile has UDP transport",
+      "DecimalCode": -2131885954,
+      "HexCode": "0x80EE007E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_REFER_OPERATION_PENDING",
+      "Message": "Currently a refer operation is pending",
+      "DecimalCode": -2131885953,
+      "HexCode": "0x80EE007F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PLATFORM_NOT_SUPPORTED",
+      "Message": "This operation is not supported on this Windows Platform.",
+      "DecimalCode": -2131885952,
+      "HexCode": "0x80EE0080",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_SIP_PEER_PARTICIPANT_IN_MULTIPARTY_SESSION",
+      "Message": "A peer participant cannot be added to a multiparty session",
+      "DecimalCode": -2131885951,
+      "HexCode": "0x80EE0081",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_NOT_ALLOWED",
+      "Message": "This action is not allowed",
+      "DecimalCode": -2131885950,
+      "HexCode": "0x80EE0082",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REGISTRATION_DEACTIVATED",
+      "Message": "The user is being moved",
+      "DecimalCode": -2131885949,
+      "HexCode": "0x80EE0083",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REGISTRATION_REJECTED",
+      "Message": "The user\u0027s account was disabled or deleted or the SIP URI changed",
+      "DecimalCode": -2131885948,
+      "HexCode": "0x80EE0084",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_REGISTRATION_UNREGISTERED",
+      "Message": "The user was logged out because the user logged in elsewhere",
+      "DecimalCode": -2131885947,
+      "HexCode": "0x80EE0085",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_INFO_TRYING",
+      "Message": "Trying",
+      "DecimalCode": 15663204,
+      "HexCode": "0x00EF0064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_INFO_RINGING",
+      "Message": "Ringing",
+      "DecimalCode": 15663284,
+      "HexCode": "0x00EF00B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_INFO_CALL_FORWARDING",
+      "Message": "Call Is Being Forwarded",
+      "DecimalCode": 15663285,
+      "HexCode": "0x00EF00B5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_INFO_QUEUED",
+      "Message": "Queued",
+      "DecimalCode": 15663286,
+      "HexCode": "0x00EF00B6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SESSION_PROGRESS",
+      "Message": "Session Progress",
+      "DecimalCode": 15663287,
+      "HexCode": "0x00EF00B7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SUCCESS",
+      "Message": "OK",
+      "DecimalCode": 15663304,
+      "HexCode": "0x00EF00C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REDIRECT_MULTIPLE_CHOICES",
+      "Message": "Multiple Choices",
+      "DecimalCode": -2131820244,
+      "HexCode": "0x80EF012C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REDIRECT_MOVED_PERMANENTLY",
+      "Message": "Moved Permanently",
+      "DecimalCode": -2131820243,
+      "HexCode": "0x80EF012D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REDIRECT_MOVED_TEMPORARILY",
+      "Message": "Moved Temporarily",
+      "DecimalCode": -2131820242,
+      "HexCode": "0x80EF012E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REDIRECT_SEE_OTHER",
+      "Message": "See Other",
+      "DecimalCode": -2131820241,
+      "HexCode": "0x80EF012F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REDIRECT_USE_PROXY",
+      "Message": "Use Proxy",
+      "DecimalCode": -2131820239,
+      "HexCode": "0x80EF0131",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REDIRECT_ALTERNATIVE_SERVICE",
+      "Message": "Alternative Service",
+      "DecimalCode": -2131820164,
+      "HexCode": "0x80EF017C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_BAD_REQUEST",
+      "Message": "Bad Request",
+      "DecimalCode": -2131820144,
+      "HexCode": "0x80EF0190",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_UNAUTHORIZED",
+      "Message": "Unauthorized",
+      "DecimalCode": -2131820143,
+      "HexCode": "0x80EF0191",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_PAYMENT_REQUIRED",
+      "Message": "Payment Required",
+      "DecimalCode": -2131820142,
+      "HexCode": "0x80EF0192",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_FORBIDDEN",
+      "Message": "Forbidden",
+      "DecimalCode": -2131820141,
+      "HexCode": "0x80EF0193",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_NOT_FOUND",
+      "Message": "Not Found",
+      "DecimalCode": -2131820140,
+      "HexCode": "0x80EF0194",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_METHOD_NOT_ALLOWED",
+      "Message": "Method Not Allowed",
+      "DecimalCode": -2131820139,
+      "HexCode": "0x80EF0195",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_NOT_ACCEPTABLE",
+      "Message": "Not Acceptable",
+      "DecimalCode": -2131820138,
+      "HexCode": "0x80EF0196",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_PROXY_AUTHENTICATION_REQUIRED",
+      "Message": "Proxy Authentication Required",
+      "DecimalCode": -2131820137,
+      "HexCode": "0x80EF0197",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_REQUEST_TIMEOUT",
+      "Message": "Request Timeout",
+      "DecimalCode": -2131820136,
+      "HexCode": "0x80EF0198",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_CONFLICT",
+      "Message": "Conflict",
+      "DecimalCode": -2131820135,
+      "HexCode": "0x80EF0199",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_GONE",
+      "Message": "Gone",
+      "DecimalCode": -2131820134,
+      "HexCode": "0x80EF019A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_LENGTH_REQUIRED",
+      "Message": "Length Required",
+      "DecimalCode": -2131820133,
+      "HexCode": "0x80EF019B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_REQUEST_ENTITY_TOO_LARGE",
+      "Message": "Request Entity Too Large",
+      "DecimalCode": -2131820131,
+      "HexCode": "0x80EF019D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_REQUEST_URI_TOO_LARGE",
+      "Message": "Request-URI Too Long",
+      "DecimalCode": -2131820130,
+      "HexCode": "0x80EF019E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_UNSUPPORTED_MEDIA_TYPE",
+      "Message": "Unsupported Media Type",
+      "DecimalCode": -2131820129,
+      "HexCode": "0x80EF019F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_BAD_EXTENSION",
+      "Message": "Bad Extension",
+      "DecimalCode": -2131820124,
+      "HexCode": "0x80EF01A4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_TEMPORARILY_NOT_AVAILABLE",
+      "Message": "Temporarily Unavailable",
+      "DecimalCode": -2131820064,
+      "HexCode": "0x80EF01E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_TRANSACTION_DOES_NOT_EXIST",
+      "Message": "Call Leg/Transaction Does Not Exist",
+      "DecimalCode": -2131820063,
+      "HexCode": "0x80EF01E1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_LOOP_DETECTED",
+      "Message": "Loop Detected",
+      "DecimalCode": -2131820062,
+      "HexCode": "0x80EF01E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_TOO_MANY_HOPS",
+      "Message": "Too Many Hops",
+      "DecimalCode": -2131820061,
+      "HexCode": "0x80EF01E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_ADDRESS_INCOMPLETE",
+      "Message": "Address Incomplete",
+      "DecimalCode": -2131820060,
+      "HexCode": "0x80EF01E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_AMBIGUOUS",
+      "Message": "Ambiguous",
+      "DecimalCode": -2131820059,
+      "HexCode": "0x80EF01E5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_CLIENT_BUSY_HERE",
+      "Message": "Busy Here",
+      "DecimalCode": -2131820058,
+      "HexCode": "0x80EF01E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_REQUEST_TERMINATED",
+      "Message": "Request Terminated",
+      "DecimalCode": -2131820057,
+      "HexCode": "0x80EF01E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_NOT_ACCEPTABLE_HERE",
+      "Message": "Not Acceptable Here",
+      "DecimalCode": -2131820056,
+      "HexCode": "0x80EF01E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SERVER_INTERNAL_ERROR",
+      "Message": "Server Internal Error",
+      "DecimalCode": -2131820044,
+      "HexCode": "0x80EF01F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SERVER_NOT_IMPLEMENTED",
+      "Message": "Not Implemented",
+      "DecimalCode": -2131820043,
+      "HexCode": "0x80EF01F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SERVER_BAD_GATEWAY",
+      "Message": "Bad Gateway",
+      "DecimalCode": -2131820042,
+      "HexCode": "0x80EF01F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SERVER_SERVICE_UNAVAILABLE",
+      "Message": "Service Unavailable",
+      "DecimalCode": -2131820041,
+      "HexCode": "0x80EF01F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SERVER_SERVER_TIMEOUT",
+      "Message": "Server Time-out",
+      "DecimalCode": -2131820040,
+      "HexCode": "0x80EF01F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_SERVER_VERSION_NOT_SUPPORTED",
+      "Message": "Version Not Supported",
+      "DecimalCode": -2131820039,
+      "HexCode": "0x80EF01F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_GLOBAL_BUSY_EVERYWHERE",
+      "Message": "Busy Everywhere",
+      "DecimalCode": -2131819944,
+      "HexCode": "0x80EF0258",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_GLOBAL_DECLINE",
+      "Message": "Decline",
+      "DecimalCode": -2131819941,
+      "HexCode": "0x80EF025B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_GLOBAL_DOES_NOT_EXIST_ANYWHERE",
+      "Message": "Does Not Exist Anywhere",
+      "DecimalCode": -2131819940,
+      "HexCode": "0x80EF025C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_STATUS_GLOBAL_NOT_ACCEPTABLE",
+      "Message": "Not Acceptable",
+      "DecimalCode": -2131819938,
+      "HexCode": "0x80EF025E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_BUSY",
+      "Message": "Busy",
+      "DecimalCode": -2131755003,
+      "HexCode": "0x80F00005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_NO_ANSWER",
+      "Message": "No Answer",
+      "DecimalCode": -2131755002,
+      "HexCode": "0x80F00006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_ALL_BUSY",
+      "Message": "All Busy",
+      "DecimalCode": -2131755001,
+      "HexCode": "0x80F00007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_PL_FAILED",
+      "Message": "Primary Leg Failed",
+      "DecimalCode": -2131755000,
+      "HexCode": "0x80F00008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_SW_FAILED",
+      "Message": "Switch Failed",
+      "DecimalCode": -2131754999,
+      "HexCode": "0x80F00009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_CANCELLED",
+      "Message": "Cancelled",
+      "DecimalCode": -2131754998,
+      "HexCode": "0x80F0000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RTC_E_PINT_STATUS_REJECTED_BADNUMBER",
+      "Message": "Bad Number",
+      "DecimalCode": -2131754997,
+      "HexCode": "0x80F0000B",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_RTC_INTERFACE",
+      "Code": 238
+    },
+    {
+      "Name": "FACILITY_SIP_STATUS_CODE",
+      "Code": 239
+    },
+    {
+      "Name": "FACILITY_PINT_STATUS_CODE",
+      "Code": 240
+    }
+  ]
+}

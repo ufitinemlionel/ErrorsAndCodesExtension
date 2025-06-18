@@ -1,0 +1,445 @@
+{
+  "HeaderFileName": "imapi2fserror.h",
+  "ErrorCodes": [
+    {
+      "Id": "IMAPI_E_FSI_INTERNAL_ERROR",
+      "Message": "Internal file system error occurred.",
+      "DecimalCode": -1062555392,
+      "HexCode": "0xC0AAB100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INVALID_PARAM",
+      "Message": "The value specified for parameter \u0027%1!ls!\u0027 is not valid.",
+      "DecimalCode": -1062555391,
+      "HexCode": "0xC0AAB101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_READONLY",
+      "Message": "FileSystemImage object is in read only mode.",
+      "DecimalCode": -1062555390,
+      "HexCode": "0xC0AAB102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NO_OUTPUT",
+      "Message": "No output file system specified.",
+      "DecimalCode": -1062555389,
+      "HexCode": "0xC0AAB103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INVALID_VOLUME_NAME",
+      "Message": "The specified Volume Identifier is either too long or contains one or more invalid characters.",
+      "DecimalCode": -1062555388,
+      "HexCode": "0xC0AAB104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INVALID_DATE",
+      "Message": "Invalid file dates.  %1!ls! time is earlier than %2!ls! time.",
+      "DecimalCode": -1062555387,
+      "HexCode": "0xC0AAB105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_FILE_SYSTEM_NOT_EMPTY",
+      "Message": "The file system must be empty for this function.",
+      "DecimalCode": -1062555386,
+      "HexCode": "0xC0AAB106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NOT_FILE",
+      "Message": "Specified path \u0027%1!ls!\u0027 does not identify a file.",
+      "DecimalCode": -1062555384,
+      "HexCode": "0xC0AAB108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NOT_DIR",
+      "Message": "Specified path \u0027%1!ls!\u0027 does not identify a directory.",
+      "DecimalCode": -1062555383,
+      "HexCode": "0xC0AAB109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DIR_NOT_EMPTY",
+      "Message": "The directory \u0027%1!s!\u0027 is not empty.",
+      "DecimalCode": -1062555382,
+      "HexCode": "0xC0AAB10A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NOT_IN_FILE_SYSTEM",
+      "Message": "\u0027%1!ls!\u0027 is not part of the file system.  It must be added to complete this operation.",
+      "DecimalCode": -1062555381,
+      "HexCode": "0xC0AAB10B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INVALID_PATH",
+      "Message": "Path \u0027%1!s!\u0027 is badly formed or contains invalid characters.",
+      "DecimalCode": -1062555376,
+      "HexCode": "0xC0AAB110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_RESTRICTED_NAME_VIOLATION",
+      "Message": "The name \u0027%1!ls!\u0027 specified is not legal:  Name of file or directory object created while the UseRestrictedCharacterSet property is set may only contain ANSI characters.",
+      "DecimalCode": -1062555375,
+      "HexCode": "0xC0AAB111",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DUP_NAME",
+      "Message": "\u0027%1!ls!\u0027 name already exists.",
+      "DecimalCode": -1062555374,
+      "HexCode": "0xC0AAB112",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NO_UNIQUE_NAME",
+      "Message": "Attempt to add \u0027%1!ls!\u0027 failed:  cannot create a file-system-specific unique name for the %2!ls! file system.",
+      "DecimalCode": -1062555373,
+      "HexCode": "0xC0AAB113",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_ITEM_NOT_FOUND",
+      "Message": "Cannot find item \u0027%1!ls!\u0027 in FileSystemImage hierarchy.",
+      "DecimalCode": -1062555368,
+      "HexCode": "0xC0AAB118",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_FILE_NOT_FOUND",
+      "Message": "The file \u0027%1!s!\u0027 not found in FileSystemImage hierarchy.",
+      "DecimalCode": -1062555367,
+      "HexCode": "0xC0AAB119",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DIR_NOT_FOUND",
+      "Message": "The directory \u0027%1!s!\u0027 not found in FileSystemImage hierarchy.",
+      "DecimalCode": -1062555366,
+      "HexCode": "0xC0AAB11A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMAGE_SIZE_LIMIT",
+      "Message": "Adding \u0027%1!ls!\u0027 would result in a result image having a size larger than the current configured limit.",
+      "DecimalCode": -1062555360,
+      "HexCode": "0xC0AAB120",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMAGE_TOO_BIG",
+      "Message": "Value specified for FreeMediaBlocks property is too small for estimated image size based on current data.",
+      "DecimalCode": -1062555359,
+      "HexCode": "0xC0AAB121",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DATA_STREAM_INCONSISTENCY",
+      "Message": "Data stream supplied for file \u0027%1!ls!\u0027 is inconsistent:  expected %2!I64d! bytes, found %3!I64d!.",
+      "DecimalCode": -1062555352,
+      "HexCode": "0xC0AAB128",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DATA_STREAM_READ_FAILURE",
+      "Message": "Cannot read data from stream supplied for file \u0027%1!ls!\u0027.",
+      "DecimalCode": -1062555351,
+      "HexCode": "0xC0AAB129",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DATA_STREAM_CREATE_FAILURE",
+      "Message": "The following error was encountered when trying to create data stream for \u0027%1!ls!\u0027:",
+      "DecimalCode": -1062555350,
+      "HexCode": "0xC0AAB12A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DIRECTORY_READ_FAILURE",
+      "Message": "The following error was encountered when trying to enumerate files in directory \u0027%1!ls!\u0027:",
+      "DecimalCode": -1062555349,
+      "HexCode": "0xC0AAB12B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_TOO_MANY_DIRS",
+      "Message": "This file system image has too many directories for the %1!ls! file system.",
+      "DecimalCode": -1062555344,
+      "HexCode": "0xC0AAB130",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_ISO9660_LEVELS",
+      "Message": "ISO9660 is limited to 8 levels of directories.",
+      "DecimalCode": -1062555343,
+      "HexCode": "0xC0AAB131",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DATA_TOO_BIG",
+      "Message": "Data file is too large for \u0027%1!ls!\u0027 file system.",
+      "DecimalCode": -1062555342,
+      "HexCode": "0xC0AAB132",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INCOMPATIBLE_PREVIOUS_SESSION",
+      "Message": "Operation failed because of incompatible layout of the previous session imported from the medium.",
+      "DecimalCode": -1062555341,
+      "HexCode": "0xC0AAB133",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_STASHFILE_OPEN_FAILURE",
+      "Message": "Cannot initialize %1!ls! stash file.",
+      "DecimalCode": -1062555336,
+      "HexCode": "0xC0AAB138",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_STASHFILE_SEEK_FAILURE",
+      "Message": "Error seeking in \u0027%1!ls!\u0027 stash file.",
+      "DecimalCode": -1062555335,
+      "HexCode": "0xC0AAB139",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_STASHFILE_WRITE_FAILURE",
+      "Message": "Error encountered writing to \u0027%1!ls!\u0027 stash file.",
+      "DecimalCode": -1062555334,
+      "HexCode": "0xC0AAB13A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_STASHFILE_READ_FAILURE",
+      "Message": "Error encountered reading from \u0027%1!ls!\u0027 stash file.",
+      "DecimalCode": -1062555333,
+      "HexCode": "0xC0AAB13B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INVALID_WORKING_DIRECTORY",
+      "Message": "The working directory \u0027%1!ls!\u0027 is not valid.",
+      "DecimalCode": -1062555328,
+      "HexCode": "0xC0AAB140",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_WORKING_DIRECTORY_SPACE",
+      "Message": "Cannot set working directory to \u0027%1!ls!\u0027.  Space available is %2!I64d! bytes, approximately %3!I64d! bytes required.",
+      "DecimalCode": -1062555327,
+      "HexCode": "0xC0AAB141",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_STASHFILE_MOVE",
+      "Message": "Attempt to move the data stash file to directory \u0027%1!ls!\u0027 was not successful.",
+      "DecimalCode": -1062555326,
+      "HexCode": "0xC0AAB142",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_BOOT_IMAGE_DATA",
+      "Message": "The boot object could not be added to the image.",
+      "DecimalCode": -1062555320,
+      "HexCode": "0xC0AAB148",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_BOOT_OBJECT_CONFLICT",
+      "Message": "A boot object can only be included in an initial disc image.",
+      "DecimalCode": -1062555319,
+      "HexCode": "0xC0AAB149",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_BOOT_EMULATION_IMAGE_SIZE_MISMATCH",
+      "Message": "The emulation type requested does not match the boot image size.",
+      "DecimalCode": -1062555318,
+      "HexCode": "0xC0AAB14A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_EMPTY_DISC",
+      "Message": "Optical media is empty.",
+      "DecimalCode": -1062555312,
+      "HexCode": "0xC0AAB150",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NO_SUPPORTED_FILE_SYSTEM",
+      "Message": "The specified disc does not contain one of the supported file systems.",
+      "DecimalCode": -1062555311,
+      "HexCode": "0xC0AAB151",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_FILE_SYSTEM_NOT_FOUND",
+      "Message": "The specified disc does not contain a \u0027%1!ls!\u0027 file system.",
+      "DecimalCode": -1062555310,
+      "HexCode": "0xC0AAB152",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_FILE_SYSTEM_READ_CONSISTENCY_ERROR",
+      "Message": "Consistency error encountered while importing the \u0027%1!ls!\u0027 file system.",
+      "DecimalCode": -1062555309,
+      "HexCode": "0xC0AAB153",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_FILE_SYSTEM_FEATURE_NOT_SUPPORTED",
+      "Message": "The \u0027%1!ls!\u0027file system on the selected disc contains a feature not supported for import.",
+      "DecimalCode": -1062555308,
+      "HexCode": "0xC0AAB154",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMPORT_TYPE_COLLISION_FILE_EXISTS_AS_DIRECTORY",
+      "Message": "Could not import %2!ls! file system from disc.  The file \u0027%1!ls!\u0027 already exists within the image hierarchy as a directory.",
+      "DecimalCode": -1062555307,
+      "HexCode": "0xC0AAB155",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMPORT_SEEK_FAILURE",
+      "Message": "Cannot seek to block %1!I64d! on source disc.",
+      "DecimalCode": -1062555306,
+      "HexCode": "0xC0AAB156",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMPORT_READ_FAILURE",
+      "Message": "Import from previous session failed due to an error reading a block on the media (most likely block %1!u!).",
+      "DecimalCode": -1062555305,
+      "HexCode": "0xC0AAB157",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_DISC_MISMATCH",
+      "Message": "Current disc is not the same one from which file system was imported.",
+      "DecimalCode": -1062555304,
+      "HexCode": "0xC0AAB158",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMPORT_MEDIA_NOT_ALLOWED",
+      "Message": "IMAPI does not allow multi-session with the current media type.",
+      "DecimalCode": -1062555303,
+      "HexCode": "0xC0AAB159",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_UDF_NOT_WRITE_COMPATIBLE",
+      "Message": "IMAPI can not do multi-session with the current media because it does not support a compatible UDF revision for write.",
+      "DecimalCode": -1062555302,
+      "HexCode": "0xC0AAB15A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_INCOMPATIBLE_MULTISESSION_TYPE",
+      "Message": "IMAPI does not support the multisession type requested.",
+      "DecimalCode": -1062555301,
+      "HexCode": "0xC0AAB15B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_NO_COMPATIBLE_MULTISESSION_TYPE",
+      "Message": "IMAPI supports none of the multisession type(s) provided on the current media.",
+      "DecimalCode": -1062555300,
+      "HexCode": "0xC0AAB15C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_MULTISESSION_NOT_SET",
+      "Message": "MultisessionInterfaces property must be set prior calling this method.",
+      "DecimalCode": -1062555299,
+      "HexCode": "0xC0AAB15D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMPORT_TYPE_COLLISION_DIRECTORY_EXISTS_AS_FILE",
+      "Message": "Could not import %2!ls! file system from disc.  The directory \u0027%1!ls!\u0027 already exists within the image hierarchy as a file.",
+      "DecimalCode": -1062555298,
+      "HexCode": "0xC0AAB15E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_S_IMAGE_FEATURE_NOT_SUPPORTED",
+      "Message": "Feature is not supported for the current file system revision, image will be created without this feature.",
+      "DecimalCode": 11186527,
+      "HexCode": "0x00AAB15F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_PROPERTY_NOT_ACCESSIBLE",
+      "Message": "Property \u0027%1!ls!\u0027 is not accessible",
+      "DecimalCode": -1062555296,
+      "HexCode": "0xC0AAB160",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_UDF_REVISION_CHANGE_NOT_ALLOWED",
+      "Message": "UDF revision cannot be changed because of the previously imported session",
+      "DecimalCode": -1062555295,
+      "HexCode": "0xC0AAB161",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_BAD_MULTISESSION_PARAMETER",
+      "Message": "One of the multisession parameters cannot be retrieved or has a wrong value.",
+      "DecimalCode": -1062555294,
+      "HexCode": "0xC0AAB162",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_FILE_SYSTEM_CHANGE_NOT_ALLOWED",
+      "Message": "You cannot change the file system to be created, because the file system in the imported session and the one in the new session must match.",
+      "DecimalCode": -1062555293,
+      "HexCode": "0xC0AAB163",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMAGEMANAGER_IMAGE_NOT_ALIGNED",
+      "Message": "The image is not 2kb aligned. Only 2048 bytes aligned images are supported.",
+      "DecimalCode": -1062555136,
+      "HexCode": "0xC0AAB200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMAGEMANAGER_NO_VALID_VD_FOUND",
+      "Message": "No valid file system Volume Descriptor was found in the iso image. This image format is not supported and the resulting disc might not be readable.",
+      "DecimalCode": -1062555135,
+      "HexCode": "0xC0AAB201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMAGEMANAGER_NO_IMAGE",
+      "Message": "No image was set (neither path nor stream was given).",
+      "DecimalCode": -1062555134,
+      "HexCode": "0xC0AAB202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMAPI_E_IMAGEMANAGER_IMAGE_TOO_BIG",
+      "Message": "Image size exceeds MAXLONG sectors - too big.",
+      "DecimalCode": -1062555133,
+      "HexCode": "0xC0AAB203",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_IMAPI2",
+      "Code": 170
+    }
+  ]
+}

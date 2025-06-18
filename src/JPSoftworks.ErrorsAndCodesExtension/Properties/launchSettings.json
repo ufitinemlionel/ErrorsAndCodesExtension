@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "ErrorsAndCodes (Package)": {
+      "commandName": "MsixPackage",
+      "doNotLaunchApp": true
+    },
+    "ErrorsAndCodes (Unpackaged)": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "MsixPackage",
+      "doNotLaunchApp": true
+    }
+  }
+}

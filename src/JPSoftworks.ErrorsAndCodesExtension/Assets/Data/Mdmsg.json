@@ -1,0 +1,97 @@
+{
+  "HeaderFileName": "mdmsg.h",
+  "ErrorCodes": [
+    {
+      "Id": "MD_ERROR_NOT_INITIALIZED",
+      "Message": "MetaData has not been initialized.",
+      "DecimalCode": -2146646016,
+      "HexCode": "0x800CC800",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_DATA_NOT_FOUND",
+      "Message": "The specified metadata was not found.",
+      "DecimalCode": -2146646015,
+      "HexCode": "0x800CC801",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_INVALID_VERSION",
+      "Message": "The version specified in metadata storage was not recognized.",
+      "DecimalCode": -2146646014,
+      "HexCode": "0x800CC802",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_WARNING_PATH_NOT_FOUND",
+      "Message": "A specified metaobject path was not found. The metaobject and associated metadata was ignored.",
+      "DecimalCode": 837635,
+      "HexCode": "0x000CC803",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_WARNING_DUP_NAME",
+      "Message": "A metaobject or metadata was specified more than once. The duplicate ignored.",
+      "DecimalCode": 837636,
+      "HexCode": "0x000CC804",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_WARNING_INVALID_DATA",
+      "Message": "Invalid metadata was specified. The invalid metadata was ignored.",
+      "DecimalCode": 837637,
+      "HexCode": "0x000CC805",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_SECURE_CHANNEL_FAILURE",
+      "Message": "A secure communications channel could not be established with the target server.",
+      "DecimalCode": -2146646010,
+      "HexCode": "0x800CC806",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_WARNING_PATH_NOT_INSERTED",
+      "Message": "The path was not inserted into the string as requested. The probable cause is that the data is at an object at a higher level than the handle.",
+      "DecimalCode": 837639,
+      "HexCode": "0x000CC807",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_CANNOT_REMOVE_SECURE_ATTRIBUTE",
+      "Message": "The METADATA_SECURE attribute cannot be removed from a data item via the GetData method. Use the DeleteData method to remove the secure data.",
+      "DecimalCode": -2146646008,
+      "HexCode": "0x800CC808",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_WARNING_SAVE_FAILED",
+      "Message": "The metadata save prior to backup failed. The previous version of the data was backed up.",
+      "DecimalCode": 837641,
+      "HexCode": "0x000CC809",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_IISAO_INVALID_SCHEMA",
+      "Message": "The schema information could not be loaded. A required key or property is missing from the metabase.",
+      "DecimalCode": -2146646000,
+      "HexCode": "0x800CC810",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_READ_METABASE_FILE",
+      "Message": "Unable to read the metabase file.  Look at eventlog for further details.",
+      "DecimalCode": -2146645991,
+      "HexCode": "0x800CC819",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_ERROR_NO_SESSION_KEY",
+      "Message": "Could not find session key in IIS_Global section of XML file.",
+      "DecimalCode": -2146645987,
+      "HexCode": "0x800CC81D",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

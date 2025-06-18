@@ -1,0 +1,312 @@
+{
+  "HeaderFileName": "asferr.h",
+  "ErrorCodes": [
+    {
+      "Id": "ASF_E_BUFFEROVERRUN",
+      "Message": "An attempt was made to seek or position past the end of a buffer.%0",
+      "DecimalCode": -1072887856,
+      "HexCode": "0xC00D07D0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_BUFFERTOOSMALL",
+      "Message": "The supplied input or output buffer was too small.%0",
+      "DecimalCode": -1072887855,
+      "HexCode": "0xC00D07D1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_BADLANGUAGEID",
+      "Message": "The language ID was not found.%0",
+      "DecimalCode": -1072887854,
+      "HexCode": "0xC00D07D2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOPAYLOADLENGTH",
+      "Message": "The multiple payload packet is missing the payload length.%0",
+      "DecimalCode": -1072887845,
+      "HexCode": "0xC00D07DB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_TOOMANYPAYLOADS",
+      "Message": "The packet contains too many payloads.%0",
+      "DecimalCode": -1072887844,
+      "HexCode": "0xC00D07DC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_PACKETCONTENTTOOLARGE",
+      "Message": "ASF_E_PACKETCONTENTTOOLARGE",
+      "DecimalCode": -1072887842,
+      "HexCode": "0xC00D07DE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_UNKNOWNPACKETSIZE",
+      "Message": "Expecting a fixed packet size but min. and max. are not equal.%0",
+      "DecimalCode": -1072887840,
+      "HexCode": "0xC00D07E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INVALIDHEADER",
+      "Message": "ASF_E_INVALIDHEADER",
+      "DecimalCode": -1072887838,
+      "HexCode": "0xC00D07E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOCLOCKOBJECT",
+      "Message": "The object does not have a valid clock object.%0",
+      "DecimalCode": -1072887834,
+      "HexCode": "0xC00D07E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_UNKNOWNCLOCKTYPE",
+      "Message": "ASF_E_UNKNOWNCLOCKTYPE",
+      "DecimalCode": -1072887829,
+      "HexCode": "0xC00D07EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_OPAQUEPACKET",
+      "Message": "An attempt was made to restore or access an opaque packet.%0",
+      "DecimalCode": -1072887827,
+      "HexCode": "0xC00D07ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_WRONGVERSION",
+      "Message": "ASF_E_WRONGVERSION",
+      "DecimalCode": -1072887826,
+      "HexCode": "0xC00D07EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_OVERFLOW",
+      "Message": "An attempt was made to store a value which was larger than then destination\u0027s maximum value.%0",
+      "DecimalCode": -1072887825,
+      "HexCode": "0xC00D07EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOTFOUND",
+      "Message": "The object was not found.%0",
+      "DecimalCode": -1072887824,
+      "HexCode": "0xC00D07F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_OBJECTTOOBIG",
+      "Message": "The object is too large to be processed in the requested manner.%0",
+      "DecimalCode": -1072887821,
+      "HexCode": "0xC00D07F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_UNEXPECTEDVALUE",
+      "Message": "A value was not set as expected.%0",
+      "DecimalCode": -1072887820,
+      "HexCode": "0xC00D07F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INVALIDSTATE",
+      "Message": "The request is not valid in the object\u0027s current state.%0",
+      "DecimalCode": -1072887819,
+      "HexCode": "0xC00D07F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOLIBRARY",
+      "Message": "This object does not have a valid library pointer; it was not properly created or it has been Shutdown().%0",
+      "DecimalCode": -1072887818,
+      "HexCode": "0xC00D07F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_ALREADYINITIALIZED",
+      "Message": "This object has already been initialized; the setting cannot be changed.%0",
+      "DecimalCode": -1072887817,
+      "HexCode": "0xC00D07F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INVALIDINIT",
+      "Message": "This object has not been initialized properly; that operation cannot be performed.%0",
+      "DecimalCode": -1072887816,
+      "HexCode": "0xC00D07F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOHEADEROBJECT",
+      "Message": "The ASF Header object could not be found.%0",
+      "DecimalCode": -1072887815,
+      "HexCode": "0xC00D07F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NODATAOBJECT",
+      "Message": "The ASF Data object could not be found.%0",
+      "DecimalCode": -1072887814,
+      "HexCode": "0xC00D07FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOINDEXOBJECT",
+      "Message": "The ASF Index object could not be found.%0",
+      "DecimalCode": -1072887813,
+      "HexCode": "0xC00D07FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOSTREAMPROPS",
+      "Message": "A Stream Properties object with the correct stream number could not be found.%0",
+      "DecimalCode": -1072887812,
+      "HexCode": "0xC00D07FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOFILEPROPS",
+      "Message": "The File Properties object could not be found.%0",
+      "DecimalCode": -1072887811,
+      "HexCode": "0xC00D07FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOLANGUAGELIST",
+      "Message": "The Language List object could not be found.%0",
+      "DecimalCode": -1072887810,
+      "HexCode": "0xC00D07FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOINDEXPARAMETERS",
+      "Message": "The Index Parameters object could not be found.%0",
+      "DecimalCode": -1072887809,
+      "HexCode": "0xC00D07FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_UNSUPPORTEDERRORCONCEALMENT",
+      "Message": "The requested error concealment strategy is not supported by this component.%0",
+      "DecimalCode": -1072887808,
+      "HexCode": "0xC00D0800",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INVALIDFLAGS",
+      "Message": "The flags for this object or set of objects are not properly set.%0",
+      "DecimalCode": -1072887807,
+      "HexCode": "0xC00D0801",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_BADDATADESCRIPTOR",
+      "Message": "One or more data descriptors is not properly set.%0",
+      "DecimalCode": -1072887806,
+      "HexCode": "0xC00D0802",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_BADINDEXINTERVAL",
+      "Message": "The index has an invalid time interval (probably zero).%0",
+      "DecimalCode": -1072887805,
+      "HexCode": "0xC00D0803",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INVALIDTIME",
+      "Message": "The given time value is not valid.%0",
+      "DecimalCode": -1072887804,
+      "HexCode": "0xC00D0804",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INVALIDINDEX",
+      "Message": "The given index value is not valid.%0",
+      "DecimalCode": -1072887803,
+      "HexCode": "0xC00D0805",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_STREAMNUMBERINUSE",
+      "Message": "The specified stream number is already in use.%0",
+      "DecimalCode": -1072887802,
+      "HexCode": "0xC00D0806",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_BADMEDIATYPE",
+      "Message": "The specified media type does not work with this component.%0",
+      "DecimalCode": -1072887801,
+      "HexCode": "0xC00D0807",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_WRITEFAILED",
+      "Message": "The object could not be written as specified.%0",
+      "DecimalCode": -1072887800,
+      "HexCode": "0xC00D0808",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOTENOUGHDESCRIPTORS",
+      "Message": "The given data unit requires a larger number of descriptors to be fully parsed.%0",
+      "DecimalCode": -1072887799,
+      "HexCode": "0xC00D0809",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_INDEXBLOCKUNLOADED",
+      "Message": "The index entries for the specified index block have been unloaded from memory and are not available.%0",
+      "DecimalCode": -1072887798,
+      "HexCode": "0xC00D080A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_NOTENOUGHBANDWIDTH",
+      "Message": "The specified bandwidth is not large enough.%0",
+      "DecimalCode": -1072887797,
+      "HexCode": "0xC00D080B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_EXCEEDEDMAXIMUMOBJECTSIZE",
+      "Message": "The object has exceeded its maximum size.%0",
+      "DecimalCode": -1072887796,
+      "HexCode": "0xC00D080C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_BADDATAUNIT",
+      "Message": "The given data unit is corrupted, badly formatted, or otherwise not valid.%0",
+      "DecimalCode": -1072887795,
+      "HexCode": "0xC00D080D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_E_HEADERSIZE",
+      "Message": "The ASF header has exceeded the specified maximum size.%0",
+      "DecimalCode": -1072887794,
+      "HexCode": "0xC00D080E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASF_S_OPAQUEPACKET",
+      "Message": "ASF_S_OPAQUEPACKET",
+      "DecimalCode": 854000,
+      "HexCode": "0x000D07F0",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_NS",
+      "Code": 13
+    }
+  ]
+}

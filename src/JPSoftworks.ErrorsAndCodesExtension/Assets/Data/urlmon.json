@@ -1,0 +1,13 @@
+{
+  "HeaderFileName": "urlmon.h",
+  "ErrorCodes": [
+    {
+      "Id": "MK_S_ASYNCHRONOUS",
+      "Message": "",
+      "DecimalCode": 262632,
+      "HexCode": "0x000401E8",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

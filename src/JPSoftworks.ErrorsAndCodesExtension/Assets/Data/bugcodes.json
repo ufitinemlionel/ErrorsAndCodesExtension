@@ -1,0 +1,3758 @@
+{
+  "HeaderFileName": "bugcodes.h",
+  "ErrorCodes": [
+    {
+      "Id": "HARDWARE_PROFILE_UNDOCKED_STRING",
+      "Message": "Undocked Profile",
+      "DecimalCode": 1073807361,
+      "HexCode": "0x40010001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HARDWARE_PROFILE_DOCKED_STRING",
+      "Message": "Docked Profile",
+      "DecimalCode": 1073807362,
+      "HexCode": "0x40010002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HARDWARE_PROFILE_UNKNOWN_STRING",
+      "Message": "Profile",
+      "DecimalCode": 1073807363,
+      "HexCode": "0x40010003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINDOWS_NT_BANNER",
+      "Message": "Microsoft (R) Windows (R) Version %hs (Build %u%hs)",
+      "DecimalCode": 1073741950,
+      "HexCode": "0x4000007E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINDOWS_NT_CSD_STRING",
+      "Message": "Service Pack",
+      "DecimalCode": 1073741959,
+      "HexCode": "0x40000087",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINDOWS_NT_INFO_STRING",
+      "Message": "%u System Processor [%u MB Memory] %Z",
+      "DecimalCode": 1073741960,
+      "HexCode": "0x40000088",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINDOWS_NT_MP_STRING",
+      "Message": "MultiProcessor Kernel",
+      "DecimalCode": 1073741961,
+      "HexCode": "0x40000089",
+      "Type": "HResult"
+    },
+    {
+      "Id": "THREAD_TERMINATE_HELD_MUTEX",
+      "Message": "A kernel thread terminated while holding a mutex",
+      "DecimalCode": 1073741962,
+      "HexCode": "0x4000008A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINDOWS_NT_INFO_STRING_PLURAL",
+      "Message": "%u System Processors [%u MB Memory] %Z",
+      "DecimalCode": 1073741981,
+      "HexCode": "0x4000009D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINDOWS_NT_RC_STRING",
+      "Message": "RC",
+      "DecimalCode": 1073741982,
+      "HexCode": "0x4000009E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "APC_INDEX_MISMATCH",
+      "Message": "APC_INDEX_MISMATCH",
+      "DecimalCode": 1,
+      "HexCode": "0x00000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DEVICE_QUEUE_NOT_BUSY",
+      "Message": "DEVICE_QUEUE_NOT_BUSY",
+      "DecimalCode": 2,
+      "HexCode": "0x00000002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_AFFINITY_SET",
+      "Message": "INVALID_AFFINITY_SET",
+      "DecimalCode": 3,
+      "HexCode": "0x00000003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_DATA_ACCESS_TRAP",
+      "Message": "INVALID_DATA_ACCESS_TRAP",
+      "DecimalCode": 4,
+      "HexCode": "0x00000004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_PROCESS_ATTACH_ATTEMPT",
+      "Message": "INVALID_PROCESS_ATTACH_ATTEMPT",
+      "DecimalCode": 5,
+      "HexCode": "0x00000005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_PROCESS_DETACH_ATTEMPT",
+      "Message": "INVALID_PROCESS_DETACH_ATTEMPT",
+      "DecimalCode": 6,
+      "HexCode": "0x00000006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_SOFTWARE_INTERRUPT",
+      "Message": "INVALID_SOFTWARE_INTERRUPT",
+      "DecimalCode": 7,
+      "HexCode": "0x00000007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IRQL_NOT_DISPATCH_LEVEL",
+      "Message": "IRQL_NOT_DISPATCH_LEVEL",
+      "DecimalCode": 8,
+      "HexCode": "0x00000008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IRQL_NOT_GREATER_OR_EQUAL",
+      "Message": "IRQL_NOT_GREATER_OR_EQUAL",
+      "DecimalCode": 9,
+      "HexCode": "0x00000009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IRQL_NOT_LESS_OR_EQUAL",
+      "Message": "IRQL_NOT_LESS_OR_EQUAL",
+      "DecimalCode": 10,
+      "HexCode": "0x0000000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_EXCEPTION_HANDLING_SUPPORT",
+      "Message": "NO_EXCEPTION_HANDLING_SUPPORT",
+      "DecimalCode": 11,
+      "HexCode": "0x0000000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MAXIMUM_WAIT_OBJECTS_EXCEEDED",
+      "Message": "MAXIMUM_WAIT_OBJECTS_EXCEEDED",
+      "DecimalCode": 12,
+      "HexCode": "0x0000000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MUTEX_LEVEL_NUMBER_VIOLATION",
+      "Message": "MUTEX_LEVEL_NUMBER_VIOLATION",
+      "DecimalCode": 13,
+      "HexCode": "0x0000000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_USER_MODE_CONTEXT",
+      "Message": "NO_USER_MODE_CONTEXT",
+      "DecimalCode": 14,
+      "HexCode": "0x0000000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SPIN_LOCK_ALREADY_OWNED",
+      "Message": "SPIN_LOCK_ALREADY_OWNED",
+      "DecimalCode": 15,
+      "HexCode": "0x0000000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SPIN_LOCK_NOT_OWNED",
+      "Message": "SPIN_LOCK_NOT_OWNED",
+      "DecimalCode": 16,
+      "HexCode": "0x00000010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "THREAD_NOT_MUTEX_OWNER",
+      "Message": "THREAD_NOT_MUTEX_OWNER",
+      "DecimalCode": 17,
+      "HexCode": "0x00000011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TRAP_CAUSE_UNKNOWN",
+      "Message": "TRAP_CAUSE_UNKNOWN",
+      "DecimalCode": 18,
+      "HexCode": "0x00000012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EMPTY_THREAD_REAPER_LIST",
+      "Message": "EMPTY_THREAD_REAPER_LIST",
+      "DecimalCode": 19,
+      "HexCode": "0x00000013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CREATE_DELETE_LOCK_NOT_LOCKED",
+      "Message": "CREATE_DELETE_LOCK_NOT_LOCKED",
+      "DecimalCode": 20,
+      "HexCode": "0x00000014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LAST_CHANCE_CALLED_FROM_KMODE",
+      "Message": "LAST_CHANCE_CALLED_FROM_KMODE",
+      "DecimalCode": 21,
+      "HexCode": "0x00000015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CID_HANDLE_CREATION",
+      "Message": "CID_HANDLE_CREATION",
+      "DecimalCode": 22,
+      "HexCode": "0x00000016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CID_HANDLE_DELETION",
+      "Message": "CID_HANDLE_DELETION",
+      "DecimalCode": 23,
+      "HexCode": "0x00000017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REFERENCE_BY_POINTER",
+      "Message": "REFERENCE_BY_POINTER",
+      "DecimalCode": 24,
+      "HexCode": "0x00000018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BAD_POOL_HEADER",
+      "Message": "BAD_POOL_HEADER",
+      "DecimalCode": 25,
+      "HexCode": "0x00000019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MEMORY_MANAGEMENT",
+      "Message": "MEMORY_MANAGEMENT",
+      "DecimalCode": 26,
+      "HexCode": "0x0000001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PFN_SHARE_COUNT",
+      "Message": "PFN_SHARE_COUNT",
+      "DecimalCode": 27,
+      "HexCode": "0x0000001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PFN_REFERENCE_COUNT",
+      "Message": "PFN_REFERENCE_COUNT",
+      "DecimalCode": 28,
+      "HexCode": "0x0000001C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_SPIN_LOCK_AVAILABLE",
+      "Message": "NO_SPIN_LOCK_AVAILABLE",
+      "DecimalCode": 29,
+      "HexCode": "0x0000001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KMODE_EXCEPTION_NOT_HANDLED",
+      "Message": "KMODE_EXCEPTION_NOT_HANDLED",
+      "DecimalCode": 30,
+      "HexCode": "0x0000001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SHARED_RESOURCE_CONV_ERROR",
+      "Message": "SHARED_RESOURCE_CONV_ERROR",
+      "DecimalCode": 31,
+      "HexCode": "0x0000001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_APC_PENDING_DURING_EXIT",
+      "Message": "KERNEL_APC_PENDING_DURING_EXIT",
+      "DecimalCode": 32,
+      "HexCode": "0x00000020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "QUOTA_UNDERFLOW",
+      "Message": "QUOTA_UNDERFLOW",
+      "DecimalCode": 33,
+      "HexCode": "0x00000021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILE_SYSTEM",
+      "Message": "FILE_SYSTEM",
+      "DecimalCode": 34,
+      "HexCode": "0x00000022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FAT_FILE_SYSTEM",
+      "Message": "FAT_FILE_SYSTEM",
+      "DecimalCode": 35,
+      "HexCode": "0x00000023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NTFS_FILE_SYSTEM",
+      "Message": "NTFS_FILE_SYSTEM",
+      "DecimalCode": 36,
+      "HexCode": "0x00000024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NPFS_FILE_SYSTEM",
+      "Message": "NPFS_FILE_SYSTEM",
+      "DecimalCode": 37,
+      "HexCode": "0x00000025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CDFS_FILE_SYSTEM",
+      "Message": "CDFS_FILE_SYSTEM",
+      "DecimalCode": 38,
+      "HexCode": "0x00000026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RDR_FILE_SYSTEM",
+      "Message": "RDR_FILE_SYSTEM",
+      "DecimalCode": 39,
+      "HexCode": "0x00000027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CORRUPT_ACCESS_TOKEN",
+      "Message": "CORRUPT_ACCESS_TOKEN",
+      "DecimalCode": 40,
+      "HexCode": "0x00000028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURITY_SYSTEM",
+      "Message": "SECURITY_SYSTEM",
+      "DecimalCode": 41,
+      "HexCode": "0x00000029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INCONSISTENT_IRP",
+      "Message": "INCONSISTENT_IRP",
+      "DecimalCode": 42,
+      "HexCode": "0x0000002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PANIC_STACK_SWITCH",
+      "Message": "PANIC_STACK_SWITCH",
+      "DecimalCode": 43,
+      "HexCode": "0x0000002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PORT_DRIVER_INTERNAL",
+      "Message": "PORT_DRIVER_INTERNAL",
+      "DecimalCode": 44,
+      "HexCode": "0x0000002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SCSI_DISK_DRIVER_INTERNAL",
+      "Message": "SCSI_DISK_DRIVER_INTERNAL",
+      "DecimalCode": 45,
+      "HexCode": "0x0000002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DATA_BUS_ERROR",
+      "Message": "DATA_BUS_ERROR",
+      "DecimalCode": 46,
+      "HexCode": "0x0000002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INSTRUCTION_BUS_ERROR",
+      "Message": "INSTRUCTION_BUS_ERROR",
+      "DecimalCode": 47,
+      "HexCode": "0x0000002F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SET_OF_INVALID_CONTEXT",
+      "Message": "SET_OF_INVALID_CONTEXT",
+      "DecimalCode": 48,
+      "HexCode": "0x00000030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PHASE0_INITIALIZATION_FAILED",
+      "Message": "PHASE0_INITIALIZATION_FAILED",
+      "DecimalCode": 49,
+      "HexCode": "0x00000031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PHASE1_INITIALIZATION_FAILED",
+      "Message": "PHASE1_INITIALIZATION_FAILED",
+      "DecimalCode": 50,
+      "HexCode": "0x00000032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNEXPECTED_INITIALIZATION_CALL",
+      "Message": "UNEXPECTED_INITIALIZATION_CALL",
+      "DecimalCode": 51,
+      "HexCode": "0x00000033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CACHE_MANAGER",
+      "Message": "CACHE_MANAGER",
+      "DecimalCode": 52,
+      "HexCode": "0x00000034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_MORE_IRP_STACK_LOCATIONS",
+      "Message": "NO_MORE_IRP_STACK_LOCATIONS",
+      "DecimalCode": 53,
+      "HexCode": "0x00000035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DEVICE_REFERENCE_COUNT_NOT_ZERO",
+      "Message": "DEVICE_REFERENCE_COUNT_NOT_ZERO",
+      "DecimalCode": 54,
+      "HexCode": "0x00000036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FLOPPY_INTERNAL_ERROR",
+      "Message": "FLOPPY_INTERNAL_ERROR",
+      "DecimalCode": 55,
+      "HexCode": "0x00000037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SERIAL_DRIVER_INTERNAL",
+      "Message": "SERIAL_DRIVER_INTERNAL",
+      "DecimalCode": 56,
+      "HexCode": "0x00000038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_EXIT_OWNED_MUTEX",
+      "Message": "SYSTEM_EXIT_OWNED_MUTEX",
+      "DecimalCode": 57,
+      "HexCode": "0x00000039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_UNWIND_PREVIOUS_USER",
+      "Message": "SYSTEM_UNWIND_PREVIOUS_USER",
+      "DecimalCode": 58,
+      "HexCode": "0x0000003A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_SERVICE_EXCEPTION",
+      "Message": "SYSTEM_SERVICE_EXCEPTION",
+      "DecimalCode": 59,
+      "HexCode": "0x0000003B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INTERRUPT_UNWIND_ATTEMPTED",
+      "Message": "INTERRUPT_UNWIND_ATTEMPTED",
+      "DecimalCode": 60,
+      "HexCode": "0x0000003C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INTERRUPT_EXCEPTION_NOT_HANDLED",
+      "Message": "INTERRUPT_EXCEPTION_NOT_HANDLED",
+      "DecimalCode": 61,
+      "HexCode": "0x0000003D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED",
+      "Message": "MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED",
+      "DecimalCode": 62,
+      "HexCode": "0x0000003E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_MORE_SYSTEM_PTES",
+      "Message": "NO_MORE_SYSTEM_PTES",
+      "DecimalCode": 63,
+      "HexCode": "0x0000003F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TARGET_MDL_TOO_SMALL",
+      "Message": "TARGET_MDL_TOO_SMALL",
+      "DecimalCode": 64,
+      "HexCode": "0x00000040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MUST_SUCCEED_POOL_EMPTY",
+      "Message": "MUST_SUCCEED_POOL_EMPTY",
+      "DecimalCode": 65,
+      "HexCode": "0x00000041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ATDISK_DRIVER_INTERNAL",
+      "Message": "ATDISK_DRIVER_INTERNAL",
+      "DecimalCode": 66,
+      "HexCode": "0x00000042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_SUCH_PARTITION",
+      "Message": "NO_SUCH_PARTITION",
+      "DecimalCode": 67,
+      "HexCode": "0x00000043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MULTIPLE_IRP_COMPLETE_REQUESTS",
+      "Message": "MULTIPLE_IRP_COMPLETE_REQUESTS",
+      "DecimalCode": 68,
+      "HexCode": "0x00000044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INSUFFICIENT_SYSTEM_MAP_REGS",
+      "Message": "INSUFFICIENT_SYSTEM_MAP_REGS",
+      "DecimalCode": 69,
+      "HexCode": "0x00000045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DEREF_UNKNOWN_LOGON_SESSION",
+      "Message": "DEREF_UNKNOWN_LOGON_SESSION",
+      "DecimalCode": 70,
+      "HexCode": "0x00000046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REF_UNKNOWN_LOGON_SESSION",
+      "Message": "REF_UNKNOWN_LOGON_SESSION",
+      "DecimalCode": 71,
+      "HexCode": "0x00000047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CANCEL_STATE_IN_COMPLETED_IRP",
+      "Message": "CANCEL_STATE_IN_COMPLETED_IRP",
+      "DecimalCode": 72,
+      "HexCode": "0x00000048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PAGE_FAULT_WITH_INTERRUPTS_OFF",
+      "Message": "PAGE_FAULT_WITH_INTERRUPTS_OFF",
+      "DecimalCode": 73,
+      "HexCode": "0x00000049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IRQL_GT_ZERO_AT_SYSTEM_SERVICE",
+      "Message": "IRQL_GT_ZERO_AT_SYSTEM_SERVICE",
+      "DecimalCode": 74,
+      "HexCode": "0x0000004A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STREAMS_INTERNAL_ERROR",
+      "Message": "STREAMS_INTERNAL_ERROR",
+      "DecimalCode": 75,
+      "HexCode": "0x0000004B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FATAL_UNHANDLED_HARD_ERROR",
+      "Message": "FATAL_UNHANDLED_HARD_ERROR",
+      "DecimalCode": 76,
+      "HexCode": "0x0000004C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_PAGES_AVAILABLE",
+      "Message": "NO_PAGES_AVAILABLE",
+      "DecimalCode": 77,
+      "HexCode": "0x0000004D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PFN_LIST_CORRUPT",
+      "Message": "PFN_LIST_CORRUPT",
+      "DecimalCode": 78,
+      "HexCode": "0x0000004E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NDIS_INTERNAL_ERROR",
+      "Message": "NDIS_INTERNAL_ERROR",
+      "DecimalCode": 79,
+      "HexCode": "0x0000004F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PAGE_FAULT_IN_NONPAGED_AREA",
+      "Message": "PAGE_FAULT_IN_NONPAGED_AREA",
+      "DecimalCode": 80,
+      "HexCode": "0x00000050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REGISTRY_ERROR",
+      "Message": "REGISTRY_ERROR",
+      "DecimalCode": 81,
+      "HexCode": "0x00000051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MAILSLOT_FILE_SYSTEM",
+      "Message": "MAILSLOT_FILE_SYSTEM",
+      "DecimalCode": 82,
+      "HexCode": "0x00000052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NO_BOOT_DEVICE",
+      "Message": "NO_BOOT_DEVICE",
+      "DecimalCode": 83,
+      "HexCode": "0x00000053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LM_SERVER_INTERNAL_ERROR",
+      "Message": "LM_SERVER_INTERNAL_ERROR",
+      "DecimalCode": 84,
+      "HexCode": "0x00000054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DATA_COHERENCY_EXCEPTION",
+      "Message": "DATA_COHERENCY_EXCEPTION",
+      "DecimalCode": 85,
+      "HexCode": "0x00000055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INSTRUCTION_COHERENCY_EXCEPTION",
+      "Message": "INSTRUCTION_COHERENCY_EXCEPTION",
+      "DecimalCode": 86,
+      "HexCode": "0x00000056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XNS_INTERNAL_ERROR",
+      "Message": "XNS_INTERNAL_ERROR",
+      "DecimalCode": 87,
+      "HexCode": "0x00000057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VOLMGRX_INTERNAL_ERROR",
+      "Message": "VOLMGRX_INTERNAL_ERROR",
+      "DecimalCode": 88,
+      "HexCode": "0x00000058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PINBALL_FILE_SYSTEM",
+      "Message": "PINBALL_FILE_SYSTEM",
+      "DecimalCode": 89,
+      "HexCode": "0x00000059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRITICAL_SERVICE_FAILED",
+      "Message": "CRITICAL_SERVICE_FAILED",
+      "DecimalCode": 90,
+      "HexCode": "0x0000005A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SET_ENV_VAR_FAILED",
+      "Message": "SET_ENV_VAR_FAILED",
+      "DecimalCode": 91,
+      "HexCode": "0x0000005B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL_INITIALIZATION_FAILED",
+      "Message": "HAL_INITIALIZATION_FAILED",
+      "DecimalCode": 92,
+      "HexCode": "0x0000005C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNSUPPORTED_PROCESSOR",
+      "Message": "UNSUPPORTED_PROCESSOR",
+      "DecimalCode": 93,
+      "HexCode": "0x0000005D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "OBJECT_INITIALIZATION_FAILED",
+      "Message": "OBJECT_INITIALIZATION_FAILED",
+      "DecimalCode": 94,
+      "HexCode": "0x0000005E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURITY_INITIALIZATION_FAILED",
+      "Message": "SECURITY_INITIALIZATION_FAILED",
+      "DecimalCode": 95,
+      "HexCode": "0x0000005F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROCESS_INITIALIZATION_FAILED",
+      "Message": "PROCESS_INITIALIZATION_FAILED",
+      "DecimalCode": 96,
+      "HexCode": "0x00000060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL1_INITIALIZATION_FAILED",
+      "Message": "HAL1_INITIALIZATION_FAILED",
+      "DecimalCode": 97,
+      "HexCode": "0x00000061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "OBJECT1_INITIALIZATION_FAILED",
+      "Message": "OBJECT1_INITIALIZATION_FAILED",
+      "DecimalCode": 98,
+      "HexCode": "0x00000062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURITY1_INITIALIZATION_FAILED",
+      "Message": "SECURITY1_INITIALIZATION_FAILED",
+      "DecimalCode": 99,
+      "HexCode": "0x00000063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYMBOLIC_INITIALIZATION_FAILED",
+      "Message": "SYMBOLIC_INITIALIZATION_FAILED",
+      "DecimalCode": 100,
+      "HexCode": "0x00000064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MEMORY1_INITIALIZATION_FAILED",
+      "Message": "MEMORY1_INITIALIZATION_FAILED",
+      "DecimalCode": 101,
+      "HexCode": "0x00000065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CACHE_INITIALIZATION_FAILED",
+      "Message": "CACHE_INITIALIZATION_FAILED",
+      "DecimalCode": 102,
+      "HexCode": "0x00000066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CONFIG_INITIALIZATION_FAILED",
+      "Message": "CONFIG_INITIALIZATION_FAILED",
+      "DecimalCode": 103,
+      "HexCode": "0x00000067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILE_INITIALIZATION_FAILED",
+      "Message": "FILE_INITIALIZATION_FAILED",
+      "DecimalCode": 104,
+      "HexCode": "0x00000068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IO1_INITIALIZATION_FAILED",
+      "Message": "IO1_INITIALIZATION_FAILED",
+      "DecimalCode": 105,
+      "HexCode": "0x00000069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LPC_INITIALIZATION_FAILED",
+      "Message": "LPC_INITIALIZATION_FAILED",
+      "DecimalCode": 106,
+      "HexCode": "0x0000006A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROCESS1_INITIALIZATION_FAILED",
+      "Message": "PROCESS1_INITIALIZATION_FAILED",
+      "DecimalCode": 107,
+      "HexCode": "0x0000006B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REFMON_INITIALIZATION_FAILED",
+      "Message": "REFMON_INITIALIZATION_FAILED",
+      "DecimalCode": 108,
+      "HexCode": "0x0000006C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SESSION1_INITIALIZATION_FAILED",
+      "Message": "SESSION1_INITIALIZATION_FAILED",
+      "DecimalCode": 109,
+      "HexCode": "0x0000006D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTPROC_INITIALIZATION_FAILED",
+      "Message": "BOOTPROC_INITIALIZATION_FAILED",
+      "DecimalCode": 110,
+      "HexCode": "0x0000006E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSL_INITIALIZATION_FAILED",
+      "Message": "VSL_INITIALIZATION_FAILED",
+      "DecimalCode": 111,
+      "HexCode": "0x0000006F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SOFT_RESTART_FATAL_ERROR",
+      "Message": "SOFT_RESTART_FATAL_ERROR",
+      "DecimalCode": 112,
+      "HexCode": "0x00000070",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ASSIGN_DRIVE_LETTERS_FAILED",
+      "Message": "ASSIGN_DRIVE_LETTERS_FAILED",
+      "DecimalCode": 114,
+      "HexCode": "0x00000072",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CONFIG_LIST_FAILED",
+      "Message": "CONFIG_LIST_FAILED",
+      "DecimalCode": 115,
+      "HexCode": "0x00000073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BAD_SYSTEM_CONFIG_INFO",
+      "Message": "BAD_SYSTEM_CONFIG_INFO",
+      "DecimalCode": 116,
+      "HexCode": "0x00000074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CANNOT_WRITE_CONFIGURATION",
+      "Message": "CANNOT_WRITE_CONFIGURATION",
+      "DecimalCode": 117,
+      "HexCode": "0x00000075",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROCESS_HAS_LOCKED_PAGES",
+      "Message": "PROCESS_HAS_LOCKED_PAGES",
+      "DecimalCode": 118,
+      "HexCode": "0x00000076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_STACK_INPAGE_ERROR",
+      "Message": "KERNEL_STACK_INPAGE_ERROR",
+      "DecimalCode": 119,
+      "HexCode": "0x00000077",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PHASE0_EXCEPTION",
+      "Message": "PHASE0_EXCEPTION",
+      "DecimalCode": 120,
+      "HexCode": "0x00000078",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MISMATCHED_HAL",
+      "Message": "MISMATCHED_HAL",
+      "DecimalCode": 121,
+      "HexCode": "0x00000079",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_DATA_INPAGE_ERROR",
+      "Message": "KERNEL_DATA_INPAGE_ERROR",
+      "DecimalCode": 122,
+      "HexCode": "0x0000007A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INACCESSIBLE_BOOT_DEVICE",
+      "Message": "INACCESSIBLE_BOOT_DEVICE",
+      "DecimalCode": 123,
+      "HexCode": "0x0000007B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_NDIS_DRIVER",
+      "Message": "BUGCODE_NDIS_DRIVER",
+      "DecimalCode": 124,
+      "HexCode": "0x0000007C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INSTALL_MORE_MEMORY",
+      "Message": "INSTALL_MORE_MEMORY",
+      "DecimalCode": 125,
+      "HexCode": "0x0000007D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED",
+      "Message": "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED",
+      "DecimalCode": 126,
+      "HexCode": "0x0000007E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNEXPECTED_KERNEL_MODE_TRAP",
+      "Message": "UNEXPECTED_KERNEL_MODE_TRAP",
+      "DecimalCode": 127,
+      "HexCode": "0x0000007F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NMI_HARDWARE_FAILURE",
+      "Message": "NMI_HARDWARE_FAILURE",
+      "DecimalCode": 128,
+      "HexCode": "0x00000080",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SPIN_LOCK_INIT_FAILURE",
+      "Message": "SPIN_LOCK_INIT_FAILURE",
+      "DecimalCode": 129,
+      "HexCode": "0x00000081",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DFS_FILE_SYSTEM",
+      "Message": "DFS_FILE_SYSTEM",
+      "DecimalCode": 130,
+      "HexCode": "0x00000082",
+      "Type": "HResult"
+    },
+    {
+      "Id": "OFS_FILE_SYSTEM",
+      "Message": "OFS_FILE_SYSTEM",
+      "DecimalCode": 131,
+      "HexCode": "0x00000083",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RECOM_DRIVER",
+      "Message": "RECOM_DRIVER",
+      "DecimalCode": 132,
+      "HexCode": "0x00000084",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SETUP_FAILURE",
+      "Message": "SETUP_FAILURE",
+      "DecimalCode": 133,
+      "HexCode": "0x00000085",
+      "Type": "HResult"
+    },
+    {
+      "Id": "AUDIT_FAILURE",
+      "Message": "AUDIT_FAILURE",
+      "DecimalCode": 134,
+      "HexCode": "0x00000086",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MBR_CHECKSUM_MISMATCH",
+      "Message": "MBR_CHECKSUM_MISMATCH",
+      "DecimalCode": 139,
+      "HexCode": "0x0000008B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_MODE_EXCEPTION_NOT_HANDLED",
+      "Message": "KERNEL_MODE_EXCEPTION_NOT_HANDLED",
+      "DecimalCode": 142,
+      "HexCode": "0x0000008E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PP0_INITIALIZATION_FAILED",
+      "Message": "PP0_INITIALIZATION_FAILED",
+      "DecimalCode": 143,
+      "HexCode": "0x0000008F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PP1_INITIALIZATION_FAILED",
+      "Message": "PP1_INITIALIZATION_FAILED",
+      "DecimalCode": 144,
+      "HexCode": "0x00000090",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_INIT_OR_RIT_FAILURE",
+      "Message": "WIN32K_INIT_OR_RIT_FAILURE",
+      "DecimalCode": 145,
+      "HexCode": "0x00000091",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UP_DRIVER_ON_MP_SYSTEM",
+      "Message": "UP_DRIVER_ON_MP_SYSTEM",
+      "DecimalCode": 146,
+      "HexCode": "0x00000092",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_KERNEL_HANDLE",
+      "Message": "INVALID_KERNEL_HANDLE",
+      "DecimalCode": 147,
+      "HexCode": "0x00000093",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_STACK_LOCKED_AT_EXIT",
+      "Message": "KERNEL_STACK_LOCKED_AT_EXIT",
+      "DecimalCode": 148,
+      "HexCode": "0x00000094",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PNP_INTERNAL_ERROR",
+      "Message": "PNP_INTERNAL_ERROR",
+      "DecimalCode": 149,
+      "HexCode": "0x00000095",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_WORK_QUEUE_ITEM",
+      "Message": "INVALID_WORK_QUEUE_ITEM",
+      "DecimalCode": 150,
+      "HexCode": "0x00000096",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOUND_IMAGE_UNSUPPORTED",
+      "Message": "BOUND_IMAGE_UNSUPPORTED",
+      "DecimalCode": 151,
+      "HexCode": "0x00000097",
+      "Type": "HResult"
+    },
+    {
+      "Id": "END_OF_NT_EVALUATION_PERIOD",
+      "Message": "END_OF_NT_EVALUATION_PERIOD",
+      "DecimalCode": 152,
+      "HexCode": "0x00000098",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_REGION_OR_SEGMENT",
+      "Message": "INVALID_REGION_OR_SEGMENT",
+      "DecimalCode": 153,
+      "HexCode": "0x00000099",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_LICENSE_VIOLATION",
+      "Message": "SYSTEM_LICENSE_VIOLATION",
+      "DecimalCode": 154,
+      "HexCode": "0x0000009A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UDFS_FILE_SYSTEM",
+      "Message": "UDFS_FILE_SYSTEM",
+      "DecimalCode": 155,
+      "HexCode": "0x0000009B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MACHINE_CHECK_EXCEPTION",
+      "Message": "MACHINE_CHECK_EXCEPTION",
+      "DecimalCode": 156,
+      "HexCode": "0x0000009C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "USER_MODE_HEALTH_MONITOR",
+      "Message": "USER_MODE_HEALTH_MONITOR",
+      "DecimalCode": 158,
+      "HexCode": "0x0000009E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_POWER_STATE_FAILURE",
+      "Message": "DRIVER_POWER_STATE_FAILURE",
+      "DecimalCode": 159,
+      "HexCode": "0x0000009F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INTERNAL_POWER_ERROR",
+      "Message": "INTERNAL_POWER_ERROR",
+      "DecimalCode": 160,
+      "HexCode": "0x000000A0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PCI_BUS_DRIVER_INTERNAL",
+      "Message": "PCI_BUS_DRIVER_INTERNAL",
+      "DecimalCode": 161,
+      "HexCode": "0x000000A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MEMORY_IMAGE_CORRUPT",
+      "Message": "MEMORY_IMAGE_CORRUPT",
+      "DecimalCode": 162,
+      "HexCode": "0x000000A2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ACPI_DRIVER_INTERNAL",
+      "Message": "ACPI_DRIVER_INTERNAL",
+      "DecimalCode": 163,
+      "HexCode": "0x000000A3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CNSS_FILE_SYSTEM_FILTER",
+      "Message": "CNSS_FILE_SYSTEM_FILTER",
+      "DecimalCode": 164,
+      "HexCode": "0x000000A4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ACPI_BIOS_ERROR",
+      "Message": "ACPI_BIOS_ERROR",
+      "DecimalCode": 165,
+      "HexCode": "0x000000A5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FP_EMULATION_ERROR",
+      "Message": "FP_EMULATION_ERROR",
+      "DecimalCode": 166,
+      "HexCode": "0x000000A6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BAD_EXHANDLE",
+      "Message": "BAD_EXHANDLE",
+      "DecimalCode": 167,
+      "HexCode": "0x000000A7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTING_IN_SAFEMODE_MINIMAL",
+      "Message": "BOOTING_IN_SAFEMODE_MINIMAL",
+      "DecimalCode": 168,
+      "HexCode": "0x000000A8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTING_IN_SAFEMODE_NETWORK",
+      "Message": "BOOTING_IN_SAFEMODE_NETWORK",
+      "DecimalCode": 169,
+      "HexCode": "0x000000A9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTING_IN_SAFEMODE_DSREPAIR",
+      "Message": "BOOTING_IN_SAFEMODE_DSREPAIR",
+      "DecimalCode": 170,
+      "HexCode": "0x000000AA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SESSION_HAS_VALID_POOL_ON_EXIT",
+      "Message": "SESSION_HAS_VALID_POOL_ON_EXIT",
+      "DecimalCode": 171,
+      "HexCode": "0x000000AB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL_MEMORY_ALLOCATION",
+      "Message": "HAL_MEMORY_ALLOCATION",
+      "DecimalCode": 172,
+      "HexCode": "0x000000AC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DRIVER_DEBUG_REPORT_REQUEST",
+      "Message": "VIDEO_DRIVER_DEBUG_REPORT_REQUEST",
+      "DecimalCode": 1073741997,
+      "HexCode": "0x400000AD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BGI_DETECTED_VIOLATION",
+      "Message": "BGI_DETECTED_VIOLATION",
+      "DecimalCode": 177,
+      "HexCode": "0x000000B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DRIVER_INIT_FAILURE",
+      "Message": "VIDEO_DRIVER_INIT_FAILURE",
+      "DecimalCode": 180,
+      "HexCode": "0x000000B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTLOG_LOADED",
+      "Message": "BOOTLOG_LOADED",
+      "DecimalCode": 181,
+      "HexCode": "0x000000B5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTLOG_NOT_LOADED",
+      "Message": "BOOTLOG_NOT_LOADED",
+      "DecimalCode": 182,
+      "HexCode": "0x000000B6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BOOTLOG_ENABLED",
+      "Message": "BOOTLOG_ENABLED",
+      "DecimalCode": 183,
+      "HexCode": "0x000000B7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ATTEMPTED_SWITCH_FROM_DPC",
+      "Message": "ATTEMPTED_SWITCH_FROM_DPC",
+      "DecimalCode": 184,
+      "HexCode": "0x000000B8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CHIPSET_DETECTED_ERROR",
+      "Message": "CHIPSET_DETECTED_ERROR",
+      "DecimalCode": 185,
+      "HexCode": "0x000000B9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SESSION_HAS_VALID_VIEWS_ON_EXIT",
+      "Message": "SESSION_HAS_VALID_VIEWS_ON_EXIT",
+      "DecimalCode": 186,
+      "HexCode": "0x000000BA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NETWORK_BOOT_INITIALIZATION_FAILED",
+      "Message": "NETWORK_BOOT_INITIALIZATION_FAILED",
+      "DecimalCode": 187,
+      "HexCode": "0x000000BB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NETWORK_BOOT_DUPLICATE_ADDRESS",
+      "Message": "NETWORK_BOOT_DUPLICATE_ADDRESS",
+      "DecimalCode": 188,
+      "HexCode": "0x000000BC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_HIBERNATED_STATE",
+      "Message": "INVALID_HIBERNATED_STATE",
+      "DecimalCode": 189,
+      "HexCode": "0x000000BD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ATTEMPTED_WRITE_TO_READONLY_MEMORY",
+      "Message": "ATTEMPTED_WRITE_TO_READONLY_MEMORY",
+      "DecimalCode": 190,
+      "HexCode": "0x000000BE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MUTEX_ALREADY_OWNED",
+      "Message": "MUTEX_ALREADY_OWNED",
+      "DecimalCode": 191,
+      "HexCode": "0x000000BF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PCI_CONFIG_SPACE_ACCESS_FAILURE",
+      "Message": "PCI_CONFIG_SPACE_ACCESS_FAILURE",
+      "DecimalCode": 192,
+      "HexCode": "0x000000C0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION",
+      "Message": "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION",
+      "DecimalCode": 193,
+      "HexCode": "0x000000C1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BAD_POOL_CALLER",
+      "Message": "BAD_POOL_CALLER",
+      "DecimalCode": 194,
+      "HexCode": "0x000000C2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_IMAGE_BAD_SIGNATURE",
+      "Message": "SYSTEM_IMAGE_BAD_SIGNATURE",
+      "DecimalCode": 195,
+      "HexCode": "0x000000C3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_VERIFIER_DETECTED_VIOLATION",
+      "Message": "DRIVER_VERIFIER_DETECTED_VIOLATION",
+      "DecimalCode": 196,
+      "HexCode": "0x000000C4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_CORRUPTED_EXPOOL",
+      "Message": "DRIVER_CORRUPTED_EXPOOL",
+      "DecimalCode": 197,
+      "HexCode": "0x000000C5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_CAUGHT_MODIFYING_FREED_POOL",
+      "Message": "DRIVER_CAUGHT_MODIFYING_FREED_POOL",
+      "DecimalCode": 198,
+      "HexCode": "0x000000C6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TIMER_OR_DPC_INVALID",
+      "Message": "TIMER_OR_DPC_INVALID",
+      "DecimalCode": 199,
+      "HexCode": "0x000000C7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IRQL_UNEXPECTED_VALUE",
+      "Message": "IRQL_UNEXPECTED_VALUE",
+      "DecimalCode": 200,
+      "HexCode": "0x000000C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_VERIFIER_IOMANAGER_VIOLATION",
+      "Message": "DRIVER_VERIFIER_IOMANAGER_VIOLATION",
+      "DecimalCode": 201,
+      "HexCode": "0x000000C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PNP_DETECTED_FATAL_ERROR",
+      "Message": "PNP_DETECTED_FATAL_ERROR",
+      "DecimalCode": 202,
+      "HexCode": "0x000000CA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS",
+      "Message": "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS",
+      "DecimalCode": 203,
+      "HexCode": "0x000000CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PAGE_FAULT_IN_FREED_SPECIAL_POOL",
+      "Message": "PAGE_FAULT_IN_FREED_SPECIAL_POOL",
+      "DecimalCode": 204,
+      "HexCode": "0x000000CC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PAGE_FAULT_BEYOND_END_OF_ALLOCATION",
+      "Message": "PAGE_FAULT_BEYOND_END_OF_ALLOCATION",
+      "DecimalCode": 205,
+      "HexCode": "0x000000CD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS",
+      "Message": "DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS",
+      "DecimalCode": 206,
+      "HexCode": "0x000000CE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE",
+      "Message": "TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE",
+      "DecimalCode": 207,
+      "HexCode": "0x000000CF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_CORRUPTED_MMPOOL",
+      "Message": "DRIVER_CORRUPTED_MMPOOL",
+      "DecimalCode": 208,
+      "HexCode": "0x000000D0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_IRQL_NOT_LESS_OR_EQUAL",
+      "Message": "DRIVER_IRQL_NOT_LESS_OR_EQUAL",
+      "DecimalCode": 209,
+      "HexCode": "0x000000D1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_ID_DRIVER",
+      "Message": "BUGCODE_ID_DRIVER",
+      "DecimalCode": 210,
+      "HexCode": "0x000000D2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_PORTION_MUST_BE_NONPAGED",
+      "Message": "DRIVER_PORTION_MUST_BE_NONPAGED",
+      "DecimalCode": 211,
+      "HexCode": "0x000000D3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD",
+      "Message": "SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD",
+      "DecimalCode": 212,
+      "HexCode": "0x000000D4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL",
+      "Message": "DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL",
+      "DecimalCode": 213,
+      "HexCode": "0x000000D5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION",
+      "Message": "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION",
+      "DecimalCode": 214,
+      "HexCode": "0x000000D6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_UNMAPPING_INVALID_VIEW",
+      "Message": "DRIVER_UNMAPPING_INVALID_VIEW",
+      "DecimalCode": 215,
+      "HexCode": "0x000000D7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_USED_EXCESSIVE_PTES",
+      "Message": "DRIVER_USED_EXCESSIVE_PTES",
+      "DecimalCode": 216,
+      "HexCode": "0x000000D8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LOCKED_PAGES_TRACKER_CORRUPTION",
+      "Message": "LOCKED_PAGES_TRACKER_CORRUPTION",
+      "DecimalCode": 217,
+      "HexCode": "0x000000D9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYSTEM_PTE_MISUSE",
+      "Message": "SYSTEM_PTE_MISUSE",
+      "DecimalCode": 218,
+      "HexCode": "0x000000DA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_CORRUPTED_SYSPTES",
+      "Message": "DRIVER_CORRUPTED_SYSPTES",
+      "DecimalCode": 219,
+      "HexCode": "0x000000DB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_INVALID_STACK_ACCESS",
+      "Message": "DRIVER_INVALID_STACK_ACCESS",
+      "DecimalCode": 220,
+      "HexCode": "0x000000DC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "POOL_CORRUPTION_IN_FILE_AREA",
+      "Message": "POOL_CORRUPTION_IN_FILE_AREA",
+      "DecimalCode": 222,
+      "HexCode": "0x000000DE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IMPERSONATING_WORKER_THREAD",
+      "Message": "IMPERSONATING_WORKER_THREAD",
+      "DecimalCode": 223,
+      "HexCode": "0x000000DF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ACPI_BIOS_FATAL_ERROR",
+      "Message": "ACPI_BIOS_FATAL_ERROR",
+      "DecimalCode": 224,
+      "HexCode": "0x000000E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_RETURNED_AT_BAD_IRQL",
+      "Message": "WORKER_THREAD_RETURNED_AT_BAD_IRQL",
+      "DecimalCode": 225,
+      "HexCode": "0x000000E1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MANUALLY_INITIATED_CRASH",
+      "Message": "MANUALLY_INITIATED_CRASH",
+      "DecimalCode": 226,
+      "HexCode": "0x000000E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RESOURCE_NOT_OWNED",
+      "Message": "RESOURCE_NOT_OWNED",
+      "DecimalCode": 227,
+      "HexCode": "0x000000E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_INVALID",
+      "Message": "WORKER_INVALID",
+      "DecimalCode": 228,
+      "HexCode": "0x000000E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "POWER_FAILURE_SIMULATE",
+      "Message": "POWER_FAILURE_SIMULATE",
+      "DecimalCode": 229,
+      "HexCode": "0x000000E5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_VERIFIER_DMA_VIOLATION",
+      "Message": "DRIVER_VERIFIER_DMA_VIOLATION",
+      "DecimalCode": 230,
+      "HexCode": "0x000000E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_FLOATING_POINT_STATE",
+      "Message": "INVALID_FLOATING_POINT_STATE",
+      "DecimalCode": 231,
+      "HexCode": "0x000000E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_CANCEL_OF_FILE_OPEN",
+      "Message": "INVALID_CANCEL_OF_FILE_OPEN",
+      "DecimalCode": 232,
+      "HexCode": "0x000000E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ACTIVE_EX_WORKER_THREAD_TERMINATION",
+      "Message": "ACTIVE_EX_WORKER_THREAD_TERMINATION",
+      "DecimalCode": 233,
+      "HexCode": "0x000000E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_UNSPECIFIED",
+      "Message": "SAVER_UNSPECIFIED",
+      "DecimalCode": 61440,
+      "HexCode": "0x0000F000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_BLANKSCREEN",
+      "Message": "SAVER_BLANKSCREEN",
+      "DecimalCode": 61442,
+      "HexCode": "0x0000F002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_INPUT",
+      "Message": "SAVER_INPUT",
+      "DecimalCode": 61443,
+      "HexCode": "0x0000F003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_WATCHDOG",
+      "Message": "SAVER_WATCHDOG",
+      "DecimalCode": 61444,
+      "HexCode": "0x0000F004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_STARTNOTVISIBLE",
+      "Message": "SAVER_STARTNOTVISIBLE",
+      "DecimalCode": 61445,
+      "HexCode": "0x0000F005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_NAVIGATIONMODEL",
+      "Message": "SAVER_NAVIGATIONMODEL",
+      "DecimalCode": 61446,
+      "HexCode": "0x0000F006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_OUTOFMEMORY",
+      "Message": "SAVER_OUTOFMEMORY",
+      "DecimalCode": 61447,
+      "HexCode": "0x0000F007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_GRAPHICS",
+      "Message": "SAVER_GRAPHICS",
+      "DecimalCode": 61448,
+      "HexCode": "0x0000F008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_NAVSERVERTIMEOUT",
+      "Message": "SAVER_NAVSERVERTIMEOUT",
+      "DecimalCode": 61449,
+      "HexCode": "0x0000F009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_CHROMEPROCESSCRASH",
+      "Message": "SAVER_CHROMEPROCESSCRASH",
+      "DecimalCode": 61450,
+      "HexCode": "0x0000F00A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_NOTIFICATIONDISMISSAL",
+      "Message": "SAVER_NOTIFICATIONDISMISSAL",
+      "DecimalCode": 61451,
+      "HexCode": "0x0000F00B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_SPEECHDISMISSAL",
+      "Message": "SAVER_SPEECHDISMISSAL",
+      "DecimalCode": 61452,
+      "HexCode": "0x0000F00C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_CALLDISMISSAL",
+      "Message": "SAVER_CALLDISMISSAL",
+      "DecimalCode": 61453,
+      "HexCode": "0x0000F00D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_APPBARDISMISSAL",
+      "Message": "SAVER_APPBARDISMISSAL",
+      "DecimalCode": 61454,
+      "HexCode": "0x0000F00E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_RILADAPTATIONCRASH",
+      "Message": "SAVER_RILADAPTATIONCRASH",
+      "DecimalCode": 61455,
+      "HexCode": "0x0000F00F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_APPLISTUNREACHABLE",
+      "Message": "SAVER_APPLISTUNREACHABLE",
+      "DecimalCode": 61456,
+      "HexCode": "0x0000F010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_REPORTNOTIFICATIONFAILURE",
+      "Message": "SAVER_REPORTNOTIFICATIONFAILURE",
+      "DecimalCode": 61457,
+      "HexCode": "0x0000F011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_UNEXPECTEDSHUTDOWN",
+      "Message": "SAVER_UNEXPECTEDSHUTDOWN",
+      "DecimalCode": 61458,
+      "HexCode": "0x0000F012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_RPCFAILURE",
+      "Message": "SAVER_RPCFAILURE",
+      "DecimalCode": 61459,
+      "HexCode": "0x0000F013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_AUXILIARYFULLDUMP",
+      "Message": "SAVER_AUXILIARYFULLDUMP",
+      "DecimalCode": 61460,
+      "HexCode": "0x0000F014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_ACCOUNTPROVSVCINITFAILURE",
+      "Message": "SAVER_ACCOUNTPROVSVCINITFAILURE",
+      "DecimalCode": 61461,
+      "HexCode": "0x0000F015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_MTBFCOMMANDTIMEOUT",
+      "Message": "SAVER_MTBFCOMMANDTIMEOUT",
+      "DecimalCode": 789,
+      "HexCode": "0x00000315",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_MTBFCOMMANDHANG",
+      "Message": "SAVER_MTBFCOMMANDHANG",
+      "DecimalCode": 61697,
+      "HexCode": "0x0000F101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_MTBFPASSBUGCHECK",
+      "Message": "SAVER_MTBFPASSBUGCHECK",
+      "DecimalCode": 61698,
+      "HexCode": "0x0000F102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_MTBFIOERROR",
+      "Message": "SAVER_MTBFIOERROR",
+      "DecimalCode": 61699,
+      "HexCode": "0x0000F103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_RENDERTHREADHANG",
+      "Message": "SAVER_RENDERTHREADHANG",
+      "DecimalCode": 61952,
+      "HexCode": "0x0000F200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_RENDERMOBILEUIOOM",
+      "Message": "SAVER_RENDERMOBILEUIOOM",
+      "DecimalCode": 61953,
+      "HexCode": "0x0000F201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_DEVICEUPDATEUNSPECIFIED",
+      "Message": "SAVER_DEVICEUPDATEUNSPECIFIED",
+      "DecimalCode": 62208,
+      "HexCode": "0x0000F300",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_AUDIODRIVERHANG",
+      "Message": "SAVER_AUDIODRIVERHANG",
+      "DecimalCode": 62464,
+      "HexCode": "0x0000F400",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_BATTERYPULLOUT",
+      "Message": "SAVER_BATTERYPULLOUT",
+      "DecimalCode": 62720,
+      "HexCode": "0x0000F500",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_MEDIACORETESTHANG",
+      "Message": "SAVER_MEDIACORETESTHANG",
+      "DecimalCode": 62976,
+      "HexCode": "0x0000F600",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_RESOURCEMANAGEMENT",
+      "Message": "SAVER_RESOURCEMANAGEMENT",
+      "DecimalCode": 63232,
+      "HexCode": "0x0000F700",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_CAPTURESERVICE",
+      "Message": "SAVER_CAPTURESERVICE",
+      "DecimalCode": 63488,
+      "HexCode": "0x0000F800",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_WAITFORSHELLREADY",
+      "Message": "SAVER_WAITFORSHELLREADY",
+      "DecimalCode": 63744,
+      "HexCode": "0x0000F900",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_NONRESPONSIVEPROCESS",
+      "Message": "SAVER_NONRESPONSIVEPROCESS",
+      "DecimalCode": 404,
+      "HexCode": "0x00000194",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SAVER_SICKAPPLICATION",
+      "Message": "SAVER_SICKAPPLICATION",
+      "DecimalCode": 34918,
+      "HexCode": "0x00008866",
+      "Type": "HResult"
+    },
+    {
+      "Id": "THREAD_STUCK_IN_DEVICE_DRIVER",
+      "Message": "THREAD_STUCK_IN_DEVICE_DRIVER",
+      "DecimalCode": 234,
+      "HexCode": "0x000000EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DIRTY_MAPPED_PAGES_CONGESTION",
+      "Message": "DIRTY_MAPPED_PAGES_CONGESTION",
+      "DecimalCode": 235,
+      "HexCode": "0x000000EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT",
+      "Message": "SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT",
+      "DecimalCode": 236,
+      "HexCode": "0x000000EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNMOUNTABLE_BOOT_VOLUME",
+      "Message": "UNMOUNTABLE_BOOT_VOLUME",
+      "DecimalCode": 237,
+      "HexCode": "0x000000ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRITICAL_PROCESS_DIED",
+      "Message": "CRITICAL_PROCESS_DIED",
+      "DecimalCode": 239,
+      "HexCode": "0x000000EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STORAGE_MINIPORT_ERROR",
+      "Message": "STORAGE_MINIPORT_ERROR",
+      "DecimalCode": 240,
+      "HexCode": "0x000000F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SCSI_VERIFIER_DETECTED_VIOLATION",
+      "Message": "SCSI_VERIFIER_DETECTED_VIOLATION",
+      "DecimalCode": 241,
+      "HexCode": "0x000000F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HARDWARE_INTERRUPT_STORM",
+      "Message": "HARDWARE_INTERRUPT_STORM",
+      "DecimalCode": 242,
+      "HexCode": "0x000000F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DISORDERLY_SHUTDOWN",
+      "Message": "DISORDERLY_SHUTDOWN",
+      "DecimalCode": 243,
+      "HexCode": "0x000000F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRITICAL_OBJECT_TERMINATION",
+      "Message": "CRITICAL_OBJECT_TERMINATION",
+      "DecimalCode": 244,
+      "HexCode": "0x000000F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FLTMGR_FILE_SYSTEM",
+      "Message": "FLTMGR_FILE_SYSTEM",
+      "DecimalCode": 245,
+      "HexCode": "0x000000F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PCI_VERIFIER_DETECTED_VIOLATION",
+      "Message": "PCI_VERIFIER_DETECTED_VIOLATION",
+      "DecimalCode": 246,
+      "HexCode": "0x000000F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_OVERRAN_STACK_BUFFER",
+      "Message": "DRIVER_OVERRAN_STACK_BUFFER",
+      "DecimalCode": 247,
+      "HexCode": "0x000000F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RAMDISK_BOOT_INITIALIZATION_FAILED",
+      "Message": "RAMDISK_BOOT_INITIALIZATION_FAILED",
+      "DecimalCode": 248,
+      "HexCode": "0x000000F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN",
+      "Message": "DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN",
+      "DecimalCode": 249,
+      "HexCode": "0x000000F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HTTP_DRIVER_CORRUPTED",
+      "Message": "HTTP_DRIVER_CORRUPTED",
+      "DecimalCode": 250,
+      "HexCode": "0x000000FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RECURSIVE_MACHINE_CHECK",
+      "Message": "RECURSIVE_MACHINE_CHECK",
+      "DecimalCode": 251,
+      "HexCode": "0x000000FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY",
+      "Message": "ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY",
+      "DecimalCode": 252,
+      "HexCode": "0x000000FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DIRTY_NOWRITE_PAGES_CONGESTION",
+      "Message": "DIRTY_NOWRITE_PAGES_CONGESTION",
+      "DecimalCode": 253,
+      "HexCode": "0x000000FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_USB_DRIVER",
+      "Message": "BUGCODE_USB_DRIVER",
+      "DecimalCode": 254,
+      "HexCode": "0x000000FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BC_BLUETOOTH_VERIFIER_FAULT",
+      "Message": "BC_BLUETOOTH_VERIFIER_FAULT",
+      "DecimalCode": 3070,
+      "HexCode": "0x00000BFE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BC_BTHMINI_VERIFIER_FAULT",
+      "Message": "BC_BTHMINI_VERIFIER_FAULT",
+      "DecimalCode": 3071,
+      "HexCode": "0x00000BFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RESERVE_QUEUE_OVERFLOW",
+      "Message": "RESERVE_QUEUE_OVERFLOW",
+      "DecimalCode": 255,
+      "HexCode": "0x000000FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LOADER_BLOCK_MISMATCH",
+      "Message": "LOADER_BLOCK_MISMATCH",
+      "DecimalCode": 256,
+      "HexCode": "0x00000100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLOCK_WATCHDOG_TIMEOUT",
+      "Message": "CLOCK_WATCHDOG_TIMEOUT",
+      "DecimalCode": 257,
+      "HexCode": "0x00000101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DPC_WATCHDOG_TIMEOUT",
+      "Message": "DPC_WATCHDOG_TIMEOUT",
+      "DecimalCode": 258,
+      "HexCode": "0x00000102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MUP_FILE_SYSTEM",
+      "Message": "MUP_FILE_SYSTEM",
+      "DecimalCode": 259,
+      "HexCode": "0x00000103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "AGP_INVALID_ACCESS",
+      "Message": "AGP_INVALID_ACCESS",
+      "DecimalCode": 260,
+      "HexCode": "0x00000104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "AGP_GART_CORRUPTION",
+      "Message": "AGP_GART_CORRUPTION",
+      "DecimalCode": 261,
+      "HexCode": "0x00000105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "AGP_ILLEGALLY_REPROGRAMMED",
+      "Message": "AGP_ILLEGALLY_REPROGRAMMED",
+      "DecimalCode": 262,
+      "HexCode": "0x00000106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_EXPAND_STACK_ACTIVE",
+      "Message": "KERNEL_EXPAND_STACK_ACTIVE",
+      "DecimalCode": 263,
+      "HexCode": "0x00000107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "THIRD_PARTY_FILE_SYSTEM_FAILURE",
+      "Message": "THIRD_PARTY_FILE_SYSTEM_FAILURE",
+      "DecimalCode": 264,
+      "HexCode": "0x00000108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRITICAL_STRUCTURE_CORRUPTION",
+      "Message": "CRITICAL_STRUCTURE_CORRUPTION",
+      "DecimalCode": 265,
+      "HexCode": "0x00000109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "APP_TAGGING_INITIALIZATION_FAILED",
+      "Message": "APP_TAGGING_INITIALIZATION_FAILED",
+      "DecimalCode": 266,
+      "HexCode": "0x0000010A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DFSC_FILE_SYSTEM",
+      "Message": "DFSC_FILE_SYSTEM",
+      "DecimalCode": 267,
+      "HexCode": "0x0000010B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION",
+      "Message": "FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION",
+      "DecimalCode": 268,
+      "HexCode": "0x0000010C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDF_VIOLATION",
+      "Message": "WDF_VIOLATION",
+      "DecimalCode": 269,
+      "HexCode": "0x0000010D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_MEMORY_MANAGEMENT_INTERNAL",
+      "Message": "VIDEO_MEMORY_MANAGEMENT_INTERNAL",
+      "DecimalCode": 270,
+      "HexCode": "0x0000010E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_INVALID_CRUNTIME_PARAMETER",
+      "Message": "DRIVER_INVALID_CRUNTIME_PARAMETER",
+      "DecimalCode": 272,
+      "HexCode": "0x00000110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RECURSIVE_NMI",
+      "Message": "RECURSIVE_NMI",
+      "DecimalCode": 273,
+      "HexCode": "0x00000111",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MSRPC_STATE_VIOLATION",
+      "Message": "MSRPC_STATE_VIOLATION",
+      "DecimalCode": 274,
+      "HexCode": "0x00000112",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DXGKRNL_FATAL_ERROR",
+      "Message": "VIDEO_DXGKRNL_FATAL_ERROR",
+      "DecimalCode": 275,
+      "HexCode": "0x00000113",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_SHADOW_DRIVER_FATAL_ERROR",
+      "Message": "VIDEO_SHADOW_DRIVER_FATAL_ERROR",
+      "DecimalCode": 276,
+      "HexCode": "0x00000114",
+      "Type": "HResult"
+    },
+    {
+      "Id": "AGP_INTERNAL",
+      "Message": "AGP_INTERNAL",
+      "DecimalCode": 277,
+      "HexCode": "0x00000115",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_TDR_FAILURE",
+      "Message": "VIDEO_TDR_FAILURE",
+      "DecimalCode": 278,
+      "HexCode": "0x00000116",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_TDR_TIMEOUT_DETECTED",
+      "Message": "VIDEO_TDR_TIMEOUT_DETECTED",
+      "DecimalCode": 279,
+      "HexCode": "0x00000117",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NTHV_GUEST_ERROR",
+      "Message": "NTHV_GUEST_ERROR",
+      "DecimalCode": 280,
+      "HexCode": "0x00000118",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_SCHEDULER_INTERNAL_ERROR",
+      "Message": "VIDEO_SCHEDULER_INTERNAL_ERROR",
+      "DecimalCode": 281,
+      "HexCode": "0x00000119",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EM_INITIALIZATION_ERROR",
+      "Message": "EM_INITIALIZATION_ERROR",
+      "DecimalCode": 282,
+      "HexCode": "0x0000011A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_RETURNED_HOLDING_CANCEL_LOCK",
+      "Message": "DRIVER_RETURNED_HOLDING_CANCEL_LOCK",
+      "DecimalCode": 283,
+      "HexCode": "0x0000011B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE",
+      "Message": "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE",
+      "DecimalCode": 284,
+      "HexCode": "0x0000011C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVENT_TRACING_FATAL_ERROR",
+      "Message": "EVENT_TRACING_FATAL_ERROR",
+      "DecimalCode": 285,
+      "HexCode": "0x0000011D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TOO_MANY_RECURSIVE_FAULTS",
+      "Message": "TOO_MANY_RECURSIVE_FAULTS",
+      "DecimalCode": 286,
+      "HexCode": "0x0000011E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_DRIVER_HANDLE",
+      "Message": "INVALID_DRIVER_HANDLE",
+      "DecimalCode": 287,
+      "HexCode": "0x0000011F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BITLOCKER_FATAL_ERROR",
+      "Message": "BITLOCKER_FATAL_ERROR",
+      "DecimalCode": 288,
+      "HexCode": "0x00000120",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_VIOLATION",
+      "Message": "DRIVER_VIOLATION",
+      "DecimalCode": 289,
+      "HexCode": "0x00000121",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WHEA_INTERNAL_ERROR",
+      "Message": "WHEA_INTERNAL_ERROR",
+      "DecimalCode": 290,
+      "HexCode": "0x00000122",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRYPTO_SELF_TEST_FAILURE",
+      "Message": "CRYPTO_SELF_TEST_FAILURE",
+      "DecimalCode": 291,
+      "HexCode": "0x00000123",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WHEA_UNCORRECTABLE_ERROR",
+      "Message": "WHEA_UNCORRECTABLE_ERROR",
+      "DecimalCode": 292,
+      "HexCode": "0x00000124",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NMR_INVALID_STATE",
+      "Message": "NMR_INVALID_STATE",
+      "DecimalCode": 293,
+      "HexCode": "0x00000125",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NETIO_INVALID_POOL_CALLER",
+      "Message": "NETIO_INVALID_POOL_CALLER",
+      "DecimalCode": 294,
+      "HexCode": "0x00000126",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PAGE_NOT_ZERO",
+      "Message": "PAGE_NOT_ZERO",
+      "DecimalCode": 295,
+      "HexCode": "0x00000127",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY",
+      "Message": "WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY",
+      "DecimalCode": 296,
+      "HexCode": "0x00000128",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY",
+      "Message": "WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY",
+      "DecimalCode": 297,
+      "HexCode": "0x00000129",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MUI_NO_VALID_SYSTEM_LANGUAGE",
+      "Message": "MUI_NO_VALID_SYSTEM_LANGUAGE",
+      "DecimalCode": 298,
+      "HexCode": "0x0000012A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FAULTY_HARDWARE_CORRUPTED_PAGE",
+      "Message": "FAULTY_HARDWARE_CORRUPTED_PAGE",
+      "DecimalCode": 299,
+      "HexCode": "0x0000012B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EXFAT_FILE_SYSTEM",
+      "Message": "EXFAT_FILE_SYSTEM",
+      "DecimalCode": 300,
+      "HexCode": "0x0000012C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VOLSNAP_OVERLAPPED_TABLE_ACCESS",
+      "Message": "VOLSNAP_OVERLAPPED_TABLE_ACCESS",
+      "DecimalCode": 301,
+      "HexCode": "0x0000012D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_MDL_RANGE",
+      "Message": "INVALID_MDL_RANGE",
+      "DecimalCode": 302,
+      "HexCode": "0x0000012E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VHD_BOOT_INITIALIZATION_FAILED",
+      "Message": "VHD_BOOT_INITIALIZATION_FAILED",
+      "DecimalCode": 303,
+      "HexCode": "0x0000012F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DYNAMIC_ADD_PROCESSOR_MISMATCH",
+      "Message": "DYNAMIC_ADD_PROCESSOR_MISMATCH",
+      "DecimalCode": 304,
+      "HexCode": "0x00000130",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_EXTENDED_PROCESSOR_STATE",
+      "Message": "INVALID_EXTENDED_PROCESSOR_STATE",
+      "DecimalCode": 305,
+      "HexCode": "0x00000131",
+      "Type": "HResult"
+    },
+    {
+      "Id": "RESOURCE_OWNER_POINTER_INVALID",
+      "Message": "RESOURCE_OWNER_POINTER_INVALID",
+      "DecimalCode": 306,
+      "HexCode": "0x00000132",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DPC_WATCHDOG_VIOLATION",
+      "Message": "DPC_WATCHDOG_VIOLATION",
+      "DecimalCode": 307,
+      "HexCode": "0x00000133",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVE_EXTENDER",
+      "Message": "DRIVE_EXTENDER",
+      "DecimalCode": 308,
+      "HexCode": "0x00000134",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REGISTRY_FILTER_DRIVER_EXCEPTION",
+      "Message": "REGISTRY_FILTER_DRIVER_EXCEPTION",
+      "DecimalCode": 309,
+      "HexCode": "0x00000135",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE",
+      "Message": "VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE",
+      "DecimalCode": 310,
+      "HexCode": "0x00000136",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_HANDLE_MANAGER",
+      "Message": "WIN32K_HANDLE_MANAGER",
+      "DecimalCode": 311,
+      "HexCode": "0x00000137",
+      "Type": "HResult"
+    },
+    {
+      "Id": "GPIO_CONTROLLER_DRIVER_ERROR",
+      "Message": "GPIO_CONTROLLER_DRIVER_ERROR",
+      "DecimalCode": 312,
+      "HexCode": "0x00000138",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_SECURITY_CHECK_FAILURE",
+      "Message": "KERNEL_SECURITY_CHECK_FAILURE",
+      "DecimalCode": 313,
+      "HexCode": "0x00000139",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_MODE_HEAP_CORRUPTION",
+      "Message": "KERNEL_MODE_HEAP_CORRUPTION",
+      "DecimalCode": 314,
+      "HexCode": "0x0000013A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PASSIVE_INTERRUPT_ERROR",
+      "Message": "PASSIVE_INTERRUPT_ERROR",
+      "DecimalCode": 315,
+      "HexCode": "0x0000013B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_IO_BOOST_STATE",
+      "Message": "INVALID_IO_BOOST_STATE",
+      "DecimalCode": 316,
+      "HexCode": "0x0000013C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRITICAL_INITIALIZATION_FAILURE",
+      "Message": "CRITICAL_INITIALIZATION_FAILURE",
+      "DecimalCode": 317,
+      "HexCode": "0x0000013D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERRATA_WORKAROUND_UNSUCCESSFUL",
+      "Message": "ERRATA_WORKAROUND_UNSUCCESSFUL",
+      "DecimalCode": 318,
+      "HexCode": "0x0000013E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REGISTRY_CALLBACK_DRIVER_EXCEPTION",
+      "Message": "REGISTRY_CALLBACK_DRIVER_EXCEPTION",
+      "DecimalCode": 319,
+      "HexCode": "0x0000013F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STORAGE_DEVICE_ABNORMALITY_DETECTED",
+      "Message": "STORAGE_DEVICE_ABNORMALITY_DETECTED",
+      "DecimalCode": 320,
+      "HexCode": "0x00000140",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_ENGINE_TIMEOUT_DETECTED",
+      "Message": "VIDEO_ENGINE_TIMEOUT_DETECTED",
+      "DecimalCode": 321,
+      "HexCode": "0x00000141",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_TDR_APPLICATION_BLOCKED",
+      "Message": "VIDEO_TDR_APPLICATION_BLOCKED",
+      "DecimalCode": 322,
+      "HexCode": "0x00000142",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROCESSOR_DRIVER_INTERNAL",
+      "Message": "PROCESSOR_DRIVER_INTERNAL",
+      "DecimalCode": 323,
+      "HexCode": "0x00000143",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_USB3_DRIVER",
+      "Message": "BUGCODE_USB3_DRIVER",
+      "DecimalCode": 324,
+      "HexCode": "0x00000144",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURE_BOOT_VIOLATION",
+      "Message": "SECURE_BOOT_VIOLATION",
+      "DecimalCode": 325,
+      "HexCode": "0x00000145",
+      "Type": "HResult"
+    },
+    {
+      "Id": "NDIS_NET_BUFFER_LIST_INFO_ILLEGALLY_TRANSFERRED",
+      "Message": "NDIS_NET_BUFFER_LIST_INFO_ILLEGALLY_TRANSFERRED",
+      "DecimalCode": 326,
+      "HexCode": "0x00000146",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ABNORMAL_RESET_DETECTED",
+      "Message": "ABNORMAL_RESET_DETECTED",
+      "DecimalCode": 327,
+      "HexCode": "0x00000147",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IO_OBJECT_INVALID",
+      "Message": "IO_OBJECT_INVALID",
+      "DecimalCode": 328,
+      "HexCode": "0x00000148",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REFS_FILE_SYSTEM",
+      "Message": "REFS_FILE_SYSTEM",
+      "DecimalCode": 329,
+      "HexCode": "0x00000149",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_WMI_INTERNAL",
+      "Message": "KERNEL_WMI_INTERNAL",
+      "DecimalCode": 330,
+      "HexCode": "0x0000014A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SOC_SUBSYSTEM_FAILURE",
+      "Message": "SOC_SUBSYSTEM_FAILURE",
+      "DecimalCode": 331,
+      "HexCode": "0x0000014B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FATAL_ABNORMAL_RESET_ERROR",
+      "Message": "FATAL_ABNORMAL_RESET_ERROR",
+      "DecimalCode": 332,
+      "HexCode": "0x0000014C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EXCEPTION_SCOPE_INVALID",
+      "Message": "EXCEPTION_SCOPE_INVALID",
+      "DecimalCode": 333,
+      "HexCode": "0x0000014D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SOC_CRITICAL_DEVICE_REMOVED",
+      "Message": "SOC_CRITICAL_DEVICE_REMOVED",
+      "DecimalCode": 334,
+      "HexCode": "0x0000014E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PDC_WATCHDOG_TIMEOUT",
+      "Message": "PDC_WATCHDOG_TIMEOUT",
+      "DecimalCode": 335,
+      "HexCode": "0x0000014F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK",
+      "Message": "TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK",
+      "DecimalCode": 336,
+      "HexCode": "0x00000150",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNSUPPORTED_INSTRUCTION_MODE",
+      "Message": "UNSUPPORTED_INSTRUCTION_MODE",
+      "DecimalCode": 337,
+      "HexCode": "0x00000151",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_PUSH_LOCK_FLAGS",
+      "Message": "INVALID_PUSH_LOCK_FLAGS",
+      "DecimalCode": 338,
+      "HexCode": "0x00000152",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION",
+      "Message": "KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION",
+      "DecimalCode": 339,
+      "HexCode": "0x00000153",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNEXPECTED_STORE_EXCEPTION",
+      "Message": "UNEXPECTED_STORE_EXCEPTION",
+      "DecimalCode": 340,
+      "HexCode": "0x00000154",
+      "Type": "HResult"
+    },
+    {
+      "Id": "OS_DATA_TAMPERING",
+      "Message": "OS_DATA_TAMPERING",
+      "DecimalCode": 341,
+      "HexCode": "0x00000155",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP",
+      "Message": "WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP",
+      "DecimalCode": 342,
+      "HexCode": "0x00000156",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION",
+      "Message": "KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION",
+      "DecimalCode": 343,
+      "HexCode": "0x00000157",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ILLEGAL_IOMMU_PAGE_FAULT",
+      "Message": "ILLEGAL_IOMMU_PAGE_FAULT",
+      "DecimalCode": 344,
+      "HexCode": "0x00000158",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL_ILLEGAL_IOMMU_PAGE_FAULT",
+      "Message": "HAL_ILLEGAL_IOMMU_PAGE_FAULT",
+      "DecimalCode": 345,
+      "HexCode": "0x00000159",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SDBUS_INTERNAL_ERROR",
+      "Message": "SDBUS_INTERNAL_ERROR",
+      "DecimalCode": 346,
+      "HexCode": "0x0000015A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE",
+      "Message": "WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE",
+      "DecimalCode": 347,
+      "HexCode": "0x0000015B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PDC_WATCHDOG_TIMEOUT_LIVEDUMP",
+      "Message": "PDC_WATCHDOG_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 348,
+      "HexCode": "0x0000015C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SOC_SUBSYSTEM_FAILURE_LIVEDUMP",
+      "Message": "SOC_SUBSYSTEM_FAILURE_LIVEDUMP",
+      "DecimalCode": 349,
+      "HexCode": "0x0000015D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_NDIS_DRIVER_LIVE_DUMP",
+      "Message": "BUGCODE_NDIS_DRIVER_LIVE_DUMP",
+      "DecimalCode": 350,
+      "HexCode": "0x0000015E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP",
+      "Message": "CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 351,
+      "HexCode": "0x0000015F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_ATOMIC_CHECK_FAILURE",
+      "Message": "WIN32K_ATOMIC_CHECK_FAILURE",
+      "DecimalCode": 352,
+      "HexCode": "0x00000160",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LIVE_SYSTEM_DUMP",
+      "Message": "LIVE_SYSTEM_DUMP",
+      "DecimalCode": 353,
+      "HexCode": "0x00000161",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE",
+      "Message": "KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE",
+      "DecimalCode": 354,
+      "HexCode": "0x00000162",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_TEST_CONDITION",
+      "Message": "WORKER_THREAD_TEST_CONDITION",
+      "DecimalCode": 355,
+      "HexCode": "0x00000163",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_CRITICAL_FAILURE",
+      "Message": "WIN32K_CRITICAL_FAILURE",
+      "DecimalCode": 356,
+      "HexCode": "0x00000164",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP",
+      "Message": "CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 357,
+      "HexCode": "0x00000165",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP",
+      "Message": "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 358,
+      "HexCode": "0x00000166",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP",
+      "Message": "CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 359,
+      "HexCode": "0x00000167",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP",
+      "Message": "CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 360,
+      "HexCode": "0x00000168",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP",
+      "Message": "CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP",
+      "DecimalCode": 361,
+      "HexCode": "0x00000169",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP",
+      "Message": "CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP",
+      "DecimalCode": 362,
+      "HexCode": "0x0000016A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP",
+      "Message": "CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP",
+      "DecimalCode": 363,
+      "HexCode": "0x0000016B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_RUNDOWN_PROTECTION_FLAGS",
+      "Message": "INVALID_RUNDOWN_PROTECTION_FLAGS",
+      "DecimalCode": 364,
+      "HexCode": "0x0000016C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_SLOT_ALLOCATOR_FLAGS",
+      "Message": "INVALID_SLOT_ALLOCATOR_FLAGS",
+      "DecimalCode": 365,
+      "HexCode": "0x0000016D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ERESOURCE_INVALID_RELEASE",
+      "Message": "ERESOURCE_INVALID_RELEASE",
+      "DecimalCode": 366,
+      "HexCode": "0x0000016E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP",
+      "Message": "CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 367,
+      "HexCode": "0x0000016F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG",
+      "Message": "CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG",
+      "DecimalCode": 368,
+      "HexCode": "0x00000170",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRYPTO_LIBRARY_INTERNAL_ERROR",
+      "Message": "CRYPTO_LIBRARY_INTERNAL_ERROR",
+      "DecimalCode": 369,
+      "HexCode": "0x00000171",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURE_KERNEL_HIBERNATE_ERROR",
+      "Message": "SECURE_KERNEL_HIBERNATE_ERROR",
+      "DecimalCode": 370,
+      "HexCode": "0x00000172",
+      "Type": "HResult"
+    },
+    {
+      "Id": "COREMSGCALL_INTERNAL_ERROR",
+      "Message": "COREMSGCALL_INTERNAL_ERROR",
+      "DecimalCode": 371,
+      "HexCode": "0x00000173",
+      "Type": "HResult"
+    },
+    {
+      "Id": "COREMSG_INTERNAL_ERROR",
+      "Message": "COREMSG_INTERNAL_ERROR",
+      "DecimalCode": 372,
+      "HexCode": "0x00000174",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PREVIOUS_FATAL_ABNORMAL_RESET_ERROR",
+      "Message": "PREVIOUS_FATAL_ABNORMAL_RESET_ERROR",
+      "DecimalCode": 373,
+      "HexCode": "0x00000175",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STORAGE_STACK_FATAL_ERROR",
+      "Message": "STORAGE_STACK_FATAL_ERROR",
+      "DecimalCode": 374,
+      "HexCode": "0x00000176",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ELAM_DRIVER_DETECTED_FATAL_ERROR",
+      "Message": "ELAM_DRIVER_DETECTED_FATAL_ERROR",
+      "DecimalCode": 376,
+      "HexCode": "0x00000178",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP",
+      "Message": "CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 377,
+      "HexCode": "0x00000179",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROFILER_CONFIGURATION_ILLEGAL",
+      "Message": "PROFILER_CONFIGURATION_ILLEGAL",
+      "DecimalCode": 379,
+      "HexCode": "0x0000017B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PDC_LOCK_WATCHDOG_LIVEDUMP",
+      "Message": "PDC_LOCK_WATCHDOG_LIVEDUMP",
+      "DecimalCode": 380,
+      "HexCode": "0x0000017C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PDC_UNEXPECTED_REVOCATION_LIVEDUMP",
+      "Message": "PDC_UNEXPECTED_REVOCATION_LIVEDUMP",
+      "DecimalCode": 381,
+      "HexCode": "0x0000017D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MICROCODE_REVISION_MISMATCH",
+      "Message": "MICROCODE_REVISION_MISMATCH",
+      "DecimalCode": 382,
+      "HexCode": "0x0000017E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HYPERGUARD_INITIALIZATION_FAILURE",
+      "Message": "HYPERGUARD_INITIALIZATION_FAILURE",
+      "DecimalCode": 383,
+      "HexCode": "0x0000017F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_REPLICATION_IOCONTEXT_TIMEOUT",
+      "Message": "WVR_LIVEDUMP_REPLICATION_IOCONTEXT_TIMEOUT",
+      "DecimalCode": 384,
+      "HexCode": "0x00000180",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_STATE_TRANSITION_TIMEOUT",
+      "Message": "WVR_LIVEDUMP_STATE_TRANSITION_TIMEOUT",
+      "DecimalCode": 385,
+      "HexCode": "0x00000181",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_RECOVERY_IOCONTEXT_TIMEOUT",
+      "Message": "WVR_LIVEDUMP_RECOVERY_IOCONTEXT_TIMEOUT",
+      "DecimalCode": 386,
+      "HexCode": "0x00000182",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_APP_IO_TIMEOUT",
+      "Message": "WVR_LIVEDUMP_APP_IO_TIMEOUT",
+      "DecimalCode": 387,
+      "HexCode": "0x00000183",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_MANUALLY_INITIATED",
+      "Message": "WVR_LIVEDUMP_MANUALLY_INITIATED",
+      "DecimalCode": 388,
+      "HexCode": "0x00000184",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_STATE_FAILURE",
+      "Message": "WVR_LIVEDUMP_STATE_FAILURE",
+      "DecimalCode": 389,
+      "HexCode": "0x00000185",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WVR_LIVEDUMP_CRITICAL_ERROR",
+      "Message": "WVR_LIVEDUMP_CRITICAL_ERROR",
+      "DecimalCode": 390,
+      "HexCode": "0x00000186",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD",
+      "Message": "VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD",
+      "DecimalCode": 391,
+      "HexCode": "0x00000187",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_CSVFS_LIVEDUMP",
+      "Message": "CLUSTER_CSVFS_LIVEDUMP",
+      "DecimalCode": 392,
+      "HexCode": "0x00000188",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BAD_OBJECT_HEADER",
+      "Message": "BAD_OBJECT_HEADER",
+      "DecimalCode": 393,
+      "HexCode": "0x00000189",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SILO_CORRUPT",
+      "Message": "SILO_CORRUPT",
+      "DecimalCode": 394,
+      "HexCode": "0x0000018A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURE_KERNEL_ERROR",
+      "Message": "SECURE_KERNEL_ERROR",
+      "DecimalCode": 395,
+      "HexCode": "0x0000018B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HYPERGUARD_VIOLATION",
+      "Message": "HYPERGUARD_VIOLATION",
+      "DecimalCode": 396,
+      "HexCode": "0x0000018C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURE_FAULT_UNHANDLED",
+      "Message": "SECURE_FAULT_UNHANDLED",
+      "DecimalCode": 397,
+      "HexCode": "0x0000018D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_PARTITION_REFERENCE_VIOLATION",
+      "Message": "KERNEL_PARTITION_REFERENCE_VIOLATION",
+      "DecimalCode": 398,
+      "HexCode": "0x0000018E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNTHETIC_EXCEPTION_UNHANDLED",
+      "Message": "SYNTHETIC_EXCEPTION_UNHANDLED",
+      "DecimalCode": 399,
+      "HexCode": "0x0000018F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_CRITICAL_FAILURE_LIVEDUMP",
+      "Message": "WIN32K_CRITICAL_FAILURE_LIVEDUMP",
+      "DecimalCode": 400,
+      "HexCode": "0x00000190",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PF_DETECTED_CORRUPTION",
+      "Message": "PF_DETECTED_CORRUPTION",
+      "DecimalCode": 401,
+      "HexCode": "0x00000191",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL",
+      "Message": "KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL",
+      "DecimalCode": 402,
+      "HexCode": "0x00000192",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DXGKRNL_LIVEDUMP",
+      "Message": "VIDEO_DXGKRNL_LIVEDUMP",
+      "DecimalCode": 403,
+      "HexCode": "0x00000193",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_STORAGE_SLOT_IN_USE",
+      "Message": "KERNEL_STORAGE_SLOT_IN_USE",
+      "DecimalCode": 409,
+      "HexCode": "0x00000199",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SMB_SERVER_LIVEDUMP",
+      "Message": "SMB_SERVER_LIVEDUMP",
+      "DecimalCode": 405,
+      "HexCode": "0x00000195",
+      "Type": "HResult"
+    },
+    {
+      "Id": "LOADER_ROLLBACK_DETECTED",
+      "Message": "LOADER_ROLLBACK_DETECTED",
+      "DecimalCode": 406,
+      "HexCode": "0x00000196",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_SECURITY_FAILURE",
+      "Message": "WIN32K_SECURITY_FAILURE",
+      "DecimalCode": 407,
+      "HexCode": "0x00000197",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UFX_LIVEDUMP",
+      "Message": "UFX_LIVEDUMP",
+      "DecimalCode": 408,
+      "HexCode": "0x00000198",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO",
+      "Message": "WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO",
+      "DecimalCode": 410,
+      "HexCode": "0x0000019A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TTM_FATAL_ERROR",
+      "Message": "TTM_FATAL_ERROR",
+      "DecimalCode": 411,
+      "HexCode": "0x0000019B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_POWER_WATCHDOG_TIMEOUT",
+      "Message": "WIN32K_POWER_WATCHDOG_TIMEOUT",
+      "DecimalCode": 412,
+      "HexCode": "0x0000019C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CLUSTER_SVHDX_LIVEDUMP",
+      "Message": "CLUSTER_SVHDX_LIVEDUMP",
+      "DecimalCode": 413,
+      "HexCode": "0x0000019D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_NETADAPTER_DRIVER",
+      "Message": "BUGCODE_NETADAPTER_DRIVER",
+      "DecimalCode": 414,
+      "HexCode": "0x0000019E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PDC_PRIVILEGE_CHECK_LIVEDUMP",
+      "Message": "PDC_PRIVILEGE_CHECK_LIVEDUMP",
+      "DecimalCode": 415,
+      "HexCode": "0x0000019F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TTM_WATCHDOG_TIMEOUT",
+      "Message": "TTM_WATCHDOG_TIMEOUT",
+      "DecimalCode": 416,
+      "HexCode": "0x000001A0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_CALLOUT_WATCHDOG_LIVEDUMP",
+      "Message": "WIN32K_CALLOUT_WATCHDOG_LIVEDUMP",
+      "DecimalCode": 417,
+      "HexCode": "0x000001A1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_CALLOUT_WATCHDOG_BUGCHECK",
+      "Message": "WIN32K_CALLOUT_WATCHDOG_BUGCHECK",
+      "DecimalCode": 418,
+      "HexCode": "0x000001A2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP",
+      "Message": "CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 419,
+      "HexCode": "0x000001A3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIPS_SW_HW_DIVERGENCE_LIVEDUMP",
+      "Message": "DRIPS_SW_HW_DIVERGENCE_LIVEDUMP",
+      "DecimalCode": 420,
+      "HexCode": "0x000001A4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP",
+      "Message": "USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP",
+      "DecimalCode": 421,
+      "HexCode": "0x000001A5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BLUETOOTH_ERROR_RECOVERY_LIVEDUMP",
+      "Message": "BLUETOOTH_ERROR_RECOVERY_LIVEDUMP",
+      "DecimalCode": 422,
+      "HexCode": "0x000001A6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SMB_REDIRECTOR_LIVEDUMP",
+      "Message": "SMB_REDIRECTOR_LIVEDUMP",
+      "DecimalCode": 423,
+      "HexCode": "0x000001A7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP",
+      "Message": "VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP",
+      "DecimalCode": 424,
+      "HexCode": "0x000001A8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DIRECTED_FX_TRANSITION_LIVEDUMP",
+      "Message": "DIRECTED_FX_TRANSITION_LIVEDUMP",
+      "DecimalCode": 425,
+      "HexCode": "0x000001A9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EXCEPTION_ON_INVALID_STACK",
+      "Message": "EXCEPTION_ON_INVALID_STACK",
+      "DecimalCode": 426,
+      "HexCode": "0x000001AA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNWIND_ON_INVALID_STACK",
+      "Message": "UNWIND_ON_INVALID_STACK",
+      "DecimalCode": 427,
+      "HexCode": "0x000001AB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_MINIPORT_FAILED_LIVEDUMP",
+      "Message": "VIDEO_MINIPORT_FAILED_LIVEDUMP",
+      "DecimalCode": 432,
+      "HexCode": "0x000001B0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP",
+      "Message": "VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP",
+      "DecimalCode": 440,
+      "HexCode": "0x000001B8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP",
+      "Message": "DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP",
+      "DecimalCode": 452,
+      "HexCode": "0x000001C4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IO_THREADPOOL_DEADLOCK_LIVEDUMP",
+      "Message": "IO_THREADPOOL_DEADLOCK_LIVEDUMP",
+      "DecimalCode": 453,
+      "HexCode": "0x000001C5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FAST_ERESOURCE_PRECONDITION_VIOLATION",
+      "Message": "FAST_ERESOURCE_PRECONDITION_VIOLATION",
+      "DecimalCode": 454,
+      "HexCode": "0x000001C6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STORE_DATA_STRUCTURE_CORRUPTION",
+      "Message": "STORE_DATA_STRUCTURE_CORRUPTION",
+      "DecimalCode": 455,
+      "HexCode": "0x000001C7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MANUALLY_INITIATED_POWER_BUTTON_HOLD",
+      "Message": "MANUALLY_INITIATED_POWER_BUTTON_HOLD",
+      "DecimalCode": 456,
+      "HexCode": "0x000001C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "USER_MODE_HEALTH_MONITOR_LIVEDUMP",
+      "Message": "USER_MODE_HEALTH_MONITOR_LIVEDUMP",
+      "DecimalCode": 457,
+      "HexCode": "0x000001C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNTHETIC_WATCHDOG_TIMEOUT",
+      "Message": "SYNTHETIC_WATCHDOG_TIMEOUT",
+      "DecimalCode": 458,
+      "HexCode": "0x000001CA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_SILO_DETACH",
+      "Message": "INVALID_SILO_DETACH",
+      "DecimalCode": 459,
+      "HexCode": "0x000001CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EXRESOURCE_TIMEOUT_LIVEDUMP",
+      "Message": "EXRESOURCE_TIMEOUT_LIVEDUMP",
+      "DecimalCode": 460,
+      "HexCode": "0x000001CC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_CALLBACK_STACK_ADDRESS",
+      "Message": "INVALID_CALLBACK_STACK_ADDRESS",
+      "DecimalCode": 461,
+      "HexCode": "0x000001CD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_KERNEL_STACK_ADDRESS",
+      "Message": "INVALID_KERNEL_STACK_ADDRESS",
+      "DecimalCode": 462,
+      "HexCode": "0x000001CE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HARDWARE_WATCHDOG_TIMEOUT",
+      "Message": "HARDWARE_WATCHDOG_TIMEOUT",
+      "DecimalCode": 463,
+      "HexCode": "0x000001CF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ACPI_FIRMWARE_WATCHDOG_TIMEOUT",
+      "Message": "ACPI_FIRMWARE_WATCHDOG_TIMEOUT",
+      "DecimalCode": 464,
+      "HexCode": "0x000001D0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "TELEMETRY_ASSERTS_LIVEDUMP",
+      "Message": "TELEMETRY_ASSERTS_LIVEDUMP",
+      "DecimalCode": 465,
+      "HexCode": "0x000001D1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_INVALID_STATE",
+      "Message": "WORKER_THREAD_INVALID_STATE",
+      "DecimalCode": 466,
+      "HexCode": "0x000001D2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WFP_INVALID_OPERATION",
+      "Message": "WFP_INVALID_OPERATION",
+      "DecimalCode": 467,
+      "HexCode": "0x000001D3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UCMUCSI_LIVEDUMP",
+      "Message": "UCMUCSI_LIVEDUMP",
+      "DecimalCode": 468,
+      "HexCode": "0x000001D4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_PNP_WATCHDOG",
+      "Message": "DRIVER_PNP_WATCHDOG",
+      "DecimalCode": 469,
+      "HexCode": "0x000001D5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS",
+      "Message": "WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS",
+      "DecimalCode": 470,
+      "HexCode": "0x000001D6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EFS_FATAL_ERROR",
+      "Message": "EFS_FATAL_ERROR",
+      "DecimalCode": 471,
+      "HexCode": "0x000001D7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UCMUCSI_FAILURE",
+      "Message": "UCMUCSI_FAILURE",
+      "DecimalCode": 472,
+      "HexCode": "0x000001D8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL_IOMMU_INTERNAL_ERROR",
+      "Message": "HAL_IOMMU_INTERNAL_ERROR",
+      "DecimalCode": 473,
+      "HexCode": "0x000001D9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR",
+      "Message": "HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR",
+      "DecimalCode": 474,
+      "HexCode": "0x000001DA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IPI_WATCHDOG_TIMEOUT",
+      "Message": "IPI_WATCHDOG_TIMEOUT",
+      "DecimalCode": 475,
+      "HexCode": "0x000001DB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DMA_COMMON_BUFFER_VECTOR_ERROR",
+      "Message": "DMA_COMMON_BUFFER_VECTOR_ERROR",
+      "DecimalCode": 476,
+      "HexCode": "0x000001DC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_MBBADAPTER_DRIVER",
+      "Message": "BUGCODE_MBBADAPTER_DRIVER",
+      "DecimalCode": 477,
+      "HexCode": "0x000001DD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BUGCODE_WIFIADAPTER_DRIVER",
+      "Message": "BUGCODE_WIFIADAPTER_DRIVER",
+      "DecimalCode": 478,
+      "HexCode": "0x000001DE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROCESSOR_START_TIMEOUT",
+      "Message": "PROCESSOR_START_TIMEOUT",
+      "DecimalCode": 479,
+      "HexCode": "0x000001DF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_ALTERNATE_SYSTEM_CALL_HANDLER_REGISTRATION",
+      "Message": "INVALID_ALTERNATE_SYSTEM_CALL_HANDLER_REGISTRATION",
+      "DecimalCode": 480,
+      "HexCode": "0x000001E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DEVICE_DIAGNOSTIC_LOG_LIVEDUMP",
+      "Message": "DEVICE_DIAGNOSTIC_LOG_LIVEDUMP",
+      "DecimalCode": 481,
+      "HexCode": "0x000001E1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "AZURE_DEVICE_FW_DUMP",
+      "Message": "AZURE_DEVICE_FW_DUMP",
+      "DecimalCode": 482,
+      "HexCode": "0x000001E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "BREAKAWAY_CABLE_TRANSITION",
+      "Message": "BREAKAWAY_CABLE_TRANSITION",
+      "DecimalCode": 483,
+      "HexCode": "0x000001E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VIDEO_DXGKRNL_SYSMM_FATAL_ERROR",
+      "Message": "VIDEO_DXGKRNL_SYSMM_FATAL_ERROR",
+      "DecimalCode": 484,
+      "HexCode": "0x000001E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DRIVER_VERIFIER_TRACKING_LIVE_DUMP",
+      "Message": "DRIVER_VERIFIER_TRACKING_LIVE_DUMP",
+      "DecimalCode": 485,
+      "HexCode": "0x000001E5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CRASHDUMP_WATCHDOG_TIMEOUT",
+      "Message": "CRASHDUMP_WATCHDOG_TIMEOUT",
+      "DecimalCode": 486,
+      "HexCode": "0x000001E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "REGISTRY_LIVE_DUMP",
+      "Message": "REGISTRY_LIVE_DUMP",
+      "DecimalCode": 487,
+      "HexCode": "0x000001E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_THREAD_AFFINITY_STATE",
+      "Message": "INVALID_THREAD_AFFINITY_STATE",
+      "DecimalCode": 488,
+      "HexCode": "0x000001E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ILLEGAL_ATS_INITIALIZATION",
+      "Message": "ILLEGAL_ATS_INITIALIZATION",
+      "DecimalCode": 489,
+      "HexCode": "0x000001E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION",
+      "Message": "SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION",
+      "DecimalCode": 490,
+      "HexCode": "0x000001EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DAM_WATCHDOG_TIMEOUT",
+      "Message": "DAM_WATCHDOG_TIMEOUT",
+      "DecimalCode": 491,
+      "HexCode": "0x000001EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HANDLE_LIVE_DUMP",
+      "Message": "HANDLE_LIVE_DUMP",
+      "DecimalCode": 492,
+      "HexCode": "0x000001EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HANDLE_ERROR_ON_CRITICAL_THREAD",
+      "Message": "HANDLE_ERROR_ON_CRITICAL_THREAD",
+      "DecimalCode": 493,
+      "HexCode": "0x000001ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MPSDRV_QUERY_USER",
+      "Message": "MPSDRV_QUERY_USER",
+      "DecimalCode": 1073742318,
+      "HexCode": "0x400001EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VMBUS_LIVEDUMP",
+      "Message": "VMBUS_LIVEDUMP",
+      "DecimalCode": 1073742319,
+      "HexCode": "0x400001EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "USB4_HARDWARE_VIOLATION",
+      "Message": "USB4_HARDWARE_VIOLATION",
+      "DecimalCode": 496,
+      "HexCode": "0x000001F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KASAN_ENLIGHTENMENT_VIOLATION",
+      "Message": "KASAN_ENLIGHTENMENT_VIOLATION",
+      "DecimalCode": 497,
+      "HexCode": "0x000001F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KASAN_ILLEGAL_ACCESS",
+      "Message": "KASAN_ILLEGAL_ACCESS",
+      "DecimalCode": 498,
+      "HexCode": "0x000001F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IORING",
+      "Message": "IORING",
+      "DecimalCode": 499,
+      "HexCode": "0x000001F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MDL_CACHE",
+      "Message": "MDL_CACHE",
+      "DecimalCode": 500,
+      "HexCode": "0x000001F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "APPLICATION_HANG_KERNEL_LIVEDUMP",
+      "Message": "APPLICATION_HANG_KERNEL_LIVEDUMP",
+      "DecimalCode": 501,
+      "HexCode": "0x000001F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MISALIGNED_POINTER_PARAMETER",
+      "Message": "MISALIGNED_POINTER_PARAMETER",
+      "DecimalCode": 502,
+      "HexCode": "0x000001F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MSSECCORE_ASSERTION_FAILURE",
+      "Message": "MSSECCORE_ASSERTION_FAILURE",
+      "DecimalCode": 503,
+      "HexCode": "0x000001F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_MINIMAL_PROCESS_STATE",
+      "Message": "INVALID_MINIMAL_PROCESS_STATE",
+      "DecimalCode": 504,
+      "HexCode": "0x000001F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PREVIOUS_MODE_MISMATCH",
+      "Message": "PREVIOUS_MODE_MISMATCH",
+      "DecimalCode": 505,
+      "HexCode": "0x000001F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SMB_SRV_REQUEST_VALIDATION_FAILURE",
+      "Message": "SMB_SRV_REQUEST_VALIDATION_FAILURE",
+      "DecimalCode": 506,
+      "HexCode": "0x000001FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "IOMMU_INTERRUPT_REMAPPING_FAULT",
+      "Message": "IOMMU_INTERRUPT_REMAPPING_FAULT",
+      "DecimalCode": 507,
+      "HexCode": "0x000001FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WIN32K_CALLOUT_UNREGISTER_FAILED",
+      "Message": "WIN32K_CALLOUT_UNREGISTER_FAILED",
+      "DecimalCode": 508,
+      "HexCode": "0x000001FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HAL_SPE_INTERNAL_ERROR",
+      "Message": "HAL_SPE_INTERNAL_ERROR",
+      "DecimalCode": 509,
+      "HexCode": "0x000001FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SMB_CLIENT_REQUEST_VALIDATION_FAILURE",
+      "Message": "SMB_CLIENT_REQUEST_VALIDATION_FAILURE",
+      "DecimalCode": 510,
+      "HexCode": "0x000001FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "CPU_SCHEDULER_INTERNAL_ERROR",
+      "Message": "CPU_SCHEDULER_INTERNAL_ERROR",
+      "DecimalCode": 512,
+      "HexCode": "0x00000200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "PROCESS_TERMINATE_LIKELY_DEADLOCK",
+      "Message": "PROCESS_TERMINATE_LIKELY_DEADLOCK",
+      "DecimalCode": 513,
+      "HexCode": "0x00000201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "UNEXPECTED_CODEPATH",
+      "Message": "UNEXPECTED_CODEPATH",
+      "DecimalCode": 514,
+      "HexCode": "0x00000202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "INVALID_EXTENSION_STATE",
+      "Message": "INVALID_EXTENSION_STATE",
+      "DecimalCode": 515,
+      "HexCode": "0x00000203",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_VMCTRL_CS_TIMEOUT",
+      "Message": "XBOX_VMCTRL_CS_TIMEOUT",
+      "DecimalCode": 854,
+      "HexCode": "0x00000356",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_CORRUPTED_IMAGE",
+      "Message": "XBOX_CORRUPTED_IMAGE",
+      "DecimalCode": 855,
+      "HexCode": "0x00000357",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_INVERTED_FUNCTION_TABLE_OVERFLOW",
+      "Message": "XBOX_INVERTED_FUNCTION_TABLE_OVERFLOW",
+      "DecimalCode": 856,
+      "HexCode": "0x00000358",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_CORRUPTED_IMAGE_BASE",
+      "Message": "XBOX_CORRUPTED_IMAGE_BASE",
+      "DecimalCode": 857,
+      "HexCode": "0x00000359",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_XDS_WATCHDOG_TIMEOUT",
+      "Message": "XBOX_XDS_WATCHDOG_TIMEOUT",
+      "DecimalCode": 858,
+      "HexCode": "0x0000035A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_SHUTDOWN_WATCHDOG_TIMEOUT",
+      "Message": "XBOX_SHUTDOWN_WATCHDOG_TIMEOUT",
+      "DecimalCode": 859,
+      "HexCode": "0x0000035B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_CANNOT_MANAGE_PARTITION_MEMORY",
+      "Message": "XBOX_CANNOT_MANAGE_PARTITION_MEMORY",
+      "DecimalCode": 861,
+      "HexCode": "0x0000035D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_360_SYSTEM_CRASH",
+      "Message": "XBOX_360_SYSTEM_CRASH",
+      "DecimalCode": 864,
+      "HexCode": "0x00000360",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_360_SYSTEM_CRASH_RESERVED",
+      "Message": "XBOX_360_SYSTEM_CRASH_RESERVED",
+      "DecimalCode": 1056,
+      "HexCode": "0x00000420",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_SECURITY_FAILUE",
+      "Message": "XBOX_SECURITY_FAILUE",
+      "DecimalCode": 1057,
+      "HexCode": "0x00000421",
+      "Type": "HResult"
+    },
+    {
+      "Id": "KERNEL_CFG_INIT_FAILURE",
+      "Message": "KERNEL_CFG_INIT_FAILURE",
+      "DecimalCode": 1058,
+      "HexCode": "0x00000422",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MANUALLY_INITIATED_POWER_BUTTON_HOLD_LIVE_DUMP",
+      "Message": "MANUALLY_INITIATED_POWER_BUTTON_HOLD_LIVE_DUMP",
+      "DecimalCode": 4552,
+      "HexCode": "0x000011C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "HYPERVISOR_ERROR",
+      "Message": "HYPERVISOR_ERROR",
+      "DecimalCode": 131073,
+      "HexCode": "0x00020001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "XBOX_MANUALLY_INITIATED_CRASH",
+      "Message": "XBOX_MANUALLY_INITIATED_CRASH",
+      "DecimalCode": 196614,
+      "HexCode": "0x00030006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP",
+      "Message": "MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP",
+      "DecimalCode": 8648,
+      "HexCode": "0x000021C8",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

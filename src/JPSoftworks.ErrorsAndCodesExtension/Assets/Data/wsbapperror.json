@@ -1,0 +1,39 @@
+{
+  "HeaderFileName": "wsbapperror.h",
+  "ErrorCodes": [
+    {
+      "Id": "WSBAPP_E_COMPONENT_CONSISTENCY_CHECK_FAILED",
+      "Message": "The component consistency check failed.",
+      "DecimalCode": -2139488255,
+      "HexCode": "0x807A0001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WSBAPP_E_COMPONENT_PRE_RESTORE_FAILED",
+      "Message": "The pre-restore steps for the component failed.",
+      "DecimalCode": -2139488254,
+      "HexCode": "0x807A0002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WSBAPP_E_COMPONENT_POST_RESTORE_FAILED",
+      "Message": "The post-restore steps for the component failed.",
+      "DecimalCode": -2139488253,
+      "HexCode": "0x807A0003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WSBAPP_ASYNC_IN_PROGRESS",
+      "Message": "An asynchronous operation is in progress.",
+      "DecimalCode": 7995396,
+      "HexCode": "0x007A0004",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WSBAPP",
+      "Code": 122
+    }
+  ]
+}

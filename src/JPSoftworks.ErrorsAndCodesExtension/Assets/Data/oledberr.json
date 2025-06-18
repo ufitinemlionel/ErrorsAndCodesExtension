@@ -1,0 +1,1286 @@
+{
+  "HeaderFileName": "oledberr.h",
+  "ErrorCodes": [
+    {
+      "Id": "DB_E_BOGUS",
+      "Message": "Dummy error - need this error so that mc puts the above defines inside the FACILITY_WINDOWS guard, instead of leaving it empty",
+      "DecimalCode": -2147217665,
+      "HexCode": "0x80040EFF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADACCESSORHANDLE",
+      "Message": "Accessor is invalid.",
+      "DecimalCode": -2147217920,
+      "HexCode": "0x80040E00",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ROWLIMITEXCEEDED",
+      "Message": "Row could not be inserted into the rowset without exceeding provider\u0027s maximum number of active rows.",
+      "DecimalCode": -2147217919,
+      "HexCode": "0x80040E01",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_READONLYACCESSOR",
+      "Message": "Accessor is read-only. Operation failed.",
+      "DecimalCode": -2147217918,
+      "HexCode": "0x80040E02",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_SCHEMAVIOLATION",
+      "Message": "Values violate the database schema.",
+      "DecimalCode": -2147217917,
+      "HexCode": "0x80040E03",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADROWHANDLE",
+      "Message": "Row handle is invalid.",
+      "DecimalCode": -2147217916,
+      "HexCode": "0x80040E04",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_OBJECTOPEN",
+      "Message": "Object was open.",
+      "DecimalCode": -2147217915,
+      "HexCode": "0x80040E05",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCHAPTER",
+      "Message": "Chapter is invalid.",
+      "DecimalCode": -2147217914,
+      "HexCode": "0x80040E06",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTCONVERTVALUE",
+      "Message": "Data or literal value could not be converted to the type of the column in the data source, and the provider was unable to determine which columns could not be converted.  Data overflow or sign mismatch was not the cause.",
+      "DecimalCode": -2147217913,
+      "HexCode": "0x80040E07",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADBINDINFO",
+      "Message": "Binding information is invalid.",
+      "DecimalCode": -2147217912,
+      "HexCode": "0x80040E08",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_SEC_E_PERMISSIONDENIED",
+      "Message": "Permission denied.",
+      "DecimalCode": -2147217911,
+      "HexCode": "0x80040E09",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTAREFERENCECOLUMN",
+      "Message": "Column does not contain bookmarks or chapters.",
+      "DecimalCode": -2147217910,
+      "HexCode": "0x80040E0A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_LIMITREJECTED",
+      "Message": "Cost limits were rejected.",
+      "DecimalCode": -2147217909,
+      "HexCode": "0x80040E0B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOCOMMAND",
+      "Message": "Command text was not set for the command object.",
+      "DecimalCode": -2147217908,
+      "HexCode": "0x80040E0C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_COSTLIMIT",
+      "Message": "Query plan within the cost limit cannot be found.",
+      "DecimalCode": -2147217907,
+      "HexCode": "0x80040E0D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADBOOKMARK",
+      "Message": "Bookmark is invalid.",
+      "DecimalCode": -2147217906,
+      "HexCode": "0x80040E0E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADLOCKMODE",
+      "Message": "Lock mode is invalid.",
+      "DecimalCode": -2147217905,
+      "HexCode": "0x80040E0F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_PARAMNOTOPTIONAL",
+      "Message": "No value given for one or more required parameters.",
+      "DecimalCode": -2147217904,
+      "HexCode": "0x80040E10",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCOLUMNID",
+      "Message": "Column ID is invalid.",
+      "DecimalCode": -2147217903,
+      "HexCode": "0x80040E11",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADRATIO",
+      "Message": "Numerator was greater than denominator. Values must express ratio between zero and 1.",
+      "DecimalCode": -2147217902,
+      "HexCode": "0x80040E12",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADVALUES",
+      "Message": "Value is invalid.",
+      "DecimalCode": -2147217901,
+      "HexCode": "0x80040E13",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ERRORSINCOMMAND",
+      "Message": "One or more errors occurred during processing of command.",
+      "DecimalCode": -2147217900,
+      "HexCode": "0x80040E14",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTCANCEL",
+      "Message": "Command cannot be canceled.",
+      "DecimalCode": -2147217899,
+      "HexCode": "0x80040E15",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DIALECTNOTSUPPORTED",
+      "Message": "Command dialect is not supported by this provider.",
+      "DecimalCode": -2147217898,
+      "HexCode": "0x80040E16",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DUPLICATEDATASOURCE",
+      "Message": "Data source object could not be created because the named data source already exists.",
+      "DecimalCode": -2147217897,
+      "HexCode": "0x80040E17",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANNOTRESTART",
+      "Message": "Rowset position cannot be restarted.",
+      "DecimalCode": -2147217896,
+      "HexCode": "0x80040E18",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTFOUND",
+      "Message": "Object or data matching the name, range, or selection criteria was not found within the scope of this operation.",
+      "DecimalCode": -2147217895,
+      "HexCode": "0x80040E19",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NEWLYINSERTED",
+      "Message": "Identity cannot be determined for newly inserted rows.",
+      "DecimalCode": -2147217893,
+      "HexCode": "0x80040E1B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANNOTFREE",
+      "Message": "Provider has ownership of this tree.",
+      "DecimalCode": -2147217894,
+      "HexCode": "0x80040E1A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_GOALREJECTED",
+      "Message": "Goal was rejected because no nonzero weights were specified for any goals supported. Current goal was not changed.",
+      "DecimalCode": -2147217892,
+      "HexCode": "0x80040E1C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_UNSUPPORTEDCONVERSION",
+      "Message": "Requested conversion is not supported.",
+      "DecimalCode": -2147217891,
+      "HexCode": "0x80040E1D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADSTARTPOSITION",
+      "Message": "No rows were returned because the offset value moves the position before the beginning or after the end of the rowset.",
+      "DecimalCode": -2147217890,
+      "HexCode": "0x80040E1E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOQUERY",
+      "Message": "Information was requested for a query and the query was not set.",
+      "DecimalCode": -2147217889,
+      "HexCode": "0x80040E1F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTREENTRANT",
+      "Message": "Consumer\u0027s event handler called a non-reentrant method in the provider.",
+      "DecimalCode": -2147217888,
+      "HexCode": "0x80040E20",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ERRORSOCCURRED",
+      "Message": "Multiple-step OLE DB operation generated errors. Check each OLE DB status value, if available. No work was done.",
+      "DecimalCode": -2147217887,
+      "HexCode": "0x80040E21",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOAGGREGATION",
+      "Message": "Non-NULL controlling IUnknown was specified, and either the requested interface was not IUnknown, or the provider does not support COM aggregation.",
+      "DecimalCode": -2147217886,
+      "HexCode": "0x80040E22",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DELETEDROW",
+      "Message": "Row handle referred to a deleted row or a row marked for deletion.",
+      "DecimalCode": -2147217885,
+      "HexCode": "0x80040E23",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTFETCHBACKWARDS",
+      "Message": "Rowset does not support fetching backward.",
+      "DecimalCode": -2147217884,
+      "HexCode": "0x80040E24",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ROWSNOTRELEASED",
+      "Message": "Row handles must all be released before new ones can be obtained.",
+      "DecimalCode": -2147217883,
+      "HexCode": "0x80040E25",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADSTORAGEFLAG",
+      "Message": "One or more storage flags are not supported.",
+      "DecimalCode": -2147217882,
+      "HexCode": "0x80040E26",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCOMPAREOP",
+      "Message": "Comparison operator is invalid.",
+      "DecimalCode": -2147217881,
+      "HexCode": "0x80040E27",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADSTATUSVALUE",
+      "Message": "Status flag was neither DBCOLUMNSTATUS_OK nor DBCOLUMNSTATUS_ISNULL.",
+      "DecimalCode": -2147217880,
+      "HexCode": "0x80040E28",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTSCROLLBACKWARDS",
+      "Message": "Rowset does not support scrolling backward.",
+      "DecimalCode": -2147217879,
+      "HexCode": "0x80040E29",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADREGIONHANDLE",
+      "Message": "Region handle is invalid.",
+      "DecimalCode": -2147217878,
+      "HexCode": "0x80040E2A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NONCONTIGUOUSRANGE",
+      "Message": "Set of rows is not contiguous to, or does not overlap, the rows in the watch region.",
+      "DecimalCode": -2147217877,
+      "HexCode": "0x80040E2B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_INVALIDTRANSITION",
+      "Message": "Transition from ALL* to MOVE* or EXTEND* was specified.",
+      "DecimalCode": -2147217876,
+      "HexCode": "0x80040E2C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTASUBREGION",
+      "Message": "Region is not a proper subregion of the region identified by the watch region handle.",
+      "DecimalCode": -2147217875,
+      "HexCode": "0x80040E2D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_MULTIPLESTATEMENTS",
+      "Message": "Multiple-statement commands are not supported by this provider.",
+      "DecimalCode": -2147217874,
+      "HexCode": "0x80040E2E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_INTEGRITYVIOLATION",
+      "Message": "Value violated the integrity constraints for a column or table.",
+      "DecimalCode": -2147217873,
+      "HexCode": "0x80040E2F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADTYPENAME",
+      "Message": "Type name is invalid.",
+      "DecimalCode": -2147217872,
+      "HexCode": "0x80040E30",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ABORTLIMITREACHED",
+      "Message": "Execution stopped because a resource limit was reached. No results were returned.",
+      "DecimalCode": -2147217871,
+      "HexCode": "0x80040E31",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ROWSETINCOMMAND",
+      "Message": "Command object whose command tree contains a rowset or rowsets cannot be cloned.",
+      "DecimalCode": -2147217870,
+      "HexCode": "0x80040E32",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTTRANSLATE",
+      "Message": "Current tree cannot be represented as text.",
+      "DecimalCode": -2147217869,
+      "HexCode": "0x80040E33",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DUPLICATEINDEXID",
+      "Message": "Index already exists.",
+      "DecimalCode": -2147217868,
+      "HexCode": "0x80040E34",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOINDEX",
+      "Message": "Index does not exist.",
+      "DecimalCode": -2147217867,
+      "HexCode": "0x80040E35",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_INDEXINUSE",
+      "Message": "Index is in use.",
+      "DecimalCode": -2147217866,
+      "HexCode": "0x80040E36",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTABLE",
+      "Message": "Table does not exist.",
+      "DecimalCode": -2147217865,
+      "HexCode": "0x80040E37",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CONCURRENCYVIOLATION",
+      "Message": "Rowset used optimistic concurrency and the value of a column has changed since it was last read.",
+      "DecimalCode": -2147217864,
+      "HexCode": "0x80040E38",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCOPY",
+      "Message": "Errors detected during the copy.",
+      "DecimalCode": -2147217863,
+      "HexCode": "0x80040E39",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADPRECISION",
+      "Message": "Precision is invalid.",
+      "DecimalCode": -2147217862,
+      "HexCode": "0x80040E3A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADSCALE",
+      "Message": "Scale is invalid.",
+      "DecimalCode": -2147217861,
+      "HexCode": "0x80040E3B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADTABLEID",
+      "Message": "Table ID is invalid.",
+      "DecimalCode": -2147217860,
+      "HexCode": "0x80040E3C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADTYPE",
+      "Message": "Type is invalid.",
+      "DecimalCode": -2147217859,
+      "HexCode": "0x80040E3D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DUPLICATECOLUMNID",
+      "Message": "Column ID already exists or occurred more than once in the array of columns.",
+      "DecimalCode": -2147217858,
+      "HexCode": "0x80040E3E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DUPLICATETABLEID",
+      "Message": "Table already exists.",
+      "DecimalCode": -2147217857,
+      "HexCode": "0x80040E3F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_TABLEINUSE",
+      "Message": "Table is in use.",
+      "DecimalCode": -2147217856,
+      "HexCode": "0x80040E40",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOLOCALE",
+      "Message": "Locale ID is not supported.",
+      "DecimalCode": -2147217855,
+      "HexCode": "0x80040E41",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADRECORDNUM",
+      "Message": "Record number is invalid.",
+      "DecimalCode": -2147217854,
+      "HexCode": "0x80040E42",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BOOKMARKSKIPPED",
+      "Message": "Form of bookmark is valid, but no row was found to match it.",
+      "DecimalCode": -2147217853,
+      "HexCode": "0x80040E43",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADPROPERTYVALUE",
+      "Message": "Property value is invalid.",
+      "DecimalCode": -2147217852,
+      "HexCode": "0x80040E44",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_INVALID",
+      "Message": "Rowset is not chaptered.",
+      "DecimalCode": -2147217851,
+      "HexCode": "0x80040E45",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADACCESSORFLAGS",
+      "Message": "One or more accessor flags were invalid.",
+      "DecimalCode": -2147217850,
+      "HexCode": "0x80040E46",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADSTORAGEFLAGS",
+      "Message": "One or more storage flags are invalid.",
+      "DecimalCode": -2147217849,
+      "HexCode": "0x80040E47",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BYREFACCESSORNOTSUPPORTED",
+      "Message": "Reference accessors are not supported by this provider.",
+      "DecimalCode": -2147217848,
+      "HexCode": "0x80040E48",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NULLACCESSORNOTSUPPORTED",
+      "Message": "Null accessors are not supported by this provider.",
+      "DecimalCode": -2147217847,
+      "HexCode": "0x80040E49",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTPREPARED",
+      "Message": "Command was not prepared.",
+      "DecimalCode": -2147217846,
+      "HexCode": "0x80040E4A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADACCESSORTYPE",
+      "Message": "Accessor is not a parameter accessor.",
+      "DecimalCode": -2147217845,
+      "HexCode": "0x80040E4B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_WRITEONLYACCESSOR",
+      "Message": "Accessor is write-only.",
+      "DecimalCode": -2147217844,
+      "HexCode": "0x80040E4C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_SEC_E_AUTH_FAILED",
+      "Message": "Authentication failed.",
+      "DecimalCode": -2147217843,
+      "HexCode": "0x80040E4D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANCELED",
+      "Message": "Operation was canceled.",
+      "DecimalCode": -2147217842,
+      "HexCode": "0x80040E4E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CHAPTERNOTRELEASED",
+      "Message": "Rowset is single-chaptered. The chapter was not released.",
+      "DecimalCode": -2147217841,
+      "HexCode": "0x80040E4F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADSOURCEHANDLE",
+      "Message": "Source handle is invalid.",
+      "DecimalCode": -2147217840,
+      "HexCode": "0x80040E50",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_PARAMUNAVAILABLE",
+      "Message": "Provider cannot derive parameter information and SetParameterInfo has not been called.",
+      "DecimalCode": -2147217839,
+      "HexCode": "0x80040E51",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ALREADYINITIALIZED",
+      "Message": "Data source object is already initialized.",
+      "DecimalCode": -2147217838,
+      "HexCode": "0x80040E52",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTSUPPORTED",
+      "Message": "Method is not supported by this provider.",
+      "DecimalCode": -2147217837,
+      "HexCode": "0x80040E53",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_MAXPENDCHANGESEXCEEDED",
+      "Message": "Number of rows with pending changes exceeded the limit.",
+      "DecimalCode": -2147217836,
+      "HexCode": "0x80040E54",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADORDINAL",
+      "Message": "Column does not exist.",
+      "DecimalCode": -2147217835,
+      "HexCode": "0x80040E55",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_PENDINGCHANGES",
+      "Message": "Pending changes exist on a row with a reference count of zero.",
+      "DecimalCode": -2147217834,
+      "HexCode": "0x80040E56",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DATAOVERFLOW",
+      "Message": "Literal value in the command exceeded the range of the type of the associated column.",
+      "DecimalCode": -2147217833,
+      "HexCode": "0x80040E57",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADHRESULT",
+      "Message": "HRESULT is invalid.",
+      "DecimalCode": -2147217832,
+      "HexCode": "0x80040E58",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADLOOKUPID",
+      "Message": "Lookup ID is invalid.",
+      "DecimalCode": -2147217831,
+      "HexCode": "0x80040E59",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADDYNAMICERRORID",
+      "Message": "DynamicError ID is invalid.",
+      "DecimalCode": -2147217830,
+      "HexCode": "0x80040E5A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_PENDINGINSERT",
+      "Message": "Most recent data for a newly inserted row could not be retrieved because the insert is pending.",
+      "DecimalCode": -2147217829,
+      "HexCode": "0x80040E5B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCONVERTFLAG",
+      "Message": "Conversion flag is invalid.",
+      "DecimalCode": -2147217828,
+      "HexCode": "0x80040E5C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADPARAMETERNAME",
+      "Message": "Parameter name is unrecognized.",
+      "DecimalCode": -2147217827,
+      "HexCode": "0x80040E5D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_MULTIPLESTORAGE",
+      "Message": "Multiple storage objects cannot be open simultaneously.",
+      "DecimalCode": -2147217826,
+      "HexCode": "0x80040E5E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTFILTER",
+      "Message": "Filter cannot be opened.",
+      "DecimalCode": -2147217825,
+      "HexCode": "0x80040E5F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANTORDER",
+      "Message": "Order cannot be opened.",
+      "DecimalCode": -2147217824,
+      "HexCode": "0x80040E60",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_E_BADTUPLE",
+      "Message": "Tuple is invalid.",
+      "DecimalCode": -2147217823,
+      "HexCode": "0x80040E61",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_E_BADCOORDINATE",
+      "Message": "Coordinate is invalid.",
+      "DecimalCode": -2147217822,
+      "HexCode": "0x80040E62",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_E_INVALIDAXIS",
+      "Message": "Axis is invalid.",
+      "DecimalCode": -2147217821,
+      "HexCode": "0x80040E63",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MD_E_INVALIDCELLRANGE",
+      "Message": "One or more cell ordinals is invalid.",
+      "DecimalCode": -2147217820,
+      "HexCode": "0x80040E64",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOCOLUMN",
+      "Message": "Column ID is invalid.",
+      "DecimalCode": -2147217819,
+      "HexCode": "0x80040E65",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_COMMANDNOTPERSISTED",
+      "Message": "Command does not have a DBID.",
+      "DecimalCode": -2147217817,
+      "HexCode": "0x80040E67",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DUPLICATEID",
+      "Message": "DBID already exists.",
+      "DecimalCode": -2147217816,
+      "HexCode": "0x80040E68",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_OBJECTCREATIONLIMITREACHED",
+      "Message": "Session cannot be created because maximum number of active sessions was already reached. Consumer must release one or more sessions before creating a new session object.",
+      "DecimalCode": -2147217815,
+      "HexCode": "0x80040E69",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADINDEXID",
+      "Message": "Index ID is invalid.",
+      "DecimalCode": -2147217806,
+      "HexCode": "0x80040E72",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADINITSTRING",
+      "Message": "Format of the initialization string does not conform to the OLE DB specification.",
+      "DecimalCode": -2147217805,
+      "HexCode": "0x80040E73",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOPROVIDERSREGISTERED",
+      "Message": "No OLE DB providers of this source type are registered.",
+      "DecimalCode": -2147217804,
+      "HexCode": "0x80040E74",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_MISMATCHEDPROVIDER",
+      "Message": "Initialization string specifies a provider that does not match the active provider.",
+      "DecimalCode": -2147217803,
+      "HexCode": "0x80040E75",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCOMMANDID",
+      "Message": "DBID is invalid.",
+      "DecimalCode": -2147217802,
+      "HexCode": "0x80040E76",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_BADTRUSTEEID",
+      "Message": "Trustee is invalid.",
+      "DecimalCode": -2147217814,
+      "HexCode": "0x80040E6A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_NOTRUSTEEID",
+      "Message": "Trustee was not recognized for this data source.",
+      "DecimalCode": -2147217813,
+      "HexCode": "0x80040E6B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_NOMEMBERSHIPSUPPORT",
+      "Message": "Trustee does not support memberships or collections.",
+      "DecimalCode": -2147217812,
+      "HexCode": "0x80040E6C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_INVALIDOBJECT",
+      "Message": "Object is invalid or unknown to the provider.",
+      "DecimalCode": -2147217811,
+      "HexCode": "0x80040E6D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_NOOWNER",
+      "Message": "Object does not have an owner.",
+      "DecimalCode": -2147217810,
+      "HexCode": "0x80040E6E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_INVALIDACCESSENTRYLIST",
+      "Message": "Access entry list is invalid.",
+      "DecimalCode": -2147217809,
+      "HexCode": "0x80040E6F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_INVALIDOWNER",
+      "Message": "Trustee supplied as owner is invalid or unknown to the provider.",
+      "DecimalCode": -2147217808,
+      "HexCode": "0x80040E70",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SEC_E_INVALIDACCESSENTRY",
+      "Message": "Permission in the access entry list is invalid.",
+      "DecimalCode": -2147217807,
+      "HexCode": "0x80040E71",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCONSTRAINTTYPE",
+      "Message": "ConstraintType is invalid or not supported by the provider.",
+      "DecimalCode": -2147217801,
+      "HexCode": "0x80040E77",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCONSTRAINTFORM",
+      "Message": "ConstraintType is not DBCONSTRAINTTYPE_FOREIGNKEY and cForeignKeyColumns is not zero.",
+      "DecimalCode": -2147217800,
+      "HexCode": "0x80040E78",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADDEFERRABILITY",
+      "Message": "Specified deferrability flag is invalid or not supported by the provider.",
+      "DecimalCode": -2147217799,
+      "HexCode": "0x80040E79",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADMATCHTYPE",
+      "Message": "MatchType is invalid or the value is not supported by the provider.",
+      "DecimalCode": -2147217792,
+      "HexCode": "0x80040E80",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADUPDATEDELETERULE",
+      "Message": "Constraint update rule or delete rule is invalid.",
+      "DecimalCode": -2147217782,
+      "HexCode": "0x80040E8A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCONSTRAINTID",
+      "Message": "Constraint ID is invalid.",
+      "DecimalCode": -2147217781,
+      "HexCode": "0x80040E8B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_BADCOMMANDFLAGS",
+      "Message": "Command persistence flag is invalid.",
+      "DecimalCode": -2147217780,
+      "HexCode": "0x80040E8C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_OBJECTMISMATCH",
+      "Message": "rguidColumnType points to a GUID that does not match the object type of this column, or this column was not set.",
+      "DecimalCode": -2147217779,
+      "HexCode": "0x80040E8D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOSOURCEOBJECT",
+      "Message": "Source row does not exist.",
+      "DecimalCode": -2147217775,
+      "HexCode": "0x80040E91",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_RESOURCELOCKED",
+      "Message": "OLE DB object represented by this URL is locked by one or more other processes.",
+      "DecimalCode": -2147217774,
+      "HexCode": "0x80040E92",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOTCOLLECTION",
+      "Message": "Client requested an object type that is valid only for a collection.",
+      "DecimalCode": -2147217773,
+      "HexCode": "0x80040E93",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_READONLY",
+      "Message": "Caller requested write access to a read-only object.",
+      "DecimalCode": -2147217772,
+      "HexCode": "0x80040E94",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ASYNCNOTSUPPORTED",
+      "Message": "Asynchronous binding is not supported by this provider.",
+      "DecimalCode": -2147217771,
+      "HexCode": "0x80040E95",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_CANNOTCONNECT",
+      "Message": "Connection to the server for this URL cannot be established.",
+      "DecimalCode": -2147217770,
+      "HexCode": "0x80040E96",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_TIMEOUT",
+      "Message": "Timeout occurred when attempting to bind to the object.",
+      "DecimalCode": -2147217769,
+      "HexCode": "0x80040E97",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_RESOURCEEXISTS",
+      "Message": "Object cannot be created at this URL because an object named by this URL already exists.",
+      "DecimalCode": -2147217768,
+      "HexCode": "0x80040E98",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_RESOURCEOUTOFSCOPE",
+      "Message": "URL is outside of scope.",
+      "DecimalCode": -2147217778,
+      "HexCode": "0x80040E8E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DROPRESTRICTED",
+      "Message": "Column or constraint could not be dropped because it is referenced by a dependent view or constraint.",
+      "DecimalCode": -2147217776,
+      "HexCode": "0x80040E90",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_DUPLICATECONSTRAINTID",
+      "Message": "Constraint already exists.",
+      "DecimalCode": -2147217767,
+      "HexCode": "0x80040E99",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_OUTOFSPACE",
+      "Message": "Object cannot be created at this URL because the server is out of physical storage.",
+      "DecimalCode": -2147217766,
+      "HexCode": "0x80040E9A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_SEC_E_SAFEMODE_DENIED",
+      "Message": "Safety settings on this computer prohibit accessing a data source on another domain.",
+      "DecimalCode": -2147217765,
+      "HexCode": "0x80040E9B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOSTATISTIC",
+      "Message": "The specified statistic does not exist in the current data source or did not apply to the specified table or it does not support a histogram.",
+      "DecimalCode": -2147217764,
+      "HexCode": "0x80040E9C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_ALTERRESTRICTED",
+      "Message": "Column or table could not be altered because it is referenced by a constraint.",
+      "DecimalCode": -2147217763,
+      "HexCode": "0x80040E9D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_RESOURCENOTSUPPORTED",
+      "Message": "Requested object type is not supported by the provider.",
+      "DecimalCode": -2147217762,
+      "HexCode": "0x80040E9E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_NOCONSTRAINT",
+      "Message": "Constraint does not exist.",
+      "DecimalCode": -2147217761,
+      "HexCode": "0x80040E9F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_E_COLUMNUNAVAILABLE",
+      "Message": "Requested column is valid, but could not be retrieved. This could be due to a forward only cursor attempting to go backwards in a row.",
+      "DecimalCode": -2147217760,
+      "HexCode": "0x80040EA0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_ROWLIMITEXCEEDED",
+      "Message": "Fetching requested number of rows will exceed total number of active rows supported by the rowset.",
+      "DecimalCode": 265920,
+      "HexCode": "0x00040EC0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_COLUMNTYPEMISMATCH",
+      "Message": "One or more column types are incompatible. Conversion errors will occur during copying.",
+      "DecimalCode": 265921,
+      "HexCode": "0x00040EC1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_TYPEINFOOVERRIDDEN",
+      "Message": "Parameter type information was overridden by caller.",
+      "DecimalCode": 265922,
+      "HexCode": "0x00040EC2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_BOOKMARKSKIPPED",
+      "Message": "Bookmark was skipped for deleted or nonmember row.",
+      "DecimalCode": 265923,
+      "HexCode": "0x00040EC3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_NONEXTROWSET",
+      "Message": "No more rowsets.",
+      "DecimalCode": 265925,
+      "HexCode": "0x00040EC5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_ENDOFROWSET",
+      "Message": "Start or end of rowset or chapter was reached.",
+      "DecimalCode": 265926,
+      "HexCode": "0x00040EC6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_COMMANDREEXECUTED",
+      "Message": "Command was reexecuted.",
+      "DecimalCode": 265927,
+      "HexCode": "0x00040EC7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_BUFFERFULL",
+      "Message": "Operation succeeded, but status array or string buffer could not be allocated.",
+      "DecimalCode": 265928,
+      "HexCode": "0x00040EC8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_NORESULT",
+      "Message": "No more results.",
+      "DecimalCode": 265929,
+      "HexCode": "0x00040EC9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_CANTRELEASE",
+      "Message": "Server cannot release or downgrade a lock until the end of the transaction.",
+      "DecimalCode": 265930,
+      "HexCode": "0x00040ECA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_GOALCHANGED",
+      "Message": "Weight is not supported or exceeded the supported limit, and was set to 0 or the supported limit.",
+      "DecimalCode": 265931,
+      "HexCode": "0x00040ECB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_UNWANTEDOPERATION",
+      "Message": "Consumer does not want to receive further notification calls for this operation.",
+      "DecimalCode": 265932,
+      "HexCode": "0x00040ECC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_DIALECTIGNORED",
+      "Message": "Input dialect was ignored and command was processed using default dialect.",
+      "DecimalCode": 265933,
+      "HexCode": "0x00040ECD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_UNWANTEDPHASE",
+      "Message": "Consumer does not want to receive further notification calls for this phase.",
+      "DecimalCode": 265934,
+      "HexCode": "0x00040ECE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_UNWANTEDREASON",
+      "Message": "Consumer does not want to receive further notification calls for this reason.",
+      "DecimalCode": 265935,
+      "HexCode": "0x00040ECF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_ASYNCHRONOUS",
+      "Message": "Operation is being processed asynchronously.",
+      "DecimalCode": 265936,
+      "HexCode": "0x00040ED0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_COLUMNSCHANGED",
+      "Message": "Command was executed to reposition to the start of the rowset. Either the order of the columns changed, or columns were added to or removed from the rowset.",
+      "DecimalCode": 265937,
+      "HexCode": "0x00040ED1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_ERRORSRETURNED",
+      "Message": "Method had some errors, which were returned in the error array.",
+      "DecimalCode": 265938,
+      "HexCode": "0x00040ED2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_BADROWHANDLE",
+      "Message": "Row handle is invalid.",
+      "DecimalCode": 265939,
+      "HexCode": "0x00040ED3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_DELETEDROW",
+      "Message": "Row handle referred to a deleted row.",
+      "DecimalCode": 265940,
+      "HexCode": "0x00040ED4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_TOOMANYCHANGES",
+      "Message": "Provider cannot keep track of all the changes. Client must refetch the data associated with the watch region by using another method.",
+      "DecimalCode": 265941,
+      "HexCode": "0x00040ED5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_STOPLIMITREACHED",
+      "Message": "Execution stopped because a resource limit was reached. Results obtained so far were returned, but execution cannot resume.",
+      "DecimalCode": 265942,
+      "HexCode": "0x00040ED6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_LOCKUPGRADED",
+      "Message": "Lock was upgraded from the value specified.",
+      "DecimalCode": 265944,
+      "HexCode": "0x00040ED8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_PROPERTIESCHANGED",
+      "Message": "One or more properties were changed as allowed by provider.",
+      "DecimalCode": 265945,
+      "HexCode": "0x00040ED9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_ERRORSOCCURRED",
+      "Message": "Multiple-step operation completed with one or more errors. Check each status value.",
+      "DecimalCode": 265946,
+      "HexCode": "0x00040EDA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_PARAMUNAVAILABLE",
+      "Message": "Parameter is invalid.",
+      "DecimalCode": 265947,
+      "HexCode": "0x00040EDB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_MULTIPLECHANGES",
+      "Message": "Updating a row caused more than one row to be updated in the data source.",
+      "DecimalCode": 265948,
+      "HexCode": "0x00040EDC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_NOTSINGLETON",
+      "Message": "Row object was requested on a non-singleton result. First row was returned.",
+      "DecimalCode": 265943,
+      "HexCode": "0x00040ED7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "DB_S_NOROWSPECIFICCOLUMNS",
+      "Message": "Row has no row-specific columns.",
+      "DecimalCode": 265949,
+      "HexCode": "0x00040EDD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_FILENOTFOUND",
+      "Message": "The file could not be found.",
+      "DecimalCode": -2147287038,
+      "HexCode": "0x80030002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_PATHNOTFOUND",
+      "Message": "The path could not be found.",
+      "DecimalCode": -2147287037,
+      "HexCode": "0x80030003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_FILEALREADYEXISTS",
+      "Message": "The file already exists.",
+      "DecimalCode": -2147286960,
+      "HexCode": "0x80030050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_INVALIDHEADER",
+      "Message": "The file is not a valid compound file.",
+      "DecimalCode": -2147286789,
+      "HexCode": "0x800300FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_INVALIDNAME",
+      "Message": "The name is not valid.",
+      "DecimalCode": -2147286788,
+      "HexCode": "0x800300FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_OLDFORMAT",
+      "Message": "The compound file was produced with an incompatible version of storage.",
+      "DecimalCode": -2147286780,
+      "HexCode": "0x80030104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "STG_E_OLDDLL",
+      "Message": "The compound file was produced with an incompatible version of storage.",
+      "DecimalCode": -2147286779,
+      "HexCode": "0x80030105",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_ITF",
+      "Code": 4
+    },
+    {
+      "Name": "FACILITY_WINDOWS",
+      "Code": 8
+    },
+    {
+      "Name": "FACILITY_STORAGE",
+      "Code": 3
+    }
+  ]
+}

@@ -1,0 +1,1014 @@
+{
+  "HeaderFileName": "mq.h",
+  "ErrorCodes": [
+    {
+      "Id": "MQ_INFORMATION_PROPERTY",
+      "Message": "One or more of the properties passed resulted in a warning, but the function completed.",
+      "DecimalCode": 1074659329,
+      "HexCode": "0x400E0001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_ILLEGAL_PROPERTY",
+      "Message": "The property ID is invalid.",
+      "DecimalCode": 1074659330,
+      "HexCode": "0x400E0002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_PROPERTY_IGNORED",
+      "Message": "The property specified was ignored for this operation (this occurs, for example, when PROPID_M_SENDERID is passed to SendMessage()).",
+      "DecimalCode": 1074659331,
+      "HexCode": "0x400E0003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_UNSUPPORTED_PROPERTY",
+      "Message": "The property specified is not supported and was ignored for this operation.",
+      "DecimalCode": 1074659332,
+      "HexCode": "0x400E0004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_DUPLICATE_PROPERTY",
+      "Message": "The property specified is already in the property identifier array. The duplicate was ignored for this operation.",
+      "DecimalCode": 1074659333,
+      "HexCode": "0x400E0005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_OPERATION_PENDING",
+      "Message": "An asynchronous operation is currently pending.",
+      "DecimalCode": 1074659334,
+      "HexCode": "0x400E0006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_FORMATNAME_BUFFER_TOO_SMALL",
+      "Message": "The format name buffer supplied to MQCreateQueue was too small to hold the format name, however the queue was created successfully.",
+      "DecimalCode": 1074659337,
+      "HexCode": "0x400E0009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_INTERNAL_USER_CERT_EXIST",
+      "Message": "An internal Message Queuing certificate already exists for this user.",
+      "DecimalCode": 1074659338,
+      "HexCode": "0x400E000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_INFORMATION_OWNER_IGNORED",
+      "Message": "The queue owner was not set during the processing of this call to MQSetQueueSecurity().",
+      "DecimalCode": 1074659339,
+      "HexCode": "0x400E000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR",
+      "Message": "Generic error code.",
+      "DecimalCode": -1072824319,
+      "HexCode": "0xC00E0001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PROPERTY",
+      "Message": "One or more of the properties passed are invalid.",
+      "DecimalCode": -1072824318,
+      "HexCode": "0xC00E0002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_QUEUE_NOT_FOUND",
+      "Message": "The queue does not exist or you do not have sufficient permissions to perform the operation.",
+      "DecimalCode": -1072824317,
+      "HexCode": "0xC00E0003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_QUEUE_NOT_ACTIVE",
+      "Message": "The queue is not open or may not exist.",
+      "DecimalCode": -1072824316,
+      "HexCode": "0xC00E0004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_QUEUE_EXISTS",
+      "Message": "A queue with the same path name already exists.",
+      "DecimalCode": -1072824315,
+      "HexCode": "0xC00E0005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INVALID_PARAMETER",
+      "Message": "An invalid parameter was passed to a function.",
+      "DecimalCode": -1072824314,
+      "HexCode": "0xC00E0006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INVALID_HANDLE",
+      "Message": "An invalid handle was passed to a function.",
+      "DecimalCode": -1072824313,
+      "HexCode": "0xC00E0007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_OPERATION_CANCELLED",
+      "Message": "The operation was canceled before it could be completed.",
+      "DecimalCode": -1072824312,
+      "HexCode": "0xC00E0008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SHARING_VIOLATION",
+      "Message": "There is a sharing violation. The queue is already open for exclusive retrieval.",
+      "DecimalCode": -1072824311,
+      "HexCode": "0xC00E0009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SERVICE_NOT_AVAILABLE",
+      "Message": "The Message Queuing service is not available",
+      "DecimalCode": -1072824309,
+      "HexCode": "0xC00E000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MACHINE_NOT_FOUND",
+      "Message": "The computer specified cannot be found.",
+      "DecimalCode": -1072824307,
+      "HexCode": "0xC00E000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_SORT",
+      "Message": "The sort operation specified in MQLocateBegin is invalid (for example, there are duplicate columns).",
+      "DecimalCode": -1072824304,
+      "HexCode": "0xC00E0010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_USER",
+      "Message": "The user specified is not a valid user.",
+      "DecimalCode": -1072824303,
+      "HexCode": "0xC00E0011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_DS",
+      "Message": "A connection with Active Directory Domain Services cannot be established. Verify that there are sufficient permissions to perform this operation.",
+      "DecimalCode": -1072824301,
+      "HexCode": "0xC00E0013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_QUEUE_PATHNAME",
+      "Message": "The queue path name specified is invalid.",
+      "DecimalCode": -1072824300,
+      "HexCode": "0xC00E0014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_PROPERTY_VALUE",
+      "Message": "The property value specified is invalid.",
+      "DecimalCode": -1072824296,
+      "HexCode": "0xC00E0018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_PROPERTY_VT",
+      "Message": "The VARTYPE value specified is invalid.",
+      "DecimalCode": -1072824295,
+      "HexCode": "0xC00E0019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_BUFFER_OVERFLOW",
+      "Message": "The buffer supplied to MQReceiveMessage for message property retrieval is too small. The message was not removed from the queue, but the part of the message property that was in the buffer was copied.",
+      "DecimalCode": -1072824294,
+      "HexCode": "0xC00E001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_IO_TIMEOUT",
+      "Message": "The time specified for MQReceiveMessage to wait for the message elapsed.",
+      "DecimalCode": -1072824293,
+      "HexCode": "0xC00E001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_CURSOR_ACTION",
+      "Message": "The MQ_ACTION_PEEK_NEXT value specified for MQReceiveMessage cannot be used with the current cursor position.",
+      "DecimalCode": -1072824292,
+      "HexCode": "0xC00E001C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MESSAGE_ALREADY_RECEIVED",
+      "Message": "The message at which the cursor is currently pointing was removed from the queue by another process or by another call to MQReceiveMessage without the use of this cursor.",
+      "DecimalCode": -1072824291,
+      "HexCode": "0xC00E001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_FORMATNAME",
+      "Message": "The format name specified is invalid.",
+      "DecimalCode": -1072824290,
+      "HexCode": "0xC00E001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_FORMATNAME_BUFFER_TOO_SMALL",
+      "Message": "The format name buffer supplied to the API was too small to hold the format name.",
+      "DecimalCode": -1072824289,
+      "HexCode": "0xC00E001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_UNSUPPORTED_FORMATNAME_OPERATION",
+      "Message": "Operations of the type requested (for example, deleting a queue using a direct format name) are not supported for the format name specified.",
+      "DecimalCode": -1072824288,
+      "HexCode": "0xC00E0020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_SECURITY_DESCRIPTOR",
+      "Message": "The specified security descriptor is invalid.",
+      "DecimalCode": -1072824287,
+      "HexCode": "0xC00E0021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SENDERID_BUFFER_TOO_SMALL",
+      "Message": "The size of the buffer for the user ID property is too small.",
+      "DecimalCode": -1072824286,
+      "HexCode": "0xC00E0022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SECURITY_DESCRIPTOR_TOO_SMALL",
+      "Message": "The size of the buffer passed to MQGetQueueSecurity is too small.",
+      "DecimalCode": -1072824285,
+      "HexCode": "0xC00E0023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_IMPERSONATE_CLIENT",
+      "Message": "The security credentials cannot be verified because the RPC server cannot impersonate the client application.",
+      "DecimalCode": -1072824284,
+      "HexCode": "0xC00E0024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ACCESS_DENIED",
+      "Message": "Access is denied.",
+      "DecimalCode": -1072824283,
+      "HexCode": "0xC00E0025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PRIVILEGE_NOT_HELD",
+      "Message": "The client does not have sufficient security privileges to perform the operation.",
+      "DecimalCode": -1072824282,
+      "HexCode": "0xC00E0026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INSUFFICIENT_RESOURCES",
+      "Message": "There are insufficient resources to perform this operation.",
+      "DecimalCode": -1072824281,
+      "HexCode": "0xC00E0027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_USER_BUFFER_TOO_SMALL",
+      "Message": "The request failed because the user buffer is too small to hold the information returned.",
+      "DecimalCode": -1072824280,
+      "HexCode": "0xC00E0028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MESSAGE_STORAGE_FAILED",
+      "Message": "A recoverable or journal message could not be stored. The message was not sent.",
+      "DecimalCode": -1072824278,
+      "HexCode": "0xC00E002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SENDER_CERT_BUFFER_TOO_SMALL",
+      "Message": "The buffer for the user certificate property is too small.",
+      "DecimalCode": -1072824277,
+      "HexCode": "0xC00E002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INVALID_CERTIFICATE",
+      "Message": "The user certificate is invalid.",
+      "DecimalCode": -1072824276,
+      "HexCode": "0xC00E002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CORRUPTED_INTERNAL_CERTIFICATE",
+      "Message": "The internal Message Queuing certificate is corrupted.",
+      "DecimalCode": -1072824275,
+      "HexCode": "0xC00E002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INTERNAL_USER_CERT_EXIST",
+      "Message": "An internal Message Queuing certificate already exists for this user.",
+      "DecimalCode": -1072824274,
+      "HexCode": "0xC00E002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_INTERNAL_USER_CERT",
+      "Message": "No internal Message Queuing certificate exists for the user.",
+      "DecimalCode": -1072824273,
+      "HexCode": "0xC00E002F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CORRUPTED_SECURITY_DATA",
+      "Message": "A cryptographic function failed.",
+      "DecimalCode": -1072824272,
+      "HexCode": "0xC00E0030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CORRUPTED_PERSONAL_CERT_STORE",
+      "Message": "The personal certificate store is corrupted.",
+      "DecimalCode": -1072824271,
+      "HexCode": "0xC00E0031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_COMPUTER_DOES_NOT_SUPPORT_ENCRYPTION",
+      "Message": "The computer does not support encryption operations.",
+      "DecimalCode": -1072824269,
+      "HexCode": "0xC00E0033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_BAD_SECURITY_CONTEXT",
+      "Message": "The security context is invalid.",
+      "DecimalCode": -1072824267,
+      "HexCode": "0xC00E0035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_COULD_NOT_GET_USER_SID",
+      "Message": "The SID cannot be obtained from the thread token.",
+      "DecimalCode": -1072824266,
+      "HexCode": "0xC00E0036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_COULD_NOT_GET_ACCOUNT_INFO",
+      "Message": "The account information for the user cannot be obtained.",
+      "DecimalCode": -1072824265,
+      "HexCode": "0xC00E0037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_MQCOLUMNS",
+      "Message": "The MQCOLUMNS parameter is invalid.",
+      "DecimalCode": -1072824264,
+      "HexCode": "0xC00E0038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_PROPID",
+      "Message": "A property identifier is invalid.",
+      "DecimalCode": -1072824263,
+      "HexCode": "0xC00E0039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_RELATION",
+      "Message": "A relationship parameter is invalid.",
+      "DecimalCode": -1072824262,
+      "HexCode": "0xC00E003A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_PROPERTY_SIZE",
+      "Message": "The size of the buffer for the message identifier or correlation identifier is invalid.",
+      "DecimalCode": -1072824261,
+      "HexCode": "0xC00E003B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_RESTRICTION_PROPID",
+      "Message": "A property identifier specified in MQRESTRICTION is invalid.",
+      "DecimalCode": -1072824260,
+      "HexCode": "0xC00E003C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_MQQUEUEPROPS",
+      "Message": "Either the pointer to the MQQUEUEPROPS structure has a null value, or no properties are specified in it.",
+      "DecimalCode": -1072824259,
+      "HexCode": "0xC00E003D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PROPERTY_NOTALLOWED",
+      "Message": "The property identifier specified (for example, PROPID_Q_INSTANCE in MQSetQueueProperties) is invalid for the operation requested.",
+      "DecimalCode": -1072824258,
+      "HexCode": "0xC00E003E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INSUFFICIENT_PROPERTIES",
+      "Message": "Not all the properties required for the operation were specified for the input parameters.",
+      "DecimalCode": -1072824257,
+      "HexCode": "0xC00E003F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MACHINE_EXISTS",
+      "Message": "The MSMQ Configuration (msmq) object already exists in Active Directory Domain Services.",
+      "DecimalCode": -1072824256,
+      "HexCode": "0xC00E0040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_MQQMPROPS",
+      "Message": "Either the pointer to the MQQMROPS structure has a null value, or no properties are specified in it.",
+      "DecimalCode": -1072824255,
+      "HexCode": "0xC00E0041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DS_IS_FULL",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824254,
+      "HexCode": "0xC00E0042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DS_ERROR",
+      "Message": "There is an internal Active Directory Domain Services error.",
+      "DecimalCode": -1072824253,
+      "HexCode": "0xC00E0043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_INVALID_OWNER",
+      "Message": "The object owner is invalid (for example, MQCreateQueue failed because the QM object is invalid).",
+      "DecimalCode": -1072824252,
+      "HexCode": "0xC00E0044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_UNSUPPORTED_ACCESS_MODE",
+      "Message": "The access mode specified is unsupported.",
+      "DecimalCode": -1072824251,
+      "HexCode": "0xC00E0045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_RESULT_BUFFER_TOO_SMALL",
+      "Message": "The result buffer specified is too small.",
+      "DecimalCode": -1072824250,
+      "HexCode": "0xC00E0046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DELETE_CN_IN_USE",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824248,
+      "HexCode": "0xC00E0048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_RESPONSE_FROM_OBJECT_SERVER",
+      "Message": "There was no response from the object owner.",
+      "DecimalCode": -1072824247,
+      "HexCode": "0xC00E0049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_OBJECT_SERVER_NOT_AVAILABLE",
+      "Message": "The object owner is not available.",
+      "DecimalCode": -1072824246,
+      "HexCode": "0xC00E004A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_QUEUE_NOT_AVAILABLE",
+      "Message": "An error occurred while reading from a queue located on a remote computer.",
+      "DecimalCode": -1072824245,
+      "HexCode": "0xC00E004B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DTC_CONNECT",
+      "Message": "A connection cannot be established with the Distributed Transaction Coordinator.",
+      "DecimalCode": -1072824244,
+      "HexCode": "0xC00E004C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_TRANSACTION_IMPORT",
+      "Message": "The transaction specified cannot be imported.",
+      "DecimalCode": -1072824242,
+      "HexCode": "0xC00E004E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_TRANSACTION_USAGE",
+      "Message": "An attempted action cannot be performed within a transaction.",
+      "DecimalCode": -1072824240,
+      "HexCode": "0xC00E0050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_TRANSACTION_SEQUENCE",
+      "Message": "The transaction\u0027s operation sequence is incorrect.",
+      "DecimalCode": -1072824239,
+      "HexCode": "0xC00E0051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MISSING_CONNECTOR_TYPE",
+      "Message": "The connector type message property is not specified. This property is required for sending an acknowledgment message or a secure message.",
+      "DecimalCode": -1072824235,
+      "HexCode": "0xC00E0055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_STALE_HANDLE",
+      "Message": "The Message Queuing service was restarted. Any open queue handles should be closed.",
+      "DecimalCode": -1072824234,
+      "HexCode": "0xC00E0056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_TRANSACTION_ENLIST",
+      "Message": "The transaction specified cannot be enlisted.",
+      "DecimalCode": -1072824232,
+      "HexCode": "0xC00E0058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_QUEUE_DELETED",
+      "Message": "The queue was deleted. Messages cannot be received anymore using this queue handle. The handle should be closed.",
+      "DecimalCode": -1072824230,
+      "HexCode": "0xC00E005A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_CONTEXT",
+      "Message": "The context parameter for MQLocateBegin is invalid.",
+      "DecimalCode": -1072824229,
+      "HexCode": "0xC00E005B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_SORT_PROPID",
+      "Message": "An invalid property identifier is specified in MQSORTSET.",
+      "DecimalCode": -1072824228,
+      "HexCode": "0xC00E005C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_LABEL_TOO_LONG",
+      "Message": "The message label is too long. Its length should be less than or equal to MQ_MAX_MSG_LABEL_LEN.",
+      "DecimalCode": -1072824227,
+      "HexCode": "0xC00E005D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_LABEL_BUFFER_TOO_SMALL",
+      "Message": "The label buffer supplied to the API is too small.",
+      "DecimalCode": -1072824226,
+      "HexCode": "0xC00E005E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MQIS_SERVER_EMPTY",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824225,
+      "HexCode": "0xC00E005F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MQIS_READONLY_MODE",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824224,
+      "HexCode": "0xC00E0060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SYMM_KEY_BUFFER_TOO_SMALL",
+      "Message": "The buffer passed for the symmetric key is too small.",
+      "DecimalCode": -1072824223,
+      "HexCode": "0xC00E0061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_SIGNATURE_BUFFER_TOO_SMALL",
+      "Message": "The buffer passed for the signature property is too small.",
+      "DecimalCode": -1072824222,
+      "HexCode": "0xC00E0062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PROV_NAME_BUFFER_TOO_SMALL",
+      "Message": "The buffer passed for the provider name property is too small.",
+      "DecimalCode": -1072824221,
+      "HexCode": "0xC00E0063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_OPERATION",
+      "Message": "The operation is invalid for a foreign message queuing system.",
+      "DecimalCode": -1072824220,
+      "HexCode": "0xC00E0064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_WRITE_NOT_ALLOWED",
+      "Message": "Obsolete; another MQIS server is being installed. Write operations to the database are not allowed at this stage.",
+      "DecimalCode": -1072824219,
+      "HexCode": "0xC00E0065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_WKS_CANT_SERVE_CLIENT",
+      "Message": "Independent clients cannot support dependent clients. A Message Queuing server is required.",
+      "DecimalCode": -1072824218,
+      "HexCode": "0xC00E0066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DEPEND_WKS_LICENSE_OVERFLOW",
+      "Message": "The number of dependent clients served by the Message Queuing server reached its upper limit.",
+      "DecimalCode": -1072824217,
+      "HexCode": "0xC00E0067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_CORRUPTED_QUEUE_WAS_DELETED",
+      "Message": "The file %1 for the queue %2 in the Lqs folder was deleted because it was corrupted.",
+      "DecimalCode": -1072824216,
+      "HexCode": "0xC00E0068",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_REMOTE_MACHINE_NOT_AVAILABLE",
+      "Message": "The remote computer is not available.",
+      "DecimalCode": -1072824215,
+      "HexCode": "0xC00E0069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_UNSUPPORTED_OPERATION",
+      "Message": "This operation is not supported for Message Queuing installed in workgroup mode.",
+      "DecimalCode": -1072824214,
+      "HexCode": "0xC00E006A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ENCRYPTION_PROVIDER_NOT_SUPPORTED",
+      "Message": "The cryptographic service provider %1 is not supported by Message Queuing.",
+      "DecimalCode": -1072824213,
+      "HexCode": "0xC00E006B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_SET_CRYPTO_SEC_DESCR",
+      "Message": "The security descriptors for the cryptographic keys cannot be set.",
+      "DecimalCode": -1072824212,
+      "HexCode": "0xC00E006C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CERTIFICATE_NOT_PROVIDED",
+      "Message": "A user attempted to send an authenticated message without a certificate.",
+      "DecimalCode": -1072824211,
+      "HexCode": "0xC00E006D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_Q_DNS_PROPERTY_NOT_SUPPORTED",
+      "Message": "The column PROPID_Q_PATHNAME_DNS is not supported for the MQLocateBegin API.",
+      "DecimalCode": -1072824210,
+      "HexCode": "0xC00E006E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_CREATE_CERT_STORE",
+      "Message": "A certificate store cannot be created for the internal certificate.",
+      "DecimalCode": -1072824209,
+      "HexCode": "0xC00E006F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_OPEN_CERT_STORE",
+      "Message": "The certificate store for the internal certificate cannot be opened.",
+      "DecimalCode": -1072824208,
+      "HexCode": "0xC00E0070",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_ENTERPRISE_OPERATION",
+      "Message": "This operation is invalid for an MsmqServices object.",
+      "DecimalCode": -1072824207,
+      "HexCode": "0xC00E0071",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_GRANT_ADD_GUID",
+      "Message": "The Add GUID permission cannot be granted to the current user.",
+      "DecimalCode": -1072824206,
+      "HexCode": "0xC00E0072",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_LOAD_MSMQOCM",
+      "Message": "Obsolete: The dynamic-link library Msmqocm.dll cannot be loaded.",
+      "DecimalCode": -1072824205,
+      "HexCode": "0xC00E0073",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_ENTRY_POINT_MSMQOCM",
+      "Message": "An entry point cannot be located in Msmqocm.dll.",
+      "DecimalCode": -1072824204,
+      "HexCode": "0xC00E0074",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_MSMQ_SERVERS_ON_DC",
+      "Message": "Message Queuing servers cannot be found on domain controllers.",
+      "DecimalCode": -1072824203,
+      "HexCode": "0xC00E0075",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_JOIN_DOMAIN",
+      "Message": "The computer joined the domain, but Message Queuing will continue to run in workgroup mode because it failed to register itself in Active Directory Domain Services.",
+      "DecimalCode": -1072824202,
+      "HexCode": "0xC00E0076",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_CREATE_ON_GC",
+      "Message": "The object was not created on the Global Catalog server specified.",
+      "DecimalCode": -1072824201,
+      "HexCode": "0xC00E0077",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_GUID_NOT_MATCHING",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824200,
+      "HexCode": "0xC00E0078",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PUBLIC_KEY_NOT_FOUND",
+      "Message": "The public key for the computer %1 cannot be found.",
+      "DecimalCode": -1072824199,
+      "HexCode": "0xC00E0079",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PUBLIC_KEY_DOES_NOT_EXIST",
+      "Message": "The public key for the computer %1 does not exist.",
+      "DecimalCode": -1072824198,
+      "HexCode": "0xC00E007A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_ILLEGAL_MQPRIVATEPROPS",
+      "Message": "The parameters in MQPRIVATEPROPS are invalid. Either the pointer to the MQPRIVATEPROPS structure has a null value, or no properties are specified in it.",
+      "DecimalCode": -1072824197,
+      "HexCode": "0xC00E007B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_GC_IN_DOMAIN",
+      "Message": "Global Catalog servers cannot be found in the domain specified.",
+      "DecimalCode": -1072824196,
+      "HexCode": "0xC00E007C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_MSMQ_SERVERS_ON_GC",
+      "Message": "No Message Queuing servers were found on Global Catalog servers.",
+      "DecimalCode": -1072824195,
+      "HexCode": "0xC00E007D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_GET_DN",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824194,
+      "HexCode": "0xC00E007E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_HASH_DATA_EX",
+      "Message": "Data for an authenticated message cannot be hashed.",
+      "DecimalCode": -1072824193,
+      "HexCode": "0xC00E007F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_SIGN_DATA_EX",
+      "Message": "Data cannot be signed before sending an authenticated message.",
+      "DecimalCode": -1072824192,
+      "HexCode": "0xC00E0080",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_CREATE_HASH_EX",
+      "Message": "A hash object cannot be created for an authenticated message.",
+      "DecimalCode": -1072824191,
+      "HexCode": "0xC00E0081",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_FAIL_VERIFY_SIGNATURE_EX",
+      "Message": "The signature of the message received is not valid.",
+      "DecimalCode": -1072824190,
+      "HexCode": "0xC00E0082",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_DELETE_PSC_OBJECTS",
+      "Message": "The object that will be deleted is owned by a primary site controller. The operation cannot be performed.",
+      "DecimalCode": -1072824189,
+      "HexCode": "0xC00E0083",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NO_MQUSER_OU",
+      "Message": "There is no MSMQ Users organizational unit object in Active Directory Domain Services for the domain. Please create one manually.",
+      "DecimalCode": -1072824188,
+      "HexCode": "0xC00E0084",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_LOAD_MQAD",
+      "Message": "The dynamic-link library Mqad.dll cannot be loaded.",
+      "DecimalCode": -1072824187,
+      "HexCode": "0xC00E0085",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_LOAD_MQDSSRV",
+      "Message": "Obsolete, kept for backward compatibility",
+      "DecimalCode": -1072824186,
+      "HexCode": "0xC00E0086",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_PROPERTIES_CONFLICT",
+      "Message": "Two or more of the properties passed cannot co-exist. For example, you cannot set both PROPID_M_RESP_QUEUE and PROPID_M_RESP_FORMAT_NAME when sending a message.",
+      "DecimalCode": -1072824185,
+      "HexCode": "0xC00E0087",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MESSAGE_NOT_FOUND",
+      "Message": "The message does not exist or was removed from the queue.",
+      "DecimalCode": -1072824184,
+      "HexCode": "0xC00E0088",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANT_RESOLVE_SITES",
+      "Message": "The sites where the computer resides cannot be resolved. Check that the subnets in your network are configured correctly in Active Directory Domain Services and that each site is configured with the appropriate subnet.",
+      "DecimalCode": -1072824183,
+      "HexCode": "0xC00E0089",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NOT_SUPPORTED_BY_DEPENDENT_CLIENTS",
+      "Message": "This operation is not supported by dependent clients.",
+      "DecimalCode": -1072824182,
+      "HexCode": "0xC00E008A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_OPERATION_NOT_SUPPORTED_BY_REMOTE_COMPUTER",
+      "Message": "This operation is not supported by the remote Message Queuing service. For example, MQReceiveMessageByLookupId is not supported by MSMQ 1.0/2.0.",
+      "DecimalCode": -1072824181,
+      "HexCode": "0xC00E008B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_NOT_A_CORRECT_OBJECT_CLASS",
+      "Message": "The object whose properties are being retrieved from Active Directory Domain Services does not belong to the class requested.",
+      "DecimalCode": -1072824180,
+      "HexCode": "0xC00E008C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MULTI_SORT_KEYS",
+      "Message": "The value of cCol in MQSORTSET cannot be greater than 1. Active Directory Domain Services supports only a single sort key.",
+      "DecimalCode": -1072824179,
+      "HexCode": "0xC00E008D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_GC_NEEDED",
+      "Message": "An MSMQ Configuration (msmq) object with the GUID supplied cannot be created. By default, an Active Directory Domain Services forest does not support adding an object with a supplied GUID.",
+      "DecimalCode": -1072824178,
+      "HexCode": "0xC00E008E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DS_BIND_ROOT_FOREST",
+      "Message": "Binding to the forest root failed. This error usually indicates a problem in the DNS configuration.",
+      "DecimalCode": -1072824177,
+      "HexCode": "0xC00E008F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_DS_LOCAL_USER",
+      "Message": "A local user is authenticated as an anonymous user and cannot access Active Directory Domain Services. You need to log on as a domain user to access Active Directory Domain Services.",
+      "DecimalCode": -1072824176,
+      "HexCode": "0xC00E0090",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_Q_ADS_PROPERTY_NOT_SUPPORTED",
+      "Message": "The column PROPID_Q_ADS_PATH is not supported for the MQLocateBegin API.",
+      "DecimalCode": -1072824175,
+      "HexCode": "0xC00E0091",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_BAD_XML_FORMAT",
+      "Message": "The given property is not a valid XML document.",
+      "DecimalCode": -1072824174,
+      "HexCode": "0xC00E0092",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_UNSUPPORTED_CLASS",
+      "Message": "The Active Directory Domain Services object specified is not an instance of a supported class.",
+      "DecimalCode": -1072824173,
+      "HexCode": "0xC00E0093",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_UNINITIALIZED_OBJECT",
+      "Message": "The MSMQManagement object must be initialized before it is used.",
+      "DecimalCode": -1072824172,
+      "HexCode": "0xC00E0094",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_CREATE_PSC_OBJECTS",
+      "Message": "The object that will be created should be owned by a primary site controller. The operation cannot be performed.",
+      "DecimalCode": -1072824171,
+      "HexCode": "0xC00E0095",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_CANNOT_UPDATE_PSC_OBJECTS",
+      "Message": "The object that will be updated is owned by a primary site controller. The operation cannot be performed.",
+      "DecimalCode": -1072824170,
+      "HexCode": "0xC00E0096",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_RESOLVE_ADDRESS",
+      "Message": "Message Queuing is not able to resolve the address specified by the user. The address may be wrong or DNS look-up for address failed.",
+      "DecimalCode": -1072824167,
+      "HexCode": "0xC00E0099",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_TOO_MANY_PROPERTIES",
+      "Message": "Too many properties passed to the function. Message Queuing can process up to 128 properties in one call.",
+      "DecimalCode": -1072824166,
+      "HexCode": "0xC00E009A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MESSAGE_NOT_AUTHENTICATED",
+      "Message": "The queue only accepts authenticated messages.",
+      "DecimalCode": -1072824165,
+      "HexCode": "0xC00E009B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MQ_ERROR_MESSAGE_LOCKED_UNDER_TRANSACTION",
+      "Message": "The message is currently being processed under a transaction. Till the transaction outcome is determined, the message cannot be processed in any other transaction.",
+      "DecimalCode": -1072824164,
+      "HexCode": "0xC00E009C",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

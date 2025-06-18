@@ -1,0 +1,314 @@
+{
+  "HeaderFileName": "synchronizationerrors.h",
+  "ErrorCodes": [
+    {
+      "Id": "SYNC_E_ID_FORMAT_MISMATCH",
+      "Message": "Specified synchronization ID is not of the specified format for IDs of that type.",
+      "DecimalCode": -2147217408,
+      "HexCode": "0x80041000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INVALID_OPERATION",
+      "Message": "Operation is not valid due to the current state of the object.",
+      "DecimalCode": -2147217407,
+      "HexCode": "0x80041001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_REPLICA_NOT_FOUND",
+      "Message": "Replica with the specified key was not found.",
+      "DecimalCode": -2147217406,
+      "HexCode": "0x80041002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_CHANGE_COUNT_MISMATCH",
+      "Message": "Item changes provided were not of the expected quantity.",
+      "DecimalCode": -2147217405,
+      "HexCode": "0x80041003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_CHANGE_UNIT_COUNT_MISMATCH",
+      "Message": "Change units provided were not of the expected quantity.",
+      "DecimalCode": -2147217404,
+      "HexCode": "0x80041004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_KNOWLEDGE_DECREASED",
+      "Message": "Knowledge has unexpectedly decreased.",
+      "DecimalCode": -2147217403,
+      "HexCode": "0x80041005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_CHANGE_NOT_IN_KNOWLEDGE",
+      "Message": "Change version was not contained in knowledge as expected.",
+      "DecimalCode": -2147217402,
+      "HexCode": "0x80041006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ITEM_MUST_EXIST",
+      "Message": "The item does not exist at the destination, but the creation version of the item is contained in the destination knowledge.",
+      "DecimalCode": -2147217401,
+      "HexCode": "0x80041007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_HAS_NO_DATA",
+      "Message": "Item for which data was requested has no data either because it is a tombstone or it does not exist.",
+      "DecimalCode": -2147217400,
+      "HexCode": "0x80041008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_CHANGE_NEEDS_KNOWLEDGE",
+      "Message": "Change was provided that has no associated knowledge.",
+      "DecimalCode": -2147217399,
+      "HexCode": "0x80041009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_RANGE_OUT_OF_ORDER",
+      "Message": "Range was provided out of expected order. Ranges should be provided in increasing order.",
+      "DecimalCode": -2147217398,
+      "HexCode": "0x8004100A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_NOT_EXPECTED_CHANGE",
+      "Message": "Change was provided that was not expected either because it is out-of-order or incorrect.",
+      "DecimalCode": -2147217397,
+      "HexCode": "0x8004100B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_DESERIALIZATION",
+      "Message": "Deserialization failed. This is typically due to serialization data that is not valid being supplied to the deserializer.",
+      "DecimalCode": -2147217396,
+      "HexCode": "0x8004100C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_SINGLE_RANGE_ONLY",
+      "Message": "Only one and exactly one range may be specified per batch during forgotten knowledge recovery.",
+      "DecimalCode": -2147217395,
+      "HexCode": "0x8004100D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ITEM_HAS_CHANGE_UNITS",
+      "Message": "Operation is not valid as the specified item has change units.",
+      "DecimalCode": -2147217394,
+      "HexCode": "0x8004100E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ITEM_HAS_NO_CHANGE_UNITS",
+      "Message": "Operation is not valid as the specified item does not have change units.",
+      "DecimalCode": -2147217393,
+      "HexCode": "0x8004100F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ITEM_HAS_NO_VERSION_DATA",
+      "Message": "Operation is not valid as the specified item has no version data.",
+      "DecimalCode": -2147217392,
+      "HexCode": "0x80041010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_OBJECT_NEEDS_STATE",
+      "Message": "Object was not correctly initialized. Object state info must be provided as the state could not be derived from sync session context.",
+      "DecimalCode": -2147217391,
+      "HexCode": "0x80041011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_FEEDSYNC_INVALID_FEED",
+      "Message": "The specified feed is invalid.",
+      "DecimalCode": -2147217390,
+      "HexCode": "0x80041012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_FEEDSYNC_ITEM_NOT_IN_METADATA",
+      "Message": "Item was not found in feed metadata as expected.",
+      "DecimalCode": -2147217389,
+      "HexCode": "0x80041013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_FEEDSYNC_CALLBACK_EXPECTED",
+      "Message": "A feed item or item ID conversion result was unexpectedly not available.",
+      "DecimalCode": -2147217388,
+      "HexCode": "0x80041014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INVALID_VERSION",
+      "Message": "Specified version is not supported.",
+      "DecimalCode": -2147217387,
+      "HexCode": "0x80041015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_DUPLICATE_ITEM",
+      "Message": "Item already exists.",
+      "DecimalCode": -2147217386,
+      "HexCode": "0x80041016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INVALID_ORDER_FOR_VECTOR_ELEMENTS",
+      "Message": "Clock vector elements are provided with the wrong order.",
+      "DecimalCode": -2147217385,
+      "HexCode": "0x80041017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INVALID_SYNC_TIME",
+      "Message": "SYNC_TIME value is not valid.",
+      "DecimalCode": -2147217384,
+      "HexCode": "0x80041018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INCOMPLETE_REPLICA_KEY_MAP",
+      "Message": "Incomplete replica key map.",
+      "DecimalCode": -2147217383,
+      "HexCode": "0x80041019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INVALID_REPLICA_KEY",
+      "Message": "Clock vector element has a replica key not present in the replica key map.",
+      "DecimalCode": -2147217382,
+      "HexCode": "0x8004101A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_NEGATIVE_RANGE_EXCEPTION",
+      "Message": "Negative range exceptions are not supported.",
+      "DecimalCode": -2147217381,
+      "HexCode": "0x8004101B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_BATCH_NEEDS_KNOWLEDGE",
+      "Message": "Change batch provided unexpectedly did not contain knowledge.",
+      "DecimalCode": -2147217380,
+      "HexCode": "0x8004101C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INTERNAL_ERROR",
+      "Message": "An internal error occurred in the synchronization runtime.",
+      "DecimalCode": -2147217379,
+      "HexCode": "0x8004101D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_CHANGE_BATCH_IS_READ_ONLY",
+      "Message": "The operation could not be completed as the specified change batch has become read-only.",
+      "DecimalCode": -2147217378,
+      "HexCode": "0x8004101E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_DATA_MODIFIED_CONCURRENTLY",
+      "Message": "The operation could not be completed as an item changed unexpectedly during synchronization.",
+      "DecimalCode": -2147217377,
+      "HexCode": "0x8004101F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ON_CREATE_MUST_FAIL_ENTIRE_ITEM",
+      "Message": "A failure during creation may not be recorded per change unit. Item creation may only fail for the entire item.",
+      "DecimalCode": -2147217376,
+      "HexCode": "0x80041020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_FILTER_NOT_SUPPORTED",
+      "Message": "The specified filter is not supported.",
+      "DecimalCode": -2147217375,
+      "HexCode": "0x80041021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_LOAD_CONFLICT_DATA_FAILED",
+      "Message": "The requested data could not be loaded.  This occurs when a recoverable error is set while loading the data or if data conversion fails.  Possible resolutions include deferring the conflict or resolving the conflict without change data.",
+      "DecimalCode": -2147217374,
+      "HexCode": "0x80041022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_INVALID_SERIALIZATION_VERSION",
+      "Message": "Specified serialization version is not supported or cannot be used.",
+      "DecimalCode": -2147217373,
+      "HexCode": "0x80041023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_MARKER_MISMATCH",
+      "Message": "Marker type is not valid.",
+      "DecimalCode": -2147217372,
+      "HexCode": "0x80041024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_FORGOTTEN_KNOWLEDGE_NOT_CONTAINED",
+      "Message": "The forgotten knowledge is not contained in the knowledge.",
+      "DecimalCode": -2147217371,
+      "HexCode": "0x80041025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ACTIVE_CHANGE_APPLICATION_CONTEXT",
+      "Message": "There is an active change application context being used.",
+      "DecimalCode": -2147217370,
+      "HexCode": "0x80041026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_ITEM_LIST_FILTERED_FULL_ENUMERATION_NOT_SUPPORTED",
+      "Message": "The item list filtered full enumeration synchronization is not supported.",
+      "DecimalCode": -2147217369,
+      "HexCode": "0x80041027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_FULL_ENUMERATION_MUST_BE_USED",
+      "Message": "Full enumeration synchronization must be used to apply full enumeration change.",
+      "DecimalCode": -2147217368,
+      "HexCode": "0x80041028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_BATCH_NEEDS_FILTER_FORGOTTEN_KNOWLEDGE",
+      "Message": "One or more filter forgotten knowledges were not set on the change batch.",
+      "DecimalCode": -2147217367,
+      "HexCode": "0x80041029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_CONSTRAINT_CONFLICT_NOT_ALLOWED",
+      "Message": "A constraint conflict is not allowed for the current save action.",
+      "DecimalCode": -2147217366,
+      "HexCode": "0x8004102A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "SYNC_E_SOURCE_DOES_NOT_TRACK_FILTER",
+      "Message": "Source provider does not track the specified filter.",
+      "DecimalCode": -2147217365,
+      "HexCode": "0x8004102B",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

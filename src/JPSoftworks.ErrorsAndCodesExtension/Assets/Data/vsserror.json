@@ -1,0 +1,573 @@
+{
+  "HeaderFileName": "vsserror.h",
+  "ErrorCodes": [
+    {
+      "Id": "VSS_E_BAD_STATE",
+      "Message": "A function call was made when the object was in an incorrect state for that function",
+      "DecimalCode": -2147212543,
+      "HexCode": "0x80042301",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_UNEXPECTED",
+      "Message": "A Volume Shadow Copy Service component encountered an unexpected error. Check the Application event log for more information.",
+      "DecimalCode": -2147212542,
+      "HexCode": "0x80042302",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_PROVIDER_ALREADY_REGISTERED",
+      "Message": "The provider has already been registered.",
+      "DecimalCode": -2147212541,
+      "HexCode": "0x80042303",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_PROVIDER_NOT_REGISTERED",
+      "Message": "The volume shadow copy provider is not registered in the system.",
+      "DecimalCode": -2147212540,
+      "HexCode": "0x80042304",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_PROVIDER_VETO",
+      "Message": "The shadow copy provider had an error. Check the System and Application event logs for more information.",
+      "DecimalCode": -2147212538,
+      "HexCode": "0x80042306",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_PROVIDER_IN_USE",
+      "Message": "The shadow copy provider is currently in use and cannot be unregistered.",
+      "DecimalCode": -2147212537,
+      "HexCode": "0x80042307",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_OBJECT_NOT_FOUND",
+      "Message": "The specified object was not found.",
+      "DecimalCode": -2147212536,
+      "HexCode": "0x80042308",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_S_ASYNC_PENDING",
+      "Message": "The asynchronous operation is pending.",
+      "DecimalCode": 271113,
+      "HexCode": "0x00042309",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_S_ASYNC_FINISHED",
+      "Message": "The asynchronous operation has completed.",
+      "DecimalCode": 271114,
+      "HexCode": "0x0004230A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_S_ASYNC_CANCELLED",
+      "Message": "The asynchronous operation has been cancelled.",
+      "DecimalCode": 271115,
+      "HexCode": "0x0004230B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_VOLUME_NOT_SUPPORTED",
+      "Message": "Shadow copying the specified volume is not supported.",
+      "DecimalCode": -2147212532,
+      "HexCode": "0x8004230C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_VOLUME_NOT_SUPPORTED_BY_PROVIDER",
+      "Message": "The given shadow copy provider does not support shadow copying the specified volume.",
+      "DecimalCode": -2147212530,
+      "HexCode": "0x8004230E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_OBJECT_ALREADY_EXISTS",
+      "Message": "The object already exists.",
+      "DecimalCode": -2147212531,
+      "HexCode": "0x8004230D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_UNEXPECTED_PROVIDER_ERROR",
+      "Message": "The shadow copy provider had an unexpected error while trying to process the specified operation.",
+      "DecimalCode": -2147212529,
+      "HexCode": "0x8004230F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_CORRUPT_XML_DOCUMENT",
+      "Message": "The given XML document is invalid.  It is either incorrectly-formed XML or it does not match the schema.  This error code is deprecated.",
+      "DecimalCode": -2147212528,
+      "HexCode": "0x80042310",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_INVALID_XML_DOCUMENT",
+      "Message": "The given XML document is invalid.  It is either incorrectly-formed XML or it does not match the schema.",
+      "DecimalCode": -2147212527,
+      "HexCode": "0x80042311",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MAXIMUM_NUMBER_OF_VOLUMES_REACHED",
+      "Message": "The maximum number of volumes for this operation has been reached.",
+      "DecimalCode": -2147212526,
+      "HexCode": "0x80042312",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_FLUSH_WRITES_TIMEOUT",
+      "Message": "The shadow copy provider timed out while flushing data to the volume being shadow copied. This is probably due to excessive activity on the volume. Try again later when the volume is not being used so heavily.",
+      "DecimalCode": -2147212525,
+      "HexCode": "0x80042313",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_HOLD_WRITES_TIMEOUT",
+      "Message": "The shadow copy provider timed out while holding writes to the volume being shadow copied. This is probably due to excessive activity on the volume by an application or a system service. Try again later when activity on the volume is reduced.",
+      "DecimalCode": -2147212524,
+      "HexCode": "0x80042314",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_UNEXPECTED_WRITER_ERROR",
+      "Message": "VSS encountered problems while sending events to writers.",
+      "DecimalCode": -2147212523,
+      "HexCode": "0x80042315",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_SNAPSHOT_SET_IN_PROGRESS",
+      "Message": "Another shadow copy creation is already in progress. Wait a few moments and try again.",
+      "DecimalCode": -2147212522,
+      "HexCode": "0x80042316",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MAXIMUM_NUMBER_OF_SNAPSHOTS_REACHED",
+      "Message": "The specified volume has already reached its maximum number of shadow copies.",
+      "DecimalCode": -2147212521,
+      "HexCode": "0x80042317",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITER_INFRASTRUCTURE",
+      "Message": "An error was detected in the Volume Shadow Copy Service (VSS). The problem occurred while trying to contact VSS writers. Verify that the Event System service and the VSS service are running and check for associated errors in the event logs.",
+      "DecimalCode": -2147212520,
+      "HexCode": "0x80042318",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITER_NOT_RESPONDING",
+      "Message": "A writer did not respond to a GatherWriterStatus call.  The writer may either have terminated or it may be stuck.  Check the System and Application event logs for more information.",
+      "DecimalCode": -2147212519,
+      "HexCode": "0x80042319",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITER_ALREADY_SUBSCRIBED",
+      "Message": "The writer has already successfully called the Subscribe function.  It cannot call Subscribe multiple times.",
+      "DecimalCode": -2147212518,
+      "HexCode": "0x8004231A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_UNSUPPORTED_CONTEXT",
+      "Message": "The shadow copy provider does not support the specified shadow copy type.",
+      "DecimalCode": -2147212517,
+      "HexCode": "0x8004231B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_VOLUME_IN_USE",
+      "Message": "The specified shadow copy storage association is in use and so can\u0027t be deleted.",
+      "DecimalCode": -2147212515,
+      "HexCode": "0x8004231D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MAXIMUM_DIFFAREA_ASSOCIATIONS_REACHED",
+      "Message": "Maximum number of shadow copy storage associations already reached.",
+      "DecimalCode": -2147212514,
+      "HexCode": "0x8004231E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_INSUFFICIENT_STORAGE",
+      "Message": "Insufficient storage available to create either the shadow copy storage file or other shadow copy data.",
+      "DecimalCode": -2147212513,
+      "HexCode": "0x8004231F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_NO_SNAPSHOTS_IMPORTED",
+      "Message": "No shadow copies were successfully imported.",
+      "DecimalCode": -2147212512,
+      "HexCode": "0x80042320",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_S_SOME_SNAPSHOTS_NOT_IMPORTED",
+      "Message": "Some shadow copies were not successfully imported.",
+      "DecimalCode": 271137,
+      "HexCode": "0x00042321",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_SOME_SNAPSHOTS_NOT_IMPORTED",
+      "Message": "Some shadow copies were not successfully imported.",
+      "DecimalCode": -2147212511,
+      "HexCode": "0x80042321",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MAXIMUM_NUMBER_OF_REMOTE_MACHINES_REACHED",
+      "Message": "The maximum number of remote machines for this operation has been reached.",
+      "DecimalCode": -2147212510,
+      "HexCode": "0x80042322",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_REMOTE_SERVER_UNAVAILABLE",
+      "Message": "The remote server is unavailable.",
+      "DecimalCode": -2147212509,
+      "HexCode": "0x80042323",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_REMOTE_SERVER_UNSUPPORTED",
+      "Message": "The remote server is running a version of the Volume Shadow Copy Service that does not support remote shadow-copy creation.",
+      "DecimalCode": -2147212508,
+      "HexCode": "0x80042324",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_REVERT_IN_PROGRESS",
+      "Message": "A revert is currently in progress for the specified volume.  Another revert cannot be initiated until the current revert completes.",
+      "DecimalCode": -2147212507,
+      "HexCode": "0x80042325",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_REVERT_VOLUME_LOST",
+      "Message": "The volume being reverted was lost during revert.",
+      "DecimalCode": -2147212506,
+      "HexCode": "0x80042326",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_REBOOT_REQUIRED",
+      "Message": "A reboot is required after completing this operation.",
+      "DecimalCode": -2147212505,
+      "HexCode": "0x80042327",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_TRANSACTION_FREEZE_TIMEOUT",
+      "Message": "A timeout occurred while freezing a transaction manager.",
+      "DecimalCode": -2147212504,
+      "HexCode": "0x80042328",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_TRANSACTION_THAW_TIMEOUT",
+      "Message": "Too much time elapsed between freezing a transaction manager and thawing the transaction manager.",
+      "DecimalCode": -2147212503,
+      "HexCode": "0x80042329",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_VOLUME_NOT_LOCAL",
+      "Message": "The volume being backed up is not mounted on the local host.",
+      "DecimalCode": -2147212499,
+      "HexCode": "0x8004232D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_CLUSTER_TIMEOUT",
+      "Message": "A timeout occurred while preparing a cluster shared volume for backup.",
+      "DecimalCode": -2147212498,
+      "HexCode": "0x8004232E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_INCONSISTENTSNAPSHOT",
+      "Message": "The shadow-copy set only contains only a subset of the volumes needed to correctly backup the selected components of the writer.",
+      "DecimalCode": -2147212304,
+      "HexCode": "0x800423F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_OUTOFRESOURCES",
+      "Message": "A resource allocation failed while processing this operation.",
+      "DecimalCode": -2147212303,
+      "HexCode": "0x800423F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_TIMEOUT",
+      "Message": "The writer\u0027s timeout expired between the Freeze and Thaw events.",
+      "DecimalCode": -2147212302,
+      "HexCode": "0x800423F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_RETRYABLE",
+      "Message": "The writer experienced a transient error.  If the backup process is retried, the error may not reoccur.",
+      "DecimalCode": -2147212301,
+      "HexCode": "0x800423F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_NONRETRYABLE",
+      "Message": "The writer experienced a non-transient error.  If the backup process is retried, the error is likely to reoccur.",
+      "DecimalCode": -2147212300,
+      "HexCode": "0x800423F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_RECOVERY_FAILED",
+      "Message": "The writer experienced an error while trying to recover the shadow-copy volume.",
+      "DecimalCode": -2147212299,
+      "HexCode": "0x800423F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_BREAK_REVERT_ID_FAILED",
+      "Message": "The shadow copy set break operation failed because the disk/partition identities could not be reverted. The target identity already exists on the machine or cluster and must be masked before this operation can succeed.",
+      "DecimalCode": -2147212298,
+      "HexCode": "0x800423F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_LEGACY_PROVIDER",
+      "Message": "This version of the hardware provider does not support this operation.",
+      "DecimalCode": -2147212297,
+      "HexCode": "0x800423F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MISSING_DISK",
+      "Message": "An expected disk did not arrive in the system.",
+      "DecimalCode": -2147212296,
+      "HexCode": "0x800423F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MISSING_HIDDEN_VOLUME",
+      "Message": "An expected hidden volume did not arrive in the system. Check the Application event log for more information.",
+      "DecimalCode": -2147212295,
+      "HexCode": "0x800423F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_MISSING_VOLUME",
+      "Message": "An expected volume did not arrive in the system. Check the Application event log for more information.",
+      "DecimalCode": -2147212294,
+      "HexCode": "0x800423FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_AUTORECOVERY_FAILED",
+      "Message": "The autorecovery operation failed to complete on the shadow copy.",
+      "DecimalCode": -2147212293,
+      "HexCode": "0x800423FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_DYNAMIC_DISK_ERROR",
+      "Message": "An error occurred in processing the dynamic disks involved in the operation.",
+      "DecimalCode": -2147212292,
+      "HexCode": "0x800423FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_NONTRANSPORTABLE_BCD",
+      "Message": "The given Backup Components Document is for a non-transportable shadow copy. This operation can only be done on transportable shadow copies.",
+      "DecimalCode": -2147212291,
+      "HexCode": "0x800423FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_CANNOT_REVERT_DISKID",
+      "Message": "The MBR signature or GPT ID for one or more disks could not be set to the intended value. Check the Application event log for more information.",
+      "DecimalCode": -2147212290,
+      "HexCode": "0x800423FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_RESYNC_IN_PROGRESS",
+      "Message": "The LUN resynchronization operation could not be started because another resynchronization operation is already in progress.",
+      "DecimalCode": -2147212289,
+      "HexCode": "0x800423FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_CLUSTER_ERROR",
+      "Message": "The clustered disks could not be enumerated or could not be put into cluster maintenance mode. Check the System event log for cluster related events and the Application event log for VSS related events.",
+      "DecimalCode": -2147212288,
+      "HexCode": "0x80042400",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_UNSELECTED_VOLUME",
+      "Message": "The requested operation would overwrite a volume that is not explicitly selected. For more information, check the Application event log.",
+      "DecimalCode": -2147212502,
+      "HexCode": "0x8004232A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_SNAPSHOT_NOT_IN_SET",
+      "Message": "The shadow copy ID was not found in the backup components document for the shadow copy set.",
+      "DecimalCode": -2147212501,
+      "HexCode": "0x8004232B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_NESTED_VOLUME_LIMIT",
+      "Message": "The specified volume is nested too deeply to participate in the VSS operation.",
+      "DecimalCode": -2147212500,
+      "HexCode": "0x8004232C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_NOT_SUPPORTED",
+      "Message": "The requested operation is not supported.",
+      "DecimalCode": -2147212497,
+      "HexCode": "0x8004232F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITERERROR_PARTIAL_FAILURE",
+      "Message": "The writer experienced a partial failure. Check the component level error state for more information.",
+      "DecimalCode": -2147212490,
+      "HexCode": "0x80042336",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_DISK_ASSIGNMENT_FAILED",
+      "Message": "There are too few disks on this computer or one or more of the disks is too small. Add or change disks so they match the disks in the backup, and try the restore again.",
+      "DecimalCode": -2147212287,
+      "HexCode": "0x80042401",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_DISK_RECREATION_FAILED",
+      "Message": "Windows cannot create a disk on this computer needed to restore from the backup. Make sure the disks are properly connected, or add or change disks, and try the restore again.",
+      "DecimalCode": -2147212286,
+      "HexCode": "0x80042402",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_NO_ARCPATH",
+      "Message": "The computer needs to be restarted to finish preparing a hard disk for restore. To continue, restart your computer and run the restore again.",
+      "DecimalCode": -2147212285,
+      "HexCode": "0x80042403",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_MISSING_DYNDISK",
+      "Message": "The backup failed due to a missing disk for a dynamic volume. Ensure the disk is online and retry the backup.",
+      "DecimalCode": -2147212284,
+      "HexCode": "0x80042404",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_SHARED_CRIDISK",
+      "Message": "Automated System Recovery failed the shadow copy, because a selected critical volume is located on a cluster shared disk. This is an unsupported configuration.",
+      "DecimalCode": -2147212283,
+      "HexCode": "0x80042405",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_DATADISK_RDISK0",
+      "Message": "A data disk is currently set as active in BIOS. Set some other disk as active or use the DiskPart utility to clean the data disk, and then retry the restore operation.",
+      "DecimalCode": -2147212282,
+      "HexCode": "0x80042406",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_RDISK0_TOOSMALL",
+      "Message": "The disk that is set as active in BIOS is too small to recover the original system disk. Replace the disk with a larger one and retry the restore operation.",
+      "DecimalCode": -2147212281,
+      "HexCode": "0x80042407",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_CRITICAL_DISKS_TOO_SMALL",
+      "Message": "Failed to find enough suitable disks for recreating all critical disks. The number of available disks should be same or greater than the number of critical disks at time of backup, and each one of the disks must be of same or greater size.",
+      "DecimalCode": -2147212280,
+      "HexCode": "0x80042408",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_WRITER_STATUS_NOT_AVAILABLE",
+      "Message": "Writer status is not available for one or more writers.  A writer may have reached the limit to the number of available backup-restore session states.",
+      "DecimalCode": -2147212279,
+      "HexCode": "0x80042409",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_DYNAMIC_VHD_NOT_SUPPORTED",
+      "Message": "A critical dynamic disk is a Virtual Hard Disk (VHD). This is an unsupported configuration. Check the Application event log for more details.",
+      "DecimalCode": -2147212278,
+      "HexCode": "0x8004240A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_CRITICAL_VOLUME_ON_INVALID_DISK",
+      "Message": "A critical volume selected for backup exists on a disk which cannot be backed up by ASR.",
+      "DecimalCode": -2147212271,
+      "HexCode": "0x80042411",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_RDISK_FOR_SYSTEM_DISK_NOT_FOUND",
+      "Message": "No disk that can be used for recovering the system disk can be found. Try the following: 1) A probable system disk may have been excluded by mistake. a.  Review the list of disks that you have excluded from the recovery for a likely disk. b.  Type LIST DISK command in the DISKPART command interpreter. The probable system disk is usually the first disk listed in the results. c.  If possible, remove the disk from the exclusion list and then retry the recovery. 2) A USB disk may have been assigned as a system disk. a.  Detach all USB disks from the computer. b.  Reboot into Windows Recovery Environment (Win RE), then reattach USB disks and retry the recovery. 3) An invalid disk may have been assigned as system disk. a.  Physically detach the disk from your computer. Then boot into Win RE to retry the recovery.",
+      "DecimalCode": -2147212270,
+      "HexCode": "0x80042412",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_NO_PHYSICAL_DISK_AVAILABLE",
+      "Message": "Windows did not find any fixed disk that can be used to recreate volumes present in backup. Ensure disks are online, and disk drivers are installed to access the disk(s). \u0027diskpart.exe\u0027 tool with list disks command can be used to see the list of available fixed disks on the system.",
+      "DecimalCode": -2147212269,
+      "HexCode": "0x80042413",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_FIXED_PHYSICAL_DISK_AVAILABLE_AFTER_DISK_EXCLUSION",
+      "Message": "Windows did not find any disk which it can use for recreating volumes present in backup. Offline disks, cluster shared disks or disks explicitly excluded by user will not be used by Windows. Ensure that disks are online and no disks are excluded by mistake.",
+      "DecimalCode": -2147212268,
+      "HexCode": "0x80042414",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_CRITICAL_DISK_CANNOT_BE_EXCLUDED",
+      "Message": "Restore failed because a disk which was critical at backup is excluded. To continue you need to either remove the disk from exclusion list or detach it from machine or clean it using DiskPart utility, and then retry restore. If you cannot clean or detach it then change the disk signature using DiskPart command UNIQUEID DISK ID.",
+      "DecimalCode": -2147212267,
+      "HexCode": "0x80042415",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_ASRERROR_SYSTEM_PARTITION_HIDDEN",
+      "Message": "System partition (partition marked \u0022active\u0022) is hidden or contains an unrecognized file system. Backup does not support this configuration.",
+      "DecimalCode": -2147212266,
+      "HexCode": "0x80042416",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VSS_E_FSS_TIMEOUT",
+      "Message": "A timeout occurred while preparing a file share shadowcopy for backup.",
+      "DecimalCode": -2147212265,
+      "HexCode": "0x80042417",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

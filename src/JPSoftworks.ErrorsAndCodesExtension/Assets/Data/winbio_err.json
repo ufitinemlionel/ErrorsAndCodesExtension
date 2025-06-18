@@ -1,0 +1,687 @@
+{
+  "HeaderFileName": "winbio_err.h",
+  "ErrorCodes": [
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_FACTOR",
+      "Message": "Windows Biometric Service doesn\u0027t support the specified biometric factor.",
+      "DecimalCode": -2146861055,
+      "HexCode": "0x80098001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_UNIT",
+      "Message": "The unit ID number doesn\u0027t correspond to a valid biometric device.",
+      "DecimalCode": -2146861054,
+      "HexCode": "0x80098002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNKNOWN_ID",
+      "Message": "The biometric sample doesn\u0027t match any known identity.",
+      "DecimalCode": -2146861053,
+      "HexCode": "0x80098003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CANCELED",
+      "Message": "The biometric operation was canceled before it could complete.",
+      "DecimalCode": -2146861052,
+      "HexCode": "0x80098004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_NO_MATCH",
+      "Message": "The biometric sample doesn\u0027t match the specified identity or sub-factor.",
+      "DecimalCode": -2146861051,
+      "HexCode": "0x80098005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CAPTURE_ABORTED",
+      "Message": "A biometric sample could not be captured because the operation was aborted.",
+      "DecimalCode": -2146861050,
+      "HexCode": "0x80098006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_ENROLLMENT_IN_PROGRESS",
+      "Message": "An enrollment transaction could not be started because another enrollment is already in progress.",
+      "DecimalCode": -2146861049,
+      "HexCode": "0x80098007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_BAD_CAPTURE",
+      "Message": "The captured sample cannot be used for any further biometric operations.",
+      "DecimalCode": -2146861048,
+      "HexCode": "0x80098008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_CONTROL_CODE",
+      "Message": "The biometric unit doesn\u0027t support the specified unit control code.",
+      "DecimalCode": -2146861047,
+      "HexCode": "0x80098009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATA_COLLECTION_IN_PROGRESS",
+      "Message": "The driver already has a pending data collection operation in progress.",
+      "DecimalCode": -2146861045,
+      "HexCode": "0x8009800B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_DATA_FORMAT",
+      "Message": "The biometric sensor driver does not support the requested data format.",
+      "DecimalCode": -2146861044,
+      "HexCode": "0x8009800C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_DATA_TYPE",
+      "Message": "The biometric sensor driver does not support the requested data type.",
+      "DecimalCode": -2146861043,
+      "HexCode": "0x8009800D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_PURPOSE",
+      "Message": "The biometric sensor driver does not support the requested data purpose.",
+      "DecimalCode": -2146861042,
+      "HexCode": "0x8009800E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_DEVICE_STATE",
+      "Message": "The biometric unit is not in the proper state to perform the specified operation.",
+      "DecimalCode": -2146861041,
+      "HexCode": "0x8009800F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DEVICE_BUSY",
+      "Message": "The operation could not be performed because the sensor device was busy.",
+      "DecimalCode": -2146861040,
+      "HexCode": "0x80098010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_CANT_CREATE",
+      "Message": "The biometric unit\u0027s storage adapter was unable to create a new database.",
+      "DecimalCode": -2146861039,
+      "HexCode": "0x80098011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_CANT_OPEN",
+      "Message": "The biometric unit\u0027s storage adapter was unable to open an existing database.",
+      "DecimalCode": -2146861038,
+      "HexCode": "0x80098012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_CANT_CLOSE",
+      "Message": "The biometric unit\u0027s storage adapter was unable to close a database.",
+      "DecimalCode": -2146861037,
+      "HexCode": "0x80098013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_CANT_ERASE",
+      "Message": "The biometric unit\u0027s storage adapter was unable to erase a database.",
+      "DecimalCode": -2146861036,
+      "HexCode": "0x80098014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_CANT_FIND",
+      "Message": "The biometric unit\u0027s storage adapter was unable to find a database.",
+      "DecimalCode": -2146861035,
+      "HexCode": "0x80098015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_ALREADY_EXISTS",
+      "Message": "The biometric unit\u0027s storage adapter was unable to create a database because that database already exists.",
+      "DecimalCode": -2146861034,
+      "HexCode": "0x80098016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_FULL",
+      "Message": "The biometric unit\u0027s storage adapter was unable to add a record to the database because the database is full.",
+      "DecimalCode": -2146861032,
+      "HexCode": "0x80098018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_LOCKED",
+      "Message": "The database is locked and its contents are inaccessible.",
+      "DecimalCode": -2146861031,
+      "HexCode": "0x80098019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_CORRUPTED",
+      "Message": "The contents of the database have become corrupted and are inaccessible.",
+      "DecimalCode": -2146861030,
+      "HexCode": "0x8009801A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_NO_SUCH_RECORD",
+      "Message": "No records were deleted because the specified identity and sub-factor are not present in the database.",
+      "DecimalCode": -2146861029,
+      "HexCode": "0x8009801B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DUPLICATE_ENROLLMENT",
+      "Message": "The specified identity and sub-factor are already enrolled in the database.",
+      "DecimalCode": -2146861028,
+      "HexCode": "0x8009801C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_READ_ERROR",
+      "Message": "An error occurred while trying to read from the database.",
+      "DecimalCode": -2146861027,
+      "HexCode": "0x8009801D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_WRITE_ERROR",
+      "Message": "An error occurred while trying to write to the database.",
+      "DecimalCode": -2146861026,
+      "HexCode": "0x8009801E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_NO_RESULTS",
+      "Message": "No records in the database matched the query.",
+      "DecimalCode": -2146861025,
+      "HexCode": "0x8009801F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_NO_MORE_RECORDS",
+      "Message": "All records from the most recent database query have been viewed.",
+      "DecimalCode": -2146861024,
+      "HexCode": "0x80098020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_EOF",
+      "Message": "A database operation unexpectedly encountered the end of the file.",
+      "DecimalCode": -2146861023,
+      "HexCode": "0x80098021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATABASE_BAD_INDEX_VECTOR",
+      "Message": "A database operation failed due to a malformed index vector.",
+      "DecimalCode": -2146861022,
+      "HexCode": "0x80098022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INCORRECT_BSP",
+      "Message": "The biometric unit doesn\u0027t belong to the specified service provider.",
+      "DecimalCode": -2146861020,
+      "HexCode": "0x80098024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INCORRECT_SENSOR_POOL",
+      "Message": "The biometric unit doesn\u0027t belong to the specified sensor pool.",
+      "DecimalCode": -2146861019,
+      "HexCode": "0x80098025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_NO_CAPTURE_DATA",
+      "Message": "The sensor adapter\u0027s capture buffer is empty.",
+      "DecimalCode": -2146861018,
+      "HexCode": "0x80098026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_SENSOR_MODE",
+      "Message": "The sensor adapter doesn\u0027t support the sensor mode specified in the configuration.",
+      "DecimalCode": -2146861017,
+      "HexCode": "0x80098027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_LOCK_VIOLATION",
+      "Message": "The requested operation cannot be performed due to a locking conflict.",
+      "DecimalCode": -2146861014,
+      "HexCode": "0x8009802A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DUPLICATE_TEMPLATE",
+      "Message": "The data in a biometric template matches another template already in the database.",
+      "DecimalCode": -2146861013,
+      "HexCode": "0x8009802B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_OPERATION",
+      "Message": "The requested operation is not valid for the current state of the session or biometric unit.",
+      "DecimalCode": -2146861012,
+      "HexCode": "0x8009802C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_SESSION_BUSY",
+      "Message": "The session cannot begin a new operation because another operation is already in progress.",
+      "DecimalCode": -2146861011,
+      "HexCode": "0x8009802D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CRED_PROV_DISABLED",
+      "Message": "System policy settings have disabled the Windows biometric credential provider.",
+      "DecimalCode": -2146861008,
+      "HexCode": "0x80098030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CRED_PROV_NO_CREDENTIAL",
+      "Message": "The requested credential was not found.",
+      "DecimalCode": -2146861007,
+      "HexCode": "0x80098031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DISABLED",
+      "Message": "System policy settings have disabled the Windows biometric service.",
+      "DecimalCode": -2146861006,
+      "HexCode": "0x80098032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CONFIGURATION_FAILURE",
+      "Message": "The biometric unit could not be configured.",
+      "DecimalCode": -2146861005,
+      "HexCode": "0x80098033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_SENSOR_UNAVAILABLE",
+      "Message": "A private pool cannot be created because one or more biometric units are not available.",
+      "DecimalCode": -2146861004,
+      "HexCode": "0x80098034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_SAS_ENABLED",
+      "Message": "A secure attention sequence (CTRL-ALT-DEL) is required for logon.",
+      "DecimalCode": -2146861003,
+      "HexCode": "0x80098035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DEVICE_FAILURE",
+      "Message": "A biometric sensor has failed.",
+      "DecimalCode": -2146861002,
+      "HexCode": "0x80098036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_FAST_USER_SWITCH_DISABLED",
+      "Message": "Fast user switching is disabled.",
+      "DecimalCode": -2146861001,
+      "HexCode": "0x80098037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_NOT_ACTIVE_CONSOLE",
+      "Message": "The System sensor pool cannot be opened from Terminal Server client sessions.",
+      "DecimalCode": -2146861000,
+      "HexCode": "0x80098038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_EVENT_MONITOR_ACTIVE",
+      "Message": "There is already an active event monitor associated with the specified session.",
+      "DecimalCode": -2146860999,
+      "HexCode": "0x80098039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_PROPERTY_TYPE",
+      "Message": "The value specified is not a valid property type.",
+      "DecimalCode": -2146860998,
+      "HexCode": "0x8009803A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_PROPERTY_ID",
+      "Message": "The value specified is not a valid property ID.",
+      "DecimalCode": -2146860997,
+      "HexCode": "0x8009803B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_PROPERTY",
+      "Message": "The biometric unit doesn\u0027t support the specified property.",
+      "DecimalCode": -2146860996,
+      "HexCode": "0x8009803C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_ADAPTER_INTEGRITY_FAILURE",
+      "Message": "The adapter binary did not pass its integrity check.",
+      "DecimalCode": -2146860995,
+      "HexCode": "0x8009803D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INCORRECT_SESSION_TYPE",
+      "Message": "This operation requires a different type of session handle.",
+      "DecimalCode": -2146860994,
+      "HexCode": "0x8009803E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_SESSION_HANDLE_CLOSED",
+      "Message": "This session handle has already been closed.",
+      "DecimalCode": -2146860993,
+      "HexCode": "0x8009803F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DEADLOCK_DETECTED",
+      "Message": "The requested operation was aborted because it would have caused a deadlock.",
+      "DecimalCode": -2146860992,
+      "HexCode": "0x80098040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_NO_PREBOOT_IDENTITY",
+      "Message": "There is no pre-boot logon identity available.",
+      "DecimalCode": -2146860991,
+      "HexCode": "0x80098041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_MAX_ERROR_COUNT_EXCEEDED",
+      "Message": "The operation was aborted because there were too many errors.",
+      "DecimalCode": -2146860990,
+      "HexCode": "0x80098042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_AUTO_LOGON_DISABLED",
+      "Message": "System policy settings have disabled pre-boot auto-logon using biometrics.",
+      "DecimalCode": -2146860989,
+      "HexCode": "0x80098043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_TICKET",
+      "Message": "The specified ticket is either incorrect or has expired.",
+      "DecimalCode": -2146860988,
+      "HexCode": "0x80098044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_TICKET_QUOTA_EXCEEDED",
+      "Message": "The calling process has too many outstanding tickets.",
+      "DecimalCode": -2146860987,
+      "HexCode": "0x80098045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_DATA_PROTECTION_FAILURE",
+      "Message": "The biometric service could not decrypt the data.",
+      "DecimalCode": -2146860986,
+      "HexCode": "0x80098046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CRED_PROV_SECURITY_LOCKOUT",
+      "Message": "Biometric authentication has been disabled because of too many unregistered fingerpint scans.",
+      "DecimalCode": -2146860985,
+      "HexCode": "0x80098047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_POOL_TYPE",
+      "Message": "The requested pool type is not supported by this biometric factor.",
+      "DecimalCode": -2146860984,
+      "HexCode": "0x80098048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_SELECTION_REQUIRED",
+      "Message": "A specific individual must be selected in order to perform an enrollment.",
+      "DecimalCode": -2146860983,
+      "HexCode": "0x80098049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_PRESENCE_MONITOR_ACTIVE",
+      "Message": "A presence monitor is already active on that session.",
+      "DecimalCode": -2146860982,
+      "HexCode": "0x8009804A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_SUBFACTOR",
+      "Message": "The specified sub-factor value is out of range or is not supported.",
+      "DecimalCode": -2146860981,
+      "HexCode": "0x8009804B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_CALIBRATION_FORMAT_ARRAY",
+      "Message": "The sensor adapter returned an invalid calibration format array.",
+      "DecimalCode": -2146860980,
+      "HexCode": "0x8009804C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_NO_SUPPORTED_CALIBRATION_FORMAT",
+      "Message": "The sensor and engine adapter don\u0027t share a common calibration format.",
+      "DecimalCode": -2146860979,
+      "HexCode": "0x8009804D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_UNSUPPORTED_SENSOR_CALIBRATION_FORMAT",
+      "Message": "The sensor adapter does not support the requested calibration format.",
+      "DecimalCode": -2146860978,
+      "HexCode": "0x8009804E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CALIBRATION_BUFFER_TOO_SMALL",
+      "Message": "The requested calibration buffer size is too small.",
+      "DecimalCode": -2146860977,
+      "HexCode": "0x8009804F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CALIBRATION_BUFFER_TOO_LARGE",
+      "Message": "The requested calibration buffer size is too large.",
+      "DecimalCode": -2146860976,
+      "HexCode": "0x80098050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_CALIBRATION_BUFFER_INVALID",
+      "Message": "The sensor adapter cannot process the contents of the calibration buffer.",
+      "DecimalCode": -2146860975,
+      "HexCode": "0x80098051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_KEY_IDENTIFIER",
+      "Message": "The key identifier is invalid.",
+      "DecimalCode": -2146860974,
+      "HexCode": "0x80098052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_KEY_CREATION_FAILED",
+      "Message": "The key cannot be created.",
+      "DecimalCode": -2146860973,
+      "HexCode": "0x80098053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_KEY_IDENTIFIER_BUFFER_TOO_SMALL",
+      "Message": "The key identifier buffer is too small.",
+      "DecimalCode": -2146860972,
+      "HexCode": "0x80098054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_PROPERTY_UNAVAILABLE",
+      "Message": "The biometric unt is unable to provide data for this property at the present time.",
+      "DecimalCode": -2146860971,
+      "HexCode": "0x80098055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_POLICY_PROTECTION_UNAVAILABLE",
+      "Message": "Policy protection is not available because a TPM 2.0 device is either not present or not supported.",
+      "DecimalCode": -2146860970,
+      "HexCode": "0x80098056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INSECURE_SENSOR",
+      "Message": "The biometric sensor does not support a secure hardware data path.",
+      "DecimalCode": -2146860969,
+      "HexCode": "0x80098057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_BUFFER_ID",
+      "Message": "The identifier does not refer to a valid buffer.",
+      "DecimalCode": -2146860968,
+      "HexCode": "0x80098058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_INVALID_BUFFER",
+      "Message": "The contents of the buffer are not valid.",
+      "DecimalCode": -2146860967,
+      "HexCode": "0x80098059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_TRUSTLET_INTEGRITY_FAIL",
+      "Message": "The Windows Biometric Service secure component was compromised.",
+      "DecimalCode": -2146860966,
+      "HexCode": "0x8009805A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_E_ENROLLMENT_CANCELED_BY_SUSPEND",
+      "Message": "The Windows Biometric Service canceled the enrollment because the platform entered a suspended state.",
+      "DecimalCode": -2146860965,
+      "HexCode": "0x8009805B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_I_MORE_DATA",
+      "Message": "Another sample is needed for the current enrollment template.",
+      "DecimalCode": 589825,
+      "HexCode": "0x00090001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_I_EXTENDED_STATUS_INFORMATION",
+      "Message": "Return data includes multiple status values, which must be checked separately.",
+      "DecimalCode": 589826,
+      "HexCode": "0x00090002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_HIGH",
+      "Message": "Position your finger lower on the fingerprint reader.",
+      "DecimalCode": 1,
+      "HexCode": "0x00000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_LOW",
+      "Message": "Position your finger higher on the fingerprint reader.",
+      "DecimalCode": 2,
+      "HexCode": "0x00000002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_LEFT",
+      "Message": "Position your finger more to the right on the fingerprint reader.",
+      "DecimalCode": 3,
+      "HexCode": "0x00000003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_RIGHT",
+      "Message": "Position your finger more to the left on the fingerprint reader.",
+      "DecimalCode": 4,
+      "HexCode": "0x00000004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_FAST",
+      "Message": "Move your finger more slowly on the fingerprint reader.",
+      "DecimalCode": 5,
+      "HexCode": "0x00000005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_SLOW",
+      "Message": "Move your finger more quickly on the fingerprint reader.",
+      "DecimalCode": 6,
+      "HexCode": "0x00000006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_POOR_QUALITY",
+      "Message": "The fingerprint reader could not capture a good sample. Check to be sure the sensor is clean.",
+      "DecimalCode": 7,
+      "HexCode": "0x00000007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_SKEWED",
+      "Message": "Hold your finger flat and straight when you use the fingerprint reader.",
+      "DecimalCode": 8,
+      "HexCode": "0x00000008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_TOO_SHORT",
+      "Message": "Use a longer stroke when scanning your fingerprint.",
+      "DecimalCode": 9,
+      "HexCode": "0x00000009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WINBIO_FP_MERGE_FAILURE",
+      "Message": "The fingerprint reader could not capture a good sample. Check to be sure the sensor is clean.",
+      "DecimalCode": 10,
+      "HexCode": "0x0000000A",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WINBIO",
+      "Code": 9
+    },
+    {
+      "Name": "FACILITY_NONE",
+      "Code": 0
+    }
+  ]
+}

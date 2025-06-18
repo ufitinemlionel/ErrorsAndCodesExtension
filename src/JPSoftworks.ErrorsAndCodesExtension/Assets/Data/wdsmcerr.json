@@ -1,0 +1,386 @@
+{
+  "HeaderFileName": "wdsmcerr.h",
+  "ErrorCodes": [
+    {
+      "Id": "WDSMCSERVER_CATEGORY",
+      "Message": "WDS Multicast Server",
+      "DecimalCode": 1,
+      "HexCode": "0x00000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCCLIENT_CATEGORY",
+      "Message": "WDS Multicast Client",
+      "DecimalCode": 2,
+      "HexCode": "0x00000002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_SESSION_SHUTDOWN_IN_PROGRESS",
+      "Message": "The request for content was rejected because shutdown is in progress for the specified session.",
+      "DecimalCode": -1054801664,
+      "HexCode": "0xC1210100",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_REQCALLBACKS_NOT_REG",
+      "Message": "The Content Provider did not register required callbacks.",
+      "DecimalCode": -1054801663,
+      "HexCode": "0xC1210101",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_INCOMPATIBLE_VERSION",
+      "Message": "The supported version reported by Content Provider is incompatible.",
+      "DecimalCode": -1054801662,
+      "HexCode": "0xC1210102",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_CONTENT_NOT_FOUND",
+      "Message": "The specified content was not found.",
+      "DecimalCode": -1054801661,
+      "HexCode": "0xC1210103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_CLIENT_NOT_FOUND",
+      "Message": "The specified client was not found.",
+      "DecimalCode": -1054801660,
+      "HexCode": "0xC1210104",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_NAMESPACE_NOT_FOUND",
+      "Message": "The specified namespace was not found.",
+      "DecimalCode": -1054801659,
+      "HexCode": "0xC1210105",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_CONTENT_PROVIDER_NOT_FOUND",
+      "Message": "The specified content provider was not found.",
+      "DecimalCode": -1054801658,
+      "HexCode": "0xC1210106",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_NAMESPACE_ALREADY_EXISTS",
+      "Message": "The specified namespace already exists.",
+      "DecimalCode": -1054801657,
+      "HexCode": "0xC1210107",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_NAMESPACE_SHUTDOWN_IN_PROGRESS",
+      "Message": "The namespace is pending closure due to inactivity.",
+      "DecimalCode": -1054801656,
+      "HexCode": "0xC1210108",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_NAMESPACE_ALREADY_STARTED",
+      "Message": "The namespace has already started.",
+      "DecimalCode": -1054801655,
+      "HexCode": "0xC1210109",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_NS_START_FAILED_NO_CLIENTS",
+      "Message": "The namespace cannot be started because there are no clients in the namespace.",
+      "DecimalCode": -1054801654,
+      "HexCode": "0xC121010A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_START_TIME_IN_PAST",
+      "Message": "The specified start time is in the past.",
+      "DecimalCode": -1054801653,
+      "HexCode": "0xC121010B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_PACKET_NOT_HASHED",
+      "Message": "A packet was received without a hash.",
+      "DecimalCode": -1054801652,
+      "HexCode": "0xC121010C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_PACKET_NOT_SIGNED",
+      "Message": "A packet was received without a signature.",
+      "DecimalCode": -1054801651,
+      "HexCode": "0xC121010D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_PACKET_HAS_SECURITY",
+      "Message": "A signed or hashed packet was received.",
+      "DecimalCode": -1054801650,
+      "HexCode": "0xC121010E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_PACKET_NOT_CHECKSUMED",
+      "Message": "A packet was received without a checksum.",
+      "DecimalCode": -1054801649,
+      "HexCode": "0xC121010F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSMCS_E_CLIENT_DOESNOT_SUPPORT_SECURITY_MODE",
+      "Message": "The client does not support the required security mode.",
+      "DecimalCode": -1054801648,
+      "HexCode": "0xC1210110",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_S_PARAMETERS_READ",
+      "Message": "The Windows Deployment Services multicast server successfully read its configuration settings. The Windows Deployment Services multicast server will now process incoming client requests.",
+      "DecimalCode": 1092682240,
+      "HexCode": "0x41210200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_PARAMETERS_READ_FAILED",
+      "Message": "An error occurred while trying to read the configuration information. The Windows Deployment Services multicast server will not process incoming client requests. %n %n Error Information: %1 %n",
+      "DecimalCode": -1054801407,
+      "HexCode": "0xC1210201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_DUPLICATE_MULTICAST_ADDR",
+      "Message": "The multicast IP address %1 is being used by another Windows Deployment Services server, which has IP %2. Use the Windows Deployment Services management tools to configure your multicast IP address range to avoid this multicast IP address. If you allow this overlap to continue, your network usage will be increased.",
+      "DecimalCode": -1054801406,
+      "HexCode": "0xC1210202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_NON_WDS_DUPLICATE_MULTICAST_ADDR",
+      "Message": "The multicast IP address %1 is being used by another multicast server, which has IP %2. Use the Windows Deployment Services management tools to configure your multicast IP address range to avoid this multicast IP address. If you allow this overlap to continue, your network usage will be increased.",
+      "DecimalCode": -1054801405,
+      "HexCode": "0xC1210203",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_DLL_LOAD_FAILED",
+      "Message": "An error occurred while trying to load the module %1 for Content Provider %2. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801328,
+      "HexCode": "0xC1210250",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_INIT_FUNC_MISSING",
+      "Message": "The module %1 for Content Provider %2 does not export the initialization function %3. %n %n Error Information: %4 %n",
+      "DecimalCode": -1054801327,
+      "HexCode": "0xC1210251",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_INIT_FUNC_FAILED",
+      "Message": "The Content Provider %1 loaded from %2 failed to initialize. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801326,
+      "HexCode": "0xC1210252",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_INCOMPATIBLE_SERVER_VERSION",
+      "Message": "The Content Provider %1 is incompatible with this version of Windows Deployment Multicast Server. %n",
+      "DecimalCode": -1054801325,
+      "HexCode": "0xC1210253",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_CALLBACKS_NOT_REG",
+      "Message": "The Content Provider %1 did not register required callbacks during its initialization. %n",
+      "DecimalCode": -1054801324,
+      "HexCode": "0xC1210254",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_SHUTDOWN_FUNC_FAILED",
+      "Message": "The shutdown function for Content Provider %1 failed. %n %n Error Information: %2 %n",
+      "DecimalCode": -1054801323,
+      "HexCode": "0xC1210255",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_MEMORY_LEAK",
+      "Message": "The Content Provider %1 did not release %2 memory allocation(s) after its shutdown function has successfully returned.",
+      "DecimalCode": -1054801322,
+      "HexCode": "0xC1210256",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_OPEN_INSTANCE_FAILED",
+      "Message": "The Content Provider %1 returned an error while trying to open a new instance. %n %n Configuration: %2 %n Error Information: %3 %n",
+      "DecimalCode": -1054801321,
+      "HexCode": "0xC1210257",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_CLOSE_INSTANCE_FAILED",
+      "Message": "The Content Provider %1 returned an error while trying to close an instance. %n %n Error Information: %2 %n",
+      "DecimalCode": -1054801320,
+      "HexCode": "0xC1210258",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_OPEN_CONTENT_FAILED",
+      "Message": "The Content Provider %1 returned an error while trying to open content %2. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801319,
+      "HexCode": "0xC1210259",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_W_CP_DLL_LOAD_FAILED_NOT_CRITICAL",
+      "Message": "The Content Provider %1 failed to initialize. The provider is marked as non-critical. WDS Multicast server will continue to start.%n %n Error Information: %2 %n",
+      "DecimalCode": -2128543142,
+      "HexCode": "0x8121025A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_CP_DLL_LOAD_FAILED_CRITICAL",
+      "Message": "The Content Provider %1 failed to initialize. The provider is marked as critical. WDS Multicast server will fail to start.%n %n Error Information: %2 %n",
+      "DecimalCode": -1054801317,
+      "HexCode": "0xC121025B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_NSREG_START_TIME_IN_PAST",
+      "Message": "The ScheduledCast namespace %1 using content provider %2 could not be registered as it starts in the past. The namespace has been removed from the namespace store. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801152,
+      "HexCode": "0xC1210300",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_NSREG_CONTENT_PROVIDER_NOT_REG",
+      "Message": "The namespace %1 using content provider %2 could not be registered because the content provider is not registered. The namespace has been removed from the namespace store. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801151,
+      "HexCode": "0xC1210301",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_NSREG_NAMESPACE_EXISTS",
+      "Message": "The namespace %1 using content provider %2 could not be registered because a namespace by that name already exists. The namespace has been removed from the namespace store. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801150,
+      "HexCode": "0xC1210302",
+      "Type": "HResult"
+    },
+    {
+      "Id": "EVT_WDSMCS_E_NSREG_FAILURE",
+      "Message": "The namespace %1 using content provider %2 could not be registered due to an unknown error. %n %n Error Information: %3 %n",
+      "DecimalCode": -1054801149,
+      "HexCode": "0xC1210303",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_CALLBACKS_NOT_REG",
+      "Message": "The required callbacks were not registered.",
+      "DecimalCode": -1054735616,
+      "HexCode": "0xC1220300",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_ALREADY_COMPLETED",
+      "Message": "The session has already completed the download.",
+      "DecimalCode": -1054735615,
+      "HexCode": "0xC1220301",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_ALREADY_IN_PROGRESS",
+      "Message": "The download is already in progress.",
+      "DecimalCode": -1054735614,
+      "HexCode": "0xC1220302",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_UNKNOWN_ERROR",
+      "Message": "An unknown error occurred.",
+      "DecimalCode": -1054735613,
+      "HexCode": "0xC1220303",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_NOT_INITIALIZED",
+      "Message": "WDS Multicast Client not initialized.",
+      "DecimalCode": -1054735612,
+      "HexCode": "0xC1220304",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_KICKED_POLICY_NOT_MET",
+      "Message": "The client did not meet the policy requirements set by the administrator and was kicked from the session.",
+      "DecimalCode": -1054735611,
+      "HexCode": "0xC1220305",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_KICKED_FALLBACK",
+      "Message": "The client was disconnected by the administrator. The server requested that the client use another method to obtain the contents.",
+      "DecimalCode": -1054735610,
+      "HexCode": "0xC1220306",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_KICKED_FAIL",
+      "Message": "The client was disconnected by the administrator.",
+      "DecimalCode": -1054735609,
+      "HexCode": "0xC1220307",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_KICKED_UNKNOWN",
+      "Message": "The client was disconnected by the administrator. An unknown reason was specified for disconnecting the client from the session.",
+      "DecimalCode": -1054735608,
+      "HexCode": "0xC1220308",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_MULTISTREAM_NOT_ENABLED",
+      "Message": "Multistream support is not enabled.",
+      "DecimalCode": -1054735607,
+      "HexCode": "0xC1220309",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_ALREADY_IN_LOWEST_SESSION",
+      "Message": "The specified client is already in the lowest multistream session.",
+      "DecimalCode": -1054735606,
+      "HexCode": "0xC122030A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_CLIENT_DEMOTE_NOT_SUPPORTED",
+      "Message": "The specified client does not support demotion.",
+      "DecimalCode": -1054735605,
+      "HexCode": "0xC122030B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPC_E_NO_IP4_INTERFACE",
+      "Message": "No IPv4 interface available on the server.",
+      "DecimalCode": -1054735604,
+      "HexCode": "0xC122030C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "WDSTPTC_E_WIM_APPLY_REQUIRES_REFERENCE_IMAGE",
+      "Message": "The specified WIM file requires a reference WIM such as res.rwm in order to be applied.",
+      "DecimalCode": -1054735603,
+      "HexCode": "0xC122030D",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_WDSMCSERVER",
+      "Code": 289
+    },
+    {
+      "Name": "FACILITY_WDSMCCLIENT",
+      "Code": 290
+    }
+  ]
+}

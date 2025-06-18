@@ -1,0 +1,734 @@
+{
+  "HeaderFileName": "iscsierr.h",
+  "ErrorCodes": [
+    {
+      "Id": "ISDSC_NON_SPECIFIC_ERROR",
+      "Message": "A non specific error occurred.",
+      "DecimalCode": -268500991,
+      "HexCode": "0xEFFF0001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_LOGIN_FAILED",
+      "Message": "Login Failed.",
+      "DecimalCode": -268500990,
+      "HexCode": "0xEFFF0002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_CONNECTION_FAILED",
+      "Message": "Connection Failed.",
+      "DecimalCode": -268500989,
+      "HexCode": "0xEFFF0003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INITIATOR_NODE_ALREADY_EXISTS",
+      "Message": "Initiator Node Already Exists.",
+      "DecimalCode": -268500988,
+      "HexCode": "0xEFFF0004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INITIATOR_NODE_NOT_FOUND",
+      "Message": "Initiator Node Does Not Exist.",
+      "DecimalCode": -268500987,
+      "HexCode": "0xEFFF0005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_MOVED_TEMPORARILY",
+      "Message": "Target Moved Temporarily.",
+      "DecimalCode": -268500986,
+      "HexCode": "0xEFFF0006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_MOVED_PERMANENTLY",
+      "Message": "Target Moved Permanently.",
+      "DecimalCode": -268500985,
+      "HexCode": "0xEFFF0007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INITIATOR_ERROR",
+      "Message": "Initiator Error.",
+      "DecimalCode": -268500984,
+      "HexCode": "0xEFFF0008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_AUTHENTICATION_FAILURE",
+      "Message": "Authentication Failure.",
+      "DecimalCode": -268500983,
+      "HexCode": "0xEFFF0009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_AUTHORIZATION_FAILURE",
+      "Message": "Authorization Failure.",
+      "DecimalCode": -268500982,
+      "HexCode": "0xEFFF000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_NOT_FOUND",
+      "Message": "Not Found.",
+      "DecimalCode": -268500981,
+      "HexCode": "0xEFFF000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_REMOVED",
+      "Message": "Target Removed.",
+      "DecimalCode": -268500980,
+      "HexCode": "0xEFFF000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_UNSUPPORTED_VERSION",
+      "Message": "Unsupported Version.",
+      "DecimalCode": -268500979,
+      "HexCode": "0xEFFF000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TOO_MANY_CONNECTIONS",
+      "Message": "Too many Connections.",
+      "DecimalCode": -268500978,
+      "HexCode": "0xEFFF000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_MISSING_PARAMETER",
+      "Message": "Missing Parameter.",
+      "DecimalCode": -268500977,
+      "HexCode": "0xEFFF000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_CANT_INCLUDE_IN_SESSION",
+      "Message": "Can not include in session.",
+      "DecimalCode": -268500976,
+      "HexCode": "0xEFFF0010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SESSION_TYPE_NOT_SUPPORTED",
+      "Message": "Session type not supported.",
+      "DecimalCode": -268500975,
+      "HexCode": "0xEFFF0011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_ERROR",
+      "Message": "Target Error.",
+      "DecimalCode": -268500974,
+      "HexCode": "0xEFFF0012",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SERVICE_UNAVAILABLE",
+      "Message": "Service Unavailable.",
+      "DecimalCode": -268500973,
+      "HexCode": "0xEFFF0013",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_OUT_OF_RESOURCES",
+      "Message": "Out of Resources.",
+      "DecimalCode": -268500972,
+      "HexCode": "0xEFFF0014",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_CONNECTION_ALREADY_EXISTS",
+      "Message": "Connections already exist on initiator node.",
+      "DecimalCode": -268500971,
+      "HexCode": "0xEFFF0015",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SESSION_ALREADY_EXISTS",
+      "Message": "Session Already Exists.",
+      "DecimalCode": -268500970,
+      "HexCode": "0xEFFF0016",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INITIATOR_INSTANCE_NOT_FOUND",
+      "Message": "Initiator Instance Does Not Exist.",
+      "DecimalCode": -268500969,
+      "HexCode": "0xEFFF0017",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_ALREADY_EXISTS",
+      "Message": "Target Already Exists.",
+      "DecimalCode": -268500968,
+      "HexCode": "0xEFFF0018",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DRIVER_BUG",
+      "Message": "The iscsi driver implementation did not complete an operation correctly.",
+      "DecimalCode": -268500967,
+      "HexCode": "0xEFFF0019",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_TEXT_KEY",
+      "Message": "An invalid key text was encountered.",
+      "DecimalCode": -268500966,
+      "HexCode": "0xEFFF001A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_SENDTARGETS_TEXT",
+      "Message": "Invalid SendTargets response text was encountered.",
+      "DecimalCode": -268500965,
+      "HexCode": "0xEFFF001B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_SESSION_ID",
+      "Message": "Invalid Session Id.",
+      "DecimalCode": -268500964,
+      "HexCode": "0xEFFF001C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SCSI_REQUEST_FAILED",
+      "Message": "The scsi request failed.",
+      "DecimalCode": -268500963,
+      "HexCode": "0xEFFF001D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TOO_MANY_SESSIONS",
+      "Message": "Exceeded max sessions for this initiator.",
+      "DecimalCode": -268500962,
+      "HexCode": "0xEFFF001E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SESSION_BUSY",
+      "Message": "Session is busy since a request is already in progress.",
+      "DecimalCode": -268500961,
+      "HexCode": "0xEFFF001F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_MAPPING_UNAVAILABLE",
+      "Message": "The target mapping requested is not available.",
+      "DecimalCode": -268500960,
+      "HexCode": "0xEFFF0020",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_ADDRESS_TYPE_NOT_SUPPORTED",
+      "Message": "The Target Address type given is not supported.",
+      "DecimalCode": -268500959,
+      "HexCode": "0xEFFF0021",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_LOGON_FAILED",
+      "Message": "Logon Failed.",
+      "DecimalCode": -268500958,
+      "HexCode": "0xEFFF0022",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SEND_FAILED",
+      "Message": "TCP Send Failed.",
+      "DecimalCode": -268500957,
+      "HexCode": "0xEFFF0023",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TRANSPORT_ERROR",
+      "Message": "TCP Transport Error",
+      "DecimalCode": -268500956,
+      "HexCode": "0xEFFF0024",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_VERSION_MISMATCH",
+      "Message": "iSCSI Version Mismatch",
+      "DecimalCode": -268500955,
+      "HexCode": "0xEFFF0025",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_MAPPING_OUT_OF_RANGE",
+      "Message": "The Target Mapping Address passed is out of range for the adapter configuration.",
+      "DecimalCode": -268500954,
+      "HexCode": "0xEFFF0026",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_PRESHAREDKEY_UNAVAILABLE",
+      "Message": "The preshared key for the target or IKE identification payload is not available.",
+      "DecimalCode": -268500953,
+      "HexCode": "0xEFFF0027",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_AUTHINFO_UNAVAILABLE",
+      "Message": "The authentication information for the target is not available.",
+      "DecimalCode": -268500952,
+      "HexCode": "0xEFFF0028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_NOT_FOUND",
+      "Message": "The target name is not found or is marked as hidden from login.",
+      "DecimalCode": -268500951,
+      "HexCode": "0xEFFF0029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_LOGIN_USER_INFO_BAD",
+      "Message": "One or more parameters specified in LoginTargetIN structure is invalid.",
+      "DecimalCode": -268500950,
+      "HexCode": "0xEFFF002A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_MAPPING_EXISTS",
+      "Message": "Given target mapping already exists.",
+      "DecimalCode": -268500949,
+      "HexCode": "0xEFFF002B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_HBA_SECURITY_CACHE_FULL",
+      "Message": "The HBA security information cache is full.",
+      "DecimalCode": -268500948,
+      "HexCode": "0xEFFF002C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_PORT_NUMBER",
+      "Message": "The port number passed is not valid for the initiator.",
+      "DecimalCode": -268500947,
+      "HexCode": "0xEFFF002D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_OPERATION_NOT_ALL_SUCCESS",
+      "Message": "The operation was not successful for all initiators or discovery methods.",
+      "DecimalCode": -1342242770,
+      "HexCode": "0xAFFF002E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_HBA_SECURITY_CACHE_NOT_SUPPORTED",
+      "Message": "The HBA security information cache is not supported by this adapter.",
+      "DecimalCode": -268500945,
+      "HexCode": "0xEFFF002F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_IKE_ID_PAYLOAD_TYPE_NOT_SUPPORTED",
+      "Message": "The IKE id payload type specified is not supported.",
+      "DecimalCode": -268500944,
+      "HexCode": "0xEFFF0030",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_IKE_ID_PAYLOAD_INCORRECT_SIZE",
+      "Message": "The IKE id payload size specified is not correct.",
+      "DecimalCode": -268500943,
+      "HexCode": "0xEFFF0031",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_PORTAL_ALREADY_EXISTS",
+      "Message": "Target Portal Structure Already Exists.",
+      "DecimalCode": -268500942,
+      "HexCode": "0xEFFF0032",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_ADDRESS_ALREADY_EXISTS",
+      "Message": "Target Address Structure Already Exists.",
+      "DecimalCode": -268500941,
+      "HexCode": "0xEFFF0033",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_NO_AUTH_INFO_AVAILABLE",
+      "Message": "There is no IKE authentication information available.",
+      "DecimalCode": -268500940,
+      "HexCode": "0xEFFF0034",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_NO_TUNNEL_OUTER_MODE_ADDRESS",
+      "Message": "There is no tunnel mode outer address specified.",
+      "DecimalCode": -268500939,
+      "HexCode": "0xEFFF0035",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_CACHE_CORRUPTED",
+      "Message": "Authentication or tunnel address cache is corrupted.",
+      "DecimalCode": -268500938,
+      "HexCode": "0xEFFF0036",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_REQUEST_NOT_SUPPORTED",
+      "Message": "The request or operation is not supported.",
+      "DecimalCode": -268500937,
+      "HexCode": "0xEFFF0037",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_OUT_OF_RESORCES",
+      "Message": "The target does not have enough resources to process the given request.",
+      "DecimalCode": -268500936,
+      "HexCode": "0xEFFF0038",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SERVICE_DID_NOT_RESPOND",
+      "Message": "The initiator service did not respond to the request sent by the driver.",
+      "DecimalCode": -268500935,
+      "HexCode": "0xEFFF0039",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_ISNS_SERVER_NOT_FOUND",
+      "Message": "The Internet Storage Name Server (iSNS) server was not found or is unavailable.",
+      "DecimalCode": -268500934,
+      "HexCode": "0xEFFF003A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_OPERATION_REQUIRES_REBOOT",
+      "Message": "The operation was successful but requires a driver reload or reboot to become effective.",
+      "DecimalCode": -1342242757,
+      "HexCode": "0xAFFF003B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_NO_PORTAL_SPECIFIED",
+      "Message": "There is no target portal available to complete the login.",
+      "DecimalCode": -268500932,
+      "HexCode": "0xEFFF003C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_CANT_REMOVE_LAST_CONNECTION",
+      "Message": "Cannot remove the last connection for a session.",
+      "DecimalCode": -268500931,
+      "HexCode": "0xEFFF003D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SERVICE_NOT_RUNNING",
+      "Message": "The Microsoft iSCSI Initiator Service is not running. Please start the service and retry.",
+      "DecimalCode": -268500930,
+      "HexCode": "0xEFFF003E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_TARGET_ALREADY_LOGGED_IN",
+      "Message": "The target has already been logged in via an iSCSI session.",
+      "DecimalCode": -268500929,
+      "HexCode": "0xEFFF003F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DEVICE_BUSY_ON_SESSION",
+      "Message": "The session cannot be logged out since a device on that session is currently being used.",
+      "DecimalCode": -268500928,
+      "HexCode": "0xEFFF0040",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_COULD_NOT_SAVE_PERSISTENT_LOGIN_DATA",
+      "Message": "Failed to save persistent login information.",
+      "DecimalCode": -268500927,
+      "HexCode": "0xEFFF0041",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_COULD_NOT_REMOVE_PERSISTENT_LOGIN_DATA",
+      "Message": "Failed to remove persistent login information.",
+      "DecimalCode": -268500926,
+      "HexCode": "0xEFFF0042",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_PORTAL_NOT_FOUND",
+      "Message": "The specified portal was not found.",
+      "DecimalCode": -268500925,
+      "HexCode": "0xEFFF0043",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INITIATOR_NOT_FOUND",
+      "Message": "The specified initiator name was not found.",
+      "DecimalCode": -268500924,
+      "HexCode": "0xEFFF0044",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DISCOVERY_MECHANISM_NOT_FOUND",
+      "Message": "The specified discovery mechanism was not found.",
+      "DecimalCode": -268500923,
+      "HexCode": "0xEFFF0045",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_IPSEC_NOT_SUPPORTED_ON_OS",
+      "Message": "iSCSI does not support IPSEC for this version of the OS.",
+      "DecimalCode": -268500922,
+      "HexCode": "0xEFFF0046",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_PERSISTENT_LOGIN_TIMEOUT",
+      "Message": "The iSCSI service timed out waiting for all persistent logins to complete.",
+      "DecimalCode": -268500921,
+      "HexCode": "0xEFFF0047",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_SHORT_CHAP_SECRET",
+      "Message": "The specified CHAP secret is less than 96 bits and will not be usable for authenticating over non ipsec connections.",
+      "DecimalCode": -1342242744,
+      "HexCode": "0xAFFF0048",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_EVALUATION_PEROID_EXPIRED",
+      "Message": "The evaluation period for the iSCSI initiator service has expired.",
+      "DecimalCode": -268500919,
+      "HexCode": "0xEFFF0049",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_CHAP_SECRET",
+      "Message": "CHAP secret given does not conform to the standard. Please see system event log for more information.",
+      "DecimalCode": -268500918,
+      "HexCode": "0xEFFF004A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_TARGET_CHAP_SECRET",
+      "Message": "Target CHAP secret given is invalid. Maximum size of CHAP secret is 16 bytes. Minimum size is 12 bytes if IPSec is not used.",
+      "DecimalCode": -268500917,
+      "HexCode": "0xEFFF004B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_INITIATOR_CHAP_SECRET",
+      "Message": "Initiator CHAP secret given is invalid. Maximum size of CHAP secret is 16 bytes. Minimum size is 12 bytes if IPSec is not used.",
+      "DecimalCode": -268500916,
+      "HexCode": "0xEFFF004C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_CHAP_USER_NAME",
+      "Message": "CHAP Username given is invalid.",
+      "DecimalCode": -268500915,
+      "HexCode": "0xEFFF004D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_LOGON_AUTH_TYPE",
+      "Message": "Logon Authentication type given is invalid.",
+      "DecimalCode": -268500914,
+      "HexCode": "0xEFFF004E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_TARGET_MAPPING",
+      "Message": "Target Mapping information given is invalid.",
+      "DecimalCode": -268500913,
+      "HexCode": "0xEFFF004F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_TARGET_ID",
+      "Message": "Target Id given in Target Mapping is invalid.",
+      "DecimalCode": -268500912,
+      "HexCode": "0xEFFF0050",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_ISCSI_NAME",
+      "Message": "The iSCSI name specified contains invalid characters or is too long.",
+      "DecimalCode": -268500911,
+      "HexCode": "0xEFFF0051",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INCOMPATIBLE_ISNS_VERSION",
+      "Message": "The version number returned from the Internet Storage Name Server (iSNS) server is not compatible with this version of the iSNS client.",
+      "DecimalCode": -268500910,
+      "HexCode": "0xEFFF0052",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_FAILED_TO_CONFIGURE_IPSEC",
+      "Message": "Initiator failed to configure IPSec for the given connection. This could be because of low resources.",
+      "DecimalCode": -268500909,
+      "HexCode": "0xEFFF0053",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_BUFFER_TOO_SMALL",
+      "Message": "The buffer given for processing the request is too small.",
+      "DecimalCode": -268500908,
+      "HexCode": "0xEFFF0054",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_LOAD_BALANCE_POLICY",
+      "Message": "The given Load Balance policy is not recognized by iScsi initiator.",
+      "DecimalCode": -268500907,
+      "HexCode": "0xEFFF0055",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_PARAMETER",
+      "Message": "One or more paramaters specified is not valid.",
+      "DecimalCode": -268500906,
+      "HexCode": "0xEFFF0056",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DUPLICATE_PATH_SPECIFIED",
+      "Message": "Duplicate PathIds were specified in the call to set Load Balance Policy.",
+      "DecimalCode": -268500905,
+      "HexCode": "0xEFFF0057",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_PATH_COUNT_MISMATCH",
+      "Message": "Number of paths specified in Set Load Balance Policy does not match the number of paths to the target.",
+      "DecimalCode": -268500904,
+      "HexCode": "0xEFFF0058",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_PATH_ID",
+      "Message": "Path Id specified in the call to set Load Balance Policy is not valid",
+      "DecimalCode": -268500903,
+      "HexCode": "0xEFFF0059",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_MULTIPLE_PRIMARY_PATHS_SPECIFIED",
+      "Message": "Multiple primary paths specified when only one primary path is expected.",
+      "DecimalCode": -268500902,
+      "HexCode": "0xEFFF005A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_NO_PRIMARY_PATH_SPECIFIED",
+      "Message": "No primary path specified when at least one is expected.",
+      "DecimalCode": -268500901,
+      "HexCode": "0xEFFF005B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DEVICE_ALREADY_PERSISTENTLY_BOUND",
+      "Message": "Device is already a persistently bound device.",
+      "DecimalCode": -268500900,
+      "HexCode": "0xEFFF005C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DEVICE_NOT_FOUND",
+      "Message": "Device was not found.",
+      "DecimalCode": -268500899,
+      "HexCode": "0xEFFF005D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DEVICE_NOT_ISCSI_OR_PERSISTENT",
+      "Message": "The device specified does not originate from an iSCSI disk or a persistent iSCSI login.",
+      "DecimalCode": -268500898,
+      "HexCode": "0xEFFF005E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_DNS_NAME_UNRESOLVED",
+      "Message": "The DNS name specified was not resolved.",
+      "DecimalCode": -268500897,
+      "HexCode": "0xEFFF005F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_NO_CONNECTION_AVAILABLE",
+      "Message": "There is no connection available in the iSCSI session to process the request.",
+      "DecimalCode": -268500896,
+      "HexCode": "0xEFFF0060",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_LB_POLICY_NOT_SUPPORTED",
+      "Message": "The given Load Balance policy is not supported.",
+      "DecimalCode": -268500895,
+      "HexCode": "0xEFFF0061",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_REMOVE_CONNECTION_IN_PROGRESS",
+      "Message": "A remove connection request is already in progress for this session.",
+      "DecimalCode": -268500894,
+      "HexCode": "0xEFFF0062",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_CONNECTION_ID",
+      "Message": "Given connection was not found in the session.",
+      "DecimalCode": -268500893,
+      "HexCode": "0xEFFF0063",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_CANNOT_REMOVE_LEADING_CONNECTION",
+      "Message": "The leading connection in the session cannot be removed.",
+      "DecimalCode": -268500892,
+      "HexCode": "0xEFFF0064",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_RESTRICTED_BY_GROUP_POLICY",
+      "Message": "The operation cannot be performed since it does not conform with the group policy assigned to this computer.",
+      "DecimalCode": -268500891,
+      "HexCode": "0xEFFF0065",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_ISNS_FIREWALL_BLOCKED",
+      "Message": "The operation cannot be performed since the Internet Storage Name Server (iSNS) firewall exception has not been enabled.",
+      "DecimalCode": -268500890,
+      "HexCode": "0xEFFF0066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_FAILURE_TO_PERSIST_LB_POLICY",
+      "Message": "Failed to persist load balancing policy parameters.",
+      "DecimalCode": -268500889,
+      "HexCode": "0xEFFF0067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "ISDSC_INVALID_HOST",
+      "Message": "The name could not be resolved to an IP Address.",
+      "DecimalCode": -268500888,
+      "HexCode": "0xEFFF0068",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}

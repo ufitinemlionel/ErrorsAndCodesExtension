@@ -1,0 +1,2472 @@
+{
+  "HeaderFileName": "mferror.h",
+  "ErrorCodes": [
+    {
+      "Id": "MF_E_PLATFORM_NOT_INITIALIZED",
+      "Message": "Platform not initialized. Please call MFStartup().%0",
+      "DecimalCode": -1072875856,
+      "HexCode": "0xC00D36B0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BUFFERTOOSMALL",
+      "Message": "The buffer was too small to carry out the requested action.%0",
+      "DecimalCode": -1072875855,
+      "HexCode": "0xC00D36B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALIDREQUEST",
+      "Message": "The request is invalid in the current state.%0",
+      "DecimalCode": -1072875854,
+      "HexCode": "0xC00D36B2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALIDSTREAMNUMBER",
+      "Message": "The stream number provided was invalid.%0",
+      "DecimalCode": -1072875853,
+      "HexCode": "0xC00D36B3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALIDMEDIATYPE",
+      "Message": "The data specified for the media type is invalid, inconsistent, or not supported by this object.%0",
+      "DecimalCode": -1072875852,
+      "HexCode": "0xC00D36B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NOTACCEPTING",
+      "Message": "The callee is currently not accepting further input.%0",
+      "DecimalCode": -1072875851,
+      "HexCode": "0xC00D36B5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NOT_INITIALIZED",
+      "Message": "This object needs to be initialized before the requested operation can be carried out.%0",
+      "DecimalCode": -1072875850,
+      "HexCode": "0xC00D36B6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_REPRESENTATION",
+      "Message": "The requested representation is not supported by this object.%0",
+      "DecimalCode": -1072875849,
+      "HexCode": "0xC00D36B7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_MORE_TYPES",
+      "Message": "An object ran out of media types to suggest therefore the requested chain of streaming objects cannot be completed.%0",
+      "DecimalCode": -1072875847,
+      "HexCode": "0xC00D36B9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_SERVICE",
+      "Message": "The object does not support the specified service.%0",
+      "DecimalCode": -1072875846,
+      "HexCode": "0xC00D36BA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNEXPECTED",
+      "Message": "An unexpected error has occurred in the operation requested.%0",
+      "DecimalCode": -1072875845,
+      "HexCode": "0xC00D36BB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALIDNAME",
+      "Message": "Invalid name.%0",
+      "DecimalCode": -1072875844,
+      "HexCode": "0xC00D36BC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALIDTYPE",
+      "Message": "Invalid type.%0",
+      "DecimalCode": -1072875843,
+      "HexCode": "0xC00D36BD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_FILE_FORMAT",
+      "Message": "The file does not conform to the relevant file format specification.%0",
+      "DecimalCode": -1072875842,
+      "HexCode": "0xC00D36BE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALIDINDEX",
+      "Message": "Invalid index.%0",
+      "DecimalCode": -1072875841,
+      "HexCode": "0xC00D36BF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_TIMESTAMP",
+      "Message": "An invalid timestamp was given.%0",
+      "DecimalCode": -1072875840,
+      "HexCode": "0xC00D36C0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_SCHEME",
+      "Message": "The scheme of the given URL is unsupported.%0",
+      "DecimalCode": -1072875837,
+      "HexCode": "0xC00D36C3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_BYTESTREAM_TYPE",
+      "Message": "The byte stream type of the given URL is unsupported.%0",
+      "DecimalCode": -1072875836,
+      "HexCode": "0xC00D36C4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_TIME_FORMAT",
+      "Message": "The given time format is unsupported.%0",
+      "DecimalCode": -1072875835,
+      "HexCode": "0xC00D36C5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_SAMPLE_TIMESTAMP",
+      "Message": "The Media Sample does not have a timestamp.%0",
+      "DecimalCode": -1072875832,
+      "HexCode": "0xC00D36C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_SAMPLE_DURATION",
+      "Message": "The Media Sample does not have a duration.%0",
+      "DecimalCode": -1072875831,
+      "HexCode": "0xC00D36C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_STREAM_DATA",
+      "Message": "The request failed because the data in the stream is corrupt.%0",
+      "DecimalCode": -1072875829,
+      "HexCode": "0xC00D36CB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RT_UNAVAILABLE",
+      "Message": "Real time services are not available.%0",
+      "DecimalCode": -1072875825,
+      "HexCode": "0xC00D36CF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_RATE",
+      "Message": "The specified rate is not supported.%0",
+      "DecimalCode": -1072875824,
+      "HexCode": "0xC00D36D0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_THINNING_UNSUPPORTED",
+      "Message": "This component does not support stream-thinning.%0",
+      "DecimalCode": -1072875823,
+      "HexCode": "0xC00D36D1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_REVERSE_UNSUPPORTED",
+      "Message": "The call failed because no reverse playback rates are available.%0",
+      "DecimalCode": -1072875822,
+      "HexCode": "0xC00D36D2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_RATE_TRANSITION",
+      "Message": "The requested rate transition cannot occur in the current state.%0",
+      "DecimalCode": -1072875821,
+      "HexCode": "0xC00D36D3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RATE_CHANGE_PREEMPTED",
+      "Message": "The requested rate change has been pre-empted and will not occur.%0",
+      "DecimalCode": -1072875820,
+      "HexCode": "0xC00D36D4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NOT_FOUND",
+      "Message": "The specified object or value does not exist.%0",
+      "DecimalCode": -1072875819,
+      "HexCode": "0xC00D36D5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NOT_AVAILABLE",
+      "Message": "The requested value is not available.%0",
+      "DecimalCode": -1072875818,
+      "HexCode": "0xC00D36D6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_CLOCK",
+      "Message": "The specified operation requires a clock and no clock is available.%0",
+      "DecimalCode": -1072875817,
+      "HexCode": "0xC00D36D7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_MULTIPLE_BEGIN",
+      "Message": "This callback and state had already been passed in to this event generator earlier.%0",
+      "DecimalCode": 866008,
+      "HexCode": "0x000D36D8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MULTIPLE_BEGIN",
+      "Message": "This callback has already been passed in to this event generator.%0",
+      "DecimalCode": -1072875815,
+      "HexCode": "0xC00D36D9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MULTIPLE_SUBSCRIBERS",
+      "Message": "Some component is already listening to events on this event generator.%0",
+      "DecimalCode": -1072875814,
+      "HexCode": "0xC00D36DA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TIMER_ORPHANED",
+      "Message": "This timer was orphaned before its callback time arrived.%0",
+      "DecimalCode": -1072875813,
+      "HexCode": "0xC00D36DB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_STATE_TRANSITION_PENDING",
+      "Message": "A state transition is already pending.%0",
+      "DecimalCode": -1072875812,
+      "HexCode": "0xC00D36DC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_STATE_TRANSITION",
+      "Message": "The requested state transition is unsupported.%0",
+      "DecimalCode": -1072875811,
+      "HexCode": "0xC00D36DD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNRECOVERABLE_ERROR_OCCURRED",
+      "Message": "An unrecoverable error has occurred.%0",
+      "DecimalCode": -1072875810,
+      "HexCode": "0xC00D36DE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SAMPLE_HAS_TOO_MANY_BUFFERS",
+      "Message": "The provided sample has too many buffers.%0",
+      "DecimalCode": -1072875809,
+      "HexCode": "0xC00D36DF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SAMPLE_NOT_WRITABLE",
+      "Message": "The provided sample is not writable.%0",
+      "DecimalCode": -1072875808,
+      "HexCode": "0xC00D36E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_KEY",
+      "Message": "The specified key is not valid.%0",
+      "DecimalCode": -1072875806,
+      "HexCode": "0xC00D36E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BAD_STARTUP_VERSION",
+      "Message": "You are calling MFStartup with the wrong MF_VERSION. Mismatched bits?%0",
+      "DecimalCode": -1072875805,
+      "HexCode": "0xC00D36E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_CAPTION",
+      "Message": "The caption of the given URL is unsupported.%0",
+      "DecimalCode": -1072875804,
+      "HexCode": "0xC00D36E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_POSITION",
+      "Message": "The operation on the current offset is not permitted.%0",
+      "DecimalCode": -1072875803,
+      "HexCode": "0xC00D36E5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ATTRIBUTENOTFOUND",
+      "Message": "The requested attribute was not found.%0",
+      "DecimalCode": -1072875802,
+      "HexCode": "0xC00D36E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_TYPE_NOT_ALLOWED",
+      "Message": "The specified property type is not allowed in this context.%0",
+      "DecimalCode": -1072875801,
+      "HexCode": "0xC00D36E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_TYPE_NOT_SUPPORTED",
+      "Message": "The specified property type is not supported.%0",
+      "DecimalCode": -1072875800,
+      "HexCode": "0xC00D36E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_EMPTY",
+      "Message": "The specified property is empty.%0",
+      "DecimalCode": -1072875799,
+      "HexCode": "0xC00D36E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_NOT_EMPTY",
+      "Message": "The specified property is not empty.%0",
+      "DecimalCode": -1072875798,
+      "HexCode": "0xC00D36EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_VECTOR_NOT_ALLOWED",
+      "Message": "The vector property specified is not allowed in this context.%0",
+      "DecimalCode": -1072875797,
+      "HexCode": "0xC00D36EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_VECTOR_REQUIRED",
+      "Message": "A vector property is required in this context.%0",
+      "DecimalCode": -1072875796,
+      "HexCode": "0xC00D36EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_OPERATION_CANCELLED",
+      "Message": "The operation is cancelled.%0",
+      "DecimalCode": -1072875795,
+      "HexCode": "0xC00D36ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BYTESTREAM_NOT_SEEKABLE",
+      "Message": "The provided bytestream was expected to be seekable and it is not.%0",
+      "DecimalCode": -1072875794,
+      "HexCode": "0xC00D36EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DISABLED_IN_SAFEMODE",
+      "Message": "The Media Foundation platform is disabled when the system is running in Safe Mode.%0",
+      "DecimalCode": -1072875793,
+      "HexCode": "0xC00D36EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CANNOT_PARSE_BYTESTREAM",
+      "Message": "The Media Source could not parse the byte stream.%0",
+      "DecimalCode": -1072875792,
+      "HexCode": "0xC00D36F0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SOURCERESOLVER_MUTUALLY_EXCLUSIVE_FLAGS",
+      "Message": "Mutually exclusive flags have been specified to source resolver. This flag combination is invalid.%0",
+      "DecimalCode": -1072875791,
+      "HexCode": "0xC00D36F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIAPROC_WRONGSTATE",
+      "Message": "MediaProc is in the wrong state.%0",
+      "DecimalCode": -1072875790,
+      "HexCode": "0xC00D36F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RT_THROUGHPUT_NOT_AVAILABLE",
+      "Message": "Real time I/O service can not provide requested throughput.%0",
+      "DecimalCode": -1072875789,
+      "HexCode": "0xC00D36F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RT_TOO_MANY_CLASSES",
+      "Message": "The workqueue cannot be registered with more classes.%0",
+      "DecimalCode": -1072875788,
+      "HexCode": "0xC00D36F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RT_WOULDBLOCK",
+      "Message": "This operation cannot succeed because another thread owns this object.%0",
+      "DecimalCode": -1072875787,
+      "HexCode": "0xC00D36F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_BITPUMP",
+      "Message": "Internal. Bitpump not found.%0",
+      "DecimalCode": -1072875786,
+      "HexCode": "0xC00D36F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RT_OUTOFMEMORY",
+      "Message": "No more RT memory available.%0",
+      "DecimalCode": -1072875785,
+      "HexCode": "0xC00D36F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RT_WORKQUEUE_CLASS_NOT_SPECIFIED",
+      "Message": "An MMCSS class has not been set for this work queue.%0",
+      "DecimalCode": -1072875784,
+      "HexCode": "0xC00D36F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INSUFFICIENT_BUFFER",
+      "Message": "Insufficient memory for response.%0",
+      "DecimalCode": -1072860816,
+      "HexCode": "0xC00D7170",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CANNOT_CREATE_SINK",
+      "Message": "Activate failed to create mediasink. Call OutputNode::GetUINT32(MF_TOPONODE_MAJORTYPE) for more information.%0",
+      "DecimalCode": -1072875782,
+      "HexCode": "0xC00D36FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BYTESTREAM_UNKNOWN_LENGTH",
+      "Message": "The length of the provided bytestream is unknown.%0",
+      "DecimalCode": -1072875781,
+      "HexCode": "0xC00D36FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SESSION_PAUSEWHILESTOPPED",
+      "Message": "The media session cannot pause from a stopped state.%0",
+      "DecimalCode": -1072875780,
+      "HexCode": "0xC00D36FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_ACTIVATE_REPLACED",
+      "Message": "The activate could not be created in the remote process for some reason it was replaced with empty one.%0",
+      "DecimalCode": 866045,
+      "HexCode": "0x000D36FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_FORMAT_CHANGE_NOT_SUPPORTED",
+      "Message": "The data specified for the media type is supported, but would require a format change, which is not supported by this object.%0",
+      "DecimalCode": -1072875778,
+      "HexCode": "0xC00D36FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_WORKQUEUE",
+      "Message": "The operation failed because an invalid combination of workqueue ID and flags was specified.%0",
+      "DecimalCode": -1072875777,
+      "HexCode": "0xC00D36FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DRM_UNSUPPORTED",
+      "Message": "No DRM support is available.%0",
+      "DecimalCode": -1072875776,
+      "HexCode": "0xC00D3700",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNAUTHORIZED",
+      "Message": "This operation is not authorized.%0",
+      "DecimalCode": -1072875775,
+      "HexCode": "0xC00D3701",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_OUT_OF_RANGE",
+      "Message": "The value is not in the specified or valid range.%0",
+      "DecimalCode": -1072875774,
+      "HexCode": "0xC00D3702",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_CODEC_MERIT",
+      "Message": "The registered codec merit is not valid.%0",
+      "DecimalCode": -1072875773,
+      "HexCode": "0xC00D3703",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HW_MFT_FAILED_START_STREAMING",
+      "Message": "Hardware MFT failed to start streaming due to lack of hardware resources.%0",
+      "DecimalCode": -1072875772,
+      "HexCode": "0xC00D3704",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_OPERATION_IN_PROGRESS",
+      "Message": "The operation is already in progress.%0",
+      "DecimalCode": -1072875771,
+      "HexCode": "0xC00D3705",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HARDWARE_DRM_UNSUPPORTED",
+      "Message": "No Hardware DRM support is available.%0",
+      "DecimalCode": -1072875770,
+      "HexCode": "0xC00D3706",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DURATION_TOO_LONG",
+      "Message": "The specified duration is too long.%0",
+      "DecimalCode": -1072875769,
+      "HexCode": "0xC00D3707",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_OPERATION_UNSUPPORTED_AT_D3D_FEATURE_LEVEL",
+      "Message": "The attempted call or command is not supported with the DirectX version used by the component.%0",
+      "DecimalCode": -1072875768,
+      "HexCode": "0xC00D3708",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_MEDIATYPE_AT_D3D_FEATURE_LEVEL",
+      "Message": "The specified media type is not supported with the DirectX version used by the component.%0",
+      "DecimalCode": -1072875767,
+      "HexCode": "0xC00D3709",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_ASF_PARSEINPROGRESS",
+      "Message": "Parsing is still in progress and is not yet complete.%0",
+      "DecimalCode": 1074608792,
+      "HexCode": "0x400D3A98",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_PARSINGINCOMPLETE",
+      "Message": "Not enough data have been parsed to carry out the requested action.%0",
+      "DecimalCode": -1072874856,
+      "HexCode": "0xC00D3A98",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_MISSINGDATA",
+      "Message": "There is a gap in the ASF data provided.%0",
+      "DecimalCode": -1072874855,
+      "HexCode": "0xC00D3A99",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_INVALIDDATA",
+      "Message": "The data provided are not valid ASF.%0",
+      "DecimalCode": -1072874854,
+      "HexCode": "0xC00D3A9A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_OPAQUEPACKET",
+      "Message": "The packet is opaque, so the requested information cannot be returned.%0",
+      "DecimalCode": -1072874853,
+      "HexCode": "0xC00D3A9B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_NOINDEX",
+      "Message": "The requested operation failed since there is no appropriate ASF index.%0",
+      "DecimalCode": -1072874852,
+      "HexCode": "0xC00D3A9C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_OUTOFRANGE",
+      "Message": "The value supplied is out of range for this operation.%0",
+      "DecimalCode": -1072874851,
+      "HexCode": "0xC00D3A9D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_INDEXNOTLOADED",
+      "Message": "The index entry requested needs to be loaded before it can be available.%0",
+      "DecimalCode": -1072874850,
+      "HexCode": "0xC00D3A9E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_TOO_MANY_PAYLOADS",
+      "Message": "The packet has reached the maximum number of payloads.%0",
+      "DecimalCode": -1072874849,
+      "HexCode": "0xC00D3A9F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_UNSUPPORTED_STREAM_TYPE",
+      "Message": "Stream type is not supported.%0",
+      "DecimalCode": -1072874848,
+      "HexCode": "0xC00D3AA0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_DROPPED_PACKET",
+      "Message": "One or more ASF packets were dropped.%0",
+      "DecimalCode": -1072874847,
+      "HexCode": "0xC00D3AA1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_EVENTS_AVAILABLE",
+      "Message": "There are no events available in the queue.%0",
+      "DecimalCode": -1072873856,
+      "HexCode": "0xC00D3E80",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_STATE_TRANSITION",
+      "Message": "A media source cannot go from the stopped state to the paused state.%0",
+      "DecimalCode": -1072873854,
+      "HexCode": "0xC00D3E82",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_END_OF_STREAM",
+      "Message": "The media stream cannot process any more samples because there are no more samples in the stream.%0",
+      "DecimalCode": -1072873852,
+      "HexCode": "0xC00D3E84",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SHUTDOWN",
+      "Message": "The request is invalid because Shutdown() has been called.%0",
+      "DecimalCode": -1072873851,
+      "HexCode": "0xC00D3E85",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MP3_NOTFOUND",
+      "Message": "The MP3 object was not found.%0",
+      "DecimalCode": -1072873850,
+      "HexCode": "0xC00D3E86",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MP3_OUTOFDATA",
+      "Message": "The MP3 parser ran out of data before finding the MP3 object.%0",
+      "DecimalCode": -1072873849,
+      "HexCode": "0xC00D3E87",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MP3_NOTMP3",
+      "Message": "The file is not really a MP3 file.%0",
+      "DecimalCode": -1072873848,
+      "HexCode": "0xC00D3E88",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MP3_NOTSUPPORTED",
+      "Message": "The MP3 file is not supported.%0",
+      "DecimalCode": -1072873847,
+      "HexCode": "0xC00D3E89",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_DURATION",
+      "Message": "The Media stream has no duration.%0",
+      "DecimalCode": -1072873846,
+      "HexCode": "0xC00D3E8A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_FORMAT",
+      "Message": "The Media format is recognized but is invalid.%0",
+      "DecimalCode": -1072873844,
+      "HexCode": "0xC00D3E8C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_NOT_FOUND",
+      "Message": "The property requested was not found.%0",
+      "DecimalCode": -1072873843,
+      "HexCode": "0xC00D3E8D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_READ_ONLY",
+      "Message": "The property is read only.%0",
+      "DecimalCode": -1072873842,
+      "HexCode": "0xC00D3E8E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROPERTY_NOT_ALLOWED",
+      "Message": "The specified property is not allowed in this context.%0",
+      "DecimalCode": -1072873841,
+      "HexCode": "0xC00D3E8F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_SOURCE_NOT_STARTED",
+      "Message": "The media source is not started.%0",
+      "DecimalCode": -1072873839,
+      "HexCode": "0xC00D3E91",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_FORMAT",
+      "Message": "The Media format is recognized but not supported.%0",
+      "DecimalCode": -1072873832,
+      "HexCode": "0xC00D3E98",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MP3_BAD_CRC",
+      "Message": "The MPEG frame has bad CRC.%0",
+      "DecimalCode": -1072873831,
+      "HexCode": "0xC00D3E99",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NOT_PROTECTED",
+      "Message": "The file is not protected.%0",
+      "DecimalCode": -1072873830,
+      "HexCode": "0xC00D3E9A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_SOURCE_WRONGSTATE",
+      "Message": "The media source is in the wrong state.%0",
+      "DecimalCode": -1072873829,
+      "HexCode": "0xC00D3E9B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_SOURCE_NO_STREAMS_SELECTED",
+      "Message": "No streams are selected in source presentation descriptor.%0",
+      "DecimalCode": -1072873828,
+      "HexCode": "0xC00D3E9C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CANNOT_FIND_KEYFRAME_SAMPLE",
+      "Message": "No key frame sample was found.%0",
+      "DecimalCode": -1072873827,
+      "HexCode": "0xC00D3E9D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_CHARACTERISTICS",
+      "Message": "The characteristics of the media source are not supported.%0",
+      "DecimalCode": -1072873826,
+      "HexCode": "0xC00D3E9E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_AUDIO_RECORDING_DEVICE",
+      "Message": "No audio recording device was found.%0",
+      "DecimalCode": -1072873825,
+      "HexCode": "0xC00D3E9F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_RECORDING_DEVICE_IN_USE",
+      "Message": "The requested audio recording device is currently in use.%0",
+      "DecimalCode": -1072873824,
+      "HexCode": "0xC00D3EA0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_RECORDING_DEVICE_INVALIDATED",
+      "Message": "The audio recording device is no longer present.%0",
+      "DecimalCode": -1072873823,
+      "HexCode": "0xC00D3EA1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_RECORDING_DEVICE_INVALIDATED",
+      "Message": "The video recording device is no longer present.%0",
+      "DecimalCode": -1072873822,
+      "HexCode": "0xC00D3EA2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_RECORDING_DEVICE_PREEMPTED",
+      "Message": "The video recording device is preempted by another immersive application.%0",
+      "DecimalCode": -1072873821,
+      "HexCode": "0xC00D3EA3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NETWORK_RESOURCE_FAILURE",
+      "Message": "An attempt to acquire a network resource failed.%0",
+      "DecimalCode": -1072872856,
+      "HexCode": "0xC00D4268",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_WRITE",
+      "Message": "Error writing to the network.%0",
+      "DecimalCode": -1072872855,
+      "HexCode": "0xC00D4269",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_READ",
+      "Message": "Error reading from the network.%0",
+      "DecimalCode": -1072872854,
+      "HexCode": "0xC00D426A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_REQUIRE_NETWORK",
+      "Message": "Internal. Entry cannot complete operation without network.%0",
+      "DecimalCode": -1072872853,
+      "HexCode": "0xC00D426B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_REQUIRE_ASYNC",
+      "Message": "Internal. Async op is required.%0",
+      "DecimalCode": -1072872852,
+      "HexCode": "0xC00D426C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_BWLEVEL_NOT_SUPPORTED",
+      "Message": "Internal. Bandwidth levels are not supported.%0",
+      "DecimalCode": -1072872851,
+      "HexCode": "0xC00D426D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_STREAMGROUPS_NOT_SUPPORTED",
+      "Message": "Internal. Stream groups are not supported.%0",
+      "DecimalCode": -1072872850,
+      "HexCode": "0xC00D426E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_MANUALSS_NOT_SUPPORTED",
+      "Message": "Manual stream selection is not supported.%0",
+      "DecimalCode": -1072872849,
+      "HexCode": "0xC00D426F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_INVALID_PRESENTATION_DESCRIPTOR",
+      "Message": "Invalid presentation descriptor.%0",
+      "DecimalCode": -1072872848,
+      "HexCode": "0xC00D4270",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_CACHESTREAM_NOT_FOUND",
+      "Message": "Cannot find cache stream.%0",
+      "DecimalCode": -1072872847,
+      "HexCode": "0xC00D4271",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_I_MANUAL_PROXY",
+      "Message": "The proxy setting is manual.%0",
+      "DecimalCode": 1074610802,
+      "HexCode": "0x400D4272",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_REQUIRE_INPUT",
+      "Message": "Internal. Entry cannot complete operation without input.%0",
+      "DecimalCode": -1072872844,
+      "HexCode": "0xC00D4274",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_REDIRECT",
+      "Message": "The client redirected to another server.%0",
+      "DecimalCode": -1072872843,
+      "HexCode": "0xC00D4275",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_REDIRECT_TO_PROXY",
+      "Message": "The client is redirected to a proxy server.%0",
+      "DecimalCode": -1072872842,
+      "HexCode": "0xC00D4276",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_TOO_MANY_REDIRECTS",
+      "Message": "The client reached maximum redirection limit.%0",
+      "DecimalCode": -1072872841,
+      "HexCode": "0xC00D4277",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_TIMEOUT",
+      "Message": "The server, a computer set up to offer multimedia content to other computers, could not handle your request for multimedia content in a timely manner.  Please try again later.%0",
+      "DecimalCode": -1072872840,
+      "HexCode": "0xC00D4278",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_CLIENT_CLOSE",
+      "Message": "The control socket is closed by the client.%0",
+      "DecimalCode": -1072872839,
+      "HexCode": "0xC00D4279",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_BAD_CONTROL_DATA",
+      "Message": "The server received invalid data from the client on the control connection.%0",
+      "DecimalCode": -1072872838,
+      "HexCode": "0xC00D427A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_INCOMPATIBLE_SERVER",
+      "Message": "The server is not a compatible streaming media server.%0",
+      "DecimalCode": -1072872837,
+      "HexCode": "0xC00D427B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_UNSAFE_URL",
+      "Message": "Url.%0",
+      "DecimalCode": -1072872836,
+      "HexCode": "0xC00D427C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_CACHE_NO_DATA",
+      "Message": "Data is not available.%0",
+      "DecimalCode": -1072872835,
+      "HexCode": "0xC00D427D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_EOL",
+      "Message": "End of line.%0",
+      "DecimalCode": -1072872834,
+      "HexCode": "0xC00D427E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_BAD_REQUEST",
+      "Message": "The request could not be understood by the server.%0",
+      "DecimalCode": -1072872833,
+      "HexCode": "0xC00D427F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_INTERNAL_SERVER_ERROR",
+      "Message": "The server encountered an unexpected condition which prevented it from fulfilling the request.%0",
+      "DecimalCode": -1072872832,
+      "HexCode": "0xC00D4280",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_SESSION_NOT_FOUND",
+      "Message": "Session not found.%0",
+      "DecimalCode": -1072872831,
+      "HexCode": "0xC00D4281",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_NOCONNECTION",
+      "Message": "There is no connection established with the Windows Media server. The operation failed.%0",
+      "DecimalCode": -1072872830,
+      "HexCode": "0xC00D4282",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_CONNECTION_FAILURE",
+      "Message": "The network connection has failed.%0",
+      "DecimalCode": -1072872829,
+      "HexCode": "0xC00D4283",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_INCOMPATIBLE_PUSHSERVER",
+      "Message": "The Server service that received the HTTP push request is not a compatible version of Windows Media Services (WMS).  This error may indicate the push request was received by IIS instead of WMS.  Ensure WMS is started and has the HTTP Server control protocol properly enabled and try again.%0",
+      "DecimalCode": -1072872828,
+      "HexCode": "0xC00D4284",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_SERVER_ACCESSDENIED",
+      "Message": "The Windows Media server is denying access.  The username and/or password might be incorrect.%0",
+      "DecimalCode": -1072872827,
+      "HexCode": "0xC00D4285",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_PROXY_ACCESSDENIED",
+      "Message": "The proxy server is denying access.  The username and/or password might be incorrect.%0",
+      "DecimalCode": -1072872826,
+      "HexCode": "0xC00D4286",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_CANNOTCONNECT",
+      "Message": "Unable to establish a connection to the server.%0",
+      "DecimalCode": -1072872825,
+      "HexCode": "0xC00D4287",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_INVALID_PUSH_TEMPLATE",
+      "Message": "The specified push template is invalid.%0",
+      "DecimalCode": -1072872824,
+      "HexCode": "0xC00D4288",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_INVALID_PUSH_PUBLISHING_POINT",
+      "Message": "The specified push publishing point is invalid.%0",
+      "DecimalCode": -1072872823,
+      "HexCode": "0xC00D4289",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_BUSY",
+      "Message": "The requested resource is in use.%0",
+      "DecimalCode": -1072872822,
+      "HexCode": "0xC00D428A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_RESOURCE_GONE",
+      "Message": "The Publishing Point or file on the Windows Media Server is no longer available.%0",
+      "DecimalCode": -1072872821,
+      "HexCode": "0xC00D428B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_ERROR_FROM_PROXY",
+      "Message": "The proxy experienced an error while attempting to contact the media server.%0",
+      "DecimalCode": -1072872820,
+      "HexCode": "0xC00D428C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_PROXY_TIMEOUT",
+      "Message": "The proxy did not receive a timely response while attempting to contact the media server.%0",
+      "DecimalCode": -1072872819,
+      "HexCode": "0xC00D428D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_SERVER_UNAVAILABLE",
+      "Message": "The server is currently unable to handle the request due to a temporary overloading or maintenance of the server.%0",
+      "DecimalCode": -1072872818,
+      "HexCode": "0xC00D428E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_TOO_MUCH_DATA",
+      "Message": "The encoding process was unable to keep up with the amount of supplied data.%0",
+      "DecimalCode": -1072872817,
+      "HexCode": "0xC00D428F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_SESSION_INVALID",
+      "Message": "Session not found.%0",
+      "DecimalCode": -1072872816,
+      "HexCode": "0xC00D4290",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_OFFLINE_MODE",
+      "Message": "The requested URL is not available in offline mode.%0",
+      "DecimalCode": -1072872815,
+      "HexCode": "0xC00D4291",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_UDP_BLOCKED",
+      "Message": "A device in the network is blocking UDP traffic.%0",
+      "DecimalCode": -1072872814,
+      "HexCode": "0xC00D4292",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_UNSUPPORTED_CONFIGURATION",
+      "Message": "The specified configuration value is not supported.%0",
+      "DecimalCode": -1072872813,
+      "HexCode": "0xC00D4293",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_PROTOCOL_DISABLED",
+      "Message": "The networking protocol is disabled.%0",
+      "DecimalCode": -1072872812,
+      "HexCode": "0xC00D4294",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NET_COMPANION_DRIVER_DISCONNECT",
+      "Message": "The companion driver asked the OS to disconnect from the receiver.%0",
+      "DecimalCode": -1072872811,
+      "HexCode": "0xC00D4295",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ALREADY_INITIALIZED",
+      "Message": "This object has already been initialized and cannot be re-initialized at this time.%0",
+      "DecimalCode": -1072871856,
+      "HexCode": "0xC00D4650",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BANDWIDTH_OVERRUN",
+      "Message": "The amount of data passed in exceeds the given bitrate and buffer window.%0",
+      "DecimalCode": -1072871855,
+      "HexCode": "0xC00D4651",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_LATE_SAMPLE",
+      "Message": "The sample was passed in too late to be correctly processed.%0",
+      "DecimalCode": -1072871854,
+      "HexCode": "0xC00D4652",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_FLUSH_NEEDED",
+      "Message": "The requested action cannot be carried out until the object is flushed and the queue is emptied.%0",
+      "DecimalCode": -1072871853,
+      "HexCode": "0xC00D4653",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_PROFILE",
+      "Message": "The profile is invalid.%0",
+      "DecimalCode": -1072871852,
+      "HexCode": "0xC00D4654",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INDEX_NOT_COMMITTED",
+      "Message": "The index that is being generated needs to be committed before the requested action can be carried out.%0",
+      "DecimalCode": -1072871851,
+      "HexCode": "0xC00D4655",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_INDEX",
+      "Message": "The index that is necessary for the requested action is not found.%0",
+      "DecimalCode": -1072871850,
+      "HexCode": "0xC00D4656",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CANNOT_INDEX_IN_PLACE",
+      "Message": "The requested index cannot be added in-place to the specified ASF content.%0",
+      "DecimalCode": -1072871849,
+      "HexCode": "0xC00D4657",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MISSING_ASF_LEAKYBUCKET",
+      "Message": "The ASF leaky bucket parameters must be specified in order to carry out this request.%0",
+      "DecimalCode": -1072871848,
+      "HexCode": "0xC00D4658",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_ASF_STREAMID",
+      "Message": "The stream id is invalid. The valid range for ASF stream id is from 1 to 127.%0",
+      "DecimalCode": -1072871847,
+      "HexCode": "0xC00D4659",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_STREAMSINK_REMOVED",
+      "Message": "The requested Stream Sink has been removed and cannot be used.%0",
+      "DecimalCode": -1072870856,
+      "HexCode": "0xC00D4A38",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_STREAMSINKS_OUT_OF_SYNC",
+      "Message": "The various Stream Sinks in this Media Sink are too far out of sync for the requested action to take place.%0",
+      "DecimalCode": -1072870854,
+      "HexCode": "0xC00D4A3A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_STREAMSINKS_FIXED",
+      "Message": "Stream Sinks cannot be added to or removed from this Media Sink because its set of streams is fixed.%0",
+      "DecimalCode": -1072870853,
+      "HexCode": "0xC00D4A3B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_STREAMSINK_EXISTS",
+      "Message": "The given Stream Sink already exists.%0",
+      "DecimalCode": -1072870852,
+      "HexCode": "0xC00D4A3C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SAMPLEALLOCATOR_CANCELED",
+      "Message": "Sample allocations have been canceled.%0",
+      "DecimalCode": -1072870851,
+      "HexCode": "0xC00D4A3D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SAMPLEALLOCATOR_EMPTY",
+      "Message": "The sample allocator is currently empty, due to outstanding requests.%0",
+      "DecimalCode": -1072870850,
+      "HexCode": "0xC00D4A3E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SINK_ALREADYSTOPPED",
+      "Message": "When we try to stop a stream sink, it is already stopped.%0",
+      "DecimalCode": -1072870849,
+      "HexCode": "0xC00D4A3F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ASF_FILESINK_BITRATE_UNKNOWN",
+      "Message": "The ASF file sink could not reserve AVIO because the bitrate is unknown.%0",
+      "DecimalCode": -1072870848,
+      "HexCode": "0xC00D4A40",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SINK_NO_STREAMS",
+      "Message": "No streams are selected in sink presentation descriptor.%0",
+      "DecimalCode": -1072870847,
+      "HexCode": "0xC00D4A41",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_SINK_NOT_FINALIZED",
+      "Message": "The sink has not been finalized before shut down. This may cause sink to generate corrupted content.%0",
+      "DecimalCode": 870978,
+      "HexCode": "0x000D4A42",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_METADATA_TOO_LONG",
+      "Message": "A metadata item was too long to write to the output container.%0",
+      "DecimalCode": -1072870845,
+      "HexCode": "0xC00D4A43",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SINK_NO_SAMPLES_PROCESSED",
+      "Message": "The operation failed because no samples were processed by the sink.%0",
+      "DecimalCode": -1072870844,
+      "HexCode": "0xC00D4A44",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SINK_HEADERS_NOT_FOUND",
+      "Message": "Sink could not create valid output file because required headers were not provided to the sink.%0",
+      "DecimalCode": -1072870843,
+      "HexCode": "0xC00D4A45",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_REN_NO_PROCAMP_HW",
+      "Message": "There is no available procamp hardware with which to perform color correction.%0",
+      "DecimalCode": -1072869856,
+      "HexCode": "0xC00D4E20",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_REN_NO_DEINTERLACE_HW",
+      "Message": "There is no available deinterlacing hardware with which to deinterlace the video stream.%0",
+      "DecimalCode": -1072869855,
+      "HexCode": "0xC00D4E21",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_REN_COPYPROT_FAILED",
+      "Message": "A video stream requires copy protection to be enabled, but there was a failure in attempting to enable copy protection.%0",
+      "DecimalCode": -1072869854,
+      "HexCode": "0xC00D4E22",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_REN_SURFACE_NOT_SHARED",
+      "Message": "A component is attempting to access a surface for sharing that is not shared.%0",
+      "DecimalCode": -1072869853,
+      "HexCode": "0xC00D4E23",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_VIDEO_DEVICE_LOCKED",
+      "Message": "A component is attempting to access a shared device that is already locked by another component.%0",
+      "DecimalCode": -1072869852,
+      "HexCode": "0xC00D4E24",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NEW_VIDEO_DEVICE",
+      "Message": "The device is no longer available. The handle should be closed and a new one opened.%0",
+      "DecimalCode": -1072869851,
+      "HexCode": "0xC00D4E25",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_VIDEO_SAMPLE_AVAILABLE",
+      "Message": "A video sample is not currently queued on a stream that is required for mixing.%0",
+      "DecimalCode": -1072869850,
+      "HexCode": "0xC00D4E26",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_AUDIO_PLAYBACK_DEVICE",
+      "Message": "No audio playback device was found.%0",
+      "DecimalCode": -1072869756,
+      "HexCode": "0xC00D4E84",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_PLAYBACK_DEVICE_IN_USE",
+      "Message": "The requested audio playback device is currently in use.%0",
+      "DecimalCode": -1072869755,
+      "HexCode": "0xC00D4E85",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_PLAYBACK_DEVICE_INVALIDATED",
+      "Message": "The audio playback device is no longer present.%0",
+      "DecimalCode": -1072869754,
+      "HexCode": "0xC00D4E86",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_SERVICE_NOT_RUNNING",
+      "Message": "The audio service is not running.%0",
+      "DecimalCode": -1072869753,
+      "HexCode": "0xC00D4E87",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_BUFFER_SIZE_ERROR",
+      "Message": "The audio renderer encountered an error trying to set the render buffer size.%0",
+      "DecimalCode": -1072869752,
+      "HexCode": "0xC00D4E88",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_AUDIO_CLIENT_WRAPPER_SPOOF_ERROR",
+      "Message": "The audio renderer encountered an error trying spoof the invalidated audio client.%0",
+      "DecimalCode": -1072869751,
+      "HexCode": "0xC00D4E89",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_INVALID_OPTIONAL_NODE",
+      "Message": "The topology contains an invalid optional node.  Possible reasons are incorrect number of outputs and inputs or optional node is at the beginning or end of a segment.%0",
+      "DecimalCode": -1072868850,
+      "HexCode": "0xC00D520E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_CANNOT_FIND_DECRYPTOR",
+      "Message": "No suitable transform was found to decrypt the content.%0",
+      "DecimalCode": -1072868847,
+      "HexCode": "0xC00D5211",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_CODEC_NOT_FOUND",
+      "Message": "No suitable transform was found to encode or decode the content.%0",
+      "DecimalCode": -1072868846,
+      "HexCode": "0xC00D5212",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_CANNOT_CONNECT",
+      "Message": "Unable to find a way to connect nodes.%0",
+      "DecimalCode": -1072868845,
+      "HexCode": "0xC00D5213",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_UNSUPPORTED",
+      "Message": "Unsupported operations in topoloader.%0",
+      "DecimalCode": -1072868844,
+      "HexCode": "0xC00D5214",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_INVALID_TIME_ATTRIBUTES",
+      "Message": "The topology or its nodes contain incorrectly set time attributes.%0",
+      "DecimalCode": -1072868843,
+      "HexCode": "0xC00D5215",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_LOOPS_IN_TOPOLOGY",
+      "Message": "The topology contains loops, which are unsupported in media foundation topologies.%0",
+      "DecimalCode": -1072868842,
+      "HexCode": "0xC00D5216",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_MISSING_PRESENTATION_DESCRIPTOR",
+      "Message": "A source stream node in the topology does not have a presentation descriptor.%0",
+      "DecimalCode": -1072868841,
+      "HexCode": "0xC00D5217",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_MISSING_STREAM_DESCRIPTOR",
+      "Message": "A source stream node in the topology does not have a stream descriptor.%0",
+      "DecimalCode": -1072868840,
+      "HexCode": "0xC00D5218",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_STREAM_DESCRIPTOR_NOT_SELECTED",
+      "Message": "A stream descriptor was set on a source stream node but it was not selected on the presentation descriptor.%0",
+      "DecimalCode": -1072868839,
+      "HexCode": "0xC00D5219",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_MISSING_SOURCE",
+      "Message": "A source stream node in the topology does not have a source.%0",
+      "DecimalCode": -1072868838,
+      "HexCode": "0xC00D521A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPO_SINK_ACTIVATES_UNSUPPORTED",
+      "Message": "The topology loader does not support sink activates on output nodes.%0",
+      "DecimalCode": -1072868837,
+      "HexCode": "0xC00D521B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SEQUENCER_UNKNOWN_SEGMENT_ID",
+      "Message": "The sequencer cannot find a segment with the given ID.%0",
+      "DecimalCode": -1072864852,
+      "HexCode": "0xC00D61AC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_SEQUENCER_CONTEXT_CANCELED",
+      "Message": "The context was canceled.%0",
+      "DecimalCode": 876973,
+      "HexCode": "0x000D61AD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_SOURCE_IN_CACHE",
+      "Message": "Cannot find source in source cache.%0",
+      "DecimalCode": -1072864850,
+      "HexCode": "0xC00D61AE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_SEQUENCER_SEGMENT_AT_END_OF_STREAM",
+      "Message": "Cannot update topology flags.%0",
+      "DecimalCode": 876975,
+      "HexCode": "0x000D61AF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_TYPE_NOT_SET",
+      "Message": "A valid type has not been set for this stream or a stream that it depends on.%0",
+      "DecimalCode": -1072861856,
+      "HexCode": "0xC00D6D60",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_STREAM_CHANGE",
+      "Message": "A stream change has occurred. Output cannot be produced until the streams have been renegotiated.%0",
+      "DecimalCode": -1072861855,
+      "HexCode": "0xC00D6D61",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_INPUT_REMAINING",
+      "Message": "The transform cannot take the requested action until all of the input data it currently holds is processed or flushed.%0",
+      "DecimalCode": -1072861854,
+      "HexCode": "0xC00D6D62",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROFILE_MISSING",
+      "Message": "The transform requires a profile but no profile was supplied or found.%0",
+      "DecimalCode": -1072861853,
+      "HexCode": "0xC00D6D63",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROFILE_INVALID_OR_CORRUPT",
+      "Message": "The transform requires a profile but the supplied profile was invalid or corrupt.%0",
+      "DecimalCode": -1072861852,
+      "HexCode": "0xC00D6D64",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROFILE_TRUNCATED",
+      "Message": "The transform requires a profile but the supplied profile ended unexpectedly while parsing.%0",
+      "DecimalCode": -1072861851,
+      "HexCode": "0xC00D6D65",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_PID_NOT_RECOGNIZED",
+      "Message": "The property ID does not match any property supported by the transform.%0",
+      "DecimalCode": -1072861850,
+      "HexCode": "0xC00D6D66",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_VARIANT_TYPE_WRONG",
+      "Message": "The variant does not have the type expected for this property ID.%0",
+      "DecimalCode": -1072861849,
+      "HexCode": "0xC00D6D67",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_NOT_WRITEABLE",
+      "Message": "An attempt was made to set the value on a read-only property.%0",
+      "DecimalCode": -1072861848,
+      "HexCode": "0xC00D6D68",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_ARRAY_VALUE_WRONG_NUM_DIM",
+      "Message": "The array property value has an unexpected number of dimensions.%0",
+      "DecimalCode": -1072861847,
+      "HexCode": "0xC00D6D69",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_VALUE_SIZE_WRONG",
+      "Message": "The array or blob property value has an unexpected size.%0",
+      "DecimalCode": -1072861846,
+      "HexCode": "0xC00D6D6A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_VALUE_OUT_OF_RANGE",
+      "Message": "The property value is out of range for this transform.%0",
+      "DecimalCode": -1072861845,
+      "HexCode": "0xC00D6D6B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_PROPERTY_VALUE_INCOMPATIBLE",
+      "Message": "The property value is incompatible with some other property or mediatype set on the transform.%0",
+      "DecimalCode": -1072861844,
+      "HexCode": "0xC00D6D6C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_NOT_POSSIBLE_FOR_CURRENT_OUTPUT_MEDIATYPE",
+      "Message": "The requested operation is not supported for the currently set output mediatype.%0",
+      "DecimalCode": -1072861843,
+      "HexCode": "0xC00D6D6D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_NOT_POSSIBLE_FOR_CURRENT_INPUT_MEDIATYPE",
+      "Message": "The requested operation is not supported for the currently set input mediatype.%0",
+      "DecimalCode": -1072861842,
+      "HexCode": "0xC00D6D6E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_NOT_POSSIBLE_FOR_CURRENT_MEDIATYPE_COMBINATION",
+      "Message": "The requested operation is not supported for the currently set combination of mediatypes.%0",
+      "DecimalCode": -1072861841,
+      "HexCode": "0xC00D6D6F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_CONFLICTS_WITH_OTHER_CURRENTLY_ENABLED_FEATURES",
+      "Message": "The requested feature is not supported in combination with some other currently enabled feature.%0",
+      "DecimalCode": -1072861840,
+      "HexCode": "0xC00D6D70",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_NEED_MORE_INPUT",
+      "Message": "The transform cannot produce output until it gets more input samples.%0",
+      "DecimalCode": -1072861838,
+      "HexCode": "0xC00D6D72",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_NOT_POSSIBLE_FOR_CURRENT_SPKR_CONFIG",
+      "Message": "The requested operation is not supported for the current speaker configuration.%0",
+      "DecimalCode": -1072861837,
+      "HexCode": "0xC00D6D73",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_CANNOT_CHANGE_MEDIATYPE_WHILE_PROCESSING",
+      "Message": "The transform cannot accept mediatype changes in the middle of processing.%0",
+      "DecimalCode": -1072861836,
+      "HexCode": "0xC00D6D74",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_TRANSFORM_DO_NOT_PROPAGATE_EVENT",
+      "Message": "The caller should not propagate this event to downstream components.%0",
+      "DecimalCode": 879989,
+      "HexCode": "0x000D6D75",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_D3D_TYPE",
+      "Message": "The input type is not supported for D3D device.%0",
+      "DecimalCode": -1072861834,
+      "HexCode": "0xC00D6D76",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_ASYNC_LOCKED",
+      "Message": "The caller does not appear to support this transform\u0027s asynchronous capabilities.%0",
+      "DecimalCode": -1072861833,
+      "HexCode": "0xC00D6D77",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_CANNOT_INITIALIZE_ACM_DRIVER",
+      "Message": "An audio compression manager driver could not be initialized by the transform.%0",
+      "DecimalCode": -1072861832,
+      "HexCode": "0xC00D6D78",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_STREAM_INVALID_RESOLUTION",
+      "Message": "The input stream has invalid and illegal resolution. Output should stop on next ProcessOutput call after the invalid and illegal resolution is detected.%0",
+      "DecimalCode": -1072861831,
+      "HexCode": "0xC00D6D79",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_ASYNC_MFT_NOT_SUPPORTED",
+      "Message": "The transform cannot be asynchronous in current context.%0",
+      "DecimalCode": -1072861830,
+      "HexCode": "0xC00D6D7A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSFORM_EXATTRIBUTE_NOT_SUPPORTED",
+      "Message": "It is not supported in the current context to have the transform copy attributes from an input sample to an output sample.%0",
+      "DecimalCode": -1072861828,
+      "HexCode": "0xC00D6D7C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_LICENSE_INCORRECT_RIGHTS",
+      "Message": "You are not allowed to open this file. Contact the content provider for further assistance.%0",
+      "DecimalCode": -1072860856,
+      "HexCode": "0xC00D7148",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_LICENSE_OUTOFDATE",
+      "Message": "The license for this media file has expired. Get a new license or contact the content provider for further assistance.%0",
+      "DecimalCode": -1072860855,
+      "HexCode": "0xC00D7149",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_LICENSE_REQUIRED",
+      "Message": "You need a license to perform the requested operation on this media file.%0",
+      "DecimalCode": -1072860854,
+      "HexCode": "0xC00D714A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DRM_HARDWARE_INCONSISTENT",
+      "Message": "The licenses for your media files are corrupted. Contact Microsoft product support.%0",
+      "DecimalCode": -1072860853,
+      "HexCode": "0xC00D714B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_CONTENT_PROTECTION_MANAGER",
+      "Message": "The APP needs to provide IMFContentProtectionManager callback to access the protected media file.%0",
+      "DecimalCode": -1072860852,
+      "HexCode": "0xC00D714C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_LICENSE_RESTORE_NO_RIGHTS",
+      "Message": "Client does not have rights to restore licenses.%0",
+      "DecimalCode": -1072860851,
+      "HexCode": "0xC00D714D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BACKUP_RESTRICTED_LICENSE",
+      "Message": "Licenses are restricted and hence can not be backed up.%0",
+      "DecimalCode": -1072860850,
+      "HexCode": "0xC00D714E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_LICENSE_RESTORE_NEEDS_INDIVIDUALIZATION",
+      "Message": "License restore requires machine to be individualized.%0",
+      "DecimalCode": -1072860849,
+      "HexCode": "0xC00D714F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_PROTECTION_NOT_REQUIRED",
+      "Message": "Protection for stream is not required.%0",
+      "DecimalCode": 880976,
+      "HexCode": "0x000D7150",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_COMPONENT_REVOKED",
+      "Message": "Component is revoked.%0",
+      "DecimalCode": -1072860847,
+      "HexCode": "0xC00D7151",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRUST_DISABLED",
+      "Message": "Trusted functionality is currently disabled on this component.%0",
+      "DecimalCode": -1072860846,
+      "HexCode": "0xC00D7152",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_WMDRMOTA_NO_ACTION",
+      "Message": "No Action is set on WMDRM Output Trust Authority.%0",
+      "DecimalCode": -1072860845,
+      "HexCode": "0xC00D7153",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_WMDRMOTA_ACTION_ALREADY_SET",
+      "Message": "Action is already set on WMDRM Output Trust Authority.%0",
+      "DecimalCode": -1072860844,
+      "HexCode": "0xC00D7154",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_WMDRMOTA_DRM_HEADER_NOT_AVAILABLE",
+      "Message": "DRM Heaader is not available.%0",
+      "DecimalCode": -1072860843,
+      "HexCode": "0xC00D7155",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_WMDRMOTA_DRM_ENCRYPTION_SCHEME_NOT_SUPPORTED",
+      "Message": "Current encryption scheme is not supported.%0",
+      "DecimalCode": -1072860842,
+      "HexCode": "0xC00D7156",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_WMDRMOTA_ACTION_MISMATCH",
+      "Message": "Action does not match with current configuration.%0",
+      "DecimalCode": -1072860841,
+      "HexCode": "0xC00D7157",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_WMDRMOTA_INVALID_POLICY",
+      "Message": "Invalid policy for WMDRM Output Trust Authority.%0",
+      "DecimalCode": -1072860840,
+      "HexCode": "0xC00D7158",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_POLICY_UNSUPPORTED",
+      "Message": "The policies that the Input Trust Authority requires to be enforced are unsupported by the outputs.%0",
+      "DecimalCode": -1072860839,
+      "HexCode": "0xC00D7159",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_OPL_NOT_SUPPORTED",
+      "Message": "The OPL that the license requires to be enforced are not supported by the Input Trust Authority.%0",
+      "DecimalCode": -1072860838,
+      "HexCode": "0xC00D715A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TOPOLOGY_VERIFICATION_FAILED",
+      "Message": "The topology could not be successfully verified.%0",
+      "DecimalCode": -1072860837,
+      "HexCode": "0xC00D715B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_SIGNATURE_VERIFICATION_FAILED",
+      "Message": "Signature verification could not be completed successfully for this component.%0",
+      "DecimalCode": -1072860836,
+      "HexCode": "0xC00D715C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DEBUGGING_NOT_ALLOWED",
+      "Message": "Running this process under a debugger while using protected content is not allowed.%0",
+      "DecimalCode": -1072860835,
+      "HexCode": "0xC00D715D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CODE_EXPIRED",
+      "Message": "MF component has expired.%0",
+      "DecimalCode": -1072860834,
+      "HexCode": "0xC00D715E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_GRL_VERSION_TOO_LOW",
+      "Message": "The current GRL on the machine does not meet the minimum version requirements.%0",
+      "DecimalCode": -1072860833,
+      "HexCode": "0xC00D715F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_GRL_RENEWAL_NOT_FOUND",
+      "Message": "The current GRL on the machine does not contain any renewal entries for the specified revocation.%0",
+      "DecimalCode": -1072860832,
+      "HexCode": "0xC00D7160",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_GRL_EXTENSIBLE_ENTRY_NOT_FOUND",
+      "Message": "The current GRL on the machine does not contain any extensible entries for the specified extension GUID.%0",
+      "DecimalCode": -1072860831,
+      "HexCode": "0xC00D7161",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_KERNEL_UNTRUSTED",
+      "Message": "The kernel isn\u0027t secure for high security level content.%0",
+      "DecimalCode": -1072860830,
+      "HexCode": "0xC00D7162",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PEAUTH_UNTRUSTED",
+      "Message": "The response from protected environment driver isn\u0027t valid.%0",
+      "DecimalCode": -1072860829,
+      "HexCode": "0xC00D7163",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NON_PE_PROCESS",
+      "Message": "A non-PE process tried to talk to PEAuth.%0",
+      "DecimalCode": -1072860827,
+      "HexCode": "0xC00D7165",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_REBOOT_REQUIRED",
+      "Message": "We need to reboot the machine.%0",
+      "DecimalCode": -1072860825,
+      "HexCode": "0xC00D7167",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_WAIT_FOR_POLICY_SET",
+      "Message": "Protection for this stream is not guaranteed to be enforced until the MEPolicySet event is fired.%0",
+      "DecimalCode": 881000,
+      "HexCode": "0x000D7168",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_VIDEO_DISABLED_WITH_UNKNOWN_SOFTWARE_OUTPUT",
+      "Message": "This video stream is disabled because it is being sent to an unknown software output.%0",
+      "DecimalCode": 881001,
+      "HexCode": "0x000D7169",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_GRL_INVALID_FORMAT",
+      "Message": "The GRL file is not correctly formed, it may have been corrupted or overwritten.%0",
+      "DecimalCode": -1072860822,
+      "HexCode": "0xC00D716A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_GRL_UNRECOGNIZED_FORMAT",
+      "Message": "The GRL file is in a format newer than those recognized by this GRL Reader.%0",
+      "DecimalCode": -1072860821,
+      "HexCode": "0xC00D716B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ALL_PROCESS_RESTART_REQUIRED",
+      "Message": "The GRL was reloaded and required all processes that can run protected media to restart.%0",
+      "DecimalCode": -1072860820,
+      "HexCode": "0xC00D716C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PROCESS_RESTART_REQUIRED",
+      "Message": "The GRL was reloaded and the current process needs to restart.%0",
+      "DecimalCode": -1072860819,
+      "HexCode": "0xC00D716D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_USERMODE_UNTRUSTED",
+      "Message": "The user space is untrusted for protected content play.%0",
+      "DecimalCode": -1072860818,
+      "HexCode": "0xC00D716E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PEAUTH_SESSION_NOT_STARTED",
+      "Message": "PEAuth communication session hasn\u0027t been started.%0",
+      "DecimalCode": -1072860817,
+      "HexCode": "0xC00D716F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PEAUTH_PUBLICKEY_REVOKED",
+      "Message": "PEAuth\u0027s public key is revoked.%0",
+      "DecimalCode": -1072860815,
+      "HexCode": "0xC00D7171",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_GRL_ABSENT",
+      "Message": "The GRL is absent.%0",
+      "DecimalCode": -1072860814,
+      "HexCode": "0xC00D7172",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_PE_TRUSTED",
+      "Message": "The Protected Environment is trusted.%0",
+      "DecimalCode": 881011,
+      "HexCode": "0x000D7173",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PE_UNTRUSTED",
+      "Message": "The Protected Environment is untrusted.%0",
+      "DecimalCode": -1072860812,
+      "HexCode": "0xC00D7174",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PEAUTH_NOT_STARTED",
+      "Message": "The Protected Environment Authorization service (PEAUTH) has not been started.%0",
+      "DecimalCode": -1072860811,
+      "HexCode": "0xC00D7175",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INCOMPATIBLE_SAMPLE_PROTECTION",
+      "Message": "The sample protection algorithms supported by components are not compatible.%0",
+      "DecimalCode": -1072860810,
+      "HexCode": "0xC00D7176",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_PE_SESSIONS_MAXED",
+      "Message": "No more protected environment sessions can be supported.%0",
+      "DecimalCode": -1072860809,
+      "HexCode": "0xC00D7177",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HIGH_SECURITY_LEVEL_CONTENT_NOT_ALLOWED",
+      "Message": "WMDRM ITA does not allow protected content with high security level for this release.%0",
+      "DecimalCode": -1072860808,
+      "HexCode": "0xC00D7178",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TEST_SIGNED_COMPONENTS_NOT_ALLOWED",
+      "Message": "WMDRM ITA cannot allow the requested action for the content as one or more components is not properly signed.%0",
+      "DecimalCode": -1072860807,
+      "HexCode": "0xC00D7179",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ITA_UNSUPPORTED_ACTION",
+      "Message": "WMDRM ITA does not support the requested action.%0",
+      "DecimalCode": -1072860806,
+      "HexCode": "0xC00D717A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ITA_ERROR_PARSING_SAP_PARAMETERS",
+      "Message": "WMDRM ITA encountered an error in parsing the Secure Audio Path parameters.%0",
+      "DecimalCode": -1072860805,
+      "HexCode": "0xC00D717B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_POLICY_MGR_ACTION_OUTOFBOUNDS",
+      "Message": "The Policy Manager action passed in is invalid.%0",
+      "DecimalCode": -1072860804,
+      "HexCode": "0xC00D717C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_BAD_OPL_STRUCTURE_FORMAT",
+      "Message": "The structure specifying Output Protection Level is not the correct format.%0",
+      "DecimalCode": -1072860803,
+      "HexCode": "0xC00D717D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ITA_UNRECOGNIZED_ANALOG_VIDEO_PROTECTION_GUID",
+      "Message": "WMDRM ITA does not recognize the Explicite Analog Video Output Protection guid specified in the license.%0",
+      "DecimalCode": -1072860802,
+      "HexCode": "0xC00D717E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_PMP_HOST",
+      "Message": "IMFPMPHost object not available.%0",
+      "DecimalCode": -1072860801,
+      "HexCode": "0xC00D717F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ITA_OPL_DATA_NOT_INITIALIZED",
+      "Message": "WMDRM ITA could not initialize the Output Protection Level data.%0",
+      "DecimalCode": -1072860800,
+      "HexCode": "0xC00D7180",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ITA_UNRECOGNIZED_ANALOG_VIDEO_OUTPUT",
+      "Message": "WMDRM ITA does not recognize the Analog Video Output specified by the OTA.%0",
+      "DecimalCode": -1072860799,
+      "HexCode": "0xC00D7181",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ITA_UNRECOGNIZED_DIGITAL_VIDEO_OUTPUT",
+      "Message": "WMDRM ITA does not recognize the Digital Video Output specified by the OTA.%0",
+      "DecimalCode": -1072860798,
+      "HexCode": "0xC00D7182",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_RESOLUTION_REQUIRES_PMP_CREATION_CALLBACK",
+      "Message": "The protected stream cannot be resolved without the callback PKEY_PMP_Creation_Callback in the configuration property store.%0",
+      "DecimalCode": -1072860797,
+      "HexCode": "0xC00D7183",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_AKE_CHANNEL_PARAMETERS",
+      "Message": "A valid hostname and port number could not be found in the DTCP parameters.%0",
+      "DecimalCode": -1072860796,
+      "HexCode": "0xC00D7184",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CONTENT_PROTECTION_SYSTEM_NOT_ENABLED",
+      "Message": "The content protection system was not enabled by the application.%0",
+      "DecimalCode": -1072860795,
+      "HexCode": "0xC00D7185",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_CONTENT_PROTECTION_SYSTEM",
+      "Message": "The content protection system is not supported.%0",
+      "DecimalCode": -1072860794,
+      "HexCode": "0xC00D7186",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DRM_MIGRATION_NOT_SUPPORTED",
+      "Message": "DRM migration is not supported for the content.%0",
+      "DecimalCode": -1072860793,
+      "HexCode": "0xC00D7187",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HDCP_AUTHENTICATION_FAILURE",
+      "Message": "Authentication of the HDCP link failed.%0",
+      "DecimalCode": -1072860792,
+      "HexCode": "0xC00D7188",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HDCP_LINK_FAILURE",
+      "Message": "The HDCP link failed after being established.%0",
+      "DecimalCode": -1072860791,
+      "HexCode": "0xC00D7189",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_INVALID_CONTINUITY_KEY",
+      "Message": "The continuity key supplied is not currently valid.%0",
+      "DecimalCode": -1072849856,
+      "HexCode": "0xC00D9C40",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_NO_TIME_SOURCE",
+      "Message": "No Presentation Time Source has been specified.%0",
+      "DecimalCode": -1072849855,
+      "HexCode": "0xC00D9C41",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_STATE_ALREADY_SET",
+      "Message": "The clock is already in the requested state.%0",
+      "DecimalCode": -1072849854,
+      "HexCode": "0xC00D9C42",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_NOT_SIMPLE",
+      "Message": "The clock has too many advanced features to carry out the request.%0",
+      "DecimalCode": -1072849853,
+      "HexCode": "0xC00D9C43",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_S_CLOCK_STOPPED",
+      "Message": "Timer::SetTimer returns this success code if called happened while timer is stopped. Timer is not going to be dispatched until clock is running.%0",
+      "DecimalCode": 891972,
+      "HexCode": "0x000D9C44",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_AUDIO_DEVICE_POSITION_UNEXPECTED",
+      "Message": "The clock can\u0027t return a valid time because the audio position returned from the audio playback device is unexpected.%0",
+      "DecimalCode": 891973,
+      "HexCode": "0x000D9C45",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_AUDIO_RENDER_POSITION_UNEXPECTED",
+      "Message": "The clock can\u0027t return a valid render time because the audio position specified to the clock is unexpected.%0",
+      "DecimalCode": 891974,
+      "HexCode": "0x000D9C46",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CLOCK_AUDIO_RENDER_TIME_UNEXPECTED",
+      "Message": "The clock can\u0027t return a valid render position because the timestamp specified to the clock is unexpected.%0",
+      "DecimalCode": 891975,
+      "HexCode": "0x000D9C47",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_MORE_DROP_MODES",
+      "Message": "The component does not support any more drop modes.%0",
+      "DecimalCode": -1072848856,
+      "HexCode": "0xC00DA028",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_MORE_QUALITY_LEVELS",
+      "Message": "The component does not support any more quality levels.%0",
+      "DecimalCode": -1072848855,
+      "HexCode": "0xC00DA029",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_DROPTIME_NOT_SUPPORTED",
+      "Message": "The component does not support drop time functionality.%0",
+      "DecimalCode": -1072848854,
+      "HexCode": "0xC00DA02A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_QUALITYKNOB_WAIT_LONGER",
+      "Message": "Quality Manager needs to wait longer before bumping the Quality Level up.%0",
+      "DecimalCode": -1072848853,
+      "HexCode": "0xC00DA02B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_QM_INVALIDSTATE",
+      "Message": "Quality Manager is in an invalid state. Quality Management is off at this moment.%0",
+      "DecimalCode": -1072848852,
+      "HexCode": "0xC00DA02C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSCODE_NO_CONTAINERTYPE",
+      "Message": "No transcode output container type is specified.%0",
+      "DecimalCode": -1072847856,
+      "HexCode": "0xC00DA410",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSCODE_PROFILE_NO_MATCHING_STREAMS",
+      "Message": "The profile does not have a media type configuration for any selected source streams.%0",
+      "DecimalCode": -1072847855,
+      "HexCode": "0xC00DA411",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSCODE_NO_MATCHING_ENCODER",
+      "Message": "Cannot find an encoder MFT that accepts the user preferred output type.%0",
+      "DecimalCode": -1072847854,
+      "HexCode": "0xC00DA412",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TRANSCODE_INVALID_PROFILE",
+      "Message": "The profile is invalid.%0",
+      "DecimalCode": -1072847853,
+      "HexCode": "0xC00DA413",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ALLOCATOR_NOT_INITIALIZED",
+      "Message": "Memory allocator is not initialized.%0",
+      "DecimalCode": -1072846856,
+      "HexCode": "0xC00DA7F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ALLOCATOR_NOT_COMMITED",
+      "Message": "Memory allocator is not committed yet.%0",
+      "DecimalCode": -1072846855,
+      "HexCode": "0xC00DA7F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_ALLOCATOR_ALREADY_COMMITED",
+      "Message": "Memory allocator has already been committed.%0",
+      "DecimalCode": -1072846854,
+      "HexCode": "0xC00DA7FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_STREAM_ERROR",
+      "Message": "An error occurred in media stream.%0",
+      "DecimalCode": -1072846853,
+      "HexCode": "0xC00DA7FB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_INVALID_STREAM_STATE",
+      "Message": "Stream is not in a state to handle the request.%0",
+      "DecimalCode": -1072846852,
+      "HexCode": "0xC00DA7FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HW_STREAM_NOT_CONNECTED",
+      "Message": "Hardware stream is not connected yet.%0",
+      "DecimalCode": -1072846851,
+      "HexCode": "0xC00DA7FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_NO_CAPTURE_DEVICES_AVAILABLE",
+      "Message": "No capture devices are available.%0",
+      "DecimalCode": -1072845856,
+      "HexCode": "0xC00DABE0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SINK_OUTPUT_NOT_SET",
+      "Message": "No output was set for recording.%0",
+      "DecimalCode": -1072845855,
+      "HexCode": "0xC00DABE1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SINK_MIRROR_ERROR",
+      "Message": "The current capture sink configuration does not support mirroring.%0",
+      "DecimalCode": -1072845854,
+      "HexCode": "0xC00DABE2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SINK_ROTATE_ERROR",
+      "Message": "The current capture sink configuration does not support rotation.%0",
+      "DecimalCode": -1072845853,
+      "HexCode": "0xC00DABE3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_ENGINE_INVALID_OP",
+      "Message": "The op is invalid.%0",
+      "DecimalCode": -1072845852,
+      "HexCode": "0xC00DABE4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_ENGINE_ALL_EFFECTS_REMOVED",
+      "Message": "The effects previously added were incompatible with the new topology which caused all effects to be removed.%0",
+      "DecimalCode": -1072845851,
+      "HexCode": "0xC00DABE5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SOURCE_NO_INDEPENDENT_PHOTO_STREAM_PRESENT",
+      "Message": "The current capture source does not have an independent photo stream.%0",
+      "DecimalCode": -1072845850,
+      "HexCode": "0xC00DABE6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SOURCE_NO_VIDEO_STREAM_PRESENT",
+      "Message": "The current capture source does not have a video stream.%0",
+      "DecimalCode": -1072845849,
+      "HexCode": "0xC00DABE7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SOURCE_NO_AUDIO_STREAM_PRESENT",
+      "Message": "The current capture source does not have an audio stream.%0",
+      "DecimalCode": -1072845848,
+      "HexCode": "0xC00DABE8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_SOURCE_DEVICE_EXTENDEDPROP_OP_IN_PROGRESS",
+      "Message": "The capture source device has an asynchronous extended property operation in progress.%0",
+      "DecimalCode": -1072845847,
+      "HexCode": "0xC00DABE9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_PROPERTY_SET_DURING_PHOTO",
+      "Message": "A property cannot be set because a photo or photo sequence is in progress.%0",
+      "DecimalCode": -1072845846,
+      "HexCode": "0xC00DABEA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAPTURE_NO_SAMPLES_IN_QUEUE",
+      "Message": "No more samples in queue.%0",
+      "DecimalCode": -1072845845,
+      "HexCode": "0xC00DABEB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_HW_ACCELERATED_THUMBNAIL_NOT_SUPPORTED",
+      "Message": "Hardware accelerated thumbnail generation is not supported for the currently selected mediatype on the mediacapture stream.%0",
+      "DecimalCode": -1072845844,
+      "HexCode": "0xC00DABEC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_UNSUPPORTED_CAPTURE_DEVICE_PRESENT",
+      "Message": "Capture device that is present on the system is not supported by Media Foundation.%0",
+      "DecimalCode": -1072845843,
+      "HexCode": "0xC00DABED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TIMELINECONTROLLER_UNSUPPORTED_SOURCE_TYPE",
+      "Message": "Media Source type is not supported in Media Timeline Controller scenarios.%0",
+      "DecimalCode": -1072844856,
+      "HexCode": "0xC00DAFC8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TIMELINECONTROLLER_NOT_ALLOWED",
+      "Message": "Operation is not allowed when Media Timeline Controller is attached.%0",
+      "DecimalCode": -1072844855,
+      "HexCode": "0xC00DAFC9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_TIMELINECONTROLLER_CANNOT_ATTACH",
+      "Message": "Attaching Media Timeline Controller is blocked because of the current state of the object.%0",
+      "DecimalCode": -1072844854,
+      "HexCode": "0xC00DAFCA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_EXTENSION_APPSERVICE_CONNECTION_FAILED",
+      "Message": "Connection to app service providing a media extension failed.%0",
+      "DecimalCode": -1072843856,
+      "HexCode": "0xC00DB3B0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_EXTENSION_APPSERVICE_REQUEST_FAILED",
+      "Message": "App service providing a media extension failed to process the request.%0",
+      "DecimalCode": -1072843855,
+      "HexCode": "0xC00DB3B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_EXTENSION_PACKAGE_INTEGRITY_CHECK_FAILED",
+      "Message": "Package integrity check for app failed.%0",
+      "DecimalCode": -1072843854,
+      "HexCode": "0xC00DB3B2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_EXTENSION_PACKAGE_LICENSE_INVALID",
+      "Message": "License check for app failed.%0",
+      "DecimalCode": -1072843853,
+      "HexCode": "0xC00DB3B3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_MEDIA_EXTENSION_PACKAGE_BAD_STATUS",
+      "Message": "Package status for app not ok.%0",
+      "DecimalCode": -1072843852,
+      "HexCode": "0xC00DB3B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAMERA_PRIVACY_NOT_ALLOWED",
+      "Message": "Camera access is not allowed by Privacy Settings.%0",
+      "DecimalCode": -1072842856,
+      "HexCode": "0xC00DB798",
+      "Type": "HResult"
+    },
+    {
+      "Id": "MF_E_CAMERA_FSPROFILE_INVALID",
+      "Message": "Camera profile is invalid.%0",
+      "DecimalCode": -1072842854,
+      "HexCode": "0xC00DB79A",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_MF",
+      "Code": 13
+    },
+    {
+      "Name": "FACILITY_MF_WIN32",
+      "Code": 7
+    }
+  ]
+}

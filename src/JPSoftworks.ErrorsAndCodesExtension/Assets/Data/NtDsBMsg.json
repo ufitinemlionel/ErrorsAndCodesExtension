@@ -1,0 +1,1321 @@
+{
+  "HeaderFileName": "ntdsbmsg.h",
+  "ErrorCodes": [
+    {
+      "Id": "hrNone",
+      "Message": "The operation was successful",
+      "DecimalCode": 0,
+      "HexCode": "0x00000000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNyi",
+      "Message": "The function is not yet implemented",
+      "DecimalCode": -1073741823,
+      "HexCode": "0xC0000001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidParam",
+      "Message": "The parameter is not valid.",
+      "DecimalCode": -939589631,
+      "HexCode": "0xC7FF0001",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrError",
+      "Message": "An internal error has occurred.",
+      "DecimalCode": -939589630,
+      "HexCode": "0xC7FF0002",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidHandle",
+      "Message": "The handle is not valid.",
+      "DecimalCode": -939589629,
+      "HexCode": "0xC7FF0003",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRestoreInProgress",
+      "Message": "The Restore process is already in progress.",
+      "DecimalCode": -939589628,
+      "HexCode": "0xC7FF0004",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrAlreadyOpen",
+      "Message": "The file specified is already open.",
+      "DecimalCode": -939589627,
+      "HexCode": "0xC7FF0005",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidRecips",
+      "Message": "The recipients are invalid.",
+      "DecimalCode": -939589626,
+      "HexCode": "0xC7FF0006",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCouldNotConnect",
+      "Message": "Unable to perform the backup. Either you are not connected to the specified backup server or the service you are trying to backup is not running.",
+      "DecimalCode": -939589625,
+      "HexCode": "0xC7FF0007",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRestoreMapExists",
+      "Message": "A restore map already exists for the specified component.  You can only specify a restore map when performing a full restore.",
+      "DecimalCode": -939589624,
+      "HexCode": "0xC7FF0008",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIncrementalBackupDisabled",
+      "Message": "Another application has modified the specified Windows NT Directory Service database such that any subsequent backups will fail. You must perform a full backup to fix this problem.",
+      "DecimalCode": -939589623,
+      "HexCode": "0xC7FF0009",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogFileNotFound",
+      "Message": "Unable to perform an incremental backup because a required Windows NT Directory Service database log file could not be found.",
+      "DecimalCode": -939589622,
+      "HexCode": "0xC7FF000A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCircularLogging",
+      "Message": "The Windows NT Directory Service component specified is configured to use circular database logs. It cannot be backed up without a full backup.",
+      "DecimalCode": -939589621,
+      "HexCode": "0xC7FF000B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoFullRestore",
+      "Message": "The databases have not been restored to this machine. You cannot restore an incremental backup until a full backup has been restored.",
+      "DecimalCode": -939589620,
+      "HexCode": "0xC7FF000C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCommunicationError",
+      "Message": "A communications error occurred while attempting to perform a local backup.",
+      "DecimalCode": -939589619,
+      "HexCode": "0xC7FF000D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFullBackupNotTaken",
+      "Message": "You must perform a full backup before you can perform an incremental backup.",
+      "DecimalCode": -939589618,
+      "HexCode": "0xC7FF000E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrMissingExpiryToken",
+      "Message": "Expiry token is missing. Cannot restore without knowing the expiry information.",
+      "DecimalCode": -939589617,
+      "HexCode": "0xC7FF000F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrUnknownExpiryTokenFormat",
+      "Message": "Expiry token is in unrecognizable format.",
+      "DecimalCode": -939589616,
+      "HexCode": "0xC7FF0010",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrContentsExpired",
+      "Message": "DS Contents in the backup copy are out of date. Try restoring with a more recent copy.",
+      "DecimalCode": -939589615,
+      "HexCode": "0xC7FF0011",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFileClose",
+      "Message": "Unable to close the DOS file",
+      "DecimalCode": -939523994,
+      "HexCode": "0xC8000066",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfThreads",
+      "Message": "Unable to start a thread because there are none available.",
+      "DecimalCode": -939523993,
+      "HexCode": "0xC8000067",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyIO",
+      "Message": "The system is busy because there are too many I/Os.",
+      "DecimalCode": -939523991,
+      "HexCode": "0xC8000069",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBFNotSynchronous",
+      "Message": "The buffer page has been evicted.",
+      "DecimalCode": -2013265720,
+      "HexCode": "0x880000C8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBFPageNotFound",
+      "Message": "Unable to find the page.",
+      "DecimalCode": -2013265719,
+      "HexCode": "0x880000C9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBFInUse",
+      "Message": "Unable to abandon the buffer.",
+      "DecimalCode": -939523894,
+      "HexCode": "0xC80000CA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrPMRecDeleted",
+      "Message": "The record has been deleted.",
+      "DecimalCode": -939523794,
+      "HexCode": "0xC800012E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRemainingVersions",
+      "Message": "There is idle work remaining.",
+      "DecimalCode": -2013265599,
+      "HexCode": "0x88000141",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFLDKeyTooBig",
+      "Message": "The key was truncated because it exceeded the maximum length.",
+      "DecimalCode": -2013265520,
+      "HexCode": "0x88000190",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFLDTooManySegments",
+      "Message": "There are too many key segments.",
+      "DecimalCode": -939523695,
+      "HexCode": "0xC8000191",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFLDNullKey",
+      "Message": "The key is NULL.",
+      "DecimalCode": -2013265518,
+      "HexCode": "0x88000192",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogFileCorrupt",
+      "Message": "The log file is damaged.",
+      "DecimalCode": -939523595,
+      "HexCode": "0xC80001F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoBackupDirectory",
+      "Message": "No backup directory was given.",
+      "DecimalCode": -939523593,
+      "HexCode": "0xC80001F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBackupDirectoryNotEmpty",
+      "Message": "The backup directory is not empty.",
+      "DecimalCode": -939523592,
+      "HexCode": "0xC80001F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBackupInProgress",
+      "Message": "Backup is already active.",
+      "DecimalCode": -939523591,
+      "HexCode": "0xC80001F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrMissingPreviousLogFile",
+      "Message": "A log file for the checkpoint is missing.",
+      "DecimalCode": -939523587,
+      "HexCode": "0xC80001FD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogWriteFail",
+      "Message": "Unable to write to the log file.",
+      "DecimalCode": -939523586,
+      "HexCode": "0xC80001FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadLogVersion",
+      "Message": "The version of the log file is not compatible with the version of the Windows NT Directory Service database (NTDS).",
+      "DecimalCode": -939523582,
+      "HexCode": "0xC8000202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidLogSequence",
+      "Message": "The time stamp in the next log does not match what was expected.",
+      "DecimalCode": -939523581,
+      "HexCode": "0xC8000203",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLoggingDisabled",
+      "Message": "The log is not active.",
+      "DecimalCode": -939523580,
+      "HexCode": "0xC8000204",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogBufferTooSmall",
+      "Message": "The log buffer is too small to be recovered.",
+      "DecimalCode": -939523579,
+      "HexCode": "0xC8000205",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogSequenceEnd",
+      "Message": "The maximum number of log files has been exceeded.",
+      "DecimalCode": -939523577,
+      "HexCode": "0xC8000207",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoBackup",
+      "Message": "There is no backup in progress.",
+      "DecimalCode": -939523576,
+      "HexCode": "0xC8000208",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidBackupSequence",
+      "Message": "The backup call is out of sequence.",
+      "DecimalCode": -939523575,
+      "HexCode": "0xC8000209",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBackupNotAllowedYet",
+      "Message": "Unable to perform a backup now.",
+      "DecimalCode": -939523573,
+      "HexCode": "0xC800020B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDeleteBackupFileFail",
+      "Message": "Unable to delete the backup file.",
+      "DecimalCode": -939523572,
+      "HexCode": "0xC800020C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrMakeBackupDirectoryFail",
+      "Message": "Unable to make a backup temporary directory.",
+      "DecimalCode": -939523571,
+      "HexCode": "0xC800020D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidBackup",
+      "Message": "An incremental backup cannot be performed when circular logging is enabled.",
+      "DecimalCode": -939523570,
+      "HexCode": "0xC800020E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRecoveredWithErrors",
+      "Message": "Errors were encountered during the repair process.",
+      "DecimalCode": -939523569,
+      "HexCode": "0xC800020F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrMissingLogFile",
+      "Message": "The current log file is missing.",
+      "DecimalCode": -939523568,
+      "HexCode": "0xC8000210",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogDiskFull",
+      "Message": "The log disk is full.",
+      "DecimalCode": -939523567,
+      "HexCode": "0xC8000211",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadLogSignature",
+      "Message": "A log file is damaged.",
+      "DecimalCode": -939523566,
+      "HexCode": "0xC8000212",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadDbSignature",
+      "Message": "A database file is damaged.",
+      "DecimalCode": -939523565,
+      "HexCode": "0xC8000213",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadCheckpointSignature",
+      "Message": "A checkpoint file is damaged.",
+      "DecimalCode": -939523564,
+      "HexCode": "0xC8000214",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCheckpointCorrupt",
+      "Message": "A checkpoint file either could not be found or is damaged.",
+      "DecimalCode": -939523563,
+      "HexCode": "0xC8000215",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseInconsistent",
+      "Message": "The database is damaged.",
+      "DecimalCode": -939523546,
+      "HexCode": "0xC8000226",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrConsistentTimeMismatch",
+      "Message": "There is a mismatch in the database\u0027s last consistent time.",
+      "DecimalCode": -939523545,
+      "HexCode": "0xC8000227",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrPatchFileMismatch",
+      "Message": "The patch file is not generated from this backup.",
+      "DecimalCode": -939523544,
+      "HexCode": "0xC8000228",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRestoreLogTooLow",
+      "Message": "The starting log number is too low for the restore.",
+      "DecimalCode": -939523543,
+      "HexCode": "0xC8000229",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRestoreLogTooHigh",
+      "Message": "The starting log number is too high for the restore.",
+      "DecimalCode": -939523542,
+      "HexCode": "0xC800022A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrGivenLogFileHasBadSignature",
+      "Message": "The log file downloaded from the tape is damaged.",
+      "DecimalCode": -939523541,
+      "HexCode": "0xC800022B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrGivenLogFileIsNotContiguous",
+      "Message": "Unable to find a mandatory log file after the tape was downloaded.",
+      "DecimalCode": -939523540,
+      "HexCode": "0xC800022C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrMissingRestoreLogFiles",
+      "Message": "The data is not fully restored because some log files are missing.",
+      "DecimalCode": -939523539,
+      "HexCode": "0xC800022D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrExistingLogFileHasBadSignature",
+      "Message": "The log file in the log file path is damaged.",
+      "DecimalCode": -2013265362,
+      "HexCode": "0x8800022E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrExistingLogFileIsNotContiguous",
+      "Message": "Unable to find a mandatory log file in the log file path.",
+      "DecimalCode": -2013265361,
+      "HexCode": "0x8800022F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrMissingFullBackup",
+      "Message": "The database missed a previous full backup before the incremental backup.",
+      "DecimalCode": -939523536,
+      "HexCode": "0xC8000230",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadBackupDatabaseSize",
+      "Message": "The backup database size must be a multiple of 4K (4096 bytes).",
+      "DecimalCode": -939523535,
+      "HexCode": "0xC8000231",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTermInProgress",
+      "Message": "The database is being shut down.",
+      "DecimalCode": -939523096,
+      "HexCode": "0xC80003E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFeatureNotAvailable",
+      "Message": "The feature is not available.",
+      "DecimalCode": -939523095,
+      "HexCode": "0xC80003E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidName",
+      "Message": "The name is not valid.",
+      "DecimalCode": -939523094,
+      "HexCode": "0xC80003EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidParameter",
+      "Message": "The parameter is not valid.",
+      "DecimalCode": -939523093,
+      "HexCode": "0xC80003EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnNull",
+      "Message": "The value of the column is null.",
+      "DecimalCode": -2013264916,
+      "HexCode": "0x880003EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBufferTruncated",
+      "Message": "The buffer is too small for data.",
+      "DecimalCode": -2013264914,
+      "HexCode": "0x880003EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseAttached",
+      "Message": "The database is already attached.",
+      "DecimalCode": -2013264913,
+      "HexCode": "0x880003EF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidDatabaseId",
+      "Message": "The database ID is not valid.",
+      "DecimalCode": -939523086,
+      "HexCode": "0xC80003F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfMemory",
+      "Message": "The computer is out of memory.",
+      "DecimalCode": -939523085,
+      "HexCode": "0xC80003F3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfDatabaseSpace",
+      "Message": "The database has reached the maximum size of 16 GB.",
+      "DecimalCode": -939523084,
+      "HexCode": "0xC80003F4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfCursors",
+      "Message": "Out of table cursors.",
+      "DecimalCode": -939523083,
+      "HexCode": "0xC80003F5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfBuffers",
+      "Message": "Out of database page buffers.",
+      "DecimalCode": -939523082,
+      "HexCode": "0xC80003F6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyIndexes",
+      "Message": "There are too many indexes.",
+      "DecimalCode": -939523081,
+      "HexCode": "0xC80003F7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyKeys",
+      "Message": "There are too many columns in an index.",
+      "DecimalCode": -939523080,
+      "HexCode": "0xC80003F8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRecordDeleted",
+      "Message": "The record has been deleted.",
+      "DecimalCode": -939523079,
+      "HexCode": "0xC80003F9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrReadVerifyFailure",
+      "Message": "A read verification error occurred.",
+      "DecimalCode": -939523078,
+      "HexCode": "0xC80003FA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfFileHandles",
+      "Message": "Out of file handles.",
+      "DecimalCode": -939523076,
+      "HexCode": "0xC80003FC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDiskIO",
+      "Message": "A disk I/O error occurred.",
+      "DecimalCode": -939523074,
+      "HexCode": "0xC80003FE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidPath",
+      "Message": "The path to the file is not valid.",
+      "DecimalCode": -939523073,
+      "HexCode": "0xC80003FF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRecordTooBig",
+      "Message": "The record has exceeded the maximum size.",
+      "DecimalCode": -939523070,
+      "HexCode": "0xC8000402",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyOpenDatabases",
+      "Message": "There are too many open databases.",
+      "DecimalCode": -939523069,
+      "HexCode": "0xC8000403",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidDatabase",
+      "Message": "The file is not a database file.",
+      "DecimalCode": -939523068,
+      "HexCode": "0xC8000404",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNotInitialized",
+      "Message": "The database was not yet called.",
+      "DecimalCode": -939523067,
+      "HexCode": "0xC8000405",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrAlreadyInitialized",
+      "Message": "The database was already called.",
+      "DecimalCode": -939523066,
+      "HexCode": "0xC8000406",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFileAccessDenied",
+      "Message": "Unable to access the file.",
+      "DecimalCode": -939523064,
+      "HexCode": "0xC8000408",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBufferTooSmall",
+      "Message": "The buffer is too small.",
+      "DecimalCode": -939523058,
+      "HexCode": "0xC800040E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrSeekNotEqual",
+      "Message": "Either SeekLE or SeekGE did not find an exact match.",
+      "DecimalCode": -2013264881,
+      "HexCode": "0x8800040F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyColumns",
+      "Message": "There are too many columns defined.",
+      "DecimalCode": -939523056,
+      "HexCode": "0xC8000410",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrContainerNotEmpty",
+      "Message": "The container is not empty.",
+      "DecimalCode": -939523053,
+      "HexCode": "0xC8000413",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidFilename",
+      "Message": "The filename is not valid.",
+      "DecimalCode": -939523052,
+      "HexCode": "0xC8000414",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidBookmark",
+      "Message": "The bookmark is not valid.",
+      "DecimalCode": -939523051,
+      "HexCode": "0xC8000415",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnInUse",
+      "Message": "The column is used in an index.",
+      "DecimalCode": -939523050,
+      "HexCode": "0xC8000416",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidBufferSize",
+      "Message": "The data buffer does not match the column size.",
+      "DecimalCode": -939523049,
+      "HexCode": "0xC8000417",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnNotUpdatable",
+      "Message": "Unable to set the column value.",
+      "DecimalCode": -939523048,
+      "HexCode": "0xC8000418",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexInUse",
+      "Message": "The index is in use.",
+      "DecimalCode": -939523045,
+      "HexCode": "0xC800041B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNullKeyDisallowed",
+      "Message": "Null keys are not allowed on an index.",
+      "DecimalCode": -939523043,
+      "HexCode": "0xC800041D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNotInTransaction",
+      "Message": "The operation must be within a transaction.",
+      "DecimalCode": -939523042,
+      "HexCode": "0xC800041E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoIdleActivity",
+      "Message": "No idle activity occurred.",
+      "DecimalCode": -2013264862,
+      "HexCode": "0x88000422",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyActiveUsers",
+      "Message": "There are too many active database users.",
+      "DecimalCode": -939523037,
+      "HexCode": "0xC8000423",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidCountry",
+      "Message": "The country code is either not known or is not valid.",
+      "DecimalCode": -939523035,
+      "HexCode": "0xC8000425",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidLanguageId",
+      "Message": "The language ID is either not known or is not valid.",
+      "DecimalCode": -939523034,
+      "HexCode": "0xC8000426",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidCodePage",
+      "Message": "The code page is either not known or is not valid.",
+      "DecimalCode": -939523033,
+      "HexCode": "0xC8000427",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoWriteLock",
+      "Message": "There is no write lock at transaction level 0.",
+      "DecimalCode": -2013264853,
+      "HexCode": "0x8800042B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnSetNull",
+      "Message": "The column value is set to null.",
+      "DecimalCode": -2013264852,
+      "HexCode": "0x8800042C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrVersionStoreOutOfMemory",
+      "Message": "lMaxVerPages exceeded (XJET only)",
+      "DecimalCode": -939523027,
+      "HexCode": "0xC800042D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCurrencyStackOutOfMemory",
+      "Message": "Out of cursors.",
+      "DecimalCode": -939523026,
+      "HexCode": "0xC800042E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrOutOfSessions",
+      "Message": "Out of sessions.",
+      "DecimalCode": -939522995,
+      "HexCode": "0xC800044D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrWriteConflict",
+      "Message": "The write lock failed due to an outstanding write lock.",
+      "DecimalCode": -939522994,
+      "HexCode": "0xC800044E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTransTooDeep",
+      "Message": "The transactions are nested too deeply.",
+      "DecimalCode": -939522993,
+      "HexCode": "0xC800044F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidSesid",
+      "Message": "The session handle is not valid.",
+      "DecimalCode": -939522992,
+      "HexCode": "0xC8000450",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrSessionWriteConflict",
+      "Message": "Another session has a private version of the page.",
+      "DecimalCode": -939522989,
+      "HexCode": "0xC8000453",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInTransaction",
+      "Message": "The operation is not allowed within a transaction.",
+      "DecimalCode": -939522988,
+      "HexCode": "0xC8000454",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseDuplicate",
+      "Message": "The database already exists.",
+      "DecimalCode": -939522895,
+      "HexCode": "0xC80004B1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseInUse",
+      "Message": "The database is in use.",
+      "DecimalCode": -939522894,
+      "HexCode": "0xC80004B2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseNotFound",
+      "Message": "The database does not exist.",
+      "DecimalCode": -939522893,
+      "HexCode": "0xC80004B3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseInvalidName",
+      "Message": "The database name is not valid.",
+      "DecimalCode": -939522892,
+      "HexCode": "0xC80004B4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseInvalidPages",
+      "Message": "The number of pages is not valid.",
+      "DecimalCode": -939522891,
+      "HexCode": "0xC80004B5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseCorrupted",
+      "Message": "The database file is either damaged or cannot be found.",
+      "DecimalCode": -939522890,
+      "HexCode": "0xC80004B6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDatabaseLocked",
+      "Message": "The database is locked.",
+      "DecimalCode": -939522889,
+      "HexCode": "0xC80004B7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTableEmpty",
+      "Message": "An empty table was opened.",
+      "DecimalCode": -2013264619,
+      "HexCode": "0x88000515",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTableLocked",
+      "Message": "The table is locked.",
+      "DecimalCode": -939522794,
+      "HexCode": "0xC8000516",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTableDuplicate",
+      "Message": "The table already exists.",
+      "DecimalCode": -939522793,
+      "HexCode": "0xC8000517",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTableInUse",
+      "Message": "Unable to lock the table because it is already in use.",
+      "DecimalCode": -939522792,
+      "HexCode": "0xC8000518",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrObjectNotFound",
+      "Message": "The table or object does not exist.",
+      "DecimalCode": -939522791,
+      "HexCode": "0xC8000519",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCannotRename",
+      "Message": "Unable to rename the temporary file.",
+      "DecimalCode": -939522790,
+      "HexCode": "0xC800051A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDensityInvalid",
+      "Message": "The file/index density is not valid.",
+      "DecimalCode": -939522789,
+      "HexCode": "0xC800051B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTableNotEmpty",
+      "Message": "Unable to define the clustered index.",
+      "DecimalCode": -939522788,
+      "HexCode": "0xC800051C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidTableId",
+      "Message": "The table ID is not valid.",
+      "DecimalCode": -939522786,
+      "HexCode": "0xC800051E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyOpenTables",
+      "Message": "Unable to open any more tables.",
+      "DecimalCode": -939522785,
+      "HexCode": "0xC800051F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIllegalOperation",
+      "Message": "The operation is not supported on tables.",
+      "DecimalCode": -939522784,
+      "HexCode": "0xC8000520",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrObjectDuplicate",
+      "Message": "The table or object name is already being used.",
+      "DecimalCode": -939522782,
+      "HexCode": "0xC8000522",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidObject",
+      "Message": "The object is not valid for operation.",
+      "DecimalCode": -939522780,
+      "HexCode": "0xC8000524",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexCantBuild",
+      "Message": "Unable to build a clustered index.",
+      "DecimalCode": -939522695,
+      "HexCode": "0xC8000579",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexHasPrimary",
+      "Message": "The primary index is already defined.",
+      "DecimalCode": -939522694,
+      "HexCode": "0xC800057A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexDuplicate",
+      "Message": "The index is already defined.",
+      "DecimalCode": -939522693,
+      "HexCode": "0xC800057B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexNotFound",
+      "Message": "The index does not exist.",
+      "DecimalCode": -939522692,
+      "HexCode": "0xC800057C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexMustStay",
+      "Message": "Unable to delete a clustered index.",
+      "DecimalCode": -939522691,
+      "HexCode": "0xC800057D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexInvalidDef",
+      "Message": "The index definition is illegal.",
+      "DecimalCode": -939522690,
+      "HexCode": "0xC800057E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrIndexHasClustered",
+      "Message": "The clustered index is already defined.",
+      "DecimalCode": -939522688,
+      "HexCode": "0xC8000580",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCreateIndexFailed",
+      "Message": "Unable to create the index because an error occurred while creating a table.",
+      "DecimalCode": -2013264511,
+      "HexCode": "0x88000581",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyOpenIndexes",
+      "Message": "Out of index description blocks.",
+      "DecimalCode": -939522686,
+      "HexCode": "0xC8000582",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnLong",
+      "Message": "The column value is too long.",
+      "DecimalCode": -939522595,
+      "HexCode": "0xC80005DD",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnDoesNotFit",
+      "Message": "The field will not fit in the record.",
+      "DecimalCode": -939522593,
+      "HexCode": "0xC80005DF",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNullInvalid",
+      "Message": "The value cannot be null.",
+      "DecimalCode": -939522592,
+      "HexCode": "0xC80005E0",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnIndexed",
+      "Message": "Unable to delete because the column is indexed.",
+      "DecimalCode": -939522591,
+      "HexCode": "0xC80005E1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnTooBig",
+      "Message": "The length of the field exceeds the maximum length.",
+      "DecimalCode": -939522590,
+      "HexCode": "0xC80005E2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnNotFound",
+      "Message": "Unable to find the column.",
+      "DecimalCode": -939522589,
+      "HexCode": "0xC80005E3",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnDuplicate",
+      "Message": "The field is already defined.",
+      "DecimalCode": -939522588,
+      "HexCode": "0xC80005E4",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumn2ndSysMaint",
+      "Message": "Only one auto-increment or version column is allowed per table.",
+      "DecimalCode": -939522586,
+      "HexCode": "0xC80005E6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidColumnType",
+      "Message": "The column data type is not valid.",
+      "DecimalCode": -939522585,
+      "HexCode": "0xC80005E7",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnMaxTruncated",
+      "Message": "The column was truncated because it exceeded the maximum length.",
+      "DecimalCode": -2013264408,
+      "HexCode": "0x880005E8",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrColumnCannotIndex",
+      "Message": "Unable to index a long value column.",
+      "DecimalCode": -939522583,
+      "HexCode": "0xC80005E9",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTaggedNotNULL",
+      "Message": "Tagged columns cannot be null.",
+      "DecimalCode": -939522582,
+      "HexCode": "0xC80005EA",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoCurrentIndex",
+      "Message": "The entry is not valid without a current index.",
+      "DecimalCode": -939522581,
+      "HexCode": "0xC80005EB",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrKeyIsMade",
+      "Message": "The key is completely made.",
+      "DecimalCode": -939522580,
+      "HexCode": "0xC80005EC",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadColumnId",
+      "Message": "The column ID is not correct.",
+      "DecimalCode": -939522579,
+      "HexCode": "0xC80005ED",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrBadItagSequence",
+      "Message": "There is a bad instance identifier for a multivalued column.",
+      "DecimalCode": -939522578,
+      "HexCode": "0xC80005EE",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrCannotBeTagged",
+      "Message": "AutoIncrement and Version cannot be multivalued.",
+      "DecimalCode": -939522575,
+      "HexCode": "0xC80005F1",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRecordNotFound",
+      "Message": "Unable to find the key.",
+      "DecimalCode": -939522495,
+      "HexCode": "0xC8000641",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrNoCurrentRecord",
+      "Message": "The currency is not on a record.",
+      "DecimalCode": -939522493,
+      "HexCode": "0xC8000643",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrRecordClusteredChanged",
+      "Message": "A clustered key cannot be changed.",
+      "DecimalCode": -939522492,
+      "HexCode": "0xC8000644",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrKeyDuplicate",
+      "Message": "The key already exists.",
+      "DecimalCode": -939522491,
+      "HexCode": "0xC8000645",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrAlreadyPrepared",
+      "Message": "The current entry has already been copied or cleared.",
+      "DecimalCode": -939522489,
+      "HexCode": "0xC8000647",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrKeyNotMade",
+      "Message": "No key was made.",
+      "DecimalCode": -939522488,
+      "HexCode": "0xC8000648",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrUpdateNotPrepared",
+      "Message": "Update was not prepared.",
+      "DecimalCode": -939522487,
+      "HexCode": "0xC8000649",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrwrnDataHasChanged",
+      "Message": "Data has changed.",
+      "DecimalCode": -2013264310,
+      "HexCode": "0x8800064A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrerrDataHasChanged",
+      "Message": "The operation was abandoned because data has changed.",
+      "DecimalCode": -939522485,
+      "HexCode": "0xC800064B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrKeyChanged",
+      "Message": "Moved to a new key.",
+      "DecimalCode": -2013264302,
+      "HexCode": "0x88000652",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManySorts",
+      "Message": "There are too many sort processes.",
+      "DecimalCode": -939522395,
+      "HexCode": "0xC80006A5",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidOnSort",
+      "Message": "An operation that is not valid occurred in the sort.",
+      "DecimalCode": -939522394,
+      "HexCode": "0xC80006A6",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTempFileOpenError",
+      "Message": "Unable to open the temporary file.",
+      "DecimalCode": -939522293,
+      "HexCode": "0xC800070B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrTooManyAttachedDatabases",
+      "Message": "There are too many databases open.",
+      "DecimalCode": -939522291,
+      "HexCode": "0xC800070D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrDiskFull",
+      "Message": "The disk is full.",
+      "DecimalCode": -939522288,
+      "HexCode": "0xC8000710",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrPermissionDenied",
+      "Message": "Permission is denied.",
+      "DecimalCode": -939522287,
+      "HexCode": "0xC8000711",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFileNotFound",
+      "Message": "Unable to find the file.",
+      "DecimalCode": -939522285,
+      "HexCode": "0xC8000713",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrFileOpenReadOnly",
+      "Message": "The database file is read only.",
+      "DecimalCode": -2013264107,
+      "HexCode": "0x88000715",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrAfterInitialization",
+      "Message": "Unable to restore after initialization.",
+      "DecimalCode": -939522246,
+      "HexCode": "0xC800073A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrLogCorrupted",
+      "Message": "The database log files are damaged.",
+      "DecimalCode": -939522244,
+      "HexCode": "0xC800073C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrInvalidOperation",
+      "Message": "The operation is not valid.",
+      "DecimalCode": -939522190,
+      "HexCode": "0xC8000772",
+      "Type": "HResult"
+    },
+    {
+      "Id": "hrAccessDenied",
+      "Message": "Access is denied.",
+      "DecimalCode": -939522189,
+      "HexCode": "0xC8000773",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_NTDSB",
+      "Code": 2048
+    },
+    {
+      "Name": "FACILITY_BACKUP",
+      "Code": 2047
+    },
+    {
+      "Name": "FACILITY_SYSTEM",
+      "Code": 0
+    }
+  ]
+}

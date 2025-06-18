@@ -1,0 +1,113 @@
+{
+  "HeaderFileName": "filterr.h",
+  "ErrorCodes": [
+    {
+      "Id": "NOT_AN_ERROR",
+      "Message": "NOTE:  This dummy error message is necessary to force MC to output the above defines inside the FACILITY_WINDOWS guard instead of leaving it empty.",
+      "DecimalCode": 524288,
+      "HexCode": "0x00080000",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_END_OF_CHUNKS",
+      "Message": "No more chunks of text available in object.",
+      "DecimalCode": -2147215616,
+      "HexCode": "0x80041700",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_NO_MORE_TEXT",
+      "Message": "No more text available in chunk.",
+      "DecimalCode": -2147215615,
+      "HexCode": "0x80041701",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_NO_MORE_VALUES",
+      "Message": "No more property values available in chunk.",
+      "DecimalCode": -2147215614,
+      "HexCode": "0x80041702",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_ACCESS",
+      "Message": "Unable to access object.",
+      "DecimalCode": -2147215613,
+      "HexCode": "0x80041703",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_W_MONIKER_CLIPPED",
+      "Message": "Moniker doesn\u0027t cover entire region.",
+      "DecimalCode": 268036,
+      "HexCode": "0x00041704",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_NO_TEXT",
+      "Message": "No text in current chunk.",
+      "DecimalCode": -2147215611,
+      "HexCode": "0x80041705",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_NO_VALUES",
+      "Message": "No values in current chunk.",
+      "DecimalCode": -2147215610,
+      "HexCode": "0x80041706",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_EMBEDDING_UNAVAILABLE",
+      "Message": "Unable to bind IFilter for embedded object.",
+      "DecimalCode": -2147215609,
+      "HexCode": "0x80041707",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_LINK_UNAVAILABLE",
+      "Message": "Unable to bind IFilter for linked object.",
+      "DecimalCode": -2147215608,
+      "HexCode": "0x80041708",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_LAST_TEXT",
+      "Message": "This is the last text in the current chunk.",
+      "DecimalCode": 268041,
+      "HexCode": "0x00041709",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_S_LAST_VALUES",
+      "Message": "This is the last value in the current chunk.",
+      "DecimalCode": 268042,
+      "HexCode": "0x0004170A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_PASSWORD",
+      "Message": "File was not filtered due to password protection.",
+      "DecimalCode": -2147215605,
+      "HexCode": "0x8004170B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "FILTER_E_UNKNOWNFORMAT",
+      "Message": "The document format is not recognized by the flter.",
+      "DecimalCode": -2147215604,
+      "HexCode": "0x8004170C",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": [
+    {
+      "Name": "FACILITY_ITF",
+      "Code": 4
+    },
+    {
+      "Name": "FACILITY_WINDOWS",
+      "Code": 8
+    }
+  ]
+}

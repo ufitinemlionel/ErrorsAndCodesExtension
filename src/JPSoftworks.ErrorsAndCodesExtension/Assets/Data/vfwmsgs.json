@@ -1,0 +1,1119 @@
+{
+  "HeaderFileName": "vfwmsgs.h",
+  "ErrorCodes": [
+    {
+      "Id": "VFW_E_INVALIDMEDIATYPE",
+      "Message": "An invalid media type was specified.%0",
+      "DecimalCode": -2147220992,
+      "HexCode": "0x80040200",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALIDSUBTYPE",
+      "Message": "An invalid media subtype was specified.%0",
+      "DecimalCode": -2147220991,
+      "HexCode": "0x80040201",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NEED_OWNER",
+      "Message": "This object can only be created as an aggregated object.%0",
+      "DecimalCode": -2147220990,
+      "HexCode": "0x80040202",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_ENUM_OUT_OF_SYNC",
+      "Message": "The enumerator has become invalid.%0",
+      "DecimalCode": -2147220989,
+      "HexCode": "0x80040203",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_ALREADY_CONNECTED",
+      "Message": "At least one of the pins involved in the operation is already connected.%0",
+      "DecimalCode": -2147220988,
+      "HexCode": "0x80040204",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_FILTER_ACTIVE",
+      "Message": "This operation cannot be performed because the filter is active.%0",
+      "DecimalCode": -2147220987,
+      "HexCode": "0x80040205",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_TYPES",
+      "Message": "One of the specified pins supports no media types.%0",
+      "DecimalCode": -2147220986,
+      "HexCode": "0x80040206",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_ACCEPTABLE_TYPES",
+      "Message": "There is no common media type between these pins.%0",
+      "DecimalCode": -2147220985,
+      "HexCode": "0x80040207",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALID_DIRECTION",
+      "Message": "Two pins of the same direction cannot be connected together.%0",
+      "DecimalCode": -2147220984,
+      "HexCode": "0x80040208",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_CONNECTED",
+      "Message": "The operation cannot be performed because the pins are not connected.%0",
+      "DecimalCode": -2147220983,
+      "HexCode": "0x80040209",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_ALLOCATOR",
+      "Message": "No sample buffer allocator is available.%0",
+      "DecimalCode": -2147220982,
+      "HexCode": "0x8004020A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_RUNTIME_ERROR",
+      "Message": "A run-time error occurred.%0",
+      "DecimalCode": -2147220981,
+      "HexCode": "0x8004020B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BUFFER_NOTSET",
+      "Message": "No buffer space has been set.%0",
+      "DecimalCode": -2147220980,
+      "HexCode": "0x8004020C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BUFFER_OVERFLOW",
+      "Message": "The buffer is not big enough.%0",
+      "DecimalCode": -2147220979,
+      "HexCode": "0x8004020D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BADALIGN",
+      "Message": "An invalid alignment was specified.%0",
+      "DecimalCode": -2147220978,
+      "HexCode": "0x8004020E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_ALREADY_COMMITTED",
+      "Message": "Cannot change allocated memory while the filter is active.%0",
+      "DecimalCode": -2147220977,
+      "HexCode": "0x8004020F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BUFFERS_OUTSTANDING",
+      "Message": "One or more buffers are still active.%0",
+      "DecimalCode": -2147220976,
+      "HexCode": "0x80040210",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_COMMITTED",
+      "Message": "Cannot allocate a sample when the allocator is not active.%0",
+      "DecimalCode": -2147220975,
+      "HexCode": "0x80040211",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_SIZENOTSET",
+      "Message": "Cannot allocate memory because no size has been set.%0",
+      "DecimalCode": -2147220974,
+      "HexCode": "0x80040212",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_CLOCK",
+      "Message": "Cannot lock for synchronization because no clock has been defined.%0",
+      "DecimalCode": -2147220973,
+      "HexCode": "0x80040213",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_SINK",
+      "Message": "Quality messages could not be sent because no quality sink has been defined.%0",
+      "DecimalCode": -2147220972,
+      "HexCode": "0x80040214",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_INTERFACE",
+      "Message": "A required interface has not been implemented.%0",
+      "DecimalCode": -2147220971,
+      "HexCode": "0x80040215",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_FOUND",
+      "Message": "An object or name was not found.%0",
+      "DecimalCode": -2147220970,
+      "HexCode": "0x80040216",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CANNOT_CONNECT",
+      "Message": "No combination of intermediate filters could be found to make the connection.%0",
+      "DecimalCode": -2147220969,
+      "HexCode": "0x80040217",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CANNOT_RENDER",
+      "Message": "No combination of filters could be found to render the stream.%0",
+      "DecimalCode": -2147220968,
+      "HexCode": "0x80040218",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CHANGING_FORMAT",
+      "Message": "Could not change formats dynamically.%0",
+      "DecimalCode": -2147220967,
+      "HexCode": "0x80040219",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_COLOR_KEY_SET",
+      "Message": "No color key has been set.%0",
+      "DecimalCode": -2147220966,
+      "HexCode": "0x8004021A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_OVERLAY_CONNECTION",
+      "Message": "Current pin connection is not using the IOverlay transport.%0",
+      "DecimalCode": -2147220965,
+      "HexCode": "0x8004021B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_SAMPLE_CONNECTION",
+      "Message": "Current pin connection is not using the IMemInputPin transport.%0",
+      "DecimalCode": -2147220964,
+      "HexCode": "0x8004021C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_PALETTE_SET",
+      "Message": "Setting a color key would conflict with the palette already set.%0",
+      "DecimalCode": -2147220963,
+      "HexCode": "0x8004021D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_COLOR_KEY_SET",
+      "Message": "Setting a palette would conflict with the color key already set.%0",
+      "DecimalCode": -2147220962,
+      "HexCode": "0x8004021E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_COLOR_KEY_FOUND",
+      "Message": "No matching color key is available.%0",
+      "DecimalCode": -2147220961,
+      "HexCode": "0x8004021F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_PALETTE_AVAILABLE",
+      "Message": "No palette is available.%0",
+      "DecimalCode": -2147220960,
+      "HexCode": "0x80040220",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_DISPLAY_PALETTE",
+      "Message": "Display does not use a palette.%0",
+      "DecimalCode": -2147220959,
+      "HexCode": "0x80040221",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_TOO_MANY_COLORS",
+      "Message": "Too many colors for the current display settings.%0",
+      "DecimalCode": -2147220958,
+      "HexCode": "0x80040222",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_STATE_CHANGED",
+      "Message": "The state changed while waiting to process the sample.%0",
+      "DecimalCode": -2147220957,
+      "HexCode": "0x80040223",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_STOPPED",
+      "Message": "The operation could not be performed because the filter is not stopped.%0",
+      "DecimalCode": -2147220956,
+      "HexCode": "0x80040224",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_PAUSED",
+      "Message": "The operation could not be performed because the filter is not paused.%0",
+      "DecimalCode": -2147220955,
+      "HexCode": "0x80040225",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_RUNNING",
+      "Message": "The operation could not be performed because the filter is not running.%0",
+      "DecimalCode": -2147220954,
+      "HexCode": "0x80040226",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_WRONG_STATE",
+      "Message": "The operation could not be performed because the filter is in the wrong state.%0",
+      "DecimalCode": -2147220953,
+      "HexCode": "0x80040227",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_START_TIME_AFTER_END",
+      "Message": "The sample start time is after the sample end time.%0",
+      "DecimalCode": -2147220952,
+      "HexCode": "0x80040228",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALID_RECT",
+      "Message": "The supplied rectangle is invalid.%0",
+      "DecimalCode": -2147220951,
+      "HexCode": "0x80040229",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_TYPE_NOT_ACCEPTED",
+      "Message": "This pin cannot use the supplied media type.%0",
+      "DecimalCode": -2147220950,
+      "HexCode": "0x8004022A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_SAMPLE_REJECTED",
+      "Message": "This sample cannot be rendered.%0",
+      "DecimalCode": -2147220949,
+      "HexCode": "0x8004022B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_SAMPLE_REJECTED_EOS",
+      "Message": "This sample cannot be rendered because the end of the stream has been reached.%0",
+      "DecimalCode": -2147220948,
+      "HexCode": "0x8004022C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DUPLICATE_NAME",
+      "Message": "An attempt to add a filter with a duplicate name failed.%0",
+      "DecimalCode": -2147220947,
+      "HexCode": "0x8004022D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_DUPLICATE_NAME",
+      "Message": "An attempt to add a filter with a duplicate name succeeded with a modified name.%0",
+      "DecimalCode": 262701,
+      "HexCode": "0x0004022D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_TIMEOUT",
+      "Message": "A time-out has expired.%0",
+      "DecimalCode": -2147220946,
+      "HexCode": "0x8004022E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALID_FILE_FORMAT",
+      "Message": "The file format is invalid.%0",
+      "DecimalCode": -2147220945,
+      "HexCode": "0x8004022F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_ENUM_OUT_OF_RANGE",
+      "Message": "The list has already been exhausted.%0",
+      "DecimalCode": -2147220944,
+      "HexCode": "0x80040230",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CIRCULAR_GRAPH",
+      "Message": "The filter graph is circular.%0",
+      "DecimalCode": -2147220943,
+      "HexCode": "0x80040231",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_ALLOWED_TO_SAVE",
+      "Message": "Updates are not allowed in this state.%0",
+      "DecimalCode": -2147220942,
+      "HexCode": "0x80040232",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_TIME_ALREADY_PASSED",
+      "Message": "An attempt was made to queue a command for a time in the past.%0",
+      "DecimalCode": -2147220941,
+      "HexCode": "0x80040233",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_ALREADY_CANCELLED",
+      "Message": "The queued command has already been canceled.%0",
+      "DecimalCode": -2147220940,
+      "HexCode": "0x80040234",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CORRUPT_GRAPH_FILE",
+      "Message": "Cannot render the file because it is corrupt.%0",
+      "DecimalCode": -2147220939,
+      "HexCode": "0x80040235",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_ADVISE_ALREADY_SET",
+      "Message": "An overlay advise link already exists.%0",
+      "DecimalCode": -2147220938,
+      "HexCode": "0x80040236",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_STATE_INTERMEDIATE",
+      "Message": "The state transition has not completed.%0",
+      "DecimalCode": 262711,
+      "HexCode": "0x00040237",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_MODEX_AVAILABLE",
+      "Message": "No full-screen modes are available.%0",
+      "DecimalCode": -2147220936,
+      "HexCode": "0x80040238",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_ADVISE_SET",
+      "Message": "This Advise cannot be canceled because it was not successfully set.%0",
+      "DecimalCode": -2147220935,
+      "HexCode": "0x80040239",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_FULLSCREEN",
+      "Message": "A full-screen mode is not available.%0",
+      "DecimalCode": -2147220934,
+      "HexCode": "0x8004023A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_IN_FULLSCREEN_MODE",
+      "Message": "Cannot call IVideoWindow methods while in full-screen mode.%0",
+      "DecimalCode": -2147220933,
+      "HexCode": "0x8004023B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_UNKNOWN_FILE_TYPE",
+      "Message": "The media type of this file is not recognized.%0",
+      "DecimalCode": -2147220928,
+      "HexCode": "0x80040240",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CANNOT_LOAD_SOURCE_FILTER",
+      "Message": "The source filter for this file could not be loaded.%0",
+      "DecimalCode": -2147220927,
+      "HexCode": "0x80040241",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_PARTIAL_RENDER",
+      "Message": "Some of the streams in this movie are in an unsupported format.%0",
+      "DecimalCode": 262722,
+      "HexCode": "0x00040242",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_FILE_TOO_SHORT",
+      "Message": "A file appeared to be incomplete.%0",
+      "DecimalCode": -2147220925,
+      "HexCode": "0x80040243",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALID_FILE_VERSION",
+      "Message": "The version number of the file is invalid.%0",
+      "DecimalCode": -2147220924,
+      "HexCode": "0x80040244",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_SOME_DATA_IGNORED",
+      "Message": "The file contained some property settings that were not used.%0",
+      "DecimalCode": 262725,
+      "HexCode": "0x00040245",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_CONNECTIONS_DEFERRED",
+      "Message": "Some connections have failed and have been deferred.%0",
+      "DecimalCode": 262726,
+      "HexCode": "0x00040246",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALID_CLSID",
+      "Message": "This file is corrupt: it contains an invalid class identifier.%0",
+      "DecimalCode": -2147220921,
+      "HexCode": "0x80040247",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_INVALID_MEDIA_TYPE",
+      "Message": "This file is corrupt: it contains an invalid media type.%0",
+      "DecimalCode": -2147220920,
+      "HexCode": "0x80040248",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BAD_KEY",
+      "Message": "A registry entry is corrupt.%0",
+      "DecimalCode": -2147220494,
+      "HexCode": "0x800403F2",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_NO_MORE_ITEMS",
+      "Message": "The end of the list has been reached.%0",
+      "DecimalCode": 262403,
+      "HexCode": "0x00040103",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_SAMPLE_TIME_NOT_SET",
+      "Message": "No time stamp has been set for this sample.%0",
+      "DecimalCode": -2147220919,
+      "HexCode": "0x80040249",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_RESOURCE_NOT_NEEDED",
+      "Message": "The resource specified is no longer needed.%0",
+      "DecimalCode": 262736,
+      "HexCode": "0x00040250",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_MEDIA_TIME_NOT_SET",
+      "Message": "No media time stamp has been set for this sample.%0",
+      "DecimalCode": -2147220911,
+      "HexCode": "0x80040251",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_TIME_FORMAT_SET",
+      "Message": "No media time format has been selected.%0",
+      "DecimalCode": -2147220910,
+      "HexCode": "0x80040252",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_MONO_AUDIO_HW",
+      "Message": "Cannot change balance because audio device is mono only.%0",
+      "DecimalCode": -2147220909,
+      "HexCode": "0x80040253",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_MEDIA_TYPE_IGNORED",
+      "Message": "A connection could not be made with the media type in the persistent graph,%0 but has been made with a negotiated media type.%0",
+      "DecimalCode": 262740,
+      "HexCode": "0x00040254",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_DECOMPRESSOR",
+      "Message": "Cannot play back the video stream: no suitable decompressor could be found.%0",
+      "DecimalCode": -2147220907,
+      "HexCode": "0x80040255",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_AUDIO_HARDWARE",
+      "Message": "Cannot play back the audio stream: no audio hardware is available, or the hardware is not responding.%0",
+      "DecimalCode": -2147220906,
+      "HexCode": "0x80040256",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_VIDEO_NOT_RENDERED",
+      "Message": "Cannot play back the video stream: no suitable decompressor could be found.%0",
+      "DecimalCode": 262743,
+      "HexCode": "0x00040257",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_AUDIO_NOT_RENDERED",
+      "Message": "Cannot play back the audio stream: no audio hardware is available.%0",
+      "DecimalCode": 262744,
+      "HexCode": "0x00040258",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_RPZA",
+      "Message": "Cannot play back the video stream: format \u0027RPZA\u0027 is not supported.%0",
+      "DecimalCode": -2147220903,
+      "HexCode": "0x80040259",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_RPZA",
+      "Message": "Cannot play back the video stream: format \u0027RPZA\u0027 is not supported.%0",
+      "DecimalCode": 262746,
+      "HexCode": "0x0004025A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_PROCESSOR_NOT_SUITABLE",
+      "Message": "ActiveMovie cannot play MPEG movies on this processor.%0",
+      "DecimalCode": -2147220901,
+      "HexCode": "0x8004025B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_UNSUPPORTED_AUDIO",
+      "Message": "Cannot play back the audio stream: the audio format is not supported.%0",
+      "DecimalCode": -2147220900,
+      "HexCode": "0x8004025C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_UNSUPPORTED_VIDEO",
+      "Message": "Cannot play back the video stream: the video format is not supported.%0",
+      "DecimalCode": -2147220899,
+      "HexCode": "0x8004025D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_MPEG_NOT_CONSTRAINED",
+      "Message": "ActiveMovie cannot play this video stream because it falls outside the constrained standard.%0",
+      "DecimalCode": -2147220898,
+      "HexCode": "0x8004025E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NOT_IN_GRAPH",
+      "Message": "Cannot perform the requested function on an object that is not in the filter graph.%0",
+      "DecimalCode": -2147220897,
+      "HexCode": "0x8004025F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_ESTIMATED",
+      "Message": "The value returned had to be estimated.  It\u0027s accuracy can not be guaranteed.%0",
+      "DecimalCode": 262752,
+      "HexCode": "0x00040260",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_TIME_FORMAT",
+      "Message": "Cannot get or set time related information on an object that is using a time format of TIME_FORMAT_NONE.%0",
+      "DecimalCode": -2147220895,
+      "HexCode": "0x80040261",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_READ_ONLY",
+      "Message": "The connection cannot be made because the stream is read only and the filter alters the data.%0",
+      "DecimalCode": -2147220894,
+      "HexCode": "0x80040262",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_RESERVED",
+      "Message": "This success code is reserved for internal purposes within ActiveMovie.%0",
+      "DecimalCode": 262755,
+      "HexCode": "0x00040263",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BUFFER_UNDERFLOW",
+      "Message": "The buffer is not full enough.%0",
+      "DecimalCode": -2147220892,
+      "HexCode": "0x80040264",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_UNSUPPORTED_STREAM",
+      "Message": "Cannot play back the file.  The format is not supported.%0",
+      "DecimalCode": -2147220891,
+      "HexCode": "0x80040265",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_TRANSPORT",
+      "Message": "Pins cannot connect due to not supporting the same transport.%0",
+      "DecimalCode": -2147220890,
+      "HexCode": "0x80040266",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_STREAM_OFF",
+      "Message": "The stream has been turned off.%0",
+      "DecimalCode": 262759,
+      "HexCode": "0x00040267",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_CANT_CUE",
+      "Message": "The graph can\u0027t be cued because of lack of or corrupt data.%0",
+      "DecimalCode": 262760,
+      "HexCode": "0x00040268",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_BAD_VIDEOCD",
+      "Message": "The Video CD can\u0027t be read correctly by the device or is the data is corrupt.%0",
+      "DecimalCode": -2147220887,
+      "HexCode": "0x80040269",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_NO_STOP_TIME",
+      "Message": "The stop time for the sample was not set.%0",
+      "DecimalCode": 262768,
+      "HexCode": "0x00040270",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_OUT_OF_VIDEO_MEMORY",
+      "Message": "There is not enough Video Memory at this display resolution and number of colors. Reducing resolution might help.%0",
+      "DecimalCode": -2147220879,
+      "HexCode": "0x80040271",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VP_NEGOTIATION_FAILED",
+      "Message": "The VideoPort connection negotiation process has failed.%0",
+      "DecimalCode": -2147220878,
+      "HexCode": "0x80040272",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DDRAW_CAPS_NOT_SUITABLE",
+      "Message": "Either DirectDraw has not been installed or the Video Card capabilities are not suitable. Make sure the display is not in 16 color mode or try changing the graphics mode.%0",
+      "DecimalCode": -2147220877,
+      "HexCode": "0x80040273",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_VP_HARDWARE",
+      "Message": "No VideoPort hardware is available, or the hardware is not responding.%0",
+      "DecimalCode": -2147220876,
+      "HexCode": "0x80040274",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_CAPTURE_HARDWARE",
+      "Message": "No Capture hardware is available, or the hardware is not responding.%0",
+      "DecimalCode": -2147220875,
+      "HexCode": "0x80040275",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_OPERATION_INHIBITED",
+      "Message": "This User Operation is inhibited by DVD Content at this time.%0",
+      "DecimalCode": -2147220874,
+      "HexCode": "0x80040276",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_INVALIDDOMAIN",
+      "Message": "This Operation is not permitted in the current domain.%0",
+      "DecimalCode": -2147220873,
+      "HexCode": "0x80040277",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NO_BUTTON",
+      "Message": "The specified button is invalid or is not present at the current time, or there is no button present at the specified location.%0",
+      "DecimalCode": -2147220872,
+      "HexCode": "0x80040278",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_GRAPHNOTREADY",
+      "Message": "DVD-Video playback graph has not been built yet.%0",
+      "DecimalCode": -2147220871,
+      "HexCode": "0x80040279",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_RENDERFAIL",
+      "Message": "DVD-Video playback graph building failed.%0",
+      "DecimalCode": -2147220870,
+      "HexCode": "0x8004027A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_DECNOTENOUGH",
+      "Message": "DVD-Video playback graph could not be built due to insufficient decoders.%0",
+      "DecimalCode": -2147220869,
+      "HexCode": "0x8004027B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DDRAW_VERSION_NOT_SUITABLE",
+      "Message": "Version number of DirectDraw not suitable. Make sure to install dx5 or higher version.%0",
+      "DecimalCode": -2147220868,
+      "HexCode": "0x8004027C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_COPYPROT_FAILED",
+      "Message": "Copy protection cannot be enabled. Please make sure any other copy protected content is not being shown now.%0",
+      "DecimalCode": -2147220867,
+      "HexCode": "0x8004027D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_NOPREVIEWPIN",
+      "Message": "There was no preview pin available, so the capture pin output is being split to provide both capture and preview.%0",
+      "DecimalCode": 262782,
+      "HexCode": "0x0004027E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_TIME_EXPIRED",
+      "Message": "This object cannot be used anymore as its time has expired.%0",
+      "DecimalCode": -2147220865,
+      "HexCode": "0x8004027F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_DVD_NON_ONE_SEQUENTIAL",
+      "Message": "The current title was not a sequential set of chapters (PGC), and the returned timing information might not be continuous.%0",
+      "DecimalCode": 262784,
+      "HexCode": "0x00040280",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_WRONG_SPEED",
+      "Message": "The operation cannot be performed at the current playback speed.%0",
+      "DecimalCode": -2147220863,
+      "HexCode": "0x80040281",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_MENU_DOES_NOT_EXIST",
+      "Message": "The specified menu doesn\u0027t exist.%0",
+      "DecimalCode": -2147220862,
+      "HexCode": "0x80040282",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_CMD_CANCELLED",
+      "Message": "The specified command was either cancelled or no longer exists.%0",
+      "DecimalCode": -2147220861,
+      "HexCode": "0x80040283",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_STATE_WRONG_VERSION",
+      "Message": "The data did not contain a recognized version.%0",
+      "DecimalCode": -2147220860,
+      "HexCode": "0x80040284",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_STATE_CORRUPT",
+      "Message": "The state data was corrupt.%0",
+      "DecimalCode": -2147220859,
+      "HexCode": "0x80040285",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_STATE_WRONG_DISC",
+      "Message": "The state data is from a different disc.%0",
+      "DecimalCode": -2147220858,
+      "HexCode": "0x80040286",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_INCOMPATIBLE_REGION",
+      "Message": "The region was not compatible with the current drive.%0",
+      "DecimalCode": -2147220857,
+      "HexCode": "0x80040287",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NO_ATTRIBUTES",
+      "Message": "The requested DVD stream attribute does not exist.%0",
+      "DecimalCode": -2147220856,
+      "HexCode": "0x80040288",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NO_GOUP_PGC",
+      "Message": "Currently there is no GoUp (Annex J user function) program chain (PGC).%0",
+      "DecimalCode": -2147220855,
+      "HexCode": "0x80040289",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_LOW_PARENTAL_LEVEL",
+      "Message": "The current parental level was too low.%0",
+      "DecimalCode": -2147220854,
+      "HexCode": "0x8004028A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NOT_IN_KARAOKE_MODE",
+      "Message": "The current audio is not karaoke content.%0",
+      "DecimalCode": -2147220853,
+      "HexCode": "0x8004028B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_DVD_CHANNEL_CONTENTS_NOT_AVAILABLE",
+      "Message": "The audio stream did not contain sufficient information to determine the contents of each channel.%0",
+      "DecimalCode": 262796,
+      "HexCode": "0x0004028C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_DVD_NOT_ACCURATE",
+      "Message": "The seek into the movie was not frame accurate.%0",
+      "DecimalCode": 262797,
+      "HexCode": "0x0004028D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_FRAME_STEP_UNSUPPORTED",
+      "Message": "Frame step is not supported on this configuration.%0",
+      "DecimalCode": -2147220850,
+      "HexCode": "0x8004028E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_STREAM_DISABLED",
+      "Message": "The specified stream is disabled and cannot be selected.%0",
+      "DecimalCode": -2147220849,
+      "HexCode": "0x8004028F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_TITLE_UNKNOWN",
+      "Message": "The operation depends on the current title number, however the navigator has not yet entered the VTSM or the title domains, so the \u0027current\u0027 title index is unknown.%0",
+      "DecimalCode": -2147220848,
+      "HexCode": "0x80040290",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_INVALID_DISC",
+      "Message": "The specified path does not point to a valid DVD disc.%0",
+      "DecimalCode": -2147220847,
+      "HexCode": "0x80040291",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NO_RESUME_INFORMATION",
+      "Message": "There is currently no resume information.%0",
+      "DecimalCode": -2147220846,
+      "HexCode": "0x80040292",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_PIN_ALREADY_BLOCKED_ON_THIS_THREAD",
+      "Message": "This thread has already blocked this output pin.  There is no need to call IPinFlowControl::Block() again.%0",
+      "DecimalCode": -2147220845,
+      "HexCode": "0x80040293",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_PIN_ALREADY_BLOCKED",
+      "Message": "IPinFlowControl::Block() has been called on another thread.  The current thread cannot make any assumptions about this pin\u0027s block state.%0",
+      "DecimalCode": -2147220844,
+      "HexCode": "0x80040294",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CERTIFICATION_FAILURE",
+      "Message": "An operation failed due to a certification failure.%0",
+      "DecimalCode": -2147220843,
+      "HexCode": "0x80040295",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NOT_IN_MIXER_MODE",
+      "Message": "The VMR has not yet created a mixing component.  That is, IVMRFilterConfig::SetNumberofStreams has not yet been called.%0",
+      "DecimalCode": -2147220842,
+      "HexCode": "0x80040296",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NO_AP_SUPPLIED",
+      "Message": "The application has not yet provided the VMR filter with a valid allocator-presenter object.%0",
+      "DecimalCode": -2147220841,
+      "HexCode": "0x80040297",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NO_DEINTERLACE_HW",
+      "Message": "The VMR could not find any de-interlacing hardware on the current display device.%0",
+      "DecimalCode": -2147220840,
+      "HexCode": "0x80040298",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NO_PROCAMP_HW",
+      "Message": "The VMR could not find any ProcAmp hardware on the current display device.%0",
+      "DecimalCode": -2147220839,
+      "HexCode": "0x80040299",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_VMR9_INCOMPATIBLEDEC",
+      "Message": "VMR9 does not work with VPE-based hardware decoders.%0",
+      "DecimalCode": -2147220838,
+      "HexCode": "0x8004029A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NO_AP_SUPPLIED",
+      "Message": "The application has not yet provided the VMR filter with a valid allocator-presenter object.%0",
+      "DecimalCode": -2147220841,
+      "HexCode": "0x80040297",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NO_DEINTERLACE_HW",
+      "Message": "The VMR could not find any de-interlacing hardware on the current display device.%0",
+      "DecimalCode": -2147220840,
+      "HexCode": "0x80040298",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_VMR_NO_PROCAMP_HW",
+      "Message": "The VMR could not find any ProcAmp hardware on the current display device.%0",
+      "DecimalCode": -2147220839,
+      "HexCode": "0x80040299",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_VMR9_INCOMPATIBLEDEC",
+      "Message": "VMR9 does not work with VPE-based hardware decoders.%0",
+      "DecimalCode": -2147220838,
+      "HexCode": "0x8004029A",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_NO_COPP_HW",
+      "Message": "The current display device does not support Content Output Protection Protocol (COPP) H/W.%0",
+      "DecimalCode": -2147220837,
+      "HexCode": "0x8004029B",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NONBLOCKING",
+      "Message": "Nonblocking APIs are enabled and the nav cannot perform the operation at this time (IDVDControl) or partially incomplete information may be returned (DVDInfo).%0",
+      "DecimalCode": -2147220836,
+      "HexCode": "0x8004029C",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_TOO_MANY_RENDERERS_IN_FILTER_GRAPH",
+      "Message": "The DVD Graph Builder cannot build a DVD playback filter graph if the EVR and another renderer are in the graph builder\u0027s filter graph.",
+      "DecimalCode": -2147220835,
+      "HexCode": "0x8004029D",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_NON_EVR_RENDERER_IN_FILTER_GRAPH",
+      "Message": "AM_DVD_EVR_ONLY cannot be passed to RenderDvdVideoVolume if the graph builder\u0027s filter graph contains a renderer which is not the EVR.",
+      "DecimalCode": -2147220834,
+      "HexCode": "0x8004029E",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_RESOLUTION_ERROR",
+      "Message": "DVD Video Output is not at a proper resolution.",
+      "DecimalCode": -2147220833,
+      "HexCode": "0x8004029F",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_PROP_SET_UNSUPPORTED",
+      "Message": "The Specified property set is not supported.%0",
+      "DecimalCode": -2147023726,
+      "HexCode": "0x80070492",
+      "Type": "HResult"
+    },
+    {
+      "Id": "E_PROP_ID_UNSUPPORTED",
+      "Message": "The specified property ID is not supported for the specified property set.%0",
+      "DecimalCode": -2147023728,
+      "HexCode": "0x80070490",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CODECAPI_LINEAR_RANGE",
+      "Message": "Parameter has linear range.%0",
+      "DecimalCode": -2147220720,
+      "HexCode": "0x80040310",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CODECAPI_ENUMERATED",
+      "Message": "Parameter is enumerated. It has no range.%0",
+      "DecimalCode": -2147220719,
+      "HexCode": "0x80040311",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CODECAPI_NO_DEFAULT",
+      "Message": "No default value.%0",
+      "DecimalCode": -2147220717,
+      "HexCode": "0x80040313",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_CODECAPI_NO_CURRENT_VALUE",
+      "Message": "No current value.%0",
+      "DecimalCode": -2147220716,
+      "HexCode": "0x80040314",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_E_DVD_CHAPTER_DOES_NOT_EXIST",
+      "Message": "The operation failed since the chapter does not exist.%0",
+      "DecimalCode": -2147220715,
+      "HexCode": "0x80040315",
+      "Type": "HResult"
+    },
+    {
+      "Id": "VFW_S_DVD_RENDER_STATUS",
+      "Message": "The operation succeeded but some streams were not rendered.%0",
+      "DecimalCode": 262944,
+      "HexCode": "0x00040320",
+      "Type": "HResult"
+    }
+  ],
+  "Facilities": []
+}
